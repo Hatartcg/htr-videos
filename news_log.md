@@ -17,3 +17,7 @@ Format: date | game | item
 2026-10-11 | Pokémon | Espeon ex / Umbreon ex all-foil battle decks Oct 30 ($19.99)
 2026-10-11 | Lorcana | Hyperia City prerelease Oct 16
 2026-10-11 | Topps | Update Series Baseball Oct 14; Chrome F1 Oct 15
+2026-10-11 | Pokémon | (other session) Delta Reign promo: Mega Evolution Delta Reign Nov 6
+2026-10-12 | Prices | HOOK: Charizard 1996 Japanese Base Set No Rarity PSA 10 — $1.7M (Mar 2026), highest Charizard sold at auction
+2026-10-12 | Naruto | Naruto Card Game (Bandai) worldwide simultaneous launch June 2027; 3 starter decks Naruto/Sasuke/Gaara (NYCC Oct 10)
+2026-10-12 | One Piece | OP14-020 Dracule Mihawk banned effective Oct 12, 2026
