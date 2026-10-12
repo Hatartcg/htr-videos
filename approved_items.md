@@ -2,8 +2,6 @@
 
 ## سلسلة "أغلى كرت اليوم" (معتمدة من هادي — المصدر: TCGplayer، سعر السوق بالريال كما يظهر في التطبيق)
 قاعدة: استخدم بند واحد بس كهوك في كل حلقة، بالترتيب، بعد هوك تشارزرد. الصياغة لازم تقول "سعره في TCGplayer" بالضبط. الصور جاهزة ومفرّغة في المستودع: assets/cards/
-1. Raichu Prerelease (Base Set 14/102، Holofoil) — حوالي خمسة ملايين ريال في TCGplayer. صورة: assets/cards/raichu_prerelease.png
-   صياغة: "رايتشو… بس مو أي رايتشو! نسخة البري ريليس النادرة، سعرها في تي سي جي بلاير حوالي خمسة ملايين ريال!"
 2. Kaido – CS 2023 Trophy Card (Winner) – ST04-003، One Piece — حوالي سبعمية وخمسين ألف ريال في TCGplayer. صورة: assets/cards/kaido_cs2023_trophy.png
    صياغة: "كايدو… كرت الجائزة لبطل بطولة ون بيس العالمية ألفين وثلاثة وعشرين، سعره في تي سي جي بلاير حوالي سبعمية وخمسين ألف ريال!"
 3. Shrink – SJC-EN003، Yu-Gi-Oh! (Shonen Jump Championship) — حوالي سبعمية وخمسين ألف ريال في TCGplayer. صورة: assets/cards/shrink_sjc_en003.png
