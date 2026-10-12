@@ -21,3 +21,7 @@ Format: date | game | item
 2026-10-12 | Prices | HOOK: Charizard 1996 Japanese Base Set No Rarity PSA 10 — $1.7M (Mar 2026), highest Charizard sold at auction
 2026-10-12 | Naruto | Naruto Card Game (Bandai) worldwide simultaneous launch June 2027; 3 starter decks Naruto/Sasuke/Gaara (NYCC Oct 10)
 2026-10-12 | One Piece | OP14-020 Dracule Mihawk banned effective Oct 12, 2026
+2026-10-13 | Prices | HOOK: Raichu Prerelease (Base Set 14/102) ~5M SAR on TCGplayer (approved series item #1)
+2026-10-13 | Magic | Marvel: Darkhold Destiny revealed at NYCC, release Apr 9, 2027 (first UB set with original story; Doctor Strange, Thor, Hela)
+2026-10-13 | Magic | Secret Lair Countdown Kit: Marvel's History of Heroes, 30 cards, on sale Nov 2, $199.99
+2026-10-13 | Events | BANDAI CARD GAMES Fest 26-27: Orlando Jan 7-10, 2027; London Jan 15-17, 2027
