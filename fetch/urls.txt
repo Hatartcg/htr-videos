@@ -1,1 +1,9 @@
-ep06_voice.mp3 https://storage.googleapis.com/xi-backend/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/S4EifZoLhYDaUDSZNBSf/hc85PqmItfjSDB5xNDWK/content.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20261012%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261012T133702Z&X-Goog-Expires=7200&X-Goog-SignedHeaders=host&X-Goog-Signature=337d54c608a8e803eb9e30ebafc4d61b79846be5f5407fd806c68b68cd628bf4b97df245fe9bdbfd8304994979d188728134fc6137532ff2e3a089a65434b2198109594dd7d9eb05ec0d63992634100765c3e0c7a3b4d735172c61509de0c2c0353d9d17c5d376876feb7c83d3c0883a9285e9901f11a64cf2f546948c90279fa6cb79f00244e28dcb8af4644a659a66ab8f69b2d44d6e274e9ae1d0689e1fc83d7de61d2b1236acd64b1bb1e0ac27df8155122e9a25b0f309a1823297451e38a56b759be9c062379a3c622b0abc3a2607fe50f86424bf2aaa9c485cc1829247631feb08aa09e791a636d7f3019b59ffb9a4816b2af65f4a539caa5072b95a76
+eb05_shirahoshi_manga.webp https://onepiece.app/eb05/c10v1.webp
+eb05_nami_sec_par.webp https://onepiece.app/eb05/c49v0.webp
+eb05_robin_leader_par.webp https://onepiece.app/eb05/c06v1.webp
+eb05_hancock_sp.webp https://onepiece.app/eb05/c54.webp
+eb05_nami_sp.webp https://onepiece.app/eb05/c50.webp
+eb05_perona_sp.webp https://onepiece.app/eb05/c53.webp
+eb05_nami_sr.webp https://onepiece.app/eb05/c45.webp
+eb05_box.webp https://samuraiswordtokyo.com/wp-content/uploads/2026/09/img_eb_opcg_eb05_boosterpack_dammy_close_3125c08fcd0d-1.webp
+eb05_kv.webp https://samuraiswordtokyo.com/wp-content/uploads/2026/09/img_eb_e382b9e383a9e382a4e3838920_a62fb09ec23d-1.webp
