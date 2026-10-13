@@ -13,4 +13,4 @@ jobs:
           i=0; while read -r name url; do [ -z "$name" ] && continue; curl -sSfL -A "Mozilla/5.0" "$url" -o "fetch/$name" || echo FAIL $name; done < fetch/urls.txt
           ls -la fetch
           git config user.name "Hatartcg"; git config user.email "hseyam.m@gmail.com"
-          git add fetch/*.mp3 fetch/*.webp 2>/dev/null; git add -A fetch && git commit -m "fetched audio" && git push
+          git add -A fetch && git commit -m "fetched audio" && git push
