@@ -25,3 +25,7 @@ Format: date | game | item
 2026-10-13 | Magic | Marvel: Darkhold Destiny revealed at NYCC, release Apr 9, 2027 (first UB set with original story; Doctor Strange, Thor, Hela)
 2026-10-13 | Magic | Secret Lair Countdown Kit: Marvel's History of Heroes, 30 cards, on sale Nov 2, $199.99
 2026-10-13 | Events | BANDAI CARD GAMES Fest 26-27: Orlando Jan 7-10, 2027; London Jan 15-17, 2027
+2026-10-14 | Prices | HOOK: Kaido CS 2023 Trophy Card ST04-003 ~750K SAR on TCGplayer (approved series item #2)
+2026-10-14 | One Piece | Gift Collection -ONE PIECE Heroines- [GC-2026] Nov 20, $44.99 (2 EB-05 packs, 10 promos, 70 sleeves)
+2026-10-14 | Pokémon | Delta Reign prerelease from Oct 24; Build & Battle Box: 4 packs + 40-card deck + 1 of 4 promos (Masquerain/Magmortar/Enamorus/Kommo-o)
+2026-10-14 | Union Arena | Steins;Gate booster (Japan) Oct 16, 16 packs/box, 8 cards/pack
