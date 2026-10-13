@@ -19,13 +19,13 @@ jobs:
                   b=await p.chromium.launch()
                   pg=await b.new_page(viewport={'width':430,'height':932},device_scale_factor=2.5,is_mobile=True,has_touch=True)
                   for name,url in [('home','https://www.hatartcg.com/'),('products','https://www.hatartcg.com/en/products/'),('preorders','https://www.hatartcg.com/en/preorders/'),('tcg','https://www.hatartcg.com/en/tcg/')]:
-                      await pg.goto(url,wait_until='networkidle'); await pg.wait_for_timeout(4000)
+                      await pg.goto(url,wait_until='load',timeout=60000); await pg.wait_for_timeout(4000)
                       await pg.screenshot(path=f'fetch/site/{name}.png')
                       await pg.screenshot(path=f'fetch/site/{name}_full.png',full_page=True)
                   await b.close()
           asyncio.run(main())
           PY
-          python s.py
+          python s.py || echo SHOTFAIL
           i=0; while read -r name url; do [ -z "$name" ] && continue; curl -sSfL -A "Mozilla/5.0" "$url" -o "fetch/site/$name" || echo FAIL $name; done < fetch/site/imgs.txt
           git config user.name "Hatartcg"; git config user.email "hseyam.m@gmail.com"
           git add -A fetch/site && git commit -m "site shots" && git push
