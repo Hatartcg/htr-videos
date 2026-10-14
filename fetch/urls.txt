@@ -1,5 +1,2 @@
-mc_yugi.png https://ms.yugipedia.com//4/4e/SDMY-DeckEN.png
-mc_pika149.webp https://billsarchive.com/assets/30th-thumbs/30th_EN_149.webp
-mc_pika053.webp https://billsarchive.com/assets/30th-thumbs/30th_EN_053.webp
-mc_jinx.webp https://www.kollecter.com.au/cdn/shop/files/lol_riftbound-origins-champions_deck-jinx-render-anr_500x_a87bbc57-6e97-4cf3-bb10-f96663ec600c.webp?v=1762321290&width=1200
-mc_naruto.jpg https://i.ebayimg.com/images/g/gIwAAOSwkTNn34X0/s-l1600.jpg
+mc_yposter.png https://ms.yugipedia.com//2/2a/SDMY%26SDKS-Poster-SP.png
+mc_yjp.png https://ms.yugipedia.com//1/1f/SDMY-DeckJP.png
