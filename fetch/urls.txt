@@ -1,4 +1,1 @@
-bn_op_products.html https://en.onepiece-cardgame.com/products/
-bn_op_boosters.html https://en.onepiece-cardgame.com/products/boosters/
-bn_rb_radiance.png https://cdn.shopify.com/s/files/1/0669/0553/8730/files/RiftboundLeagueofLegendsRadianceBoosterBox.png?v=1785180918
-bn_eb05_asia.webp https://asia-en.onepiece-cardgame.com/renewal/images/products/boosters/eb05/img_item01.webp
+bn_eb05.html https://en.onepiece-cardgame.com/products/eb05.html
