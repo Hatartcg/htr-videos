@@ -1,1 +1,1 @@
-bn_store.html https://otakkuhaveen.com/
+bn_app.css https://cdn.assets.salla.network/themes/2084773836/1.76.0/app.css
