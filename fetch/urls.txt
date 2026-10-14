@@ -1,1 +1,5 @@
-bn_eb05.html https://en.onepiece-cardgame.com/products/eb05.html
+bn_eb05_item01.webp https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/09/28/MoM8mqZvZfoZYePF/img_item01.webp
+bn_eb05_item02.webp https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/09/28/JaK0U1Gxq8uWVjq7/img_item02.webp
+bn_eb05_mv.webp https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/09/28/Rwr9RimBTlTVbYTt/mv.webp
+bn_eb05_logo.webp https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/09/28/bTvjcxYUnftEwGFZ/logo_product.webp
+bn_eb05_bg.webp https://en.onepiece-cardgame.com/onepiececg/bccard/en/product/2026/09/28/KlpZ9TivTeBq5fb5/bg_mv.webp
