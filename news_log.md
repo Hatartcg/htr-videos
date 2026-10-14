@@ -29,3 +29,6 @@ Format: date | game | item
 2026-10-14 | One Piece | Gift Collection -ONE PIECE Heroines- [GC-2026] Nov 20, $44.99 (2 EB-05 packs, 10 promos, 70 sleeves)
 2026-10-14 | Pokémon | Delta Reign prerelease from Oct 24; Build & Battle Box: 4 packs + 40-card deck + 1 of 4 promos (Masquerain/Magmortar/Enamorus/Kommo-o)
 2026-10-14 | Union Arena | Steins;Gate booster (Japan) Oct 16, 16 packs/box, 8 cards/pack
+2026-10-15 | Prices | HOOK: Shrink SJC-EN003 (Shonen Jump Championship prize) ~750K SAR on TCGplayer (approved series item #3)
+2026-10-15 | Yu-Gi-Oh | Glorious Victors Dec 4, 2026 (NA), 7 cards/pack, new themes Zenet + Trirealm Rift
+2026-10-15 | Pokémon | Deck Crafter's Collection Oct 23, $9.99: 39 Trainer cards + foil Meowth ex + 1 booster pack
