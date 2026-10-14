@@ -1,8 +1,5 @@
-op5.webp https://cdn.files.salla.network/products/1990851668/6170fcb9-b405-4c0b-b1bb-8ea74c987d13-original.webp
-op6.webp https://cdn.files.salla.network/products/1990851668/6cc5c34a-256c-4858-aa8c-4459d54a3697-original.webp
-op7.webp https://cdn.files.salla.network/products/1990851668/da066df8-8963-49b4-9c7b-d94b790630c8-original.webp
-op8.webp https://cdn.files.salla.network/products/1990851668/10a8d2cb-ae17-49aa-a450-41fd96bce6fa-original.webp
-op9.webp https://cdn.files.salla.network/products/1990851668/ecf532fd-40e1-4898-ba1c-a9745a13d791-original.webp
-op10.webp https://cdn.files.salla.network/products/1990851668/8c90034c-a82f-4799-a3d7-b218dfb1d5ff-original.webp
-op11.webp https://cdn.files.salla.network/products/1990851668/e0636981-c095-4bbf-960e-8ddf06257b01-original.webp
-op12.webp https://cdn.files.salla.network/products/1990851668/b3ffba31-accb-460a-931b-e6b373e223d9-original.webp
+mc_yugi.png https://ms.yugipedia.com//4/4e/SDMY-DeckEN.png
+mc_pika149.webp https://billsarchive.com/assets/30th-thumbs/30th_EN_149.webp
+mc_pika053.webp https://billsarchive.com/assets/30th-thumbs/30th_EN_053.webp
+mc_jinx.webp https://www.kollecter.com.au/cdn/shop/files/lol_riftbound-origins-champions_deck-jinx-render-anr_500x_a87bbc57-6e97-4cf3-bb10-f96663ec600c.webp?v=1762321290&width=1200
+mc_naruto.jpg https://i.ebayimg.com/images/g/gIwAAOSwkTNn34X0/s-l1600.jpg
