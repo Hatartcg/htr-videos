@@ -1,1 +1,6 @@
-bn_app.css https://cdn.assets.salla.network/themes/2084773836/1.76.0/app.css
+an_op.jpg https://cdn.salla.sa/NKNagy/4dcaaf1f-22a5-4999-9fd5-a5de3cd5b6d0-500x500-txZUvl7bZh8aLnN3qHRtLluC4r5iC859Yrop88sx.jpg
+an_naruto.jpg https://cdn.salla.sa/NKNagy/5d9f2c4e-abca-423b-941c-d15266f0c688-500x500-GVd8DF0yoSUSQNko3IO4NtiSW6Pm5Rupn7bT7emK.jpg
+an_db.jpg https://ae01.alicdn.com/kf/S3ceb54f037074fc4bccdb8159b706b545.jpg
+an_ds.jpg https://cdn.salla.sa/NKNagy/f4994864-fa5d-4a18-bcb3-2085ad4a95b0-500x500-jPN8GtnPWNPndqLKgZB6og867lNW13KOSXDNmmQM.jpg
+an_jjk.jpg https://cdn.salla.sa/NKNagy/94ef3a95-d0f6-445a-b705-8fa029d7f4df-500x500-eZRuPeIupwsa1GjU7IpIAZLdiaC1msYEM1KFDSFB.jpg
+an_bleach.jpg https://cdn.salla.sa/NKNagy/1720f6d0-9b23-45a7-8dfe-ced66b3c35d9-500x500-Eg3jh8PIsukJJplSI6ZS5cBrthbFBr1yJ8ce3Myo.jpg
