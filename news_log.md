@@ -32,3 +32,9 @@ Format: date | game | item
 2026-10-15 | Prices | HOOK: Shrink SJC-EN003 (Shonen Jump Championship prize) ~750K SAR on TCGplayer (approved series item #3)
 2026-10-15 | Yu-Gi-Oh | Glorious Victors Dec 4, 2026 (NA), 7 cards/pack, new themes Zenet + Trirealm Rift
 2026-10-15 | Pokémon | Deck Crafter's Collection Oct 23, $9.99: 39 Trainer cards + foil Meowth ex + 1 booster pack
+2026-10-16 | Yu-Gi-Oh | HOOK: New F&L — 34 Forbidden + 8 Limited, revealed in 5 parts at YCS Houston (Oct 16-18), prep for Magnificent Maestros
+2026-10-16 | Naruto | First booster set name "Here Comes Naruto Uzumaki!"; Advance Trial Events at shops early 2027; next big announcement at Jump Festa 2027
+2026-10-17 | Prices | HOOK: Soltari Priest APAC Junior Series promo (MTG) ~570K SAR on TCGplayer (approved series item #4)
+2026-10-17 | Tips | Check sold prices not listings; new-set prices move a lot early; edition/condition change price
+2026-10-18 | One Piece | Heroines Battle Vol.2: Nov 6 – Dec 6, 2026; registration via TCG+ from Oct 23; Heroines leaders only; participation prize EB03-006 Nami
+2026-10-18 | Lorcana | Into the Inkdark Q1 2027, first Collector Boosters; 6 serialized cards, 23 copies each
