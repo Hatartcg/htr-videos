@@ -1,2 +1,4 @@
-mc_yposter.png https://ms.yugipedia.com//2/2a/SDMY%26SDKS-Poster-SP.png
-mc_yjp.png https://ms.yugipedia.com//1/1f/SDMY-DeckJP.png
+ep9_mams_box.webp https://www.yugioh-card.com/eu/wp-content/uploads/2026/07/MAMS-Tuckbox-02-EN.webp
+ep9_mams_art.webp https://www.yugioh-card.com/eu/wp-content/uploads/2026/07/mams_art-01l.webp
+ep9_naruto_bst.jpg https://cmsapi-frontend.naruto-official.com/site/api/naruto/Image/get?path=/naruto/jp/news/2026/09/30/ojws8JLbjbLQzq1e/o568vY2E5TWlCXEyUmZOy4ArQR0NQDcf.jpeg
+ep9_naruto_trial.jpg https://cmsapi-frontend.naruto-official.com/site/api/naruto/Image/get?path=/naruto/jp/news/2026/09/30/VvKFEOC3NKvMXlgB/ZVenCs2eyKNsSmHRAL3t0vXaceTi1MMd.jpeg
