@@ -1,1 +1,7 @@
-cgc_site.css https://www.cgccards.com/cassette.axd/stylesheet/a497585fd5749e151ef990f1cf041bced9e2e7b3/bundles/mvc/site-css
+cgc_logo.svg https://www.cgccards.com/cassette.axd/file/resources/images/template/logo-f4f21409cb5bcd8e6be0ff31be2e9c02b071eae7.svg
+cgc_logo2x.png https://www.cgccards.com/cassette.axd/file/resources/images/template/logo%402x-bbc83c96b9fdea0b76d91cdbbbf360ebc097f449.png
+cgc_logo_print.png https://www.cgccards.com/cassette.axd/file/resources/images/template/logo-print-b005fa82b4e34a91c938f62a6df7e45219fe8dd7.png
+cgc_cgclogo2x.png https://www.cgccards.com/cassette.axd/file/resources/images/template/cgc-logo%402x-55af2b71d3e642ff7efd08708565e44bb83edb5b.png
+cgc_black.svg https://www.cgccards.com/cassette.axd/file/resources/ccg-shared/images/logos/cgc-black-78b20f849d3f3a85d76f077973a6a46cacaa5c6b.svg
+cgc_hero_tc.jpg https://www.cgccards.com/cassette.axd/file/Resources/images/grading/about-cgc/trading-cards-hero-77e6943a41b87acf3d99b3db817c420f583729e3.jpg
+cgc_dark_bg.png https://www.cgccards.com/cassette.axd/file/resources/images/grading/about-cgc/background-concept-dark-1b343ff1166a657b0ea22379d86de650890cc00e.png
