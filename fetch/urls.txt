@@ -1,4 +1,1 @@
-cgc_home.html https://www.cgccards.com/
-cgc_scales310.png https://www.cgccards.com/resources/images/logos/icons/scales-310.png
-cgc_scales310x150.png https://www.cgccards.com/resources/images/logos/icons/scales-310x150.png
-cgc_comics.html https://www.cgccomics.com/
+cgc_site.css https://www.cgccards.com/cassette.axd/stylesheet/a497585fd5749e151ef990f1cf041bced9e2e7b3/bundles/mvc/site-css
