@@ -38,3 +38,5 @@ Format: date | game | item
 2026-10-17 | Tips | Check sold prices not listings; new-set prices move a lot early; edition/condition change price
 2026-10-18 | One Piece | Heroines Battle Vol.2: Nov 6 – Dec 6, 2026; registration via TCG+ from Oct 23; Heroines leaders only; participation prize EB03-006 Nami
 2026-10-18 | Lorcana | Into the Inkdark Q1 2027, first Collector Boosters; 6 serialized cards, 23 copies each
+2026-10-19 | Pokémon | HOOK: Japan Gym Promo Card Pack 6 — 7 cards, distribution from Nov 1, 2026; new Mega Heatran ex (169/M-P) + Lebanne Supporter, new art Gastly & Golett
+2026-10-19 | Pokémon TCG Pocket | Ops letter Oct 16: new series end of Oct with dual-type Pokémon; boosters every ~6 weeks instead of 4; Special Pack: First Partners (starters from all 9 regions)
