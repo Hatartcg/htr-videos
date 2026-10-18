@@ -1,3 +1,4 @@
-opjp_luffy_p1.png https://www.onepiece-cardgame.com/images/cardlist/card/OP05-119_p1.png
-opasia_luffy_p1.png https://asia-en.onepiece-cardgame.com/images/cardlist/card/OP05-119_p1.png
-opjp_shanks_p1.png https://www.onepiece-cardgame.com/images/cardlist/card/OP01-120_p1.png
+lim1.webp https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-119_p1_EN.webp
+lim2.webp https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-119_EN.webp
+lim3.png https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-119_p1_EN.png
+lim4.webp https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP01/OP01-120_p1_EN.webp
