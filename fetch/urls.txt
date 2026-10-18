@@ -1,4 +1,2 @@
-lim1.webp https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-119_p1_EN.webp
-lim2.webp https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-119_EN.webp
-lim3.png https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP05/OP05-119_p1_EN.png
-lim4.webp https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/OP01/OP01-120_p1_EN.webp
+cgc_scale.png https://www.cgccards.com/Resources/images/grading/grading-scale-cards.png?cb=06212023
+cgc_gs.html https://www.cgccards.com/card-grading/grading-scale/
