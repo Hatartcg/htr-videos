@@ -1,2 +1,4 @@
-ref_slab_pristine.jpg https://allvintagecards.com/wp-content/uploads/2023/06/Image-6-12-25-at-8.34%20PM-614x1024.jpeg
-ref_slab_poke.jpg https://allvintagecards.com/wp-content/uploads/2023/06/Image-4-20-25-at-4.43%20PM-619x1024.jpeg
+pk_charizard_199.png https://images.pokemontcg.io/sv3pt5/199_hires.png
+pk_pikachu_ex.png https://images.pokemontcg.io/sv8/238_hires.png
+ygo_blueeyes.jpg https://images.ygoprodeck.com/images/cards/89631139.jpg
+ygo_darkmagician.jpg https://images.ygoprodeck.com/images/cards/46986414.jpg
