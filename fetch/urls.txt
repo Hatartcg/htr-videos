@@ -1,3 +1,3 @@
-op_luffy_op05119_p1.png https://en.onepiece-cardgame.com/images/cardlist/card/OP05-119_p1.png
-op_luffy_op05119.png https://en.onepiece-cardgame.com/images/cardlist/card/OP05-119.png
-op_shanks_op01120_p1.png https://en.onepiece-cardgame.com/images/cardlist/card/OP01-120_p1.png
+opjp_luffy_p1.png https://www.onepiece-cardgame.com/images/cardlist/card/OP05-119_p1.png
+opasia_luffy_p1.png https://asia-en.onepiece-cardgame.com/images/cardlist/card/OP05-119_p1.png
+opjp_shanks_p1.png https://www.onepiece-cardgame.com/images/cardlist/card/OP01-120_p1.png
