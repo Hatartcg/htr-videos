@@ -40,3 +40,6 @@ Format: date | game | item
 2026-10-18 | Lorcana | Into the Inkdark Q1 2027, first Collector Boosters; 6 serialized cards, 23 copies each
 2026-10-19 | Pokémon | HOOK: Japan Gym Promo Card Pack 6 — 7 cards, distribution from Nov 1, 2026; new Mega Heatran ex (169/M-P) + Lebanne Supporter, new art Gastly & Golett
 2026-10-19 | Pokémon TCG Pocket | Ops letter Oct 16: new series end of Oct with dual-type Pokémon; boosters every ~6 weeks instead of 4; Special Pack: First Partners (starters from all 9 regions)
+2026-10-20 | Prices | HOOK: 1999 Base Set 1st Edition Holo Charizard PSA 10 sold $1,385,274 at Alt (Oct 8, 2026) — most expensive 1st Edition Charizard; PSA 10 pop 123
+2026-10-20 | Prices | Lugia EX Full Art 134 Plasma Storm PSA 10 sold $660,000 (w/ premium) at Fanatics Collect weekly auction (Oct 11-12, 2026); PSA 10 pop 21
+2026-10-20 | Tips | PSA 10 prices don't apply to raw/lower grades; verify cert number on the grading company's site before buying a slab
