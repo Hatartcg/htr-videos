@@ -1,0 +1,7 @@
+{"total": 43.8, "date_label": "19 أكتوبر 2026", "imgdir": "img", "segs": [
+ {"s":0,"e":3.5,"accent":"#ef4444","chip":"Pokémon TCG · اليابان","title":"Mega Heatran ex","sub":"جديد في Gym Promo · نوفمبر 2026","img":"heatran.jpg"},
+ {"s":3.5,"e":6.8,"accent":"#a855f7","title":"أخبار وأسعار","sub":"","img":"title"},
+ {"s":6.8,"e":13.3,"accent":"#ef4444","chip":"Pokémon TCG · اليابان","title":"Gym Promo Card Pack","sub":"التوزيع من 1 نوفمبر · فعاليات الجيم الرسمية","img":"pack.jpg"},
+ {"s":13.3,"e":20.05,"accent":"#ef4444","chip":"Pokémon TCG · اليابان","title":"7 كروت مختلفة","sub":"Mega Heatran ex · Gastly · Golett","img":["gastly.jpg","heatran.jpg","golett.jpg"]},
+ {"s":20.05,"e":38.2,"accent":"#38bdf8","chip":"Pokémon TCG Pocket","title":"x","sub":"","img":"pocket.jpg"},
+ {"s":38.2,"e":43.8,"accent":"#a855f7","title":"مين بوكيمون البداية المفضل عندك؟","sub":"اكتبه بالتعليقات","img":"cta"}]}
