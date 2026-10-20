@@ -1,0 +1,25 @@
+name: drive-video
+on:
+  push:
+    paths: ['fetch/drive.txt']
+permissions:
+  contents: write
+jobs:
+  get:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+          pip install -q gdown
+          mkdir -p fetch/drive /tmp/dl
+          while read -r name id; do [ -z "$name" ] && continue
+            gdown --fuzzy "https://drive.google.com/file/d/$id/view" -O /tmp/dl/$name.src || { echo FAIL $name; continue; }
+            ffprobe -v error -show_entries format=duration:stream=width,height,codec_name -of compact /tmp/dl/$name.src
+            ffmpeg -v error -y -i /tmp/dl/$name.src -vf "scale='if(gt(iw,ih),min(1920,iw),-2)':'if(gt(iw,ih),-2,min(1920,ih))'" -c:v libx264 -preset veryfast -crf 23 -pix_fmt yuv420p -c:a aac -b:a 160k -movflags +faststart /tmp/dl/$name.mp4
+            ls -la /tmp/dl
+            ffmpeg -v error -y -i /tmp/dl/$name.mp4 -c copy -map 0 -f segment -segment_time 60 -reset_timestamps 1 fetch/drive/${name}_%02d.mp4
+          done < fetch/drive.txt
+          ls -la fetch/drive
+          git config user.name "Hatartcg"; git config user.email "hseyam.m@gmail.com"
+          git add -A fetch/drive && git commit -m "fetched drive video" && git push
