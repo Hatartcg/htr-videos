@@ -1,4 +1,4 @@
-Tue Oct 20 16:23:25 UTC 2026
+Tue Oct 20 16:25:39 UTC 2026
 Selecting previously unselected package libva2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 214410 files and directories currently installed.)
 Preparing to unpack .../00-libva2_2.20.0-2ubuntu0.2_amd64.deb ...
@@ -413,15 +413,8 @@ No user sessions are running outdated binaries.
 
 No VM guests are running outdated hypervisor (qemu) binaries on this host.
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-Traceback (most recent call last):
-  File "/tmp/asr.py", line 5, in <module>
-    segs, info = m.transcribe(f, language="ar", word_timestamps=True, beam_size=5)
-                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/.local/lib/python3.12/site-packages/faster_whisper/transcribe.py", line 876, in transcribe
-    audio = decode_audio(audio, sampling_rate=sampling_rate)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/.local/lib/python3.12/site-packages/faster_whisper/audio.py", line 46, in decode_audio
-    with av.open(input_file, mode="r", metadata_errors="ignore") as container:
-         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "av/container/core.py", line 479, in av.container.core.open
-TypeError: open() got an unexpected keyword argument 'metadata_errors'
+fetch/cgcweb_v1.mp3  خلاص!(0.85)  الحين(0.66)  تقدر(0.94)  تطلب(0.98)  تقييم(0.86)  كرتك(0.92)  مع(0.99)  CGC(0.68)  من(0.99)  موقعنا(0.99)  تطلب(0.86)  التقييم(0.98)  من(0.98)  الموقع(0.99)  وتسلمنا(0.9)  كرتك(1.0)  في(0.99)  المعرض(0.99)  ونرسله(0.85)  لCGC(0.83)  الشرق(0.99)  الأوسط(0.97)  وتتابع(0.76)  طلبك(0.96)  خطوة(0.99)  بخطوة(0.98)  برقم(0.98)  الطلب(0.98)  لين(0.76)  يرجعلك(0.95)  مقيم(0.9)  احنا(0.89)  معتمدين(0.94)  رسميا(0.99)  مع(0.8)  CGC(0.98)  اطلب(0.88)  تقييمك(1.0)  الحين(1.0)
+fetch/cgcweb_v2.mp3  خلاص!(0.85)  الحين(0.71)  تقدر(0.95)  تطلب(0.98)  تقييم(0.86)  كورتك(0.81)  مع(0.99)  CGC(0.69)  من(0.99)  موقعنا(1.0)  تطلب(0.86)  التقييم(0.98)  من(0.99)  الموقع(0.99)  وتسلمنا(0.89)  كورتك(0.99)  في(0.99)  المعرض(0.98)  ونرسله(0.88)  لCGC(0.84)  الشرق(0.97)  الأوسط(0.98)  وتتابع(0.67)  طلبك(0.99)  خطوة(0.99)  بخطوة(0.98)  برقم(0.98)  الطلب(0.98)  لين(0.58)  يرجعلك(0.9)  مقيم(0.86)  احنا(0.92)  معتمدين(0.9)  رسميا(0.99)  مع(0.79)  CGC(0.99)  اطلب(0.92)  تقييمك(1.0)  الحين(0.99)
+fetch/cgcweb_v3.mp3  خلاص!(0.84)  الحين(0.71)  تلقر(0.72)  تطلب(0.98)  تقييم(0.91)  كرتك(0.91)  مع(0.98)  cgc(0.72)  من(0.99)  موقعنا(1.0)  تطلب(0.85)  التقييم(0.98)  من(0.98)  الموقع(0.99)  وتسلمنا(0.88)  كرتك(1.0)  في(0.98)  المعرض(0.99)  ونرسله(0.87)  ل(0.87)  cgc(0.91)  الشرق(0.98)  الأوسط(0.96)  واتابع(0.79)  طلبك(0.98)  خطوة(0.99)  بخطوة(0.97)  برقم(0.97)  الطلب(0.98)  لين(0.78)  يرجعلك(0.94)  مقيم(0.85)  احنا(0.94)  معتمدين(0.89)  رسميا(0.99)  مع(0.82)  cgc(0.99)  اطلب(0.93)  تقييمك(1.0)  الحين(1.0)
+fetch/cgcweb_v4.mp3  خلاص!(0.83)  الحين(0.78)  تقدر(0.95)  تطلب(0.99)  تقييم(0.91)  كرةك(0.89)  مع(0.99)  CGC(0.66)  من(0.99)  موقعنا(0.99)  تطلب(0.85)  التقييم(0.98)  من(0.99)  الموقع(0.98)  وتسلمنا(0.93)  كرةك(0.99)  في(0.99)  المعرض(0.99)  ونرسلها(0.92)  لCGC(0.81)  الشرق(0.99)  الأوسط(0.98)  والتابع(0.83)  طلبك(0.98)  خطوة(0.99)  بخطوة(0.98)  برقم(0.8)  الطلب(0.99)  لين(0.82)  يرجعلك(0.94)  مقيم(0.87)  احنا(0.88)  معتمدين(0.96)  رسميا(0.99)  مع(0.72)  CGC(0.99)  اطلب(0.88)  تقييمك(1.0)  الحين(1.0)
+fetch/ 
