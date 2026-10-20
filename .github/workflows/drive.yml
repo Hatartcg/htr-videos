@@ -14,7 +14,7 @@ jobs:
           mkdir -p fetch/drive /tmp/dl; L=fetch/drive/log.txt; date > $L
           (sudo apt-get update -qq; sudo apt-get install -y -qq ffmpeg) >> $L 2>&1; which ffmpeg >> $L 2>&1
           pip install -q gdown >> $L 2>&1 || pip install -q --break-system-packages gdown >> $L 2>&1
-          while read -r name id; do [ -z "$name" ] && continue
+          while read -r name id _x; do [ -z "$name" ] && continue
             gdown "$id" -O /tmp/dl/$name.src >> $L 2>&1 || echo FAIL_DL $name >> $L
             ls -la /tmp/dl >> $L
             ffprobe -v error -show_entries format=duration:stream=width,height,codec_name -of compact /tmp/dl/$name.src >> $L 2>&1
