@@ -1,6 +1,6 @@
-Tue Oct 20 18:08:58 UTC 2026
+Tue Oct 20 18:34:36 UTC 2026
 Selecting previously unselected package libva2:amd64.
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 203540 files and directories currently installed.)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 214410 files and directories currently installed.)
 Preparing to unpack .../00-libva2_2.20.0-2ubuntu0.2_amd64.deb ...
 Unpacking libva2:amd64 (2.20.0-2ubuntu0.2) ...
 Selecting previously unselected package libva-drm2:amd64.
@@ -413,5 +413,4 @@ No user sessions are running outdated binaries.
 
 No VM guests are running outdated hypervisor (qemu) binaries on this host.
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-fetch/wa1b_t1.mp3  تتدور(0.57)  على(0.93)  بوكسات(0.94)  التي(0.69)  سي(0.84)  جي؟(0.87)  بوكيمون،(0.79)  ون(0.57)  بيس،(0.9)  يوكي(0.78)  أو،(0.78)  دراجن(0.74)  بول،(0.84)  ناروتو،(0.89)  يونيون(0.91)  أرينا،(0.67)  ورفت(0.81)  باوند(0.79)  كلها(0.81)  عندنا(0.99)  بوكسات،(0.9)  باكات،(0.92)  وكل(0.98)  إصدار(0.9)  جديد(0.99)  ونشحلك(0.9)  لكل(0.98)  مناطق(0.96)  السعودية(0.97)  كلّمنا(0.69)  واتساب(0.94)  الحيّم،(0.69)  وحجز(0.86)  بوكسك(0.99)
-fetch/wa1b_t2.mp3  ادور(0.59)  على(0.91)  بوكسات(0.93)  التي(0.68)  سي(0.77)  جي(0.98)  بوكيمون(0.9)  ون(0.58)  بيس(0.85)  يوكي(0.76)  او(0.68)  دراجون(0.67)  بول(0.83)  ناروتو(0.85)  يونيون(0.92)  ارينا(0.84)  ورفت(0.81)  باوند(0.69)  كلها(0.97)  عندنا(1.0)  بوكسات(0.98)  باكات(0.96)  وكل(0.98)  اصدار(0.92)  جديد(1.0)  ونشحنلك(0.86)  لكل(0.98)  مناطق(0.97)  السعودية(0.97)  كلّمنا(0.61)  واتساب(0.89)  الحين(0.95)  وحجز(0.82)  بوكسك(0.99)
+fetch/wa1c_cut.mp3  ادور(0.58)  على(0.88)  بوكسات(0.95)  التي(0.65)  سي(0.75)  جي(0.98)  بوكيمون(0.9)  ون(0.59)  بيس(0.84)  يوكي(0.79)  او(0.66)  دراجون(0.66)  بول(0.86)  نارو(0.82)  ورفت(0.65)  باوند(0.72)  كلها(0.97)  عندنا(1.0)  بوكسات(0.98)  باكات(0.95)  وكل(0.98)  اصدار(0.92)  جديد(0.99)  ونشحنلك(0.84)  لكل(0.97)  مناطق(0.97)  السعودية(0.97)  كلّبنا(0.57)  واتساب(0.94)  الحين(0.97)  وحجز(0.92)  بوكسك(0.99)
