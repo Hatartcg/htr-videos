@@ -97,13 +97,14 @@ def prod(name, w, glow=PURP):
 
 # ---------- assets ----------
 P = {k: prod(k, w, g) for k, w, g in [
-    ('chaos_box', 470, PURP), ('op16', 560, TEAL), ('destined_box', 400, PURP), ('pitch', 360, TEAL), ('chaos_etb', 470, LIL),
-    ('op17', 430, TEAL), ('greninja', 540, PURP), ('naruto', 300, TEAL), ('chaos_pack', 330, PURP), ('po', 470, TEAL)]}
-CAR = ['destined_box', 'pitch', 'op17', 'greninja', 'naruto', 'chaos_etb']
+    ('celeb', 500, PURP), ('op16', 560, TEAL), ('destined_box', 400, PURP), ('pitch', 360, TEAL), ('celeb2', 620, LIL),
+    ('op17', 430, TEAL), ('greninja', 540, PURP), ('naruto', 300, TEAL), ('po', 470, TEAL), ('ygo', 430, PURP)]}
+CAR = ['destined_box', 'pitch', 'op17', 'greninja', 'naruto', 'celeb2']
 S = dict(
     htr=text_sprite('HTR', FB(300), grad=(WHITE, LIL), stroke=12, stroke_fill=DEEP, glow=PURP, glow_r=34),
     tcg=text_sprite('TCG', FB(120), grad=(TEAL, (120, 240, 230)), stroke=8, stroke_fill=DEEP, glow=TEAL),
     q1=text_sprite('تدوّر على', FL(140), glow=PURP),
+    all=text_sprite('كلها عندنا!', FL(200), grad=(WHITE, (150, 240, 230)), glow=TEAL, glow_r=28),
     q2=text_sprite('بوكسات؟', FL(210), grad=(WHITE, LIL), glow=PURP, glow_r=26),
     pk=text_sprite('POKÉMON', FB(96), grad=(WHITE, LIL), stroke=7, stroke_fill=DEEP, glow=PURP),
     op=text_sprite('ONE PIECE', FB(96), grad=(WHITE, (150, 240, 230)), stroke=7, stroke_fill=DEEP, glow=TEAL),
@@ -124,6 +125,18 @@ S = dict(
     jed=text_sprite('جدة', FL(64), fill=LIL),
     wm=text_sprite('HTR', FB(64), grad=(WHITE, LIL), stroke=4, stroke_fill=DEEP, glow=PURP, glow_r=10),
 )
+SER = [('POKÉMON', (110, 170, 255), 'celeb'), ('ONE PIECE', (230, 60, 60), 'op16'), ('YU-GI-OH!', (200, 120, 255), 'ygo'),
+       ('DRAGON BALL', (255, 140, 40), None), ('NARUTO', (255, 150, 30), 'naruto'), ('UNION ARENA', (240, 60, 90), None), ('RIFTBOUND', (90, 200, 255), None)]
+SN = [text_sprite(n, FB(118 if len(n) < 10 else 96), grad=(WHITE, c), stroke=8, stroke_fill=DEEP, glow=c, glow_r=24) for n, c, _ in SER]
+SNC = [pill(n, FB(44), (34, 22, 70), border=c + (255,)) for n, c, _ in SER]
+def card_back(w=360):
+    h = int(w * 1.4); im = Image.new('RGBA', (w + 80, h + 80), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    gl = Image.new('RGBA', im.size, (0, 0, 0, 0)); ImageDraw.Draw(gl).rounded_rectangle((40, 40, 40 + w, 40 + h), 26, fill=PURP + (200,)); im = Image.alpha_composite(im, gl.filter(ImageFilter.GaussianBlur(22))); d = ImageDraw.Draw(im)
+    d.rounded_rectangle((40, 40, 40 + w, 40 + h), 26, fill=(30, 18, 70, 255), outline=LIL + (255,), width=8)
+    d.rounded_rectangle((70, 70, 10 + w, 10 + h), 18, outline=TEAL + (255,), width=4)
+    fb = FB(110); bb = d.textbbox((0, 0), 'HTR', font=fb); d.text((40 + w / 2 - (bb[2] - bb[0]) / 2 - bb[0], 40 + h / 2 - (bb[3] - bb[1]) / 2 - bb[1]), 'HTR', font=fb, fill=WHITE)
+    return to_bgra(im)
+CBK = card_back()
 CHIPS = [pill(s, FL(52), c) for s, c in (('بوكيمون', (70, 50, 150)), ('ون بيس', (20, 110, 105)))]
 
 # ---------- background ----------
@@ -160,7 +173,7 @@ def background(t):
         cv2.circle(f, (int(x), int(yy_)), int(r), (255, 235, 245), -1, cv2.LINE_AA) if a > .7 else None
     return f
 
-HITS = [T['hook'], T['pk'], T['new'], T['box'], T['pack'], T['rel'], T['ship'], T['cta'], T['btn']]
+HITS = [T['hook'], T['boxq']] + [T['s%d' % i] for i in range(7)] + [T['all'], T['box'], T['pack'], T['rel'], T['ship'], T['cta'], T['btn']]
 def render(t):
     f = background(t).astype(np.float32)
     sh = sum(env(t, h, .25) for h in HITS) * 12
@@ -171,39 +184,47 @@ def render(t):
         blit(f, S['tcg'], W / 2, H * .53, ebk((t - .2) / .3), 1 - out)
     if T['hook'] - .05 < t < T['cta'] - .1:
         blit(f, S['wm'], 130, 110, 1, min(1, (t - T['hook']) / .3) * .9)
-    # S1 hook: تدوّر على بوكسات؟ + pokemon / one piece
-    if T['hook'] <= t < T['new'] + .2:
-        lt = t - T['hook']; out = eio((t - T['new'] + .1) / .3)
-        blit(f, S['q1'], W / 2 + 500 * (1 - eo(lt / .3)), H * .16 - 600 * out, 1, eo(lt / .2))
+    # S1 hook: تدوّر على بوكسات TCG؟
+    if T['hook'] <= t < T['s0'] + .15:
+        lt = t - T['hook']; out = eio((t - T['s0'] + .05) / .25)
+        blit(f, S['q1'], W / 2 + 500 * (1 - eo(lt / .3)), H * .3 - 900 * out, 1, eo(lt / .2))
         if t > T['boxq']:
-            k = t - T['boxq']; blit(f, S['q2'], W / 2, H * .25 - 600 * out, 1 + 1.4 * (1 - eo(k / .18)), min(1, k / .08))
-        if t > T['pk']:
-            k = t - T['pk']; x = W * .3 - 700 * (1 - eo(k / .4)) - 900 * out
-            blit(f, P['chaos_box'], x, H * .45 + 14 * math.sin(t * 2), 1, 1, 12 * (1 - eo(k / .4)) - 4)
-            blit(f, S['pk'], x, H * .61, ebk(k / .35) * .8, 1)
-        if t > T['op']:
-            k = t - T['op']; x = W * .72 + 700 * (1 - eo(k / .4)) + 900 * out
-            blit(f, P['op16'], x, H * .72 + 14 * math.sin(t * 2 + 1), 1, 1, -12 * (1 - eo(k / .4)) + 4)
-            blit(f, S['op'], x - 40, H * .83, ebk(k / .35) * .72, 1)
-    # S2 carousel: كل جديد عالم TCG
-    if T['new'] - .1 <= t < T['box'] + .15:
-        lt = t - T['new']; out = eio((t - T['box'] + .05) / .25)
-        n = len(CAR); spin = lt * 1.15 + 1.6 * (1 - eo(lt / .6))
-        items = []
-        for i, nm in enumerate(CAR):
-            a = 2 * math.pi * i / n + spin; z = math.cos(a); x = W / 2 + math.sin(a) * 400
-            items.append((z, x, nm, a))
-        for z, x, nm, a in sorted(items):
-            s = (.62 + .38 * (z + 1) / 2) * eo(lt / .35);
-            spr = persp(P[nm], -math.degrees(math.sin(a)) * 35, s)
-            blit(f, spr, x, H * .53 + (1 - z) * -40 + 1400 * out, 1, .35 + .65 * (z + 1) / 2)
-        blit(f, S['new1'], W / 2, H * .17 - 800 * out, 1 + 1.2 * (1 - eo(lt / .18)), min(1, lt / .08))
-        if t > T['world']:
-            k = t - T['world']; blit(f, S['new2'], W / 2 + 130 + 600 * (1 - eo(k / .3)), H * .27 - 800 * out, 1, eo(k / .2)); blit(f, S['tcg2'], W / 2 - 170 - 600 * (1 - eo(k / .3)), H * .27 - 800 * out, 1, eo(k / .2))
+            k = t - T['boxq']; blit(f, S['q2'], W / 2, H * .41 - 900 * out, 1 + 1.4 * (1 - eo(k / .18)), min(1, k / .08))
+            blit(f, S['tcg'], W / 2, H * .53 - 900 * out, ebk((k - .25) / .3), 1)
+            for i, nm in enumerate(['celeb', 'op16', 'ygo']):
+                kk = eo((k - .1 - i * .08) / .4); x = W / 2 + (i - 1) * 330
+                blit(f, P[nm], x, H * .75 + 700 * (1 - kk) + 1200 * out, .62, 1, (i - 1) * 8)
+    # S2 series rapid fire
+    if T['s0'] - .05 <= t < T['box'] + .15:
+        out = eio((t - T['box'] + .05) / .25)
+        if t < T['all']:
+            idx = max(i for i in range(7) if t >= T['s%d' % i] - .05)
+            k = t - T['s%d' % idx]; nm, col, img = SER[idx]
+            nxt = T['s%d' % (idx + 1)] if idx < 6 else T['all']
+            leave = eio((t - nxt + .08) / .1)
+            if img: blit(f, P[img], W / 2, H * .52 + 10 * math.sin(t * 3), ebk(k / .3) * .95 * (1 - .3 * leave), 1 - leave, 4 * math.sin(idx * 2.1))
+            else:
+                rr = int(120 + 380 * eo(k / .45)); cv2.circle(f, (W // 2, int(H * .52)), rr, col[::-1], max(1, int(16 * (1 - eo(k / .45)))), cv2.LINE_AA)
+                blit(f, CBK, W / 2, H * .52, ebk(k / .3) * (1 - .3 * leave), 1 - leave, -6 + 12 * (idx % 2))
+            blit(f, SN[idx], W / 2, H * .25, (1 + 1.3 * (1 - eo(k / .14))) * (1 - .2 * leave), min(1, k / .05) * (1 - leave))
+            # progress dots
+            for j in range(7):
+                cv2.circle(f, (int(W / 2 + (j - 3) * 46), int(H * .84)), 11 if j == idx else 7, (SER[j][1][::-1] if j <= idx else (120, 100, 140)), -1, cv2.LINE_AA)
+        else:
+            k = t - T['all']
+            blit(f, S['all'], W / 2, H * .17 - 900 * out, 1 + 1.4 * (1 - eo(k / .16)), min(1, k / .06))
+            for j in range(7):
+                r, c = divmod(j, 2) if j < 6 else (3, .5)
+                x = W / 2 + (c - .5) * 470; y = H * .3 + r * 135
+                kk = ebk((k - .05 - j * .05) / .3)
+                blit(f, SNC[j], x + 1200 * out * (1 if c else -1), y, kk, 1)
+            for i, nm in enumerate(['celeb', 'op16', 'naruto']):
+                kk = eo((k - .2 - i * .08) / .4); x = W / 2 + (i - 1) * 330
+                blit(f, P[nm], x, H * .84 + 600 * (1 - kk) + 1200 * out, .55, 1, (i - 1) * 8)
     # S3 word slams بوكسات / باكات / كل إصدار جديد
     if T['box'] <= t < T['ship'] + .15:
         out = eio((t - T['ship'] + .05) / .25)
-        for key, wk, pk, side in (('box', 'w_box', 'chaos_etb', -1), ('pack', 'w_pack', 'chaos_pack', 1)):
+        for key, wk, pk, side in (('box', 'w_box', 'celeb2', -1), ('pack', 'w_pack', 'celeb2', 1)):
             if t >= T[key]:
                 nxt = T['pack'] if key == 'box' else T['rel']
                 k = t - T[key]; leave = eio((t - nxt + .02) / .22)
@@ -215,8 +236,6 @@ def render(t):
                 kk = eo((k - i * .08) / .4); x = W / 2 + (i - 1) * 320
                 blit(f, P[nm], x, H * .5 + 900 * (1 - kk) + 1400 * out + (40 if i != 1 else -20), .78 if i != 1 else .95, 1, (i - 1) * 8 * kk)
             blit(f, S['w_new'], W / 2, H * .2 - 900 * out, 1 + 1.2 * (1 - eo(k / .18)), min(1, k / .08))
-            for i, c in enumerate(CHIPS):
-                if k > .35 + i * .1: blit(f, c, W / 2 + (.5 - i) * 300, H * .8 + 1400 * out, ebk((k - .35 - i * .1) / .3), 1)
     # S4 shipping
     if T['ship'] - .05 <= t < T['cta'] + .15:
         lt = t - T['ship']; out = eio((t - T['cta'] + .05) / .25)
@@ -234,7 +253,7 @@ def render(t):
                 cv2.circle(f, (int(x), int(y + 1400 * out)), 22, (255, 117, 142), -1, cv2.LINE_AA); cv2.circle(f, (int(x), int(y + 1400 * out)), 34, (255, 200, 230), 3, cv2.LINE_AA)
         seg = min(2, int(p * 3)); uu = min(1, p * 3 - seg); (x0, y0), (x1, y1) = pts[seg], pts[seg + 1]
         bx, by = x0 + (x1 - x0) * uu, y0 + (y1 - y0) * uu - 150
-        blit(f, P['chaos_box'], bx, by + 1400 * out, .42 * ebk(lt / .4), 1, 6 * math.sin(t * 5))
+        blit(f, P['celeb'], bx, by + 1400 * out, .42 * ebk(lt / .4), 1, 6 * math.sin(t * 5))
         blit(f, S['ship1'], W / 2, H * .2 - 900 * out, 1 + 1.2 * (1 - eo(lt / .18)), min(1, lt / .08))
         if lt > .45: blit(f, S['ship2'], W / 2, H * .31 - 900 * out, ebk((lt - .45) / .3), 1)
     # S5 CTA
@@ -259,12 +278,12 @@ def render(t):
         # end card
         if t > T['bookw'] + .6:
             k = t - T['bookw'] - .6
-            blit(f, P['op16'], W * .17, H * .9 + 200 * (1 - eo(k / .4)), .45, eo(k / .3), -8)
-            blit(f, P['chaos_box'], W * .83, H * .9 + 200 * (1 - eo(k / .4)), .5, eo(k / .3), 8)
+            blit(f, P['op16'], W * .2, H * .95 + 200 * (1 - eo(k / .4)), .38, eo(k / .3), -8)
+            blit(f, P['celeb'], W * .8, H * .95 + 200 * (1 - eo(k / .4)), .36, eo(k / .3), 8)
             blit(f, S['htr_sm'], W / 2, H * .76, ebk(k / .35), 1)
             blit(f, S['handle'], W / 2 + 70, H * .84, 1, eo((k - .2) / .3)); blit(f, S['jed'], W / 2 - 230, H * .84, 1, eo((k - .2) / .3))
     f = np.clip(f, 0, 255)
-    fl = env(t, 0.02, .25) * .8 + sum(env(t, h, .14) for h in (T['boxq'], T['box'], T['pack'], T['cta'])) * .35
+    fl = env(t, 0.02, .25) * .8 + sum(env(t, h, .14) for h in (T['boxq'], T['all'], T['box'], T['pack'], T['cta'])) * .35
     if fl > .01: f = f + (255 - f) * min(1, fl)
     f = f.astype(np.uint8)
     if sh > .5: f = cv2.warpAffine(f, np.float32([[1, 0, sh * math.sin(t * 93)], [0, 1, sh * math.cos(t * 71)]]), (W, H), borderMode=cv2.BORDER_REFLECT)
