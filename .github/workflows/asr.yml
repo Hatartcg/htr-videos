@@ -15,11 +15,12 @@ jobs:
           (sudo apt-get update -qq; sudo apt-get install -y -qq ffmpeg) >> $L 2>&1
           pip install -q faster-whisper >> $L 2>&1
           cat > /tmp/asr.py <<'P'
-          import sys, json
+          import sys, json, subprocess, numpy as np
           from faster_whisper import WhisperModel
           m = WhisperModel("medium", device="cpu", compute_type="int8")
           for f in sys.argv[1:]:
-              segs, info = m.transcribe(f, language="ar", word_timestamps=True, beam_size=5)
+              a = np.frombuffer(subprocess.run(["ffmpeg","-v","error","-i",f,"-ac","1","-ar","16000","-f","f32le","-"],capture_output=True).stdout, np.float32)
+              segs, info = m.transcribe(a, language="ar", word_timestamps=True, beam_size=5)
               out = [{"w": w.word, "s": round(w.start, 2), "e": round(w.end, 2), "p": round(w.probability, 2)} for s in segs for w in s.words]
               json.dump(out, open("fetch/asr/" + f.split("/")[-1] + ".json", "w"), ensure_ascii=False, indent=0)
               print(f, " ".join(f"{o['w']}({o['p']})" for o in out))
