@@ -43,3 +43,7 @@ Format: date | game | item
 2026-10-20 | Prices | HOOK: 1999 Base Set 1st Edition Holo Charizard PSA 10 sold $1,385,274 at Alt (Oct 8, 2026) — most expensive 1st Edition Charizard; PSA 10 pop 123
 2026-10-20 | Prices | Lugia EX Full Art 134 Plasma Storm PSA 10 sold $660,000 (w/ premium) at Fanatics Collect weekly auction (Oct 11-12, 2026); PSA 10 pop 21
 2026-10-20 | Tips | PSA 10 prices don't apply to raw/lower grades; verify cert number on the grading company's site before buying a slab
+2026-10-21 | Prices | HOOK: 2015 Japanese XY Promo Art Academy Fujishima "Raincoat" Pikachu PSA 10 sold $8.4M at Fanatics Collect (Sept 2026) — 2nd most expensive Pokémon card ever (after Pikachu Illustrator)
+2026-10-21 | Prices | 2002 Legendary Collection Reverse Holo Pikachu #86 PSA 10 sold $780,000 (Fanatics weekly, Sept 2026)
+2026-10-21 | Prices | 2006 Holon Phantoms Pikachu Gold Star #104 PSA 10 sold $480,000 (Sept 2026)
+2026-10-21 | Prices | 2010 Illusion's Zorua Design Contest promo (drawn by 6-year-old) sold $156,000 at Fanatics Collect (Sept 27, 2026)
