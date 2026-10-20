@@ -47,3 +47,6 @@ Format: date | game | item
 2026-10-21 | Prices | 2002 Legendary Collection Reverse Holo Pikachu #86 PSA 10 sold $780,000 (Fanatics weekly, Sept 2026)
 2026-10-21 | Prices | 2006 Holon Phantoms Pikachu Gold Star #104 PSA 10 sold $480,000 (Sept 2026)
 2026-10-21 | Prices | 2010 Illusion's Zorua Design Contest promo (drawn by 6-year-old) sold $156,000 at Fanatics Collect (Sept 27, 2026)
+2026-10-22 | Prices | HOOK: TCGplayer Best-Selling TCGs Q3 2026 (GMV, Jul 1–Sep 30): top 4 unchanged — MTG #1, Pokémon #2, One Piece #3 (4th straight quarter), Yu-Gi-Oh #4 (seller.tcgplayer.com Oct 14 + snapholo.com)
+2026-10-22 | Prices | Riftbound #5 (from #6, Vendetta release), Lorcana #6 (from #5); Gundam #7 (from #8), Pokémon Japan #8 (from #7)
+2026-10-22 | Prices | Union Arena #9 (from #11, after Chainsaw Man release), DBS Fusion World #10 (from #9)
