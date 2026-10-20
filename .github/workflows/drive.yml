@@ -15,7 +15,7 @@ jobs:
           (sudo apt-get update -qq; sudo apt-get install -y -qq ffmpeg) >> $L 2>&1; which ffmpeg >> $L 2>&1
           pip install -q gdown >> $L 2>&1 || pip install -q --break-system-packages gdown >> $L 2>&1
           while read -r name id; do [ -z "$name" ] && continue
-            gdown --fuzzy "https://drive.google.com/file/d/$id/view" -O /tmp/dl/$name.src >> $L 2>&1 || echo FAIL_DL $name >> $L
+            gdown "$id" -O /tmp/dl/$name.src >> $L 2>&1 || echo FAIL_DL $name >> $L
             ls -la /tmp/dl >> $L
             ffprobe -v error -show_entries format=duration:stream=width,height,codec_name -of compact /tmp/dl/$name.src >> $L 2>&1
             ffmpeg -v error -y -i /tmp/dl/$name.src -vf "scale='if(gt(iw,ih),min(1920,iw),-2)':'if(gt(iw,ih),-2,min(1920,ih))'" -c:v libx264 -preset veryfast -crf 23 -pix_fmt yuv420p -c:a aac -b:a 160k -movflags +faststart /tmp/dl/$name.mp4 >> $L 2>&1
