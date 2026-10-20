@@ -98,7 +98,9 @@ def prod(name, w, glow=PURP):
 # ---------- assets ----------
 P = {k: prod(k, w, g) for k, w, g in [
     ('celeb', 500, PURP), ('op16', 560, TEAL), ('destined_box', 400, PURP), ('pitch', 360, TEAL), ('celeb2', 620, LIL),
-    ('op17', 430, TEAL), ('greninja', 540, PURP), ('naruto', 300, TEAL), ('po', 470, TEAL), ('ygo', 430, PURP)]}
+    ('op17', 430, TEAL), ('greninja', 540, PURP), ('naruto', 300, TEAL), ('po', 470, TEAL), ('ygo', 520, PURP), ('rift', 520, TEAL), ('pk_op16', 400, TEAL), ('pk_rift', 260, TEAL), ('pk_eb05', 300, LIL)]}
+BOXW = ['celeb', 'op16', 'ygo', 'naruto', 'rift', 'destined_box', 'op17', 'pitch', 'po']
+PACKS = ['pk_rift', 'pk_op16', 'pk_eb05']
 CAR = ['destined_box', 'pitch', 'op17', 'greninja', 'naruto', 'celeb2']
 S = dict(
     htr=text_sprite('HTR', FB(300), grad=(WHITE, LIL), stroke=12, stroke_fill=DEEP, glow=PURP, glow_r=34),
@@ -126,7 +128,7 @@ S = dict(
     wm=text_sprite('HTR', FB(64), grad=(WHITE, LIL), stroke=4, stroke_fill=DEEP, glow=PURP, glow_r=10),
 )
 SER = [('POKÉMON', (110, 170, 255), 'celeb'), ('ONE PIECE', (230, 60, 60), 'op16'), ('YU-GI-OH!', (200, 120, 255), 'ygo'),
-       ('DRAGON BALL', (255, 140, 40), None), ('NARUTO', (255, 150, 30), 'naruto'), ('UNION ARENA', (240, 60, 90), None), ('RIFTBOUND', (90, 200, 255), None)]
+       ('DRAGON BALL', (255, 140, 40), None), ('NARUTO', (255, 150, 30), 'naruto'), ('RIFTBOUND', (90, 200, 255), 'rift')]
 SN = [text_sprite(n, FB(118 if len(n) < 10 else 96), grad=(WHITE, c), stroke=8, stroke_fill=DEEP, glow=c, glow_r=24) for n, c, _ in SER]
 SNC = [pill(n, FB(44), (34, 22, 70), border=c + (255,)) for n, c, _ in SER]
 def card_back(w=360):
@@ -173,7 +175,7 @@ def background(t):
         cv2.circle(f, (int(x), int(yy_)), int(r), (255, 235, 245), -1, cv2.LINE_AA) if a > .7 else None
     return f
 
-HITS = [T['hook'], T['boxq']] + [T['s%d' % i] for i in range(7)] + [T['all'], T['box'], T['pack'], T['rel'], T['ship'], T['cta'], T['btn']]
+HITS = [T['hook'], T['boxq']] + [T['s%d' % i] for i in range(6)] + [T['all'], T['box'], T['pack'], T['rel'], T['ship'], T['cta'], T['btn']]
 def render(t):
     f = background(t).astype(np.float32)
     sh = sum(env(t, h, .25) for h in HITS) * 12
@@ -198,9 +200,9 @@ def render(t):
     if T['s0'] - .05 <= t < T['box'] + .15:
         out = eio((t - T['box'] + .05) / .25)
         if t < T['all']:
-            idx = max(i for i in range(7) if t >= T['s%d' % i] - .05)
+            idx = max(i for i in range(6) if t >= T['s%d' % i] - .05)
             k = t - T['s%d' % idx]; nm, col, img = SER[idx]
-            nxt = T['s%d' % (idx + 1)] if idx < 6 else T['all']
+            nxt = T['s%d' % (idx + 1)] if idx < 5 else T['all']
             leave = eio((t - nxt + .08) / .1)
             if img: blit(f, P[img], W / 2, H * .52 + 10 * math.sin(t * 3), ebk(k / .3) * .95 * (1 - .3 * leave), 1 - leave, 4 * math.sin(idx * 2.1))
             else:
@@ -208,13 +210,13 @@ def render(t):
                 blit(f, CBK, W / 2, H * .52, ebk(k / .3) * (1 - .3 * leave), 1 - leave, -6 + 12 * (idx % 2))
             blit(f, SN[idx], W / 2, H * .25, (1 + 1.3 * (1 - eo(k / .14))) * (1 - .2 * leave), min(1, k / .05) * (1 - leave))
             # progress dots
-            for j in range(7):
-                cv2.circle(f, (int(W / 2 + (j - 3) * 46), int(H * .84)), 11 if j == idx else 7, (SER[j][1][::-1] if j <= idx else (120, 100, 140)), -1, cv2.LINE_AA)
+            for j in range(6):
+                cv2.circle(f, (int(W / 2 + (j - 2.5) * 46), int(H * .84)), 11 if j == idx else 7, (SER[j][1][::-1] if j <= idx else (120, 100, 140)), -1, cv2.LINE_AA)
         else:
             k = t - T['all']
             blit(f, S['all'], W / 2, H * .17 - 900 * out, 1 + 1.4 * (1 - eo(k / .16)), min(1, k / .06))
-            for j in range(7):
-                r, c = divmod(j, 2) if j < 6 else (3, .5)
+            for j in range(6):
+                r, c = divmod(j, 2)
                 x = W / 2 + (c - .5) * 470; y = H * .3 + r * 135
                 kk = ebk((k - .05 - j * .05) / .3)
                 blit(f, SNC[j], x + 1200 * out * (1 if c else -1), y, kk, 1)
@@ -224,12 +226,21 @@ def render(t):
     # S3 word slams بوكسات / باكات / كل إصدار جديد
     if T['box'] <= t < T['ship'] + .15:
         out = eio((t - T['ship'] + .05) / .25)
-        for key, wk, pk, side in (('box', 'w_box', 'celeb2', -1), ('pack', 'w_pack', 'celeb2', 1)):
-            if t >= T[key]:
-                nxt = T['pack'] if key == 'box' else T['rel']
-                k = t - T[key]; leave = eio((t - nxt + .02) / .22)
-                blit(f, P[pk], W / 2 + side * 900 * leave, H * .47 + 10 * math.sin(t * 3), ebk(k / .4) * (1 + .03 * math.sin(t * 6)), 1 - leave, side * -5)
-                blit(f, S[wk], W / 2 - side * 900 * leave, H * .2, 1 + 1.6 * (1 - eo(k / .16)), min(1, k / .06) * (1 - leave))
+        if T['box'] <= t:
+            k = t - T['box']; leave = eio((t - T['pack'] + .02) / .22)
+            for i, nm in enumerate(BOXW):
+                r, c = divmod(i, 3); kk = ebk((k - i * .045) / .3)
+                x = W / 2 + (c - 1) * 335 - 1100 * leave; y = H * .36 + r * 310 + 8 * math.sin(t * 3 + i)
+                hh, ww = P[nm].shape[:2]; sc = min(300 / (ww - 140), 250 / (hh - 140))
+                blit(f, P[nm], x, y, kk * sc, 1, (c - 1) * -6)
+            blit(f, S['w_box'], W / 2 + 1100 * leave, H * .15, 1 + 1.6 * (1 - eo(k / .16)), min(1, k / .06) * (1 - leave))
+        if t >= T['pack']:
+            k = t - T['pack']; leave = eio((t - T['rel'] + .02) / .22)
+            for i, nm in enumerate(PACKS):
+                j = i - (len(PACKS) - 1) / 2; kk = ebk((k - abs(j) * .07) / .4)
+                hh, ww = P[nm].shape[:2]; sc = min(330 / (ww - 140), 520 / (hh - 140))
+                blit(f, P[nm], W / 2 + j * 340 * kk + 1100 * leave, H * .55 + abs(j) ** 1.5 * 50 - 900 * (1 - eo((k - abs(j) * .07) / .35)), sc, 1, -j * 9 * kk)
+            blit(f, S['w_pack'], W / 2 - 1100 * leave, H * .2, 1 + 1.6 * (1 - eo(k / .16)), min(1, k / .06) * (1 - leave))
         if t >= T['rel']:
             k = t - T['rel']
             for i, nm in enumerate(['pitch', 'po', 'destined_box']):
