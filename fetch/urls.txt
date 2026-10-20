@@ -1,2 +1,5 @@
-oh_sitemap2.xml https://otakkuhaveen.com/ar/sitemap-2.xml
-oh_sitemap1.xml https://otakkuhaveen.com/ar/sitemap-1.xml
+ohy_1.jpg https://cdn.salla.sa/NKNagy/df4dbc60-7033-4fb6-8868-c36d45831aa5-563.04985337243x1000-PlRpsIQIdsClMmMFhtYrKpcQqnCN3xI76uPCVoOO.jpg
+ohy_2.jpg https://cdn.salla.sa/NKNagy/50caab41-7c3f-4cd1-97ca-31d2eb5c824e-666.66666666667x1000-u2KB4eZx52yFltUVc1FxuKOhm3M0GbDYKQvK07sY.jpg
+ohy_3.jpg https://cdn.salla.sa/NKNagy/a8c3f146-3c9c-4b9e-b47c-76751bffd7a3-673.36683417085x1000-r8ObDcVqzY9hgDhdKZ2fx1kAWSQv7ktIzbDjW99Y.jpg
+ohy_4.jpg https://cdn.salla.sa/NKNagy/7fb52499-a184-41ed-927f-beae240eb073-594.08866995074x1000-YUXpi0ewt9b1axVfrP29sty3lTUXWbQWmwzmpTlg.jpg
+ohy_5.jpg https://cdn.salla.sa/NKNagy/04e7f0b6-e822-4aa6-aa20-748568271352-674.4966442953x1000-hVbywceu82dziOQbE1ujnDkAKVmUKDHkQ4doji2I.jpg
