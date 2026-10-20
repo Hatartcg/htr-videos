@@ -1,0 +1,29 @@
+name: asr-check
+on:
+  push:
+    paths: ['fetch/asr.txt']
+permissions:
+  contents: write
+jobs:
+  asr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          set +e
+          mkdir -p fetch/asr; L=fetch/asr/log.txt; date > $L
+          (sudo apt-get update -qq; sudo apt-get install -y -qq ffmpeg) >> $L 2>&1
+          pip install -q faster-whisper >> $L 2>&1
+          cat > /tmp/asr.py <<'P'
+          import sys, json
+          from faster_whisper import WhisperModel
+          m = WhisperModel("medium", device="cpu", compute_type="int8")
+          for f in sys.argv[1:]:
+              segs, info = m.transcribe(f, language="ar", word_timestamps=True, beam_size=5)
+              out = [{"w": w.word, "s": round(w.start, 2), "e": round(w.end, 2), "p": round(w.probability, 2)} for s in segs for w in s.words]
+              json.dump(out, open("fetch/asr/" + f.split("/")[-1] + ".json", "w"), ensure_ascii=False, indent=0)
+              print(f, " ".join(f"{o['w']}({o['p']})" for o in out))
+          P
+          sed -i 's/^          //' /tmp/asr.py; python3 /tmp/asr.py $(sed 's#^#fetch/#' fetch/asr.txt) >> $L 2>&1
+          git config user.name "Hatartcg"; git config user.email "hseyam.m@gmail.com"
+          git add -A fetch/asr && git commit -m "asr check" && git push
