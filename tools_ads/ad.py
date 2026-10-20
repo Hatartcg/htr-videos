@@ -128,7 +128,7 @@ S = dict(
     wm=text_sprite('HTR', FB(64), grad=(WHITE, LIL), stroke=4, stroke_fill=DEEP, glow=PURP, glow_r=10),
 )
 SER = [('POKÉMON', (110, 170, 255), 'celeb'), ('ONE PIECE', (230, 60, 60), 'op16'), ('YU-GI-OH!', (200, 120, 255), 'ygo'),
-       ('DRAGON BALL', (255, 140, 40), None), ('NARUTO', (255, 150, 30), 'naruto'), ('RIFTBOUND', (90, 200, 255), 'rift')]
+       ('NARUTO', (255, 150, 30), 'naruto'), ('RIFTBOUND', (90, 200, 255), 'rift')]
 SN = [text_sprite(n, FB(118 if len(n) < 10 else 96), grad=(WHITE, c), stroke=8, stroke_fill=DEEP, glow=c, glow_r=24) for n, c, _ in SER]
 SNC = [pill(n, FB(44), (34, 22, 70), border=c + (255,)) for n, c, _ in SER]
 def card_back(w=360):
@@ -175,7 +175,7 @@ def background(t):
         cv2.circle(f, (int(x), int(yy_)), int(r), (255, 235, 245), -1, cv2.LINE_AA) if a > .7 else None
     return f
 
-HITS = [T['hook'], T['boxq']] + [T['s%d' % i] for i in range(6)] + [T['all'], T['box'], T['pack'], T['rel'], T['ship'], T['cta'], T['btn']]
+HITS = [T['hook'], T['boxq']] + [T['s%d' % i] for i in range(5)] + [T['all'], T['box'], T['pack'], T['rel'], T['ship'], T['cta'], T['btn']]
 def render(t):
     f = background(t).astype(np.float32)
     sh = sum(env(t, h, .25) for h in HITS) * 12
@@ -200,9 +200,9 @@ def render(t):
     if T['s0'] - .05 <= t < T['box'] + .15:
         out = eio((t - T['box'] + .05) / .25)
         if t < T['all']:
-            idx = max(i for i in range(6) if t >= T['s%d' % i] - .05)
+            idx = max(i for i in range(5) if t >= T['s%d' % i] - .05)
             k = t - T['s%d' % idx]; nm, col, img = SER[idx]
-            nxt = T['s%d' % (idx + 1)] if idx < 5 else T['all']
+            nxt = T['s%d' % (idx + 1)] if idx < 4 else T['all']
             leave = eio((t - nxt + .08) / .1)
             if img: blit(f, P[img], W / 2, H * .52 + 10 * math.sin(t * 3), ebk(k / .3) * .95 * (1 - .3 * leave), 1 - leave, 4 * math.sin(idx * 2.1))
             else:
@@ -210,13 +210,13 @@ def render(t):
                 blit(f, CBK, W / 2, H * .52, ebk(k / .3) * (1 - .3 * leave), 1 - leave, -6 + 12 * (idx % 2))
             blit(f, SN[idx], W / 2, H * .25, (1 + 1.3 * (1 - eo(k / .14))) * (1 - .2 * leave), min(1, k / .05) * (1 - leave))
             # progress dots
-            for j in range(6):
-                cv2.circle(f, (int(W / 2 + (j - 2.5) * 46), int(H * .84)), 11 if j == idx else 7, (SER[j][1][::-1] if j <= idx else (120, 100, 140)), -1, cv2.LINE_AA)
+            for j in range(5):
+                cv2.circle(f, (int(W / 2 + (j - 2) * 46), int(H * .84)), 11 if j == idx else 7, (SER[j][1][::-1] if j <= idx else (120, 100, 140)), -1, cv2.LINE_AA)
         else:
             k = t - T['all']
             blit(f, S['all'], W / 2, H * .17 - 900 * out, 1 + 1.4 * (1 - eo(k / .16)), min(1, k / .06))
-            for j in range(6):
-                r, c = divmod(j, 2)
+            for j in range(5):
+                r, c = divmod(j, 2) if j < 4 else (2, .5)
                 x = W / 2 + (c - .5) * 470; y = H * .3 + r * 135
                 kk = ebk((k - .05 - j * .05) / .3)
                 blit(f, SNC[j], x + 1200 * out * (1 if c else -1), y, kk, 1)
