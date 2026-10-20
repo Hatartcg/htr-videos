@@ -1,4 +1,4 @@
-Tue Oct 20 16:20:15 UTC 2026
+Tue Oct 20 16:45:15 UTC 2026
 Selecting previously unselected package libva2:amd64.
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 214410 files and directories currently installed.)
 Preparing to unpack .../00-libva2_2.20.0-2ubuntu0.2_amd64.deb ...
@@ -413,29 +413,27 @@ No user sessions are running outdated binaries.
 
 No VM guests are running outdated hypervisor (qemu) binaries on this host.
 /usr/bin/ffmpeg
-Failed to retrieve file url:
-
-	Cannot retrieve the public link of the file. You may need to change
-	the permission to 'Anyone with the link', or have had many accesses.
-	Check FAQ in https://github.com/wkentaro/gdown?tab=readme-ov-file#faq.
-
-You may still be able to access the file from the browser:
-
-	https://drive.google.com/uc?id=10kqD2GeDheqcpaRnDlzZsFNbjWp4eSV2
-
-but Gdown can't. Please check connections and permissions.
-FAIL_DL img9704
-total 8
-drwxr-xr-x  2 runner runner 4096 Oct 20 16:20 .
-drwxrwxrwt 14 root   root   4096 Oct 20 16:20 ..
-/tmp/dl/img9704.src: No such file or directory
-[in#0 @ 0x55790e600f00] Error opening input: No such file or directory
-Error opening input file /tmp/dl/img9704.src.
-Error opening input files: No such file or directory
-[in#0 @ 0x55746db05e80] Error opening input: No such file or directory
-Error opening input file /tmp/dl/img9704.mp4.
-Error opening input files: No such file or directory
-total 44
-drwxr-xr-x 2 runner runner  4096 Oct 20 16:20 .
-drwxr-xr-x 5 runner runner 12288 Oct 20 16:20 ..
--rw-r--r-- 1 runner runner 26027 Oct 20 16:20 log.txt
+Downloading...
+From (original): https://drive.google.com/uc?id=10kqD2GeDheqcpaRnDlzZsFNbjWp4eSV2
+From (redirected): https://drive.google.com/uc?id=10kqD2GeDheqcpaRnDlzZsFNbjWp4eSV2&confirm=t&uuid=a20ecc9e-73c0-460e-bbd9-edaaba4ca3a4
+To: /tmp/dl/img9704.src
+  0%|          | 0.00/765M [00:00<?, ?B/s]  0%|          | 524k/765M [00:00<02:33, 4.98MB/s]  1%|          | 9.44M/765M [00:00<00:19, 39.2MB/s]  2%|▏         | 13.1M/765M [00:00<00:26, 28.0MB/s]  3%|▎         | 19.9M/765M [00:00<00:27, 26.8MB/s]  4%|▍         | 28.8M/765M [00:00<00:21, 34.2MB/s]  5%|▌         | 38.3M/765M [00:01<00:19, 37.1MB/s]  6%|▌         | 47.2M/765M [00:01<00:15, 45.6MB/s]  7%|▋         | 52.4M/765M [00:01<00:17, 41.6MB/s]  7%|▋         | 57.1M/765M [00:01<00:16, 42.5MB/s]  8%|▊         | 63.4M/765M [00:01<00:17, 41.2MB/s]  9%|▉         | 68.2M/765M [00:01<00:18, 37.6MB/s] 10%|█         | 77.6M/765M [00:01<00:14, 48.5MB/s] 11%|█         | 82.8M/765M [00:02<00:14, 46.8MB/s] 12%|█▏        | 88.1M/765M [00:02<00:14, 45.9MB/s] 12%|█▏        | 93.3M/765M [00:02<00:17, 39.2MB/s] 14%|█▎        | 104M/765M [00:02<00:13, 50.6MB/s]  15%|█▍        | 113M/765M [00:02<00:12, 50.4MB/s] 16%|█▋        | 125M/765M [00:02<00:10, 61.9MB/s] 17%|█▋        | 132M/765M [00:03<00:12, 49.4MB/s] 19%|█▉        | 145M/765M [00:03<00:09, 65.5MB/s] 20%|█▉        | 153M/765M [00:03<00:17, 35.4MB/s] 21%|██▏       | 164M/765M [00:03<00:14, 42.2MB/s] 23%|██▎       | 172M/765M [00:03<00:12, 45.9MB/s] 24%|██▍       | 186M/765M [00:04<00:09, 60.5MB/s] 25%|██▌       | 195M/765M [00:04<00:08, 64.6MB/s] 27%|██▋       | 209M/765M [00:04<00:07, 79.4MB/s] 29%|██▊       | 219M/765M [00:04<00:06, 82.0MB/s] 30%|██▉       | 229M/765M [00:04<00:06, 82.0MB/s] 32%|███▏      | 243M/765M [00:04<00:05, 90.6MB/s] 33%|███▎      | 253M/765M [00:04<00:05, 90.1MB/s] 34%|███▍      | 262M/765M [00:04<00:06, 74.3MB/s] 36%|███▌      | 277M/765M [00:05<00:06, 72.4MB/s] 38%|███▊      | 292M/765M [00:05<00:05, 87.6MB/s] 39%|███▉      | 301M/765M [00:05<00:05, 77.7MB/s] 41%|████      | 310M/765M [00:05<00:06, 71.1MB/s] 42%|████▏     | 318M/765M [00:05<00:07, 58.2MB/s] 43%|████▎     | 325M/765M [00:06<00:08, 50.6MB/s] 44%|████▍     | 338M/765M [00:06<00:06, 66.0MB/s] 45%|████▌     | 346M/765M [00:06<00:06, 63.7MB/s] 47%|████▋     | 360M/765M [00:06<00:05, 77.6MB/s] 48%|████▊     | 369M/765M [00:06<00:05, 78.5MB/s] 50%|████▉     | 382M/765M [00:06<00:04, 90.5MB/s] 51%|█████▏    | 392M/765M [00:06<00:04, 88.0MB/s] 53%|█████▎    | 406M/765M [00:06<00:03, 97.8MB/s] 54%|█████▍    | 416M/765M [00:06<00:03, 92.7MB/s] 56%|█████▌    | 427M/765M [00:07<00:04, 83.6MB/s] 58%|█████▊    | 440M/765M [00:07<00:03, 93.7MB/s] 59%|█████▉    | 453M/765M [00:07<00:03, 103MB/s]  61%|██████    | 464M/765M [00:07<00:03, 87.9MB/s] 62%|██████▏   | 474M/765M [00:07<00:03, 87.7MB/s] 64%|██████▎   | 487M/765M [00:07<00:02, 98.3MB/s] 65%|██████▌   | 498M/765M [00:07<00:02, 95.6MB/s] 67%|██████▋   | 510M/765M [00:07<00:02, 101MB/s]  68%|██████▊   | 522M/765M [00:08<00:02, 105MB/s] 70%|██████▉   | 533M/765M [00:08<00:02, 86.5MB/s] 72%|███████▏  | 547M/765M [00:08<00:02, 101MB/s]  73%|███████▎  | 558M/765M [00:08<00:02, 89.2MB/s] 74%|███████▍  | 568M/765M [00:08<00:02, 89.0MB/s] 76%|███████▌  | 580M/765M [00:08<00:01, 94.0MB/s] 77%|███████▋  | 590M/765M [00:08<00:01, 89.0MB/s] 78%|███████▊  | 599M/765M [00:09<00:02, 66.0MB/s] 80%|███████▉  | 610M/765M [00:09<00:02, 72.6MB/s] 81%|████████  | 619M/765M [00:09<00:02, 58.5MB/s] 83%|████████▎ | 635M/765M [00:09<00:01, 75.1MB/s] 84%|████████▍ | 644M/765M [00:09<00:01, 73.9MB/s] 85%|████████▌ | 652M/765M [00:10<00:02, 44.0MB/s] 87%|████████▋ | 665M/765M [00:10<00:01, 57.5MB/s] 88%|████████▊ | 674M/765M [00:10<00:01, 53.8MB/s] 90%|████████▉ | 686M/765M [00:10<00:01, 65.4MB/s] 91%|█████████ | 695M/765M [00:10<00:01, 60.3MB/s] 92%|█████████▏| 707M/765M [00:10<00:00, 72.9MB/s] 94%|█████████▎| 716M/765M [00:10<00:00, 66.0MB/s] 95%|█████████▌| 729M/765M [00:11<00:00, 79.4MB/s] 97%|█████████▋| 739M/765M [00:11<00:00, 70.1MB/s] 98%|█████████▊| 747M/765M [00:11<00:00, 65.6MB/s] 99%|█████████▉| 760M/765M [00:11<00:00, 79.9MB/s]100%|██████████| 765M/765M [00:11<00:00, 66.5MB/s]
+total 746908
+drwxr-xr-x  2 runner runner      4096 Oct 20 16:45 .
+drwxrwxrwt 14 root   root        4096 Oct 20 16:45 ..
+-rw-------  1 runner runner 764825163 Oct 20 15:32 img9704.src
+stream|codec_name=hevc|width=2160|height=3840|
+stream|codec_name=aac
+stream|codec_name=unknown
+stream|codec_name=unknown
+stream|codec_name=unknown
+stream|codec_name=unknown
+stream|codec_name=unknown
+stream|codec_name=unknown
+stream|codec_name=unknown
+format|duration=57.511700
+total 19400
+drwxr-xr-x 2 runner runner     4096 Oct 20 16:47 .
+drwxr-xr-x 6 runner runner    12288 Oct 20 16:45 ..
+-rw-r--r-- 1 runner runner 19812947 Oct 20 16:47 img9704_00.mp4
+-rw-r--r-- 1 runner runner    30577 Oct 20 16:45 log.txt
