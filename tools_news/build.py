@@ -9,6 +9,7 @@ PK = (239, 68, 68); POCKET = (56, 189, 248); TEAL = (45, 212, 191); PURPLE = (16
 NAVY = (13, 17, 38)
 FB = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 def F(s): return ImageFont.truetype(FB, s)
+RAW = EP['segs']
 SEG = [(g['s'], g['e'], C(g['accent']), g.get('chip'), g['title'], g.get('sub', ''), g['img']) for g in EP['segs']]
 PX0, PY0, PX1, PY1 = 58, 300, 1022, 992
 def rounded(im, r):
@@ -19,7 +20,8 @@ IMDIR = EP.get('imgdir', 'img')
 IM = {}
 for g in EP['segs']:
     for k in (g['img'] if isinstance(g['img'], list) else [g['img']]):
-        if k not in ('title', 'cta') and k not in IM: IM[k] = Image.open(os.path.join(IMDIR, k)).convert('RGB')
+        if k not in ('title', 'cta', 'top10') and k not in IM: IM[k] = Image.open(os.path.join(IMDIR, k)).convert('RGB')
+    if g.get('blur') and g['blur'] not in IM: IM[g['blur']] = Image.open(os.path.join(IMDIR, g['blur'])).convert('RGB')
 CROPS = {}
 def card_img(k, maxw, maxh):
     if k == 'three':
@@ -37,6 +39,64 @@ def chip(img, s, acc, cy):
     d.rounded_rectangle((540 - w / 2, cy - 32, 540 + w / 2, cy + 32), 32, fill=acc); d.text((540 - (w - 60) / 2, cy - 26), s, font=f, fill=WHITE)
 def eo(x): x = min(max(x, 0), 1); return 1 - (1 - x) ** 3
 def ebk(x, s=1.7): x = min(max(x, 0), 1) - 1; return 1 + (s + 1) * x ** 3 + s * x ** 2
+
+def fmt_price(v): return '+$' + f'{int(v):,}'
+def dots(d, r, acc, cy=392):
+    n = 10; sp = 58; x0 = 540 - sp * (n - 1) / 2
+    for j in range(n):
+        num = n - j; cx = x0 + sp * j
+        on = num == r; done = r is not None and num > r
+        fill = acc if on else ((70, 76, 110) if done else (34, 38, 64))
+        rr = 24 if on else 19
+        d.ellipse((cx - rr, cy - rr, cx + rr, cy + rr), fill=fill)
+        f = F(24 if on else 20); w = d.textlength(str(num), font=f); d.text((cx - w / 2, cy - (15 if on else 13)), str(num), font=f, fill=WHITE if (on or done) else (120, 126, 160))
+def rank_panel(t, i, img, d):
+    g = RAW[i]; a = SEG[i][0]; acc = SEG[i][2]; lt = t - a; r = g.get('rank')
+    hf = F(30); d.text((96, 322), EP.get('rank_header', 'TOP 10'), font=hf, fill=(216, 180, 254))
+    rn = EP.get('rank_note', '')
+    if rn: w = d.textlength(rn, font=hf); d.text((984 - w, 322), rn, font=hf, fill=(148, 163, 184))
+    dots(d, r, acc)
+    if r is None:
+        f = F(170); w = d.textlength('TOP 10', font=f); k = ebk((lt - .1) / .5)
+        d.text((540 - w / 2, 470 + 40 * (1 - k)), 'TOP 10', font=f, fill=TEAL)
+        text_center(d, 540, 680, g['title'], 60, WHITE); text_center(d, 540, 770, g.get('sub', ''), 40, (125, 211, 252))
+        return img
+    cx, cy = 540, 625
+    c = rounded(fit(IM[g['img']], 860, 400), 18)
+    s = .82 + .18 * ebk((lt - .05) / .45); c = c.resize((max(1, int(c.width * s)), max(1, int(c.height * s))), Image.LANCZOS)
+    a_ = eo(lt / .25); c.putalpha(c.getchannel('A').point(lambda v: int(v * a_)))
+    if r == 1 and lt > .3:
+        gl = Image.new('RGBA', (W, H), (0, 0, 0, 0)); gd = ImageDraw.Draw(gl)
+        gd.rounded_rectangle((cx - 445, cy - 215, cx + 445, cy + 215), 30, fill=acc + (int(200 * eo((lt - .3) / .5)),))
+        img.alpha_composite(gl.filter(ImageFilter.GaussianBlur(22))); d = ImageDraw.Draw(img)
+    img.alpha_composite(c, (int(cx - c.width / 2), int(cy - c.height / 2)))
+    d = ImageDraw.Draw(img)
+    bx, by = 130, 450; kb = ebk((lt - .25) / .35)
+    if kb > 0:
+        rr = int(52 * kb); d.ellipse((bx - rr, by - rr, bx + rr, by + rr), fill=(124, 58, 237), outline=WHITE, width=4)
+        f = F(int(44 * kb) + 1); txt = '#' + str(r); w = d.textlength(txt, font=f); d.text((bx - w / 2, by - 27 * kb), txt, font=f, fill=WHITE)
+    def ct(x, y, s_, size, fill, maxw=430):
+        f = F(size); w = d.textlength(s_, font=f)
+        while w > maxw and size > 20: size -= 2; f = F(size); w = d.textlength(s_, font=f)
+        d.text((x - w / 2, y), s_, font=f, fill=fill)
+    ct(300, 838, 'أكثر من', 30, (196, 181, 253))
+    kp = eo((lt - .2) / .8); v = g['price'] * kp
+    v = round(v / 10) * 10 if kp < 1 else g['price']
+    ct(300, 878, fmt_price(v), 84, WHITE, 440)
+    ct(790, 846, g['name'], 44, WHITE, 420)
+    ct(790, 906, g.get('var', ''), 32, (252, 165, 165), 420)
+    ct(790, 950, g.get('num', ''), 26, (148, 163, 184), 420)
+    return img
+def hook_panel(t, i, img, d):
+    g = RAW[i]; a = SEG[i][0]; acc = SEG[i][2]; lt = t - a
+    chip(img, SEG[i][3], acc, 370); d = ImageDraw.Draw(img)
+    text_center(d, 540, 420, SEG[i][4], 62, WHITE)
+    c = fit(IM[g['blur']], 760, 380).filter(ImageFilter.GaussianBlur(14)); c = rounded(c, 16)
+    s = .85 + .15 * ebk((lt - .1) / .45); c = c.resize((int(c.width * s), int(c.height * s)), Image.LANCZOS)
+    img.alpha_composite(c, (int(540 - c.width / 2), int(760 - c.height / 2)))
+    pulse = 1 + .06 * math.sin(lt * 6); f = F(int(120 * pulse)); txt = '$???'; w = d.textlength(txt, font=f)
+    d.text((540 - w / 2, 760 - 75 * pulse), txt, font=f, fill=WHITE, stroke_width=6, stroke_fill=(30, 10, 40))
+    return img
 def panel(t, i):
     a, b, acc, ch, title, sub, key = SEG[i]; lt = t - a
     img = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(img)
@@ -45,6 +105,8 @@ def panel(t, i):
     if True:
         d.rounded_rectangle((828, 262, 968, 314), 26, fill=(14, 16, 32)); d.text((858, 266), 'جديد', font=F(32), fill=WHITE)
     k1 = eo(lt / .35)
+    if 'rank' in RAW[i] or RAW[i].get('img') == 'top10': return rank_panel(t, i, img, d)
+    if RAW[i].get('blur'): return hook_panel(t, i, img, d)
     if key == 'title':
         text_center(d, 540, 400, title, 84, WHITE)
         f = F(230); w = d.textlength('TCG', font=f); d.text((540 - w / 2, 500), 'TCG', font=f, fill=TEAL)
