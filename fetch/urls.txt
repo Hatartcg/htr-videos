@@ -1,1 +1,4 @@
-ad01_pkg.png https://world.digimoncard.com/images/products/pack/ad-01/img_pkg.png
+ad01_box_off.png https://world.digimoncard.com/images/products/pack/ad-01/img_box.png
+ad01_gn1.png https://cdn11.bigcommerce.com/s-ua4dd/images/stencil/1280x1280/products/345579/511378/BJP2848522__65239.1774566628.png?c=2
+ad01_gn2.png https://cdn11.bigcommerce.com/s-ua4dd/images/stencil/1280x1280/products/345579/499242/Gamenerdzimage9999-6052__99743.1770308247.png?c=2
+ad01_main.png https://world.digimoncard.com/images/products/pack/ad-01/img_main.png
