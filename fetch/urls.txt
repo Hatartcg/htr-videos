@@ -1,7 +1,5 @@
-ohp_sukuna.html https://otakkuhaveen.com/ar/هودي-سوكونا/p278283578
-ohp_slsword.html https://otakkuhaveen.com/ar/سيف-سولو-ليفلينج/p844492966
-ohp_slset.html https://otakkuhaveen.com/ar/مجموعة-سيوف-سولو-ليفلينج/p491049161
-ohp_dp11.html https://otakkuhaveen.com/ar/double-pack-set-vol-11/p21809351
-ohp_gem3.html https://otakkuhaveen.com/ar/gem-3/p1328540641
-ohp_ichigo.html https://otakkuhaveen.com/ar/سيف-ايتشيغو/p1264314516
-ohp_akaza.html https://otakkuhaveen.com/ar/هودي-اكازيا/p1354888910
+ohi_nar_a.jpg https://cdn.salla.sa/NKNagy/1894abaa-c92d-44c7-82bd-7a0bc32d122c-882.24637681159x1000-2h1FGQObsJ6Qqa53ehqH8mR8dhhlu17PnAd8qw6H.jpg
+ohi_sl_a.jpg https://cdn.salla.sa/NKNagy/02c0e041-e950-4d41-946f-a641aeb5b386-1000x1000-MQczw1jnywFMr7tE3bp100VSSQphVpcI75qHy7w6.jpg
+ohi_sl_b.jpg https://cdn.salla.sa/NKNagy/0b1c432a-1d0a-4a67-a1ab-eabbb076a152-1000x1000-RD7ex6uCc5mRLi0qPo65LkWG0VHWLRvQQJthBszu.jpg
+ohi_sl_c.jpg https://cdn.salla.sa/NKNagy/27a6515b-54b9-4f2c-854a-5430d7db3054-1000x1000-gRdvDVFnmAbUnsXZm37etMMASTNTTRc0kfBSkxsv.jpg
+ohi_sl1.jpg https://cdn.salla.sa/NKNagy/c849a8e5-5f9d-408b-974a-7a7f61102ddc-1000x1000-Tp33bR9P7UO2S8Gi98J55Via1F6rwItH81KSUlgK.jpg
