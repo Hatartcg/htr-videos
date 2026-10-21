@@ -1,5 +1,7 @@
-ohp_rift.html https://otakkuhaveen.com/ar/riftbound-spiritforged-booster-box/p338739419
-ohp_nar2.html https://otakkuhaveen.com/ar/naruto-mythos-box-2nd-edition/p1296766591
-ohp_nar1.html https://otakkuhaveen.com/ar/naruto-mythos-tcg-set-01/p1605634853
-ohp_op14.html https://otakkuhaveen.com/ar/one-piece-tcg-op14-english-edition/p1074354574
-ohp_zsword.html https://otakkuhaveen.com/ar/سيف-زورو/p2061334474
+ohp_sukuna.html https://otakkuhaveen.com/ar/هودي-سوكونا/p278283578
+ohp_slsword.html https://otakkuhaveen.com/ar/سيف-سولو-ليفلينج/p844492966
+ohp_slset.html https://otakkuhaveen.com/ar/مجموعة-سيوف-سولو-ليفلينج/p491049161
+ohp_dp11.html https://otakkuhaveen.com/ar/double-pack-set-vol-11/p21809351
+ohp_gem3.html https://otakkuhaveen.com/ar/gem-3/p1328540641
+ohp_ichigo.html https://otakkuhaveen.com/ar/سيف-ايتشيغو/p1264314516
+ohp_akaza.html https://otakkuhaveen.com/ar/هودي-اكازيا/p1354888910
