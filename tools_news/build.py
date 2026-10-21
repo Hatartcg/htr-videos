@@ -61,37 +61,43 @@ def rank_panel(t, i, img, d):
         d.text((540 - w / 2, 470 + 40 * (1 - k)), 'TOP 10', font=f, fill=TEAL)
         text_center(d, 540, 680, g['title'], 60, WHITE); text_center(d, 540, 770, g.get('sub', ''), 40, (125, 211, 252))
         return img
-    cx, cy = 540, 625
-    c = rounded(fit(IM[g['img']], 860, 400), 18)
-    s = .82 + .18 * ebk((lt - .05) / .45); c = c.resize((max(1, int(c.width * s)), max(1, int(c.height * s))), Image.LANCZOS)
-    a_ = eo(lt / .25); c.putalpha(c.getchannel('A').point(lambda v: int(v * a_)))
+    ch_ = 520; c = rounded(fit(IM[g['img']], 380, ch_), 18); cw_ = c.width
+    cx, cy = 300, 712 + 4 * math.sin(t * 2)
+    k = ebk((lt - .05) / .45); sc = .82 + .18 * k
+    # composite card + ribbon on a local canvas so they scale together
+    pad = 40; L = Image.new('RGBA', (cw_ + 2 * pad, ch_ + 2 * pad), (0, 0, 0, 0)); L.alpha_composite(c, (pad, pad)); ld = ImageDraw.Draw(L)
+    y0, y1 = pad + int(ch_ * .385), pad + int(ch_ * .615)
+    ld.rectangle((pad - 22, y0, pad + cw_ + 22, y1), fill=acc + (255,)); ld.rectangle((pad - 22, y0, pad + cw_ + 22, y0 + 6), fill=WHITE); ld.rectangle((pad - 22, y1 - 6, pad + cw_ + 22, y1), fill=WHITE)
+    kp = eo((lt - .2) / .8); v = g['price'] * kp; v = round(v / 10) * 10 if kp < 1 else g['price']
+    f = F(26); tx = 'أكثر من'; w = ld.textlength(tx, font=f); ld.text((pad + cw_ / 2 - w / 2, y0 + 12), tx, font=f, fill=WHITE)
+    size = 64; f = F(size); txt = fmt_price(v)
+    while ld.textlength(txt, font=f) > cw_ - 10: size -= 4; f = F(size)
+    w = ld.textlength(txt, font=f); ld.text((pad + cw_ / 2 - w / 2, y0 + 44), txt, font=f, fill=WHITE, stroke_width=3, stroke_fill=(60, 10, 20))
+    L = L.resize((max(1, int(L.width * sc)), max(1, int(L.height * sc))), Image.LANCZOS)
+    a_ = eo(lt / .25); L.putalpha(L.getchannel('A').point(lambda v_: int(v_ * a_)))
     if r == 1 and lt > .3:
         gl = Image.new('RGBA', (W, H), (0, 0, 0, 0)); gd = ImageDraw.Draw(gl)
-        gd.rounded_rectangle((cx - 445, cy - 215, cx + 445, cy + 215), 30, fill=acc + (int(200 * eo((lt - .3) / .5)),))
-        img.alpha_composite(gl.filter(ImageFilter.GaussianBlur(22))); d = ImageDraw.Draw(img)
-    img.alpha_composite(c, (int(cx - c.width / 2), int(cy - c.height / 2)))
+        gd.rounded_rectangle((cx - cw_ / 2 - 18, cy - ch_ / 2 - 18, cx + cw_ / 2 + 18, cy + ch_ / 2 + 18), 30, fill=(250, 204, 21, 0) if False else acc + (int(220 * eo((lt - .3) / .5)),))
+        img.alpha_composite(gl.filter(ImageFilter.GaussianBlur(24)))
+    img.alpha_composite(L, (int(cx - L.width / 2), int(cy - L.height / 2)))
     d = ImageDraw.Draw(img)
-    bx, by = 130, 450; kb = ebk((lt - .25) / .35)
-    if kb > 0:
-        rr = int(52 * kb); d.ellipse((bx - rr, by - rr, bx + rr, by + rr), fill=(124, 58, 237), outline=WHITE, width=4)
-        f = F(int(44 * kb) + 1); txt = '#' + str(r); w = d.textlength(txt, font=f); d.text((bx - w / 2, by - 27 * kb), txt, font=f, fill=WHITE)
     def ct(x, y, s_, size, fill, maxw=430):
         f = F(size); w = d.textlength(s_, font=f)
         while w > maxw and size > 20: size -= 2; f = F(size); w = d.textlength(s_, font=f)
         d.text((x - w / 2, y), s_, font=f, fill=fill)
-    ct(300, 838, 'أكثر من', 30, (196, 181, 253))
-    kp = eo((lt - .2) / .8); v = g['price'] * kp
-    v = round(v / 10) * 10 if kp < 1 else g['price']
-    ct(300, 878, fmt_price(v), 84, WHITE, 440)
-    ct(790, 846, g['name'], 44, WHITE, 420)
-    ct(790, 906, g.get('var', ''), 32, (252, 165, 165), 420)
-    ct(790, 950, g.get('num', ''), 26, (148, 163, 184), 420)
+    rx = 765; kb = ebk((lt - .15) / .4)
+    if kb > 0:
+        rr = int(92 * kb); by = 560; d.ellipse((rx - rr, by - rr, rx + rr, by + rr), fill=(124, 58, 237), outline=WHITE, width=5)
+        f = F(int(84 * kb) + 1); txt = '#' + str(r); w = d.textlength(txt, font=f); d.text((rx - w / 2, by - 52 * kb), txt, font=f, fill=WHITE)
+    ct(rx, 690, g['name'], 46, WHITE, 400)
+    ct(rx, 752, g.get('var', ''), 34, (252, 165, 165), 400)
+    ct(rx, 804, g.get('num', ''), 30, (148, 163, 184), 400)
     return img
 def hook_panel(t, i, img, d):
     g = RAW[i]; a = SEG[i][0]; acc = SEG[i][2]; lt = t - a
     chip(img, SEG[i][3], acc, 370); d = ImageDraw.Draw(img)
     text_center(d, 540, 420, SEG[i][4], 62, WHITE)
-    c = fit(IM[g['blur']], 760, 380).filter(ImageFilter.GaussianBlur(14)); c = rounded(c, 16)
+    c = fit(IM[g['blur']], 330, 460).filter(ImageFilter.GaussianBlur(22)); c = rounded(c, 16)
     s = .85 + .15 * ebk((lt - .1) / .45); c = c.resize((int(c.width * s), int(c.height * s)), Image.LANCZOS)
     img.alpha_composite(c, (int(540 - c.width / 2), int(760 - c.height / 2)))
     pulse = 1 + .06 * math.sin(lt * 6); f = F(int(120 * pulse)); txt = '$???'; w = d.textlength(txt, font=f)

@@ -12,4 +12,6 @@ Builds a 1080x1920 episode in the fixed HTR news look (host character plate + to
 5. Render: `EP=episode.json python3 build.py stills 1 5 15` to check, then `python3 build.py 0 T out.mp4`, mix a light music bed ducked under the voice, mux.
 Example: see ep12 (2026-10-19).
 
-Top-10 countdown format (ep16): segs with "rank" (10→1), "price" (int, shown as +$N with count-up), "name", "var", "num", img = card crop (top ~36% of the official image, above the SAMPLE band). Intro seg img "top10"; hook seg can set "blur" to a crop for the "$???" teaser. EP keys: rank_header (Latin), rank_note (Arabic date). See ep16_top10_episode.json.
+Top-10 countdown format (ep16): segs with "rank" (10→1), "price" (int, shown as +$N with count-up), "name", "var", "num", img = full official card image; a price ribbon (accent color, 38.5%–61.5% of card height) covers the SAMPLE band — cards are shown whole, never cropped. Intro seg img "top10"; hook seg can set "blur" to a crop for the "$???" teaser. EP keys: rank_header (Latin), rank_note (Arabic date). See ep16_top10_episode.json.
+
+Voice: say set codes in English — write "OP seventeen" in the script, not "OP-17" (v4 reads the number in Arabic).
