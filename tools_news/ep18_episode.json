@@ -1,0 +1,10 @@
+{"total": 44.99, "date_label": "25 أكتوبر 2026", "imgdir": "img", "segs": [
+ {"s":0,"e":5.55,"accent":"#a855f7","chip":"Yu-Gi-Oh! · سعر السوق","title":"كرت من مجموعة أكتوبر","sub":"أكثر من 400 دولار","img":"bandit.jpg"},
+ {"s":5.55,"e":8.85,"accent":"#a855f7","title":"أخبار وأسعار","sub":"","img":"title"},
+ {"s":8.85,"e":16.0,"accent":"#a855f7","chip":"Yu-Gi-Oh! · Beyond the Brave","title":"The Great Gallant Bandit","sub":"Extended Art Starlight Rare","img":"bandit.jpg"},
+ {"s":16.0,"e":22.2,"accent":"#a855f7","chip":"Yu-Gi-Oh! · Beyond the Brave","title":"Red-Eyes Black Dragon Exceed","sub":"أكثر من 250 دولار","img":"redeyes.jpg"},
+ {"s":22.2,"e":27.15,"accent":"#a855f7","chip":"Yu-Gi-Oh! · Beyond the Brave","title":"CXyz Hope Chaos Barian Dragon","sub":"أكثر من 100 دولار","img":"barian.jpg"},
+ {"s":27.15,"e":30.95,"accent":"#a855f7","chip":"Yu-Gi-Oh! · Beyond the Brave","title":"Elemental Saga Doriado","sub":"أكثر من 90 دولار","img":"doriado.jpg"},
+ {"s":30.95,"e":35.05,"accent":"#a855f7","chip":"Yu-Gi-Oh! · سعر السوق","title":"أسعار السوق","sub":"بتاريخ 22 أكتوبر 2026","img":["redeyes.jpg","bandit.jpg","barian.jpg"]},
+ {"s":35.05,"e":40.1,"accent":"#14b8a6","chip":"نصيحة شراء","title":"تبي كرت معيّن؟","sub":"اشتره مفرد بدل ما تطارده بالباكات","img":"betb.jpg"},
+ {"s":40.1,"e":44.99,"accent":"#a855f7","title":"أي كرت تتمنى يطلع لك؟","sub":"اكتبه بالتعليقات","img":"cta"}]}

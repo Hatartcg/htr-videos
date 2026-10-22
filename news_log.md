@@ -50,8 +50,5 @@ Format: date | game | item
 2026-10-22 | Prices | HOOK: TCGplayer Best-Selling TCGs Q3 2026 (GMV, Jul 1–Sep 30): top 4 unchanged — MTG #1, Pokémon #2, One Piece #3 (4th straight quarter), Yu-Gi-Oh #4 (seller.tcgplayer.com Oct 14 + snapholo.com)
 2026-10-22 | Prices | Riftbound #5 (from #6, Vendetta release), Lorcana #6 (from #5); Gundam #7 (from #8), Pokémon Japan #8 (from #7)
 2026-10-22 | Prices | Union Arena #9 (from #11, after Chainsaw Man release), DBS Fusion World #10 (from #9)
-2026-10-23 | Pokémon TCG Pocket | HOOK: Dual Fusion (C1) out Oct 29, 2026 — first dual-type cards; Mega Mewtwo X ex = Psychic + Fighting (pokemon-zone + invenglobal/pokemongohub)
-2026-10-23 | Magic | Star Trek release Nov 13, 2026; 7 signed headliner cards (signed by actors), fewer than 250 copies each, in Collector Boosters (magic.wizards.com + nerdleagues)
-2026-10-23 | Riftbound | K/DA: Couture Collection $150 + S&H, 4 K/DA Legend cards; sold by drawing, registration Oct 27–30, 2026 (playriftbound.com FAQ + insider-gaming/riftcompare)
 2026-10-24 | Prices | HOOK (Top 10 format): OP-17 top pull Monkey.D.Luffy EB04-061 SP — eBay sales $8,700–17,000 (Sep 16–Oct 7, 2026, via PriceCharting), Cardmarket €11,700 → "sold for 8,000+ $"
 2026-10-24 | One Piece | Top 10 OP-17 cards by market price (Oct 21, 2026; shown as "more than" = floor of TCGplayer + PriceCharting + recent sales): #2 Rocks.D.Xebec OP17-118 SAA +$4,000; #3 Shanks OP17-022 Manga +$1,250; #4 Luffy OP17-079 Leader Super Parallel +$1,000; #5 Edward.Newgate OP17-005 Manga +$1,000; #6 Kaido OP17-062 Manga +$750; #7 Charlotte Linlin OP17-112 Manga +$650; #8 Luffy ST31-004 SP +$500; #9 Zoro EB04-007 SP +$350; #10 Shanks OP13-028 SP +$240
