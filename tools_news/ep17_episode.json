@@ -1,0 +1,10 @@
+{"total": 51.97, "date_label": "23 أكتوبر 2026", "imgdir": "img", "segs": [
+ {"s":0,"e":6.35,"accent":"#38bdf8","chip":"Pokémon TCG Pocket","title":"Dual Fusion","sub":"أول كروت بنوعين","img":"dfkey.jpg"},
+ {"s":6.35,"e":9.65,"accent":"#a855f7","title":"أخبار وأسعار","sub":"","img":"title"},
+ {"s":9.65,"e":16.25,"accent":"#38bdf8","chip":"Pokémon TCG Pocket","title":"Dual Fusion","sub":"تنزل 29 أكتوبر 2026","img":["dfpack_mewtwo.png","dfpack_pika.jpg"]},
+ {"s":16.25,"e":22.2,"accent":"#38bdf8","chip":"Pokémon TCG Pocket","title":"Mega Mewtwo X ex","sub":"سايكك + فايتنق مع بعض","img":"mewtwox.jpg"},
+ {"s":22.2,"e":26.5,"accent":"#f97316","chip":"Magic: The Gathering","title":"Star Trek","sub":"13 نوفمبر 2026","img":"st_pb.webp"},
+ {"s":26.5,"e":34.4,"accent":"#f97316","chip":"Magic: The Gathering","title":"7 كروت موقّعة","sub":"أقل من 250 نسخة لكل كرت","img":"st_cb.webp"},
+ {"s":34.4,"e":41.1,"accent":"#ec4899","chip":"Riftbound","title":"K/DA: Couture Collection","sub":"150 دولار · 4 كروت ليجند","img":"kda2.jpg"},
+ {"s":41.1,"e":45.32,"accent":"#ec4899","chip":"Riftbound","title":"البيع بالقرعة","sub":"التسجيل من 27 إلى 30 أكتوبر","img":"kda2.jpg"},
+ {"s":45.32,"e":51.97,"accent":"#a855f7","title":"وش أكثر شي متحمس له؟","sub":"اكتبه بالتعليقات","img":"cta"}]}
