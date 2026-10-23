@@ -3,8 +3,8 @@ import os, numpy as np
 from scipy.io import wavfile
 from scipy.signal import butter, lfilter, fftconvolve
 KEY = os.environ['OH']; D = f'/home/claude/work/{KEY}/'
-C = {'ygo': dict(DUR=15.3, T=(1.26, 2.48, 2.94, 4.77, 5.76, 7.66, 9.64, 11.85), bpm=142, seed=8,
-                 roots=[45, 41, 43, 40], bell=[[81, 84, 88, 84], [77, 81, 84, 81], [79, 83, 86, 83], [76, 79, 83, 88]], cnt=(5.76, 15))}[KEY]
+C = {'ygo': dict(DUR=15.6, T=(0.88, 2.84, 3.14, 5.56, 6.61, 8.35, 10.24, 12.42), bpm=142, seed=8,
+                 roots=[45, 41, 43, 40], bell=[[81, 84, 88, 84], [77, 81, 84, 81], [79, 83, 86, 83], [76, 79, 83, 88]], cnt=(6.61, 15))}[KEY]
 SR = 48000; DUR = C['DUR']; N = int(SR * DUR); rng = np.random.default_rng(C['seed'])
 VO = .5; T_GAME, T_PROD, T_NAME, T_F1, T_F2, T_F2b, T_PRICE, T_CTA = C['T']; B = 60 / C['bpm']
 mus = np.zeros((N, 2)); b808 = np.zeros(N); drm = np.zeros((N, 2)); sfx = np.zeros((N, 2)); kenv = np.zeros(N)

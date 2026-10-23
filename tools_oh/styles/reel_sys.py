@@ -8,7 +8,7 @@ KEY = os.environ['OH']; D = f'/home/claude/work/{KEY}/'
 VO = 0.5
 BLUE = (70, 170, 255); CY = (90, 230, 255)
 CFG = {
-    'sl': dict(TOTAL=14.4, T_GAME=1.3, T_PROD=2.62, T_NAME=3.3, T_F1=4.98, T_F1b=5.7, T_F2=6.46, T_PRICE=8.58, T_CTA=10.82,
+    'sl': dict(TOTAL=15.1, T_GAME=1.86, T_PROD=3.14, T_NAME=4.1, T_F1=5.82, T_F1b=6.38, T_F2=7.18, T_PRICE=9.34, T_CTA=11.62,
                game='SOLO LEVELING', name=['SWORD SET'], stats=[('خفيفة', .35), ('متينة', .92)], uses=['مثالية للعرض', 'وللكوسبلاي'],
                price='450', seed=13),
 }[KEY]
@@ -52,7 +52,7 @@ alt = Image.open(D + 'alt.png').convert('RGB'); ALT = item_img(alt, 420)
 
 W_NOTE = window(880, 560, '[ NOTIFICATION ]'); W_ITEM = window(900, 1040, '[ ITEM ACQUIRED ]')
 W_STAT = window(900, 1180, '[ STATUS ]'); W_SHOP = window(860, 1000, '[ SHOP ]')
-S = dict(ya=G('يا عشاق', FC(96)), game=G(CFG['game'], FA(150), glow=CY, gr=24),
+S = dict(ya=G('حس إنك صياد من رتبة', FC(80)), game=G('S-RANK', FA(190), glow=CY, gr=28),
          name=G(CFG['name'][0], FA(110), glow=CY), gname=G(CFG['game'], FA(64), fill=(200, 235, 255)),
          stats=[G(s, FC(84)) for s, _ in CFG['stats']], uses=[G(u, FC(80)) for u in CFG['uses']],
          price=G(CFG['price'], FA(330), glow=CY, gr=30), sar=G('ريال', FC(100)),

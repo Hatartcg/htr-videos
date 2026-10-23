@@ -8,8 +8,8 @@ KEY = os.environ['OH']; D = f'/home/claude/work/{KEY}/'
 VO = 0.5
 RED = (230, 30, 70)
 CFG = {
-    'suk': dict(TOTAL=15.0, T_GAME=1.22, T_PROD=2.58, T_NAME=2.98, T_F1=4.34, T_F1b=5.94, T_F2=7.7, T_PRICE=9.78, T_CTA=11.62,
-                game=['JUJUTSU', 'KAISEN'], name=['SUKUNA', 'HOODIE'], caps=['خامة عالية الجودة', 'دافي للأيام الباردة'], cap2='ألوان متعددة',
+    'suk': dict(TOTAL=15.1, T_GAME=0.58, T_PROD=2.5, T_NAME=2.82, T_F1=4.66, T_F1b=6.18, T_F2=8.02, T_PRICE=9.94, T_CTA=11.62,
+                game=['JUJUTSU', 'KAISEN'], hook=['ملك اللعنات', 'صار هودي!'], name=['SUKUNA HOODIE', 'JUJUTSU KAISEN'], caps=['خامة عالية الجودة', 'دافي للأيام الباردة'], cap2='ألوان متعددة',
                 price='200', seed=9),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
@@ -47,9 +47,9 @@ prod = Image.open(D + 'main.png').convert('RGB')
 PROD_BIG = rim(prod, 900); PROD = rim(prod, 760); PROD_SM = rim(prod, 330)
 STRIP = [rim(Image.open(D + f'c{i}.png').convert('RGB'), 400, col=(c if c else RED)) for i, c in zip((8, 4, 3, 1, 5, 7), (RED, RED, VIOLET, VIOLET, PINK, (60, 110, 255)))]
 S = dict(
-    ya=T('يا عشاق', FC(84, b'Medium'), glow=VIOLET, gr=16),
-    game=[T(g, FA(190), track=14) for g in CFG['game']],
-    name0=T(CFG['name'][0], FA(170), track=12), name1=T(CFG['name'][1], FA(80), fill=(240, 220, 230), glow=VIOLET, track=26),
+    ya=np.zeros((4, 4, 4), np.uint8),
+    game=[T(g, FC(160, b'Black')) for g in CFG['hook']],
+    name0=(lambda sp: cv2.resize(sp, (960, int(sp.shape[0] * 960 / sp.shape[1])), interpolation=cv2.INTER_AREA) if sp.shape[1] > 960 else sp)(T(CFG['name'][0], FA(130), track=6)), name1=T(CFG['name'][1], FA(70), fill=(240, 220, 230), glow=VIOLET, track=26),
     caps=[T(c, FC(92)) for c in CFG['caps']], cap2=T(CFG['cap2'], FC(96)),
     price=T(CFG['price'], FA(380), track=10), sar=T('ريال', FC(110), glow=VIOLET),
     stock=T('متوفر الآن', FC(60, b'SemiBold'), fill=(220, 210, 230), glow=VIOLET, gr=12),
@@ -118,7 +118,7 @@ def render(t):
             k = t - T_GAME; push = 1 + .05 * (k / 1.4)
             for i, g in enumerate(S['game']):
                 kk = k - i * .18
-                if kk > 0: blit(f, reveal(g, eo(kk / .35)), W / 2, H * (.47 + .1 * i), push, 1 - eo((t - T_PROD + .2) / .2))
+                if kk > 0: blit(f, reveal(g, eo(kk / .35), True), W / 2, H * (.42 + .1 * i), push, 1 - eo((t - T_PROD + .2) / .2))
             line(f, W / 2 - 330 * eo(k / .5), W / 2 + 330 * eo(k / .5), H * .62, 1)
     if T_PROD <= t < T_F1:
         lt = t - T_PROD; s = .86 + .08 * (lt / (T_F1 - T_PROD))

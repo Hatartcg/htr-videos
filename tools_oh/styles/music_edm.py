@@ -3,7 +3,7 @@ import os, numpy as np
 from scipy.io import wavfile
 from scipy.signal import butter, lfilter, fftconvolve
 KEY = os.environ['OH']; D = f'/home/claude/work/{KEY}/'
-C = {'sl': dict(DUR=14.4, T=(1.3, 2.62, 3.3, 4.98, 5.7, 6.46, 8.58, 10.82), bpm=128, seed=17,
+C = {'sl': dict(DUR=15.1, T=(1.86, 3.14, 4.1, 5.82, 6.38, 7.18, 9.34, 11.62), bpm=128, seed=17,
                 CH=[[59, 62, 66], [55, 59, 62], [62, 66, 69], [57, 61, 64]], BS=[35, 31, 38, 33])}[KEY]
 SR = 48000; DUR = C['DUR']; N = int(SR * DUR); rng = np.random.default_rng(C['seed'])
 VO = .5; T_GAME, T_PROD, T_NAME, T_F1, T_F1b, T_F2, T_PRICE, T_CTA = C['T']; B = 60 / C['bpm']

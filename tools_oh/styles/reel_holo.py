@@ -7,8 +7,8 @@ from helpers import *
 KEY = os.environ['OH']; D = f'/home/claude/work/{KEY}/'
 VO = 0.5
 CFG = {
-    'ygo': dict(TOTAL=15.3, T_GAME=1.26, T_PROD=2.48, T_NAME=2.94, T_F1=4.77, T_F2=5.76, T_F2b=7.66, T_PRICE=9.64, T_CTA=11.85,
-                game='YU-GI-OH!', label='BOOSTER BOX', name=['MAGNIFICENT', 'MONSTERS'], n1=3, cap1='باكات في البوكس', n2=15, cap2='ULTRA RARE',
+    'ygo': dict(TOTAL=15.6, T_GAME=0.88, T_PROD=2.84, T_NAME=3.14, T_F1=5.56, T_F2=6.61, T_F2b=8.35, T_PRICE=10.24, T_CTA=12.42,
+                game='YU-GI-OH!', hook='تبي ألترا رير في كل باك؟', big='ULTRA RARE', label='YU-GI-OH! BOOSTER BOX', name=['MAGNIFICENT', 'MONSTERS'], n1=3, cap1='باكات في البوكس', n2=15, cap2='ULTRA RARE',
                 extra='+3 SECRET RARE', price='179', seed=5),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
@@ -86,12 +86,12 @@ def pack_spr(hshift):
     return to_bgra(im)
 PACKS = [pack_spr(i * .23) for i in range(3)]
 
-H_GAME = Holo(CFG['game'], FA(250), stroke=8)
+H_GAME = Holo(CFG['big'], FA(230), stroke=8)
 H_N1 = Holo(str(CFG['n1']), FA(520), stroke=10); H_N2 = {n: Holo(str(n), FA(400), stroke=10) for n in range(1, CFG['n2'] + 1)}
 H_PRICE = Holo(CFG['price'], FA(420), stroke=10)
 H_NAME = [Holo(CFG['name'][0], FA(150), stroke=6), Holo(CFG['name'][1], FA(170), stroke=6)]
 S = dict(
-    ya=white_text('يا عشاق', FC(110)), label=pill(CFG['label'], FA(52), (40, 30, 80), border=(180, 160, 255, 255)),
+    ya=white_text(CFG['hook'], FC(86)), label=pill(CFG['label'], FA(52), (40, 30, 80), border=(180, 160, 255, 255)),
     cap1=white_text(CFG['cap1'], FC(96)), cap2=pill(CFG['cap2'], FA(66), (30, 20, 60), border=(255, 120, 220, 255)),
     extra=pill(CFG['extra'], FA(60), (255, 61, 154)), sar=white_text('ريال', FC(120)),
     stock=pill('متوفر الآن', FC(54, b'Bold'), (20, 16, 40), border=(56, 225, 255, 255)),

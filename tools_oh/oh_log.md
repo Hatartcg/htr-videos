@@ -3,6 +3,6 @@
 2026-10-20 | Yu-Gi-Oh! | Rarity Collection booster box (24 packs) | 850 SAR | videos/oh/oh_yugioh_rarity_collection.mp4
 2026-10-21 | Naruto | Naruto Mythos Box 2nd Edition (24 packs) | 600 SAR | videos/oh/oh_naruto_booster_box.mp4
 2026-10-23 | One Piece | OP-14 The Azure Sea's Seven booster box, English (24 packs) | 1,000 SAR | videos/oh/oh_op14_booster_box_en_manga.mp4 | manga
-2026-10-24 | Yu-Gi-Oh! | Magnificent Monsters box (3 packs) | 179 SAR | videos/oh/oh_yugioh_magnificent_monsters_holo.mp4 | holo
-2026-10-25 | Jujutsu Kaisen (merch) | Sukuna hoodie | 200 SAR | videos/oh/oh_sukuna_hoodie_cine.mp4 | cinematic
-2026-10-26 | Solo Leveling (merch) | Solo Leveling sword set | 450 SAR | videos/oh/oh_solo_leveling_sword_set_system.mp4 | system-hud
+2026-10-24 | Yu-Gi-Oh! | Magnificent Monsters box (3 packs) | 179 SAR | videos/oh/oh_yugioh_magnificent_monsters_holo_v2.mp4 | holo
+2026-10-25 | Jujutsu Kaisen (merch) | Sukuna hoodie | 200 SAR | videos/oh/oh_sukuna_hoodie_cine_v2.mp4 | cinematic
+2026-10-26 | Solo Leveling (merch) | Solo Leveling sword set | 450 SAR | videos/oh/oh_solo_leveling_sword_set_system_v2.mp4 | system-hud
