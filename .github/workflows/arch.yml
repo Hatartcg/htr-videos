@@ -9,10 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          sparse-checkout: |
-            fetch/arch.txt
-            tools_price
       - run: |
           set +e
           mkdir -p fetch/arch /tmp/a; L=fetch/arch/log.txt; date > $L
@@ -26,4 +22,4 @@ jobs:
           python3 tools_price/arch.py /tmp/a fetch/arch >> $L 2>&1
           ls -la fetch/arch >> $L
           git config user.name "Hatartcg"; git config user.email "hseyam.m@gmail.com"
-          git add -A fetch/arch && git commit -m "price archive" && git pull --rebase -q && git push
+          git add -A fetch/arch; git commit -m "price archive"; for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
