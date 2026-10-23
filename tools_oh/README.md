@@ -13,3 +13,5 @@ Render: python3 reel_example.py stills <t...>  |  python3 reel_example.py 0 7.3 
 Then python3 music_example.py, concat pa/pb, mux mix.wav. Vary the music each day (tempo/key/progression/instrument).
 
 STYLES: see tools_oh/styles/README.md - rotate manga / holo / cinematic / system-HUD (+ new ones); never the same style or music two days in a row.
+
+TRIAL_REEL: on 2026-10-23 Instagram rejected the OH Trial Reel ("account does not meet the trial reel follower requirement"). Schedule the 19:00 REEL only until the account grows; tell Hadi.
