@@ -7,12 +7,13 @@ permissions:
 jobs:
   asr:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - run: |
           set +e
           mkdir -p fetch/asr; L=fetch/asr/log.txt; date > $L
-          (sudo apt-get update -qq; sudo apt-get install -y -qq ffmpeg) >> $L 2>&1
+          (which ffmpeg || (timeout 300 sudo apt-get update -qq; timeout 300 sudo apt-get install -y -qq ffmpeg)) >> $L 2>&1
           pip install -q faster-whisper >> $L 2>&1
           cat > /tmp/asr.py <<'P'
           import sys, json, subprocess, numpy as np
@@ -27,4 +28,4 @@ jobs:
           P
           sed -i 's/^          //' /tmp/asr.py; python3 /tmp/asr.py $(sed 's#^#fetch/#' fetch/asr.txt) >> $L 2>&1
           git config user.name "Hatartcg"; git config user.email "hseyam.m@gmail.com"
-          git add -A fetch/asr && git commit -m "asr check" && git push
+          git add -A fetch/asr && git commit -m "asr check"; for i in 1 2 3 4; do git pull --rebase -q && git push && break; sleep 6; done
