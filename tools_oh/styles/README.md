@@ -1,5 +1,8 @@
 # OH reel styles (rotate, never the same style 2 days in a row)
 Hadi (2026-10-23): reels all looked/sounded the same -> boring. Mix styles every day.
+Hadi (2026-10-23): NEVER open with "يا عشاق ..." (he calls it a dumb opening). Write a fresh, product-specific hook every reel
+(question, bold claim from page facts, or fan reference), e.g. "تبي ألترا رير في كل باك؟", "ملك اللعنات صار هودي!", "حس إنك صياد من رتبة إس!".
+Caption first line = the same hook, not "يا عشاق".
 Each script: OH=<key> python3 <script> stills t1 t2 ... | OH=<key> python3 <script> a b out.mp4 ; add a CFG entry per product (cue times from voice word timings, VO=0.5).
 Work dir per product: /home/claude/work/<key>/ with main.png, alt.png (optional), voice.wav. helpers.py = shared drawing helpers (copy next to scripts).
 
