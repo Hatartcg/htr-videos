@@ -48,8 +48,8 @@ def render(t):
         blit(f, S['hdr'], W / 2, 110, 1, 1)
         for j in range(N):
             col = GREEN if j < i else (PURPLE if j == i else (60, 52, 100)); cv2.circle(f, (int(W / 2 + (j - (N - 1) / 2) * 34), 180), 10 if j == i else 7, col[::-1], -1, cv2.LINE_AA)
-        roll = min(1, lt / min(1.0, D * .55)); v = c['price'] * (1 - (1 - roll) ** 3)
-        blit(f, price_spr(v, i == N - 1), W / 2, 320, 1 + .1 * env(lt, D * .55 if D < 2 else 1.0, .25), inn)
+        RT = SPEC.get('roll', .55) * D if SPEC.get('roll') else min(1.0, D * .55); roll = min(1, lt / RT); v = c['price'] * (1 - (1 - roll) ** 3)
+        blit(f, price_spr(v, i == N - 1), W / 2, 320, 1 + .1 * env(lt, RT, .25), inn)
         sp = SPR[i]['g'] if i == N - 1 and lt > .4 else SPR[i]['n']
         x = W / 2 + 1200 * (1 - inn) - 1200 * out
         blit(f, sp, x, 900, 1 + .03 * math.sin(t * 2.5), 1, -4 * (1 - inn))
@@ -70,7 +70,7 @@ def render(t):
     f = np.clip(f + (255 - f) * fl, 0, 255)
     if t > TOTAL - .4: f = f * max(0, (TOTAL - t) / .4)
     return f.astype(np.uint8)
-def cues(): return dict(total=TOTAL, intro=0, outro=T_OUTRO, end=T_OUTRO + T_OUT, starts=ST, rounds=[])
+def cues(): return dict(total=TOTAL, intro=0, outro=T_OUTRO, end=T_OUTRO + T_OUT, starts=ST, reveals=[ST[i] + (SPEC['roll'] * DUR[i] if SPEC.get('roll') else min(1.0, DUR[i] * .55)) for i in range(N)], rounds=[])
 if __name__ == '__main__':
     json.dump(cues(), open('cues.json', 'w'))
     if sys.argv[2] == 'stills': stills(render, [float(x) for x in sys.argv[3:]]); print(TOTAL)

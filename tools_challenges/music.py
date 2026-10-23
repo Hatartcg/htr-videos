@@ -71,7 +71,28 @@ CH=[[n+KEY for n in c] for c in [[60,64,67,72],[57,60,64,69],[53,57,60,65],[55,5
 mel=[n+KEY for n in [72,76,79,76,74,72,67,69]]
 def stab(ms, d=.25):
     t = tt(d); return lp(sum(saw(mtof(m), t) for m in ms) / len(ms), 3500) * np.exp(-t / .08)
+STYLE=os.environ.get('STYLE','pop')
+def b808(m,d):
+    t=tt(d); f=mtof(m)*(1+.5*np.exp(-t/.04)); return np.tanh(1.8*np.sin(2*np.pi*np.cumsum(f)/SR))*np.exp(-t/max(.3,d*.6))*np.minimum(1,(d-t)/.03)
+def bell(m,d=.6):
+    t=tt(d); return (np.sin(2*np.pi*mtof(m)*t)+.5*np.sin(2*np.pi*mtof(m)*2.76*t)*np.exp(-t/.1)+.25*np.sin(2*np.pi*mtof(m)*5.4*t)*np.exp(-t/.05))*np.exp(-t/.28)
+def snare():
+    t=tt(.25); return bp(nz(.25),1500,8000)*np.exp(-t/.07)*.8+np.sin(2*np.pi*190*t)*np.exp(-t/.05)*.6
+TM=[n+KEY for n in [45,45,41,43]]; TBELL=[n+KEY for n in [81,84,88,84,83,79,81,76]]
+def bed_trap(t0,t1):
+    t=t0;k=0
+    while t<t1-1e-6:
+        bar=(k//4)%4; beat=k%4
+        if beat==0: add(mus,t,b808(TM[bar]-12,B*2.8),.55); kk(t,.8)
+        if beat==2 and bar%2: kk(t+B/2,.6)
+        if beat==2: add(drm,t,snare(),.4); add(drm,t,clap(),.2)
+        add(mus,t,bell(TBELL[k%8]),.13,pan=.25)
+        if k%2==0: add(mus,t+B*.75,bell(TBELL[(k+5)%8]+12,.3),.05,pan=-.3)
+        n=6 if (beat==3 and bar==3) else 2
+        for j in range(n): add(drm,t+j*B/n,hat(),.09 if j%2==0 else .06,pan=.15)
+        t+=B; k+=1
 def bed(t0,t1,full=True):
+    if STYLE=='trap': return bed_trap(t0,t1)
     t=t0;k=0
     while t<t1-1e-6:
         bar=(k//4)%4; beat=k%4
@@ -85,6 +106,7 @@ bed(0.0,CU['intro']+3.0)
 add(sfx,0.05,impact(1.0),.6)
 for j in range(3): add(sfx,.5+j*.12,whoosh(.3),.35)
 for s_ in CU.get('starts',[]): add(sfx,s_,whoosh(.3),.45); add(sfx,s_+.05,pop(),.3)
+for j_,r_ in enumerate(CU.get('reveals',[])): add(sfx,r_,ding() if j_<len(CU['reveals'])-1 else impact(1.2),.45 if j_<len(CU['reveals'])-1 else .9)
 if not CU['rounds']: bed(3.0, CU['outro'])
 for r in CU['rounds']:
     a,cd,rv=r['start'],r['cd'],r['reveal']
