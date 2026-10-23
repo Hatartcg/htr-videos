@@ -1,0 +1,22 @@
+name: price-snapshot
+on:
+  schedule:
+    - cron: '37 21 * * *'
+  push:
+    paths: ['tools_price/snap.py']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  snap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            tools_price
+            fetch/snap
+      - run: |
+          python3 tools_price/snap.py
+          git config user.name "Hatartcg"; git config user.email "hseyam.m@gmail.com"
+          git add fetch/snap; git commit -m "price snapshot"; for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
