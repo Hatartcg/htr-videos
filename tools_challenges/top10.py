@@ -28,6 +28,7 @@ def price_spr(v, big=False):
         if len(_digits) > 400: _digits.clear()
         _digits[k] = txt(s, FB(150 if big else 130), WHITE, stroke=8, glow=GREEN if big else PURPLE, gr=26)
     return _digits[k]
+WMG = logo_spr(170, True)
 def at(t):
     for i in range(N - 1, -1, -1):
         if t >= ST[i]: return i, t - ST[i]
@@ -65,7 +66,7 @@ def render(t):
         blit(f, S['cmt'], W / 2, 1330, ebk((k - 1.0) / .35) * (1 + .03 * math.sin(t * 6)), 1 if k > 1.0 else 0)
     else:
         end_card(f, t - T_OUTRO - T_OUT, S)
-    if t < T_INTRO or T_OUTRO <= t < T_OUTRO + T_OUT: blit(f, S['wm'], W - 130, 80, 1, .9)
+    if t < T_OUTRO + T_OUT: blit(f, WMG, W - 120, 215 if T_INTRO <= t < T_OUTRO else 80, .9, 1)
     fl = sum(env(t, ST[i], .1) * .25 for i in range(N)) + env(t, ST[N - 1], .2) * .5 + env(t, T_OUTRO + T_OUT, .15) * .5
     f = np.clip(f + (255 - f) * fl, 0, 255)
     if t > TOTAL - .4: f = f * max(0, (TOTAL - t) / .4)

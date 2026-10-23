@@ -25,20 +25,8 @@ def finish(f, t):
     f = f * VIG + gr * 7
     f[:170] = 0; f[H - 170:] = 0          # letterbox
     return f
-def cutout(path, w):
-    im = Image.open(path).convert('RGBA'); im = im.resize((w, int(im.height * w / im.width)), Image.LANCZOS)
-    a = np.array(im); rgb = np.ascontiguousarray(a[..., :3]); m = np.zeros((rgb.shape[0] + 2, rgb.shape[1] + 2), np.uint8)
-    for c in [(0, 0), (rgb.shape[1] - 1, 0), (0, rgb.shape[0] - 1), (rgb.shape[1] - 1, rgb.shape[0] - 1)]:
-        if rgb[c[1], c[0]].min() > 225: cv2.floodFill(rgb, m, c, (0, 0, 0), (14, 14, 14), (14, 14, 14), cv2.FLOODFILL_MASK_ONLY | (255 << 8) | 8)
-    bgm = m[1:-1, 1:-1] > 0
-    fg = (~bgm).astype(np.uint8)
-    if bgm.mean() > .01:
-        cs, _ = cv2.findContours(fg, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-        cs = [c for c in cs if cv2.contourArea(c) > fg.size * .002]
-        hull = cv2.convexHull(np.vstack(cs)); solid = np.zeros_like(fg); cv2.fillPoly(solid, [hull], 1)
-        a[..., 3] = np.where(solid > 0, a[..., 3], 0)
-    a[..., 3] = cv2.GaussianBlur(a[..., 3], (3, 3), 0)
-    return to_bgra(Image.fromarray(a))
+from cut2 import cutout_rgba
+def cutout(path, w): return to_bgra(cutout_rgba(path, w))
 BIMG = [cutout(b['img'], 720) for b in BOX]
 def yaw(spr, ang):
     h, w = spr.shape[:2]; c = math.cos(ang); s = math.sin(ang)
@@ -85,6 +73,7 @@ def hazard(f, y, h, k):
     band = np.zeros((h, W + 200, 3), np.uint8); band[:] = (20, 20, 20)
     for x in range(-200, W + 400, 80): cv2.fillPoly(band, [np.array([[x, 0], [x + 40, 0], [x + 40 - h, h], [x - h, h]], np.int32)], RED_[::-1])
     off = int(k * 120) % 80; f[y:y + h] = band[:, off:off + W]
+WMG = logo_spr(170, True)
 def beat(t):
     for i in range(len(B) - 1, -1, -1):
         if t >= BS[i]: return i, t - BS[i]
@@ -155,7 +144,7 @@ def render(t):
     else:
         f = bg(t)
     caption(f, i, lt)
-    if t < T_MAIN: blit(f, S['wm'], W - 120, 240, .7, .85)
+    if t < T_MAIN: blit(f, WMG, W - 130, 245, .85, 1)
     fl = sum(env(t, BS[j], .12) * .35 for j in range(1, len(B)))
     f = f + (255 - f) * fl
     f = finish(f, t)

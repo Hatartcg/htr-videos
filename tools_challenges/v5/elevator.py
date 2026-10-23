@@ -60,6 +60,7 @@ def floor_panel(f, s, glowk=0.0, arrow=0.0):
     cv2.fillPoly(f, [pts], tuple(int(v * a) for v in LED[::-1]))
     pts2 = np.array([[cx - 130, cy + 30], [cx - 170, cy + 30], [cx - 150, cy - 20]], np.int32)
     cv2.fillPoly(f, [pts2], tuple(int(v * a) for v in LED[::-1]))
+WMG = logo_spr(190, True)
 def at(t):
     for i in range(N - 1, -1, -1):
         if t >= ST[i]: return i, t - ST[i]
@@ -128,7 +129,7 @@ def render(t):
         blit(f, S['cmt'], W / 2, 1300, ebk((k - 1.0) / .35) * (1 + .03 * math.sin(t * 6)), 1 if k > 1.0 else 0)
     else:
         f[:] = (14, 10, 12); end_card(f, t - T_OUTRO - T_OUT, S)
-    if t < T_INTRO or T_OUTRO <= t < T_OUTRO + T_OUT: blit(f, S['wm'], W - 120, 70, .8, .9)
+    if t < T_OUTRO + T_OUT: blit(f, WMG, W - 130, 80, 1, 1)
     fl = env(t, ST[N - 1] + RIDE + .1, .35) * .8 if N else 0
     f = f + (255 - f) * fl
     if t > TOTAL - .4: f = f * max(0, (TOTAL - t) / .4)
