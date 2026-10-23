@@ -11,7 +11,7 @@ CW = 430
 def mk(path):
     im = card_img(path, CW); return dict(n=card_spr(im), g=card_spr(im, GREEN), d=card_spr(gray(im)), s=card_spr(card_img(path, 200)))
 C = [[mk(r['a']['img']), mk(r['b']['img'])] for r in R]
-S = end_assets('كل أسبوع تحدي جديد')
+S = end_assets(SPEC.get('tease', 'كل أسبوع تحدي جديد'))
 S.update(t1=txt('أيهم', FL(130), WHITE), t2=txt('أغلى؟', FL(190), PURPLE, glow=PURPLE), sub=pill('أغلب الناس يغلطون!', FL(52), (24, 18, 50), border=RED),
          vs=txt('VS', FB(92), WHITE, stroke=6, glow=PURPLE), q=txt('؟', FL(130), WHITE, glow=PURPLE), think=txt('فكّر بسرعة…', FL(58), WHITE, glow=RED),
          unk=txt('$???', FB(64), (200, 190, 255)), more=txt('أغلى', FL(46), WHITE), src=txt(SPEC['source'], FL(34), DIM),

@@ -10,7 +10,7 @@ CW = 560
 SPR = []
 for c in CARDS:
     im = card_img(c['img'], CW); SPR.append(dict(n=card_spr(im, PURPLE, .6), g=card_spr(im, GREEN), s=card_spr(card_img(c['img'], 150))))
-S = end_assets('كل أسبوع إصدار جديد')
+S = end_assets(SPEC.get('tease', 'كل أسبوع إصدار جديد'))
 S.update(t1=txt('أغلى ١٠ كروت في', FL(96), WHITE), t2=fit_txt(SPEC['set_title'], FB, 92, 960, fill=PURPLE, glow=PURPLE), game=pill(SPEC['game'], FB(40), (24, 18, 50), fg=(160, 240, 230), border=TEAL),
          who=txt('مين رقم ١؟', FL(110), WHITE, glow=RED), hdr=pill('TOP 10 · ' + SPEC['set_short'], FB(34), (24, 18, 50), fg=LILAC, border=PURPLE),
          src=txt(SPEC['source'], FL(34), DIM), q=txt('عندك واحد منهم؟', FL(110), WHITE, glow=PURPLE), cmt=pill('قول لنا بالتعليقات', FL(60), PURPLE, padx=56))

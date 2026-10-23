@@ -79,7 +79,7 @@ S = dict(
     cmt=to_bgra(rrect(640, 100, 50, PURPLE + (255,), glow=PURPLE)), cmtt=txt('اكتب نتيجتك بالتعليقات', FL(56), WHITE),
     src=txt(SPEC['source'], FL(36), DIM),
     htr=LOGO_BIG, tcg=np.zeros((2, 2, 4), np.uint8),
-    e3=txt('كل أسبوع تحدي جديد', FL(66), WHITE), ig=to_bgra(rrect(420, 86, 43, (28, 22, 50, 255), TEAL + (255,), 4)), igt=txt('@hatar_tcg', FB(46), (160, 240, 230)),
+    e3=txt(SPEC.get('tease', 'كل أسبوع تحدي جديد'), FL(66), WHITE), ig=to_bgra(rrect(420, 86, 43, (28, 22, 50, 255), TEAL + (255,), 4)), igt=txt('@hatar_tcg', FB(46), (160, 240, 230)),
     loc=txt('معرضنا – أبحر الجنوبية، العليا سكوير، جدة', FL(42), LILAC), wm=LOGO_WM,
 )
 SCORES = [txt(s, FB(54), WHITE) for s in ('0/3', '1/3', '2/3', '3/3')]

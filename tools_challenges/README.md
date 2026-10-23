@@ -6,3 +6,4 @@ Prices: TCGplayer market prices via tcgcsv.com (https://tcgcsv.com/tcgplayer/{ca
 Images: https://tcgplayer-cdn.tcgplayer.com/product/<productId>_in_1000x1000.jpg via fetch workflow. One Piece images on TCGplayer carry a SAMPLE watermark -> do not use them; pick Pokémon / Yu-Gi-Oh! / Riftbound / Lorcana cards unless a clean image exists.
 Voice: Hadi voice fUlcn0iRlB3xyoBnhkUW, eleven_v4, one generation with all lines separated by [pause]; split with common.lines_from_silences(); never generate the word هتر. Yu-Gi-Oh = "يوغي أوو". Prices spoken = rounded prices shown on screen.
 Movers (أكثر ٥ ارتفعوا): daily snapshots in fetch/snap/*.json.gz (workflow price-snapshot, 21:37 UTC). Compute 7-day change from snapshots (need >=8 days). Filters: now >= $15, before >= $5, change 8%-300%, skip spikes.
+- End card line: spec "tease" teases TOMORROW's challenge, e.g. "بكرة: أيهم أغلى؟ 🔥" (suspense).
