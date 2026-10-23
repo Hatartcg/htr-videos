@@ -1,3 +1,2 @@
-gp_espeon.png https://images.pokemontcg.io/sv8pt5/155_hires.png
-gp_sylveon.png https://images.pokemontcg.io/sv8pt5/156_hires.png
-gp_lugia.png https://images.pokemontcg.io/swsh12/186_hires.png
+tcgcsv_poke_groups.json https://tcgcsv.com/tcgplayer/3/groups
+tcgcsv_last.txt https://tcgcsv.com/last-updated.txt
