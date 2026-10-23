@@ -1,0 +1,8 @@
+# HTR daily 20:00 challenge reels (approved formats)
+Renderers (1080x1920, 30fps): `gp.py` خمّن السعر · `vs.py` أيهم أغلى؟ · `top10.py` أغلى ١٠ في إصدار. Shared helpers: `common.py`. Music+SFX+voice mix: `music.py` (reads cues.json written by the renderer and vo.wav; set BPM/KEY env vars to vary music every episode).
+Example specs: ep1v.json (guess), vs1.json (VS), t10.json (top10). Image paths in specs must be updated to your working dir.
+Setup: fonts = fetch/font_lalezar.ttf + fetch/font_bungee.ttf -> /home/claude/fonts/font_*.ttf ; logo = tools_challenges/htr_logo.png -> /home/claude/gp/htr_logo.png (ALWAYS the real HTR logo, never typed "HTR"). Run scripts from /home/claude/gp.
+Prices: TCGplayer market prices via tcgcsv.com (https://tcgcsv.com/tcgplayer/{cat}/groups, /{cat}/{group}/products, /{cat}/{group}/prices; categories: 3 Pokemon, 68 One Piece, 2 Yu-Gi-Oh!, 89 Riftbound, 71 Lorcana, 86 Gundam). Fetch through the repo fetch workflow (shell can't reach it). Show the date as «سعر السوق في TCGplayer · <date>».
+Images: https://tcgplayer-cdn.tcgplayer.com/product/<productId>_in_1000x1000.jpg via fetch workflow. One Piece images on TCGplayer carry a SAMPLE watermark -> do not use them; pick Pokémon / Yu-Gi-Oh! / Riftbound / Lorcana cards unless a clean image exists.
+Voice: Hadi voice fUlcn0iRlB3xyoBnhkUW, eleven_v4, one generation with all lines separated by [pause]; split with common.lines_from_silences(); never generate the word هتر. Yu-Gi-Oh = "يوغي أوو". Prices spoken = rounded prices shown on screen.
+Movers (أكثر ٥ ارتفعوا): daily snapshots in fetch/snap/*.json.gz (workflow price-snapshot, 21:37 UTC). Compute 7-day change from snapshots (need >=8 days). Filters: now >= $15, before >= $5, change 8%-300%, skip spikes.
