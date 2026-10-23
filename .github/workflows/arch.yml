@@ -1,0 +1,29 @@
+name: price-archive
+on:
+  push:
+    paths: ['fetch/arch.txt']
+permissions:
+  contents: write
+jobs:
+  arch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            fetch/arch.txt
+            tools_price
+      - run: |
+          set +e
+          mkdir -p fetch/arch /tmp/a; L=fetch/arch/log.txt; date > $L
+          sudo apt-get install -y -qq p7zip-full >> $L 2>&1
+          for d in $(cat fetch/arch.txt); do
+            curl -sSfL -A "Mozilla/5.0" "https://tcgcsv.com/archive/tcgplayer/prices-$d.ppmd.7z" -o /tmp/a/$d.7z >> $L 2>&1 || echo "FAIL $d" >> $L
+            ls -la /tmp/a/$d.7z >> $L 2>&1
+            (cd /tmp/a && 7z x -y $d.7z > /dev/null 2>&1; rm -f $d.7z)
+          done
+          find /tmp/a -maxdepth 3 | head -20 >> $L
+          python3 tools_price/arch.py /tmp/a fetch/arch >> $L 2>&1
+          ls -la fetch/arch >> $L
+          git config user.name "Hatartcg"; git config user.email "hseyam.m@gmail.com"
+          git add -A fetch/arch && git commit -m "price archive" && git pull --rebase -q && git push
