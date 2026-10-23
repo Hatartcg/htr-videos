@@ -1,0 +1,84 @@
+{
+ "set_title": "ORIGINS",
+ "game": "RIFTBOUND",
+ "source": "سعر السوق في TCGplayer · 22 أكتوبر 2026",
+ "tease": "بكرة: تحدي جديد… لا يفوتك!",
+ "timing": {
+  "intro": 5.2,
+  "dur": [
+   4.766666666666667,
+   4.933333333333334,
+   5.1,
+   4.466666666666667,
+   4.7,
+   5.266666666666667,
+   6.833333333333333,
+   5.333333333333333,
+   5.2,
+   7.833333333333333
+  ],
+  "outro": 4.4
+ },
+ "cards": [
+  {
+   "price": 679.48,
+   "name": "Viktor, Herald of the Arcane",
+   "rarity": "Signature · Showcase",
+   "img": "img/im_653112.jpg"
+  },
+  {
+   "price": 834.06,
+   "name": "Volibear, Relentless Storm",
+   "rarity": "Signature · Showcase",
+   "img": "img/im_653096.jpg"
+  },
+  {
+   "price": 887.54,
+   "name": "Yasuo, Unforgiven",
+   "rarity": "Signature · Showcase",
+   "img": "img/im_653106.jpg"
+  },
+  {
+   "price": 919.5,
+   "name": "Leona, Radiant Dawn",
+   "rarity": "Signature · Showcase",
+   "img": "img/im_653108.jpg"
+  },
+  {
+   "price": 1055.43,
+   "name": "Teemo, Swift Scout",
+   "rarity": "Signature · Showcase",
+   "img": "img/im_653110.jpg"
+  },
+  {
+   "price": 1355.35,
+   "name": "Jinx, Loose Cannon",
+   "rarity": "Signature · Showcase",
+   "img": "img/im_653098.jpg"
+  },
+  {
+   "price": 1359.58,
+   "name": "Lee Sin, Blind Monk",
+   "rarity": "Signature · Showcase",
+   "img": "img/im_653104.jpg"
+  },
+  {
+   "price": 1544.75,
+   "name": "Miss Fortune, Bounty Hunter",
+   "rarity": "Signature · Showcase",
+   "img": "img/im_653114.jpg"
+  },
+  {
+   "price": 3114.31,
+   "name": "Kai'Sa, Daughter of the Void",
+   "rarity": "Signature · Showcase",
+   "img": "img/im_653094.jpg"
+  },
+  {
+   "price": 3711.35,
+   "name": "Ahri, Nine-Tailed Fox",
+   "rarity": "Signature · Showcase · #1",
+   "img": "img/im_653102.jpg"
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+{
+ "source": "سعر السوق في TCGplayer · 22 أكتوبر 2026",
+ "tease": "بكرة: تحدي جديد… لا يفوتك!",
+ "timing": {
+  "intro": 5.6,
+  "ask": [
+   4.866666666666666,
+   4.866666666666666,
+   3.433333333333333
+  ],
+  "rev": [
+   4.966666666666667,
+   5.733333333333333,
+   5.733333333333333
+  ],
+  "outro": 4.466666666666667
+ },
+ "rounds": [
+  {
+   "game": "POKÉMON",
+   "mult": "أغلى ٣.٤ مرة!",
+   "a": {
+    "img": "img/im_246733.jpg",
+    "name": "Rayquaza VMAX",
+    "short": "RAYQUAZA",
+    "set": "Alt Art · Evolving Skies",
+    "price": "$1,267",
+    "p": 1267.32
+   },
+   "b": {
+    "img": "img/im_246704.jpg",
+    "name": "Sylveon VMAX",
+    "short": "SYLVEON",
+    "set": "Alt Art · Evolving Skies",
+    "price": "$370",
+    "p": 369.76
+   }
+  },
+  {
+   "game": "YU-GI-OH!",
+   "mult": "الفرق ٤ دولار بس!",
+   "a": {
+    "img": "img/im_524817.jpg",
+    "name": "Ash Blossom",
+    "short": "ASH BLOSSOM",
+    "set": "Quarter Century · 1st Ed",
+    "price": "$45",
+    "p": 44.77
+   },
+   "b": {
+    "img": "img/im_524460.jpg",
+    "name": "Forbidden Droplet",
+    "short": "DROPLET",
+    "set": "Quarter Century · 1st Ed",
+    "price": "$49",
+    "p": 49.12
+   }
+  },
+  {
+   "game": "ONE PIECE",
+   "mult": "أغلى ٦ مرات!",
+   "a": {
+    "img": "img/im_454513.jpg",
+    "name": "Roronoa Zoro",
+    "short": "ZORO",
+    "set": "Leader Parallel · Romance Dawn",
+    "price": "$660",
+    "p": 660.39
+   },
+   "b": {
+    "img": "img/sb_454666.jpg",
+    "name": "Shanks",
+    "short": "SHANKS",
+    "set": "Manga Alt Art · Romance Dawn",
+    "price": "$3,999",
+    "p": 3998.74
+   }
+  }
+ ]
+}

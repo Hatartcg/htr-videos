@@ -1,0 +1,57 @@
+{
+ "source": "سعر السوق في TCGplayer · 22 أكتوبر 2026",
+ "subtitle": "POKÉMON · EVOLVING SKIES",
+ "tease": "بكرة: تحدي جديد… لا يفوتك!",
+ "timing": {
+  "intro": 6.8,
+  "ask": [
+   5.966666666666667,
+   4.333333333333333,
+   5.4
+  ],
+  "rev": [
+   3.7,
+   3.6333333333333333,
+   4.2
+  ],
+  "outro": 4.366666666666666
+ },
+ "rounds": [
+  {
+   "img": "img/im_246756.jpg",
+   "name": "Glaceon VMAX",
+   "set": "Alternate Art Secret · 209/203",
+   "options": [
+    "$95",
+    "$307",
+    "$640"
+   ],
+   "answer": 1,
+   "price": "$307"
+  },
+  {
+   "img": "img/im_246728.jpg",
+   "name": "Rayquaza V",
+   "set": "Alternate Full Art · 194/203",
+   "options": [
+    "$463",
+    "$1,150",
+    "$210"
+   ],
+   "answer": 0,
+   "price": "$463"
+  },
+  {
+   "img": "img/sb_246723.jpg",
+   "name": "Umbreon VMAX",
+   "set": "Alternate Art Secret · 215/203",
+   "options": [
+    "$890",
+    "$1,450",
+    "$2,299"
+   ],
+   "answer": 2,
+   "price": "$2,299"
+  }
+ ]
+}
