@@ -91,7 +91,25 @@ def bed_trap(t0,t1):
         n=6 if (beat==3 and bar==3) else 2
         for j in range(n): add(drm,t+j*B/n,hat(),.09 if j%2==0 else .06,pan=.15)
         t+=B; k+=1
+def organ(ms,d):
+    t=tt(d); s=sum(np.sin(2*np.pi*mtof(x)*t)+.5*np.sin(2*np.pi*mtof(x)*2*t)+.25*np.sin(2*np.pi*mtof(x)*3*t) for x in ms)/len(ms)
+    return s*(1+.15*np.sin(2*np.pi*6*t))*np.minimum(1,t/.01)*np.exp(-t/.25)
+def fbass(m,d):
+    t=tt(d); f=mtof(m); s=lp(saw(f,t),900+1800*np.exp(-t/.05).mean())*np.exp(-t/.15); return np.tanh(2*s)
+HC=[[n+KEY for n in c] for c in [[57,60,64,67],[62,65,69,72],[55,59,62,65],[60,64,67,71]]]; HB=[n+KEY for n in [33,38,31,36]]
+def bed_house(t0,t1):
+    t=t0;k=0
+    while t<t1-1e-6:
+        bar=(k//4)%4; beat=k%4
+        kk(t,.75)
+        add(drm,t+B/2,hat(True),.1,pan=.2); add(drm,t+B/4,hat(),.04); add(drm,t+3*B/4,hat(),.04)
+        if beat in (1,3): add(drm,t,clap(),.28)
+        add(mus,t+B/2,fbass(HB[bar],B*.45),.35); add(mus,t+B*.75,fbass(HB[bar]+12,B*.2),.15)
+        if beat in (0,2): add(mus,t+B*.5,organ(HC[bar],B*.4),.16,pan=-.2)
+        if beat==3: add(mus,t+B*.25,organ(HC[bar],B*.3),.1,pan=.2)
+        t+=B; k+=1
 def bed(t0,t1,full=True):
+    if STYLE=='house': return bed_house(t0,t1)
     if STYLE=='trap': return bed_trap(t0,t1)
     t=t0;k=0
     while t<t1-1e-6:

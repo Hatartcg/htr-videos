@@ -1,0 +1,109 @@
+{
+ "source": "سعر السوق في TCGplayer · 22 أكتوبر 2026",
+ "titles": {
+  "t1": "البوكس",
+  "t2": "ولا الكرت؟",
+  "sub": "مين أغلى؟ خمّن قبل الكشف!",
+  "how": "كم جولة جبتها صح؟"
+ },
+ "tease": "بكرة: تحدي جديد… لا يفوتك!",
+ "timing": {
+  "intro": 6.433333333333334,
+  "ask": [
+   6.733333333333333,
+   4.866666666666666,
+   4.833333333333333,
+   4.666666666666667
+  ],
+  "rev": [
+   5.766666666666667,
+   5.333333333333333,
+   7.066666666666666,
+   5.5
+  ],
+  "outro": 4.133333333333334
+ },
+ "rounds": [
+  {
+   "game": "YU-GI-OH!",
+   "mult": "البوكس أغلى بـ٢.٧ مرة",
+   "a": {
+    "img": "/home/claude/sb/sb_501748.jpg",
+    "tag": "البوكس",
+    "name": "25th Anniversary",
+    "set": "Rarity Collection · Booster Box",
+    "price": "$133",
+    "p": 132.99
+   },
+   "b": {
+    "img": "/home/claude/sb/sb_524460.jpg",
+    "tag": "الكرت",
+    "name": "Forbidden Droplet",
+    "set": "Quarter Century Secret · 1st Ed",
+    "price": "$49",
+    "p": 49.12
+   }
+  },
+  {
+   "game": "POKÉMON",
+   "mult": "الكرت أغلى من البوكس كله!",
+   "a": {
+    "img": "/home/claude/sb/sb_242436.jpg",
+    "tag": "البوكس",
+    "name": "Evolving Skies",
+    "set": "Booster Box",
+    "price": "$2,157",
+    "p": 2156.86
+   },
+   "b": {
+    "img": "/home/claude/sb/sb_246723.jpg",
+    "tag": "الكرت",
+    "name": "Umbreon VMAX",
+    "set": "Alternate Art Secret",
+    "price": "$2,299",
+    "p": 2298.94
+   }
+  },
+  {
+   "game": "ONE PIECE",
+   "mult": "البوكس أغلى بـ٦٣٧ دولار",
+   "a": {
+    "img": "/home/claude/sb/sb_450086.jpg",
+    "tag": "البوكس",
+    "name": "Romance Dawn",
+    "set": "Booster Box · Wave 1",
+    "price": "$4,636",
+    "p": 4636.13
+   },
+   "b": {
+    "img": "/home/claude/sb/sb_454666.jpg",
+    "tag": "الكرت",
+    "name": "Shanks",
+    "set": "Parallel · Manga Alt Art",
+    "price": "$3,999",
+    "p": 3998.74
+   }
+  },
+  {
+   "game": "RIFTBOUND",
+   "mult": "الكرت أغلى ١٦ مرة!",
+   "a": {
+    "img": "/home/claude/sb/sb_635368.jpg",
+    "tag": "البوكس",
+    "name": "Origins",
+    "set": "Booster Display",
+    "price": "$229",
+    "p": 228.97
+   },
+   "b": {
+    "img": "/home/claude/sb/sb_653102.jpg",
+    "tag": "الكرت",
+    "name": "Ahri, Nine-Tailed Fox",
+    "set": "Signature",
+    "price": "$3,711",
+    "p": 3711.35
+   }
+  }
+ ],
+ "cutout": true
+}

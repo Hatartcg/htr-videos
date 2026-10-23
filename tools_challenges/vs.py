@@ -8,14 +8,26 @@ RLEN = [ASK[i] + THINK + REV[i] for i in range(N)]
 RST = [T_INTRO + sum(RLEN[:i]) for i in range(N)]; T_OUTRO = T_INTRO + sum(RLEN); TOTAL = T_OUTRO + T_OUT + T_END
 bg = make_bg(cy=780)
 CW = 430
+def fitimg(path, w, h):
+    from PIL import Image as _I
+    im0 = _I.open(path); ww = int(min(w, h * im0.width / im0.height)); im = card_img(path, ww)
+    if SPEC.get('cutout'):
+        a = np.array(im); rgb = np.ascontiguousarray(a[..., :3]); m = np.zeros((rgb.shape[0] + 2, rgb.shape[1] + 2), np.uint8)
+        for c in [(0, 0), (rgb.shape[1] - 1, 0), (0, rgb.shape[0] - 1), (rgb.shape[1] - 1, rgb.shape[0] - 1)]:
+            if rgb[c[1], c[0]].min() > 225: cv2.floodFill(rgb, m, c, (0, 0, 0), (14, 14, 14), (14, 14, 14), cv2.FLOODFILL_MASK_ONLY | (255 << 8) | 8)
+        bgm = m[1:-1, 1:-1] > 0
+        if bgm.mean() > .02:
+            al = np.where(bgm, 0, a[..., 3]).astype(np.uint8); al = cv2.GaussianBlur(al, (3, 3), 0); a[..., 3] = al; im = _I.fromarray(a)
+    return im
 def mk(path):
-    im = card_img(path, CW); return dict(n=card_spr(im), g=card_spr(im, GREEN), d=card_spr(gray(im)), s=card_spr(card_img(path, 200)))
+    im = fitimg(path, CW, 540); return dict(n=card_spr(im), g=card_spr(im, GREEN), d=card_spr(gray(im)), s=card_spr(card_img(path, 200)))
 C = [[mk(r['a']['img']), mk(r['b']['img'])] for r in R]
 S = end_assets(SPEC.get('tease', 'كل أسبوع تحدي جديد'))
-S.update(t1=txt('أيهم', FL(130), WHITE), t2=txt('أغلى؟', FL(190), PURPLE, glow=PURPLE), sub=pill('أغلب الناس يغلطون!', FL(52), (24, 18, 50), border=RED),
+TT = SPEC.get('titles', {})
+S.update(t1=fit_txt(TT.get('t1', 'أيهم'), FL, 130, 980, fill=WHITE), t2=fit_txt(TT.get('t2', 'أغلى؟'), FL, 190, 1000, fill=PURPLE, glow=PURPLE), sub=pill(TT.get('sub', 'أغلب الناس يغلطون!'), FL(52), (24, 18, 50), border=RED),
          vs=txt('VS', FB(92), WHITE, stroke=6, glow=PURPLE), q=txt('؟', FL(130), WHITE, glow=PURPLE), think=txt('فكّر بسرعة…', FL(58), WHITE, glow=RED),
          unk=txt('$???', FB(64), (200, 190, 255)), more=txt('أغلى', FL(46), WHITE), src=txt(SPEC['source'], FL(34), DIM),
-         how=txt('كم جولة جبتها صح؟', FL(110), WHITE, glow=PURPLE), cmt=pill('اكتبها بالتعليقات', FL(60), PURPLE, padx=56))
+         how=fit_txt(TT.get('how', 'كم جولة جبتها صح؟'), FL, 110, 1000, fill=WHITE, glow=PURPLE), cmt=pill('اكتبها بالتعليقات', FL(60), PURPLE, padx=56))
 from PIL import ImageDraw
 BK = Image.new('RGBA', (300, 418), (0, 0, 0, 0)); bd = ImageDraw.Draw(BK)
 bd.rounded_rectangle((0, 0, 299, 417), 22, fill=(40, 30, 80, 255), outline=PURPLE + (255,), width=6)
@@ -23,6 +35,7 @@ for q in range(0, 600, 34): bd.line((q - 300, 0, q, 417), fill=(60, 48, 110, 255
 _f = FL(240); _bb = bd.textbbox((0, 0), '؟', font=_f); bd.text((150 - (_bb[2] - _bb[0]) / 2 - _bb[0], 209 - (_bb[3] - _bb[1]) / 2 - _bb[1]), '؟', font=_f, fill=WHITE, stroke_width=8, stroke_fill=PURPLE)
 BACK = card_spr(BK, PURPLE)
 RH = [txt(f'الجولة {i + 1} من {N}', FL(54), LILAC) for i in range(N)]
+TAG = [[pill(r[k]['tag'], FL(40), (24, 18, 50), fg=LILAC, border=PURPLE, padx=26, pady=8) if r[k].get('tag') else None for k in 'ab'] for r in R]
 GAME = [pill(r['game'], FB(36), (24, 18, 50), fg=(160, 240, 230), border=TEAL) for r in R]
 NAMES = [[fit_txt(r[k]['name'], FB, 40, 460, fill=WHITE) for k in 'ab'] for r in R]
 SETS = [[fit_txt(r[k]['set'], FL, 34, 460, fill=LILAC) for k in 'ab'] for r in R]
@@ -52,12 +65,13 @@ def render(t):
         out = eo((lt - L + .3) / .3); inn = eo(lt / .35)
         blit(f, RH[i], W / 2, 120, 1, inn * (1 - out)); blit(f, GAME[i], W / 2, 200, 1, inn * (1 - out))
         for j in range(N):
-            col = GREEN if j < i else (PURPLE if j == i else (60, 52, 100)); cv2.circle(f, (int(W / 2 + (j - 1) * 40), 262), 11 if j == i else 8, col[::-1], -1, cv2.LINE_AA)
+            col = GREEN if j < i else (PURPLE if j == i else (60, 52, 100)); cv2.circle(f, (int(W / 2 + (j - (N - 1) / 2) * 40), 262), 11 if j == i else 8, col[::-1], -1, cv2.LINE_AA)
         for j in range(2):
             x = XS[j] + (1 if j == 0 else -1) * 900 * (1 - eo((lt - j * .12) / .4)) + (1 if j == 0 else -1) * 900 * out
             if lt < rv: spr = C[i][j]['n']; sc = 1 + .02 * math.sin(t * 3 + j)
             else: spr = C[i][j]['g'] if j == WIN[i] else C[i][j]['d']; sc = (1.06 + .04 * env(lt, rv, .3)) if j == WIN[i] else .94
             blit(f, spr, x, 720, sc, 1, (-3 if j == 0 else 3) * (lt < rv))
+            if TAG[i][j] is not None and lt < rv: blit(f, TAG[i][j], x, 400, 1, inn)
             blit(f, NAMES[i][j], x, 1050, 1, inn * (1 - out)); blit(f, SETS[i][j], x, 1105, 1, inn * (1 - out))
             if lt < rv: blit(f, S['unk'], x, 1190, 1, inn * (1 - out))
             else:
@@ -77,7 +91,7 @@ def render(t):
         k = t - T_OUTRO
         blit(f, S['how'], W / 2, 420, ebk(k / .4), 1)
         for i in range(N):
-            kk = ebk((k - .3 - i * .15) / .4); y = 700 + i * 250
+            kk = ebk((k - .3 - i * .15) / .4); y = 700 + i * (750 / max(1, N))
             blit(f, C[i][WIN[i]]['s'], W / 2, y, kk, 1 if kk > 0 else 0, (i - 1) * 4)
         blit(f, S['cmt'], W / 2, 1520, ebk((k - 1.0) / .35) * (1 + .03 * math.sin(t * 6)), 1 if k > 1.0 else 0)
     else:
