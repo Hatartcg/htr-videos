@@ -1,0 +1,45 @@
+Fri Oct 23 01:14:43 UTC 2026
+curl: (22) The requested URL returned error: 403
+FAIL 2024-02-08
+ls: cannot access '/tmp/a/2024-02-08.7z': No such file or directory
+curl: (22) The requested URL returned error: 403
+FAIL 2025-02-08
+ls: cannot access '/tmp/a/2025-02-08.7z': No such file or directory
+curl: (22) The requested URL returned error: 403
+FAIL 2025-10-22
+ls: cannot access '/tmp/a/2025-10-22.7z': No such file or directory
+curl: (22) The requested URL returned error: 403
+FAIL 2026-09-22
+ls: cannot access '/tmp/a/2026-09-22.7z': No such file or directory
+curl: (22) The requested URL returned error: 403
+FAIL 2026-09-27
+ls: cannot access '/tmp/a/2026-09-27.7z': No such file or directory
+curl: (22) The requested URL returned error: 403
+FAIL 2026-10-02
+ls: cannot access '/tmp/a/2026-10-02.7z': No such file or directory
+curl: (22) The requested URL returned error: 403
+FAIL 2026-10-07
+ls: cannot access '/tmp/a/2026-10-07.7z': No such file or directory
+curl: (22) The requested URL returned error: 403
+FAIL 2026-10-12
+ls: cannot access '/tmp/a/2026-10-12.7z': No such file or directory
+curl: (22) The requested URL returned error: 403
+FAIL 2026-10-15
+ls: cannot access '/tmp/a/2026-10-15.7z': No such file or directory
+curl: (22) The requested URL returned error: 403
+FAIL 2026-10-18
+ls: cannot access '/tmp/a/2026-10-18.7z': No such file or directory
+curl: (22) The requested URL returned error: 403
+FAIL 2026-10-22
+ls: cannot access '/tmp/a/2026-10-22.7z': No such file or directory
+/tmp/a
+dates []
+Traceback (most recent call last):
+  File "/home/runner/work/htr-videos/htr-videos/tools_price/arch.py", line 36, in <module>
+    last = dates[-1]; wk = [d for d in dates if d <= dates[-1]]
+           ~~~~~^^^^
+IndexError: list index out of range
+total 28
+drwxr-xr-x 2 runner runner  4096 Oct 23 01:14 .
+drwxr-xr-x 7 runner runner 20480 Oct 23 01:14 ..
+-rw-r--r-- 1 runner runner  1755 Oct 23 01:14 log.txt
