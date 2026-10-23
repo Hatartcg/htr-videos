@@ -1,8 +1,8 @@
-p_3_2848.json https://tcgcsv.com/tcgplayer/3/2848/products
-pr_3_2848.json https://tcgcsv.com/tcgplayer/3/2848/prices
-p_68_3188.json https://tcgcsv.com/tcgplayer/68/3188/products
-pr_68_3188.json https://tcgcsv.com/tcgplayer/68/3188/prices
-p_2_23233.json https://tcgcsv.com/tcgplayer/2/23233/products
-pr_2_23233.json https://tcgcsv.com/tcgplayer/2/23233/prices
-p_89_24344.json https://tcgcsv.com/tcgplayer/89/24344/products
-pr_89_24344.json https://tcgcsv.com/tcgplayer/89/24344/prices
+sb_242436.jpg https://tcgplayer-cdn.tcgplayer.com/product/242436_in_1000x1000.jpg
+sb_246723.jpg https://tcgplayer-cdn.tcgplayer.com/product/246723_in_1000x1000.jpg
+sb_450086.jpg https://tcgplayer-cdn.tcgplayer.com/product/450086_in_1000x1000.jpg
+sb_454666.jpg https://tcgplayer-cdn.tcgplayer.com/product/454666_in_1000x1000.jpg
+sb_635368.jpg https://tcgplayer-cdn.tcgplayer.com/product/635368_in_1000x1000.jpg
+sb_653102.jpg https://tcgplayer-cdn.tcgplayer.com/product/653102_in_1000x1000.jpg
+sb_501748.jpg https://tcgplayer-cdn.tcgplayer.com/product/501748_in_1000x1000.jpg
+sb_524460.jpg https://tcgplayer-cdn.tcgplayer.com/product/524460_in_1000x1000.jpg
