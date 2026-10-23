@@ -1,5 +1,10 @@
-tcgcsv_cats.json https://tcgcsv.com/tcgplayer/categories
-tcgcsv_g3.json https://tcgcsv.com/tcgplayer/3/groups
-tcgcsv_g68.json https://tcgcsv.com/tcgplayer/68/groups
-tcgcsv_g2.json https://tcgcsv.com/tcgplayer/2/groups
-tcgcsv_last.txt https://tcgcsv.com/last-updated.txt
+tc_68_24736_p.json https://tcgcsv.com/tcgplayer/68/24736/products
+tc_68_24736_r.json https://tcgcsv.com/tcgplayer/68/24736/prices
+tc_3_24722_p.json https://tcgcsv.com/tcgplayer/3/24722/products
+tc_3_24722_r.json https://tcgcsv.com/tcgplayer/3/24722/prices
+tc_3_24688_p.json https://tcgcsv.com/tcgplayer/3/24688/products
+tc_3_24688_r.json https://tcgcsv.com/tcgplayer/3/24688/prices
+tc_2_24707_p.json https://tcgcsv.com/tcgplayer/2/24707/products
+tc_2_24707_r.json https://tcgcsv.com/tcgplayer/2/24707/prices
+tc_68_24664_p.json https://tcgcsv.com/tcgplayer/68/24664/products
+tc_68_24664_r.json https://tcgcsv.com/tcgplayer/68/24664/prices
