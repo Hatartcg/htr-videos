@@ -20,7 +20,7 @@ for d in dates:
                 k = f"{r['productId']}|{r['subTypeName']}"
                 e = hist[c].setdefault(k, {'g': g, 'p': {}}); e['p'][d] = mp
 def get(url):
-    req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'}); return json.load(urllib.request.urlopen(req, timeout=60))
+    req = urllib.request.Request(url, headers={'User-Agent': 'HTR-TCG-content/1.0 (+https://hatartcg.com)'}); return json.load(urllib.request.urlopen(req, timeout=60))
 pcache = {}
 def product(c, g, pid):
     if (c, g) not in pcache:
