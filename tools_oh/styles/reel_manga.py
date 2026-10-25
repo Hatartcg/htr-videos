@@ -25,6 +25,11 @@ CFG = {
         game=['JUJUTSU', 'KAISEN'], sfx='DOMAIN!', label='HOODIE', name=['SUKUNA', 'HOODIE'],
         f1=dict(kind='caps', caps=['خامة عالية الجودة', 'دافي للأيام الباردة']), f2=dict(kind='grid', cap='ألوان متعددة'),
         price='200', spot=(220, 40, 90), seed=9),
+    'st24': dict(
+        TOTAL=14.6, T_GAME=1.14, T_PROD=2.75, T_NAME=3.9, T_F1=5.1, T_F2=7.38, T_PRICE=8.95, T_CTA=11.1,
+        hook='تبي تبدأ؟', game=['ONE PIECE', 'CARD GAME'], sfx='SET SAIL!', label='STARTER DECK', name=['JEWELRY BONNEY', 'ST-24'],
+        f1=dict(kind='num', n=51, cap='كرت جاهزة للعب'), f2=dict(kind='num', n=1, plus=True, cap='ومعاه باك بوستر!'),
+        price='165', spot=PINK, seed=11, sfx_x=.6),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; SPOT = CFG['spot']
@@ -97,7 +102,7 @@ ALT = panel_img(Image.open(D + 'alt.png').convert('RGB'), 500, border=10) if os.
 GRID = [panel_img(Image.open(D + f'c{i}.png').convert('RGB'), 290, border=8) for i in (1, 3, 4, 5, 7, 8)] if CFG['f2']['kind'] == 'grid' else []
 
 S = dict(
-    ya=bubble('يا عشاق', FL(120), tail=(.3, 1)),
+    ya=bubble(CFG.get('hook', 'تبي؟'), FL(120), tail=(.3, 1)),
     game=[fit(ink_text(g, FB(160 if len(CFG['game']) == 1 else 140), fill=WHITE, stroke=16, shadow_col=SPOT + (255,), off=16), 1000) for g in CFG['game']],
     sfx=ink_text(CFG['sfx'], FB(120), fill=SPOT, stroke=10, shadow_col=INK + (255,), off=8),
     label=tag(CFG['label'], FB(56)),
@@ -116,6 +121,7 @@ for k in ('f1', 'f2'):
     if f.get('caps'): S[k + 'caps'] = [fit(bubble(c, FL(104), tail=((-.3, -1) if i == 0 else (.3, -1)))) for i, c in enumerate(f['caps'])]
     if f.get('extra'): S[k + 'extra'] = tag(f['extra'], FB(60))
 NMAX = max([CFG[k].get('n', 1) for k in ('f1', 'f2')])
+PLUS = ink_text('+1', FB(400), fill=WHITE, stroke=20, shadow_col=SPOT + (255,), off=22)
 NUMS = {n: ink_text(str(n), FB(400), fill=WHITE, stroke=20, shadow_col=SPOT + (255,), off=22) for n in range(1, NMAX + 1)}
 
 # ---------- paper background + halftone ----------
@@ -185,7 +191,7 @@ def num_scene(f, t, t0, t1, fc, which):
     sub = background(t, lines=.9 * (1 - .4 * eo(lt / 1)), cy=600)
     mk = panel_mask(top); f[:] = f * (1 - mk) + sub * mk
     s = 1 + 1.2 * (1 - eo(lt / .18)) + .12 * env(t, t0 + .5, .25)
-    blit(f, NUMS[m], W / 2, 590, s, min(1, lt / .06), -4)
+    blit(f, PLUS if fc.get('plus') else NUMS[m], W / 2, 590, s, min(1, lt / .06), -4)
     draw_border(f, top)
     cap = S[which + 'cap']
     if lt > .4: blit(f, cap, W / 2 + 40, 990 + 40 * (1 - eo((lt - .4) / .25)), ebk((lt - .4) / .3), 1, 2)
@@ -231,7 +237,7 @@ def render(t):
                 s = 1 + 2.0 * (1 - eo(kk / .14))
                 blit(f, g, W / 2, H * (.47 + .1 * i), s * (1 + .02 * math.sin(t * 11)), min(1, kk / .05), -5)
             k = t - T_GAME - .25
-            if k > 0: blit(f, S['sfx'], W * .72, H * .66 + len(S['game']) * 60, ebk(k / .25), 1, 12)
+            if k > 0: blit(f, S['sfx'], W * CFG.get('sfx_x', .72), H * .66 + len(S['game']) * 60, ebk(k / .25), 1, 12)
     # S2 product
     if T_PROD <= t < T_F1:
         lt = t - T_PROD

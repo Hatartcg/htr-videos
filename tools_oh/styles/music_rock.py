@@ -7,6 +7,8 @@ C = {
  # roots as midi (low E=40). prog = list of (root, bars) ; pattern: 'chug' 8ths, 'gallop' 8th+two16ths
  'op14': dict(DUR=13.9, T=(1.26, 2.18, 3.54, 5.26, 6.74, 8.78, 10.34), bpm=172, seed=12, prog=[40, 36, 38, 35], pat='chug',
               lead=[76, 74, 71, 74, 76, 79, 78, 74], cnt=[(5.26, 24), (6.74, 12)]),
+ 'st24': dict(DUR=14.6, T=(1.14, 2.75, 3.9, 5.1, 7.38, 8.95, 11.1), bpm=158, seed=24, prog=[45, 41, 43, 40], pat='gallop',
+              lead=[81, 79, 76, 79, 81, 84, 83, 79], cnt=[(5.1, 51)]),
 }[KEY]
 SR = 48000; DUR = C['DUR']; N = int(SR * DUR); rng = np.random.default_rng(C['seed'])
 VO = 0.5; T_GAME, T_PROD, T_NAME, T_F1, T_F2, T_PRICE, T_CTA = C['T']
