@@ -1,10 +1,4 @@
-ep19_voice_a.mp3 https://storage.googleapis.com/xi-backend/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/HANZSgkrPrXrPPqBy1kG/lKogCldv9X01ZuY2Er9w/content.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20261025%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261025T035719Z&X-Goog-Expires=7200&X-Goog-SignedHeaders=host&X-Goog-Signature=77567b12c4d0238ff469ae9fd76558bcb77a2d330a490194c119873b5bfce58d47d6fba37a951fe546b7eb1f4296f33dab5d3b0b8b23594f6a3253d64ecf23020b0b7dfc5a4e39e48562fae7f5925850632a99d6c8958a318d458c2b105effc0a7bcc6582aed3ca85bdcf7e0775c5157652058fe47b661a979a4d7b623a5adc89449b28ff37471727ce37b327b258957d4f558b04289f91f6d6f97f8260f3ac509a078daf41970608113063903b1318987aa2b5a14a898c94f137b97f5030358841871d554e1cb6148376c0b83bf275801f01358794827013a69f7ac49cf714f55a3e9297188001ec55bd1fd72b3617db15fb4fcd99a27129af41ce7c308ba6b
-ep19_voice_b.mp3 https://storage.googleapis.com/xi-backend/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/lJjekDWIOT5u5iPiXiVF/wyyqBgoaJ9e28T6XID05/content.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20261025%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261025T035721Z&X-Goog-Expires=7200&X-Goog-SignedHeaders=host&X-Goog-Signature=83940a3e4ad33da764f76729e9206342138e93fe6ce1dab2c9bb44b0e4f0637bb54253f6b047bb7f49d7890f768deef1cef76e5f0733e7a121e2ebc2c4f6950912f8b0eb1aa2ba444cd8a3695dda903c74c9f18064aafafb5d1ebd0d8ed3f1fbc9bbce7fdcb3b673b6bf79999e8a49e69ecd8729877d8ae575602384e7ee5a67963f2dee211a66005c2f33afb03bc6dfa5867f6d23291774612b7bf15cfe3652bbc42fa900fb0c5891b28589fdd281545814c02ae4ac9eb42f6348c9461a175515c57b8f9e13e8edceb7f8de8e6d8d9b4fe57aec5f4c773a2aebf324d071c8b5785d6ec774da30250563d36106819220f9fab536ae5d1ed3530dd56a0102ae45
-e19_lucario.jpg https://image.gamer.ne.jp/news/2026/20261023/00276dbff009f8170f89ff0ad80ccffa96fc/o/2.jpg
-e19_absol.jpg https://image.gamer.ne.jp/news/2026/20261023/00276dbff009f8170f89ff0ad80ccffa96fc/o/7.jpg
-e19_garchomp.jpg https://image.gamer.ne.jp/news/2026/20261023/00276dbff009f8170f89ff0ad80ccffa96fc/o/10.jpg
-e19_lead.jpg https://image.gamer.ne.jp/news/2026/20261023/00276dbff009f8170f89ff0ad80ccffa96fc/o/1.jpg
-e19_pack_pb.jpg https://www.pokebeach.com/news/2026/10/product_pack_kmqoi.jpg
-e19_lucario_pb.jpg https://www.pokebeach.com/news/2026/10/057-Mega-Lucario-Z-ex.jpg
-e19_wcs.jpg https://cdn.ygorganization.com/2026/10/WCS_update.jpg
-e19_mk1.jpeg https://miketendo64.com/wp-content/uploads/2026/10/HVSlNuZWkAAGa_X.jpeg
+e19_mk2.jpeg https://i0.wp.com/miketendo64.com/wp-content/uploads/2026/10/HVSmGu3bcAA_utR.jpeg
+e19_mk3.jpeg https://i0.wp.com/miketendo64.com/wp-content/uploads/2026/10/HVSmIfFbsAAv3LN.jpeg
+e19_absol_pb.jpg https://www.pokebeach.com/news/2026/10/030-Mega-Absol-Z-ex.jpg
+e19_garchomp_pb.jpg https://www.pokebeach.com/news/2026/10/067-Mega-Garchomp-Z-ex.jpg
