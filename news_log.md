@@ -58,3 +58,6 @@ Format: date | game | item
 2026-10-25 | Prices | HOOK: Yu-Gi-Oh Beyond the Brave top card The Great Gallant Bandit BETB-EN027 Extended Art Starlight Rare — 400+ $ (Oct 22, 2026: PriceCharting $463, TCGplayer market $437)
 2026-10-25 | Prices | Beyond the Brave Extended Art Starlight Rares: Red-Eyes Black Dragon Exceed BETB-EN036 250+ $; CXyz Hope Chaos Barian Dragon BETB-EN044 100+ $; Elemental Saga Doriado BETB-EN028 90+ $ (PriceCharting + TCGplayer, Oct 22, 2026)
 2026-10-25 | Tips | Want a specific card? Buy the single instead of chasing it in packs
+2026-10-26 | Pokémon | HOOK: Japan M7 "Aura Seeker" (ハドウシーカー) out Nov 27, 2026 — first Z Mega ex: Mega Lucario Z ex, Mega Absol Z ex, Mega Garchomp Z ex; ¥200/pack, 5 cards (gamer.ne.jp + PokeBeach/inside-games)
+2026-10-26 | Yu-Gi-Oh | WCS 2027 Singapore: qualified duelists can play in up to two championships — TCG + one digital division (Konami EU X + YGOrganization, Oct 23)
+2026-10-26 | Tips | Japanese sets release months before English — follow them to know upcoming cards

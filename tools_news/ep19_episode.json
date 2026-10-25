@@ -1,0 +1,10 @@
+{"total": 46.99, "date_label": "26 أكتوبر 2026", "imgdir": "img", "segs": [
+ {"s":0,"e":3.03,"accent":"#ef4444","chip":"Pokémon TCG · اليابان","title":"Mega Lucario Z ex","sub":"كشف رسمي","img":"lucario.jpg"},
+ {"s":3.03,"e":6.33,"accent":"#a855f7","title":"أخبار وأسعار","sub":"","img":"title"},
+ {"s":6.33,"e":12.47,"accent":"#ef4444","chip":"Pokémon TCG · اليابان","title":"Aura Seeker","sub":"تنزل في اليابان 27 نوفمبر 2026","img":"pack.jpg"},
+ {"s":12.47,"e":17.27,"accent":"#ef4444","chip":"Pokémon TCG · اليابان","title":"كمان في المجموعة","sub":"Mega Absol Z ex · Mega Garchomp Z ex","img":["absol.jpg","lucario.jpg","garchomp.jpg"]},
+ {"s":17.27,"e":21.55,"accent":"#ef4444","chip":"Pokémon TCG · اليابان","title":"سعر البوستر باك","sub":"200 ين · 5 كروت في كل باك","img":"pack.jpg"},
+ {"s":21.55,"e":27.47,"accent":"#a855f7","chip":"Yu-Gi-Oh! · بطولة العالم","title":"WCS 2027 · سنغافورة","sub":"تغيير كبير من كونامي","img":"wcs.jpg"},
+ {"s":27.47,"e":34.75,"accent":"#a855f7","chip":"Yu-Gi-Oh! · بطولة العالم","title":"لأول مرة: بطولتين","sub":"بطولة الكروت + بطولة وحدة رقمية","img":"wcs.jpg"},
+ {"s":34.75,"e":41.54,"accent":"#14b8a6","chip":"نصيحة شراء","title":"الياباني ينزل قبل الإنجليزي","sub":"تابعه عشان تعرف الكروت الجاية","img":["absol.jpg","lucario.jpg","garchomp.jpg"]},
+ {"s":41.54,"e":46.99,"accent":"#a855f7","title":"مين تتمنى يجيه ميقا زد؟","sub":"اكتبه بالتعليقات","img":"cta"}]}
