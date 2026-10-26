@@ -1,5 +1,2 @@
-qa_sealed.mp3
-qa_gameshow.mp3
-qa_fight.mp3
-qa_market.mp3
-qa_elevator.mp3
+gp2_a.mp3
+gp2_b.mp3
