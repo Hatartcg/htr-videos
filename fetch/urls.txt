@@ -1,7 +1,6 @@
-rel_pk_box.png http://facetofacegames.com/cdn/shop/files/a5e5f5cc42109da5ca703a846957ecaa5ab4c356_Asset_SEA_BOX_PKM_10_10451_115.png?v=1784904494
-rel_pk_ig.html https://insider-gaming.com/pokemon-30th-anniversary-celebration-tcg-set-officially-revealed/
-rel_pk_jw.html https://www.josephwriteranderson.com/blog/new-pikachu-card-and-30th-celebration-trailer-revealed
-rel_pk_gp.html https://pokemon.gamespress.com/MEDIA-ALERT-Pokemon-Unveils-New-Pokemon-Trading-Card-Game-30th-Celebra
-rel_rb_ov.html https://playriftbound.com/en-us/news/announcements/the-radiance-overview/
-rel_rb_oh.html https://www.theouterhaven.net/riot-games-reveals-riftbound-radiance-during-vancouver-regional-qualifier/
-rel_nr_gt.html https://gamertagmythras.com/blog/naruto-tcg/naruto-mythos-tcg-shinobi-shiren-set-2
+rel_pk_logo_full.png https://imgeucdn.gamespress.com/cdn/files/Pokemon/2026/06/011416-9e325a84/Pokemon_TCG_30th_Celebration_Vertical_Logo.png
+rel_pk_logo.png https://imgeucdn.gamespress.com/cdn/files/Pokemon/2026/06/011416-9e325a84/Pokemon_TCG_30th_Celebration_Vertical_Logo.png?w=360&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=3119c057f9bcd5c4b9338e39f1bac7daa49ea8e7cbae2b48432d75d92b01298a
+rel_pk_art.jpg https://insider-gaming.com/wp-content/uploads/2026/06/30th.jpg
+rel_rb_rad.jpg https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/0d895d9d1ec8446fd14649933ff8d7efe1972cc4-1920x1080.jpg
+rel_rb_word.jpg https://cdn.theouterhaven.net/wp-content/uploads/2026/06/Radiance_Wordmar_Color.jpg
+rel_nr_pack.webp https://gamertagmythras.com/images/blog/naruto-tcg/naruto-mythos-tcg-shinobi-shiren-set-2/naruto-mythos-tcg-shinobi-shiren-booster-pack-banner.webp
