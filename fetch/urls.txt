@@ -1,1 +1,1 @@
-ygo_bp.html https://www.yugioh-card.com/en/products/booster-pack/
+ygo_oth.html https://www.yugioh-card.com/en/products/others/
