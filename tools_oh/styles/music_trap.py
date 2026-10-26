@@ -4,7 +4,10 @@ from scipy.io import wavfile
 from scipy.signal import butter, lfilter, fftconvolve
 KEY = os.environ['OH']; D = f'/home/claude/work/{KEY}/'
 C = {'ygo': dict(DUR=15.6, T=(0.88, 2.84, 3.14, 5.56, 6.61, 8.35, 10.24, 12.42), bpm=142, seed=8,
-                 roots=[45, 41, 43, 40], bell=[[81, 84, 88, 84], [77, 81, 84, 81], [79, 83, 86, 83], [76, 79, 83, 88]], cnt=(6.61, 15))}[KEY]
+                 roots=[45, 41, 43, 40], bell=[[81, 84, 88, 84], [77, 81, 84, 81], [79, 83, 86, 83], [76, 79, 83, 88]], cnt=(6.61, 15)),
+     'st30': dict(DUR=16.0, T=(0.95, 2.72, 3.5, 6.5, 7.95, 9.25, 10.45, 12.55), bpm=150, seed=21, thirds=[4, 4, 3, 4],
+                  roots=[50, 45, 47, 43], bell=[[86, 90, 93, 90], [85, 88, 93, 88], [86, 90, 95, 90], [86, 91, 95, 98]], cnt=(7.95, 10))}[KEY]
+TH = C.get('thirds', [3, 3, 3, 3])
 SR = 48000; DUR = C['DUR']; N = int(SR * DUR); rng = np.random.default_rng(C['seed'])
 VO = .5; T_GAME, T_PROD, T_NAME, T_F1, T_F2, T_F2b, T_PRICE, T_CTA = C['T']; B = 60 / C['bpm']
 mus = np.zeros((N, 2)); b808 = np.zeros(N); drm = np.zeros((N, 2)); sfx = np.zeros((N, 2)); kenv = np.zeros(N)
@@ -52,17 +55,17 @@ def kk(t, g=1.0):
     if L > 0: kenv[i:i + L] = np.maximum(kenv[i:i + L], np.exp(-tt(.2)[:L] / .07))
 R = C['roots']
 # intro: pad + bell, no drums
-add(mus, 0, pad([R[0] + 24, R[0] + 27, R[0] + 31], T_GAME), .6)
+add(mus, 0, pad([R[0] + 12, R[0] + 12 + TH[0], R[0] + 19] if R[0] > 46 else [R[0] + 24, R[0] + 27, R[0] + 31], T_GAME), .6)
 for i, m in enumerate(C['bell'][0]): add(mus, .1 + i * B / 2, bell(m), .25, pan=(-.3 if i % 2 else .3))
 add(sfx, T_GAME - .9, riser(.9), .5)
 def groove(t0, t1, full=True):
     t = t0; k = 0
     while t < t1 - 1e-6:
         bar = (k // 16) % 4; s16 = k % 16; root = R[bar]
-        if s16 == 0: add(mus, t, pad([root + 24, root + 27, root + 31], 16 * B / 4), .45)
+        if s16 == 0: add(mus, t, pad([root + 24 - 12 * (root > 46), root + 24 + TH[bar] - 12 * (root > 46), root + 31 - 12 * (root > 46)], 16 * B / 4), .45)
         if s16 % 4 == 0 or s16 % 4 == 2: add(mus, t, bell(C['bell'][bar][(s16 // 2) % 4]), .18, pan=(-.35 if s16 % 4 else .35))
         if full:
-            if s16 in (0, 10): kk(t); add(b808, t, s808(root - 12, 6 * B / 4 if s16 == 0 else 6 * B / 4, glide_to=(root - 10 if s16 == 10 else None)), 1)
+            if s16 in (0, 10): kk(t); add(b808, t, s808(root - 12 - 12 * (root > 46), 6 * B / 4 if s16 == 0 else 6 * B / 4, glide_to=(root - 10 - 12 * (root > 46) if s16 == 10 else None)), 1)
             if s16 == 7: kk(t, .7)
             if s16 == 8: add(drm, t, clap(), .7)
             if s16 in (12, 13) and bar % 2 == 1:  # triplet roll
@@ -74,7 +77,7 @@ groove(T_GAME, T_PRICE - 2 * B)
 add(sfx, T_PRICE - 2 * B, riser(2 * B), .55)
 for i in range(8): add(drm, T_PRICE - 2 * B + i * B / 4, hat(), .1 + .02 * i)
 groove(T_PRICE, DUR - 1.2)
-add(mus, DUR - 1.2, pad([R[0] + 24, R[0] + 28, R[0] + 31], 1.2), .6); add(b808, DUR - 1.2, s808(R[0] - 12, 1.2), 1)
+add(mus, DUR - 1.2, pad([R[0] + 24 - 12 * (R[0] > 46), R[0] + 28 - 12 * (R[0] > 46), R[0] + 31 - 12 * (R[0] > 46)], 1.2), .6); add(b808, DUR - 1.2, s808(R[0] - 12 - 12 * (R[0] > 46), 1.2), 1)
 # SFX
 add(sfx, 0.05, sparkle(), .5); add(sfx, T_GAME, drop(), .9); add(sfx, T_GAME + .2, sparkle(), .5)
 for tw in (T_PROD, T_F1, T_F2, T_CTA): add(sfx, tw - .1, swish(), .5)

@@ -6,4 +6,5 @@
 2026-10-24 | Yu-Gi-Oh! | Magnificent Monsters box (3 packs) | 179 SAR | videos/oh/oh_yugioh_magnificent_monsters_holo_v2.mp4 | holo
 2026-10-25 | Jujutsu Kaisen (merch) | Sukuna hoodie | 200 SAR | videos/oh/oh_sukuna_hoodie_cine_v2.mp4 | cinematic
 2026-10-26 | Solo Leveling (merch) | Solo Leveling sword set | 450 SAR | videos/oh/oh_solo_leveling_sword_set_system_v2.mp4 | system-hud
-2026-10-27 | One Piece | Starter Deck ST-24 Jewelry Bonney (51 cards + 1 booster pack) | 165 SAR | videos/oh/oh_st24_jewelry_bonney_starter_deck.mp4 | manga
+2026-10-27 | One Piece | Starter Deck ST-24 Jewelry Bonney (51 cards + 1 booster pack) | 165 SAR | videos/oh/oh_st24_jewelry_bonney_starter_deck.mp4 | manga | NOT POSTED (page price changed to 105 SAR; replaced by ST-30)
+2026-10-27 | One Piece | Starter Deck EX ST-30 Luffy & Ace (51 cards + 10 DON!! + 1 bonus pack) | 250 SAR | videos/oh/oh_st30_luffy_ace_starter_deck_holo.mp4 | holo

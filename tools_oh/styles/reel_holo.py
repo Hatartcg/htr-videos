@@ -10,6 +10,9 @@ CFG = {
     'ygo': dict(TOTAL=15.6, T_GAME=0.88, T_PROD=2.84, T_NAME=3.14, T_F1=5.56, T_F2=6.61, T_F2b=8.35, T_PRICE=10.24, T_CTA=12.42,
                 game='YU-GI-OH!', hook='تبي ألترا رير في كل باك؟', big='ULTRA RARE', label='YU-GI-OH! BOOSTER BOX', name=['MAGNIFICENT', 'MONSTERS'], n1=3, cap1='باكات في البوكس', n2=15, cap2='ULTRA RARE',
                 extra='+3 SECRET RARE', price='179', seed=5),
+    'st30': dict(TOTAL=16.0, T_GAME=0.95, T_PROD=2.72, T_NAME=3.5, T_F1=6.5, T_F2=7.95, T_F2b=9.25, T_PRICE=10.45, T_CTA=12.55,
+                game='ONE PIECE', hook='لوفي وإيس في ديك واحد!', big='LUFFY & ACE', label='ONE PIECE CARD GAME', name=['STARTER DECK EX', 'ST-30'], n1=51, cap1='كرت في الديك', n2=10, cap2='DON!! CARDS',
+                extra='+1 BONUS PACK', price='250', seed=11, f1='deck'),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; rng = np.random.default_rng(CFG['seed'])
@@ -177,7 +180,13 @@ def render(t):
     if T_F1 <= t < T_F2:
         lt = t - T_F1
         blit(f, H_N1.sprite(t), W / 2, H * .27, 1 + .8 * (1 - eo(lt / .18)), min(1, lt / .06))
-        for i, pk in enumerate(PACKS):
+        if CFG.get('f1') == 'deck':  # card stack dropping into a deck
+            for i in range(6):
+                k = lt - .1 - i * .07
+                if k > 0:
+                    y = H * .62 - 12 * i - 600 * (1 - eo(k / .3)); blit(f, persp(CARD, 12 * math.sin(t * 1.5), 1), W / 2 + (i - 2.5) * 6, y, .85, min(1, k / .1), (i - 2.5) * 3)
+            glint(f, W / 2 + 110, H * .52, 70, env(t, T_F1 + .6, .4))
+        for i, pk in enumerate([] if CFG.get('f1') == 'deck' else PACKS):
             k = lt - .12 - i * .1; x = W / 2 + (i - 1) * 270
             if k > 0:
                 y = H * .60 - 500 * (1 - eo(k / .35)); spr = persp(pk, 25 * math.sin(t * 2 + i), 1)
