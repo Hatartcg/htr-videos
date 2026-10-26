@@ -1,0 +1,10 @@
+{"total": 58.11, "date_label": "27 أكتوبر 2026", "imgdir": "img", "segs": [
+ {"s":0,"e":6.85,"accent":"#ef4444","chip":"Pokémon TCG · مزاد","title":"كروت بوكيمون من العِلّيّة","sub":"أكثر من مليون ونص جنيه إسترليني","img":"charizard.jpg"},
+ {"s":6.85,"e":10.15,"accent":"#a855f7","title":"أخبار وأسعار","sub":"","img":"title"},
+ {"s":10.15,"e":18.5,"accent":"#ef4444","chip":"Pokémon TCG · مزاد Ewbank's","title":"1,560,000 جنيه إسترليني","sub":"يعني أكثر من 2 مليون دولار","img":["lcpack.jpg","charizard.jpg"]},
+ {"s":18.5,"e":25.71,"accent":"#ef4444","chip":"Pokémon TCG · مزاد Ewbank's","title":"42 مجموعة كاملة","sub":"من eBay في التسعينات · انباع منها 41","img":["lcpack.jpg","charizard.jpg"]},
+ {"s":25.71,"e":34.79,"accent":"#ef4444","chip":"Pokémon TCG · أغلى قطعة","title":"Legendary Collection Master Set","sub":"التقدير 20,000 جنيه بالكثير · انباعت بـ 100,000","img":"charizard.jpg"},
+ {"s":34.79,"e":40.91,"accent":"#14b8a6","chip":"Lorcana · Hyperia City","title":"Mickey Mouse - Best in Town","sub":"نسخة Iconic · أغلى كرت في المجموعة","img":"mickey.jpg"},
+ {"s":40.91,"e":46.03,"accent":"#14b8a6","chip":"Lorcana · سعر السوق","title":"بيعات eBay الأخيرة","sub":"بين 1,750 و 2,500 دولار","img":"mickey.jpg"},
+ {"s":46.03,"e":53.06,"accent":"#14b8a6","chip":"نصيحة","title":"حط كروتك في سليفات","sub":"بعيد عن الشمس والرطوبة","img":["charizard.jpg","mickey.jpg"]},
+ {"s":53.06,"e":58.11,"accent":"#ef4444","title":"عندك كروت قديمة في البيت؟","sub":"اكتب لنا وش فيها بالتعليقات","img":"cta"}]}

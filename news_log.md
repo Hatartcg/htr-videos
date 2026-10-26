@@ -61,3 +61,7 @@ Format: date | game | item
 2026-10-26 | Pokémon | HOOK: Japan M7 "Aura Seeker" (ハドウシーカー) out Nov 27, 2026 — first Z Mega ex: Mega Lucario Z ex, Mega Absol Z ex, Mega Garchomp Z ex; ¥200/pack, 5 cards (gamer.ne.jp + PokeBeach/inside-games)
 2026-10-26 | Yu-Gi-Oh | WCS 2027 Singapore: qualified duelists can play in up to two championships — TCG + one digital division (Konami EU X + YGOrganization, Oct 23)
 2026-10-26 | Tips | Japanese sets release months before English — follow them to know upcoming cards
+2026-10-27 | Prices | HOOK: UK retired decorator's Pokémon collection (42 complete sets, bought on eBay in the 1990s, 41 sold) fetched £1.56M (2M+ $) at Ewbank's auction, Surrey (LBC + Men's Journal/BBC, Oct 22-23)
+2026-10-27 | Prices | Top lot: Legendary Collection complete master set incl. Charizard — estimate £15-20K, sold £100,000 (LBC)
+2026-10-27 | Prices | Lorcana Hyperia City top card Mickey Mouse - Best in Town (Iconic) #241: recent eBay sales $1,750–2,500 (Oct 23-25) + TCGplayer sale $2,400.98 (Oct 22) (PriceCharting sold list)
+2026-10-27 | Tips | Store cards in sleeves away from sun & humidity — condition decides the price
