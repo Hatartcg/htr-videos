@@ -1,2 +1,1 @@
-ygo_prod.html https://www.yugioh-card.com/en/products/
-ygo_mm.html https://www.yugioh-card.com/en/products/bp-magnificent-maestros/
+ygo_bp.html https://www.yugioh-card.com/en/products/booster-pack/
