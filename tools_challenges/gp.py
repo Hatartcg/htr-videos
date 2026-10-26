@@ -71,7 +71,7 @@ def logo_spr(w, glow=True):
     if glow:
         g = Image.new('RGBA', c.size, (0, 0, 0, 0)); m = Image.new('L', c.size, 0); m.paste(l.getchannel('A'), (60, 60)); g.paste(Image.new('RGBA', c.size, (150, 200, 255, 255)), (0, 0), m.filter(ImageFilter.GaussianBlur(30)).point(lambda v: int(v * 1.0))); c = Image.alpha_composite(c, g)
     c.alpha_composite(l, (60, 60)); return to_bgra(c)
-LOGO_BIG = logo_spr(560); LOGO_WM = logo_spr(150, False)
+LOGO_BIG = logo_spr(560); LOGO_WM = logo_spr(170, True)
 S = dict(
     t1=txt(SPEC['title1'], FL(118), WHITE), t2=txt(SPEC['title2'], FL(140), PURPLE, glow=PURPLE),
     sub=to_bgra(rrect(560, 84, 42, (24, 18, 50, 255), TEAL + (255,), 4)), subt=txt(SPEC['subtitle'], FL(50), LILAC),
@@ -169,7 +169,7 @@ def render(t):
         blit(f, S['htr'], W / 2, 660, ebk(k / .4), 1); blit(f, S['tcg'], W / 2, 800, ebk((k - .15) / .35), 1 if k > .15 else 0)
         blit(f, S['e3'], W / 2, 980, ebk((k - .3) / .35), 1 if k > .3 else 0); blit(f, S['ig'], W / 2, 1110, ebk((k - .45) / .35), 1 if k > .45 else 0); blit(f, S['igt'], W / 2, 1110, ebk((k - .45) / .35), 1 if k > .45 else 0)
         blit(f, S['loc'], W / 2, 1230, ebk((k - .6) / .35), 1 if k > .6 else 0)
-    if t < T_OUTRO + T_OUT: blit(f, S['wm'], W - 130, 80, 1, .9)
+    if t < T_OUTRO + T_OUT: blit(f, S['wm'], W - 130, 85, .9, 1)
     fl = 0.0
     for i in range(N): fl += env(t, RSTART[i] + THINK[i] + T_CD, .15) * .5
     fl += env(t, T_OUTRO + T_OUT, .15) * .5
