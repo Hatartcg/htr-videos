@@ -1,5 +1,3 @@
-yt_ygo_mm.html https://www.youtube.com/results?search_query=Yu-Gi-Oh!+TCG+Magnificent+Maestros+trailer
-yt_naruto.html https://www.youtube.com/results?search_query=Naruto+Mythos+TCG+Shinobi+Shiren+trailer
-yt_rgb.html https://www.youtube.com/results?search_query=Pokemon+TCG+30th+Celebration+RGB+Mew
-yt_pk30.html https://www.youtube.com/@PokemonTCG/videos
-yt_ygo_ch.html https://www.youtube.com/@yugiohtcgofficial/videos
+yt_ygo2.html https://www.youtube.com/results?search_query=%22Official+Yu-Gi-Oh!+TRADING+CARD+GAME%22+Magnificent+Maestros
+yt_ygo3.html https://www.youtube.com/results?search_query=Yu-Gi-Oh!+TCG+%7C+Magnificent+Maestros+%7C+Official
+yt_nr2.html https://www.youtube.com/results?search_query=Naruto+Mythos+TCG+official+trailer
