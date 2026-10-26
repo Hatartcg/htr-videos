@@ -1,8 +1,5 @@
-t_rgb_dex.html https://www.dexerto.com/pokemon/pokemons-mystery-rgb-mew-cards-finally-revealed-after-months-of-fake-card-claims-3409416/
-t_rgb_ss.html https://samuraiswordtokyo.com/zh-hans/blogs/news/rgb-mew-cards-explained-r-rgb-g-rgb-b-rgb-30th-celebration
-t_rgb_bills.html https://billsarchive.com/articles/rgb-mew-30th-celebration.html
-t_nr_uk.html https://uk-anime.net/newsitem/New_Naruto_Mythos__TCG_on_the_way.html
-t_nr_road.html https://www.narutotcgmythos.com/naruto-mythos-tcg-official-roadmap
-t_ygo_icv.html https://icv2.com/articles/news/view/63153/new-yu-gi-oh-tcg-booster-set-revealed
-t_ygo_mm.html https://icv2.com/articles/news/view/63062/konami-unveils-magnificent-maestros-yu-gi-oh-tcg
-t_ygo_cal.html https://icv2.com/articles/news/view/61069/yu-gi-oh-tcg-2026-product-release-calendar
+yt_ygo_mm.html https://www.youtube.com/results?search_query=Yu-Gi-Oh!+TCG+Magnificent+Maestros+trailer
+yt_naruto.html https://www.youtube.com/results?search_query=Naruto+Mythos+TCG+Shinobi+Shiren+trailer
+yt_rgb.html https://www.youtube.com/results?search_query=Pokemon+TCG+30th+Celebration+RGB+Mew
+yt_pk30.html https://www.youtube.com/@PokemonTCG/videos
+yt_ygo_ch.html https://www.youtube.com/@yugiohtcgofficial/videos
