@@ -1,3 +1,2 @@
-yt_ygo2.html https://www.youtube.com/results?search_query=%22Official+Yu-Gi-Oh!+TRADING+CARD+GAME%22+Magnificent+Maestros
-yt_ygo3.html https://www.youtube.com/results?search_query=Yu-Gi-Oh!+TCG+%7C+Magnificent+Maestros+%7C+Official
-yt_nr2.html https://www.youtube.com/results?search_query=Naruto+Mythos+TCG+official+trailer
+ygo_prod.html https://www.yugioh-card.com/en/products/
+ygo_mm.html https://www.yugioh-card.com/en/products/bp-magnificent-maestros/
