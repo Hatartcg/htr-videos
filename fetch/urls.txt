@@ -1,2 +1,13 @@
-mm_img_88.jpg https://cdn.shopify.com/s/files/1/0462/9689/1552/files/mama-box.jpg
-mm_img_tz.webp https://cdn.shopify.com/s/files/1/0576/3832/2199/files/MAMS-Tuckbox-02-US_4a8647a5-45e5-4812-aeda-1206134183f5.webp
+dns_mx.json https://dns.google/resolve?name=htrtcg.com&type=MX
+dns_txt.json https://dns.google/resolve?name=htrtcg.com&type=TXT
+dns_auto.json https://dns.google/resolve?name=autodiscover.htrtcg.com&type=CNAME
+dns_dmarc.json https://dns.google/resolve?name=_dmarc.htrtcg.com&type=TXT
+dns_send_mx.json https://dns.google/resolve?name=send.htrtcg.com&type=MX
+dns_send_txt.json https://dns.google/resolve?name=send.htrtcg.com&type=TXT
+dns_dkim.json https://dns.google/resolve?name=resend._domainkey.htrtcg.com&type=TXT
+dns_ns.json https://dns.google/resolve?name=htrtcg.com&type=NS
+dns_lyncd.json https://dns.google/resolve?name=lyncdiscover.htrtcg.com&type=CNAME
+dns_msoid.json https://dns.google/resolve?name=msoid.htrtcg.com&type=CNAME
+dns_srv.json https://dns.google/resolve?name=_autodiscover._tcp.htrtcg.com&type=SRV
+dns_a.json https://dns.google/resolve?name=htrtcg.com&type=A
+dns_www.json https://dns.google/resolve?name=www.htrtcg.com&type=CNAME
