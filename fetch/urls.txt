@@ -1,1 +1,1 @@
-acc_upp.json https://ultrapro.com/search/suggest.json?q=platinum%20toploader&resources%5Btype%5D=product
+acc_img_platinum.png https://cdn.shopify.com/s/files/1/0255/2168/4558/products/15910_AW51082_Display_TL_Platinum.png
