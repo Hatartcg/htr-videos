@@ -1,16 +1,1 @@
-oh_dn_1.jpg https://cdn.salla.sa/NKNagy/0b18a788-f9bb-47f9-a6f6-4ca0354f16e6-1000x983.40248962656-LKuZE0kK2jsFtpk6OT6boOBhqQ8EvQ846AnXFADA.jpg
-oh_dn_2.jpg https://cdn.salla.sa/NKNagy/18ec9eaa-b4dd-4467-afb6-a934228cfb1a-1000x983.40248962656-SVDZ9JZxmyj1ZTfZZ0CWN1eicrs9jSMRWfFvx9T4.jpg
-oh_dn_3.jpg https://cdn.salla.sa/NKNagy/3c348f00-980a-4d97-825c-93afa225ae4b-973.73737373737x1000-J2EY7fpCLRx08QrvbxdVcYOMhXe0Xgc1RXwKoNuj.jpg
-oh_dn_4.jpg https://cdn.salla.sa/NKNagy/4332162e-5878-41b6-b79a-8a19b9bdf07a-1000x983.40248962656-mX7q5u5JEPIaMYXwDsgfE7nHn5DpseyiQPGPHSKf.jpg
-oh_dn_5.jpg https://cdn.salla.sa/NKNagy/53c6cdea-5559-47b5-9e5c-549c00e748a7-1000x983.40248962656-gqqUkKSJzFoTM4nE7garrbLAGd1a72Ktxd78ZbVX.jpg
-oh_dn_6.jpg https://cdn.salla.sa/NKNagy/69ce3963-72a1-488a-983c-a5ac6179dc4f-973.73737373737x1000-CDfM42iJvycfEzyatleyzm1HlmAX4ixxmljQPIQQ.jpg
-oh_dn_7.jpg https://cdn.salla.sa/NKNagy/74d26762-df2f-44e3-94cf-c8ed9560af6b-973.73737373737x1000-jEOJZzGjvSR4CBv52qXViABY2ChfGfQpQchv6HLL.jpg
-oh_dn_8.jpg https://cdn.salla.sa/NKNagy/7fc45b80-739b-48e4-8917-41945bd19c07-1000x983.40248962656-D3m8zPx8YKAy00CVMbqPCh1AXOWqPuQ7PeTQ82jr.jpg
-oh_dn_9.jpg https://cdn.salla.sa/NKNagy/9147014f-6ad5-4187-8dd6-c2c6e8be28a0-1000x983.40248962656-kgP5UL524Ly0LCqtmhabik3eprCIQLVbHI37ZDho.jpg
-oh_dn_10.jpg https://cdn.salla.sa/NKNagy/927b3e4a-51cc-4944-aabf-2a308e2280fb-1000x983.40248962656-Hl7sbh7jlJLJbeiGEMQygho2vvjlp4nSxXLYA004.jpg
-oh_dn_11.jpg https://cdn.salla.sa/NKNagy/930c61c1-3667-465f-b8ec-ed45e793ec06-1000x983.40248962656-n8rgWZ1n0YfGAncGqJMrEMzIbdfuTIjbQU9j0P9H.jpg
-oh_dn_12.jpg https://cdn.salla.sa/NKNagy/982ecfe3-dd6e-4cdf-a230-03254542b9bc-1000x983.40248962656-9ggsMvw5wS4tPOKSOosuiG7unlW0zBP8NNN276aF.jpg
-oh_dn_13.jpg https://cdn.salla.sa/NKNagy/a667c185-60b0-4abc-8470-a35218501587-973.73737373737x1000-3CrqMhESaiMKHruZcT1lUUxj7ITfjMuWh3PC5hyY.jpg
-oh_dn_14.jpg https://cdn.salla.sa/NKNagy/b0bccac4-84f6-4f8b-addf-42710e1f1bfb-976.79324894515x1000-NJCFx4CiNDCLqcsiumuvTTKTPJAY221sqnUXnI9W.jpg
-oh_dn_15.jpg https://cdn.salla.sa/NKNagy/d52aebd0-6ca3-411e-832d-170d076c7da2-973.73737373737x1000-J19AMBZnmjesygY76MpaGg7BX4RvTjmKDsRZjmbv.jpg
-oh_dn_16.jpg https://cdn.salla.sa/NKNagy/ef2fa803-4e51-4351-8a66-7d97047efd18-973.73737373737x1000-SEt7XwzQyccL9oTyFWTVo8JZialUJ63BaRDcIKep.jpg
+oh_dn_voice.mp3 https://storage.googleapis.com/xi-backend/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/Hr6cMu8DrDvHoYC1kApP/Yvou1UXwntJNy3GpNv8m/content.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20261027%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261027T043718Z&X-Goog-Expires=7200&X-Goog-SignedHeaders=host&X-Goog-Signature=298cc9ddb48ece5fbe9196bef3427feaa5e86754c0a3e6af12eea1ac5141d72311bf84ed4414aa5b5d70fbc4dd675fe17768fdb9f7d263442c28927cdfb55bd8b610071a5a374244510cb61f89e37ba02e2f865b9914f8c3906f219214ad23da00dab7983952702ae367173c6fbbc92e7be0470e5ac638a1ffd004934ee50c0ab8ac34d4e4f894f83386672bc96f328776c0d86e5bc665d7f34ffa69f0531e39f31fe75635d8ef254d5fcfdac38d3b4594666c5ef61d37691073d9c3d1d218ce7f5226e76d5fdfe9e9d17900ebbacbb7918e4b4cb002e4ba25cb84e094cd8e8b1fa20e44c9f314e0786b4dda1efe5ee9fb0ca53a463c75bd33bae551d0b93b97
