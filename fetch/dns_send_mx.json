@@ -1,0 +1,1 @@
+{"Status":0,"TC":false,"RD":true,"RA":true,"AD":false,"CD":false,"Question":[{"name":"send.htrtcg.com.","type":15}],"Answer":[{"name":"send.htrtcg.com.","type":5,"TTL":3600,"data":"send.forge.rmta.net."},{"name":"send.forge.rmta.net.","type":15,"TTL":300,"data":"10 feedback.forge.rmta.net."}],"Comment":"Response from 205.251.199.46."}

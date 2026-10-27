@@ -1,0 +1,1 @@
+{"Status":0,"TC":false,"RD":true,"RA":true,"AD":false,"CD":false,"Question":[{"name":"_dmarc.htrtcg.com.","type":16}],"Answer":[{"name":"_dmarc.htrtcg.com.","type":16,"TTL":3600,"data":"v=DMARC1; p=quarantine; adkim=r; aspf=r; rua=mailto:dmarc_rua@onsecureserver.net;"}],"Comment":"Response from 173.201.73.16."}

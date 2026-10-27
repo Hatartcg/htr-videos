@@ -1,0 +1,1 @@
+{"Status":0,"TC":false,"RD":true,"RA":true,"AD":false,"CD":false,"Question":[{"name":"send.htrtcg.com.","type":16}],"Answer":[{"name":"send.htrtcg.com.","type":5,"TTL":3600,"data":"send.forge.rmta.net."},{"name":"send.forge.rmta.net.","type":16,"TTL":300,"data":"v=spf1 ip4:52.3.252.119 ip4:44.222.39.36 ip4:199.249.231.0/24 ~all"}],"Comment":"Response from 205.251.192.19."}
