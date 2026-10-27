@@ -1,0 +1,10 @@
+{"total": 49.42, "date_label": "28 أكتوبر 2026", "imgdir": "img", "segs": [
+ {"s":0,"e":4.45,"accent":"#ef4444","chip":"Pokémon · لندن","title":"أول متجر دائم لبوكيمون برا آسيا","sub":"والمكان: لندن","img":"london.jpg"},
+ {"s":4.45,"e":7.75,"accent":"#a855f7","title":"أخبار وأسعار","sub":"","img":"title"},
+ {"s":7.75,"e":12.54,"accent":"#ef4444","chip":"Pokémon · إعلان رسمي","title":"الافتتاح بحلول 2029","sub":"إعلان من شركة بوكيمون","img":"london.jpg"},
+ {"s":12.54,"e":18.9,"accent":"#ef4444","chip":"Pokémon · لندن","title":"أول وحدة من عدة متاجر دائمة","sub":"المدن الثانية لسا ما انعلنت","img":"london1.jpg"},
+ {"s":18.9,"e":25.74,"accent":"#3b82f6","chip":"Gundam Card Game","title":"Cosmic Crisis [EB02]","sub":"إكسترا بوستر جديد من بانداي","img":"gundam.jpg"},
+ {"s":25.74,"e":30.34,"accent":"#3b82f6","chip":"Gundam Card Game","title":"مستوحاة من Gundam SEED","sub":"12 كرت في كل بوستر باك","img":"gundam.jpg"},
+ {"s":30.34,"e":34.42,"accent":"#3b82f6","chip":"Gundam · EB02","title":"تنزل بالإنجليزي","sub":"26 فبراير 2027","img":"gd_soon.png"},
+ {"s":34.42,"e":43.13,"accent":"#14b8a6","chip":"نصيحة شراء","title":"تأكد من تاريخ النزول","sub":"من الموقع الرسمي قبل ما تحجز","img":"gd_soon.png"},
+ {"s":43.13,"e":49.42,"accent":"#ef4444","title":"لو فتحت بوكيمون متجر في السعودية","sub":"وش أول شي بتشتريه؟ اكتب بالتعليقات","img":"cta"}]}
