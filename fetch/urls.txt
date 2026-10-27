@@ -1,7 +1,4 @@
-acc_up1.json https://ultrapro.com/search/suggest.json?q=81126&resources[type]=product
-acc_up2.json https://ultrapro.com/search/suggest.json?q=81222&resources[type]=product
-acc_up3.json https://ultrapro.com/search/suggest.json?q=platinum%20toploader&resources[type]=product
-acc_up4.json https://ultrapro.com/search/suggest.json?q=soft%20card%20sleeves&resources[type]=product
-acc_evo1.js https://topshelfco.ca/products/evoretro-psa-slab-bumper-guard.js
-acc_evo2.json https://topshelfco.ca/search/suggest.json?q=bgs%20bumper&resources[type]=product
-acc_evo3.json https://topshelfco.ca/search/suggest.json?q=evoretro&resources[type]=product
+acc_tm1.js https://travellingman.com/products/ultra-pro-platinum-toploader-ultra-clear-3x4-25ct.js
+acc_tm2.json https://travellingman.com/search/suggest.json?q=ultra%20pro%20soft%20sleeves&resources%5Btype%5D=product
+acc_up1.json https://ultrapro.com/search/suggest.json?q=soft%20card%20sleeves&resources%5Btype%5D=product
+acc_evo2.json https://topshelfco.ca/search/suggest.json?q=bumper&resources%5Btype%5D=product
