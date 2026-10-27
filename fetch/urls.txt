@@ -1,1 +1,3 @@
-acc_img_platinum.png https://cdn.shopify.com/s/files/1/0255/2168/4558/products/15910_AW51082_Display_TL_Platinum.png
+mm_hv.js https://www.hobbiesville.com/products/yugioh-magnificent-maestros-box-1st-edition-pre-order.js
+mm_88.js https://www.88cardhouse.com/products/yu-gi-oh-magnificent-maestros-box-pre-order.js
+mm_tz.js https://tierzerogames.com/en-us/products/yugioh-magnificent-maestros-box-x1-pre-order.js
