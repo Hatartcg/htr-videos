@@ -1,1 +1,6 @@
-oh_dn_voice.mp3 https://storage.googleapis.com/xi-backend/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/Hr6cMu8DrDvHoYC1kApP/Yvou1UXwntJNy3GpNv8m/content.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20261027%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261027T043718Z&X-Goog-Expires=7200&X-Goog-SignedHeaders=host&X-Goog-Signature=298cc9ddb48ece5fbe9196bef3427feaa5e86754c0a3e6af12eea1ac5141d72311bf84ed4414aa5b5d70fbc4dd675fe17768fdb9f7d263442c28927cdfb55bd8b610071a5a374244510cb61f89e37ba02e2f865b9914f8c3906f219214ad23da00dab7983952702ae367173c6fbbc92e7be0470e5ac638a1ffd004934ee50c0ab8ac34d4e4f894f83386672bc96f328776c0d86e5bc665d7f34ffa69f0531e39f31fe75635d8ef254d5fcfdac38d3b4594666c5ef61d37691073d9c3d1d218ce7f5226e76d5fdfe9e9d17900ebbacbb7918e4b4cb002e4ba25cb84e094cd8e8b1fa20e44c9f314e0786b4dda1efe5ee9fb0ca53a463c75bd33bae551d0b93b97
+tc_lu.txt https://tcgcsv.com/last-updated.txt
+tc_g3.json https://tcgcsv.com/tcgplayer/3/groups
+tc_g68.json https://tcgcsv.com/tcgplayer/68/groups
+tc_g2.json https://tcgcsv.com/tcgplayer/2/groups
+tc_g89.json https://tcgcsv.com/tcgplayer/89/groups
+tc_g71.json https://tcgcsv.com/tcgplayer/71/groups
