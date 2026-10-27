@@ -1,2 +1,7 @@
-im_722592.jpg https://tcgplayer-cdn.tcgplayer.com/product/722592_in_1000x1000.jpg
-im_722586.jpg https://tcgplayer-cdn.tcgplayer.com/product/722586_in_1000x1000.jpg
+acc_up1.json https://ultrapro.com/search/suggest.json?q=81126&resources[type]=product
+acc_up2.json https://ultrapro.com/search/suggest.json?q=81222&resources[type]=product
+acc_up3.json https://ultrapro.com/search/suggest.json?q=platinum%20toploader&resources[type]=product
+acc_up4.json https://ultrapro.com/search/suggest.json?q=soft%20card%20sleeves&resources[type]=product
+acc_evo1.js https://topshelfco.ca/products/evoretro-psa-slab-bumper-guard.js
+acc_evo2.json https://topshelfco.ca/search/suggest.json?q=bgs%20bumper&resources[type]=product
+acc_evo3.json https://topshelfco.ca/search/suggest.json?q=evoretro&resources[type]=product
