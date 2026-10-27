@@ -8,6 +8,9 @@ KEY = os.environ['OH']; D = f'/home/claude/work/{KEY}/'
 VO = 0.5
 RED = (230, 30, 70)
 CFG = {
+    'dn': dict(TOTAL=14.4, T_GAME=0.6, T_PROD=3.14, T_NAME=3.5, T_F1=7.98, T_F1b=8.5, T_F2=4.26, T_PRICE=9.22, T_CTA=10.9,
+               game=['DEATH', 'NOTE'], hook=['فريق إل؟', 'هذا لك!'], name=['DEATH NOTE PULLOVER', 'ANIME MERCH'], caps=['مقاسات لين XXXL', 'دافي للبرد'], cap2='ألوان كثيرة',
+               price='200', seed=13),
     'suk': dict(TOTAL=15.1, T_GAME=0.58, T_PROD=2.5, T_NAME=2.82, T_F1=4.66, T_F1b=6.18, T_F2=8.02, T_PRICE=9.94, T_CTA=11.62,
                 game=['JUJUTSU', 'KAISEN'], hook=['ملك اللعنات', 'صار هودي!'], name=['SUKUNA HOODIE', 'JUJUTSU KAISEN'], caps=['خامة عالية الجودة', 'دافي للأيام الباردة'], cap2='ألوان متعددة',
                 price='200', seed=9),
@@ -46,7 +49,9 @@ LOGO_BIG, LOGO_MID, LOGO_WM = logo_spr(520), logo_spr(420), logo_spr(140)
 prod = Image.open(D + 'main.png').convert('RGB')
 PROD_BIG = rim(prod, 900); PROD = rim(prod, 760); PROD_SM = rim(prod, 330)
 STRIP = [rim(Image.open(D + f'c{i}.png').convert('RGB'), 400, col=(c if c else RED)) for i, c in zip((8, 4, 3, 1, 5, 7), (RED, RED, VIOLET, VIOLET, PINK, (60, 110, 255)))]
+T_C1 = CFG.get('T_C1', 5.82)
 S = dict(
+    size=T('المقاسات', FC(92)), sizes=T('S · M · L · XL · XXL · XXXL', FA(62), fill=WHITE, glow=VIOLET, gr=16),
     ya=np.zeros((4, 4, 4), np.uint8),
     game=[T(g, FC(160, b'Black')) for g in CFG['hook']],
     name0=(lambda sp: cv2.resize(sp, (960, int(sp.shape[0] * 960 / sp.shape[1])), interpolation=cv2.INTER_AREA) if sp.shape[1] > 960 else sp)(T(CFG['name'][0], FA(130), track=6)), name1=T(CFG['name'][1], FA(70), fill=(240, 220, 230), glow=VIOLET, track=26),
@@ -54,7 +59,7 @@ S = dict(
     price=T(CFG['price'], FA(380), track=10), sar=T('ريال', FC(110), glow=VIOLET),
     stock=T('متوفر الآن', FC(60, b'SemiBold'), fill=(220, 210, 230), glow=VIOLET, gr=12),
     order=T('اطلبه الحين', FC(130, b'Black')), url=T('otakkuhaveen.com', FA(66), fill=WHITE, glow=VIOLET, track=4),
-    game_sm=T(' '.join(CFG['game']), FA(64), fill=(230, 220, 235), glow=RED, gr=12, track=8),
+    game_sm=T(CFG.get('game_sm', ' '.join(CFG['game'])), FA(64), fill=(230, 220, 235), glow=RED, gr=12, track=8),
 )
 
 # ---------- background: smoke + neon + grain ----------
@@ -102,7 +107,7 @@ def line(f, x0, x1, y, a, col=RED):
     cv2.addWeighted(ov, a, fx, 1 - a, 0, fx); f[:] = fx
 
 def fade_cut(t):  # dip to black around cuts
-    return max([env(t, tc - .12, .12) * 0 + (1 - min(1, abs(t - tc) / .12)) for tc in (T_PROD, T_F1, T_F2, T_CTA)] + [0])
+    return max([env(t, tc - .12, .12) * 0 + (1 - min(1, abs(t - tc) / .12)) for tc in (T_PROD, T_F2, T_C1, T_F1, T_CTA)] + [0])
 
 def render(t):
     hit = env(t, T_GAME, .7) + env(t, T_PRICE, .8)
@@ -120,7 +125,7 @@ def render(t):
                 kk = k - i * .18
                 if kk > 0: blit(f, reveal(g, eo(kk / .35), True), W / 2, H * (.42 + .1 * i), push, 1 - eo((t - T_PROD + .2) / .2))
             line(f, W / 2 - 330 * eo(k / .5), W / 2 + 330 * eo(k / .5), H * .62, 1)
-    if T_PROD <= t < T_F1:
+    if T_PROD <= t < T_F2:
         lt = t - T_PROD; s = .86 + .08 * (lt / (T_F1 - T_PROD))
         blit(f, PROD_BIG, W / 2 + 40 * (1 - eo(lt / .6)), H * .42, s, eo(lt / .35))
         if t > T_NAME:
@@ -128,15 +133,21 @@ def render(t):
             blit(f, reveal(S['name0'], eo(k / .35)), W / 2, H * .74, 1, 1)
             blit(f, S['name1'], W / 2, H * .80, 1, eo((k - .3) / .3))
             line(f, W / 2 - 260 * eo((k - .2) / .4), W / 2 + 260 * eo((k - .2) / .4), H * .775, 1)
-    if T_F1 <= t < T_F2:
+    if T_C1 <= t < T_F1:
+        lt = t - T_C1
+        blit(f, PROD, W / 2 + 30 * (lt / 3), H * .36, .9 + .03 * lt / 3, eo(lt / .3))
+        blit(f, reveal(S['size'], eo(lt / .4), True), W / 2, H * .68, 1, 1)
+        blit(f, S['sizes'], W / 2, H * .76, 1, eo((lt - .35) / .3))
+        line(f, W * .2, W * .2 + W * .6 * eo(lt / .5), H * .645, .9)
+    if T_F1 <= t < T_PRICE:
         lt = t - T_F1
         blit(f, PROD, W / 2 - 30 * (lt / 3), H * .36, .9 + .03 * lt / 3, eo(lt / .3))
-        for i, (tc, spr) in enumerate(zip([T_F1 + .05, T_F1b], S['caps'])):
+        for i, (tc, spr) in enumerate(zip([T_F1 + .05], S['caps'][1:])):
             if t > tc:
                 k = t - tc; y = H * (.68 + .075 * i)
                 blit(f, reveal(spr, eo(k / .4), True), W / 2, y, 1, 1)
         line(f, W * .2, W * .2 + W * .6 * eo(lt / .5), H * .645, .9)
-    if T_F2 <= t < T_PRICE:
+    if T_F2 <= t < T_C1:
         lt = t - T_F2; off = -lt * 260 + 700 * (1 - eo(lt / .6))
         for i, sp in enumerate(STRIP):
             x = W / 2 + (i - 1) * 460 + off; blit(f, sp, x, H * .44 + (i % 2) * 40 - 20, .95, eo((lt - i * .05) / .3))

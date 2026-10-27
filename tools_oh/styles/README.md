@@ -10,7 +10,7 @@ Work dir per product: /home/claude/work/<key>/ with main.png, alt.png (optional)
 |---|---|---|---|---|
 | manga | reel_manga.py | music_rock.py | paper + halftone, speed lines, speech bubbles, ink-slab wipes | anime-opening rock guitars |
 | holo unboxing | reel_holo.py | music_trap.py | black stage + spotlight, rainbow foil text, 3D box, card fan, floor reflection | dark trap (808, rolls, bells) |
-| cinematic dark | reel_cine.py | music_taiko.py | letterbox, smoke, crimson/violet neon, grain, wipe reveals | taiko + shakuhachi-style flute + brass stabs |
+| cinematic dark | reel_cine.py | music_taiko.py or music_gothic.py | letterbox, smoke, crimson/violet neon, grain, wipe reveals | taiko + shakuhachi-style flute + brass stabs |
 | game system HUD | reel_sys.py | music_edm.py | grid, cyan UI windows ([ NOTIFICATION ] etc), typewriter, glitch | EDM four-on-floor, sidechain |
 | classic (old) | ../reel_example.py | ../music_example.py | purple rays + stars | J-pop/future-bass |
 Ideas still unused: retro arcade/pixel, lofi/vlog, kinetic typography, VHS 90s anime, paper-cut collage.
