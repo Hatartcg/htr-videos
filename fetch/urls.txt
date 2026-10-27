@@ -1,3 +1,2 @@
-mm_hv.js https://www.hobbiesville.com/products/yugioh-magnificent-maestros-box-1st-edition-pre-order.js
-mm_88.js https://www.88cardhouse.com/products/yu-gi-oh-magnificent-maestros-box-pre-order.js
-mm_tz.js https://tierzerogames.com/en-us/products/yugioh-magnificent-maestros-box-x1-pre-order.js
+mm_img_88.jpg https://cdn.shopify.com/s/files/1/0462/9689/1552/files/mama-box.jpg
+mm_img_tz.webp https://cdn.shopify.com/s/files/1/0576/3832/2199/files/MAMS-Tuckbox-02-US_4a8647a5-45e5-4812-aeda-1206134183f5.webp
