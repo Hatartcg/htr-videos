@@ -1,4 +1,6 @@
-acc_tm1.js https://travellingman.com/products/ultra-pro-platinum-toploader-ultra-clear-3x4-25ct.js
-acc_tm2.json https://travellingman.com/search/suggest.json?q=ultra%20pro%20soft%20sleeves&resources%5Btype%5D=product
-acc_up1.json https://ultrapro.com/search/suggest.json?q=soft%20card%20sleeves&resources%5Btype%5D=product
-acc_evo2.json https://topshelfco.ca/search/suggest.json?q=bumper&resources%5Btype%5D=product
+acc_img_sleeves.png https://cdn.shopify.com/s/files/1/0255/2168/4558/files/81126_AW53384_SS_PennySleeve.png
+acc_img_toploader.png https://cdn.shopify.com/s/files/1/0255/2168/4558/products/81222_Display_TL_Regular_07cad52d-45da-4de7-ac3d-a7ec549db32c.png
+acc_img_psa1.png https://cdn.shopify.com/s/files/1/0578/9148/7924/files/Evoretro_PSA_Slab_Bumper_Guard_Colours.png
+acc_img_psa2.png https://cdn.shopify.com/s/files/1/0578/9148/7924/files/Evoretro_PSA_Slab_Bumper_Guard_Image.png
+acc_img_bgs1.png https://cdn.shopify.com/s/files/1/0578/9148/7924/files/Evoretro_-_BGS_Slab_Bumper_Guard.png
+acc_bgs.js https://topshelfco.ca/products/evoretro-bgs-slab-bumper-guard.js
