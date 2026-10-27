@@ -65,3 +65,6 @@ Format: date | game | item
 2026-10-27 | Prices | Top lot: Legendary Collection complete master set incl. Charizard — estimate £15-20K, sold £100,000 (LBC)
 2026-10-27 | Prices | Lorcana Hyperia City top card Mickey Mouse - Best in Town (Iconic) #241: recent eBay sales $1,750–2,500 (Oct 23-25) + TCGplayer sale $2,400.98 (Oct 22) (PriceCharting sold list)
 2026-10-27 | Tips | Store cards in sleeves away from sun & humidity — condition decides the price
+2026-10-28 | Pokémon | HOOK: First permanent Pokémon store outside Asia — London, opening by 2029; first of several permanent stores, other cities TBA (TPCi, Oct 21; VGC + Time Extension/Hypebeast)
+2026-10-28 | Gundam | EB02 Cosmic Crisis (Gundam SEED), 12 cards/pack, English release Feb 26, 2027 (gundam-gcg.com + Just Play Games)
+2026-10-28 | Tips | Check release dates on the official site before preordering — some stores list estimated dates
