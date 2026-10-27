@@ -1,3 +1,1 @@
-acc_upb1.json https://ultrapro.com/search/suggest.json?q=bumper&resources%5Btype%5D=product
-acc_upb2.json https://ultrapro.com/search/suggest.json?q=slab%20guard&resources%5Btype%5D=product
-acc_upb3.json https://ultrapro.com/search/suggest.json?q=graded%20slab&resources%5Btype%5D=product
+acc_upp.json https://ultrapro.com/search/suggest.json?q=platinum%20toploader&resources%5Btype%5D=product
