@@ -1,1 +1,5 @@
-oh_sitemap2.xml https://otakkuhaveen.com/ar/sitemap-2.xml
+oh_p_riftbound.html https://otakkuhaveen.com/en/riftbound-spiritforged-booster-box/p338739419
+oh_p_riftbound_ar.html https://otakkuhaveen.com/ar/riftbound-spiritforged-booster-box/p338739419
+oh_p_st30.html https://otakkuhaveen.com/en/one-piece-card-game-starter-deck-st-30/p1884409316
+oh_p_ygo_rc2.html https://otakkuhaveen.com/en/yu-gi-oh-rarity-collection-ii-booster-box-24-packs/p921987942
+oh_p_naruto01.html https://otakkuhaveen.com/en/naruto-mythos-tcg-set-01/p1605634853
