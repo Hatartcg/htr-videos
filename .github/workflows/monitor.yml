@@ -1,0 +1,51 @@
+name: htr-site-monitor
+# Uptime check of www.htrtcg.com every 15 minutes. Results are appended to monitor/log.csv on the "monitor" branch
+# (never on main), one line per URL: utc_time,name,http_code,seconds,detail
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: htr-site-monitor
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - name: Probe site
+        run: |
+          set +e
+          T=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          : > rows.csv
+          probe() { # name url
+            out=$(curl -s -o body.txt -w "%{http_code} %{time_total}" -A "HTR-Monitor/1.0" --max-time 25 "$2")
+            code=${out% *}; secs=${out#* }; detail=""
+            if [ "$1" = "health" ]; then detail=$(tr -d '\n,' < body.txt | head -c 300 | tr ',' ';'); fi
+            echo "$T,$1,$code,$secs,$detail" >> rows.csv
+          }
+          probe home https://www.htrtcg.com/ar
+          probe home_en https://www.htrtcg.com/en
+          probe shop https://www.htrtcg.com/ar/shop
+          probe product https://www.htrtcg.com/ar/product/pokemon-tcg-30th-celebration-elite-trainer-box
+          probe checkout https://www.htrtcg.com/ar/checkout
+          probe membership https://www.htrtcg.com/ar/membership
+          probe sell https://www.htrtcg.com/ar/sell
+          probe grading https://www.htrtcg.com/ar/grading
+          probe login https://www.htrtcg.com/ar/login
+          probe health "https://www.htrtcg.com/api/health"
+          probe apex https://htrtcg.com/
+          cat rows.csv
+      - name: Append to monitor branch
+        run: |
+          git config --global user.name "Hatartcg"; git config --global user.email "hseyam.m@gmail.com"
+          for i in 1 2 3 4 5; do
+            rm -rf m && git clone -q --depth 1 --branch monitor "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" m 2>/dev/null \
+              || { mkdir m && cd m && git init -q -b monitor && git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" && cd ..; }
+            mkdir -p m/monitor; cat rows.csv >> m/monitor/log.csv
+            tail -n 12000 m/monitor/log.csv > m/monitor/tmp && mv m/monitor/tmp m/monitor/log.csv
+            cd m && git add monitor/log.csv && git commit -qm "monitor $(date -u +%H:%M)" && git push -q origin monitor && cd .. && break
+            cd ..; sleep 5
+          done
