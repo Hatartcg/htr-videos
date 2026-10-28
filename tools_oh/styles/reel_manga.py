@@ -31,9 +31,9 @@ CFG = {
         f1=dict(kind='num', n=51, cap='كرت جاهزة للعب'), f2=dict(kind='num', n=1, plus=True, cap='ومعاه باك بوستر!'),
         price='165', spot=PINK, seed=11, sfx_x=.6),
     'bleach': dict(
-        TOTAL=13.6, T_GAME=1.3, T_PROD=1.95, T_NAME=3.0, T_F1=4.3, T_F1b=5.3, T_F2=6.2, T_PRICE=8.3, T_CTA=10.6,
+        TOTAL=15.4, T_GAME=1.85, T_PROD=2.6, T_NAME=3.86, T_F1=4.6, T_F1b=5.2, T_F2=6.7, T_PRICE=10.05, T_CTA=12.5,
         hook='مطر ولا معركة؟', game=['BLEACH'], sfx='SLASH!', label='ANIME MERCH', name=['SWORD UMBRELLA', 'BLEACH'],
-        f1=dict(kind='caps', caps=['مقبض على شكل سيف', 'خفيفة وتنطوي بسهولة']), f2=dict(kind='grid', cap='تصاميم إيتشيغو وآيزن وبياكويا'),
+        f1=dict(kind='caps', caps=['خفيفة', 'وتنطوي بسهولة']), f2=dict(kind='grid', cap='تصاميم إيتشيغو وبياكويا وآيزن'),
         price='441', spot=(255, 61, 154), seed=21, order='اطلبها الحين!', stock='متوفرة الآن'),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
