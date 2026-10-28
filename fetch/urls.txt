@@ -1,8 +1,1 @@
-e22_heist_icv.jpg https://icv2.com/images/uploads/2781492e49950bfb030ea875857239553a3928694c0aaa86e1362c81.jpg
-e22_wotc_icv.jpg https://icv2.com/images/uploads/3bd580dffdda7c1fcceffa0fd8b9132a5576212b40dd800027250788.jpg
-e22_imph_foil.png https://www.yugioh-card.com/en/wp-content/uploads/2026/09/IMPH_foil_550.png
-e22_imph_01.png https://www.yugioh-card.com/en/wp-content/uploads/2026/09/imph_01.png
-e22_imph_02.png https://www.yugioh-card.com/en/wp-content/uploads/2026/09/imph_02.png
-e22_imph_03.png https://www.yugioh-card.com/en/wp-content/uploads/2026/09/imph_03.png
-e22_imph_04.png https://www.yugioh-card.com/en/wp-content/uploads/2026/09/imph_04.png
-e22_dex1.jpg https://www.dexerto.com/cdn-image/wp-content/uploads/2026/10/18/fedex-ground-delivery-truck.jpg
+oh_sitemap2.xml https://otakkuhaveen.com/ar/sitemap-2.xml
