@@ -1,6 +1,8 @@
-e22_icv_heist.html https://icv2.com/articles/news/view/63717/fbi-jumps-in-to-investigate-psa-fedex-pokemon-sports-cards-heist-more-information-revealed
-e22_dex_heist.html https://www.dexerto.com/entertainment/psa-confirms-fbi-investigating-1-million-pokemon-trading-card-heist-as-full-stolen-list-revealed-3421519/
-e22_imph.html https://www.yugioh-card.com/en/products/imph/
-e22_hasbro.html https://investor.hasbro.com/news-releases/news-release-details/hasbro-names-dan-ayoub-president-wizards-coast-hasbro-digital
-e22_icv_wotc.html https://icv2.com/articles/news/view/63733/people-move-d-d-head-dan-ayoub-named-president-wizards-coast-hasbro-digital-games
-e22_ygom.html https://www.yugiohmeta.com/articles/product-news/2026/september/imph-tcg
+e22_heist_icv.jpg https://icv2.com/images/uploads/2781492e49950bfb030ea875857239553a3928694c0aaa86e1362c81.jpg
+e22_wotc_icv.jpg https://icv2.com/images/uploads/3bd580dffdda7c1fcceffa0fd8b9132a5576212b40dd800027250788.jpg
+e22_imph_foil.png https://www.yugioh-card.com/en/wp-content/uploads/2026/09/IMPH_foil_550.png
+e22_imph_01.png https://www.yugioh-card.com/en/wp-content/uploads/2026/09/imph_01.png
+e22_imph_02.png https://www.yugioh-card.com/en/wp-content/uploads/2026/09/imph_02.png
+e22_imph_03.png https://www.yugioh-card.com/en/wp-content/uploads/2026/09/imph_03.png
+e22_imph_04.png https://www.yugioh-card.com/en/wp-content/uploads/2026/09/imph_04.png
+e22_dex1.jpg https://www.dexerto.com/cdn-image/wp-content/uploads/2026/10/18/fedex-ground-delivery-truck.jpg
