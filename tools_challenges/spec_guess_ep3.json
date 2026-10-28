@@ -1,0 +1,57 @@
+{
+ "title1": "تقدر تخمّن",
+ "title2": "كم تسوى هالكروت؟",
+ "subtitle": "٣ ألعاب · ٣ جولات",
+ "source": "سعر السوق في TCGplayer · 27 أكتوبر 2026",
+ "tease": "بكرة تحدي جديد… لا يفوتك!",
+ "rounds": [
+  {
+   "img": "/home/claude/gp3/im_610516.jpg",
+   "name": "UMBREON EX",
+   "set": "POKÉMON · Prismatic Evolutions · SIR 161/131",
+   "options": [
+    "$340",
+    "$720",
+    "$1,191"
+   ],
+   "answer": 2
+  },
+  {
+   "img": "/home/claude/gp3/im_510153.jpg",
+   "name": "ELSA - SPIRIT OF WINTER",
+   "set": "LORCANA · The First Chapter · Enchanted",
+   "options": [
+    "$953",
+    "$410",
+    "$2,100"
+   ],
+   "answer": 0
+  },
+  {
+   "img": "/home/claude/gp3/im_664913.jpg",
+   "name": "AHRI, INQUISITIVE",
+   "set": "RIFTBOUND · Spiritforged · Signature",
+   "options": [
+    "$1,250",
+    "$3,336",
+    "$6,800"
+   ],
+   "answer": 1
+  }
+ ],
+ "timing": {
+  "intro": 5.2,
+  "think": [
+   7.033333333333333,
+   4.766666666666667,
+   4.9
+  ],
+  "rlen": [
+   14.233333333333333,
+   11.766666666666667,
+   12.633333333333333
+  ],
+  "outro": 4.333333333333333,
+  "end": 2.6
+ }
+}
