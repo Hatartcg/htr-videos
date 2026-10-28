@@ -68,3 +68,6 @@ Format: date | game | item
 2026-10-28 | Pokémon | HOOK: First permanent Pokémon store outside Asia — London, opening by 2029; first of several permanent stores, other cities TBA (TPCi, Oct 21; VGC + Time Extension/Hypebeast)
 2026-10-28 | Gundam | EB02 Cosmic Crisis (Gundam SEED), 12 cards/pack, English release Feb 26, 2027 (gundam-gcg.com + Just Play Games)
 2026-10-28 | Tips | Check release dates on the official site before preordering — some stores list estimated dates
+2026-10-29 | Prices | HOOK: PSA heist — 6,451 graded cards (mostly Pokémon + sports) stolen Oct 13 from a delivery truck at PSA's Santa Ana offices; FBI + Santa Ana PD investigating; PSA deactivated the certs & published the full list (ICv2 Oct 26 + Dexerto Oct 24)
+2026-10-29 | Magic | Hasbro named Dan Ayoub (ex-SVP D&D) President of Wizards of the Coast & Hasbro Digital Games, effective Nov 2, 2026 (Hasbro IR Oct 27 + ICv2)
+2026-10-29 | Yu-Gi-Oh | Immortal Phoenix TCG Jan 29, 2027, 100 cards; The Winged Dragon of Ra, Sun God of Darkness = first DIVINE Extra Deck monster (yugioh-card.com + ICv2/YGOMeta)
