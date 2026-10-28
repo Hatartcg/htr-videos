@@ -361,3 +361,14 @@
 2026-10-28T07:33:24Z,login,200,0.286556,
 2026-10-28T07:33:24Z,health,200,1.002924,{"ok":true"db":true"dbMs":62"products":82"outOfStock":18"stuckPayments":0"payments":true"email":true"testMode":true}
 2026-10-28T07:33:24Z,apex,308,0.151309,
+2026-10-28T08:29:26Z,home,200,0.536623,
+2026-10-28T08:29:26Z,home_en,200,0.368573,
+2026-10-28T08:29:26Z,shop,200,0.558411,
+2026-10-28T08:29:26Z,product,200,0.337566,
+2026-10-28T08:29:26Z,checkout,307,0.278314,
+2026-10-28T08:29:26Z,membership,200,0.352957,
+2026-10-28T08:29:26Z,sell,200,0.386913,
+2026-10-28T08:29:26Z,grading,200,0.217300,
+2026-10-28T08:29:26Z,login,200,0.246166,
+2026-10-28T08:29:26Z,health,200,0.465290,{"ok":true"db":true"dbMs":68"products":82"outOfStock":18"stuckPayments":0"payments":true"email":true"testMode":true}
+2026-10-28T08:29:26Z,apex,308,0.141451,
