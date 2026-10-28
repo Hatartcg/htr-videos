@@ -30,6 +30,11 @@ CFG = {
         hook='تبي تبدأ؟', game=['ONE PIECE', 'CARD GAME'], sfx='SET SAIL!', label='STARTER DECK', name=['JEWELRY BONNEY', 'ST-24'],
         f1=dict(kind='num', n=51, cap='كرت جاهزة للعب'), f2=dict(kind='num', n=1, plus=True, cap='ومعاه باك بوستر!'),
         price='165', spot=PINK, seed=11, sfx_x=.6),
+    'bleach': dict(
+        TOTAL=13.6, T_GAME=1.3, T_PROD=1.95, T_NAME=3.0, T_F1=4.3, T_F1b=5.3, T_F2=6.2, T_PRICE=8.3, T_CTA=10.6,
+        hook='مطر ولا معركة؟', game=['BLEACH'], sfx='SLASH!', label='ANIME MERCH', name=['SWORD UMBRELLA', 'BLEACH'],
+        f1=dict(kind='caps', caps=['مقبض على شكل سيف', 'خفيفة وتنطوي بسهولة']), f2=dict(kind='grid', cap='تصاميم إيتشيغو وآيزن وبياكويا'),
+        price='441', spot=(255, 61, 154), seed=21, order='اطلبها الحين!', stock='متوفرة الآن'),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; SPOT = CFG['spot']
@@ -109,9 +114,9 @@ S = dict(
     name=[fit(ink_text(CFG['name'][0], FB(150), fill=WHITE, stroke=14, shadow_col=SPOT + (255,))), fit(tag(CFG['name'][1], FB(64), bg=WHITE, fg=INK))],
     burst=bubble(CFG['price'], FB(230 if len(CFG['price']) > 3 else 260), fill=SPOT, fg=WHITE, jag=True, pad=(90, 70)),
     sar=bubble('ريال بس!', FL(110), tail=(-.3, -1)),
-    stock=tag('متوفر الآن', FL(64)),
+    stock=tag(CFG.get('stock','متوفر الآن'), FL(64)),
     bam=ink_text('BAM!', FB(110), fill=WHITE, stroke=10, shadow_col=SPOT + (255,), off=8),
-    order=bubble('اطلبه الحين!', FL(140), tail=(.25, 1)),
+    order=bubble(CFG.get('order','اطلبه الحين!'), FL(140), tail=(.25, 1)),
     url=tag('otakkuhaveen.com', FB(52), bg=SPOT),
     game_sm=fit(ink_text(' '.join(CFG['game']), FB(66), fill=WHITE, stroke=8, shadow_col=SPOT + (255,), off=6), 900),
 )
