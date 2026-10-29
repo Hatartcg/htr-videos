@@ -1,1 +1,12 @@
-oh_sitemap2.xml https://otakkuhaveen.com/ar/sitemap-2.xml
+ohp_rift.html https://otakkuhaveen.com/ar/riftbound-spiritforged-booster-box/p338739419
+ohp_op15.html https://otakkuhaveen.com/ar/one-piece-op15-booster-box-adventure-on-kumi-island-english/p1392005193
+ohp_op16.html https://otakkuhaveen.com/ar/one-piece-op-16-the-time-of-battle/p242866621
+ohp_akaza.html https://otakkuhaveen.com/en/هودي-اكازيا/p1354888910
+ohp_tanjiro.html https://otakkuhaveen.com/en/هودي-تانجرو-ديمن-سلاير/p580444082
+ohp_zorosword.html https://otakkuhaveen.com/en/سيف-زورو/p2061334474
+ohp_lawsword.html https://otakkuhaveen.com/en/سيف-لاو/p755255191
+ohp_narutoposter.html https://otakkuhaveen.com/en/naruto-anime-poster/p1757577797
+ohp_ib08.html https://otakkuhaveen.com/ar/one-piece-card-game-illustration-box-ib-08/p914670
+ohp_st33.html https://otakkuhaveen.com/ar/one-piece-card-game-starter-deck-st-33/p444269311
+ohp_dandadan.html https://otakkuhaveen.com/en/dandadan-t-shirt/p360516703
+ohp_naruto01.html https://otakkuhaveen.com/ar/naruto-mythos-tcg-set-01/p1605634853
