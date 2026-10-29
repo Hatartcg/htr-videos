@@ -1,5 +1,1 @@
-ep23_mudkip2x.jpg https://d2tt46f3mh26nl.cloudfront.net/2797911f-0bd8-4703-96a9-bb058a1d80b9@2x
-ep23_mudkip_hero.webp https://cdn.prod.website-files.com/69d4d6e98d9aefcfbc9dba56/6adf6f225123b5d099f4ac7e_6adf6ebaf5e15d7744a87a3a_art-academy-mudkip-psa-10-4-88-million-goldin_ASSET_1_HERO.webp
-ep23_trophy_a.jpg https://scg-static.starcitygames.com/articles/2026/10/9596930e-8cec-45e0-9da5-4abe3604105f@2x-611x1024.jpg
-ep23_trophy_b.jpg https://scg-static.starcitygames.com/articles/2026/10/a94766a1-5e30-42e0-aac7-245cba27bf01@2x-611x1024.jpg
-ep23_trophy_art.jpg https://scg-static.starcitygames.com/articles/2026/10/e0e4b82f-1st-place-pikachu.jpg
+oh_sitemap2.xml https://otakkuhaveen.com/ar/sitemap-2.xml
