@@ -1,3 +1,3 @@
-ch_fri_t1.mp3
-ch_sat_t1.mp3
-ch_sun_t1.mp3
+ch_thu_final.mp3
+ch_fri_final.mp3
+ch_sun_final.mp3
