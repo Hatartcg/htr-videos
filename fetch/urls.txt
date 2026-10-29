@@ -1,9 +1,1 @@
-im_709666.jpg https://tcgplayer-cdn.tcgplayer.com/product/709666_in_1000x1000.jpg
-im_709667.jpg https://tcgplayer-cdn.tcgplayer.com/product/709667_in_1000x1000.jpg
-im_707604.jpg https://tcgplayer-cdn.tcgplayer.com/product/707604_in_1000x1000.jpg
-im_707603.jpg https://tcgplayer-cdn.tcgplayer.com/product/707603_in_1000x1000.jpg
-im_722591.jpg https://tcgplayer-cdn.tcgplayer.com/product/722591_in_1000x1000.jpg
-im_722592.jpg https://tcgplayer-cdn.tcgplayer.com/product/722592_in_1000x1000.jpg
-im_724654.jpg https://tcgplayer-cdn.tcgplayer.com/product/724654_in_1000x1000.jpg
-im_724642.jpg https://tcgplayer-cdn.tcgplayer.com/product/724642_in_1000x1000.jpg
-im_724654b.jpg https://tcgplayer-cdn.tcgplayer.com/product/724654_200w.jpg
+ch_thu_t1.mp3 https://storage.googleapis.com/xi-backend/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/looT0mO55WBDt870LfNf/aWj2AMyggTbAb0ZLYCCW/content.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20261029%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261029T045453Z&X-Goog-Expires=7200&X-Goog-SignedHeaders=host&X-Goog-Signature=3d9707da5126159ffc0e8f275ca89171176e8e38b822351c9acda44130299d70f8fb9157611d1c9238ace31bf1a8b7c7630950a8acc31583837161fcce4b9e934a72935c972c275d3764613bfd3ba9c68da602ba57f51fc1b9301bf14d44ce6be17c7a3974cc2eaf9813561fbbdc17d7defcb1a80ec50436cdf0c3b8d4da5910d83d6f9940bb195ff3daa04139fcf56c691e874b0eb68cae564bf223495be2f4f4dab084d91be88e0f52f4dfdfc2cbed9d121ce8a32721b27e1fc52d4d22c2b57105ccc24c5cbcc3f053342ce2eb52ae3a3fa96be7abdf146f26fc2d93b8ec47b2f54b6a5611d10315f273bf7d5b9709217f4d0ebf0eb5fc147bd1b4349ca039
