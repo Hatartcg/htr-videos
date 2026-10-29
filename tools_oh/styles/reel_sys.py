@@ -13,7 +13,8 @@ CFG = {
                price='450', seed=13),
     'st33': dict(TOTAL=16.1, T_GAME=1.1, T_PROD=2.9, T_NAME=3.6, T_F1=5.94, T_F1b=7.46, T_F2=8.78, T_PRICE=11.14, T_CTA=12.98,
                game='ONE PIECE CARD GAME', name=['STARTER DECK ST-33'], hook='كوزان جاهز يجمّد الطاولة!', big='KUZAN',
-               stats=[('51 كرت', 1.0), ('10 كروت DON!!', 1.0)], uses=['+ باك بوستر OP-16'], price='105', seed=33),
+               stats=[('51 كرت', 1.0), ('10 DON!!', 1.0)], uses=['+1 BOOSTER PACK OP-16'], price='105', seed=33,
+               mh=760, mh_sm=280, sm_y=.372, hook_fs=64, use_fs=56, alt_w=620, alt_pos=(W / 2, H * .735, .82), name_y=.765, chk_dx=375),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; rng = np.random.default_rng(CFG['seed'])
@@ -38,7 +39,8 @@ def window(w, h, header):
     d.line((M + 30, M + 110, M + w - 30, M + 110), fill=CY + (160,), width=2)
     return to_bgra(im)
 
-def item_img(im, w):
+def item_img(im, w, mh=None):
+    if mh and im.height * w / im.width > mh: w = int(im.width * mh / im.height)
     im = im.resize((w, int(im.height * w / im.width)), Image.LANCZOS)
     # put white-bg product on a soft light card so it reads on dark UI
     c = Image.new('RGBA', (im.width + 16, im.height + 16), CY + (255,)); c.paste(im, (8, 8)); return to_bgra(c)
@@ -50,14 +52,14 @@ def logo_spr(w):
     m = Image.new('L', g.size, 0); m.paste(l.getchannel('A'), (50, 50)); gl.putalpha(m.filter(ImageFilter.GaussianBlur(22)))
     g = Image.alpha_composite(g, gl); g.alpha_composite(l, (50, 50)); return to_bgra(g)
 LOGO_BIG, LOGO_MID, LOGO_WM = logo_spr(540), logo_spr(430), logo_spr(140)
-prod = Image.open(D + 'main.png').convert('RGB'); ITEM = item_img(prod, 640); ITEM_SM = item_img(prod, 300)
-alt = Image.open(D + 'alt.png').convert('RGB'); ALT = item_img(alt, 420)
+prod = Image.open(D + 'main.png').convert('RGB'); ITEM = item_img(prod, 640, CFG.get('mh')); ITEM_SM = item_img(prod, 300, CFG.get('mh_sm'))
+alt = Image.open(D + 'alt.png').convert('RGB'); ALT = item_img(alt, CFG.get('alt_w', 420))
 
 W_NOTE = window(880, 560, '[ NOTIFICATION ]'); W_ITEM = window(900, 1040, '[ ITEM ACQUIRED ]')
 W_STAT = window(900, 1180, '[ STATUS ]'); W_SHOP = window(860, 1000, '[ SHOP ]')
-S = dict(ya=G(CFG.get('hook', 'حس إنك صياد من رتبة'), FC(80)), game=G(CFG.get('big', 'S-RANK'), FA(190), glow=CY, gr=28),
+S = dict(ya=G(CFG.get('hook', 'حس إنك صياد من رتبة'), FC(CFG.get('hook_fs', 80))), game=G(CFG.get('big', 'S-RANK'), FA(190), glow=CY, gr=28),
          name=G(CFG['name'][0], FA(110 if len(CFG['name'][0]) < 12 else 84), glow=CY), gname=G(CFG['game'], FA(64), fill=(200, 235, 255)),
-         stats=[G(s, FC(84)) for s, _ in CFG['stats']], uses=[G(u, FC(80)) for u in CFG['uses']],
+         stats=[G(s, FC(84)) for s, _ in CFG['stats']], uses=[G(u, FC(CFG.get('use_fs', 80))) for u in CFG['uses']],
          price=G(CFG['price'], FA(330), glow=CY, gr=30), sar=G('ريال', FC(100)),
          stock=pill('متوفر الآن', FC(52), (10, 40, 80), border=CY + (255,)),
          order=G('اطلبه الحين', FC(130, b'Black'), glow=PINK), url=pill('otakkuhaveen.com', FA(54), (20, 60, 130), border=CY + (255,)),
@@ -132,13 +134,13 @@ def render(t):
             blit(f, sp, W / 2, H * .45, .2 + .8 * eo((lt - .2) / .3), 1)
         if t > T_NAME:
             k = t - T_NAME
-            blit(f, typed_ltr(S['gname'], k / .3), W / 2, H * .69, 1, 1)
-            blit(f, typed_ltr(S['name'], (k - .2) / .3), W / 2, H * .745, 1, 1)
+            blit(f, typed_ltr(S['gname'], k / .3), W / 2, H * CFG.get('name_y', .69), 1, 1)
+            blit(f, typed_ltr(S['name'], (k - .2) / .3), W / 2, H * (CFG.get('name_y', .69) + .055), 1, 1)
         if lt > .3: blit(f, S['lvl'], W / 2, H * .17 - 30 * eo((lt - .3) / .4), 1, env(t, T_PROD + .3, 1.2) * 1.2 if lt < 1.5 else 0)
     if T_F1 <= t < T_PRICE:
         lt = t - T_F1
         blit(f, win_open(W_STAT, lt / .3), W / 2, H * .47, 1, 1)
-        blit(f, ALT, W / 2 + 250, H * .70, .42, eo((lt - .1) / .3), -12)
+        blit(f, ALT, *CFG.get('alt_pos', (W / 2 + 250, H * .70, .42)), eo((lt - .1) / .3), -12 if 'alt_pos' not in CFG else -5)
         for i, (tc, (sname, val)) in enumerate(zip([T_F1, T_F1b], CFG['stats'])):
             if t > tc:
                 k = t - tc; y = H * (.30 + .08 * i)
@@ -155,14 +157,14 @@ def render(t):
                     y = H * (.50 + .075 * i)
                     blit(f, typed(u, k / .3), W / 2 + 40, y, 1, 1)
                     if k > .2:
-                        q = eo((k - .2) / .25); fx = np.clip(f, 0, 255).astype(np.uint8); cx_, cy_ = int(W / 2 - 300), int(y)
+                        q = eo((k - .2) / .25); fx = np.clip(f, 0, 255).astype(np.uint8); cx_, cy_ = int(W / 2 - CFG.get('chk_dx', 300)), int(y)
                         cv2.line(fx, (cx_ - 26, cy_), (cx_ - 8, cy_ + 20), CY[::-1], 9, cv2.LINE_AA)
                         if q > .4: cv2.line(fx, (cx_ - 8, cy_ + 20), (int(cx_ - 8 + 40 * q), int(cy_ + 20 - 44 * q)), CY[::-1], 9, cv2.LINE_AA)
                         f[:] = fx
     if T_PRICE <= t < T_CTA:
         lt = t - T_PRICE
         blit(f, win_open(W_SHOP, lt / .25), W / 2, H * .50, 1, 1)
-        blit(f, ITEM_SM, W / 2, H * .385, .8 * ebk((lt - .1) / .35), 1)
+        blit(f, ITEM_SM, W / 2, H * CFG.get('sm_y', .385), .8 * ebk((lt - .1) / .35), 1)
         if lt > .05: blit(f, S['price'], W / 2, H * .535, 1 + 1.0 * (1 - eo((lt - .05) / .16)), min(1, (lt - .05) / .05))
         if lt > .45: blit(f, S['sar'], W / 2, H * .645, ebk((lt - .45) / .3), 1)
         if lt > 1.0: blit(f, S['stock'], W / 2, H * .705, ebk((lt - 1.0) / .3), 1)
