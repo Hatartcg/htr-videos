@@ -1,1 +1,2 @@
-bd_vo.mp3
+bd_r1.mp3
+bd_r2.mp3
