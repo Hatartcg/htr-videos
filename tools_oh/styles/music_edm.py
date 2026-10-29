@@ -4,7 +4,9 @@ from scipy.io import wavfile
 from scipy.signal import butter, lfilter, fftconvolve
 KEY = os.environ['OH']; D = f'/home/claude/work/{KEY}/'
 C = {'sl': dict(DUR=15.1, T=(1.86, 3.14, 4.1, 5.82, 6.38, 7.18, 9.34, 11.62), bpm=128, seed=17,
-                CH=[[59, 62, 66], [55, 59, 62], [62, 66, 69], [57, 61, 64]], BS=[35, 31, 38, 33])}[KEY]
+                CH=[[59, 62, 66], [55, 59, 62], [62, 66, 69], [57, 61, 64]], BS=[35, 31, 38, 33]),
+     'st33': dict(DUR=16.1, T=(1.1, 2.9, 3.6, 5.94, 7.46, 8.78, 11.14, 12.98), bpm=140, seed=33,
+                CH=[[64, 67, 71], [60, 64, 67], [67, 71, 74], [62, 66, 69]], BS=[40, 36, 43, 38])}[KEY]
 SR = 48000; DUR = C['DUR']; N = int(SR * DUR); rng = np.random.default_rng(C['seed'])
 VO = .5; T_GAME, T_PROD, T_NAME, T_F1, T_F1b, T_F2, T_PRICE, T_CTA = C['T']; B = 60 / C['bpm']
 syn = np.zeros((N, 2)); sub = np.zeros(N); drm = np.zeros((N, 2)); sfx = np.zeros((N, 2)); pump = np.ones(N)

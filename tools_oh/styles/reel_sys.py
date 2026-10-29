@@ -11,6 +11,9 @@ CFG = {
     'sl': dict(TOTAL=15.1, T_GAME=1.86, T_PROD=3.14, T_NAME=4.1, T_F1=5.82, T_F1b=6.38, T_F2=7.18, T_PRICE=9.34, T_CTA=11.62,
                game='SOLO LEVELING', name=['SWORD SET'], stats=[('خفيفة', .35), ('متينة', .92)], uses=['مثالية للعرض', 'وللكوسبلاي'],
                price='450', seed=13),
+    'st33': dict(TOTAL=16.1, T_GAME=1.1, T_PROD=2.9, T_NAME=3.6, T_F1=5.94, T_F1b=7.46, T_F2=8.78, T_PRICE=11.14, T_CTA=12.98,
+               game='ONE PIECE CARD GAME', name=['STARTER DECK ST-33'], hook='كوزان جاهز يجمّد الطاولة!', big='KUZAN',
+               stats=[('51 كرت', 1.0), ('10 كروت DON!!', 1.0)], uses=['+ باك بوستر OP-16'], price='105', seed=33),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; rng = np.random.default_rng(CFG['seed'])
@@ -52,8 +55,8 @@ alt = Image.open(D + 'alt.png').convert('RGB'); ALT = item_img(alt, 420)
 
 W_NOTE = window(880, 560, '[ NOTIFICATION ]'); W_ITEM = window(900, 1040, '[ ITEM ACQUIRED ]')
 W_STAT = window(900, 1180, '[ STATUS ]'); W_SHOP = window(860, 1000, '[ SHOP ]')
-S = dict(ya=G('حس إنك صياد من رتبة', FC(80)), game=G('S-RANK', FA(190), glow=CY, gr=28),
-         name=G(CFG['name'][0], FA(110), glow=CY), gname=G(CFG['game'], FA(64), fill=(200, 235, 255)),
+S = dict(ya=G(CFG.get('hook', 'حس إنك صياد من رتبة'), FC(80)), game=G(CFG.get('big', 'S-RANK'), FA(190), glow=CY, gr=28),
+         name=G(CFG['name'][0], FA(110 if len(CFG['name'][0]) < 12 else 84), glow=CY), gname=G(CFG['game'], FA(64), fill=(200, 235, 255)),
          stats=[G(s, FC(84)) for s, _ in CFG['stats']], uses=[G(u, FC(80)) for u in CFG['uses']],
          price=G(CFG['price'], FA(330), glow=CY, gr=30), sar=G('ريال', FC(100)),
          stock=pill('متوفر الآن', FC(52), (10, 40, 80), border=CY + (255,)),
