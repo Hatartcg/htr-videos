@@ -1,8 +1,8 @@
-tc/g3.json https://tcgcsv.com/tcgplayer/3/groups
-tc/g68.json https://tcgcsv.com/tcgplayer/68/groups
-tc/g2.json https://tcgcsv.com/tcgplayer/2/groups
-tc/g89.json https://tcgcsv.com/tcgplayer/89/groups
-tc/g71.json https://tcgcsv.com/tcgplayer/71/groups
-tc/g86.json https://tcgcsv.com/tcgplayer/86/groups
-tc/g85.json https://tcgcsv.com/tcgplayer/85/groups
-tc/lu_1029.txt https://tcgcsv.com/last-updated.txt
+tc_g3.json https://tcgcsv.com/tcgplayer/3/groups
+tc_g68.json https://tcgcsv.com/tcgplayer/68/groups
+tc_g2.json https://tcgcsv.com/tcgplayer/2/groups
+tc_g89.json https://tcgcsv.com/tcgplayer/89/groups
+tc_g71.json https://tcgcsv.com/tcgplayer/71/groups
+tc_g86.json https://tcgcsv.com/tcgplayer/86/groups
+tc_g85.json https://tcgcsv.com/tcgplayer/85/groups
+tc_lu_1029.txt https://tcgcsv.com/last-updated.txt
