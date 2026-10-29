@@ -1,0 +1,9 @@
+{"total": 52.67, "date_label": "29 أكتوبر 2026", "imgdir": "img", "cta_end": "ونشوفكم الأحد!", "segs": [
+ {"s": 0, "e": 5.95, "hook": true, "tsize": 150, "accent": "#ef4444", "chip": "PSA · سرقة", "title": "+6,400 كرت", "sub": "مقيّم انسرقت · والـ FBI يحقق", "img": "psa.jpg"},
+ {"s": 5.95, "e": 9.36, "accent": "#ef4444", "title": "أخبار وأسعار", "sub": "", "img": "title"},
+ {"s": 9.36, "e": 17.0, "accent": "#ef4444", "chip": "PSA · سانتا آنا", "title": "13 أكتوبر", "sub": "من شاحنة توصيل عند مكاتب PSA", "img": "truck.jpg"},
+ {"s": 17.0, "e": 25.1, "accent": "#ef4444", "chip": "PSA", "title": "ألغت أرقام الشهادات", "sub": "ونشرت قائمة الكروت المسروقة", "img": "psa.jpg"},
+ {"s": 25.1, "e": 36.1, "accent": "#f97316", "chip": "Magic: The Gathering", "title": "دان أيوب رئيس Wizards of the Coast", "sub": "من 2 نوفمبر 2026", "img": "wotc.png"},
+ {"s": 36.1, "e": 43.0, "accent": "#a855f7", "chip": "Yu-Gi-Oh!", "title": "Immortal Phoenix", "sub": "29 يناير 2027 · 100 كرت", "img": "imph_pack.png"},
+ {"s": 43.0, "e": 48.8, "accent": "#a855f7", "chip": "Yu-Gi-Oh! · Immortal Phoenix", "title": "أول وحش DIVINE في الإكسترا ديك", "sub": "The Winged Dragon of Ra, Sun God of Darkness", "img": "imph_pack.png"},
+ {"s": 48.8, "e": 52.67, "accent": "#ef4444", "title": "لو عندك كرت مقيّم غالي", "sub": "كيف تحفظه؟", "img": "cta"}]}
