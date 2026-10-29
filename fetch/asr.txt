@@ -1,2 +1,1 @@
-bd_r1.mp3
-bd_r2.mp3
+ep23_voice.mp3
