@@ -122,6 +122,11 @@ def panel(t, i):
         text_center(d, 540, 470, title, 64, WHITE); text_center(d, 540, 610, sub, 70, (125, 211, 252)); text_center(d, 540, 760, EP.get('cta_end', 'ونشوفكم بكرة!'), 54, (216, 180, 254))
         return img
     chip(img, ch, acc, 370); d = ImageDraw.Draw(img)
+    if RAW[i].get('hook'):  # hook: big number + card visible from frame 0
+        text_center(d, 540, 410, title, RAW[i].get('tsize', 120), WHITE); text_center(d, 540, 545, sub, 44, acc)
+        c = card_img(key, 860, 365); s = 1 + .03 * math.sin(lt * 3)
+        c = c.resize((int(c.width * s), int(c.height * s)), Image.LANCZOS)
+        img.alpha_composite(c, (int(540 - c.width / 2), int(805 - c.height / 2))); return img
     text_center(d, 540, 420, title, 66, WHITE); text_center(d, 540, 510, sub, 40, acc)
     # image zone y 580..960
     zx, zy, zw, zh = 540, 775, 860, 370
@@ -157,7 +162,7 @@ def render(t):
     f = (plate(t) * (1 - BA) + BRGB * BA).astype(np.uint8)
     p = panel(t, i); a, b = SEG[i][0], SEG[i][1]
     # transition: panel slides/fades in
-    lt = t - a; k = eo(lt / .3)
+    lt = t - a; k = 1.0 if RAW[i].get('hook') else eo(lt / .3)
     arr = np.array(p); al = arr[..., 3:4] / 255.0 * k
     if k < 1: arr = np.roll(arr, int((1 - k) * 60), axis=0); al = np.roll(al, int((1 - k) * 60), axis=0)
     rgb = arr[..., :3][..., ::-1].astype(np.float32)
