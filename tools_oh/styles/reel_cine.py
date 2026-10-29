@@ -14,6 +14,9 @@ CFG = {
     'suk': dict(TOTAL=15.1, T_GAME=0.58, T_PROD=2.5, T_NAME=2.82, T_F1=4.66, T_F1b=6.18, T_F2=8.02, T_PRICE=9.94, T_CTA=11.62,
                 game=['JUJUTSU', 'KAISEN'], hook=['ملك اللعنات', 'صار هودي!'], name=['SUKUNA HOODIE', 'JUJUTSU KAISEN'], caps=['خامة عالية الجودة', 'دافي للأيام الباردة'], cap2='ألوان متعددة',
                 price='200', seed=9),
+    'akaza': dict(TOTAL=14.2, T_GAME=0.64, T_PROD=3.14, T_NAME=3.46, T_F2=5.14, T_C1=7.14, T_F1=7.14, T_F1b=7.6, T_PRICE=8.98, T_CTA=10.74,
+                game=['DEMON', 'SLAYER'], hook=['الرتبة العليا الثالثة', 'صارت هودي!'], name=['AKAZA HOODIE', 'DEMON SLAYER'], caps=['', 'دافي للأيام الباردة'], cap2='ألوان كثيرة تختار منها',
+                price='200', seed=33, hook_fs=98),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; rng = np.random.default_rng(CFG['seed'])
@@ -53,9 +56,9 @@ T_C1 = CFG.get('T_C1', 5.82)
 S = dict(
     size=T('المقاسات', FC(92)), sizes=T('S · M · L · XL · XXL · XXXL', FA(62), fill=WHITE, glow=VIOLET, gr=16),
     ya=np.zeros((4, 4, 4), np.uint8),
-    game=[T(g, FC(160, b'Black')) for g in CFG['hook']],
+    game=[T(g, FC(CFG.get('hook_fs', 160), b'Black')) for g in CFG['hook']],
     name0=(lambda sp: cv2.resize(sp, (960, int(sp.shape[0] * 960 / sp.shape[1])), interpolation=cv2.INTER_AREA) if sp.shape[1] > 960 else sp)(T(CFG['name'][0], FA(130), track=6)), name1=T(CFG['name'][1], FA(70), fill=(240, 220, 230), glow=VIOLET, track=26),
-    caps=[T(c, FC(92)) for c in CFG['caps']], cap2=T(CFG['cap2'], FC(96)),
+    caps=[T(c or ' ', FC(92)) for c in CFG['caps']], cap2=T(CFG['cap2'], FC(96)),
     price=T(CFG['price'], FA(380), track=10), sar=T('ريال', FC(110), glow=VIOLET),
     stock=T('متوفر الآن', FC(60, b'SemiBold'), fill=(220, 210, 230), glow=VIOLET, gr=12),
     order=T('اطلبه الحين', FC(130, b'Black')), url=T('otakkuhaveen.com', FA(66), fill=WHITE, glow=VIOLET, track=4),

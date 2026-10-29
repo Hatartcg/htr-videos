@@ -13,5 +13,6 @@ Work dir per product: /home/claude/work/<key>/ with main.png, alt.png (optional)
 | cinematic dark | reel_cine.py | music_taiko.py or music_gothic.py | letterbox, smoke, crimson/violet neon, grain, wipe reveals | taiko + shakuhachi-style flute + brass stabs |
 | game system HUD | reel_sys.py | music_edm.py | grid, cyan UI windows ([ NOTIFICATION ] etc), typewriter, glitch | EDM four-on-floor, sidechain |
 | classic (old) | ../reel_example.py | ../music_example.py | purple rays + stars | J-pop/future-bass |
+Note (2026-10-29): Dandadan "T-shirt" page (p360516703) shows green earrings, not a T-shirt - skipped.
 Ideas still unused: retro arcade/pixel, lofi/vlog, kinetic typography, VHS 90s anime, paper-cut collage.
 Log the style in oh_log.md (6th column) so the next run picks a different one.

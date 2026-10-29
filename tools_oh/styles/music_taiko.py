@@ -4,7 +4,9 @@ from scipy.io import wavfile
 from scipy.signal import butter, lfilter, fftconvolve
 KEY = os.environ['OH']; D = f'/home/claude/work/{KEY}/'
 C = {'suk': dict(DUR=15.1, T=(0.58, 2.5, 2.82, 4.66, 6.18, 8.02, 9.94, 11.62), bpm=104, seed=31, root=38,
-                 flute=[(74, 1), (75, .5), (79, 1.5), (81, 1), (79, .5), (75, 1.5), (74, 2)], flute2=[(81, 1), (82, .5), (81, .5), (79, 1), (75, 1), (74, 2)])}[KEY]
+                 flute=[(74, 1), (75, .5), (79, 1.5), (81, 1), (79, .5), (75, 1.5), (74, 2)], flute2=[(81, 1), (82, .5), (81, .5), (79, 1), (75, 1), (74, 2)]),
+     'akaza': dict(DUR=14.2, T=(0.64, 3.14, 3.46, 7.14, 7.6, 5.14, 8.98, 10.74), bpm=116, seed=41, root=41,
+                 flute=[(77, .5), (78, .5), (82, 1), (84, 1.5), (85, .5), (84, 1), (82, 1), (77, 2)], flute2=[(84, .5), (85, .5), (89, 1), (85, 1), (84, .5), (82, .5), (77, 2)])}[KEY]
 SR = 48000; DUR = C['DUR']; N = int(SR * DUR); rng = np.random.default_rng(C['seed'])
 VO = .5; T_GAME, T_PROD, T_NAME, T_F1, T_F1b, T_F2, T_PRICE, T_CTA = C['T']; B = 60 / C['bpm']; R0 = C['root']
 mus = np.zeros((N, 2)); drm = np.zeros((N, 2)); sfx = np.zeros((N, 2)); kenv = np.zeros(N)

@@ -35,6 +35,11 @@ CFG = {
         hook='مطر ولا معركة؟', game=['BLEACH'], sfx='SLASH!', label='ANIME MERCH', name=['SWORD UMBRELLA', 'BLEACH'],
         f1=dict(kind='caps', caps=['خفيفة', 'وتنطوي بسهولة']), f2=dict(kind='grid', cap='تصاميم إيتشيغو وبياكويا وآيزن'),
         price='441', spot=(255, 61, 154), seed=21, order='اطلبها الحين!', stock='متوفرة الآن'),
+    'narp': dict(
+        TOTAL=13.8, T_GAME=1.45, T_PROD=2.42, T_NAME=2.9, T_F1=4.3, T_F1b=5.1, T_F2=6.7, T_PRICE=8.58, T_CTA=10.34,
+        hook='الكيوبي على جدارك!', game=['NARUTO'], sfx='BELIEVE IT!', label='ANIME POSTER', name=['NARUTO', 'SHIPPUDEN'],
+        f1=dict(kind='caps', caps=['ألوانه حيّة', 'وتفاصيله دقيقة']), f2=dict(kind='grid', cap='يزيّن غرفتك أو مكتبك'),
+        price='200', spot=(139, 92, 246), seed=27, sfx_x=.62),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; SPOT = CFG['spot']

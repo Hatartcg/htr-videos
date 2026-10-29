@@ -10,3 +10,6 @@
 2026-10-27 | One Piece | Starter Deck EX ST-30 Luffy & Ace (51 cards + 10 DON!! + 1 bonus pack) | 250 SAR | videos/oh/oh_st30_luffy_ace_starter_deck_holo.mp4 | holo
 2026-10-28 | Death Note (merch) | Death Note Pullover (L designs, many colours, S–XXXL) | 200 SAR | videos/oh/oh_death_note_pullover_cine.mp4 | cinematic (music: music_gothic.py organ+choir+bells, 92bpm E minor)
 2026-10-29 | Bleach (merch) | Bleach sword-handle umbrella (designs: Ichigo, Toshiro, Aizen, Byakuya, Gin) | 441 SAR | videos/oh/oh_bleach_sword_umbrella_manga.mp4 | manga (music: music_rock.py 184bpm D minor gallop)
+2026-10-30 | One Piece | Starter Deck ST-33 Kuzan (51 cards + 10 DON!! + 1 OP-16 booster pack) | 105 SAR | videos/oh/oh_st33_kuzan_starter_deck_system.mp4 | system-hud (music: music_edm.py 140bpm E minor)
+2026-10-31 | Demon Slayer (merch) | Akaza hoodie (many colours) | 200 SAR | videos/oh/oh_akaza_hoodie_cine.mp4 | cinematic (music: music_taiko.py 116bpm F)
+2026-11-01 | Naruto (merch) | Naruto Shippuden poster | 200 SAR | videos/oh/oh_naruto_shippuden_poster_manga.mp4 | manga (music: styles/music_jpop.py 164bpm Bb major)
