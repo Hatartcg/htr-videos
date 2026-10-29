@@ -32,9 +32,10 @@ def fitimg(path, w, h):
     im0 = Image.open(path); ww = int(min(w, h * im0.width / im0.height)); return card_img(path, ww)
 SPR = [dict(n=card_spr(fitimg(c['img'], 560, 780), CYAN, .55), g=card_spr(fitimg(c['img'], 560, 780), (255, 255, 255), .95), s=card_spr(fitimg(c['img'], 150, 210))) for c in CARDS]
 S = end_assets(SPEC.get('tease', 'بكرة تحدي جديد'))
-S.update(t1=txt('أغلى ١٠ كروت في', FL(92), WHITE), t2=fit_txt(SPEC['set_title'], FB, 96, 960, fill=WHITE, glow=CYAN), game=pill(SPEC['game'], FB(40), (20, 22, 30), fg=CYAN, border=CYAN),
+S.update(t1=txt('أغلى ١٠ كروت في', FL(112), WHITE), t2=fit_txt(SPEC['set_title'], FB, 96, 960, fill=WHITE, glow=CYAN), game=pill(SPEC['game'], FB(40), (20, 22, 30), fg=CYAN, border=CYAN),
          ride=txt('اطلع معي للدور الأخير!', FL(70), WHITE, glow=LED), floor=txt('الدور', FL(46), (200, 200, 210)), src=txt(SPEC['source'], FL(34), (160, 165, 180)),
          ph=txt('PENTHOUSE', FB(52), WHITE, glow=CYAN, gr=24), q=txt('عندك واحد منهم؟', FL(110), WHITE, glow=CYAN), cmt=pill('قول لنا بالتعليقات', FL(60), (200, 40, 60), padx=56))
+INTRO_S = [card_spr(fitimg(CARDS[i]['img'], 270, 380), CYAN, .5) for i in (0, 1, 2)]
 NAME = [fit_txt(c['name'], FB, 50, 900, fill=WHITE, stroke=3) for c in CARDS]; RAR = [fit_txt(c['rarity'], FL, 40, 900, fill=(190, 195, 210)) for c in CARDS]
 PRICE = [txt(f"${int(round(c['price'])):,}", FB(120 if i == N - 1 else 100), WHITE, stroke=6, glow=(CYAN if i == N - 1 else LED), gr=22) for i, c in enumerate(CARDS)]
 # 7-segment floor display
@@ -93,9 +94,11 @@ def render(t):
         scene(f, t, 0, 0.0)
         floor_panel(f, 'L', 0, .5 + .5 * math.sin(t * 6))
         o = eo((t - T_INTRO + .4) / .4)
-        blit(f, S['t1'], W / 2, 650, ebk(k / .4), 1 - o); blit(f, S['t2'], W / 2, 790, ebk((k - .2) / .4), (k > .2) * (1 - o))
-        blit(f, S['game'], W / 2, 920, ebk((k - .35) / .35), (k > .35) * (1 - o))
-        blit(f, S['ride'], W / 2, 1250, ebk((k - .9) / .35), (k > .9) * (1 - o))
+        blit(f, S['t1'], W / 2, 560, ebk(k / .4), 1 - o); blit(f, S['t2'], W / 2, 710, ebk((k - .2) / .4), (k > .2) * (1 - o))
+        blit(f, S['game'], W / 2, 840, ebk((k - .35) / .35), (k > .35) * (1 - o))
+        for j, (dx, rot) in enumerate(((-260, 10), (0, 0), (260, -10))):
+            kk = ebk((k - .1 - j * .08) / .35); blit(f, INTRO_S[j], W / 2 + dx, 1180 + 30 * abs(j - 1) + 500 * (1 - kk) + 900 * o, 1, 1 if kk > 0 else 0, rot)
+        blit(f, S['ride'], W / 2, 1520, ebk((k - .9) / .35), (k > .9) * (1 - o))
         blit(f, S['src'], W / 2, 1700, 1, 1 - o)
     elif t < T_OUTRO:
         i, lt = at(t); D = DUR[i]

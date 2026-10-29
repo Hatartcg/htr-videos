@@ -5,8 +5,19 @@ from scipy.io import wavfile
 kind, spec, scr, mp3, asr, style, key, out = sys.argv[1:9]
 only_stills = len(sys.argv) > 9
 SR = 48000
-r = json.loads(subprocess.run(['python3', 'vsplit.py', mp3, asr, scr], capture_output=True, text=True, check=True).stdout)
+r = json.loads(subprocess.run(['python3', '/home/claude/v5/vsplit.py', mp3, asr, scr], capture_output=True, text=True, check=True).stdout)
 L = r['lens']; segs = list(np.load('segs.npy', allow_pickle=True))
+if os.environ.get('FIX'):
+    cuts = r['cuts']
+    for kv in os.environ['FIX'].split(','):
+        k, v = kv.split(':'); cuts[int(k)] = float(v)
+    au = np.frombuffer(subprocess.run(['ffmpeg', '-v', 'error', '-i', mp3, '-ac', '1', '-ar', str(SR), '-f', 'f32le', '-'], capture_output=True).stdout, np.float32).astype(np.float64)
+    def trim(x):
+        e = np.abs(x) > .008
+        i = np.argmax(e); j = len(x) - np.argmax(e[::-1]); y = x[max(0, i - 240):j + 1200].copy(); f = 200; y[:f] *= np.linspace(0, 1, f); y[-f:] *= np.linspace(1, 0, f); return y
+    segs = [trim(au[int(a * SR):int(b * SR)]) for a, b in zip(cuts, cuts[1:])]; L = [len(x) / SR for x in segs]
+    W_ = json.load(open(asr)); r['text'] = [' '.join(w['w'].strip() for w in W_ if a - .05 <= (w['s'] + w['e']) / 2 < b) for a, b in zip(cuts, cuts[1:])]
+    print('cuts', cuts)
 if os.environ.get('SWAP'):
     alt_mp3, alt_json, idx = os.environ['SWAP'].split(':'); idxs = [int(x) for x in idx.split(',')]
     r2 = json.loads(subprocess.run(['python3', 'vsplit.py', alt_mp3, alt_json, scr], capture_output=True, text=True, check=True).stdout)

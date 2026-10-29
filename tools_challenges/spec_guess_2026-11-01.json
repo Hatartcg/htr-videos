@@ -1,0 +1,57 @@
+{
+ "title1": "تقدر تخمّن",
+ "title2": "كم تسوى هالكروت؟",
+ "subtitle": "٣ ألعاب · ٣ جولات",
+ "source": "سعر السوق في TCGplayer · 28 أكتوبر 2026",
+ "tease": "بكرة: أكثر ٥ ارتفعوا · لا يفوتك!",
+ "rounds": [
+  {
+   "img": "/home/claude/gp/im_452548.jpg",
+   "name": "BLUE-EYES WHITE DRAGON",
+   "set": "YU-GI-OH! · Magnificent Mavens · Ultra Pharaoh's Rare",
+   "options": [
+    "$620",
+    "$95",
+    "$1,400"
+   ],
+   "answer": 0
+  },
+  {
+   "img": "/home/claude/gp/im_722591.jpg",
+   "name": "MICKEY MOUSE - BEST IN TOWN",
+   "set": "LORCANA · Hyperia City · Iconic",
+   "options": [
+    "$480",
+    "$1,862",
+    "$4,200"
+   ],
+   "answer": 1
+  },
+  {
+   "img": "/home/claude/gp/im_709668.jpg",
+   "name": "AKALI, ROGUE ASSASSIN",
+   "set": "RIFTBOUND · Vendetta · Signature",
+   "options": [
+    "$890",
+    "$1,700",
+    "$3,230"
+   ],
+   "answer": 2
+  }
+ ],
+ "timing": {
+  "intro": 2.533333333333333,
+  "think": [
+   7.266666666666667,
+   5.633333333333334,
+   4.933333333333334
+  ],
+  "rlen": [
+   13.0,
+   12.3,
+   12.166666666666666
+  ],
+  "outro": 4.533333333333333,
+  "end": 2.8
+ }
+}

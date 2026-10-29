@@ -127,7 +127,7 @@ def render(t):
         k = t; out = eo((t - T_INTRO + .3) / .3)
         blit(f, S['t1'], W / 2, 420 - 300 * out, ebk(k / .4), 1 - out); blit(f, S['t2'], W / 2, 560 - 300 * out, ebk((k - .2) / .4), (1 if k > .2 else 0) * (1 - out))
         for j, (dx, rot) in enumerate(((-250, -12), (0, 0), (250, 12))):
-            kk = ebk((k - .4 - j * .12) / .45); blit(f, BACK_S, W / 2 + dx * kk, 1000 + 25 * abs(j - 1) + 700 * (1 - kk) + 900 * out, .9 + .1 * (j == 1) + .03 * math.sin(t * 4 + j), 1 if kk > 0 else 0, rot * kk)
+            kk = ebk((k - .15 - j * .1) / .4); blit(f, CARDS[j]['small'] if N == 3 else BACK_S, W / 2 + dx * kk, 1000 + 25 * abs(j - 1) + 700 * (1 - kk) + 900 * out, (1.2 if N == 3 else .9) + .1 * (j == 1) + .03 * math.sin(t * 4 + j), 1 if kk > 0 else 0, rot * kk)
         blit(f, S['sub'], W / 2, 1420 + 400 * out, ebk((k - .8) / .3), 1 if k > .8 else 0); blit(f, S['subt'], W / 2, 1420 + 400 * out, ebk((k - .8) / .3), 1 if k > .8 else 0)
     elif t < T_OUTRO:
         i, lt = rnd_at(t); r = ROUNDS[i]; C = CARDS[i]; R_LEN = RLEN[i]; T_THINK = THINK[i]

@@ -1,0 +1,80 @@
+{
+ "source": "سعر السوق في TCGplayer · 28 أكتوبر 2026",
+ "tease": "بكرة: أغلى ١٠ كروت · لا يفوتك!",
+ "timing": {
+  "intro": 3.4,
+  "ask": [
+   5.166666666666667,
+   4.633333333333334,
+   3.8666666666666667
+  ],
+  "rev": [
+   5.366666666666666,
+   5.366666666666666,
+   4.866666666666666
+  ],
+  "outro": 4.733333333333333
+ },
+ "rounds": [
+  {
+   "game": "POKÉMON",
+   "mult": "الفرق ١٦٦ دولار!",
+   "a": {
+    "img": "img/im_246758.jpg",
+    "name": "Dragonite V",
+    "short": "DRAGONITE",
+    "set": "Alt Art · Evolving Skies",
+    "price": "$466",
+    "p": 466.32
+   },
+   "b": {
+    "img": "img/im_517045.jpg",
+    "name": "Charizard ex",
+    "short": "CHARIZARD",
+    "set": "SIR · Scarlet & Violet 151",
+    "price": "$300",
+    "p": 300.21
+   }
+  },
+  {
+   "game": "RIFTBOUND",
+   "mult": "الفرق ١٢٥ دولار بس!",
+   "a": {
+    "img": "img/im_709666.jpg",
+    "name": "Zed",
+    "short": "ZED",
+    "set": "Signature · Vendetta",
+    "price": "$1,277",
+    "p": 1276.92
+   },
+   "b": {
+    "img": "img/im_709667.jpg",
+    "name": "Kennen",
+    "short": "KENNEN",
+    "set": "Signature · Vendetta",
+    "price": "$1,152",
+    "p": 1152.22
+   }
+  },
+  {
+   "game": "GUNDAM",
+   "mult": "الفرق ٢٥٩ دولار!",
+   "a": {
+    "img": "img/im_707604.jpg",
+    "name": "Nu Gundam",
+    "short": "NU GUNDAM",
+    "set": "LR++ · Freedom Ascension",
+    "price": "$1,532",
+    "p": 1532.38
+   },
+   "b": {
+    "img": "img/im_707603.jpg",
+    "name": "Sazabi",
+    "short": "SAZABI",
+    "set": "LR++ · Freedom Ascension",
+    "price": "$1,273",
+    "p": 1272.77
+   }
+  }
+ ]
+}

@@ -40,7 +40,7 @@ def mk(path, col):
 C = [[mk(r['a']['img'], P1), mk(r['b']['img'], P2)] for r in R]
 S = end_assets(SPEC.get('tease', 'بكرة تحدي جديد'))
 S.update(sel=txt('اختار مقاتلك!', FL(120), WHITE, stroke=6, glow=P1), vs=txt('VS', FB(200), WHITE, stroke=10, glow=(255, 255, 255), gr=30),
-         q=txt('أيهم أغلى؟', FL(96), WHITE, stroke=5, glow=P2), fight=txt('FIGHT!', FB(190), WHITE, stroke=12, glow=P1, gr=30),
+         q=txt('أيهم أغلى؟', FL(96), WHITE, stroke=5, glow=P2), qbig=txt('أيهم أغلى؟', FL(150), WHITE, stroke=7, glow=P1, gr=26), fight=txt('FIGHT!', FB(190), WHITE, stroke=12, glow=P1, gr=30),
          ko=txt('K.O.', FB(210), (255, 255, 255), stroke=14, glow=P1, gr=30), win=pill('WINNER', FB(44), (20, 20, 30), fg=WHITE, border=(255, 255, 255), padx=30, pady=10),
          src=txt(SPEC['source'], FL(34), (170, 160, 180)), cont=txt('CONTINUE?', FB(120), WHITE, stroke=8, glow=P1),
          how=txt('كم جولة فزت فيها؟', FL(100), WHITE, stroke=4, glow=P2), cmt=pill('اكتبها بالتعليقات', FL(60), P1, padx=56),
@@ -76,18 +76,16 @@ def render(t):
         shake = env(lt, RI - .05, .25) * .8 + env(lt, rv, .35) * 1.0
         flash = env(lt, rv, .18) * .7 + env(lt, RI - .05, .12) * .5
     elif t < T_INTRO:
-        shake = env(t, 1.0, .3) * .7; flash = env(t, 1.0, .12) * .5
+        shake = env(t, .6, .3) * .7; flash = env(t, .6, .12) * .5
     f = bg(t, shake, flash)
     if t < T_INTRO:
         k = t; out = eo((t - T_INTRO + .3) / .3)
-        blit(f, S['sel'], W / 2, 330 - 400 * out, ebk(k / .4), 1 - out)
+        blit(f, S['qbig'], W / 2, 300 - 400 * out, ebk(k / .3), 1 - out)
         for j, x in enumerate(XS):
-            kk = eo((k - .2) / .5); xx_ = x + (1 if j == 0 else -1) * 700 * (1 - kk) + (1 if j == 0 else -1) * 900 * out
-            sil = rrect(330, 460, 26, (30, 22, 30, 255), outline=((P1, P2)[j]) + (255,), ow=8, glow=(P1, P2)[j])
-            blit(f, sil, xx_, 900, 1, 1 if kk > 0 else 0, (6 if j == 0 else -6))
-            blit(f, txt('?', FB(200), WHITE, stroke=8), xx_, 900, 1, 1 if kk > 0 else 0)
-        blit(f, S['vs'], W / 2, 900 + 900 * out, ebk((k - 1.0) / .3) * (1 + .05 * math.sin(t * 9)), 1 if k > 1.0 else 0)
-        blit(f, S['q'], W / 2, 1420 + 500 * out, ebk((k - 1.4) / .35), 1 if k > 1.4 else 0)
+            kk = eo((k - .1) / .35); xx_ = x + (1 if j == 0 else -1) * 700 * (1 - kk) + (1 if j == 0 else -1) * 900 * out
+            blit(f, C[0][j]['n'], xx_, 900, .85, 1 if kk > 0 else 0, (6 if j == 0 else -6))
+        blit(f, S['vs'], W / 2, 900 + 900 * out, ebk((k - .6) / .3) * (1 + .05 * math.sin(t * 9)), 1 if k > .6 else 0)
+        blit(f, S['sel'], W / 2, 1450 + 500 * out, ebk((k - 1.0) / .35), 1 if k > 1.0 else 0)
     elif t < T_OUTRO:
         i, lt = rat(t); r = R[i]; rv = RI + ASK[i] + THINK; L = RLEN[i]
         out = eo((lt - L + .3) / .3)

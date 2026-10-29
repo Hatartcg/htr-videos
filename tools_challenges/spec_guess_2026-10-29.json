@@ -1,0 +1,57 @@
+{
+ "title1": "تقدر تخمّن",
+ "title2": "كم تسوى هالكروت؟",
+ "subtitle": "٣ ألعاب · ٣ جولات",
+ "source": "سعر السوق في TCGplayer · 28 أكتوبر 2026",
+ "tease": "بكرة: أيهم أغلى؟ لا يفوتك!",
+ "rounds": [
+  {
+   "img": "/home/claude/gp/im_246723.jpg",
+   "name": "UMBREON VMAX",
+   "set": "POKÉMON · Evolving Skies · Alt Art 215/203",
+   "options": [
+    "$640",
+    "$2,210",
+    "$5,400"
+   ],
+   "answer": 1
+  },
+  {
+   "img": "/home/claude/gp/im_22341.jpg",
+   "name": "RED-EYES B. DRAGON",
+   "set": "YU-GI-OH! · Legend of Blue Eyes · 1st Edition",
+   "options": [
+    "$850",
+    "$190",
+    "$2,300"
+   ],
+   "answer": 0
+  },
+  {
+   "img": "/home/claude/gp/im_707601.jpg",
+   "name": "WING GUNDAM ZERO (EW)",
+   "set": "GUNDAM · Freedom Ascension · LR++",
+   "options": [
+    "$1,150",
+    "$2,400",
+    "$3,910"
+   ],
+   "answer": 2
+  }
+ ],
+ "timing": {
+  "intro": 2.6333333333333333,
+  "think": [
+   6.9,
+   5.366666666666666,
+   4.5
+  ],
+  "rlen": [
+   13.066666666666666,
+   11.1,
+   11.666666666666666
+  ],
+  "outro": 4.566666666666666,
+  "end": 2.8
+ }
+}
