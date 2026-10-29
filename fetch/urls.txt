@@ -1,3 +1,5 @@
-ep23_voice.mp3 https://storage.googleapis.com/xi-backend/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/4FiQQ8QGwXVaWJygeVct/iyCV6mFhXfKuKEB1vYcI/content.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20261029%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261029T035131Z&X-Goog-Expires=7200&X-Goog-SignedHeaders=host&X-Goog-Signature=132c5613cc747486ae14b87f41112d2552e02e95b054942c2b8ffb308e9c0bee72d515e9451e4c6933143426dcc47474da4c52aaac1308704dacec5f85039208f832c927501b9fa2bc33bfacff2a05ce52e4ce2cd66284162d5b177a85c2c77552fb398e13c7c8824d9d066ece94f6ce7885b239d3a3045e5cb9f39318b8e715558850a30823df995dc5ced13600b96dcc1d8685b9ae2396ea2066317241768f6081747f3f5ecd0216afcabd89b50e2cc226a70ba81c45c8ce0c7fffa08e67da53c8afc2d6def5d000a6381cdaea92c20a52c0b7ae66d291cbb8aa604f643033f96c6da23247ae690040818452b7768c136878c5cb8e1ef3ce81bab7766c58df
-ep23_mudkip.jpg https://d2tt46f3mh26nl.cloudfront.net/2797911f-0bd8-4703-96a9-bb058a1d80b9@1x
-ep23_trophy.jpg https://storage.googleapis.com/images.pricecharting.com/2ujhm5xahd7qlt3o/1600.jpg
+ep23_mudkip2x.jpg https://d2tt46f3mh26nl.cloudfront.net/2797911f-0bd8-4703-96a9-bb058a1d80b9@2x
+ep23_mudkip_hero.webp https://cdn.prod.website-files.com/69d4d6e98d9aefcfbc9dba56/6adf6f225123b5d099f4ac7e_6adf6ebaf5e15d7744a87a3a_art-academy-mudkip-psa-10-4-88-million-goldin_ASSET_1_HERO.webp
+ep23_trophy_a.jpg https://scg-static.starcitygames.com/articles/2026/10/9596930e-8cec-45e0-9da5-4abe3604105f@2x-611x1024.jpg
+ep23_trophy_b.jpg https://scg-static.starcitygames.com/articles/2026/10/a94766a1-5e30-42e0-aac7-245cba27bf01@2x-611x1024.jpg
+ep23_trophy_art.jpg https://scg-static.starcitygames.com/articles/2026/10/e0e4b82f-1st-place-pikachu.jpg
