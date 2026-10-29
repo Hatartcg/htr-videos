@@ -71,3 +71,7 @@ Format: date | game | item
 2026-10-29 | Prices | HOOK: PSA heist — 6,451 graded cards (mostly Pokémon + sports) stolen Oct 13 from a delivery truck at PSA's Santa Ana offices; FBI + Santa Ana PD investigating; PSA deactivated the certs & published the full list (ICv2 Oct 26 + Dexerto Oct 24)
 2026-10-29 | Magic | Hasbro named Dan Ayoub (ex-SVP D&D) President of Wizards of the Coast & Hasbro Digital Games, effective Nov 2, 2026 (Hasbro IR Oct 27 + ICv2)
 2026-10-29 | Yu-Gi-Oh | Immortal Phoenix TCG Jan 29, 2027, 100 cards; The Winged Dragon of Ra, Sun God of Darkness = first DIVINE Extra Deck monster (yugioh-card.com + ICv2/YGOMeta)
+2026-11-01 | Prices | HOOK: 2015 Japanese XY Promo Art Academy Mudkip (Daisuke Ochiai) PSA 10 (cert 176246498) sold $4.88M (w/ premium) at Goldin Pokémon 30th Anniversary Auction (closed Oct 25-26, 2026); PSA 10 pop 3 (Auction Report + Polkastarter/WorthPoint, Goldin lot)
+2026-11-01 | Prices | Another Art Academy Mudkip PSA 10 sold $3.72M at Fanatics Premier (Sept 25, 2026) (SI/Card Ladder + Polkastarter)
+2026-11-01 | Prices | 1997 Japanese Gold 1st Place First Tournament #1 Trophy Pikachu PSA 8 sold $3,080,500 at the same Goldin auction (Auction Report + PriceCharting)
+2026-11-01 | Tips | Before buying a graded card, check the population report — fewer copies at that grade = higher price
