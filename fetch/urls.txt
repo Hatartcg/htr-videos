@@ -1,6 +1,2 @@
-eg_vg_c.png https://totalcards.net/cdn/shop/files/Mockup_a9d0823c-fb22-4fa9-b58e-06c0d345e7e4.png?v=1787478772
-eg_vg_d.jpg https://totalcards.net/cdn/shop/files/1787478702_2661d66bca0275a3edb30668710eb901.jpg?v=1787478771
-eg_fab_b.jpg https://totalcards.net/cdn/shop/files/1786004597_4770527e73c6404e88499b40e1060eb5.jpg?v=1786004621
-eg_fab_c.jpg https://totalcards.net/cdn/shop/files/1786004597_c62f29b3fda6c5d75d2ed5a4ee7d6992.jpg?v=1786004624
-eg_fab_d.webp https://www.miniaturemarket.com/media/f7/04/63/1787832759/LSSFAB2615-BOX.webp?ts=1787832759
-eg_gd_d.png https://aquitaz.se/cdn/shop/files/Untitled_design_14.png?v=1788442946
+eg_gd_e.webp https://cdn.shopify.com/s/files/1/0694/5076/0456/files/GD06_thumbnail_box_white_en.webp?v=1793203365
+eg_gd_f.jpg https://www.fpvfaster.com.au/cdn/shop/files/gd-06_1024x1024.jpg?v=1776919189
