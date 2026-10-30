@@ -1,3 +1,9 @@
-eg_ditto.jpg https://image.smythstoys.com/original/800/desktop/264493.jpg
-eg_bt16_a.jpg https://cdn.shopify.com/s/files/1/0324/9065/1779/files/Cardfight_VanguardDZ-BT16BoosterBox-ParallacticDawn.jpg?v=1781089016
-eg_bt16_b.png https://cdn.shopify.com/s/files/1/0320/9510/9259/files/8885021123295_Vanguard_DZ-BT16ParallacticDawn-Booster.png?v=1793324529
+ohd_old_home.html https://otakkuhaven.com/
+ohd_old_www.html https://www.otakkuhaven.com/
+ohd_old_prod.html https://otakkuhaven.com/%D8%B3%D9%8A%D9%81-%D9%84%D8%A7%D9%88/p755255191
+ohd_old_cat.html https://otakkuhaven.com/%D8%B3%D9%8A%D9%88%D9%81/c1224395419
+ohd_new_home.html https://otakkuhaveen.com/
+ohd_new_www.html https://www.otakkuhaveen.com/
+ohd_new_robots.txt https://otakkuhaveen.com/robots.txt
+ohd_new_sitemap.xml https://otakkuhaveen.com/sitemap.xml
+ohd_old_robots.txt https://otakkuhaven.com/robots.txt
