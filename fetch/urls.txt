@@ -1,1 +1,3 @@
-eg_gd5.webp https://www.gundam-gcg.com/gcg/bccard/en/news/2026/04/30/3W5Ub64khUA9bYYy/GD05_thumbnail_box_white_en.webp
+eg_ditto.jpg https://image.smythstoys.com/original/800/desktop/264493.jpg
+eg_bt16_a.jpg https://cdn.shopify.com/s/files/1/0324/9065/1779/files/Cardfight_VanguardDZ-BT16BoosterBox-ParallacticDawn.jpg?v=1781089016
+eg_bt16_b.png https://cdn.shopify.com/s/files/1/0320/9510/9259/files/8885021123295_Vanguard_DZ-BT16ParallacticDawn-Booster.png?v=1793324529
