@@ -26,17 +26,10 @@ jobs:
             if [ "$1" = "health" ]; then detail=$(tr -d '\n,' < body.txt | head -c 300 | tr ',' ';'); fi
             echo "$T,$1,$code,$secs,$detail" >> rows.csv
           }
-          probe home https://www.htrtcg.com/ar
-          probe home_en https://www.htrtcg.com/en
-          probe shop https://www.htrtcg.com/ar/shop
-          probe product https://www.htrtcg.com/ar/product/pokemon-tcg-30th-celebration-elite-trainer-box
-          probe checkout https://www.htrtcg.com/ar/checkout
-          probe membership https://www.htrtcg.com/ar/membership
-          probe sell https://www.htrtcg.com/ar/sell
-          probe grading https://www.htrtcg.com/ar/grading
-          probe login https://www.htrtcg.com/ar/login
+          # Pages sit behind Vercel Bot Protection (Challenge since 1 Nov 2026), so a script gets 429 there by design.
+          # Probe only paths the "Allow payments" bypass rule lets through; /api/health checks DB, payments and email.
           probe health "https://www.htrtcg.com/api/health"
-          probe apex https://htrtcg.com/
+          probe checkout https://www.htrtcg.com/ar/checkout
           cat rows.csv
       - name: Append to monitor branch
         run: |
