@@ -75,3 +75,7 @@ Format: date | game | item
 2026-11-01 | Prices | Another Art Academy Mudkip PSA 10 sold $3.72M at Fanatics Premier (Sept 25, 2026) (SI/Card Ladder + Polkastarter)
 2026-11-01 | Prices | 1997 Japanese Gold 1st Place First Tournament #1 Trophy Pikachu PSA 8 sold $3,080,500 at the same Goldin auction (Auction Report + PriceCharting)
 2026-11-01 | Tips | Before buying a graded card, check the population report — fewer copies at that grade = higher price
+2026-11-03 | Pokémon | HOOK: Japanese gold Mega Rayquaza ex (Storm Emeralda 113/076) ~$946 TCGplayer JP market (Oct 2-3, 2026; billsarchive + cardrake) → "+$900"
+2026-11-03 | Pokémon | Mega Evolution—Delta Reign out Nov 6, 2026: over 135 cards, 4 Mega Evolution Pokémon ex (Rayquaza, Golurk, Malamar, Golisopod); Mega Rayquaza first time since XY—Ancient Origins; new Legendary Stadiums = 2 Stadium cards forming one artwork (official press text via pocketmonsters.net + pokemonblog.com)
+2026-11-03 | One Piece | OP-18 THE DOMINANCE OF GOD Nov 20, 2026 — Saint Gunko & Saint Shamrock debut; 4th Anniversary store event Nov 20 – Dec 17, 2026, participation promo P-161 Monkey.D.Luffy (en.onepiece-cardgame.com, Oct 23)
+2026-11-03 | Tips | Singles prices move a lot in a new set's first weeks — don't rush to buy

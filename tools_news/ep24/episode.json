@@ -1,0 +1,10 @@
+{"total": 52.29, "date_label": "3 نوفمبر 2026", "imgdir": "img", "cta_end": "ونشوفكم الخميس!", "segs": [
+ {"s": 0, "e": 4.11, "hook": true, "tsize": 150, "accent": "#ef4444", "chip": "Pokémon · TCGplayer أكتوبر 2026", "title": "+$900", "sub": "ميغا ريكوازا الذهبي · النسخة اليابانية", "img": "rayquaza_gold.png"},
+ {"s": 4.11, "e": 7.56, "accent": "#ef4444", "title": "أخبار وأسعار", "sub": "", "img": "title"},
+ {"s": 7.56, "e": 12.90, "accent": "#ef4444", "chip": "Pokémon", "title": "Delta Reign", "sub": "تنزل الجمعة 6 نوفمبر 2026", "img": "delta.png"},
+ {"s": 12.90, "e": 21.52, "accent": "#ef4444", "chip": "Pokémon · Delta Reign", "title": "+135 كرت · 4 ميغا إكس", "sub": "أول رجعة لميغا ريكوازا من Ancient Origins", "img": "megas.png"},
+ {"s": 21.52, "e": 27.68, "accent": "#a855f7", "chip": "جديد في Delta Reign", "title": "Legendary Stadium", "sub": "كرتين ستاديوم = رسمة وحدة كبيرة", "img": "stadium.png"},
+ {"s": 27.68, "e": 35.56, "accent": "#f97316", "chip": "One Piece", "title": "OP-18 · 20 نوفمبر", "sub": "أول ظهور لـ Saint Gunko و Saint Shamrock", "img": "op18.png"},
+ {"s": 35.56, "e": 41.99, "accent": "#f97316", "chip": "One Piece · الذكرى الرابعة", "title": "20 نوفمبر – 17 ديسمبر", "sub": "بطولات المحلات · كرت لوفي P-161 لكل مشارك", "img": "anniv.png"},
+ {"s": 41.99, "e": 48.0, "accent": "#14b8a6", "chip": "نصيحة شراء", "title": "لا تستعجل بالشراء", "sub": "أسعار المفردات تتغير كثير أول الأسابيع", "img": "tip.png"},
+ {"s": 48.0, "e": 52.29, "accent": "#ef4444", "title": "Delta Reign ولا OP-18؟", "sub": "اكتب لنا بالتعليقات", "img": "cta"}]}
