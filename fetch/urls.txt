@@ -1,2 +1,14 @@
-rel_yt_op18.html https://www.youtube.com/results?search_query=ONE+PIECE+CARD+GAME+THE+DOMINANCE+OF+GOD+OP-18
-rel_yt_me06.html https://www.youtube.com/results?search_query=Pokemon+TCG+Mega+Evolution+Delta+Reign+trailer
+imk_in_400x400.jpg https://tcgplayer-cdn.tcgplayer.com/product/724659_in_400x400.jpg
+imk_200w.jpg https://tcgplayer-cdn.tcgplayer.com/product/724659_200w.jpg
+imk_400w.jpg https://tcgplayer-cdn.tcgplayer.com/product/724659_400w.jpg
+mk_p_68_24303.json https://tcgcsv.com/tcgplayer/68/24303/products
+mk_p_68_24305.json https://tcgcsv.com/tcgplayer/68/24305/products
+mk_p_71_23234.json https://tcgcsv.com/tcgplayer/71/23234/products
+im_657251.jpg https://tcgplayer-cdn.tcgplayer.com/product/657251_in_1000x1000.jpg
+im_653262.jpg https://tcgplayer-cdn.tcgplayer.com/product/653262_in_1000x1000.jpg
+im_620278.jpg https://tcgplayer-cdn.tcgplayer.com/product/620278_in_1000x1000.jpg
+im_33094.jpg https://tcgplayer-cdn.tcgplayer.com/product/33094_in_1000x1000.jpg
+im_58560.jpg https://tcgplayer-cdn.tcgplayer.com/product/58560_in_1000x1000.jpg
+im_222770.jpg https://tcgplayer-cdn.tcgplayer.com/product/222770_in_1000x1000.jpg
+im_27485.jpg https://tcgplayer-cdn.tcgplayer.com/product/27485_in_1000x1000.jpg
+im_723001.jpg https://tcgplayer-cdn.tcgplayer.com/product/723001_in_1000x1000.jpg
