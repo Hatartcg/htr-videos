@@ -20,7 +20,7 @@ def tape_sprite():
     for sym, ch in TAPE_ITEMS:
         col = UP if ch >= 0 else DN; arrow = '▲' if ch >= 0 else '▼'
         parts.append((txt(f'{sym}', FB(34), (230, 235, 230)), txt(f'{"+" if ch >= 0 else ""}{ch:.1f}%', FB(34), col)))
-    w = sum(a.shape[1] + b.shape[1] - 60 for a, b in parts) + 40 * len(parts)
+    w = sum(a.shape[1] + b.shape[1] - 100 for a, b in parts) + 40 * len(parts)
     T = np.zeros((96, w * 2 + 400, 4), np.uint8); x = 0
     for rep in range(2):
         for a, b in parts:
@@ -88,8 +88,10 @@ def render(t):
         x = -600 + 1600 * eo(k / .35)
         blit(f, S['brk'], W / 2, 330 - 400 * out, ebk(k / .3) * (1 + .06 * (math.sin(t * 12) > 0)), 1 - out)
         blit(f, S['h1'], W / 2, 520 - 400 * out, ebk((k - .2) / .35), (k > .2) * (1 - out)); blit(f, S['h2'], W / 2, 680 - 400 * out, ebk((k - .4) / .35), (k > .4) * (1 - out))
+        for j in range(N):
+            kk = ebk((k - .15 - j * .07) / .3); blit(f, SPR[j]['s'], W / 2 + (j - 2) * 190, 960 - 400 * out, kk * 1.15, (1 if kk > 0 else 0) * (1 - out))
         # candles
-        rng = np.random.default_rng(1); base = 1500; v = 0
+        rng = np.random.default_rng(1); base = 1560; v = 0
         for j in range(14):
             kk = eo((k - .6 - j * .06) / .25)
             if kk <= 0: break
