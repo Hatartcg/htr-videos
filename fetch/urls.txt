@@ -1,7 +1,2 @@
-im_724659.jpg https://tcgplayer-cdn.tcgplayer.com/product/724659_in_1000x1000.jpg
-im_97806.jpg https://tcgplayer-cdn.tcgplayer.com/product/97806_in_1000x1000.jpg
-im_84187.jpg https://tcgplayer-cdn.tcgplayer.com/product/84187_in_1000x1000.jpg
-im_26480.jpg https://tcgplayer-cdn.tcgplayer.com/product/26480_in_1000x1000.jpg
-im_539207.jpg https://tcgplayer-cdn.tcgplayer.com/product/539207_in_1000x1000.jpg
-im_503023.jpg https://tcgplayer-cdn.tcgplayer.com/product/503023_in_1000x1000.jpg
-im_709248.jpg https://tcgplayer-cdn.tcgplayer.com/product/709248_in_1000x1000.jpg
+rel_yt_op18.html https://www.youtube.com/results?search_query=ONE+PIECE+CARD+GAME+THE+DOMINANCE+OF+GOD+OP-18
+rel_yt_me06.html https://www.youtube.com/results?search_query=Pokemon+TCG+Mega+Evolution+Delta+Reign+trailer
