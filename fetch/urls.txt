@@ -1,14 +1,1 @@
-imk_in_400x400.jpg https://tcgplayer-cdn.tcgplayer.com/product/724659_in_400x400.jpg
-imk_200w.jpg https://tcgplayer-cdn.tcgplayer.com/product/724659_200w.jpg
-imk_400w.jpg https://tcgplayer-cdn.tcgplayer.com/product/724659_400w.jpg
-mk_p_68_24303.json https://tcgcsv.com/tcgplayer/68/24303/products
-mk_p_68_24305.json https://tcgcsv.com/tcgplayer/68/24305/products
-mk_p_71_23234.json https://tcgcsv.com/tcgplayer/71/23234/products
-im_657251.jpg https://tcgplayer-cdn.tcgplayer.com/product/657251_in_1000x1000.jpg
-im_653262.jpg https://tcgplayer-cdn.tcgplayer.com/product/653262_in_1000x1000.jpg
-im_620278.jpg https://tcgplayer-cdn.tcgplayer.com/product/620278_in_1000x1000.jpg
-im_33094.jpg https://tcgplayer-cdn.tcgplayer.com/product/33094_in_1000x1000.jpg
-im_58560.jpg https://tcgplayer-cdn.tcgplayer.com/product/58560_in_1000x1000.jpg
-im_222770.jpg https://tcgplayer-cdn.tcgplayer.com/product/222770_in_1000x1000.jpg
-im_27485.jpg https://tcgplayer-cdn.tcgplayer.com/product/27485_in_1000x1000.jpg
-im_723001.jpg https://tcgplayer-cdn.tcgplayer.com/product/723001_in_1000x1000.jpg
+mk1102_t1.mp3 https://storage.googleapis.com/xi-backend/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/jSH5IuBDqaGudMBOjQS4/OPMFyTSICBy8Xp1IbEZp/content.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20261101%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261101T044950Z&X-Goog-Expires=7200&X-Goog-SignedHeaders=host&X-Goog-Signature=b4b134ad92dbac997829b75720322d7f03ef70d7c6cb006024d5888abbdb88b13223d8efccc5bd1f9a1203c843596ec74d40c0f0f6ddc31d773c3e7689d44e0fddfdd9f8927e29a305771c3961ee75bc536d939a31fc51b6a45e0c22c4d022ca3b076d0e9034f0556980e0f6076a4cfe679e67cf1bcd98244dcdd15b53c6c1c6744d811df8b84d76cdf5c4f238ac0d72acf75996b83fe400a50446e08cd612ad5b542ede18b5fb30bb211ed45fd65e0c7d7e0d882ac59c4fc4a0621c747939d6fcfae9a768cde1ffd0d0bf44dca59617f295569a888086dfb00f9b5c6fe1671c5872da022893bf3a813ff31deeeafca10b4f3b06226c121fdde991718ad27442
