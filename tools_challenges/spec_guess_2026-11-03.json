@@ -1,0 +1,57 @@
+{
+ "title1": "تقدر تخمّن",
+ "title2": "كم تسوى هالكروت؟",
+ "subtitle": "٣ ألعاب · ٣ جولات",
+ "source": "سعر السوق في TCGplayer · 1 نوفمبر 2026",
+ "tease": "بكرة: أكثر ٥ ارتفعوا · لا يفوتك!",
+ "rounds": [
+  {
+   "img": "/home/claude/gp/im_693517.jpg",
+   "name": "MEGA GRENINJA EX",
+   "set": "POKÉMON · Chaos Rising · Special Illustration Rare",
+   "options": [
+    "$38",
+    "$114",
+    "$290"
+   ],
+   "answer": 1
+  },
+  {
+   "img": "/home/claude/gp/im_690216.jpg",
+   "name": "BUZZ LIGHTYEAR",
+   "set": "LORCANA · Wilds Unknown · Jungle Ranger Iconic",
+   "options": [
+    "$3,613",
+    "$850",
+    "$1,900"
+   ],
+   "answer": 0
+  },
+  {
+   "img": "/home/claude/gp/im_689174.jpg",
+   "name": "TEEMO, SWIFT SCOUT",
+   "set": "RIFTBOUND · Prize Wall Promo · Metal",
+   "options": [
+    "$1,100",
+    "$2,350",
+    "$4,400"
+   ],
+   "answer": 2
+  }
+ ],
+ "timing": {
+  "intro": 2.6,
+  "think": [
+   7.366666666666666,
+   4.966666666666667,
+   4.766666666666667
+  ],
+  "rlen": [
+   13.2,
+   11.733333333333333,
+   11.7
+  ],
+  "outro": 4.733333333333333,
+  "end": 2.8
+ }
+}
