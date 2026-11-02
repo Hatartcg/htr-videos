@@ -13,3 +13,4 @@
 2026-11-02 | One Piece | Starter Deck ST-33 Kuzan (51 cards + 10 DON!! + 1 OP-16 booster pack) | 105 SAR | videos/oh/oh_st33_kuzan_starter_deck_system.mp4 | system-hud (music: music_edm.py 140bpm E minor) | moved from 30 Oct (Fri 30 Oct had no reel: waited for approval)
 2026-10-31 | Demon Slayer (merch) | Akaza hoodie (many colours) | 200 SAR | videos/oh/oh_akaza_hoodie_cine.mp4 | cinematic (music: music_taiko.py 116bpm F)
 2026-11-01 | Naruto (merch) | Naruto Shippuden poster | 200 SAR | videos/oh/oh_naruto_shippuden_poster_manga.mp4 | manga (music: styles/music_jpop.py 164bpm Bb major)
+2026-11-03 | Solo Leveling (merch) | Demon King dagger (black with brown details, light) | 249 SAR | videos/oh/oh_solo_leveling_demon_king_dagger_cine.mp4 | cinematic (music: music_gothic.py organ+choir+taiko, 98bpm G minor; pink accent, cutout product)

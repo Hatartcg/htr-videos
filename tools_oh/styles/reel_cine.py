@@ -17,7 +17,11 @@ CFG = {
     'akaza': dict(TOTAL=14.2, T_GAME=0.64, T_PROD=3.14, T_NAME=3.46, T_F2=5.14, T_C1=7.14, T_F1=7.14, T_F1b=7.6, T_PRICE=8.98, T_CTA=10.74,
                 game=['DEMON', 'SLAYER'], hook=['الرتبة العليا الثالثة', 'صارت هودي!'], name=['AKAZA HOODIE', 'DEMON SLAYER'], caps=['', 'دافي للأيام الباردة'], cap2='ألوان كثيرة تختار منها',
                 price='200', seed=33, hook_fs=98),
+    'dagger': dict(TOTAL=15.3, T_GAME=0.6, T_PROD=3.1, T_NAME=3.54, T_F2=4.7, T_C1=6.1, T_F1=6.1, T_F1b=7.42, T_PRICE=9.46, T_CTA=11.94,
+                game=['SOLO', 'LEVELING'], hook=['سلاح ملك الشياطين', 'صار بيدك!'], name=['DEMON KING DAGGER', 'SOLO LEVELING'], caps=['', 'خفيف الوزن', 'مثالي لفعاليات الأنمي'], cap2='أسود بتفاصيل بني',
+                price='249', seed=52, hook_fs=96, accent=(255, 61, 154), cut=True),
 }[KEY]
+RED = CFG.get('accent', RED)
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; rng = np.random.default_rng(CFG['seed'])
 FD = '/home/claude/fonts/'
@@ -49,8 +53,18 @@ def logo_spr(w):
     m = Image.new('L', g.size, 0); m.paste(l.getchannel('A'), (50, 50)); gl.putalpha(m.filter(ImageFilter.GaussianBlur(24)))
     g = Image.alpha_composite(g, gl); g.alpha_composite(l, (50, 50)); return to_bgra(g)
 LOGO_BIG, LOGO_MID, LOGO_WM = logo_spr(520), logo_spr(420), logo_spr(140)
-prod = Image.open(D + 'main.png').convert('RGB')
-PROD_BIG = rim(prod, 900); PROD = rim(prod, 760); PROD_SM = rim(prod, 330)
+def rim_cut(im, w, col=None):  # transparent cutout: glow follows the object's alpha
+    col = col or RED; im = im.resize((w, int(im.height * w / im.width)), Image.LANCZOS)
+    pad = 80; c = Image.new('RGBA', (im.width + 2 * pad, im.height + 2 * pad), (0, 0, 0, 0))
+    m = Image.new('L', c.size, 0); m.paste(im.getchannel('A'), (pad, pad))
+    g = Image.new('RGBA', c.size, col + (0,)); g.putalpha(m.filter(ImageFilter.GaussianBlur(26)).point(lambda v: min(255, int(v * 1.6))))
+    c = Image.alpha_composite(c, g); c.alpha_composite(im, (pad, pad)); return to_bgra(c)
+if CFG.get('cut'):
+    prod = Image.open(D + 'main.png').convert('RGBA')
+    PROD_BIG = rim_cut(prod, 900); PROD = rim_cut(prod, 720); PROD_SM = rim_cut(prod, 330)
+else:
+    prod = Image.open(D + 'main.png').convert('RGB')
+    PROD_BIG = rim(prod, 900); PROD = rim(prod, 760); PROD_SM = rim(prod, 330)
 STRIP = [rim(Image.open(D + f'c{i}.png').convert('RGB'), 400, col=(c if c else RED)) for i, c in zip((8, 4, 3, 1, 5, 7), (RED, RED, VIOLET, VIOLET, PINK, (60, 110, 255)))]
 T_C1 = CFG.get('T_C1', 5.82)
 S = dict(
@@ -145,7 +159,7 @@ def render(t):
     if T_F1 <= t < T_PRICE:
         lt = t - T_F1
         blit(f, PROD, W / 2 - 30 * (lt / 3), H * .36, .9 + .03 * lt / 3, eo(lt / .3))
-        for i, (tc, spr) in enumerate(zip([T_F1 + .05], S['caps'][1:])):
+        for i, (tc, spr) in enumerate(zip([T_F1 + .05, CFG.get('T_F1b', 99)], S['caps'][1:])):
             if t > tc:
                 k = t - tc; y = H * (.68 + .075 * i)
                 blit(f, reveal(spr, eo(k / .4), True), W / 2, y, 1, 1)
