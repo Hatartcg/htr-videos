@@ -1,6 +1,1 @@
-ch1102_p23366.json https://tcgcsv.com/tcgplayer/2/23366/products
-ch1102_r23366.json https://tcgcsv.com/tcgplayer/2/23366/prices
-ch1102_p24617.json https://tcgcsv.com/tcgplayer/71/24617/products
-ch1102_r24617.json https://tcgcsv.com/tcgplayer/71/24617/prices
-im_530853.jpg https://tcgplayer-cdn.tcgplayer.com/product/530853_in_1000x1000.jpg
-im_690216.jpg https://tcgplayer-cdn.tcgplayer.com/product/690216_in_1000x1000.jpg
+guess_1103_take.mp3 https://storage.googleapis.com/xi-backend/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/3Zw7qEaAQgTlNvZZp085/zJ8y4HF3KZJDdOapbavm/content.mp3?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=xi-backend-prod%40xi-labs.iam.gserviceaccount.com%2F20261102%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20261102T045108Z&X-Goog-Expires=7200&X-Goog-SignedHeaders=host&X-Goog-Signature=15aa236d449251c92420c137765820d4dfab4a040e55e71a6ce468bd6f31a5044a5d27fa36c25dea0b05dafa46eb870b5e6e3d977166b1d6a39a0caf50a796d9d4ee1c1199ff643977761a790860f16b5dabc9f98d78e65d7c2db20625107b2584f85ca528f8d13351875a432f909f87c9e18469957f3c9fc76fee2b9ab145fbb75ed6299072402447a499572ea5176c569b807e43f652e929bb85b48760f8e28c05f2d349c6f72997284403002027258c1e24ec126c4f645936c2e902ed1ce948e8dc0efbcf57b545f0765c5f1966e7c5b06c164b5b6929c2f6484d9fc4088f679012fe9620ac2dbd72cf0ac89e9b7bff29f7aee4b3acc52c70c69e245f2345
