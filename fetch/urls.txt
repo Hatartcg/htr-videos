@@ -1,8 +1,6 @@
-oh1102_jjk.html https://otakkuhaveen.com/ar/jujutsu-kaisen/p1619227501
-oh1102_ichsword.html https://otakkuhaveen.com/ar/%D8%B3%D9%8A%D9%81-%D8%A7%D9%8A%D8%AA%D8%B4%D9%8A%D8%BA%D9%88/p1264314516
-oh1102_dagger.html https://otakkuhaveen.com/ar/%D8%AE%D9%86%D8%AC%D8%B1-%D9%85%D9%84%D9%83-%D8%A7%D9%84%D8%B4%D9%8A%D8%A7%D8%B7%D9%8A%D9%86/p2102463201
-oh1102_katana.html https://otakkuhaveen.com/ar/%D8%B3%D9%8A%D9%81-%D9%83%D8%A7%D8%AA%D8%A7%D9%86%D8%A7/p1776072454
-oh1102_kanae.html https://otakkuhaveen.com/ar/%D8%A7%D9%84%D8%B3%D9%8A%D9%81-%D8%B3%D9%84%D8%A7%D8%AD-kochou-kanae-%D8%A7%D9%84%D9%88%D8%B1%D8%AF%D9%8A/p935734942
-oh1102_animeswords.html https://otakkuhaveen.com/ar/%D8%B3%D9%8A%D9%88%D9%81-%D8%A7%D9%86%D9%85%D9%8A/p1312570607
-oh1102_animehood.html https://otakkuhaveen.com/ar/%D9%87%D9%88%D8%AF%D9%8A-%D8%A7%D9%86%D9%85%D9%8A/p1008657711
-oh1102_slsword.html https://otakkuhaveen.com/ar/%D8%B3%D9%8A%D9%81-%D8%B3%D9%88%D9%84%D9%88-%D9%84%D9%8A%D9%81%D9%84%D9%8A%D9%86%D8%AC/p844492966
+oh1102_dagger1.jpg https://cdn.salla.sa/NKNagy/61979bdc-e057-4b05-8a39-e2d777b8314d-1000x1000-sTOIiMQnMNWJvoLhuFi5tN8xib4ONmxLfPegLOKg.jpg
+oh1102_jjk1.jpg https://cdn.salla.sa/NKNagy/03b5166a-7399-4fd2-aee3-225bc404e7ca-1000x1000-XHGN6IvrBScklNe1ZoSVfUhX6kVZCWQTz5l5Y0Hr.jpg
+oh1102_jjk2.jpg https://cdn.salla.sa/NKNagy/26324f74-0bac-4ce4-a0c5-f82bd610ba6a-976.79324894515x1000-kCs8autRE3jlttpK86YLSlTYkf2htbIrOx0hNbAe.jpg
+oh1102_jjk3.jpg https://cdn.salla.sa/NKNagy/4d7ac352-114f-4997-b634-ad0165c27710-1000x1000-DyHIXvVT6hnK4fMng79ARXzCFILDPPgZSlBhT3cx.jpg
+oh1102_jjk4.jpg https://cdn.salla.sa/NKNagy/9de1230d-5795-42e7-abe9-0249f540e554-1000x1000-MHvxBSIaSKVI0omyarWpAcXzsWMIEyUrUGUQGuzQ.jpg
+oh1102_sls1.jpg https://cdn.salla.sa/NKNagy/c849a8e5-5f9d-408b-974a-7a7f61102ddc-1000x1000-Tp33bR9P7UO2S8Gi98J55Via1F6rwItH81KSUlgK.jpg
