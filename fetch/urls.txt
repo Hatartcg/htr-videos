@@ -1,5 +1,8 @@
-oh1102_rift.html https://otakkuhaveen.com/ar/riftbound-spiritforged-booster-box/p338739419
-oh1102_ygo2.html https://otakkuhaveen.com/ar/yu-gi-oh-rarity-collection-ii-booster-box-24-packs/p921987942
-oh1102_tanjiro.html https://otakkuhaveen.com/ar/%D9%87%D9%88%D8%AF%D9%8A-%D8%AA%D8%A7%D9%86%D8%AC%D8%B1%D9%88-%D8%AF%D9%8A%D9%85%D9%86-%D8%B3%D9%84%D8%A7%D9%8A%D8%B1/p580444082
-oh1102_bleach.html https://otakkuhaveen.com/ar/%D8%B3%D9%8A%D9%88%D9%81-%D8%A8%D9%84%D9%8A%D8%AA%D8%B4/p1565851202
-oh1102_mystery.html https://otakkuhaveen.com/ar/otakku-haven-mystery-pack/p282699662
+oh1102_jjk.html https://otakkuhaveen.com/ar/jujutsu-kaisen/p1619227501
+oh1102_ichsword.html https://otakkuhaveen.com/ar/%D8%B3%D9%8A%D9%81-%D8%A7%D9%8A%D8%AA%D8%B4%D9%8A%D8%BA%D9%88/p1264314516
+oh1102_dagger.html https://otakkuhaveen.com/ar/%D8%AE%D9%86%D8%AC%D8%B1-%D9%85%D9%84%D9%83-%D8%A7%D9%84%D8%B4%D9%8A%D8%A7%D8%B7%D9%8A%D9%86/p2102463201
+oh1102_katana.html https://otakkuhaveen.com/ar/%D8%B3%D9%8A%D9%81-%D9%83%D8%A7%D8%AA%D8%A7%D9%86%D8%A7/p1776072454
+oh1102_kanae.html https://otakkuhaveen.com/ar/%D8%A7%D9%84%D8%B3%D9%8A%D9%81-%D8%B3%D9%84%D8%A7%D8%AD-kochou-kanae-%D8%A7%D9%84%D9%88%D8%B1%D8%AF%D9%8A/p935734942
+oh1102_animeswords.html https://otakkuhaveen.com/ar/%D8%B3%D9%8A%D9%88%D9%81-%D8%A7%D9%86%D9%85%D9%8A/p1312570607
+oh1102_animehood.html https://otakkuhaveen.com/ar/%D9%87%D9%88%D8%AF%D9%8A-%D8%A7%D9%86%D9%85%D9%8A/p1008657711
+oh1102_slsword.html https://otakkuhaveen.com/ar/%D8%B3%D9%8A%D9%81-%D8%B3%D9%88%D9%84%D9%88-%D9%84%D9%8A%D9%81%D9%84%D9%8A%D9%86%D8%AC/p844492966
