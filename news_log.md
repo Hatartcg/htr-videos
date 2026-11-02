@@ -79,3 +79,7 @@ Format: date | game | item
 2026-11-03 | Pokémon | Mega Evolution—Delta Reign out Nov 6, 2026: over 135 cards, 4 Mega Evolution Pokémon ex (Rayquaza, Golurk, Malamar, Golisopod); Mega Rayquaza first time since XY—Ancient Origins; new Legendary Stadiums = 2 Stadium cards forming one artwork (official press text via pocketmonsters.net + pokemonblog.com)
 2026-11-03 | One Piece | OP-18 THE DOMINANCE OF GOD Nov 20, 2026 — Saint Gunko & Saint Shamrock debut; 4th Anniversary store event Nov 20 – Dec 17, 2026, participation promo P-161 Monkey.D.Luffy (en.onepiece-cardgame.com, Oct 23)
 2026-11-03 | Tips | Singles prices move a lot in a new set's first weeks — don't rush to buy
+2026-11-05 | Prices | HOOK: Japanese EB-05 Nami borderless SR (EB05-055) listed ¥198,000 (~$1,259) at Cardrush, Oct 31, 2026 (retail list price, fujicardshop) → "+$1,200"; EB-05 English out Oct 30, 2026 (official site)
+2026-11-05 | Pokémon | Mega Rayquaza ex Premium Tournament Collection: Feb 12, 2027, $49.99, 8 packs, Mega Rayquaza ex promo, 65 Dragon Shield sleeves + deck box (pocketmonsters.net/news/9672, Oct 29)
+2026-11-05 | Lorcana | Into the Inkdark (Q1 2027) first set with Collector Boosters, $35/pack; Illustrious rarity: 6 per set, 23 serialized copies each (Bleeding Cool Aug 20 + Resell Calendar Sep 23)
+2026-11-05 | Tips | Japanese and English prices differ — check the card's language before buying

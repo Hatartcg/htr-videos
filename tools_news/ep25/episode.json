@@ -1,0 +1,10 @@
+{"total": 52.01, "date_label": "5 نوفمبر 2026", "imgdir": "img", "cta_end": "ونشوفكم الأحد!", "segs": [
+ {"s": 0, "e": 5.55, "hook": true, "tsize": 150, "accent": "#f97316", "chip": "One Piece · متجر Cardrush · 31 أكتوبر", "title": "+$1,200", "sub": "كرت نامي من EB-05 · النسخة اليابانية", "img": "nami.png"},
+ {"s": 5.55, "e": 9.0, "accent": "#f97316", "title": "أخبار وأسعار", "sub": "", "img": "title"},
+ {"s": 9.0, "e": 13.29, "accent": "#f97316", "chip": "One Piece", "title": "EB-05 بالإنجليزي", "sub": "Heroines Edition vol.2 · نزلت 30 أكتوبر", "img": "eb05.png"},
+ {"s": 13.29, "e": 22.68, "accent": "#ef4444", "chip": "Pokémon", "title": "Mega Rayquaza ex PTC", "sub": "8 باكات · برومو · 65 سليف + ديك بوكس Dragon Shield", "img": "ptc.png"},
+ {"s": 22.68, "e": 27.6, "accent": "#ef4444", "chip": "Pokémon", "title": "$49.99", "sub": "ينزل 12 فبراير 2027", "img": "ptc_date.png"},
+ {"s": 27.6, "e": 34.36, "accent": "#3b82f6", "chip": "Disney Lorcana", "title": "Into the Inkdark", "sub": "أول كولكتر بوسترز · الباكت بـ 35$", "img": "inkdark.png"},
+ {"s": 34.36, "e": 42.17, "accent": "#3b82f6", "chip": "ندرة جديدة", "title": "Illustrious", "sub": "6 كروت بكل مجموعة · 23 نسخة بس من كل كرت", "img": "illus.png"},
+ {"s": 42.17, "e": 47.19, "accent": "#14b8a6", "chip": "نصيحة شراء", "title": "تأكد من لغة الكرت", "sub": "السعر الياباني غير عن الإنجليزي", "img": "tip.png"},
+ {"s": 47.19, "e": 52.01, "accent": "#f97316", "title": "ون بيس ولا بوكيمون ولا لوركانا؟", "sub": "اكتب لنا بالتعليقات", "img": "cta"}]}
