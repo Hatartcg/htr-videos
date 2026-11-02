@@ -1,3 +1,3 @@
-Mon Nov  2 01:46:23 UTC 2026
+Mon Nov  2 01:49:44 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-fetch/av_vo.mp3  ليش(0.75)  تنتظر؟(0.85)  فوكيموان(0.68)  جاهزة(0.8)  الحين(0.73)  عند(0.99)  هاتر(0.82)  Storm(0.0)  Emerald,(0.89)  Destined(0.91)  Rivals,(0.97)  Chaos(0.97)  Rising,(0.99)  and(0.54)  Ascended(0.98)  Heroes(0.96)  اطلبها(0.77)  اليوم(0.99)  ويوصلك(0.9)  على(0.96)  طول(0.99)  من(0.97)  موقع(1.0)  هاتر(0.99)
+fetch/av_r1.mp3  وحاوى!(0.19)  أسندت(0.28)  حيرات!(0.14)
