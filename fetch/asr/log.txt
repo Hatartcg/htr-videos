@@ -1,3 +1,3 @@
-Mon Nov  2 05:11:12 UTC 2026
+Mon Nov  2 05:15:26 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-fetch/opn_ins.mp3  ستارتر(0.55)  دي(0.89)  كاتوين(0.79)  بيس(0.93)  وكيس(0.91)  او(0.48)  بي(0.89)  شرطة(0.86)  واحد(0.99)  استكامل(0.77)
+fetch/opn_ins2.mp3  وكيس(0.86)  أوبي(0.46)  16(0.91)  كامل(0.94)
