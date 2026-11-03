@@ -1,2 +1,2 @@
-mk1104_take.mp3
-sl1104_take.mp3
+mk1104_vo.wav
+sl1104_vo.wav

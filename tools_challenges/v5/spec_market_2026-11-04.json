@@ -1,0 +1,154 @@
+{
+ "source": "سعر السوق في TCGplayer · مقارنة بقبل ٧ أيام",
+ "tease": "بكرة: خمّن السعر… لا يفوتك!",
+ "tape": [
+  [
+   "DELC",
+   235.8
+  ],
+  [
+   "SLOW",
+   233.3
+  ],
+  [
+   "RAYQ",
+   164.5
+  ],
+  [
+   "REAP",
+   163.6
+  ],
+  [
+   "CHRZ",
+   150.0
+  ],
+  [
+   "LAW",
+   99.7
+  ],
+  [
+   "TRAP",
+   98.2
+  ],
+  [
+   "LUFY",
+   83.6
+  ],
+  [
+   "KAYN",
+   52.0
+  ],
+  [
+   "VEX",
+   23.4
+  ]
+ ],
+ "timing": {
+  "intro": 4.533333333333333,
+  "dur": [
+   4.7,
+   5.333333333333333,
+   6.266666666666667,
+   5.933333333333334,
+   6.366666666666666
+  ],
+  "outro": 4.466666666666667
+ },
+ "movers": [
+  {
+   "ticker": "VEX",
+   "name": "Vex, Apathetic (Alternate Art)",
+   "set": "Showcase 150a/219 · Unleashed · RIFTBOUND",
+   "img": "/home/claude/htr-videos/fetch/im_685950.jpg",
+   "old": 25.03,
+   "new": 30.89,
+   "pct": 23,
+   "series": [
+    25.03,
+    26.08,
+    26.34,
+    27.59,
+    27.64,
+    29.38,
+    30.47,
+    30.89
+   ]
+  },
+  {
+   "ticker": "TRAP",
+   "name": "Trap Hole",
+   "set": "Super Rare 1st Edition · LOB-058 · YU-GI-OH!",
+   "img": "/home/claude/htr-videos/fetch/im_22534.jpg",
+   "old": 50.83,
+   "new": 100.77,
+   "pct": 98,
+   "series": [
+    50.83,
+    50.83,
+    50.83,
+    50.83,
+    50.83,
+    50.83,
+    100.77,
+    100.77
+   ]
+  },
+  {
+   "ticker": "REAP",
+   "name": "Reaper of the Cards",
+   "set": "Rare 1st Edition · LOB-071 · YU-GI-OH!",
+   "img": "/home/claude/htr-videos/fetch/im_22335.jpg",
+   "old": 24.99,
+   "new": 65.87,
+   "pct": 164,
+   "series": [
+    24.99,
+    24.99,
+    24.99,
+    24.99,
+    24.99,
+    24.99,
+    65.87,
+    65.87
+   ]
+  },
+  {
+   "ticker": "SLOW",
+   "name": "Slowbro (Japanese)",
+   "set": "Holo 045/082 · Flight of Legends · POKÉMON",
+   "img": "/home/claude/htr-videos/fetch/im_612446.jpg",
+   "old": 60.0,
+   "new": 200.0,
+   "pct": 233,
+   "series": [
+    60.0,
+    60.0,
+    200.0,
+    200.0,
+    200.0,
+    200.0,
+    200.0,
+    200.0
+   ]
+  },
+  {
+   "ticker": "DELC",
+   "name": "Dark Electrode",
+   "set": "Reverse Holo 4/109 · EX Team Rocket Returns · POKÉMON",
+   "img": "/home/claude/htr-videos/fetch/im_84591.jpg",
+   "old": 41.69,
+   "new": 139.99,
+   "pct": 236,
+   "series": [
+    41.69,
+    41.69,
+    41.69,
+    41.69,
+    139.99,
+    139.99,
+    139.99,
+    139.99
+   ]
+  }
+ ]
+}
