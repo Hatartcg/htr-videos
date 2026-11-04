@@ -1,2 +1,1 @@
-mk1104_vo.wav
-sl1104_vo.wav
+yt_vo.mp3
