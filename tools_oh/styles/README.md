@@ -16,3 +16,7 @@ Work dir per product: /home/claude/work/<key>/ with main.png, alt.png (optional)
 Note (2026-10-29): Dandadan "T-shirt" page (p360516703) shows green earrings, not a T-shirt - skipped.
 Ideas still unused: retro arcade/pixel, lofi/vlog, kinetic typography, VHS 90s anime, paper-cut collage.
 Log the style in oh_log.md (6th column) so the next run picks a different one.
+Note (2026-11-05): Yu-Gi-Oh Rarity Collection II page (p921987942) photos are app screenshots of Rarity Collection 5 (RA05) cards with USD prices, no box photo - skipped.
+Note (2026-11-05): Zoro glowing sword page (p2061334474) photos carry 'O-party Store' branding and one shows a Demon Slayer (Rengoku) sword - skipped.
+Note (2026-11-05): Kanae sword page says 101 cm total but photos say 104 cm - length left out. Ichigo Bankai sword photos show 3 sizes (104/75 cm) - size left out.
+Note (2026-11-04): no OH reel was posted on Wed 4 Nov (gap).
