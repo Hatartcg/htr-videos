@@ -1,0 +1,9 @@
+{"total": 42.44, "date_label": "8 نوفمبر 2026", "imgdir": "img", "cta_end": "ونشوفكم الثلاثاء!", "segs": [
+ {"s": 0, "e": 3.31, "hook": true, "tsize": 118, "accent": "#ef4444", "chip": "Pokémon · Heritage · Sep 18, 2026", "title": "$5,000,000", "sub": "Pikachu Illustrator · PSA 9", "img": "illus.png"},
+ {"s": 3.31, "e": 6.61, "accent": "#ef4444", "title": "أخبار وأسعار", "sub": "", "img": "title"},
+ {"s": 6.61, "e": 11.52, "accent": "#ef4444", "chip": "Pokémon", "title": "مزاد Heritage", "sub": "PSA 9 · Sep 18, 2026", "img": "illus.png"},
+ {"s": 11.52, "e": 19.17, "accent": "#ef4444", "chip": "Pokémon · نفس الكرت", "title": "$2,806,271", "sub": "CGC 9 · Goldin · Sep 19, 2026", "img": "illus.png"},
+ {"s": 19.17, "e": 26.87, "accent": "#f97316", "chip": "Magic: The Gathering", "title": "$2,208,200", "sub": "Black Lotus · Alpha · PSA 10 · Goldin", "img": "lotus.png"},
+ {"s": 26.87, "e": 29.56, "accent": "#f97316", "chip": "Magic: The Gathering", "title": "3 نسخ بس", "sub": "بدرجة PSA 10", "img": "lotus.png"},
+ {"s": 29.56, "e": 37.83, "accent": "#14b8a6", "chip": "نصيحة شراء", "title": "قارن نفس الدرجة ونفس الشركة", "sub": "PSA 9: $5M  ·  CGC 9: $2.8M", "img": ["illus.png", "illus.png"]},
+ {"s": 37.83, "e": 42.44, "accent": "#ef4444", "title": "بيكاتشو ولا بلاك لوتس؟", "sub": "اكتب لنا بالتعليقات", "img": "cta"}]}
