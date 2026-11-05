@@ -14,3 +14,4 @@
 2026-10-31 | Demon Slayer (merch) | Akaza hoodie (many colours) | 200 SAR | videos/oh/oh_akaza_hoodie_cine.mp4 | cinematic (music: music_taiko.py 116bpm F)
 2026-11-01 | Naruto (merch) | Naruto Shippuden poster | 200 SAR | videos/oh/oh_naruto_shippuden_poster_manga.mp4 | manga (music: styles/music_jpop.py 164bpm Bb major)
 2026-11-03 | Solo Leveling (merch) | Demon King dagger (black with brown details, light) | 249 SAR | videos/oh/oh_solo_leveling_demon_king_dagger_cine.mp4 | cinematic (music: music_gothic.py organ+choir+taiko, 98bpm G minor; pink accent, cutout product)
+2026-11-05 | One Piece | Starter Deck ST-36 Eustass "Captain" Kid (51 cards + 10 DON!! + playsheet + 1 OP-16 booster pack) | 105 SAR | videos/oh/oh_st36_kid_starter_deck_manga.mp4 | manga (music: music_rock.py 166bpm G minor chug)

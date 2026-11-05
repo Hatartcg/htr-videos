@@ -40,6 +40,11 @@ CFG = {
         hook='الكيوبي على جدارك!', game=['NARUTO'], sfx='BELIEVE IT!', label='ANIME POSTER', name=['NARUTO', 'SHIPPUDEN'],
         f1=dict(kind='caps', caps=['ألوانه حيّة', 'وتفاصيله دقيقة']), f2=dict(kind='grid', cap='يزيّن غرفتك أو مكتبك'),
         price='200', spot=(139, 92, 246), seed=27, sfx_x=.62),
+    'st36': dict(
+        TOTAL=15.2, T_GAME=2.69, T_PROD=4.16, T_NAME=5.71, T_F1=6.76, T_F2=8.05, T_F2b=9.37, T_PRICE=10.84, T_CTA=12.27,
+        hook='قوة المغناطيس بيدك!', game=['ONE PIECE', 'CARD GAME'], sfx='CLANG!', label='STARTER DECK', name=['CAPTAIN KID', 'ST-36'],
+        f1=dict(kind='num', n=51, cap='كرت جاهزة للعب'), f2=dict(kind='num', n=10, cap='DON!! CARDS', en=True, extra='+1 BOOSTER PACK OP-16'),
+        price='105', spot=(255, 61, 154), seed=36, sfx_x=.62),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; SPOT = CFG['spot']
