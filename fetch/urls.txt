@@ -1,4 +1,3 @@
-ep26_lotus.png https://api.scryfall.com/cards/named?exact=Black%20Lotus&set=lea&format=image&version=png
-ep26_pc_illus.html https://www.pricecharting.com/game/pokemon-japanese-promo/illustrator-pikachu
-ep26_bp_illus.html https://bulbapedia.bulbagarden.net/wiki/Pikachu_Illustrator_(CoroCoro_Comic_promo)
-ep26_bp_file.html https://bulbapedia.bulbagarden.net/wiki/File:PikachuIllustratorCoroCoroPromo.jpg
+ep26_voice.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/xwPbJmc4OhGfitLk48lh/pgdORrRgBpIArzsfRr9M/content.mp3?Expires=1793858400&KeyName=assets-cdn-key-1&Signature=yhPHjGELAqQyuZ_UsdnNGkZFuV0=
+ep26_illus_a.jpg https://storage.googleapis.com/images.pricecharting.com/3itx7xalk7vyo22x/1600.jpg
+ep26_illus_b.jpg https://storage.googleapis.com/images.pricecharting.com/enkogkctw4a4cc4b/1600.jpg
