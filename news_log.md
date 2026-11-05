@@ -83,3 +83,7 @@ Format: date | game | item
 2026-11-05 | Pokémon | Mega Rayquaza ex Premium Tournament Collection: Feb 12, 2027, $49.99, 8 packs, Mega Rayquaza ex promo, 65 Dragon Shield sleeves + deck box (pocketmonsters.net/news/9672, Oct 29)
 2026-11-05 | Lorcana | Into the Inkdark (Q1 2027) first set with Collector Boosters, $35/pack; Illustrious rarity: 6 per set, 23 serialized copies each (Bleeding Cool Aug 20 + Resell Calendar Sep 23)
 2026-11-05 | Tips | Japanese and English prices differ — check the card's language before buying
+2026-11-08 | Prices | HOOK: 1998 Japanese CoroCoro Pikachu Illustrator PSA 9 sold $5,000,000 at Heritage (Sep 18, 2026) (SI/Card Ladder + Polkastarter)
+2026-11-08 | Prices | Pikachu Illustrator CGC Mint 9 sold $2,806,271 at Goldin 100 (Sep 19, 2026, 48 bids) (SI + Auction Report)
+2026-11-08 | Magic | 1993 Alpha Black Lotus PSA 10 sold $2,208,200 at Goldin 100 (Sep 19, 2026); one of 3 PSA 10 copies (SI + Star City Games/Auction Report)
+2026-11-08 | Tips | Same card + same grade can differ by millions — compare sales of the same grade and the same grading company before buying
