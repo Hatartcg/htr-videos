@@ -1,0 +1,57 @@
+{
+ "title1": "تقدر تخمّن",
+ "title2": "كم تسوى هالكروت؟",
+ "subtitle": "٣ ألعاب · ٣ جولات",
+ "source": "سعر السوق في TCGplayer · 4 نوفمبر 2026",
+ "tease": "بكرة: أيهم أغلى؟ · لا يفوتك!",
+ "rounds": [
+  {
+   "img": "/home/claude/gp/im_246733.jpg",
+   "name": "RAYQUAZA VMAX",
+   "set": "POKÉMON · Evolving Skies · Alternate Art Secret",
+   "options": [
+    "$480",
+    "$1,232",
+    "$2,900"
+   ],
+   "answer": 1
+  },
+  {
+   "img": "/home/claude/gp/im_714674.jpg",
+   "name": "SKY STRIKER LINKAGE!",
+   "set": "YU-GI-OH! · Magnificent Monsters · Starlight Rare",
+   "options": [
+    "$658",
+    "$190",
+    "$1,400"
+   ],
+   "answer": 0
+  },
+  {
+   "img": "/home/claude/gp/im_690217.jpg",
+   "name": "MERIDA",
+   "set": "LORCANA · Wilds Unknown · Formidable Archer Iconic",
+   "options": [
+    "$560",
+    "$3,100",
+    "$1,627"
+   ],
+   "answer": 2
+  }
+ ],
+ "timing": {
+  "intro": 2.566666666666667,
+  "think": [
+   6.966666666666667,
+   5.333333333333333,
+   4.7
+  ],
+  "rlen": [
+   13.6,
+   11.5,
+   11.933333333333334
+  ],
+  "outro": 4.533333333333333,
+  "end": 2.8
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "set_title": "UNLEASHED",
+ "game": "RIFTBOUND",
+ "source": "سعر السوق في TCGplayer · 4 نوفمبر 2026",
+ "tease": "بكرة: خمّن السعر · لا يفوتك!",
+ "timing": {
+  "intro": 5.166666666666667,
+  "dur": [
+   4.866666666666666,
+   4.8,
+   5.033333333333333,
+   4.8,
+   4.533333333333333,
+   4.733333333333333,
+   4.7,
+   4.866666666666666,
+   4.833333333333333,
+   9.2
+  ],
+  "outro": 4.1
+ },
+ "cards": [
+  {
+   "price": 449.89,
+   "name": "Master Yi - Wuju Master",
+   "rarity": "Signature",
+   "img": "img/im_685605.jpg"
+  },
+  {
+   "price": 522.15,
+   "name": "Lillia - Bashful Bloom",
+   "rarity": "Signature",
+   "img": "img/im_684502.jpg"
+  },
+  {
+   "price": 573.47,
+   "name": "Rengar - Pridestalker",
+   "rarity": "Signature",
+   "img": "img/im_685526.jpg"
+  },
+  {
+   "price": 596.67,
+   "name": "Pyke - Bloodharbor Ripper",
+   "rarity": "Signature",
+   "img": "img/im_685525.jpg"
+  },
+  {
+   "price": 617.09,
+   "name": "Jhin - Virtuoso",
+   "rarity": "Signature",
+   "img": "img/im_685524.jpg"
+  },
+  {
+   "price": 648.46,
+   "name": "Vi - Piltover Enforcer",
+   "rarity": "Signature",
+   "img": "img/im_685522.jpg"
+  },
+  {
+   "price": 665.02,
+   "name": "Vex - Gloomist",
+   "rarity": "Signature",
+   "img": "img/im_685607.jpg"
+  },
+  {
+   "price": 989.24,
+   "name": "LeBlanc - Deceiver",
+   "rarity": "Signature",
+   "img": "img/im_685609.jpg"
+  },
+  {
+   "price": 1529.86,
+   "name": "Diana - Scorn of the Moon",
+   "rarity": "Signature",
+   "img": "img/im_684506.jpg"
+  },
+  {
+   "price": 1921.16,
+   "name": "Baron Nashor",
+   "rarity": "Ultimate",
+   "img": "img/im_685925.jpg"
+  }
+ ]
+}

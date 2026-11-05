@@ -1,0 +1,80 @@
+{
+ "source": "سعر السوق في TCGplayer · 4 نوفمبر 2026",
+ "tease": "بكرة: أغلى ١٠ كروت · لا يفوتك!",
+ "rounds": [
+  {
+   "game": "POKÉMON",
+   "mult": "الفرق ١٨٨ دولار!",
+   "a": {
+    "img": "img/im_253266.jpg",
+    "name": "Gengar VMAX",
+    "short": "GENGAR VMAX",
+    "set": "Alt Art · Fusion Strike",
+    "price": "$1,010",
+    "p": 1009.72
+   },
+   "b": {
+    "img": "img/im_84709.jpg",
+    "name": "Darkrai EX",
+    "short": "DARKRAI EX",
+    "set": "Full Art · Dark Explorers",
+    "price": "$822",
+    "p": 822.1
+   }
+  },
+  {
+   "game": "YU-GI-OH!",
+   "mult": "الفرق ١٩٨ دولار!",
+   "a": {
+    "img": "img/im_21954.jpg",
+    "name": "Exodia the Forbidden One",
+    "short": "EXODIA",
+    "set": "1st Edition · LOB",
+    "price": "$673",
+    "p": 672.5
+   },
+   "b": {
+    "img": "img/im_22233.jpg",
+    "name": "Monster Reborn",
+    "short": "MONSTER REBORN",
+    "set": "1st Edition · LOB",
+    "price": "$475",
+    "p": 475.0
+   }
+  },
+  {
+   "game": "LORCANA",
+   "mult": "أغلى بأكثر من الضعفين!",
+   "a": {
+    "img": "img/im_672472.jpg",
+    "name": "Elsa - Ice Maker",
+    "short": "ELSA",
+    "set": "Foil Promo",
+    "price": "$3,979",
+    "p": 3979.0
+   },
+   "b": {
+    "img": "img/im_650207.jpg",
+    "name": "Mickey Mouse - True Friend",
+    "short": "MICKEY MOUSE",
+    "set": "Disney Cruise Promo",
+    "price": "$1,500",
+    "p": 1500.0
+   }
+  }
+ ],
+ "timing": {
+  "intro": 3.5,
+  "ask": [
+   5.466666666666667,
+   5.4,
+   4.933333333333334
+  ],
+  "rev": [
+   5.333333333333333,
+   5.466666666666667,
+   5.266666666666667
+  ],
+  "outro": 4.733333333333333
+ }
+}

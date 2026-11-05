@@ -1,0 +1,57 @@
+{
+ "title1": "تقدر تخمّن",
+ "title2": "كم تسوى هالكروت؟",
+ "subtitle": "٣ ألعاب · ٣ جولات",
+ "source": "سعر السوق في TCGplayer · 4 نوفمبر 2026",
+ "tease": "بكرة: أكثر ٥ ارتفعوا · لا يفوتك!",
+ "rounds": [
+  {
+   "img": "/home/claude/gp/im_86912.jpg",
+   "name": "LUGIA EX",
+   "set": "POKÉMON · EX Unseen Forces · Ultra Rare",
+   "options": [
+    "$2,500",
+    "$780",
+    "$5,200"
+   ],
+   "answer": 0
+  },
+  {
+   "img": "/home/claude/gp/im_549287.jpg",
+   "name": "BLUE-EYES WHITE DRAGON",
+   "set": "YU-GI-OH! · 25th Anniversary Kaiba Set · Secret Rare",
+   "options": [
+    "$95",
+    "$421",
+    "$1,150"
+   ],
+   "answer": 1
+  },
+  {
+   "img": "/home/claude/gp/im_653094.jpg",
+   "name": "KAI'SA",
+   "set": "RIFTBOUND · Origins · Signature",
+   "options": [
+    "$1,050",
+    "$1,900",
+    "$3,114"
+   ],
+   "answer": 2
+  }
+ ],
+ "timing": {
+  "intro": 2.533333333333333,
+  "think": [
+   7.2,
+   5.133333333333334,
+   4.8
+  ],
+  "rlen": [
+   13.166666666666666,
+   11.266666666666667,
+   12.066666666666666
+  ],
+  "outro": 4.533333333333333,
+  "end": 2.8
+ }
+}
