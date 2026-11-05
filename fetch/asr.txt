@@ -1,3 +1,2 @@
-ch1105_thu.mp3
-ch1106_fri.mp3
-ch1108_sun.mp3
+ch1107_sat.mp3
+ch1108_sun_r1.mp3
