@@ -16,3 +16,5 @@
 2026-11-03 | Solo Leveling (merch) | Demon King dagger (black with brown details, light) | 249 SAR | videos/oh/oh_solo_leveling_demon_king_dagger_cine.mp4 | cinematic (music: music_gothic.py organ+choir+taiko, 98bpm G minor; pink accent, cutout product)
 2026-11-05 | One Piece | Starter Deck ST-36 Eustass "Captain" Kid (51 cards + 10 DON!! + playsheet + 1 OP-16 booster pack) | 105 SAR | videos/oh/oh_st36_kid_starter_deck_manga.mp4 | manga (music: music_rock.py 166bpm G minor chug)
 2026-11-06 | Jujutsu Kaisen (merch) | Jujutsu Kaisen hoodie (many colours/designs) | 200 SAR | videos/oh/oh_jjk_hoodie_cine.mp4 | cinematic (music: music_taiko.py 110bpm A minor; violet accent)
+2026-11-07 | Bleach (merch) | Ichigo Bankai sword | 216 SAR | videos/oh/oh_bleach_ichigo_bankai_sword_system.mp4 | system-hud (music: music_edm.py 132bpm C minor)
+2026-11-08 | Demon Slayer (merch) | Kochou Kanae pink sword (PU blade) | 167 SAR | videos/oh/oh_demon_slayer_kanae_sword_manga.mp4 | manga (music: music_rock.py 150bpm E major gallop; violet spot)

@@ -13,6 +13,8 @@ C = {
               lead=[74, 77, 81, 79, 77, 74, 72, 74], cnt=[]),
  'st36': dict(DUR=15.2, T=(2.69, 4.16, 5.71, 6.76, 8.05, 10.84, 12.27), bpm=166, seed=36, prog=[43, 39, 41, 38], pat='chug',
               lead=[79, 77, 74, 77, 79, 82, 81, 77], cnt=[(6.76, 51), (8.05, 10)]),
+ 'kan': dict(DUR=13.9, T=(1.3, 2.34, 2.66, 4.74, 7.78, 8.98, 10.9), bpm=150, seed=58, prog=[40, 37, 45, 47], pat='gallop',
+              lead=[76, 78, 80, 83, 81, 80, 78, 76], cnt=[]),
 }[KEY]
 SR = 48000; DUR = C['DUR']; N = int(SR * DUR); rng = np.random.default_rng(C['seed'])
 VO = 0.5; T_GAME, T_PROD, T_NAME, T_F1, T_F2, T_PRICE, T_CTA = C['T']

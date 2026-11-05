@@ -15,6 +15,9 @@ CFG = {
                game='ONE PIECE CARD GAME', name=['STARTER DECK ST-33'], hook='كوزان جاهز يجمّد الطاولة!', big='KUZAN',
                stats=[('51 كرت', 1.0), ('10 DON!!', 1.0)], uses=['+1 BOOSTER PACK OP-16'], price='105', seed=33,
                mh=760, mh_sm=280, sm_y=.372, hook_fs=64, use_fs=56, alt_w=620, alt_pos=(W / 2, H * .735, .82), name_y=.765, chk_dx=375),
+    'ich': dict(TOTAL=14.9, T_GAME=1.34, T_PROD=2.42, T_NAME=3.3, T_F1=5.14, T_F1b=99, T_F2=7.14, T_PRICE=10.06, T_CTA=11.94,
+               game='BLEACH', name=['ICHIGO BANKAI SWORD'], hook='جاهز تطلق البانكاي؟', big='BANKAI!',
+               stats=[('جودة عالية', 1.0)], uses=['سهل تعلّقه', 'وتعرضه في غرفتك'], price='216', seed=44, chk_dx=370, alt_w=520, alt_pos=(W / 2, H * .74, .75)),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; rng = np.random.default_rng(CFG['seed'])
