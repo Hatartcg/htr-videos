@@ -1,1 +1,3 @@
-ep26_voice.mp3
+ch1105_thu.mp3
+ch1106_fri.mp3
+ch1108_sun.mp3
