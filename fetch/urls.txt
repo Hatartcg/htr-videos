@@ -1,9 +1,1 @@
-hb_com.json https://rdap.verisign.com/com/v1/domain/highbrand.com
-hb_net.json https://rdap.verisign.com/net/v1/domain/highbrand.net
-hb_co.json https://rdap.nic.co/domain/highbrand.co
-hb_agency.json https://rdap.identitydigital.services/rdap/domain/highbrand.agency
-hb_studio.json https://rdap.identitydigital.services/rdap/domain/highbrand.studio
-hb_io.json https://rdap.identitydigital.services/rdap/domain/highbrand.io
-hbsa_com.json https://rdap.verisign.com/com/v1/domain/highbrandsa.com
-hbksa_com.json https://rdap.verisign.com/com/v1/domain/highbrandksa.com
-hb_sa.json https://rdap.nic.sa/domain/highbrand.sa
+hb_voice.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/kHjDJ0huu7xCjokw716M/NnksyCGa0UXiAt3w8PfZ/content.mp3?Expires=1794016800&KeyName=assets-cdn-key-1&Signature=jIxSVPpY8Z_gCcJQFU8wL18lIJ4=
