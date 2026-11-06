@@ -1,1 +1,3 @@
-ch1108_sun_r1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/CQBVUwHA1aO8ukwXfj1e/PclwtgjeM7tM6tlnPUqT/content.mp3?Expires=1793865600&KeyName=assets-cdn-key-1&Signature=HY8VBsQyaX6Y8sgcGlyMnQf40jo=
+upc_day.jpg https://cdn.shopify.com/s/files/1/0713/8007/4695/files/704190.jpg
+upc_night.jpg https://cdn.shopify.com/s/files/1/0713/8007/4695/files/704191.jpg
+upc_dayf.jpg https://otakumart.co.nz/cdn/shop/files/Pokemon-TCG-30th-Celebration-Ultra-Premium-Collection-Day_EN.jpg
