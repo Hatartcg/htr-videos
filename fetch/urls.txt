@@ -1,3 +1,5 @@
-px1.html https://pixabay.com/music/action-action-trailer-624648/
-px2.html https://pixabay.com/music/action-epic-action-440173/
-px3.html https://pixabay.com/music/search/epic%20trailer/
+km_five.mp3 https://incompetech.com/music/royalty-free/mp3-royaltyfree/Five%20Armies.mp3
+km_volatile.mp3 https://incompetech.com/music/royalty-free/mp3-royaltyfree/Volatile%20Reaction.mp3
+km_heroic.mp3 https://incompetech.com/music/royalty-free/mp3-royaltyfree/Heroic%20Age.mp3
+km_hitman.mp3 https://incompetech.com/music/royalty-free/mp3-royaltyfree/Hitman.mp3
+km_crusade.mp3 https://incompetech.com/music/royalty-free/mp3-royaltyfree/Crusade%20-%20Heavy%20Industry.mp3
