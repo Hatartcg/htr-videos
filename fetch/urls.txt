@@ -1,1 +1,1 @@
-hb_voice.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/kHjDJ0huu7xCjokw716M/NnksyCGa0UXiAt3w8PfZ/content.mp3?Expires=1794016800&KeyName=assets-cdn-key-1&Signature=jIxSVPpY8Z_gCcJQFU8wL18lIJ4=
+hb_voice4.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/oU61f64gXOPzJ3Cow3BK/2DMildiicTmuvWuXO9eS/content.mp3?Expires=1794016800&KeyName=assets-cdn-key-1&Signature=RxV0xzJe-u_-SQ9jl8qYnRqbA8c=
