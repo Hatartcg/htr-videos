@@ -1,2 +1,3 @@
-glvi-us.html https://www.yugioh-card.com/en/products/glvi/
-glvi-ygp.html https://yugipedia.com/wiki/Glorious_Victors
+glvi-oe1.json https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=h6HmMW1cxgg&format=json
+glvi-oe0.json https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=H5ES40PONP8&format=json
+glvi-asia.html https://www.yugioh-card.com/asia/product/deck-build-pack-glorious-victors/
