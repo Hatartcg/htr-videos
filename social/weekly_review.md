@@ -17,3 +17,21 @@ Recommendations sent for approval:
 2. Produce the missing 18:00 stream pack-opening reels (only 1 of 3 days since plan) + fill HTR 2–8 Nov and OH 3–8 Nov (nothing scheduled).
 3. Copy every promo reel to TikTok + YouTube (27 & 30 Oct were IG only).
 Next week check: single-game guess view-rate vs multi-game; stream reel count; OH daily 19:00 kept.
+
+## 2026-11-08 (week 1–7 Nov vs 25–31 Oct)
+2026-11-08 | HTR Instagram | 2,990 (+31 gained / −0; prev +46/−3) | 4,678 reel views (7 reels; prev 6,400 incl. trial reels) ; account views 12,917 (prev 15,924) | 668/reel (prev 421 for 13 non-trial videos) | 2.1% interactions/views (prev 2.4%) | Romance Dawn box 5 Nov 18:15 — 1,512 views, 51% 3s, 6 saves 18 shares | saves+shares 42 (prev 42); comments 0 (prev 10); ONLY 7 reels vs ~20 in plan; 0 stream pack-opening reels; nothing 6–7 Nov; challenges only 1 & 4 Nov; local event 2 Nov posted 13:00 Mon (news slot)
+2026-11-08 | HTR TikTok | 3,457 (+3/−4; prev +3/−7) | 1,061 (6 videos; prev 2,247 / 11) | 177 (prev 204) | 3.4% (prev 2.6%) | OP local event 2 Nov — 361 views, 12 likes | 3 Nov news ERROR (TikTok token refresh failed) — not re-posted
+2026-11-08 | HTR YouTube | 68 subs (+2; prev +1) | 1,991 (4 videos with data; prev 792 / 9) | 498 (prev 88) | 0.9% likes+comments/views | OP local 2 Nov — 972 / guess 1 Nov — 937 | 4–5 Nov shorts published, no analytics yet (sync)
+2026-11-08 | OH Instagram | 105 (+3/−1; prev +0) | 639 (6 reels; 7 Nov only 1 day of data) | 107 (prev 107) | 2.2% (prev 0.8%) | JJK hoodie 6 Nov — 277 views, 6 likes 1 save 1 share | 4 Nov missing; 2–3 Nov reels 19–20 views (12–17% 3s rate)
+
+Type averages HTR IG: sealed/box 1,512 · guess 1,282 · local/event 866 · top5 risers 251 · news 256 (3 posts) · stream 0 posted.
+Slot averages: 13:00 408 (4) · 18:00 1,512 (1) · 21:00 767 (2).
+Game: One Piece (box, local, Nami news) 867 · multi-game guess/top5 767 · Pokémon news 272.
+Last week's recs: (1) single-game challenge — not applied; multi-game guess still hit 1,282 with full playbook caption → hook/caption matter more. (2) stream reels + fill schedule — NOT done: 0 stream reels, 6–7 Nov empty, 9–14 Nov empty. (3) copy every reel to TT+YT — done ✓ (only 3 Nov TT failed on token).
+
+Done by me: rewrote 4 captions (HTR 8 Nov 13:00 news IG/TT/YT; OH 8 Nov 19:00). No slot changes (nothing else scheduled).
+Recommendations sent:
+1. Fill 9–14 Nov: produce daily 18:00 stream openings + 21:00 challenges (nothing scheduled; 7 reels last week vs ~20 planned).
+2. Add a weekly "sealed box price then vs now" + a store/event clip (top 2 formats: 1,512 / 866) — e.g. sealed on Wed 13:00 as planned + event clip after each local.
+3. Reconnect TikTok in Metricool (3 Nov token error) and OH: schedule 9–14 Nov 19:00 (nothing scheduled).
+Next week check: news hook starting with the $ number; stream reel count; OH 19:00 daily.
