@@ -1,3 +1,4 @@
-glvi-eu.html https://www.yugioh-card.com/eu/product/glorious-victors/
-glvi-en.html https://www.yugioh-card.com/en/products/glorious-victors/
-glvi-icv2.html https://icv2.com/articles/news/view/63153/new-yu-gi-oh-tcg-booster-set-revealed
+glvi_art1.webp https://www.yugioh-card.com/eu/wp-content/uploads/2026/08/glvi_art1.webp
+glvi_art2.png https://www.yugioh-card.com/eu/wp-content/uploads/2026/08/glvi_art2.png
+glvi_art3.webp https://www.yugioh-card.com/eu/wp-content/uploads/2026/08/glvi_art3.webp
+glvi_pack.webp https://www.yugioh-card.com/eu/wp-content/uploads/2026/08/GLVI-Foil-Stack-US-Cutout.webp
