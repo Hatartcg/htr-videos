@@ -13,6 +13,9 @@ CFG = {
     'st30': dict(TOTAL=16.0, T_GAME=0.95, T_PROD=2.72, T_NAME=3.5, T_F1=6.5, T_F2=7.95, T_F2b=9.25, T_PRICE=10.45, T_CTA=12.55,
                 game='ONE PIECE', hook='لوفي وإيس في ديك واحد!', big='LUFFY & ACE', label='ONE PIECE CARD GAME', name=['STARTER DECK EX', 'ST-30'], n1=51, cap1='كرت في الديك', n2=10, cap2='DON!! CARDS',
                 extra='+1 BONUS PACK', price='250', seed=11, f1='deck'),
+    'st35': dict(TOTAL=15.5, T_GAME=1.3, T_PROD=3.3, T_NAME=4.0, T_F1=6.6, T_F2=8.2, T_F2b=9.5, T_PRICE=10.9, T_CTA=12.9,
+                game='ONE PIECE', hook='سابو يولّعها بالأحمر والأسود!', big='SABO', label='ONE PIECE CARD GAME', name=['STARTER DECK', 'ST-35'], n1=51, cap1='كرت في الديك', n2=10, cap2='DON!! CARDS',
+                extra='+1 OP-16 PACK', price='105', seed=35, f1='deck', hookfs=64),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; rng = np.random.default_rng(CFG['seed'])
@@ -94,7 +97,7 @@ H_N1 = Holo(str(CFG['n1']), FA(520), stroke=10); H_N2 = {n: Holo(str(n), FA(400)
 H_PRICE = Holo(CFG['price'], FA(420), stroke=10)
 H_NAME = [Holo(CFG['name'][0], FA(150), stroke=6), Holo(CFG['name'][1], FA(170), stroke=6)]
 S = dict(
-    ya=white_text(CFG['hook'], FC(86)), label=pill(CFG['label'], FA(52), (40, 30, 80), border=(180, 160, 255, 255)),
+    ya=white_text(CFG['hook'], FC(CFG.get('hookfs', 86))), label=pill(CFG['label'], FA(52), (40, 30, 80), border=(180, 160, 255, 255)),
     cap1=white_text(CFG['cap1'], FC(96)), cap2=pill(CFG['cap2'], FA(66), (30, 20, 60), border=(255, 120, 220, 255)),
     extra=pill(CFG['extra'], FA(60), (255, 61, 154)), sar=white_text('ريال', FC(120)),
     stock=pill('متوفر الآن', FC(54, b'Bold'), (20, 16, 40), border=(56, 225, 255, 255)),

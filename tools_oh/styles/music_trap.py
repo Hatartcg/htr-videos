@@ -6,7 +6,9 @@ KEY = os.environ['OH']; D = f'/home/claude/work/{KEY}/'
 C = {'ygo': dict(DUR=15.6, T=(0.88, 2.84, 3.14, 5.56, 6.61, 8.35, 10.24, 12.42), bpm=142, seed=8,
                  roots=[45, 41, 43, 40], bell=[[81, 84, 88, 84], [77, 81, 84, 81], [79, 83, 86, 83], [76, 79, 83, 88]], cnt=(6.61, 15)),
      'st30': dict(DUR=16.0, T=(0.95, 2.72, 3.5, 6.5, 7.95, 9.25, 10.45, 12.55), bpm=150, seed=21, thirds=[4, 4, 3, 4],
-                  roots=[50, 45, 47, 43], bell=[[86, 90, 93, 90], [85, 88, 93, 88], [86, 90, 95, 90], [86, 91, 95, 98]], cnt=(7.95, 10))}[KEY]
+                  roots=[50, 45, 47, 43], bell=[[86, 90, 93, 90], [85, 88, 93, 88], [86, 90, 95, 90], [86, 91, 95, 98]], cnt=(7.95, 10)),
+     'st35': dict(DUR=15.5, T=(1.3, 3.3, 4.0, 6.6, 8.2, 9.5, 10.9, 12.9), bpm=136, seed=35, thirds=[3, 4, 3, 3],
+                  roots=[48, 44, 46, 43], bell=[[84, 87, 91, 87], [80, 84, 87, 92], [82, 86, 89, 86], [79, 83, 86, 91]], cnt=(8.2, 10))}[KEY]
 TH = C.get('thirds', [3, 3, 3, 3])
 SR = 48000; DUR = C['DUR']; N = int(SR * DUR); rng = np.random.default_rng(C['seed'])
 VO = .5; T_GAME, T_PROD, T_NAME, T_F1, T_F2, T_F2b, T_PRICE, T_CTA = C['T']; B = 60 / C['bpm']
@@ -91,7 +93,7 @@ for i in range(5): add(sfx, T_F2 + .15 + i * .06, swish(), .25, pan=(i - 2) * .3
 add(sfx, T_F2b, sparkle(), .6)
 add(sfx, T_PRICE + .02, drop(), 1.0); add(sfx, T_PRICE + .1, sparkle(), .5); add(sfx, T_CTA + .2, sparkle(), .4)
 # voice + mix
-sr, v = wavfile.read(D + 'voice.wav'); v = v.astype(np.float32) / 32768
+sr, v = wavfile.read(D + 'voice.wav') if os.path.exists(D + 'voice.wav') else (SR, np.zeros(10, np.int16)); v = v.astype(np.float32) / 32768
 voice = np.zeros(N); i0 = int(VO * SR); voice[i0:i0 + len(v)] = v[:N - i0]
 venv = np.convolve(np.abs(voice), np.ones(int(.08 * SR)) / int(.08 * SR), 'same'); venv = np.clip(venv / (venv.max() + 1e-9) * 4, 0, 1)
 def norm(x): return x / (np.abs(x).max() + 1e-9)

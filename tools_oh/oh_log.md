@@ -18,3 +18,4 @@
 2026-11-06 | Jujutsu Kaisen (merch) | Jujutsu Kaisen hoodie (many colours/designs) | 200 SAR | videos/oh/oh_jjk_hoodie_cine.mp4 | cinematic (music: music_taiko.py 110bpm A minor; violet accent)
 2026-11-07 | Bleach (merch) | Ichigo Bankai sword | 216 SAR | videos/oh/oh_bleach_ichigo_bankai_sword_system.mp4 | system-hud (music: music_edm.py 132bpm C minor)
 2026-11-08 | Demon Slayer (merch) | Kochou Kanae pink sword (PU blade) | 167 SAR | videos/oh/oh_demon_slayer_kanae_sword_manga.mp4 | manga (music: music_rock.py 150bpm E major gallop; violet spot)
+2026-11-09 | One Piece | Starter Deck ST-35 Sabo (51 cards + 10 DON!! + playsheet + 1 OP-16 booster pack) | 105 SAR | videos/oh/oh_st35_sabo_starter_deck_holo.mp4 | holo (music: music_trap.py 136bpm C minor) | NO VOICE: ElevenLabs out of credits (28 left)
