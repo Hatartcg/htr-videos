@@ -1,44 +1,54 @@
 name: htr-site-monitor
-# Uptime check of www.htrtcg.com every 15 minutes. Results are appended to monitor/log.csv on the "monitor" branch
+# Uptime check of www.htrtcg.com every 5 minutes. Results are appended to monitor/log.csv on the "monitor" branch
 # (never on main), one line per URL: utc_time,name,http_code,seconds,detail
+# GitHub's cron is throttled (runs came hours apart), so one run keeps probing in a loop for ~5.5 hours and then
+# starts the next run itself (workflow_dispatch with the built-in token). The cron below only restarts the chain if it breaks.
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    - cron: '7,37 * * * *'
   workflow_dispatch:
 permissions:
   contents: write
+  actions: write
 concurrency:
   group: htr-site-monitor
   cancel-in-progress: false
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 350
     steps:
-      - name: Probe site
+      - name: Probe site in a loop
         run: |
           set +e
-          T=$(date -u +%Y-%m-%dT%H:%M:%SZ)
-          : > rows.csv
+          git config --global user.name "Hatartcg"; git config --global user.email "hseyam.m@gmail.com"
+          REPO="https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}"
           probe() { # name url
             out=$(curl -s -o body.txt -w "%{http_code} %{time_total}" -A "HTR-Monitor/1.0" --max-time 25 "$2")
             code=${out% *}; secs=${out#* }; detail=""
             if [ "$1" = "health" ]; then detail=$(tr -d '\n,' < body.txt | head -c 300 | tr ',' ';'); fi
             echo "$T,$1,$code,$secs,$detail" >> rows.csv
           }
-          # Pages sit behind Vercel Bot Protection (Challenge since 1 Nov 2026), so a script gets 429 there by design.
-          # Probe only paths the "Allow payments" bypass rule lets through; /api/health checks DB, payments and email.
-          probe health "https://www.htrtcg.com/api/health"
-          probe checkout https://www.htrtcg.com/ar/checkout
-          cat rows.csv
-      - name: Append to monitor branch
-        run: |
-          git config --global user.name "Hatartcg"; git config --global user.email "hseyam.m@gmail.com"
-          for i in 1 2 3 4 5; do
-            rm -rf m && git clone -q --depth 1 --branch monitor "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" m 2>/dev/null \
-              || { mkdir m && cd m && git init -q -b monitor && git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" && cd ..; }
-            mkdir -p m/monitor; cat rows.csv >> m/monitor/log.csv
-            tail -n 12000 m/monitor/log.csv > m/monitor/tmp && mv m/monitor/tmp m/monitor/log.csv
-            cd m && git add monitor/log.csv && git commit -qm "monitor $(date -u +%H:%M)" && git push -q origin monitor && cd .. && break
-            cd ..; sleep 5
+          for n in $(seq 1 64); do
+            T=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+            : > rows.csv
+            # Pages sit behind Vercel Bot Protection (Challenge since 1 Nov 2026), so a script gets 429 there by design.
+            # Probe only paths the "Allow payments" bypass rule lets through; /api/health checks DB, payments and email.
+            probe health "https://www.htrtcg.com/api/health"
+            probe checkout https://www.htrtcg.com/ar/checkout
+            cat rows.csv
+            for i in 1 2 3 4 5; do
+              rm -rf m && git clone -q --depth 1 --branch monitor "$REPO" m 2>/dev/null \
+                || { mkdir m && cd m && git init -q -b monitor && git remote add origin "$REPO" && cd ..; }
+              mkdir -p m/monitor; cat rows.csv >> m/monitor/log.csv
+              tail -n 12000 m/monitor/log.csv > m/monitor/tmp && mv m/monitor/tmp m/monitor/log.csv
+              cd m && git add monitor/log.csv && git commit -qm "monitor $(date -u +%H:%M)" && git push -q origin monitor && cd .. && break
+              cd ..; sleep 5
+            done
+            [ "$n" -lt 64 ] && sleep 290
           done
+      - name: Start the next run
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run monitor.yml --repo ${{ github.repository }} --ref main
