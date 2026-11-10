@@ -20,3 +20,4 @@ Note (2026-11-05): Yu-Gi-Oh Rarity Collection II page (p921987942) photos are ap
 Note (2026-11-05): Zoro glowing sword page (p2061334474) photos carry 'O-party Store' branding and one shows a Demon Slayer (Rengoku) sword - skipped.
 Note (2026-11-05): Kanae sword page says 101 cm total but photos say 104 cm - length left out. Ichigo Bankai sword photos show 3 sizes (104/75 cm) - size left out.
 Note (2026-11-04): no OH reel was posted on Wed 4 Nov (gap).
+Note (2026-11-10): Solo Leveling "King of the Devils" sword page (p844492966, 199 SAR) uses the same photo as the Demon King dagger already posted 3 Nov - skipped (possible duplicate). Tokyo Ghoul Kaneki lamp page (p116714100) also shows a Juuzou lamp photo - only the Kaneki photo used.

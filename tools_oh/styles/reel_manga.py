@@ -50,6 +50,11 @@ CFG = {
         hook='الوردي صار سلاح!', game=['DEMON SLAYER'], sfx='BLOOM!', label='ANIME SWORD', name=['KANAE SWORD', 'DEMON SLAYER'],
         f1=dict(kind='caps', caps=['شفرته من مادة PU', 'ولونه وردي']), f2=dict(kind='grid', cap='يخطف العين!'),
         price='167', spot=(139, 92, 246), seed=58, sfx_x=.66),
+    'tglamp': dict(
+        TOTAL=14.4, T_GAME=1.0, T_PROD=3.0, T_NAME=3.4, T_F1=5.6, T_F1b=6.6, T_F2=8.0, T_PRICE=9.6, T_CTA=11.6,
+        hook='خلّ كانيكي ينوّر ليلك!', game=['TOKYO GHOUL'], sfx='GLOW!', label='ANIME LAMP', name=['KANEKI LAMP', 'TOKYO GHOUL'],
+        f1=dict(kind='caps', caps=['لمبة مضيئة', 'تعطي غرفتك لمسة أنمي']), f2=dict(kind='grid', cap='تخطف العين بالليل!'),
+        price='84', spot=(255, 61, 154), seed=66, sfx_x=.66),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; SPOT = CFG['spot']

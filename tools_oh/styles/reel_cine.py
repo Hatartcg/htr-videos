@@ -23,6 +23,9 @@ CFG = {
     'jjk': dict(TOTAL=14.4, T_GAME=0.64, T_PROD=3.5, T_NAME=3.86, T_F2=5.06, T_C1=6.86, T_F1=6.86, T_F1b=8.66, T_PRICE=10.18, T_CTA=11.38,
                 game=['JUJUTSU', 'KAISEN'], hook=['الشتا جاي،', 'وجوجتسو كايسن معك!'], name=['JUJUTSU KAISEN HOODIE', 'ANIME MERCH'], caps=['', 'ينغسل بالغسالة', 'ألوان كثيرة'], cap2='دافي للأيام الباردة',
                 price='200', seed=71, hook_fs=78, accent=(139, 92, 246)),
+    'narlamp': dict(TOTAL=14.4, T_GAME=0.6, T_PROD=3.3, T_NAME=3.7, T_F2=6.5, T_C1=6.5, T_F1=6.5, T_F1b=7.7, T_PRICE=9.3, T_CTA=11.5,
+                game=['NARUTO'], hook=['خلّ غرفتك تنوّر', 'بروح ناروتو!'], name=['NARUTO LAMP', 'LED LAMP'], caps=['', 'تنوّر بأكثر من لون', 'تتحكم بالإضاءة بزر'], cap2=' ',
+                price='99', seed=24, hook_fs=104, accent=(255, 61, 154), game_sm='NARUTO'),
 }[KEY]
 RED = CFG.get('accent', RED)
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
