@@ -7,7 +7,7 @@ permissions:
 jobs:
   asr:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
       - run: |
@@ -15,17 +15,6 @@ jobs:
           mkdir -p fetch/asr; L=fetch/asr/log.txt; date > $L
           (which ffmpeg || (pip install -q imageio-ffmpeg && sudo ln -sf $(python3 -c 'import imageio_ffmpeg;print(imageio_ffmpeg.get_ffmpeg_exe())') /usr/local/bin/ffmpeg) || (timeout 300 sudo apt-get install -y -qq ffmpeg)) >> $L 2>&1
           pip install -q faster-whisper >> $L 2>&1
-          cat > /tmp/asr.py <<'P'
-          import sys, json, subprocess, numpy as np
-          from faster_whisper import WhisperModel
-          m = WhisperModel("medium", device="cpu", compute_type="int8")
-          for f in sys.argv[1:]:
-              a = np.frombuffer(subprocess.run(["ffmpeg","-v","error","-i",f,"-ac","1","-ar","16000","-f","f32le","-"],capture_output=True).stdout, np.float32)
-              segs, info = m.transcribe(a, language="ar", word_timestamps=True, beam_size=5)
-              out = [{"w": w.word, "s": round(w.start, 2), "e": round(w.end, 2), "p": round(w.probability, 2)} for s in segs for w in s.words]
-              json.dump(out, open("fetch/asr/" + f.split("/")[-1] + ".json", "w"), ensure_ascii=False, indent=0)
-              print(f, " ".join(f"{o['w']}({o['p']})" for o in out))
-          P
-          sed -i 's/^          //' /tmp/asr.py; python3 /tmp/asr.py $(sed 's#^#fetch/#' fetch/asr.txt) >> $L 2>&1
+          python3 .github/asr_check.py >> $L 2>&1
           git config user.name "Hatartcg"; git config user.email "hseyam.m@gmail.com"
           git add -A fetch/asr && git commit -m "asr check"; for i in 1 2 3 4; do git pull --rebase -q && git push && break; sleep 6; done
