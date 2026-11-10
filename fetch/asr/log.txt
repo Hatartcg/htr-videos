@@ -1,3 +1,3 @@
-Tue Nov 10 17:47:32 UTC 2026
+Tue Nov 10 17:51:05 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-ep10_htr.mp3 FAIL match 0.83 cps 8.5 unclear [] banned [] diff [{'op': 'replace', 'expected': 'هتر', 'heard': 'هاتر'}]
+tamara_v5.mp3 FAIL match 0.82 cps 8.9 unclear [('هاتر', np.float64(0.76))] banned [] diff [{'op': 'replace', 'expected': 'في هتر', 'heard': 'هاتر'}, {'op': 'replace', 'expected': 'وقسطهه', 'heard': 'وقصتهه'}, {'op': 'replace', 'expected': 'هتر', 'heard': 'هاتر'}, {'op': 'replace', 'expected': 'ويوصلك', 'heard': 'ويصلك'}]
