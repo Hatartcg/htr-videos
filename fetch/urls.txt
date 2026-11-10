@@ -1,4 +1,2 @@
-p_3_24722.json https://tcgcsv.com/tcgplayer/3/24722/products
-p_89_24519.json https://tcgcsv.com/tcgplayer/89/24519/products
-p_89_24560.json https://tcgcsv.com/tcgplayer/89/24560/products
-p_2_24621.json https://tcgcsv.com/tcgplayer/2/24621/products
+im_717609.jpg https://tcgplayer-cdn.tcgplayer.com/product/717609_in_1000x1000.jpg
+sb_661934.jpg https://tcgplayer-cdn.tcgplayer.com/product/661934_in_1000x1000.jpg
