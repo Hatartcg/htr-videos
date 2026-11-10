@@ -7,7 +7,8 @@ BANNED = ["هيتر", "هتير", "هايتر", "يوغي أوه"]
 def norm(s):
     s = re.sub(r"[ً-ْـٰ]", "", s)          # tashkeel/tatweel
     s = re.sub("[إأآا]", "ا", s); s = s.replace("ى", "ي").replace("ة", "ه").replace("ؤ", "و").replace("ئ", "ي")
-    return re.sub(r"[^\w\s]", " ", s).split()
+    w = re.sub(r"[^\w\s]", " ", s).split()
+    return [re.sub("[اهة]$", "ه", x) if len(x) > 2 else x for x in w]  # final alef/ta-marbuta = spelling, not sound
 m = WhisperModel("large-v3", device="cpu", compute_type="int8")
 for line in open("fetch/asr.txt", encoding="utf-8"):
     if not line.strip(): continue
