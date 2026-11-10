@@ -1,6 +1,1 @@
-tc_p_3_1421.json https://tcgcsv.com/tcgplayer/3/1421/products
-tc_p_3_1413.json https://tcgcsv.com/tcgplayer/3/1413/products
-tc_groups_86.json https://tcgcsv.com/tcgplayer/86/groups
-im_22251.jpg https://tcgplayer-cdn.tcgplayer.com/product/22251_in_1000x1000.jpg
-im_88089.jpg https://tcgplayer-cdn.tcgplayer.com/product/88089_in_1000x1000.jpg
-im_83897.jpg https://tcgplayer-cdn.tcgplayer.com/product/83897_in_1000x1000.jpg
+oh_sitemap2.xml https://otakkuhaveen.com/ar/sitemap-2.xml
