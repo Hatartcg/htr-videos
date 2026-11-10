@@ -1,3 +1,6 @@
-Tue Nov 10 17:02:05 UTC 2026
+Tue Nov 10 17:16:23 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-fetch/tamara_r1.mp3  وفرنا(0.93)  لكم(0.97)  تمارا(0.82)  في(0.88)  هتر(0.75)  خذ(0.82)  كروتك(0.96)  اليوم(1.0)  وقصتها(0.96)  على(0.99)  راحتك(0.99)  اطلب(0.94)  من(0.99)  موقع(0.99)  هتر(0.99)  واختر(0.95)  تمارا(0.95)  عند(0.99)  الدفع(0.98)
+tamara_vo.mp3 FAIL match 0.84 cps 9.4 unclear [] banned [] diff [{'op': 'replace', 'expected': 'تمارا', 'heard': 'تماره'}, {'op': 'replace', 'expected': 'وقسطها', 'heard': 'وقصطها'}, {'op': 'replace', 'expected': 'تمارا', 'heard': 'تماره'}, {'op': 'replace', 'expected': 'ويوصلك', 'heard': 'ويصلك'}]
+tamara_r1.mp3 PASS match 0.95 cps 9.4 unclear [('في', np.float64(0.63))] banned [] diff [{'op': 'replace', 'expected': 'وقسطها', 'heard': 'وقصتها'}]
+tamara_final.mp3 FAIL match 0.92 cps 8.6 unclear [('يا', np.float64(0.79)), ('في', np.float64(0.76))] banned [] diff [{'op': 'replace', 'expected': 'وقسطها', 'heard': 'وقصتها'}, {'op': 'replace', 'expected': 'ويوصلك', 'heard': 'ويصلك'}]
+yt_vo3.mp3 FAIL match 0.84 cps 9.7 unclear [('الجاي', np.float64(0.79)), ('بوكيمون،', np.float64(0.79)), ('وين', np.float64(0.74)), ('يوغيو،', np.float64(0.68))] banned [] diff [{'op': 'replace', 'expected': 'الكارت', 'heard': 'الكرت'}, {'op': 'replace', 'expected': 'ون', 'heard': 'وين'}, {'op': 'replace', 'expected': 'يوغي اوو', 'heard': 'يوغيو'}, {'op': 'replace', 'expected': 'ديلتا', 'heard': 'دلتا'}, {'op': 'replace', 'expected': 'للهيت', 'heard': 'للهت'}, {'op': 'replace', 'expected': 'هتر', 'heard': 'هاتر'}]
