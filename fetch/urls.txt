@@ -1,6 +1,4 @@
-ohp_rift.html https://otakkuhaveen.com/en/riftbound-spiritforged-booster-box/p338739419
-ohp_narset01.html https://otakkuhaveen.com/en/naruto-mythos-tcg-set-01/p1605634853
-ohp_ygodp11.html https://otakkuhaveen.com/en/double-pack-set-vol-11/p21809351
-ohp_slsword.html https://otakkuhaveen.com/en/سيف-سولو-ليفلينج/p844492966
-ohp_tglamp.html https://otakkuhaveen.com/en/tokyo-ghoul-kaneki-illuminated-lamp/p116714100
-ohp_animelamp.html https://otakkuhaveen.com/en/اضاءة-انمي/p1830290365
+ohi_narlamp1.jpg https://cdn.salla.sa/NKNagy/b043ee8f-bf4b-4627-991f-20dbbb8ea7cb-1000x1000-fFmgQXwgDbQnL5TO0unCpOn8vsXvj01SPZBJoGFd.jpg
+ohi_slsword1.jpg https://cdn.salla.sa/NKNagy/c849a8e5-5f9d-408b-974a-7a7f61102ddc-1000x1000-Tp33bR9P7UO2S8Gi98J55Via1F6rwItH81KSUlgK.jpg
+ohi_tglamp1.jpg https://cdn.salla.sa/NKNagy/02944874-734b-4e79-99a5-76ee243250e1-1000x1000-AucHMohIpqgpp2MgXDCLQ69TU2rLSImCfOTKpnL8.jpg
+ohi_tglamp2.jpg https://cdn.salla.sa/NKNagy/545f20f1-1cbd-49a9-a5d2-c29645314ee6-1000x1000-3NGvCR0M7Z6AbSLjHT0bQSRTY3TWzAPbP2REWzvy.jpg
