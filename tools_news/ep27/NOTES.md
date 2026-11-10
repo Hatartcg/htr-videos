@@ -18,3 +18,7 @@ Rejected: 2005 Emerald reverse holo Rayquaza PSA 10 $384,000 (Fanatics, Nov 2) �
 ## Run Mon 9 Nov 07:1x (news-guard scheduled run) — still BLOCKED
 - Metricool 9–12 Nov: no scheduled posts at all (nothing to move, Tue 10 Nov 13:00 empty).
 - Estimate 500.95 credits; flow 07zLLUeHe2EwyT4S3agI generation FAILED again: 28 credits remaining. Owner notified to top up.
+
+## Run Tue 10 Nov 06:4x (news scheduled run) — still BLOCKED
+- Metricool Tue 10 Nov: nothing scheduled; no videos/news_ep27 in repo → priority build attempted.
+- Estimate 500.95 credits; flow T70MLdw7rZnfovwF2cpB generation FAILED: 28 credits remaining (quota 156,802). No voice/video. Owner notified.
