@@ -1,1 +1,6 @@
-oh_sitemap2.xml https://otakkuhaveen.com/ar/sitemap-2.xml
+ohp_rift.html https://otakkuhaveen.com/en/riftbound-spiritforged-booster-box/p338739419
+ohp_narset01.html https://otakkuhaveen.com/en/naruto-mythos-tcg-set-01/p1605634853
+ohp_ygodp11.html https://otakkuhaveen.com/en/double-pack-set-vol-11/p21809351
+ohp_slsword.html https://otakkuhaveen.com/en/سيف-سولو-ليفلينج/p844492966
+ohp_tglamp.html https://otakkuhaveen.com/en/tokyo-ghoul-kaneki-illuminated-lamp/p116714100
+ohp_animelamp.html https://otakkuhaveen.com/en/اضاءة-انمي/p1830290365
