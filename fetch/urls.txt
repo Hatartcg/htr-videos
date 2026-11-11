@@ -1,5 +1,3 @@
-ep27_voice.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/Oo6PYe3g4y22vYAoIYrt/fh5G69uGlJcLhvG8vr98/content.mp3?Expires=1794376800&KeyName=assets-cdn-key-1&Signature=A7Vnw5s6ppXJJ84FJVh6bJzss8Y=
-ep27_l138.html https://limitlesstcg.com/cards/DLR/138
-ep27_l141.html https://limitlesstcg.com/cards/DLR/141
-ep27_l136.html https://limitlesstcg.com/cards/DLR/136
-ep27_tcgp138.jpg https://tcgplayer-cdn.tcgplayer.com/product/728061_in_1000x1000.jpg
+ep27_c138.png https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/DLR/DLR_138_R_EN_LG.png
+ep27_c141.png https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/DLR/DLR_141_R_EN_LG.png
+ep27_c136.png https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/DLR/DLR_136_R_EN_LG.png
