@@ -1,3 +1,5 @@
-Wed Nov 11 00:27:26 UTC 2026
+Wed Nov 11 00:47:01 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-tamara_v2mix.mp3 PASS match 0.92 cps 8.9 unclear [] banned [] diff [{'op': 'replace', 'expected': 'وقسطهه', 'heard': 'وقصطهه'}, {'op': 'replace', 'expected': 'ويوصلك', 'heard': 'ويصلك'}]
+tam2_qast.mp3 FAIL match 0.83 cps 9.4 unclear [('وأسطها', np.float64(0.78))] banned [] diff [{'op': 'replace', 'expected': 'وقسطهه', 'heard': 'واسطهه'}]
+tam2_order.mp3 FAIL match 0.75 cps 12.3 unclear [('تمارع', np.float64(0.72))] banned [] diff [{'op': 'replace', 'expected': 'هتر', 'heard': 'هاتر'}, {'op': 'replace', 'expected': 'تماره', 'heard': 'تمارع'}]
+tam2_ywsal.mp3 FAIL match 0.25 cps 8.5 unclear [('لين', np.float64(0.71))] banned [] diff [{'op': 'replace', 'expected': 'ويوصلك', 'heard': 'ويوصل لك'}, {'op': 'replace', 'expected': 'باب بيتك', 'heard': 'ببيتك'}]
