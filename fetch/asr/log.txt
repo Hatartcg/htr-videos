@@ -1,8 +1,3 @@
-Wed Nov 11 01:54:04 UTC 2026
+Wed Nov 11 02:22:48 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-tam2_qast.mp3 FAIL match 0.83 cps 9.4 unclear [('وأسطها', np.float64(0.78))] banned [] diff [{'op': 'replace', 'expected': 'وقسطهه', 'heard': 'واسطهه'}]
-tam2_order.mp3 FAIL match 0.75 cps 12.3 unclear [('تمارع', np.float64(0.72))] banned [] diff [{'op': 'replace', 'expected': 'هتر', 'heard': 'هاتر'}, {'op': 'replace', 'expected': 'تماره', 'heard': 'تمارع'}]
-tam2_ywsal.mp3 FAIL match 0.25 cps 8.5 unclear [('لين', np.float64(0.71))] banned [] diff [{'op': 'replace', 'expected': 'ويوصلك', 'heard': 'ويوصل لك'}, {'op': 'replace', 'expected': 'باب بيتك', 'heard': 'ببيتك'}]
-tam3_qast.mp3 FAIL match 0.83 cps 9.4 unclear [('وأسطها', np.float64(0.72)), ('على', np.float64(0.77))] banned [] diff [{'op': 'replace', 'expected': 'وقسطهه', 'heard': 'واسطهه'}]
-tam3_order.mp3 FAIL match 0.75 cps 11.7 unclear [] banned [] diff [{'op': 'replace', 'expected': 'هتر', 'heard': 'هاتر'}, {'op': 'replace', 'expected': 'تماره', 'heard': 'تمار'}]
-tam3_ywsal.mp3 FAIL match 1.0 cps 9.0 unclear [('ويوصلك', np.float64(0.74)), ('لين', np.float64(0.73))] banned [] diff []
+dr850.mp3 FAIL match 0.55 cps 7.5 unclear [('تيرين', np.float64(0.66)), ('36', np.float64(0.57)), ('بـ', np.float64(0.76))] banned [] diff [{'op': 'replace', 'expected': 'ديلته رين', 'heard': 'ديل تيرين'}, {'op': 'replace', 'expected': 'سته وثلاثين', 'heard': '36'}, {'op': 'replace', 'expected': 'بثمنميه وخمسين', 'heard': 'ب 850'}, {'op': 'replace', 'expected': 'تسعميه', 'heard': '900'}]
