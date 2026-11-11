@@ -1,5 +1,3 @@
-Wed Nov 11 06:13:32 UTC 2026
+Wed Nov 11 06:23:10 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-ref_v1.mp3 PASS match None cps 8.6 unclear [('بره', np.float64(0.79))] banned [] diff None
-ref_v2.mp3 FAIL match None cps 8.7 unclear [('كرت', np.float64(0.79)), ('أو', np.float64(0.45)), ('تي', np.float64(0.66)), ('من', np.float64(0.02)), ('وألمنتل', np.float64(0.63)), ('لك؟', np.float64(0.74))] banned [] diff None
-ref_v3.mp3 FAIL match None cps 9.5 unclear [('الـ', np.float64(0.28)), ('TCG؟', np.float64(0.57)), ('أو،', np.float64(0.68)), ('ريفت', np.float64(0.76)), ('كلها', np.float64(0.64)), ('وحجز', np.float64(0.74))] banned [] diff None
+tam_clean.mp3 FAIL match 0.8 cps 9.6 unclear [('تنارة', np.float64(0.59))] banned [] diff [{'op': 'replace', 'expected': 'تماره', 'heard': 'تناره'}, {'op': 'replace', 'expected': 'وقسطهه', 'heard': 'وقصطهه'}, {'op': 'replace', 'expected': 'تماره', 'heard': 'تناره'}]
