@@ -12,6 +12,15 @@ Goal (owner, 11 Nov 2026): spend the minimum credits. A stronger model only wher
 - **Subtasks inside a session** can run on a cheaper model: the Agent tool takes `model` = `haiku` | `sonnet` | `opus`.
 - **Scheduled tasks** each have their own model (`update_trigger` → `model`). Changing a task's model is done only after the owner says «نفّذ» to the proposed change.
 
+## Owner's work categories (11 Nov 2026) — map every request to one
+| Category | Examples | Model |
+|---|---|---|
+| عادي (everyday) | quick questions, Rewaa/Salla stock or price entry, status checks, reading a page, short replies | haiku for reading/checking, sonnet when writing anything |
+| احترافي (professional) | blog posts, captions, reports, banners, product listings, research summaries | sonnet |
+| بزنس (business) | supplier/grading emails, negotiation, pricing decisions, income plans, anything that sends, spends or commits money | opus |
+| كودينق (coding) | routine site edits, small fixes, scripts → sonnet; new apps, security, payments, hard bugs → opus | sonnet / opus |
+| مونتاج (video editing) | rendering, cutting, music mixing, contact sheets → sonnet; ad scripts, voiceover text with his pronunciation rules, creative concept → opus | sonnet / opus |
+
 ## Tiers
 | Tier | Model | Use for |
 |---|---|---|
