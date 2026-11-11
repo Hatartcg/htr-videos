@@ -1,2 +1,10 @@
-dr850_v4.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/HGENcdpOfGuSJMmQ6K7O/QNy6nrk08LIy2ypPnoPN/content.mp3?Expires=1794391200&KeyName=assets-cdn-key-1&Signature=xajz7F83dZaW0q_2StEYtWQamo8=
-op18_box.webp https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/09/18/6IcKO0wmjXbLi1EF/img_features_01.webp
+oh_logo.png https://cdn.salla.sa/cdn-cgi/image/fit=scale-down,width=400,height=400,onerror=redirect,format=auto/NKNagy/0YRw6XcUIH76Ci63D5LTl01WR5GPcW8weklbEnG2.png
+oh_eb05.webp https://cdn.files.salla.network/products/1990851668/12bdd616-955e-4c84-b80a-bb0108fb554f-standard.webp
+oh_st35.webp https://cdn.files.salla.network/products/1990851668/11abc3fb-45fc-45fb-b6b1-7b813bca0a32-original.webp
+oh_st27.webp https://cdn.files.salla.network/products/1990851668/10a8d2cb-ae17-49aa-a450-41fd96bce6fa-original.webp
+oh_st36.webp https://cdn.files.salla.network/products/1990851668/3cb11fc9-a9bd-400c-9b6b-873ddae187f6-original.webp
+oh_drbb.webp https://cdn.files.salla.network/products/1990851668/8a4c1f04-01e7-4c35-b1c2-72d35f521e21-original.webp
+oh_drsleeved.webp https://cdn.files.salla.network/products/1990851668/8d0d42b7-2e3c-40f8-8c81-71359e98845f-original.webp
+oh_slide0.webp https://cdn.files.salla.network/homepage/1990851668/1e34169b-0048-43e1-9a3a-39af1f207e49-standard.webp
+oh_slide1.webp https://cdn.files.salla.network/homepage/1990851668/ea7cb074-a77e-4f45-8c80-b05f16feb2e8-standard.webp
+oh_slide2.webp https://cdn.files.salla.network/homepage/1990851668/36ca20a6-536f-4cf1-9fb4-10b06e70ddd5-original.webp
