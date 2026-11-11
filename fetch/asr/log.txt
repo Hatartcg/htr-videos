@@ -1,3 +1,3 @@
-Wed Nov 11 07:03:15 UTC 2026
+Wed Nov 11 07:11:48 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-tam_v4.mp3 PASS match 0.94 cps 10.2 unclear [] banned [] diff [{'op': 'replace', 'expected': 'وادفعهه', 'heard': 'ودفعهه'}]
+dr850_v4.mp3 FAIL match 0.7 cps 7.2 unclear [('36', np.float64(0.47)), ('بـ', np.float64(0.77)), ('900', np.float64(0.73))] banned [] diff [{'op': 'replace', 'expected': 'سته وثلاثين', 'heard': '36'}, {'op': 'replace', 'expected': 'بثمنميه وخمسين', 'heard': 'ب 850'}, {'op': 'replace', 'expected': 'تسعميه', 'heard': '900'}, {'op': 'replace', 'expected': 'ثمنميه وخمسين', 'heard': '850'}]
