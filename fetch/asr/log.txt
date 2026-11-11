@@ -1,3 +1,5 @@
-Wed Nov 11 02:28:32 UTC 2026
+Wed Nov 11 02:45:19 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-dr_end.mp3 FAIL match 1.0 cps 10.9 unclear [('الآن', np.float64(0.76)), ('هتر', np.float64(0.66))] banned [] diff []
+loc_final.mp3 FAIL match None cps 7.3 unclear [('يلا', np.float64(0.47)), ('لو', np.float64(0.66)), ('ما', np.float64(0.59)), ('والا', np.float64(0.49)), ('اسم', np.float64(0.29)), ('عن', np.float64(0.03)), ('بركة', np.float64(0.72)), ('ما', np.float64(0.48))] banned [] diff None
+launch_v2.mp3 FAIL match None cps 8.8 unclear [('يا', np.float64(0.53)), ('كل', np.float64(0.78)), ('يقيومها', np.float64(0.79)), ('في', np.float64(0.57))] banned [] diff None
+hb_voice4.mp3 PASS match None cps 7.6 unclear [('سلة', np.float64(0.74))] banned [] diff None
