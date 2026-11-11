@@ -1,3 +1,1 @@
-ep27_c138.png https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/DLR/DLR_138_R_EN_LG.png
-ep27_c141.png https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/DLR/DLR_141_R_EN_LG.png
-ep27_c136.png https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/tpci/DLR/DLR_136_R_EN_LG.png
+ep27_end.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/ch7Pkoy9wMTNYOtV5ZGJ/GhjRvNe0RFPSX1D17vuy/content.mp3?Expires=1794380400&KeyName=assets-cdn-key-1&Signature=HenpjCTImgx80PJLaPwwMsfZAYg=
