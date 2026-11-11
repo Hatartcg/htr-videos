@@ -1,1 +1,2 @@
-oh_teaser_vo.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/MdSdFE9eDvLZZYlrcSOt/HJ4759jN0szyAHLUT33Q/content.mp3?Expires=1794430800&KeyName=assets-cdn-key-1&Signature=7xbCxwwmx5llR35s0-lT7rDbi80=
+dr850_v4.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/HGENcdpOfGuSJMmQ6K7O/QNy6nrk08LIy2ypPnoPN/content.mp3?Expires=1794391200&KeyName=assets-cdn-key-1&Signature=xajz7F83dZaW0q_2StEYtWQamo8=
+op18_box.webp https://en.onepiece-cardgame.com/onepiececg/bccard/en/products/2026/09/18/6IcKO0wmjXbLi1EF/img_features_01.webp
