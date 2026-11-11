@@ -26,3 +26,11 @@ Rejected: 2005 Emerald reverse holo Rayquaza PSA 10 $384,000 (Fanatics, Nov 2) �
 ## Run Tue 10 Nov 07:1x (news-guard scheduled run) — still BLOCKED
 - Metricool 10–13 Nov: nothing scheduled (Tue 10 + Thu 12 news slots empty; ep22–ep26 all already published, none reusable).
 - Estimate 500.95; flow DAVsSbscD6p1UCmmfWmM generation FAILED: 28 credits remaining. No voice/video.
+
+## Run Wed 11 Nov 06:5x (news scheduled run) — BUILT for Thursday 12 Nov 13:00
+- Credits topped up. Estimate 500.95 → generated flow FWpa776JQejqEhatwrlp (voice fUlcn0iRlB3xyoBnhkUW, eleven_v4, 1 take) 475 credits, 33.04 s → fetch/ep27_voice.mp3.
+- Line 2 changed: dropped "وهو أغلى كرت في المجموعة" (Rare Candy ranks #141 above #138 → ranking not 2-source certain).
+- ASR: main take OK except end "دلتا ريم" → redid last line only (78 credits) → fetch/ep27_end.mp3, ASR "ديلترين" OK. Total 553 credits.
+- Prices re-checked Nov 11: folio.fyi (sold medians, table updated Nov 10) #138 $338.21, #141 $324.99, #136 $89.99; Bill's Archive TCGplayer Nov 7: $320 / $285 / $79.74; Rare Candy Nov 6: $331.84 / $349.34 / $81.56. Floors +$300/+$280/+$75 hold; Raikou #3 in all three.
+- Images: official card scans via Limitless (tpci DLR_138/141/136_R_EN_LG.png).
+- Audio: hook 0–4.06 + 0.15 + intro + 0.3 + rest 4.56–28.45 (gaps>0.4 → 0.3) + 0.3 + end line, atempo 1.08 → 33.18 s (audio.py). Music: synth pluck arpeggio Dm–Bb–F–C 100 bpm, seed 27 (music.py).

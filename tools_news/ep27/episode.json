@@ -1,0 +1,8 @@
+{"total": 33.18, "date_label": "12 نوفمبر 2026", "imgdir": "img", "cta_end": "ونشوفكم الأحد!", "segs": [
+ {"s": 0, "e": 3.77, "hook": true, "tsize": 130, "accent": "#ef4444", "chip": "Pokémon · Delta Reign", "title": "+$300", "sub": "Mega Rayquaza ex · SIR 138/103", "img": "c138.png"},
+ {"s": 3.77, "e": 7.22, "accent": "#ef4444", "title": "أخبار وأسعار", "sub": "", "img": "title"},
+ {"s": 7.22, "e": 12.35, "accent": "#ef4444", "chip": "Pokémon · Delta Reign", "title": "Mega Rayquaza ex", "sub": "SIR · 138/103 · حسب المبيعات الأخيرة", "img": "c138.png"},
+ {"s": 12.35, "e": 17.83, "accent": "#ef4444", "chip": "Pokémon · النسخة الذهبية", "title": "+$280", "sub": "Mega Hyper Rare · 141/103", "img": "c141.png"},
+ {"s": 17.83, "e": 23.61, "accent": "#ef4444", "chip": "Pokémon · ثالث أغلى كرت", "title": "+$75", "sub": "Raikou ex · SIR 136/103", "img": "c136.png"},
+ {"s": 23.61, "e": 29.05, "accent": "#14b8a6", "chip": "نصيحة", "title": "سعر البيع ≠ سعر العرض", "sub": "شوف المبيعات الفعلية قبل تشتري أو تبيع", "img": ["c138.png", "c141.png", "c136.png"]},
+ {"s": 29.05, "e": 33.18, "accent": "#ef4444", "title": "وش أحسن كرت طلع لك؟", "sub": "اكتب لنا بالتعليقات", "img": "cta"}]}
