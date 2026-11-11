@@ -1,4 +1,5 @@
-dr_end.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/8Xz6NJhU4Q1f6uiAyUVK/TYAR04fr3hESjg2QdCqe/content.mp3?Expires=1794373200&KeyName=assets-cdn-key-1&Signature=LYq6tldLmilOgysJO4sIwJnz2Bo=
-dr_box_a.png https://giantsportscards.com/cdn/shop/files/shopify_18_1200x1200.png?v=1793209000
-dr_box_b.jpg https://flipsidegaming.com/cdn/shop/files/NDPKME6B.jpg?v=1789724317
-dr_box_c.webp https://www.midwestcards.com/imagery/overnight/a46f0128b7e8d1f4f1e10704c9acccea4e85124f70c7cc77f9db73fea50d3fbd.webp
+ep27_voice.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/Oo6PYe3g4y22vYAoIYrt/fh5G69uGlJcLhvG8vr98/content.mp3?Expires=1794376800&KeyName=assets-cdn-key-1&Signature=A7Vnw5s6ppXJJ84FJVh6bJzss8Y=
+ep27_l138.html https://limitlesstcg.com/cards/DLR/138
+ep27_l141.html https://limitlesstcg.com/cards/DLR/141
+ep27_l136.html https://limitlesstcg.com/cards/DLR/136
+ep27_tcgp138.jpg https://tcgplayer-cdn.tcgplayer.com/product/728061_in_1000x1000.jpg
