@@ -1,1 +1,2 @@
-o12_st34_main.webp https://cdn.files.salla.network/products/1990851668/c0844076-151a-4851-b687-7c818850a13b-original.webp
+o12_st34_t1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/SRvcNHgv2vXVCq48mmMN/NervdeaXocoI6vslQViY/content.mp3?Expires=1794380400&KeyName=assets-cdn-key-1&Signature=lwx7wqsp98szJFVRWLdSrJgCDrY=
+o12_st34_t2.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/HGM2NmOUeRkvtUkYDJJ3/dDtbhZ4GGSH7RhnRLBLO/content.mp3?Expires=1794380400&KeyName=assets-cdn-key-1&Signature=rQjq9n1e6uLo_HFEwIdzdqZDMrw=
