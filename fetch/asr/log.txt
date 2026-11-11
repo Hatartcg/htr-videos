@@ -1,4 +1,3 @@
-Wed Nov 11 00:22:06 UTC 2026
+Wed Nov 11 00:27:26 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-tam_fix_qast.mp3 FAIL match 0.83 cps 9.9 unclear [] banned [] diff [{'op': 'replace', 'expected': 'وقسطهه', 'heard': 'واصوتهه'}]
-tam_fix_ywsal.mp3 FAIL match 0.75 cps 9.0 unclear [] banned [] diff [{'op': 'replace', 'expected': 'ويوصلك', 'heard': 'ويصلك'}]
+tamara_v2mix.mp3 PASS match 0.92 cps 8.9 unclear [] banned [] diff [{'op': 'replace', 'expected': 'وقسطهه', 'heard': 'وقصطهه'}, {'op': 'replace', 'expected': 'ويوصلك', 'heard': 'ويصلك'}]
