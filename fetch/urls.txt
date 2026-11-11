@@ -1,1 +1,2 @@
-tamara_r4.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/lKAPNa2QYzTardnAj3AO/RJnRiaqGwnGtrohEc3cB/content.mp3?Expires=1794340800&KeyName=assets-cdn-key-1&Signature=SSuF7h4g-QjcfKN7wfvKl2T_Eks=
+tam_fix_qast.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/eNn3OWLiuir0ccr8Bgio/TiaqJfdy4ZTCgRaz9nlW/content.mp3?Expires=1794366000&KeyName=assets-cdn-key-1&Signature=HyskmD5KVJKomikKu5jKvv-af6U=
+tam_fix_ywsal.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/eYFtXmatkBBohf5OalJR/zowMuNeIN9Rj4Tk5pbik/content.mp3?Expires=1794366000&KeyName=assets-cdn-key-1&Signature=_q85Aq4EGScQnUvTsDSuwNxye7M=
