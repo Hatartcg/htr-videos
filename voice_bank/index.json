@@ -1,0 +1,82 @@
+{
+ "htr_tagline": {
+  "file": "voice_bank/htr_tagline.mp3",
+  "text": "هتر (نهاية: هتر مكانك)",
+  "source": "ref_v1.mp3",
+  "start": 41.62,
+  "end": 42.45,
+  "approved": "hadi-ref"
+ },
+ "htr_yoosal_lak": {
+  "file": "voice_bank/htr_yoosal_lak.mp3",
+  "text": "وهتر يوصل لك",
+  "source": "ref_v1.mp3",
+  "start": 33.86,
+  "end": 35.08,
+  "approved": "hadi-ref"
+ },
+ "htr_in_word": {
+  "file": "voice_bank/htr_in_word.mp3",
+  "text": "وهتر",
+  "source": "ref_v1.mp3",
+  "start": 33.86,
+  "end": 34.46,
+  "approved": "hadi-ref"
+ },
+ "site_url": {
+  "file": "voice_bank/site_url.mp3",
+  "text": "ادخل الحين htrtcg.com",
+  "source": "ref_v1.mp3",
+  "start": 38.34,
+  "end": 41.7,
+  "approved": "hadi-ref"
+ },
+ "mutamadeen": {
+  "file": "voice_bank/mutamadeen.mp3",
+  "text": "احنا معتمدين رسمياً",
+  "source": "ref_v1.mp3",
+  "start": 19.66,
+  "end": 21.58,
+  "approved": "hadi-ref"
+ },
+ "news_ma_htr": {
+  "file": "voice_bank/news_ma_htr.mp3",
+  "text": "وهذه أخبار وأسعار TCG مع هتر",
+  "source": "ref_v2.mp3",
+  "start": 5.14,
+  "end": 8.42,
+  "approved": "hadi-ref"
+ },
+ "ygo": {
+  "file": "voice_bank/ygo.mp3",
+  "text": "يوغي أوو",
+  "source": "ref_v3.mp3",
+  "start": 4.06,
+  "end": 4.86,
+  "approved": "hadi-ref"
+ },
+ "youth_order_site": {
+  "file": "voice_bank/youth_order_site.mp3",
+  "text": "اطلب من موقع هتر ويوصلك لين باب بيتك",
+  "source": "yt_vo3.mp3",
+  "start": 14.1,
+  "end": 17.25,
+  "approved": "hadi-ref"
+ },
+ "youth_htr": {
+  "file": "voice_bank/youth_htr.mp3",
+  "text": "هتر (من إعلان الشباب)",
+  "source": "yt_vo3.mp3",
+  "start": 15.24,
+  "end": 15.52,
+  "approved": "hadi-ref"
+ },
+ "olaya_square": {
+  "file": "voice_bank/olaya_square.mp3",
+  "text": "بالعليا سكوير (إطلاق Delta Reign 6 نوفمبر – بانتظار تأكيد هادي)",
+  "source": "dr_vo.mp3",
+  "start": 14.97,
+  "end": 15.92,
+  "approved": "pending"
+ }
+}
