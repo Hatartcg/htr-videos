@@ -1,0 +1,57 @@
+{
+ "title1": "تقدر تخمّن",
+ "title2": "كم تسوى هالكروت؟",
+ "subtitle": "٣ ألعاب · ٣ جولات",
+ "source": "سعر السوق في TCGplayer · 10 نوفمبر 2026",
+ "tease": "بكرة: أيهم أغلى؟… لا يفوتك!",
+ "rounds": [
+  {
+   "img": "/home/claude/gp/im_702667.jpg",
+   "name": "BELLE & BEAST",
+   "set": "LORCANA · Attack of the Vine! · Iconic",
+   "options": [
+    "$640",
+    "$1,726",
+    "$3,900"
+   ],
+   "answer": 1
+  },
+  {
+   "img": "/home/claude/gp/im_709103.jpg",
+   "name": "JAYCE",
+   "set": "RIFTBOUND · Vendetta · Signature",
+   "options": [
+    "$1,147",
+    "$380",
+    "$2,450"
+   ],
+   "answer": 0
+  },
+  {
+   "img": "/home/claude/gp/im_717609.jpg",
+   "name": "MEW",
+   "set": "POKÉMON · 30th Celebration · B/RGB",
+   "options": [
+    "$1,350",
+    "$9,800",
+    "$4,264"
+   ],
+   "answer": 2
+  }
+ ],
+ "timing": {
+  "intro": 2.566666666666667,
+  "think": [
+   6.633333333333334,
+   4.5,
+   5.333333333333333
+  ],
+  "rlen": [
+   13.266666666666667,
+   10.933333333333334,
+   13.1
+  ],
+  "outro": 4.5,
+  "end": 2.8
+ }
+}
