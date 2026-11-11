@@ -1,0 +1,123 @@
+{
+ "source": "سعر السوق في TCGplayer · مقارنة بقبل ٧ أيام",
+ "tease": "بكرة: خمّن السعر… لا يفوتك!",
+ "tape": [
+  [
+   "SNEA",
+   260.1
+  ],
+  [
+   "BLAZ",
+   257.9
+  ],
+  [
+   "IVYS",
+   183.0
+  ],
+  [
+   "SWMP",
+   169.7
+  ],
+  [
+   "PTD",
+   92.9
+  ]
+ ],
+ "movers": [
+  {
+   "ticker": "PTD",
+   "name": "Power Tool Dragon",
+   "set": "Ultimate Rare 1st Edition · RGBT-EN042 · YU-GI-OH!",
+   "img": "/home/claude/htr-videos/fetch/im_58490.jpg",
+   "old": 81.66,
+   "new": 157.49,
+   "pct": 93,
+   "series": [
+    81.66,
+    157.49,
+    157.49,
+    157.49,
+    157.49,
+    157.49,
+    157.49,
+    157.49
+   ]
+  },
+  {
+   "ticker": "SWMP",
+   "name": "Swampert ex",
+   "set": "Ultra Rare 95/95 · EX Team Magma vs Team Aqua · POKÉMON",
+   "img": "/home/claude/htr-videos/fetch/im_89682.jpg",
+   "old": 202.45,
+   "new": 545.97,
+   "pct": 170,
+   "series": [
+    202.45,
+    545.97,
+    545.97,
+    545.97,
+    545.97,
+    545.97,
+    545.97,
+    545.97
+   ]
+  },
+  {
+   "ticker": "IVYS",
+   "name": "Ivysaur",
+   "set": "Reverse Holo 34/100 · EX Crystal Guardians · POKÉMON",
+   "img": "/home/claude/htr-videos/fetch/im_86300.jpg",
+   "old": 53.01,
+   "new": 150.0,
+   "pct": 183,
+   "series": [
+    53.01,
+    150.0,
+    150.0,
+    150.0,
+    150.0,
+    150.0,
+    150.0,
+    150.0
+   ]
+  },
+  {
+   "ticker": "BLAZ",
+   "name": "Blaziken",
+   "set": "Reverse Holo 5/108 · EX Power Keepers · POKÉMON",
+   "img": "/home/claude/htr-videos/fetch/im_83908.jpg",
+   "old": 69.84,
+   "new": 249.94,
+   "pct": 258,
+   "series": [
+    69.84,
+    69.84,
+    69.84,
+    249.94,
+    249.94,
+    249.94,
+    249.94,
+    249.94
+   ]
+  },
+  {
+   "ticker": "SNEA",
+   "name": "Sneasel ex (Japanese)",
+   "set": "Holo 046/055 · ADV Expansion Pack · POKÉMON",
+   "img": "/home/claude/htr-videos/fetch/im_613083.jpg",
+   "old": 24.99,
+   "new": 89.99,
+   "pct": 260,
+   "series": [
+    24.99,
+    24.99,
+    24.99,
+    24.99,
+    24.99,
+    24.99,
+    24.99,
+    89.99
+   ]
+  }
+ ]
+}
