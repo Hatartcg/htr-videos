@@ -15,6 +15,10 @@ CFG = {
                game='ONE PIECE CARD GAME', name=['STARTER DECK ST-33'], hook='كوزان جاهز يجمّد الطاولة!', big='KUZAN',
                stats=[('51 كرت', 1.0), ('10 DON!!', 1.0)], uses=['+1 BOOSTER PACK OP-16'], price='105', seed=33,
                mh=760, mh_sm=280, sm_y=.372, hook_fs=64, use_fs=56, alt_w=620, alt_pos=(W / 2, H * .735, .82), name_y=.765, chk_dx=375),
+    'st34': dict(TOTAL=14.6, T_GAME=1.2, T_PROD=2.74, T_NAME=3.9, T_F1=5.7, T_F1b=6.42, T_F2=6.82, T_PRICE=9.14, T_CTA=10.9,
+               game='ONE PIECE CARD GAME', name=['STARTER DECK ST-34'], hook='كاتاكوري يقودك للفوز!', big='KATAKURI',
+               stats=[('51 كرت', 1.0), ('10 DON!!', 1.0)], uses=['+1 BOOSTER PACK OP-16', '+ PLAYSHEET'], price='105', seed=34, cutout=True,
+               mh=760, mh_sm=280, sm_y=.372, hook_fs=66, use_fs=54, alt_w=560, alt_pos=(W / 2, H * .76, .7), name_y=.765, chk_dx=375),
     'ich': dict(TOTAL=14.9, T_GAME=1.34, T_PROD=2.42, T_NAME=3.3, T_F1=5.14, T_F1b=99, T_F2=7.14, T_PRICE=10.06, T_CTA=11.94,
                game='BLEACH', name=['ICHIGO BANKAI SWORD'], hook='جاهز تطلق البانكاي؟', big='BANKAI!',
                stats=[('جودة عالية', 1.0)], uses=['سهل تعلّقه', 'وتعرضه في غرفتك'], price='216', seed=44, chk_dx=370, alt_w=520, alt_pos=(W / 2, H * .74, .75)),
@@ -42,7 +46,21 @@ def window(w, h, header):
     d.line((M + 30, M + 110, M + w - 30, M + 110), fill=CY + (160,), width=2)
     return to_bgra(im)
 
+def cutout(im):  # remove white background (flood fill from the border), crop to the product
+    a = np.array(im.convert('RGB')); h, w = a.shape[:2]
+    wh = (a.min(2) > 235).astype(np.uint8); m = np.zeros((h + 2, w + 2), np.uint8)
+    for x, y in ((0, 0), (w - 1, 0), (0, h - 1), (w - 1, h - 1)):
+        if wh[y, x]: cv2.floodFill(wh, m, (x, y), 2)
+    al = np.where(wh == 2, 0, 255).astype(np.uint8); al = cv2.GaussianBlur(cv2.erode(al, np.ones((3, 3), np.uint8)), (3, 3), 0)
+    o = Image.fromarray(np.dstack([a, al]), 'RGBA'); return o.crop(o.getchannel('A').point(lambda v: 255 if v > 20 else 0).getbbox())
+
 def item_img(im, w, mh=None):
+    if CFG.get('cutout'):
+        if mh and im.height * w / im.width > mh: w = int(im.width * mh / im.height)
+        im = im.resize((w, int(im.height * w / im.width)), Image.LANCZOS)
+        g = Image.new('RGBA', (im.width + 80, im.height + 80), CY + (0,)); m = Image.new('L', g.size, 0)
+        m.paste(im.getchannel('A'), (40, 40)); g.putalpha(m.filter(ImageFilter.GaussianBlur(18)).point(lambda v: int(v * .7)))
+        g.alpha_composite(im, (40, 40)); return to_bgra(g)
     if mh and im.height * w / im.width > mh: w = int(im.width * mh / im.height)
     im = im.resize((w, int(im.height * w / im.width)), Image.LANCZOS)
     # put white-bg product on a soft light card so it reads on dark UI
@@ -55,8 +73,8 @@ def logo_spr(w):
     m = Image.new('L', g.size, 0); m.paste(l.getchannel('A'), (50, 50)); gl.putalpha(m.filter(ImageFilter.GaussianBlur(22)))
     g = Image.alpha_composite(g, gl); g.alpha_composite(l, (50, 50)); return to_bgra(g)
 LOGO_BIG, LOGO_MID, LOGO_WM = logo_spr(540), logo_spr(430), logo_spr(140)
-prod = Image.open(D + 'main.png').convert('RGB'); ITEM = item_img(prod, 640, CFG.get('mh')); ITEM_SM = item_img(prod, 300, CFG.get('mh_sm'))
-alt = Image.open(D + 'alt.png').convert('RGB'); ALT = item_img(alt, CFG.get('alt_w', 420))
+prod = cutout(Image.open(D + 'main.png')) if CFG.get('cutout') else Image.open(D + 'main.png').convert('RGB'); ITEM = item_img(prod, 640, CFG.get('mh')); ITEM_SM = item_img(prod, 300, CFG.get('mh_sm'))
+alt = cutout(Image.open(D + 'alt.png')) if CFG.get('cutout') else Image.open(D + 'alt.png').convert('RGB'); ALT = item_img(alt, CFG.get('alt_w', 420))
 
 W_NOTE = window(880, 560, '[ NOTIFICATION ]'); W_ITEM = window(900, 1040, '[ ITEM ACQUIRED ]')
 W_STAT = window(900, 1180, '[ STATUS ]'); W_SHOP = window(860, 1000, '[ SHOP ]')

@@ -21,3 +21,4 @@
 2026-11-09 | One Piece | Starter Deck ST-35 Sabo (51 cards + 10 DON!! + playsheet + 1 OP-16 booster pack) | 105 SAR | videos/oh/oh_st35_sabo_starter_deck_holo.mp4 | holo (music: music_trap.py 136bpm C minor) | NO VOICE: ElevenLabs out of credits (28 left)
 2026-11-10 | Naruto (merch) | Naruto LED lamp (multi-colour, brightness button) | 99 SAR | videos/oh/oh_naruto_lamp_cine.mp4 | cinematic (music: music_taiko.py 124bpm D minor; pink accent) | NO VOICE: ElevenLabs out of credits (28 left)
 2026-11-11 | Tokyo Ghoul (merch) | Kaneki light-up lamp | 84 SAR | videos/oh/oh_tokyo_ghoul_kaneki_lamp_manga.mp4 | manga (music: music_rock.py 176bpm F# minor chug) | NO VOICE: ElevenLabs out of credits
+2026-11-12 | One Piece | Starter Deck ST-34 Charlotte Katakuri (51 cards + 10 DON!! + playsheet + 1 OP-16 booster pack) | 105 SAR | videos/oh/oh_st34_katakuri_starter_deck_system.mp4 | system-hud (music: music_edm.py 124bpm F minor; cutout product)
