@@ -1,0 +1,48 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:Cairo;src:url(font_cairo.ttf)}
+@font-face{font-family:Anton;src:url(font_anton.ttf)}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1440px;height:810px;background:#0d070b;overflow:hidden}
+.b{position:relative;width:1440px;height:810px;overflow:hidden;
+ background:radial-gradient(ellipse 70% 90% at 30% 55%,var(--glow) 0%,transparent 60%),linear-gradient(180deg,#160a12,#0b0609)}
+.line{position:absolute;height:6px;border-radius:3px;background:linear-gradient(90deg,transparent,#e5126a 30%,#e5126a 70%,transparent)}
+.l1{top:150px;left:-40px;width:520px}
+.l2{top:58px;right:120px;width:440px;height:5px}
+.l3{bottom:150px;left:-40px;width:700px;height:4px;opacity:.75}
+.dots{position:absolute;top:120px;left:230px;width:180px;height:120px;
+ background-image:radial-gradient(#e5126a 2px,transparent 2.5px);background-size:22px 22px;opacity:.35}
+.art{position:absolute;left:0;top:0;width:900px;height:810px;background-size:cover;background-position:var(--artpos);
+ -webkit-mask-image:linear-gradient(90deg,#000 45%,transparent 100%);mask-image:linear-gradient(90deg,#000 45%,transparent 100%);opacity:var(--artop)}
+.shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,7,11,.15) 0%,rgba(13,7,11,.55) 55%,rgba(13,7,11,.96) 70%)}
+.logo{position:absolute;top:38px;left:44px;width:150px}
+.prod{position:absolute;filter:drop-shadow(0 30px 40px rgba(0,0,0,.65))}
+.txt{position:absolute;right:110px;top:0;height:810px;width:700px;display:flex;flex-direction:column;align-items:flex-end;justify-content:center;gap:18px;text-align:right}
+.kick{font-family:Anton;font-size:30px;letter-spacing:7px;color:#ff3d8b}
+.title{font-family:Anton;font-size:var(--ts);line-height:.98;color:#fff;letter-spacing:1px}
+.pill{border:3px solid #e5126a;border-radius:40px;padding:4px 30px;font-family:Anton;font-size:34px;color:#fff;letter-spacing:2px}
+.ar{font-family:Cairo;font-weight:900;font-size:112px;white-space:nowrap;line-height:1.05;color:#ff2f80;direction:rtl}
+.date{background:rgba(255,255,255,.08);border-radius:14px;padding:14px 26px;font-family:Cairo;font-weight:700;font-size:30px;color:#fff;direction:rtl}
+.date b{unicode-bidi:isolate;direction:ltr;display:inline-block;font-family:Anton;font-weight:400;color:#ff5c98;letter-spacing:1px;margin-right:10px}
+</style></head><body>
+<div class="b" id="b"></div>
+<script>
+const P=new URLSearchParams(location.search).get('v');
+const V={
+ op18:{glow:'rgba(229,18,106,.30)',art:'op18-art.webp',artpos:'72% 30%',artop:.45,
+  kick:'ONE PIECE CARD GAME',title:'THE DOMINANCE<br>OF GOD',ts:'104px',code:'OP-18',ar:'طلب مسبق',
+  date:'الإصدار الرسمي <b>20 NOV 2026</b>',
+  prods:[{src:'op18-box.webp',left:250,top:150,h:560,rot:6}]},
+ me06:{glow:'rgba(61,220,151,.22)',art:'me06-art.webp',artpos:'78% 50%',artop:.9,
+  kick:'POKÉMON TCG · MEGA EVOLUTION',title:'DELTA<br>REIGN',ts:'138px',code:'ME06',ar:'متوفر الآن',
+  date:'Mega Rayquaza · نزل <b>6 NOV 2026</b>',
+  prods:[{src:'me06-box.webp',left:150,top:230,h:500,rot:-4}]}
+}[P];
+const b=document.getElementById('b');b.style.setProperty('--glow',V.glow);
+b.innerHTML=`<div class="art" style="background-image:url(${V.art});--artpos:${V.artpos};--artop:${V.artop}"></div><div class="shade"></div>
+<div class="line l1"></div><div class="line l2"></div><div class="line l3"></div><div class="dots"></div>
+${V.prods.map(p=>`<img class="prod" src="${p.src}" style="left:${p.left}px;top:${p.top}px;height:${p.h}px;transform:rotate(${p.rot}deg)">`).join('')}
+<img class="logo" src="ohlogo.png">
+<div class="txt" style="--ts:${V.ts}"><div class="kick">${V.kick}</div><div class="title">${V.title}</div><div class="pill">${V.code}</div><div class="ar">${V.ar}</div><div class="date">${V.date}</div></div>`;
+</script></body></html>
