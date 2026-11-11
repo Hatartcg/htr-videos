@@ -18,4 +18,9 @@ Upload (Salla theme editor, s.salla.sa/themes → published theme «تخصيص»
   `new Image()` + crossOrigin='anonymous', draw to a canvas, `toBlob('image/jpeg')` → File; find the empty
   `s-uploader` (shadowRoot `.filepond--item` count 0), set its `input[type=file]`.files via DataTransfer and dispatch `change`.
   (fetch() to GitHub is blocked by Salla's CSP; the <img> route works.)
-- Fill «ادخل الرابط» with the product/search link, then «حفظ التغييرات». Check otakkuhaveen.com/ar shows it.
+- Fill «ادخل الرابط» with a SEARCH link https://otakkuhaveen.com/search?q=<code> (short /p<id> links give 410 on this store), then «حفظ التغييرات». Check otakkuhaveen.com/ar shows it.
+
+Release day: Otaku product pages also need their «طلب مسبق» wording cleared (promotion badge → «متوفر الآن», description, SEO).
+Use the HTR admin tool in a browser signed in to htrtcg.com admin: GET https://www.htrtcg.com/api/admin/salla-products?q=<set name>
+(preview), then from that page `fetch('/api/admin/salla-products',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({ids:[…]})})`.
+Items whose description says «موعد الوصول المتوقع» are skipped automatically (still not arrived).
