@@ -1,3 +1,4 @@
-Wed Nov 11 00:11:14 UTC 2026
+Wed Nov 11 00:22:06 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-tamara_check.mp3 FAIL match 0.62 cps 8.6 unclear [('حتر', np.float64(0.62))] banned [] diff [{'op': 'insert', 'expected': '', 'heard': 'حتر'}, {'op': 'replace', 'expected': 'وقسطهه', 'heard': 'وقصهه'}, {'op': 'replace', 'expected': 'ويوصلك', 'heard': 'اطلب من موقع حتر واختار تماره عند الدفع ويصلك'}, {'op': 'delete', 'expected': 'اطلب الحين وقسطهه', 'heard': ''}]
+tam_fix_qast.mp3 FAIL match 0.83 cps 9.9 unclear [] banned [] diff [{'op': 'replace', 'expected': 'وقسطهه', 'heard': 'واصوتهه'}]
+tam_fix_ywsal.mp3 FAIL match 0.75 cps 9.0 unclear [] banned [] diff [{'op': 'replace', 'expected': 'ويوصلك', 'heard': 'ويصلك'}]
