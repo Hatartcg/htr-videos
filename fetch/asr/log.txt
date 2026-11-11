@@ -1,3 +1,3 @@
-Wed Nov 11 06:23:10 UTC 2026
+Wed Nov 11 06:26:45 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-tam_clean.mp3 FAIL match 0.8 cps 9.6 unclear [('تنارة', np.float64(0.59))] banned [] diff [{'op': 'replace', 'expected': 'تماره', 'heard': 'تناره'}, {'op': 'replace', 'expected': 'وقسطهه', 'heard': 'وقصطهه'}, {'op': 'replace', 'expected': 'تماره', 'heard': 'تناره'}]
+ref_qassit2.mp3 FAIL match 0.0 cps 6.3 unclear [] banned [] diff [{'op': 'replace', 'expected': 'قسطهه', 'heard': 'قصتهه علي راحتك'}]
