@@ -1,7 +1,2 @@
-im_727905.jpg https://tcgplayer-cdn.tcgplayer.com/product/727905_in_1000x1000.jpg
-im_727919.jpg https://tcgplayer-cdn.tcgplayer.com/product/727919_in_1000x1000.jpg
-im_645375.jpg https://tcgplayer-cdn.tcgplayer.com/product/645375_in_1000x1000.jpg
-im_645376.jpg https://tcgplayer-cdn.tcgplayer.com/product/645376_in_1000x1000.jpg
-im_675689.jpg https://tcgplayer-cdn.tcgplayer.com/product/675689_in_1000x1000.jpg
-im_675703.jpg https://tcgplayer-cdn.tcgplayer.com/product/675703_in_1000x1000.jpg
-im_689168.jpg https://tcgplayer-cdn.tcgplayer.com/product/689168_in_1000x1000.jpg
+im_684210.jpg https://tcgplayer-cdn.tcgplayer.com/product/684210_in_1000x1000.jpg
+im_684521.jpg https://tcgplayer-cdn.tcgplayer.com/product/684521_in_1000x1000.jpg
