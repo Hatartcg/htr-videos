@@ -162,7 +162,7 @@ def render(t):
     f = (plate(t) * (1 - BA) + BRGB * BA).astype(np.uint8)
     p = panel(t, i); a, b = SEG[i][0], SEG[i][1]
     # transition: panel slides/fades in
-    lt = t - a; k = 1.0 if RAW[i].get('hook') else eo(lt / .3)
+    lt = t - a; k = 1.0 if (RAW[i].get('hook') or EP.get('hard_cuts')) else eo(lt / .3)
     arr = np.array(p); al = arr[..., 3:4] / 255.0 * k
     if k < 1: arr = np.roll(arr, int((1 - k) * 60), axis=0); al = np.roll(al, int((1 - k) * 60), axis=0)
     rgb = arr[..., :3][..., ::-1].astype(np.float32)
@@ -170,6 +170,12 @@ def render(t):
     # cover old panel when fading: draw navy base always
     # progress bar
     f[0:12] = (40, 20, 30); f[0:12, :int(W * t / TOTAL)] = (252, 211, 125)
+    if EP.get('beats'):  # punch-in zoom cuts inside a segment (reset at each segment start) + slow push
+        nb = [x for x in EP['beats'] if a <= x <= t]; z0 = EP.get('zoom', 1.12) if len(nb) % 2 else 1.0
+        since = t - (nb[-1] if nb else a); z = z0 + .012 * since
+        if z > 1.001:
+            cx, cy = 540, EP.get('zoom_cy', 646); M = np.float32([[z, 0, cx * (1 - z)], [0, z, cy * (1 - z)]])
+            f2 = cv2.warpAffine(f, M, (W, H), flags=cv2.INTER_LINEAR); f2[0:12] = f[0:12]; f = f2
     if t > TOTAL - .4: f = (f * max(0, (TOTAL - t) / .4)).astype(np.uint8)
     return f
 if __name__ == '__main__':

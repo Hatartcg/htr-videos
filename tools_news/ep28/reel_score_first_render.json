@@ -1,0 +1,336 @@
+{
+ "file": "r1.mp4",
+ "duration": 41.1,
+ "score_estimate": 61,
+ "breakdown": {
+  "hook/35": 26,
+  "pacing/25": 0,
+  "audio/15": 15,
+  "length/15": 10,
+  "ending/10": 10
+ },
+ "cuts": [
+  8.7,
+  14.6,
+  18.1,
+  21.2,
+  27.2,
+  33.7
+ ],
+ "cuts_per_sec": 0.15,
+ "first_word_at": 0.0,
+ "loudness_db": -18.1,
+ "timeline": [
+  {
+   "sec": 0,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 1,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 2,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 3,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 4,
+   "level": "red",
+   "issues": [
+    "لقطة طويلة بدون قطع (5 ث)",
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 5,
+   "level": "red",
+   "issues": [
+    "لقطة طويلة بدون قطع (6 ث)",
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 6,
+   "level": "yellow",
+   "issues": [
+    "لقطة طويلة بدون قطع (7 ث)"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 7,
+   "level": "yellow",
+   "issues": [
+    "لقطة طويلة بدون قطع (8 ث)"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 8,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 9,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 10,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 11,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 12,
+   "level": "yellow",
+   "issues": [
+    "لقطة طويلة بدون قطع (4 ث)"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 13,
+   "level": "red",
+   "issues": [
+    "لقطة طويلة بدون قطع (5 ث)",
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 14,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 15,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 16,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 17,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 18,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 19,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 20,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 21,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 22,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 23,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 24,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 25,
+   "level": "yellow",
+   "issues": [
+    "لقطة طويلة بدون قطع (5 ث)"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 26,
+   "level": "red",
+   "issues": [
+    "لقطة طويلة بدون قطع (6 ث)",
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 27,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 28,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 29,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 30,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 31,
+   "level": "yellow",
+   "issues": [
+    "لقطة طويلة بدون قطع (5 ث)"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 32,
+   "level": "yellow",
+   "issues": [
+    "لقطة طويلة بدون قطع (6 ث)"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 33,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 34,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 35,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 36,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 37,
+   "level": "yellow",
+   "issues": [
+    "لقطة طويلة بدون قطع (4 ث)"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 38,
+   "level": "red",
+   "issues": [
+    "لقطة طويلة بدون قطع (5 ث)",
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 39,
+   "level": "red",
+   "issues": [
+    "لقطة طويلة بدون قطع (6 ث)",
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 40,
+   "level": "yellow",
+   "issues": [
+    "لقطة طويلة بدون قطع (7 ث)"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 41,
+   "level": "red",
+   "issues": [
+    "لقطة طويلة بدون قطع (8 ث)",
+    "حركة قليلة",
+    "صمت"
+   ],
+   "cut": false
+  }
+ ],
+ "fix_first": [
+  "ما فيه قطع في أول ٣ ثواني — أضف قطع/زووم/نص كبير يتحرك",
+  "ث 4: لقطة طويلة بدون قطع (5 ث)، حركة قليلة",
+  "ث 5: لقطة طويلة بدون قطع (6 ث)، حركة قليلة",
+  "ث 13: لقطة طويلة بدون قطع (5 ث)، حركة قليلة",
+  "ث 26: لقطة طويلة بدون قطع (6 ث)، حركة قليلة",
+  "ث 38: لقطة طويلة بدون قطع (5 ث)، حركة قليلة"
+ ],
+ "note": "تقدير بالقواعد — للمقارنة بين النسخ قبل النشر، مو ضمان. يتعاير مع أرقام Metricool الحقيقية."
+}

@@ -1,0 +1,315 @@
+{
+ "file": "r3.mp4",
+ "duration": 40.9,
+ "score_estimate": 74,
+ "breakdown": {
+  "hook/35": 30,
+  "pacing/25": 8.5,
+  "audio/15": 15,
+  "length/15": 10,
+  "ending/10": 10
+ },
+ "cuts": [
+  1.6,
+  3.5,
+  5.2,
+  7.0,
+  8.7,
+  10.8,
+  14.6,
+  16.9,
+  18.1,
+  21.2,
+  21.6,
+  24.2,
+  26.4,
+  27.2,
+  28.6,
+  30.9,
+  33.0,
+  33.7,
+  35.1,
+  37.3,
+  38.9,
+  40.0
+ ],
+ "cuts_per_sec": 0.54,
+ "first_word_at": 0.0,
+ "loudness_db": -18.0,
+ "timeline": [
+  {
+   "sec": 0,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 1,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 2,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 3,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 4,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 5,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 6,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 7,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 8,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 9,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 10,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 11,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 12,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 13,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 14,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 15,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 16,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 17,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 18,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 19,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 20,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 21,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 22,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 23,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 24,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 25,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 26,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 27,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 28,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 29,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 30,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 31,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 32,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 33,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 34,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 35,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 36,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 37,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 38,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 39,
+   "level": "green",
+   "issues": [],
+   "cut": false
+  },
+  {
+   "sec": 40,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  }
+ ],
+ "fix_first": [],
+ "note": "تقدير بالقواعد — للمقارنة بين النسخ قبل النشر، مو ضمان. يتعاير مع أرقام Metricool الحقيقية."
+}
