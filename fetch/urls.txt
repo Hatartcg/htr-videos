@@ -1,1 +1,1 @@
-ep28_voice.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/9RRNMSNlrW3dKOe340zj/XTNJCNG52sufS78JjyNp/content.mp3?Expires=1794463200&KeyName=assets-cdn-key-1&Signature=f2kJnOrsQjeaPUb1ulXVSiXRzAs=
+ep28_fix.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/H7SkIPYi28PggAKeRwia/x4PfVEDAy2ltcZKmiyIY/content.mp3?Expires=1794463200&KeyName=assets-cdn-key-1&Signature=-lvApoJDG5Q5rOEI7CWVOUCrh4M=
