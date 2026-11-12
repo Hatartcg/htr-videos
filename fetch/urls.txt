@@ -1,1 +1,1 @@
-ep28_magikarp.jpg https://storage.googleapis.com/images.pricecharting.com/5def5d3d0a664f3d40259278821dad124ec0aa890ef16d693e7252fa75cca162/1600.jpg
+ep28_voice.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/9RRNMSNlrW3dKOe340zj/XTNJCNG52sufS78JjyNp/content.mp3?Expires=1794463200&KeyName=assets-cdn-key-1&Signature=f2kJnOrsQjeaPUb1ulXVSiXRzAs=
