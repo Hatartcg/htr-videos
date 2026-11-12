@@ -90,3 +90,7 @@ Format: date | game | item
 2026-11-12 | Prices | HOOK: Delta Reign Mega Rayquaza ex SIR 138/103 "+$300" (folio.fyi sold median $338.21, Nov 10 + Bill's Archive TCGplayer $320, Nov 7)
 2026-11-12 | Prices | Gold Mega Rayquaza ex Mega Hyper Rare 141/103 "+$280" (folio $324.99 + Bill's $285); Raikou ex SIR 136/103 = #3 most valuable "+$75" (folio $89.99 + Bill's $79.74 + Rare Candy $81.56)
 2026-11-12 | Tips | Listing price ≠ sold price — check actual sales before buying or selling
+2026-11-15 | Prices | HOOK: Japanese Neo 3 Promo 600 Points Fan Club Shining Magikarp #129 PSA 10 sold $1,131,095 at Alt (Nov 5, 2026) — record for any Magikarp card (CollectiblesNews Nov 7 + UltraBall sales table)
+2026-11-15 | Prices | Previous Magikarp record: Japanese Tamamushi University Magikarp PSA 10 $1,056,000 at Alt (Oct 15, 2026) (UltraBall + CollectiblesNews)
+2026-11-15 | Pokémon | Shining Magikarp Fan Club promo = reward for Pokémon Card Fan Club members who collected 600 points at events (PSA official + CollectiblesNews)
+2026-11-15 | Tips | Same Pokémon has many versions — check the set name and card number before buying
