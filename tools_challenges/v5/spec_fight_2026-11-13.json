@@ -1,0 +1,80 @@
+{
+ "source": "سعر السوق في TCGplayer · 11 نوفمبر 2026",
+ "tease": "بكرة: أغلى ١٠ كروت · لا يفوتك!",
+ "rounds": [
+  {
+   "game": "YU-GI-OH!",
+   "mult": "الفرق ١٢٥ دولار!",
+   "a": {
+    "img": "img/im_714656.jpg",
+    "name": "Kuriboh - Multiply!",
+    "short": "KURIBOH",
+    "set": "Starlight · Magnificent Monsters",
+    "price": "$333",
+    "p": 332.89
+   },
+   "b": {
+    "img": "img/im_714661.jpg",
+    "name": "Stardust Dragon - Victim Sanctuary",
+    "short": "STARDUST DRAGON",
+    "set": "Starlight · Magnificent Monsters",
+    "price": "$458",
+    "p": 457.6
+   }
+  },
+  {
+   "game": "GUNDAM",
+   "mult": "الفرق ٣٣ دولار بس!",
+   "a": {
+    "img": "img/im_727905.jpg",
+    "name": "Infinite Justice Gundam",
+    "short": "INFINITE JUSTICE",
+    "set": "LR++ · Stardust Trails",
+    "price": "$906",
+    "p": 906.3
+   },
+   "b": {
+    "img": "img/im_727919.jpg",
+    "name": "Gundam Bael",
+    "short": "GUNDAM BAEL",
+    "set": "LR++ · Stardust Trails",
+    "price": "$873",
+    "p": 872.99
+   }
+  },
+  {
+   "game": "RIFTBOUND",
+   "mult": "الفرق ١٠ دولار بس!",
+   "a": {
+    "img": "img/im_684521.jpg",
+    "name": "Poppy - Keeper of the Hammer",
+    "short": "POPPY",
+    "set": "Signature · Unleashed",
+    "price": "$428",
+    "p": 427.53
+   },
+   "b": {
+    "img": "img/im_684210.jpg",
+    "name": "Kha'Zix - Voidreaver",
+    "short": "KHA'ZIX",
+    "set": "Signature · Unleashed",
+    "price": "$438",
+    "p": 437.6
+   }
+  }
+ ],
+ "timing": {
+  "intro": 3.5,
+  "ask": [
+   5.866666666666666,
+   5.8,
+   3.566666666666667
+  ],
+  "rev": [
+   6.1,
+   5.466666666666667,
+   6.4
+  ],
+  "outro": 4.833333333333333
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "set_title": "PRISMATIC EVOLUTIONS",
+ "game": "POKÉMON",
+ "source": "سعر السوق في TCGplayer · 11 نوفمبر 2026",
+ "tease": "بكرة: خمّن السعر · لا يفوتك!",
+ "cards": [
+  {
+   "price": 146.0,
+   "name": "Roaring Moon ex",
+   "rarity": "Special Illustration Rare",
+   "img": "img/im_610517.jpg"
+  },
+  {
+   "price": 153.06,
+   "name": "Eevee ex",
+   "rarity": "Special Illustration Rare",
+   "img": "img/im_610522.jpg"
+  },
+  {
+   "price": 154.74,
+   "name": "Jolteon ex",
+   "rarity": "Special Illustration Rare",
+   "img": "img/im_610508.jpg"
+  },
+  {
+   "price": 165.36,
+   "name": "Flareon ex",
+   "rarity": "Special Illustration Rare",
+   "img": "img/im_610501.jpg"
+  },
+  {
+   "price": 207.44,
+   "name": "Vaporeon ex",
+   "rarity": "Special Illustration Rare",
+   "img": "img/im_610504.jpg"
+  },
+  {
+   "price": 235.53,
+   "name": "Glaceon ex",
+   "rarity": "Special Illustration Rare",
+   "img": "img/im_610505.jpg"
+  },
+  {
+   "price": 237.01,
+   "name": "Espeon ex",
+   "rarity": "Special Illustration Rare",
+   "img": "img/im_610510.jpg"
+  },
+  {
+   "price": 272.54,
+   "name": "Leafeon ex",
+   "rarity": "Special Illustration Rare",
+   "img": "img/im_610499.jpg"
+  },
+  {
+   "price": 375.7,
+   "name": "Sylveon ex",
+   "rarity": "Special Illustration Rare",
+   "img": "img/im_610511.jpg"
+  },
+  {
+   "price": 1186.84,
+   "name": "Umbreon ex",
+   "rarity": "Special Illustration Rare",
+   "img": "img/im_610516.jpg"
+  }
+ ],
+ "timing": {
+  "intro": 5.233333333333333,
+  "dur": [
+   4.833333333333333,
+   4.566666666666666,
+   4.833333333333333,
+   4.733333333333333,
+   4.2,
+   4.733333333333333,
+   4.7,
+   4.733333333333333,
+   4.733333333333333,
+   8.333333333333334
+  ],
+  "outro": 4.1
+ }
+}

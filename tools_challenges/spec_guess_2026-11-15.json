@@ -1,0 +1,57 @@
+{
+ "title1": "تقدر تخمّن",
+ "title2": "كم تسوى هالكروت؟",
+ "subtitle": "٣ ألعاب · ٣ جولات",
+ "source": "سعر السوق في TCGplayer · 11 نوفمبر 2026",
+ "tease": "بكرة: أكثر ٥ ارتفعوا… لا يفوتك!",
+ "rounds": [
+  {
+   "img": "/home/claude/gp/im_714655.jpg",
+   "name": "DARK MAGICIAN",
+   "set": "YU-GI-OH! · Magnificent Monsters · Starlight",
+   "options": [
+    "$460",
+    "$1,112",
+    "$2,300"
+   ],
+   "answer": 1
+  },
+  {
+   "img": "/home/claude/gp/im_645375.jpg",
+   "name": "GUNDAM RX-78-2",
+   "set": "GUNDAM · Newtype Rising · LR++",
+   "options": [
+    "$2,532",
+    "$890",
+    "$5,100"
+   ],
+   "answer": 0
+  },
+  {
+   "img": "/home/claude/gp/im_651106.jpg",
+   "name": "MINNIE MOUSE",
+   "set": "LORCANA · Fabled · Iconic",
+   "options": [
+    "$1,240",
+    "$6,500",
+    "$3,083"
+   ],
+   "answer": 2
+  }
+ ],
+ "timing": {
+  "intro": 2.6,
+  "think": [
+   6.833333333333333,
+   5.3,
+   4.933333333333334
+  ],
+  "rlen": [
+   13.0,
+   12.033333333333333,
+   12.2
+  ],
+  "outro": 4.566666666666666,
+  "end": 2.8
+ }
+}
