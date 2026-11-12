@@ -22,6 +22,9 @@ CFG = {
     'ich': dict(TOTAL=14.9, T_GAME=1.34, T_PROD=2.42, T_NAME=3.3, T_F1=5.14, T_F1b=99, T_F2=7.14, T_PRICE=10.06, T_CTA=11.94,
                game='BLEACH', name=['ICHIGO BANKAI SWORD'], hook='جاهز تطلق البانكاي؟', big='BANKAI!',
                stats=[('جودة عالية', 1.0)], uses=['سهل تعلّقه', 'وتعرضه في غرفتك'], price='216', seed=44, chk_dx=370, alt_w=520, alt_pos=(W / 2, H * .74, .75)),
+    'law': dict(TOTAL=13.7, T_GAME=1.54, T_PROD=2.98, T_NAME=3.3, T_F1=4.66, T_F1b=99, T_F2=6.26, T_PRICE=8.86, T_CTA=10.66, T_END2=12.4,
+               game='ONE PIECE', name=['LAW SWORD'], hook='جرّاح الموت يسلّمك سيفه!', big='ROOM!',
+               stats=[('جودة عالية', 1.0)], uses=['مثالي للكوسبلاي', 'ولفعاليات الأنمي'], price='209', seed=209, chk_dx=380, alt_w=520, alt_pos=(W / 2, H * .74, .75), hook_fs=70, h0=True),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; rng = np.random.default_rng(CFG['seed'])
@@ -134,12 +137,15 @@ def glitch(f, amt, t):
 
 def render(t):
     f = background(t)
-    if t < VO + .2:
+    H0 = CFG.get('h0', False)
+    if t < VO + .2 and not H0:
         p = eo(t / .3); out = eo((t - VO) / .2)
         blit(f, LOGO_BIG, W / 2, H * .45, .9 + .1 * p, p * (1 - out))
-    if VO <= t < T_CTA: blit(f, LOGO_WM, 115, 100, 1, .9)
-    if VO <= t < T_PROD:
-        lt = t - VO
+    if (VO <= t or H0) and t < T_CTA: blit(f, LOGO_WM, 115, 100, 1, .9)
+    if (VO <= t or H0) and t < T_PROD:
+        lt = t - VO if not H0 else t + .5
+        if H0:  # product on screen from frame 1, slow push-in
+            blit(f, ITEM, W / 2, H * .73 + 6 * math.sin(t * 2), .62 * (1.0 + .12 * t / T_PROD) * (1 + .15 * env(t, T_GAME, .3)), 1)
         blit(f, win_open(W_NOTE, lt / .3), W / 2, H * .42, 1, 1)
         if lt > .2: blit(f, typed(S['ya'], (lt - .2) / .3), W / 2, H * .42 - 90, 1, 1)
         if t > T_GAME:
@@ -203,6 +209,21 @@ def render(t):
     if fl > .01: f = f + (np.array((255, 240, 200), np.float32) - f) * fl
     f = np.clip(f, 0, 255).astype(np.uint8)
     if t > TOTAL - .4: f = (f * max(0, (TOTAL - t) / .4)).astype(np.uint8)
+    return f
+
+# ---------- end card (cut + punch-in to the last frame; CFG T_END2) ----------
+_render0 = render
+def render(t):
+    if t < CFG.get('T_END2', 99): return _render0(t)
+    lt = t - CFG['T_END2']
+    f = background(t)
+    blit(f, ITEM, W / 2, H * .40, (.8 + .22 * eo(lt / 1.5)) * (1 + .02 * math.sin(t * 9)), 1)
+    blit(f, S['order'], W / 2, H * .73, 1 + .04 * math.sin(t * 7), eo(lt / .2))
+    blit(f, S['url'], W / 2, H * .81, 1, eo((lt - .1) / .25))
+    blit(f, LOGO_WM, 115, 100, 1, .9)
+    f = glitch(np.clip(f, 0, 255), env(t, CFG['T_END2'], .25), t)
+    f = np.clip(f, 0, 255).astype(np.uint8)
+    if t > TOTAL - .25: f = (f * max(0, (TOTAL - t) / .25)).astype(np.uint8)
     return f
 
 if __name__ == '__main__':

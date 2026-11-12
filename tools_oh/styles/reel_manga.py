@@ -55,6 +55,11 @@ CFG = {
         hook='خلّ كانيكي ينوّر ليلك!', game=['TOKYO GHOUL'], sfx='GLOW!', label='ANIME LAMP', name=['KANEKI LAMP', 'TOKYO GHOUL'],
         f1=dict(kind='caps', caps=['لمبة مضيئة', 'تعطي غرفتك لمسة أنمي']), f2=dict(kind='grid', cap='تخطف العين بالليل!'),
         price='84', spot=(255, 61, 154), seed=66, sfx_x=.66),
+    'tanj': dict(
+        TOTAL=12.3, T_GAME=1.54, T_PROD=2.34, T_NAME=2.66, T_F1=4.42, T_F1b=99, T_F2=5.62, T_PRICE=7.46, T_CTA=9.06, T_END2=10.9,
+        hook='نَفَس الماء صار هودي!', game=['DEMON SLAYER'], sfx='WATER!', label='ANIME HOODIE', name=['TANJIRO HOODIE', 'DEMON SLAYER'],
+        f1=dict(kind='caps', caps=['ألوان متعددة']), f2=dict(kind='grid', cap='خامة عالية الجودة'),
+        price='200', spot=(139, 92, 246), seed=113, sfx_x=.66, h0=True),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; SPOT = CFG['spot']
@@ -247,13 +252,18 @@ def render(t):
     f = background(t, lines=min(1, lines))
     sh = env(t, T_GAME, .25) * 22 + env(t, T_PRICE + .03, .3) * 20 + env(t, T_F1, .15) * 8 + env(t, T_F2, .15) * 8
     # S0 logo stamp
-    if t < VO + .2:
+    H0 = CFG.get('h0', False)
+    if t < VO + .2 and not H0:
         k = t / .22; s = 2.2 - 1.2 * eo(k); out = eo((t - VO + .1) / .25)
         blit(f, LOGO_BIG, W / 2, H * .45 - 600 * out, s, min(1, k * 2) * (1 - out), -6 * (1 - eo(k)))
-    if VO <= t < T_CTA - .1: blit(f, LOGO_WM, 125, 110, 1, min(1, (t - VO) / .2))
+    if (VO <= t or H0) and t < T_CTA - .1: blit(f, LOGO_WM, 125, 110, 1, 1 if H0 else min(1, (t - VO) / .2))
     # S1 hook
-    if VO <= t < T_PROD:
-        lt = t - VO
+    if (VO <= t or H0) and t < T_PROD:
+        lt = t - VO if not H0 else t + .12
+        if H0:  # product visible from frame 1, punch-in
+            pz = 1.0 + .10 * eo(t / .5) + .05 * (t / max(.1, T_PROD))
+            sc = .78 * pz * (1 - .3 * eo((t - T_GAME) / .2) if t > T_GAME else 1)
+            blit(f, PROD, W / 2, H * .60 + 8 * math.sin(t * 2), sc, 1, -3)
         blit(f, S['ya'], W / 2 - 60 + 500 * (1 - eo(lt / .25)), H * .27, ebk(lt / .3), 1, -3)
         if t >= T_GAME:
             for i, g in enumerate(S['game']):
@@ -312,6 +322,20 @@ def render(t):
     f = f.astype(np.uint8)
     if sh > .5: f = cv2.warpAffine(f, np.float32([[1, 0, sh * math.sin(t * 93)], [0, 1, sh * math.cos(t * 71)]]), (W, H), borderMode=cv2.BORDER_REFLECT)
     if t > TOTAL - .35: f = (f * max(0, (TOTAL - t) / .35)).astype(np.uint8)
+    return f
+
+# ---------- end card (cut + punch-in to the last frame; CFG T_END2) ----------
+_render0 = render
+def render(t):
+    if t < CFG.get('T_END2', 99): return _render0(t)
+    lt = t - CFG['T_END2']
+    f = background(t, lines=.7)
+    blit(f, PROD, W / 2, H * .40, (.85 + .25 * eo(lt / 1.5)) * (1 + .03 * math.sin(t * 9)), 1, -3 + 2 * math.sin(t * 2))
+    blit(f, S['order'], W / 2, H * .74, ebk(lt / .25) * (1 + .04 * math.sin(t * 7)), 1, -3)
+    blit(f, S['url'], W / 2, H * .85, ebk((lt - .15) / .25), 1, -3)
+    blit(f, LOGO_WM, 125, 110, 1, 1)
+    f = np.clip(f, 0, 255).astype(np.uint8)
+    if t > TOTAL - .25: f = (f * max(0, (TOTAL - t) / .25)).astype(np.uint8)
     return f
 
 if __name__ == '__main__':

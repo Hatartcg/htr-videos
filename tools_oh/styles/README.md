@@ -21,3 +21,6 @@ Note (2026-11-05): Zoro glowing sword page (p2061334474) photos carry 'O-party S
 Note (2026-11-05): Kanae sword page says 101 cm total but photos say 104 cm - length left out. Ichigo Bankai sword photos show 3 sizes (104/75 cm) - size left out.
 Note (2026-11-04): no OH reel was posted on Wed 4 Nov (gap).
 Note (2026-11-10): Solo Leveling "King of the Devils" sword page (p844492966, 199 SAR) uses the same photo as the Demon King dagger already posted 3 Nov - skipped (possible duplicate). Tokyo Ghoul Kaneki lamp page (p116714100) also shows a Juuzou lamp photo - only the Kaneki photo used.
+Note (2026-11-12): viral check rule -> manga/cine/sys scripts have CFG h0=True (hook text + product on screen from frame 1, no logo stamp) and T_END2=<s> (hard cut to a product punch-in end card; end ~0.7-1 s after the voice so the last seconds are not silent/static).
+Note (2026-11-12): Riftbound Spiritforged box (p338739419) and Naruto Mythos Set 01 (p1605634853) are OUT of stock. Itachi/Killua/Kurapika/JJK p159431613/p1243365663 pages are figures (skip while figures are paused).
+Note (2026-11-12): Uzumaki Naruto poster page (p1578447517) photos show several designs (6-poster wall) - design/set count left out. Law sword page (p755255191) photos show 3 handle variants + one 'Windmill Toy Store' branded photo (not used) - variant left out.

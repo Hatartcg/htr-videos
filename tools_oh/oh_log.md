@@ -22,3 +22,6 @@
 2026-11-10 | Naruto (merch) | Naruto LED lamp (multi-colour, brightness button) | 99 SAR | videos/oh/oh_naruto_lamp_cine.mp4 | cinematic (music: music_taiko.py 124bpm D minor; pink accent) | NO VOICE: ElevenLabs out of credits (28 left)
 2026-11-11 | Tokyo Ghoul (merch) | Kaneki light-up lamp | 84 SAR | videos/oh/oh_tokyo_ghoul_kaneki_lamp_manga.mp4 | manga (music: music_rock.py 176bpm F# minor chug) | NO VOICE: ElevenLabs out of credits
 2026-11-12 | One Piece | Starter Deck ST-34 Charlotte Katakuri (51 cards + 10 DON!! + playsheet + 1 OP-16 booster pack) | 105 SAR | videos/oh/oh_st34_katakuri_starter_deck_system.mp4 | system-hud (music: music_edm.py 124bpm F minor; cutout product)
+2026-11-13 | Naruto (merch) | Uzumaki Naruto poster | 200 SAR | videos/oh/oh_naruto_uzumaki_poster_cine.mp4 | cinematic (music: music_gothic.py 88bpm A minor; pink accent, h0 hook + end card) | viral 96
+2026-11-14 | Demon Slayer (merch) | Tanjiro hoodie (many colours) | 200 SAR | videos/oh/oh_tanjiro_hoodie_manga.mp4 | manga (music: music_rock.py 162bpm A minor gallop A-C-G-F; violet spot, h0 hook + end card) | viral 92 (first render 88)
+2026-11-15 | One Piece (merch) | Law sword | 209 SAR | videos/oh/oh_law_sword_system.mp4 | system-hud (music: music_edm.py 128bpm G minor; h0 hook + end card) | viral 96

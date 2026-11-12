@@ -26,6 +26,9 @@ CFG = {
     'narlamp': dict(TOTAL=14.4, T_GAME=0.6, T_PROD=3.3, T_NAME=3.7, T_F2=6.5, T_C1=6.5, T_F1=6.5, T_F1b=7.7, T_PRICE=9.3, T_CTA=11.5,
                 game=['NARUTO'], hook=['خلّ غرفتك تنوّر', 'بروح ناروتو!'], name=['NARUTO LAMP', 'LED LAMP'], caps=['', 'تنوّر بأكثر من لون', 'تتحكم بالإضاءة بزر'], cap2=' ',
                 price='99', seed=24, hook_fs=104, accent=(255, 61, 154), game_sm='NARUTO'),
+    'npost': dict(TOTAL=12.0, T_END2=10.4, T_GAME=1.54, T_PROD=2.62, T_NAME=3.0, T_F2=4.34, T_C1=4.34, T_F1=4.34, T_F1b=5.38, T_PRICE=6.98, T_CTA=8.58,
+                game=['NARUTO'], hook=['غرفتك ناقصها', 'ناروتو!'], name=['UZUMAKI NARUTO', 'ANIME POSTER'], caps=['', 'ألوانه زاهية', 'وتفاصيله دقيقة'], cap2=' ',
+                price='200', seed=200, hook_fs=120, accent=(255, 61, 154), game_sm='NARUTO', h0=True),
 }[KEY]
 RED = CFG.get('accent', RED)
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
@@ -135,19 +138,23 @@ def fade_cut(t):  # dip to black around cuts
 def render(t):
     hit = env(t, T_GAME, .7) + env(t, T_PRICE, .8)
     f = background(t, hit)
-    if t < VO + .3:
+    H0 = CFG.get('h0', False)
+    if t < VO + .3 and not H0:
         p = eio(t / .6); out = eio((t - VO) / .3)
         blit(f, LOGO_BIG, W / 2, H * .46, .92 + .08 * p, p * (1 - out))
-    if VO <= t < T_CTA: blit(f, LOGO_WM, 120, BAR + 70, 1, min(1, (t - VO) / .4) * .85)
-    if VO <= t < T_PROD:
+    if (VO <= t or H0) and t < T_CTA: blit(f, LOGO_WM, 120, BAR + 70, 1, .85 if H0 else min(1, (t - VO) / .4) * .85)
+    if (VO <= t or H0) and t < T_PROD:
         lt = t - VO
+        if H0:  # product from frame 1: slow push-in behind the hook, hook text shown at once
+            blit(f, PROD, W / 2, H * .655, .68 + .08 * t / T_PROD + .06 * env(t, T_GAME, .4), .9 * (1 - eo((t - T_PROD + .2) / .2)))
+            lt = t + .6
         blit(f, S['ya'], W / 2, H * .36, 1, eo(lt / .4) * (1 - eo((t - T_PROD + .25) / .25)))
-        if t > T_GAME:
-            k = t - T_GAME; push = 1 + .05 * (k / 1.4)
+        if t > T_GAME or H0:
+            k = (t + .4) if H0 else t - T_GAME; push = 1 + .05 * (k / 1.4) + (.08 * env(t, T_GAME, .3) if H0 else 0)
             for i, g in enumerate(S['game']):
-                kk = k - i * .18
-                if kk > 0: blit(f, reveal(g, eo(kk / .35), True), W / 2, H * (.42 + .1 * i), push, 1 - eo((t - T_PROD + .2) / .2))
-            line(f, W / 2 - 330 * eo(k / .5), W / 2 + 330 * eo(k / .5), H * .62, 1)
+                kk = k - i * .18 if not H0 else (k if i == 0 else t - T_GAME)
+                if kk > 0: blit(f, reveal(g, eo(kk / .35), True), W / 2, H * ((.25 + .085 * i) if H0 else (.42 + .1 * i)), push, 1 - eo((t - T_PROD + .2) / .2))
+            line(f, W / 2 - 330 * eo(k / .5), W / 2 + 330 * eo(k / .5), H * (.37 if H0 else .62), 1)
     if T_PROD <= t < T_F2:
         lt = t - T_PROD; s = .86 + .08 * (lt / (T_F1 - T_PROD))
         blit(f, PROD_BIG, W / 2 + 40 * (1 - eo(lt / .6)), H * .42, s, eo(lt / .35))
@@ -197,6 +204,21 @@ def render(t):
     f = grain_vig_bars(np.clip(f, 0, 255), t, ca)
     f = np.clip(f, 0, 255).astype(np.uint8)
     if t > TOTAL - .6: f = (f * max(0, (TOTAL - t) / .6)).astype(np.uint8)
+    return f
+
+# ---------- end card (cut + punch-in to the last frame; CFG T_END2) ----------
+_render0 = render
+def render(t):
+    if t < CFG.get('T_END2', 99): return _render0(t)
+    lt = t - CFG['T_END2']
+    f = background(t, .5)
+    blit(f, PROD_BIG, W / 2, H * .40, .62 + .2 * eo(lt / 1.5), 1)
+    blit(f, S['order'], W / 2, H * .72, 1 + .04 * math.sin(t * 7), eo(lt / .2))
+    blit(f, S['url'], W / 2, H * .80, 1, eo((lt - .1) / .25))
+    blit(f, LOGO_WM, 120, BAR + 70, 1, .85)
+    f = grain_vig_bars(np.clip(f, 0, 255), t, 6 * env(t, CFG['T_END2'], .3))
+    f = np.clip(f, 0, 255).astype(np.uint8)
+    if t > TOTAL - .25: f = (f * max(0, (TOTAL - t) / .25)).astype(np.uint8)
     return f
 
 if __name__ == '__main__':

@@ -17,6 +17,8 @@ C = {
               lead=[76, 78, 80, 83, 81, 80, 78, 76], cnt=[]),
  'tglamp': dict(DUR=14.4, T=(1.0, 3.0, 3.4, 5.6, 8.0, 9.6, 11.6), bpm=176, seed=66, prog=[42, 38, 40, 37], pat='chug',
               lead=[78, 76, 73, 76, 78, 81, 80, 76], cnt=[]),
+ 'tanj': dict(DUR=12.3, T=(1.54, 2.34, 2.66, 4.42, 5.62, 7.46, 9.06), bpm=162, seed=113, prog=[45, 48, 43, 41], pat='gallop',
+              lead=[76, 79, 81, 84, 83, 81, 79, 76], cnt=[]),
 }[KEY]
 SR = 48000; DUR = C['DUR']; N = int(SR * DUR); rng = np.random.default_rng(C['seed'])
 VO = 0.5; T_GAME, T_PROD, T_NAME, T_F1, T_F2, T_PRICE, T_CTA = C['T']
