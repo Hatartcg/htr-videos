@@ -1,3 +1,3 @@
-Fri Nov 13 09:39:35 UTC 2026
+Fri Nov 13 09:45:10 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-oh_ditto_np4.wav FAIL match 0.7 cps 9.8 unclear [('مقموعة', np.float64(0.79))] banned [] diff [{'op': 'replace', 'expected': 'مجموعه', 'heard': 'مقموعه'}, {'op': 'replace', 'expected': 'ثيرتيث سيلبريشن', 'heard': '30 سالبريشن'}, {'op': 'replace', 'expected': 'اوتاكو هيفن', 'heard': 'اوتاكوهيف'}, {'op': 'replace', 'expected': 'البايو', 'heard': 'البيو'}]
+oh_ditto_final.wav FAIL match 0.67 cps 10.3 unclear [('Pokemon', np.float64(0.57)), ('هيفن،', np.float64(0.68))] banned [] diff [{'op': 'replace', 'expected': 'مجموعه', 'heard': 'مقموعه'}, {'op': 'replace', 'expected': 'بوكيمون ثيرتيث سيلبريشن', 'heard': 'Pokemon 30 s Celebration'}, {'op': 'replace', 'expected': 'الحين', 'heard': 'نحين'}, {'op': 'replace', 'expected': 'البايو', 'heard': 'البيو'}]
