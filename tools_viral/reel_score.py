@@ -7,7 +7,20 @@ fixed BEFORE publishing. Heuristic, not a guarantee: use it to COMPARE versions/
 and calibrate against the account's real Metricool numbers (calibration.csv).
 
 usage: python3 reel_score.py video.mp4 [--words words.json] [--out report.json] [--png timeline.png]
-  --words: optional word timings (the ASR workflow's fetch/asr/<file>.json: [{"w","s","e","p"}])
+        [--profile profiles/htr.json] [--format challenge] [--series guess] [--date 2026-11-14]
+        [--report report.html]
+  --words:   optional word timings (the ASR workflow's fetch/asr/<file>.json: [{"w","s","e","p"}])
+  --profile: account profile (brand, platform, history CSV, fly threshold, length target, report look).
+             Client profiles + their history live in clients/<name>/ — git-ignored, never pushed
+             (this repo is PUBLIC).
+  --format:  challenge|product|news|educational|promo|behind|other (guessed from the path if omitted)
+  --report:  client-ready HTML report (Arabic/English, the profile's brand look)
+
+Two numbers come out:
+  prediction.verdict (بيفلير / ما بيفلير) — predict.py, learned from the account's own posts.
+                     THIS is the go/no-go.
+  score_estimate     — edit quality (hook, pacing, audio, length, ending) + the red seconds to fix.
+                     It does NOT predict views on its own (HTR data: corr -0.23).
 """
 import argparse, json, re, subprocess, sys
 import numpy as np
@@ -49,7 +62,20 @@ def audio_rms(path, sr=16000, win=0.5):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("video"); ap.add_argument("--words"); ap.add_argument("--out"); ap.add_argument("--png")
+    ap.add_argument("--profile"); ap.add_argument("--format"); ap.add_argument("--series")
+    ap.add_argument("--date"); ap.add_argument("--report"); ap.add_argument("--history")
     A = ap.parse_args()
+    import os, datetime as dt
+    here = os.path.dirname(os.path.abspath(__file__))
+    prof = {"brand": "HTR", "platform": "instagram", "fly_hold_pct": 45, "length": [20, 35],
+            "history": os.path.join(here, "calibration.csv"), "look": "neutral", "lang": "ar"}
+    if A.profile:
+        prof.update(json.load(open(A.profile, encoding="utf-8")))
+        if not os.path.isabs(prof["history"]):
+            prof["history"] = os.path.join(os.path.dirname(os.path.abspath(A.profile)), prof["history"])
+    if A.history:
+        prof["history"] = A.history
+    lo_len, hi_len = prof["length"]
     dur = probe(A.video)
     secs = max(1, int(np.ceil(dur)))
     d, cuts, fps = motion_and_cuts(A.video)
@@ -95,7 +121,7 @@ def main():
     cps = len(cuts) / max(dur, 1)
     pacing = min(25, pacing + (3 if 0.25 <= cps <= 1.2 else 0))
     audio = 15 if -24 <= overall_db <= -8 else (9 if -30 <= overall_db <= -6 else 4)   # /15
-    length = 15 if 7 <= dur <= 35 else (10 if dur <= 60 else (6 if dur <= 90 else 2))  # /15
+    length = 15 if lo_len * 0.35 <= dur <= hi_len else (10 if dur <= 60 else (6 if dur <= 90 else 2))  # /15
     tail = mot[-2:].mean() >= np.median(mot) and not silent[-2:].all()
     ending = 10 if tail else 5                           # /10 (energy/loop at the end)
     score = int(round(hook + pacing + audio + length + ending))
@@ -106,13 +132,23 @@ def main():
     if not hook_cut: fixes.append("ما فيه قطع في أول ٣ ثواني — أضف قطع/زووم/نص كبير يتحرك")
     if not hook_audio: fixes.append("بداية صامتة — ابدأ بصوت أو مؤثر من أول فريم")
     for t in worst: fixes.append("ث %d: %s" % (t["sec"], "، ".join(t["issues"])))
-    if dur > 60: fixes.append("الفيديو %.0f ث — جرّب نسخة أقصر (٢٠–٣٥ ث)" % dur)
+    if dur > hi_len * 1.7: fixes.append("الفيديو %.0f ث — جرّب نسخة أقصر (%d–%d ث)" % (dur, lo_len, hi_len))
 
-    rep = {"file": A.video, "duration": round(dur, 1), "score_estimate": score,
+    sys.path.insert(0, here)
+    from predict import predict, load_history, guess_format, guess_series
+    from hook_features import extract
+    feats = extract(A.video, cuts=cuts)
+    pdate = dt.date.fromisoformat(A.date) if A.date else dt.date.today()
+    pred = predict(A.format or guess_format(A.video), (A.series or guess_series(A.video)).lower(), pdate,
+                   feats["mot_1_3"], load_history(prof["history"], prof["fly_hold_pct"]), prof["fly_hold_pct"])
+
+    rep = {"file": A.video, "brand": prof["brand"], "platform": prof["platform"], "duration": round(dur, 1),
+           "prediction": pred, "score_estimate": score,
            "breakdown": {"hook/35": hook, "pacing/25": round(pacing, 1), "audio/15": audio, "length/15": length, "ending/10": ending},
            "cuts": cuts, "cuts_per_sec": round(cps, 2), "first_word_at": first_word, "loudness_db": round(overall_db, 1),
            "timeline": timeline, "fix_first": fixes,
-           "note": "تقدير بالقواعد — للمقارنة بين النسخ قبل النشر، مو ضمان. يتعاير مع أرقام Metricool الحقيقية."}
+           "hook_features": {k: round(v, 3) for k, v in feats.items()},
+           "note": "score_estimate = جودة المونتاج (للمقارنة بين النسخ). القرار من prediction.verdict. كله تقدير، مو ضمان."}
     js = json.dumps(rep, ensure_ascii=False, indent=1)
     if A.out: open(A.out, "w", encoding="utf-8").write(js)
     if A.png:
@@ -127,7 +163,10 @@ def main():
             im.save(A.png)
         except Exception as e:
             print("png skipped:", e, file=sys.stderr)
-    print(js if not A.out else f"score {score}/100 → {A.out}")
+    if A.report:
+        from report_html import write_report
+        write_report(rep, prof, A.report, A.png)
+    print(js if not A.out else f"{pred['verdict']} (p={pred['fly_probability']}) · edit {score}/100 → {A.out}")
 
 if __name__ == "__main__":
     main()

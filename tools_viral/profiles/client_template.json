@@ -1,0 +1,2 @@
+{"_comment": "Copy to clients/<client>/profile.json (git-ignored). history = that client's own posts (date,file,views,watch_3s_pct,format,series).",
+ "brand": "Client name", "platform": "tiktok", "fly_hold_pct": 45, "length": [20, 35], "history": "calibration.csv", "look": "highbrand"}
