@@ -1,0 +1,2 @@
+{"_comment": "Meta (Instagram/Facebook) AD videos. history rows: date,file,watch_3s_pct (= hook rate: 3-second video plays / impressions, from Ads Manager),views,format,series. Until ad rows exist, the Instagram organic history is used.",
+ "brand": "HTR", "platform": "meta_ads", "fly_hold_pct": 30, "length": [6, 20], "history": "../calibration_meta_ads.csv", "fallback_history": "../calibration.csv", "look": "htr", "rules": {"fatigue": false, "calm": true}}
