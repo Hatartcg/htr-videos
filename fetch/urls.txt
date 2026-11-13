@@ -1,1 +1,1 @@
-oh_ditto_vo.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/MHcyqFPHqwMk849iXXkJ/T1MsMrVVEutX1DbZYVN8/content.mp3?Expires=1794571200&KeyName=assets-cdn-key-1&Signature=cUxvvHhmr_8oHz-LbUtrsZ1is84=
+oh_ditto_fix.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/DAeUUEibTp8Wo74qHg2K/QkGMPnFE3fzIqt5TskSW/content.mp3?Expires=1794571200&KeyName=assets-cdn-key-1&Signature=iKlvyGgjQqSI7STRdUtd3bo6c5M=
