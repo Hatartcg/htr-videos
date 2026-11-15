@@ -118,6 +118,10 @@ def predict(fmt, series, post_date, mot_1_3, history, fly_hold=45.0, rules=None,
         tips.append(f"انشره بين {late}:00 و 21:00")
     if calm_hit:
         tips.append("ثبّت اللقطة من 1 إلى 3 ثواني عشان المشاهد يقرأ السؤال أو الرقم")
+    if fmt == "challenge":
+        # Owner rule (16 Nov 2026): a challenge must make people engage — either the answer goes in the
+        # comments (pinned comment / reply), or the video ends WITHOUT the answer and asks to share and comment.
+        tips.append("تحدي: لا تعطي الجواب في الفيديو — يا تحطه في التعليقات (تعليق مثبّت/رد)، يا تنهي بدون جواب وتطلب «اكتب جوابك وأرسله لخويك»")
     return {"fly_probability": round(p, 2), "verdict": verdict, "format": fmt, "series": series,
             "history_n": len(past), "why": why, "to_make_it_fly": tips,
             "note": "تقدير من تاريخ هالحساب على هالمنصة نفسها، مو ضمان"}
