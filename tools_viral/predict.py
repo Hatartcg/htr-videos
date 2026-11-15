@@ -91,7 +91,7 @@ def predict(fmt, series, post_date, mot_1_3, history, fly_hold=45.0, rules=None,
     if calm_hit:
         p *= CALM_X
         why.append("الثانية 1–3 فيها حركة زايدة (%.1f× من معدل الفيديو)، والفيديوهات اللي طارت كانت أهدى وأوضح هنا" % mot_1_3)
-    verdict = "بيفلير" if p >= FLY_P else "ما بيفلير"
+    verdict = "بيفلير" if p >= rules.get("fly_p", FLY_P) else "ما بيفلير"
     tips = []
     top = [f for f in best_formats(past) if f != fmt][:2]
     if verdict == "ما بيفلير" and top:
