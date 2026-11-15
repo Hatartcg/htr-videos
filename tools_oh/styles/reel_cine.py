@@ -29,6 +29,9 @@ CFG = {
     'npost': dict(TOTAL=12.0, T_END2=10.4, T_GAME=1.54, T_PROD=2.62, T_NAME=3.0, T_F2=4.34, T_C1=4.34, T_F1=4.34, T_F1b=5.38, T_PRICE=6.98, T_CTA=8.58,
                 game=['NARUTO'], hook=['غرفتك ناقصها', 'ناروتو!'], name=['UZUMAKI NARUTO', 'ANIME POSTER'], caps=['', 'ألوانه زاهية', 'وتفاصيله دقيقة'], cap2=' ',
                 price='200', seed=200, hook_fs=120, accent=(255, 61, 154), game_sm='NARUTO', h0=True),
+    'bleachswords': dict(TOTAL=14.2, T_END2=12.8, T_GAME=1.3, T_PROD=2.26, T_NAME=2.66, T_F2=3.42, T_C1=6.62, T_F1=6.62, T_F1b=8.5, T_PRICE=9.6, T_CTA=11.46,
+                game=['BLEACH'], hook=['أي زانباكتو', 'بتختار؟'], name=['BLEACH SWORDS', 'ZANPAKUTO'], caps=['', 'تصاميم كثيرة', 'كل شخصية بتصميمها'], cap2='اختار سيف شخصيتك',
+                price='214', seed=314, hook_fs=130, accent=(255, 61, 154), game_sm='BLEACH', h0=True),
 }[KEY]
 RED = CFG.get('accent', RED)
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})

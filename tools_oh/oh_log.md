@@ -25,3 +25,4 @@
 2026-11-13 | Naruto (merch) | Uzumaki Naruto poster | 200 SAR | videos/oh/oh_naruto_uzumaki_poster_cine.mp4 | cinematic (music: music_gothic.py 88bpm A minor; pink accent, h0 hook + end card) | viral 96
 2026-11-14 | Demon Slayer (merch) | Tanjiro hoodie (many colours) | 200 SAR | videos/oh/oh_tanjiro_hoodie_manga.mp4 | manga (music: music_rock.py 162bpm A minor gallop A-C-G-F; violet spot, h0 hook + end card) | viral 92 (first render 88)
 2026-11-15 | One Piece (merch) | Law sword | 209 SAR | videos/oh/oh_law_sword_system.mp4 | system-hud (music: music_edm.py 128bpm G minor; h0 hook + end card) | viral 96
+2026-11-16 | Bleach (merch) | Bleach swords (many character designs: Ichigo, Byakuya, Toshiro, Ulquiorra, Kenpachi, Aizen, Rukia, Gin, Yamamoto) | 214 SAR | videos/oh/oh_bleach_swords_cine.mp4 | cinematic (music: music_taiko.py 120bpm E minor; pink accent, h0 hook + end card) | viral 94
