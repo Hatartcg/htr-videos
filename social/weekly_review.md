@@ -35,3 +35,22 @@ Recommendations sent:
 2. Add a weekly "sealed box price then vs now" + a store/event clip (top 2 formats: 1,512 / 866) — e.g. sealed on Wed 13:00 as planned + event clip after each local.
 3. Reconnect TikTok in Metricool (3 Nov token error) and OH: schedule 9–14 Nov 19:00 (nothing scheduled).
 Next week check: news hook starting with the $ number; stream reel count; OH 19:00 daily.
+
+## 2026-11-15 (week 8–14 Nov vs 1–7 Nov)
+2026-11-15 | HTR Instagram | 3,003 (+16 gained / −4 lost; prev +32/−0) | 2,740 reel views (3 reels; prev 4,801 / 7) ; account views 7,307 (prev 13,339), reach 4,818 (prev 8,095) | 913/reel (prev 686) | 1.7% interactions/views (prev 2.1%) | Pikachu $5M news 8 Nov 13:00 — 1,313 views, 61% 3s, 2 saves 4 shares | saves+shares 9 (prev 42); comments 0 (prev 0); only 3 reels; 0 stream 18:00; challenges only Thu 12 Nov; news Tue 10 + sealed Wed 11 missing; nothing scheduled after 15 Nov 13:00
+2026-11-15 | HTR TikTok | 3,456 (+0/−1; prev +4/−5) | 440 (3 videos; prev 1,130 / 6) | 147 (prev 188) | 2.0% (prev 3.4%) | guess 12 Nov — 197 views, 6 likes 2 comments | all 3 scheduled videos published (token OK)
+2026-11-15 | HTR YouTube | 68 subs (+0; prev +2) | 540 (1 video with data; prev 2,968) | 540 | — | Pikachu $5M 8 Nov — 540 | 12 Nov shorts (news + guess) no analytics yet (sync)
+2026-11-15 | OH Instagram | 106 (+1/−0; prev +3/−1) | 714 (8 reels; prev 652 / 6) | 89 (prev 109) | 2.1% (prev 2.1%) | Naruto lamp 10 Nov — 177 views / Kaneki lamp 11 Nov — 159 views, 5 likes 3 comments | Katakuri starter 12 Nov — 4 views (25% 3s); Ditto guess 13 Nov 20:30 off-slot; saves 0 shares 1
+
+Type averages HTR IG: guess 1,217 (1) · news 762 (2: $5M 1,313 vs $300 210) · stream 0 · sealed 0.
+Slots: 13:00 762 (2) · 21:00 1,217 (1) · 18:00 none.
+Game: Pokémon news 762; multi-game guess 1,217.
+OH: lamps 168 avg (2) · hoodie/sword/poster/starter 4–117.
+Last week's recs: (1) fill schedule with 18:00 stream + 21:00 challenges — NOT done (3 reels). (2) sealed + event clip — NOT done. (3) reconnect TikTok / schedule OH 9–14 Nov — done ✓ (TikTok 3/3 published; OH 8 reels, daily 19:00).
+
+Done by me: rewrote 4 captions (HTR 15 Nov 13:00 Magikarp news IG/TT/YT; OH 15 Nov 19:00 Law sword). No slot changes.
+Recommendations sent:
+1. Produce content: 3 reels vs ~20 planned, nothing scheduled 16–22 Nov HTR (account views −45%).
+2. News only when the lead number is large ($5M = 1,313 vs $300 = 210).
+3. OH: favour lamps/lights + "favourite character" question (only post with comments).
+Next week check: reel count; comments on A-or-B question; OH lamps.
