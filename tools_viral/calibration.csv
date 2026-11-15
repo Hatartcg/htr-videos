@@ -35,3 +35,4 @@ date,file,score_estimate,hook,views,watch_3s_pct,notes
 2026-11-01,videos/challenges/guess_2026-11-01.mp4,65,35/35,1291,59.0,"challenge guess gp.py; reach 1083; avg watch 15.952s; dur 47.3s; IG 18:09; score without --words"
 2026-11-04,videos/challenges/market_2026-11-04.mp4,61,26/35,268,39.4,"challenge market; reach 210; avg watch 10.385s; dur 40.2s; IG 18:16; score without --words"
 2026-11-05,videos/challenges/sealed_2026-11-04.mp4,59,21/35,1556,50.8,"sealed weekly; reach 1275; avg watch 16.489s; dur 46.5s; IG 15:15; score without --words"
+2026-11-08,videos/news_ep26_ig.mp4,66,26/35,1313,61.4,"reach 1129; avg watch 11.072s; dur 42.4s; Metricool IG reels (reelsViewRate); IG 10:03; first news >1000 views — hook Pikachu Illustrator $5,000,000; score without --words (run 2026-11-15)"
