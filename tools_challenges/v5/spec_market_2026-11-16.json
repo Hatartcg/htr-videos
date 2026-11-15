@@ -1,0 +1,134 @@
+{
+ "source": "سعر السوق في TCGplayer · مقارنة بقبل ٧ أيام",
+ "tease": "بكرة: خمّن السعر… لا يفوتك!",
+ "tape": [
+  [
+   "HRKL",
+   321.0
+  ],
+  [
+   "BULB",
+   242.9
+  ],
+  [
+   "DROL",
+   223.6
+  ],
+  [
+   "RAYQ",
+   186.2
+  ],
+  [
+   "GENG",
+   166.0
+  ]
+ ],
+ "movers": [
+  {
+   "ticker": "GENG",
+   "name": "Dark Gengar",
+   "set": "1st Edition Holo · 6/105 · Neo Destiny · POKÉMON",
+   "img": "/home/claude/htr-videos/fetch/im_84599.jpg",
+   "old": 749.99,
+   "new": 1995.0,
+   "pct": 166,
+   "series": [
+    749.99,
+    749.99,
+    749.99,
+    749.99,
+    1995.0,
+    1995.0,
+    1995.0,
+    1995.0
+   ]
+  },
+  {
+   "ticker": "RAYQ",
+   "name": "Rayquaza (Japanese)",
+   "set": "1st Edition Holo · 011/020 · Dragon Selection · POKÉMON",
+   "img": "/home/claude/htr-videos/fetch/im_602821.jpg",
+   "old": 20.96,
+   "new": 59.99,
+   "pct": 186,
+   "series": [
+    20.96,
+    20.96,
+    20.96,
+    20.96,
+    20.96,
+    59.99,
+    59.99,
+    59.99
+   ]
+  },
+  {
+   "ticker": "DROL",
+   "name": "Droll Bird",
+   "set": "Limited · WCPP-EN001 · World Championship 2010 · YU-GI-OH!",
+   "img": "/home/claude/htr-videos/fetch/im_164461.jpg",
+   "old": 33.99,
+   "new": 109.99,
+   "pct": 224,
+   "series": [
+    33.99,
+    33.99,
+    33.99,
+    33.99,
+    109.99,
+    109.99,
+    109.99,
+    109.99
+   ]
+  },
+  {
+   "ticker": "BULB",
+   "name": "Bulbasaur (Japanese)",
+   "set": "1st Edition · 002/029 · e-Starter Deck · POKÉMON",
+   "img": "/home/claude/htr-videos/fetch/im_614508.jpg",
+   "old": 35.0,
+   "new": 120.0,
+   "pct": 243,
+   "series": [
+    35.0,
+    35.0,
+    120.0,
+    120.0,
+    120.0,
+    120.0,
+    120.0,
+    120.0
+   ]
+  },
+  {
+   "ticker": "HRKL",
+   "name": "Gladiator Beast Heraklinos",
+   "set": "Secret Rare 1st Edition · GLAS-EN044 · YU-GI-OH!",
+   "img": "/home/claude/htr-videos/fetch/im_26291.jpg",
+   "old": 94.99,
+   "new": 399.9,
+   "pct": 321,
+   "series": [
+    94.99,
+    94.99,
+    94.99,
+    94.99,
+    76.7,
+    76.7,
+    76.7,
+    399.9
+   ]
+  }
+ ],
+ "timing": {
+  "intro": 4.433333333333334,
+  "dur": [
+   6.566666666666666,
+   5.4,
+   5.533333333333333,
+   5.4,
+   7.933333333333334
+  ],
+  "outro": 4.433333333333334
+ }
+}
