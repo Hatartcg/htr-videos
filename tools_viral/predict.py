@@ -76,7 +76,7 @@ def best_formats(history):
     return sorted(rate, key=lambda k: -rate[k])
 
 
-def predict(fmt, series, post_date, mot_1_3, history, fly_hold=45.0, rules=None, dur=None):
+def predict(fmt, series, post_date, mot_1_3, history, fly_hold=45.0, rules=None, dur=None, post_hour=None):
     rules = rules or {"fatigue": True, "calm": True}
     past = [h for h in history if h["date"] < post_date]
     same = [h for h in past if h["format"] == fmt]
@@ -95,6 +95,12 @@ def predict(fmt, series, post_date, mot_1_3, history, fly_hold=45.0, rules=None,
         else:
             p *= 0.8
             why.append(f"الطول {dur:.0f} ث: على هالمنصة الفيديوهات اللي {short} ث أو أقل تجيب مشاهدات أكثر")
+    # Posting hour (Riyadh). HTR Instagram 20 Oct–15 Nov 2026: reels posted 18:00–00:00 flew 7 of 17,
+    # reels posted before 17:00 flew 1 of ~25 (the showroom audience is online in the evening).
+    late = rules.get("evening_from")
+    if late and post_hour is not None and post_hour < late:
+        p *= 0.35
+        why.append(f"وقت النشر {post_hour}:00 — في هالحساب الريلز اللي نزلت قبل {late}:00 طار منها 1 من 25، واللي نزلت من 6 المغرب طار 7 من 17")
     calm_hit = rules.get("calm") and mot_1_3 is not None and mot_1_3 > CALM_LIMIT
     if calm_hit:
         p *= CALM_X
@@ -108,6 +114,8 @@ def predict(fmt, series, post_date, mot_1_3, history, fly_hold=45.0, rules=None,
         tips.append("أجّل هالحلقة أو غيّر السلسلة")
     if short and dur and dur > short:
         tips.append(f"قصّره لـ{short} ث أو أقل")
+    if late and post_hour is not None and post_hour < late:
+        tips.append(f"انشره بين {late}:00 و 21:00")
     if calm_hit:
         tips.append("ثبّت اللقطة من 1 إلى 3 ثواني عشان المشاهد يقرأ السؤال أو الرقم")
     return {"fly_probability": round(p, 2), "verdict": verdict, "format": fmt, "series": series,

@@ -63,7 +63,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("video"); ap.add_argument("--words"); ap.add_argument("--out"); ap.add_argument("--png")
     ap.add_argument("--profile"); ap.add_argument("--format"); ap.add_argument("--series")
-    ap.add_argument("--date"); ap.add_argument("--report"); ap.add_argument("--history")
+    ap.add_argument("--date"); ap.add_argument("--time", help="planned posting time HH:MM (Riyadh)"); ap.add_argument("--report"); ap.add_argument("--history")
     A = ap.parse_args()
     import os, datetime as dt
     here = os.path.dirname(os.path.abspath(__file__))
@@ -146,7 +146,8 @@ def main():
     fmt_, ser_ = A.format or guess_format(A.video), (A.series or guess_series(A.video)).lower()
     hist = lambda pl=None: load_history(prof["history"], prof.get("fly_hold_pct", 45), prof.get("fly_views"),
                                         prof.get("fly_by"), pl)
-    pred = predict(fmt_, ser_, pdate, feats["mot_1_3"], hist(), prof.get("fly_hold_pct", 45), prof.get("rules"), dur)
+    ph = int(A.time.split(":")[0]) if A.time else None
+    pred = predict(fmt_, ser_, pdate, feats["mot_1_3"], hist(), prof.get("fly_hold_pct", 45), prof.get("rules"), dur, ph)
     if prof.get("placements"):
         # Paid Meta video: Instagram and Facebook audiences behave differently (Delta Reign ad, 15 Nov 2026:
         # 3-s hook 33–44% on Instagram vs 10–11% on Facebook; FB "reel overlay" never plays the video).
@@ -158,7 +159,7 @@ def main():
             own = [x for x in own if x["placement"]]
             h = own
             byp[pl] = dict(predict(fmt_, ser_, pdate, feats["mot_1_3"], h if len(own) >= 3 else hist(),
-                                   prof.get("fly_hold_pct", 45), prof.get("rules"), dur), name=name, own_rows=len(own))
+                                   prof.get("fly_hold_pct", 45), prof.get("rules"), dur, ph), name=name, own_rows=len(own))
         pred["by_placement"] = {k: {"name": v["name"], "fly_probability": v["fly_probability"], "verdict": v["verdict"],
                                     "own_rows": v["own_rows"]} for k, v in byp.items()}
         weak = [v["name"] for v in byp.values() if v["verdict"] != "بيفلير"]
