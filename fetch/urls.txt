@@ -1,10 +1,1 @@
-dra_full.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/SXsTUyR2L0o42bS2R9Ku/kBaJi8gktOmPWBd7BOIb/content.mp3?Expires=1794736800&KeyName=assets-cdn-key-1&Signature=pvurhEvEY3PkcVzAtYLA3jF0fYU=
-dra_gold.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/oIO2ACKH1Hk0dHSsVkXU/Cc6MpMA8PfXVcEyOZyXw/content.mp3?Expires=1794736800&KeyName=assets-cdn-key-1&Signature=2TRdMgVJm3zL6S7uCsV5h8C3JRc=
-dra_c138a.jpg https://www.serebii.net/card/deltareign/138.jpg
-dra_c141a.jpg https://www.serebii.net/card/deltareign/141.jpg
-dra_c136a.jpg https://www.serebii.net/card/deltareign/136.jpg
-dra_c138b.jpg https://www.serebii.net/card/th/deltareign/138.jpg
-dra_c141b.jpg https://www.serebii.net/card/th/deltareign/141.jpg
-dra_c136b.jpg https://www.serebii.net/card/th/deltareign/136.jpg
-dra_p138.html https://www.pokellector.com/Delta-Reign-Expansion/Mega-Rayquaza-ex-Card-138
-dra_s138.html https://serebii.net/card/deltareign/138.shtml
+dra_mid.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/wMMk9JRLkql1xZVXhFYH/WuEUIPYInRd05mYkybzc/content.mp3?Expires=1794740400&KeyName=assets-cdn-key-1&Signature=_TdRmGRlPjKlLkKRGdN-OviSz7c=
