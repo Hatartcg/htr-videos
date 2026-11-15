@@ -1,23 +1,50 @@
 date,file,score_estimate,hook,views,watch_3s_pct,notes,format,series
-2026-10-19,videos/news_ep12_ig.mp4,61,26/35,248,33.9,reach 190; avg watch 7.136s; dur 43.8s; Metricool IG reels (reelsViewRate); IG 07:03,,
-2026-10-24,videos/news_ep16_ig.mp4,57,26/35,160,36.5,reach 89; avg watch 13.461s; dur 62.4s; Metricool IG reels (reelsViewRate); IG 07:04 top10 OP-17; duplicate post 1 view,,
-2026-10-23,videos/news_ep17_ig.mp4,61,26/35,247,25.8,reach 183; avg watch 7.519s; dur 52.0s; Metricool IG reels (reelsViewRate); IG 07:05; duplicate post 0 views,,
-2026-10-25,videos/news_ep18_ig.mp4,61,26/35,271,38.8,reach 226; avg watch 5.776s; dur 44.9s; Metricool IG reels (reelsViewRate); IG 07:02; duplicate post 0 views,,
-2026-10-26,videos/news_ep19_ig.mp4,61,26/35,274,38.8,reach 222; avg watch 7.142s; dur 47.0s; Metricool IG reels (reelsViewRate); IG 07:04; duplicate post 0 views,,
-2026-10-27,videos/news_ep20_ig.mp4,61,26/35,158,36.4,reach 109; avg watch 6.499s; dur 58.1s; Metricool IG reels (reelsViewRate); IG 07:04; duplicate post 1 view,,
-2026-10-28,videos/news_ep21_ig.mp4,61,26/35,317,37.7,reach 236; avg watch 6.039s; dur 49.4s; Metricool IG reels (reelsViewRate); IG 07:18; 2nd post 125 views reach 121,,
-2026-10-29,videos/news_ep22_ig.mp4,56,21/35,159,39.5,reach 115; avg watch 7.091s; dur 52.7s; Metricool IG reels (reelsViewRate); IG 10:08,,
-2026-11-01,videos/news_ep23_ig.mp4,61,26/35,278,31.1,reach 219; avg watch 5.31s; dur 45.1s; Metricool IG reels (reelsViewRate); IG 10:05,,
-2026-11-03,videos/news_ep24_ig.mp4,56,21/35,284,28.8,reach 213; avg watch 5.827s; dur 52.3s; Metricool IG reels (reelsViewRate); IG 10:06,,
-2026-11-05,videos/news_ep25_ig.mp4,61,26/35,242,31.8,reach 203; avg watch 5.236s; dur 52.0s; Metricool IG reels (reelsViewRate); IG 10:06,,
-2026-10-23,videos/challenges/vs_2026-10-23.mp4,61,26/35,1060,55.2,challenge VS; reach 875; avg watch 13.804s; dur 42.7s; Metricool IG reels (reelsViewRate); IG 17:05; 2nd post 125 views 28.1%; score without --words,,
-2026-10-24,videos/challenges/top10_2026-10-24_v3.mp4,47,21/35,1050,50.2,challenge top10; reach 858; avg watch 14.849s; dur 64.1s; IG 17:06; 2nd post 0 views; score without --words,,
-2026-10-25,videos/challenges/guess_2026-10-25.mp4,51,21/35,1336,54.8,challenge guess; reach 1159; avg watch 13.748s; dur 49.3s; IG 17:06; 2nd post 3 views; score without --words,,
-2026-10-26,videos/challenges/guess_2026-10-27.mp4,56,21/35,204,18.7,challenge guess; reach 168; avg watch 5.577s; dur 48.5s; IG 20:06; 2nd post 0 views; score without --words,,
-2026-10-28,videos/challenges/guess_2026-10-28.mp4,61,26/35,216,15.1,challenge guess; reach 182; avg watch 3.606s; dur 50.8s; IG 17:10; 2nd post 131 views 19.0%; score without --words,,
-2026-10-30,videos/challenges/fight_2026-10-30.mp4,70,35/35,473,49.8,challenge fight; reach 424; avg watch 11.895s; dur 52.9s; IG 21:46; score without --words,,
-2026-10-31,videos/challenges/elevator_2026-10-31.mp4,57,26/35,610,51.2,challenge elevator; reach 518; avg watch 11.92s; dur 65.4s; IG 18:04; score without --words,,
-2026-11-01,videos/challenges/guess_2026-11-01.mp4,65,35/35,1291,59.0,challenge guess gp.py; reach 1083; avg watch 15.952s; dur 47.3s; IG 18:09; score without --words,,
-2026-11-04,videos/challenges/market_2026-11-04.mp4,61,26/35,268,39.4,challenge market; reach 210; avg watch 10.385s; dur 40.2s; IG 18:16; score without --words,,
-2026-11-05,videos/challenges/sealed_2026-11-04.mp4,59,21/35,1556,50.8,sealed weekly; reach 1275; avg watch 16.489s; dur 46.5s; IG 15:15; score without --words,,
-2026-11-08,videos/news_ep26_ig.mp4,66,26/35,1313,61.4,"reach 1129; avg watch 11.072s; dur 42.4s; Metricool IG reels (reelsViewRate); IG 10:03; first news >1000 views — hook Pikachu Illustrator $5,000,000; score without --words (run 2026-11-15)",,
+2026-10-15,ig/onion_op17_opening,,,398,53.7,Metricool IG reels pull 16 Nov 2026,opening,opening
+2026-10-15,ig/app_launch_promo,,,264,29.4,Metricool IG reels pull 16 Nov 2026,promo,promo
+2026-10-16,ig/30th_arrival,,,427,35.8,Metricool IG reels pull 16 Nov 2026,arrival,arrival
+2026-10-16,ig/op_local_event,,,269,39.3,Metricool IG reels pull 16 Nov 2026,event,event
+2026-10-17,ig/op17_challenge_opening,,,338,33.9,Metricool IG reels pull 16 Nov 2026,opening,opening
+2026-10-17,ig/30th_thanks_promo,,,372,33.1,Metricool IG reels pull 16 Nov 2026,promo,promo
+2026-10-17,ig/pulls_opening,,,411,57.8,Metricool IG reels pull 16 Nov 2026,opening,opening
+2026-10-18,ig/heroines_event,,,292,35.0,Metricool IG reels pull 16 Nov 2026,event,event
+2026-10-18,ig/op17_pack_opening,,,354,49.6,Metricool IG reels pull 16 Nov 2026,opening,opening
+2026-10-18,ig/op_local_live_event,,,275,34.3,Metricool IG reels pull 16 Nov 2026,event,event
+2026-10-18,ig/op_local_winner_event,,,310,29.0,Metricool IG reels pull 16 Nov 2026,event,event
+2026-10-19,videos/news_ep12_ig.mp4,61,26/35,248,33.9,reach 190; avg watch 7.136s; dur 43.8s; Metricool IG reels (reelsViewRate); IG 07:03,news,news
+2026-10-19,ig/last_pack_opening,,,336,40.2,Metricool IG reels pull 16 Nov 2026,opening,opening
+2026-10-19,ig/site_gift_promo,,,286,38.3,Metricool IG reels pull 16 Nov 2026,promo,promo
+2026-10-20,ig/charizard_news,,,378,39.3,Metricool IG reels pull 16 Nov 2026,news,news
+2026-10-20,ig/pack_vs_box_tip,,,443,41.1,Metricool IG reels pull 16 Nov 2026,educational,tips
+2026-10-21,ig/pikachu_rain_news,,,856,56.9,Metricool IG reels pull 16 Nov 2026,news,news
+2026-10-21,ig/cgc_grading_promo,,,398,37.6,Metricool IG reels pull 16 Nov 2026,promo,promo
+2026-10-21,ig/collector_types_tip,,,327,30.0,Metricool IG reels pull 16 Nov 2026,educational,tips
+2026-10-22,ig/cgc_site_promo,,,239,33.2,Metricool IG reels pull 16 Nov 2026,promo,promo
+2026-10-23,videos/news_ep17_ig.mp4,61,26/35,247,25.8,reach 183; avg watch 7.519s; dur 52.0s; Metricool IG reels (reelsViewRate); IG 07:05; duplicate post 0 views,news,news
+2026-10-23,videos/challenges/vs_2026-10-23.mp4,61,26/35,1060,55.2,challenge VS; reach 875; avg watch 13.804s; dur 42.7s; Metricool IG reels (reelsViewRate); IG 17:05; 2nd post 125 views 28.1%; score without --words,challenge,vs
+2026-10-24,videos/news_ep16_ig.mp4,57,26/35,160,36.5,reach 89; avg watch 13.461s; dur 62.4s; Metricool IG reels (reelsViewRate); IG 07:04 top10 OP-17; duplicate post 1 view,news,news
+2026-10-24,videos/challenges/top10_2026-10-24_v3.mp4,47,21/35,1050,50.2,challenge top10; reach 858; avg watch 14.849s; dur 64.1s; IG 17:06; 2nd post 0 views; score without --words,challenge,top10
+2026-10-25,videos/news_ep18_ig.mp4,61,26/35,271,38.8,reach 226; avg watch 5.776s; dur 44.9s; Metricool IG reels (reelsViewRate); IG 07:02; duplicate post 0 views,news,news
+2026-10-25,videos/challenges/guess_2026-10-25.mp4,51,21/35,1336,54.8,challenge guess; reach 1159; avg watch 13.748s; dur 49.3s; IG 17:06; 2nd post 3 views; score without --words,challenge,guess
+2026-10-26,videos/news_ep19_ig.mp4,61,26/35,274,38.8,reach 222; avg watch 7.142s; dur 47.0s; Metricool IG reels (reelsViewRate); IG 07:04; duplicate post 0 views,news,news
+2026-10-26,videos/challenges/guess_2026-10-27.mp4,56,21/35,204,18.7,challenge guess; reach 168; avg watch 5.577s; dur 48.5s; IG 20:06; 2nd post 0 views; score without --words,challenge,guess
+2026-10-27,videos/news_ep20_ig.mp4,61,26/35,158,36.4,reach 109; avg watch 6.499s; dur 58.1s; Metricool IG reels (reelsViewRate); IG 07:04; duplicate post 1 view,news,news
+2026-10-27,ig/website_launch_promo,,,191,30.2,Metricool IG reels pull 16 Nov 2026,promo,promo
+2026-10-28,videos/news_ep21_ig.mp4,61,26/35,317,37.7,reach 236; avg watch 6.039s; dur 49.4s; Metricool IG reels (reelsViewRate); IG 07:18; 2nd post 125 views reach 121,news,news
+2026-10-28,videos/challenges/guess_2026-10-28.mp4,61,26/35,216,15.1,challenge guess; reach 182; avg watch 3.606s; dur 50.8s; IG 17:10; 2nd post 131 views 19.0%; score without --words,challenge,guess
+2026-10-29,videos/news_ep22_ig.mp4,56,21/35,159,39.5,reach 115; avg watch 7.091s; dur 52.7s; Metricool IG reels (reelsViewRate); IG 10:08,news,news
+2026-10-29,ig/pack_rarities_explainer,,,1451,52.2,Metricool IG reels pull 16 Nov 2026,educational,tips
+2026-10-30,videos/challenges/fight_2026-10-30.mp4,70,35/35,473,49.8,challenge fight; reach 424; avg watch 11.895s; dur 52.9s; IG 21:46; score without --words,challenge,fight
+2026-10-30,ig/new_releases_arrival,,,552,36.9,Metricool IG reels pull 16 Nov 2026,arrival,arrival
+2026-10-31,videos/challenges/elevator_2026-10-31.mp4,57,26/35,610,51.2,challenge elevator; reach 518; avg watch 11.92s; dur 65.4s; IG 18:04; score without --words,challenge,elevator
+2026-11-01,videos/news_ep23_ig.mp4,61,26/35,278,31.1,reach 219; avg watch 5.31s; dur 45.1s; Metricool IG reels (reelsViewRate); IG 10:05,news,news
+2026-11-01,videos/challenges/guess_2026-11-01.mp4,65,35/35,1291,59.0,challenge guess gp.py; reach 1083; avg watch 15.952s; dur 47.3s; IG 18:09; score without --words,challenge,guess
+2026-11-02,ig/eb05_local_event,,,866,47.9,Metricool IG reels pull 16 Nov 2026,event,event
+2026-11-03,videos/news_ep24_ig.mp4,56,21/35,284,28.8,reach 213; avg watch 5.827s; dur 52.3s; Metricool IG reels (reelsViewRate); IG 10:06,news,news
+2026-11-04,videos/challenges/market_2026-11-04.mp4,61,26/35,268,39.4,challenge market; reach 210; avg watch 10.385s; dur 40.2s; IG 18:16; score without --words,challenge,market
+2026-11-05,videos/news_ep25_ig.mp4,61,26/35,242,31.8,reach 203; avg watch 5.236s; dur 52.0s; Metricool IG reels (reelsViewRate); IG 10:06,news,news
+2026-11-05,videos/challenges/sealed_2026-11-04.mp4,59,21/35,1556,50.8,sealed weekly; reach 1275; avg watch 16.489s; dur 46.5s; IG 15:15; score without --words,challenge,sealed
+2026-11-08,videos/news_ep26_ig.mp4,66,26/35,1313,61.4,"reach 1129; avg watch 11.072s; dur 42.4s; Metricool IG reels (reelsViewRate); IG 10:03; first news >1000 views — hook Pikachu Illustrator $5,000,000; score without --words (run 2026-11-15)",news,news
+2026-11-12,ig/guess_2026-11-12,,,1226,57.6,Metricool IG reels pull 16 Nov 2026,challenge,guess
+2026-11-12,ig/rayquaza_news,,,215,28.6,Metricool IG reels pull 16 Nov 2026,news,news
+2026-11-15,ig/magikarp_news,,,624,56.0,Metricool IG reels pull 16 Nov 2026,news,news
+2026-11-15,"ads/HTR_DeltaReign_challenge (organic reel, 8h)",,,329,48.0,Metricool IG reels pull 16 Nov 2026,challenge,guess

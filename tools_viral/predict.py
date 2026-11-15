@@ -41,13 +41,21 @@ def guess_series(path):
     return os.path.basename(path).split("_")[0].lower()
 
 
-def load_history(csv_path, fly_hold=45.0, fly_views=None):
-    """fly = 3-second hold ≥ fly_hold when the platform gives it (Instagram), else views ≥ fly_views."""
+def load_history(csv_path, fly_hold=45.0, fly_views=None, fly_by=None, placement=None):
+    """fly = 3-second hold ≥ fly_hold when the platform gives it (Instagram), else views ≥ fly_views.
+    fly_by="views": the owner's rule (16 Nov 2026) — a reel under fly_views (1,000) views is rejected,
+    whatever its hold rate, so views decide when the row has them.
+    placement: keep only rows whose placement starts with it ("ig", "fb"); rows without one are kept."""
     rows = []
     if not csv_path or not os.path.exists(csv_path):
         return rows
     for r in csv.DictReader(open(csv_path, encoding="utf-8")):
-        if r.get("watch_3s_pct"):
+        pl = (r.get("placement") or "").strip()
+        if placement and pl and not pl.startswith(placement):
+            continue
+        if fly_by == "views" and fly_views and r.get("views"):
+            fly = float(r["views"]) >= fly_views
+        elif r.get("watch_3s_pct"):
             fly = float(r["watch_3s_pct"]) >= fly_hold
         elif fly_views and r.get("views"):
             fly = float(r["views"]) >= fly_views
@@ -56,7 +64,7 @@ def load_history(csv_path, fly_hold=45.0, fly_views=None):
         rows.append({"date": dt.date.fromisoformat(r["date"][:10]),
                      "format": (r.get("format") or guess_format(r["file"])).strip(),
                      "series": (r.get("series") or guess_series(r["file"])).strip(), "fly": fly,
-                     "dur": float(r.get("duration") or 0) or None})
+                     "dur": float(r.get("duration") or 0) or None, "placement": pl})
     return rows
 
 
@@ -125,6 +133,6 @@ if __name__ == "__main__":
     A = ap.parse_args()
     P = json.load(open(A.profile, encoding="utf-8"))
     hp = P["history"] if os.path.isabs(P["history"]) else os.path.join(os.path.dirname(os.path.abspath(A.profile)), P["history"])
-    H = load_history(hp, P.get("fly_hold_pct", 45), P.get("fly_views"))
+    H = load_history(hp, P.get("fly_hold_pct", 45), P.get("fly_views"), P.get("fly_by"))
     acc, c, f, fa, n = walk_forward(H, P.get("rules"))
     print(f"{P['platform']}: {n} posts · accuracy {acc:.0%} · flyers caught {c}/{f} · false alarms {fa} · best formats {best_formats(H)[:3]}")

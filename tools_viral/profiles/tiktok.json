@@ -1,1 +1,18 @@
-{"brand": "HTR", "platform": "tiktok", "fly_views": 350, "length": [15, 35], "history": "../calibration_tiktok.csv", "look": "htr", "rules": {"fatigue": false, "calm": false, "short_max": 30}}
+{
+ "brand": "HTR",
+ "platform": "tiktok",
+ "fly_views": 1000,
+ "length": [
+  15,
+  35
+ ],
+ "history": "../calibration_tiktok.csv",
+ "look": "htr",
+ "rules": {
+  "fatigue": false,
+  "calm": false,
+  "short_max": 30
+ },
+ "fly_by": "views",
+ "fly_rule": "Owner rule 16 Nov 2026: any reel under 1,000 views is rejected (ما بيفلير)."
+}

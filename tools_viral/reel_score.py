@@ -75,6 +75,7 @@ def main():
             prof["history"] = os.path.join(os.path.dirname(os.path.abspath(A.profile)), prof["history"])
     if A.history:
         prof["history"] = A.history
+    prof["own_history"] = prof["history"]
     fb = prof.get("fallback_history")
     if fb and (not os.path.exists(prof["history"]) or sum(1 for _ in open(prof["history"], encoding="utf-8")) < 9):
         prof["history"] = fb if os.path.isabs(fb) else os.path.join(os.path.dirname(os.path.abspath(A.profile)), fb)
@@ -142,9 +143,27 @@ def main():
     from hook_features import extract
     feats = extract(A.video, cuts=cuts)
     pdate = dt.date.fromisoformat(A.date) if A.date else dt.date.today()
-    pred = predict(A.format or guess_format(A.video), (A.series or guess_series(A.video)).lower(), pdate,
-                   feats["mot_1_3"], load_history(prof["history"], prof.get("fly_hold_pct", 45), prof.get("fly_views")),
-                   prof.get("fly_hold_pct", 45), prof.get("rules"), dur)
+    fmt_, ser_ = A.format or guess_format(A.video), (A.series or guess_series(A.video)).lower()
+    hist = lambda pl=None: load_history(prof["history"], prof.get("fly_hold_pct", 45), prof.get("fly_views"),
+                                        prof.get("fly_by"), pl)
+    pred = predict(fmt_, ser_, pdate, feats["mot_1_3"], hist(), prof.get("fly_hold_pct", 45), prof.get("rules"), dur)
+    if prof.get("placements"):
+        # Paid Meta video: Instagram and Facebook audiences behave differently (Delta Reign ad, 15 Nov 2026:
+        # 3-s hook 33–44% on Instagram vs 10–11% on Facebook; FB "reel overlay" never plays the video).
+        # Predict each placement group from its own rows; fall back to the shared history under 3 rows.
+        byp = {}
+        for pl, name in prof["placements"].items():
+            own = load_history(prof["own_history"], prof.get("fly_hold_pct", 45), prof.get("fly_views"),
+                               prof.get("fly_by"), pl)
+            own = [x for x in own if x["placement"]]
+            h = own
+            byp[pl] = dict(predict(fmt_, ser_, pdate, feats["mot_1_3"], h if len(own) >= 3 else hist(),
+                                   prof.get("fly_hold_pct", 45), prof.get("rules"), dur), name=name, own_rows=len(own))
+        pred["by_placement"] = {k: {"name": v["name"], "fly_probability": v["fly_probability"], "verdict": v["verdict"],
+                                    "own_rows": v["own_rows"]} for k, v in byp.items()}
+        weak = [v["name"] for v in byp.values() if v["verdict"] != "بيفلير"]
+        if weak:
+            pred["to_make_it_fly"].append("اعرض الإعلان في الأماكن اللي تطير بس، وشيل: " + "، ".join(weak))
 
     rep = {"file": A.video, "brand": prof["brand"], "platform": prof["platform"], "duration": round(dur, 1),
            "prediction": pred, "score_estimate": score,

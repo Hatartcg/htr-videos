@@ -1,1 +1,6 @@
-date,file,watch_3s_pct,views,format,series,notes
+date,file,watch_3s_pct,views,format,series,placement,notes
+2026-11-15,ads/HTR_DeltaReign_challenge.mp4,33.3,,challenge,guess,ig_reels,72 impr / 24 3s plays; first 8h; 15 SAR/day traffic ad
+2026-11-15,ads/HTR_DeltaReign_challenge.mp4,44.4,,challenge,guess,ig_feed,18 impr / 8; first 8h
+2026-11-15,ads/HTR_DeltaReign_challenge.mp4,11.3,,challenge,guess,fb_feed,1191 impr / 135; first 8h
+2026-11-15,ads/HTR_DeltaReign_challenge.mp4,9.5,,challenge,guess,fb_reels,304 impr / 29; first 8h
+2026-11-15,ads/HTR_DeltaReign_challenge.mp4,0.1,,challenge,guess,fb_overlay,1407 impr / 1 - overlay never plays the video; exclude this placement
