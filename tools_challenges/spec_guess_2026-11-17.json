@@ -1,0 +1,57 @@
+{
+ "title1": "تقدر تخمّن",
+ "title2": "كم تسوى هالكروت؟",
+ "subtitle": "٣ ألعاب · ٣ جولات",
+ "source": "سعر السوق في TCGplayer · 15 نوفمبر 2026",
+ "tease": "بكرة: أكثر ٥ ارتفعوا… لا يفوتك!",
+ "rounds": [
+  {
+   "img": "/home/claude/gp/im_664930.jpg",
+   "name": "IRELIA",
+   "set": "RIFTBOUND · Spiritforged · Signature",
+   "options": [
+    "$620",
+    "$1,572",
+    "$3,400"
+   ],
+   "answer": 1
+  },
+  {
+   "img": "/home/claude/gp/im_695695.jpg",
+   "name": "DRAGON MASTER MAGIA",
+   "set": "YU-GI-OH! · Glorious Gallery · Starlight",
+   "options": [
+    "$2,700",
+    "$480",
+    "$1,158"
+   ],
+   "answer": 2
+  },
+  {
+   "img": "/home/claude/gp/im_90139.jpg",
+   "name": "UMBREON",
+   "set": "POKÉMON · Aquapolis · H29 Holo",
+   "options": [
+    "$3,850",
+    "$1,450",
+    "$8,200"
+   ],
+   "answer": 0
+  }
+ ],
+ "timing": {
+  "intro": 2.566666666666667,
+  "think": [
+   6.166666666666667,
+   5.233333333333333,
+   5.366666666666666
+  ],
+  "rlen": [
+   12.8,
+   11.833333333333334,
+   12.566666666666666
+  ],
+  "outro": 4.533333333333333,
+  "end": 2.8
+ }
+}
