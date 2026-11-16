@@ -24,6 +24,11 @@ LABELS = {"challenge": "تحدي/لعبة يشارك فيها المشاهد", "
 # TikTok and YouTube Shorts → real footage (pack openings, store events). So every platform keeps
 # its own history and the fly-rates are learned per platform, never shared.
 FATIGUE_DAYS, FATIGUE_X, CALM_LIMIT, CALM_X, FLY_P = 3, 0.35, 1.6, 0.7, 0.4
+SERIES_M = 2  # pseudo-count: how strongly the format rate pulls a series with few posts
+
+
+def _fatigued(h, history):
+    return any(o is not h and o["series"] == h["series"] and 0 < (h["date"] - o["date"]).days <= FATIGUE_DAYS for o in history)
 
 
 def guess_format(path):
@@ -80,9 +85,19 @@ def predict(fmt, series, post_date, mot_1_3, history, fly_hold=45.0, rules=None,
     rules = rules or {"fatigue": True, "calm": True}
     past = [h for h in history if h["date"] < post_date]
     same = [h for h in past if h["format"] == fmt]
-    p = (sum(h["fly"] for h in same) + 1) / (len(same) + 3)
-    why = [f"نوع الفكرة «{LABELS.get(fmt, fmt)}»: طار {sum(h['fly'] for h in same)} من {len(same)} في هالحساب"
-           if same else f"نوع الفكرة «{LABELS.get(fmt, fmt)}» جديد على هالحساب: ما فيه تاريخ نقيس عليه"]
+    # v4 (17 Nov 2026): learn the format and SERIES rates only from "fresh" posts (not fatigued). Fatigued
+    # repeats (same series ≤ FATIGUE_DAYS after the last one) flopped for a known reason and were dragging the
+    # format rate down, so a fresh, proven series (guess: 3/3 fresh posts flew) could never reach 70%.
+    fresh = [h for h in same if not _fatigued(h, past)] if rules.get("fatigue") else same
+    kf, nf = sum(h["fly"] for h in fresh), len(fresh)
+    p = (kf + 1) / (nf + 3)
+    why = [f"نوع الفكرة «{LABELS.get(fmt, fmt)}»: طار {kf} من {nf} (بدون الحلقات المكررة ورا بعض) في هالحساب"
+           if fresh else f"نوع الفكرة «{LABELS.get(fmt, fmt)}» جديد على هالحساب: ما فيه تاريخ نقيس عليه"]
+    ser = [h for h in fresh if h["series"] == series]
+    if ser:
+        ks, ns = sum(h["fly"] for h in ser), len(ser)
+        p = (ks + SERIES_M * p) / (ns + SERIES_M)
+        why.append(f"سلسلة «{series}» نفسها: طارت {ks} من {ns} لما نزلت بعد راحة كافية")
     recent = [h for h in past if h["series"] == series and 0 <= (post_date - h["date"]).days <= FATIGUE_DAYS] \
         if rules.get("fatigue") else []
     if recent:
