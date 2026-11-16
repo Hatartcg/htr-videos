@@ -60,6 +60,11 @@ CFG = {
         hook='نَفَس الماء صار هودي!', game=['DEMON SLAYER'], sfx='WATER!', label='ANIME HOODIE', name=['TANJIRO HOODIE', 'DEMON SLAYER'],
         f1=dict(kind='caps', caps=['ألوان متعددة']), f2=dict(kind='grid', cap='خامة عالية الجودة'),
         price='200', spot=(139, 92, 246), seed=113, sfx_x=.66, h0=True),
+    'dsk': dict(
+        TOTAL=14.0, T_GAME=1.78, T_PROD=2.7, T_NAME=3.0, T_F1=4.02, T_F1b=99, T_F2=5.66, T_PRICE=8.66, T_CTA=11.22, T_END2=13.3,
+        hook='سيف النيتشيرين صار بيدك!', game=['DEMON SLAYER'], sfx='SLASH!', label='ANIME KATANA', name=['NICHIRIN KATANA', 'DEMON SLAYER'],
+        f1=dict(kind='num', n=27, cap='تصميم تختار منها', img='alt.png'), f2=dict(kind='grid', cap='تانجيرو، رينغوكو، شينوبو وغيرهم'),
+        price='287', spot=(255, 61, 154), seed=117, sfx_x=.66, h0=True, hookfs=96, z0=.18, punch=[(6.38, .12, .5), (7.1, .10, .6), (10.1, .10, .5), (12.06, .08, .6), (13.6, .06, .4)], impact=[0.5, 6.38, 7.1, 9.6, 10.1, 12.06, 12.9, 13.62]),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; SPOT = CFG['spot']
@@ -132,7 +137,7 @@ ALT = panel_img(Image.open(D + 'alt.png').convert('RGB'), 500, border=10) if os.
 GRID = [panel_img(Image.open(D + f'c{i}.png').convert('RGB'), 290, border=8) for i in (1, 3, 4, 5, 7, 8)] if CFG['f2']['kind'] == 'grid' else []
 
 S = dict(
-    ya=bubble(CFG.get('hook', 'تبي؟'), FL(120), tail=(.3, 1)),
+    ya=bubble(CFG.get('hook', 'تبي؟'), FL(CFG.get('hookfs', 120)), tail=(.3, 1)),
     game=[fit(ink_text(g, FB(160 if len(CFG['game']) == 1 else 140), fill=WHITE, stroke=16, shadow_col=SPOT + (255,), off=16), 1000) for g in CFG['game']],
     sfx=ink_text(CFG['sfx'], FB(120), fill=SPOT, stroke=10, shadow_col=INK + (255,), off=8),
     label=tag(CFG['label'], FB(56)),
@@ -336,6 +341,19 @@ def render(t):
     blit(f, LOGO_WM, 125, 110, 1, 1)
     f = np.clip(f, 0, 255).astype(np.uint8)
     if t > TOTAL - .25: f = (f * max(0, (TOTAL - t) / .25)).astype(np.uint8)
+    return f
+
+# ---------- optional punch-ins (CFG punch=[(t, amount, dur)], CFG z0=zoom-out at frame 0) ----------
+_render1 = render
+def render(t):
+    f = _render1(t)
+    z = 1 + CFG.get('z0', 0) * max(0, 1 - t / .9) ** 2
+    for tp, a, d in CFG.get('punch', []):
+        if tp <= t < tp + d: z += a * (1 - (t - tp) / d) ** 1.5 if t - tp > .06 else a * (t - tp) / .06
+    if z > 1.001:
+        M = cv2.getRotationMatrix2D((W / 2, H / 2), 0, z); f = cv2.warpAffine(f, M, (W, H), borderMode=cv2.BORDER_REFLECT)
+    for tp in CFG.get('impact', []):
+        if tp <= t < tp + .08: f = 255 - f  # inverted manga impact frame (hard cut)
     return f
 
 if __name__ == '__main__':
