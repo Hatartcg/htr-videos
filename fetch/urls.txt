@@ -1,12 +1,2 @@
-oh1116_kat_01.jpg https://ae01.alicdn.com/kf/S070baa7723f440ac8c36359745de4a46K.jpg
-oh1116_kat_02.jpg https://ae01.alicdn.com/kf/S0997327008fd453bb4e5fea814b5059d2.jpg
-oh1116_kat_03.jpg https://ae01.alicdn.com/kf/S1d2578f8a21b41caa0f64a88ff29c6bfO.jpg
-oh1116_kat_04.jpg https://ae01.alicdn.com/kf/S24608dcb65374b0b914e80bf98ae873aC.jpg
-oh1116_kat_05.jpg https://ae01.alicdn.com/kf/S2ba02e816b044579b5be4982c8ff545dV.jpg
-oh1116_kat_06.jpg https://ae01.alicdn.com/kf/S52a645e5099e4478b99e0c0fa6fc50c4M.jpg
-oh1116_kat_07.jpg https://ae01.alicdn.com/kf/S78bb68bf54f747de8e293b70727a38a2O.jpg
-oh1116_kat_08.jpg https://ae01.alicdn.com/kf/S79f6d479b14c48858ab552000ea30482c.jpg
-oh1116_kat_09.jpg https://ae01.alicdn.com/kf/S8a581104f8624aba9a506534c71d3a86Q.jpg
-oh1116_kat_10.jpg https://ae01.alicdn.com/kf/S94b13ffdd1b34bb9844947273220be11W.jpg
-oh1116_kat_11.jpg https://ae01.alicdn.com/kf/Saa8aaa229c5e432bbce9383226b6002cL.jpg
-oh1116_kat_12.jpg https://ae01.alicdn.com/kf/Se6a8a8da5abd4e4cbc0376f5a94a7cc2e.jpg
+oh1116_dsk_v1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/NN2pQMeSYUQHwdhFyHpG/va0Ha4uJlmEMcPxOHWVQ/content.mp3?Expires=1794812400&KeyName=assets-cdn-key-1&Signature=J2DFKd9I0bxtp5fqkuddSWP2mBg=
+oh1116_dsk_v2.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/plytPTqjZFnlf9FIQDoM/Sp3PowPhpu2RKYKPw4VD/content.mp3?Expires=1794812400&KeyName=assets-cdn-key-1&Signature=rHrRbma-E450aVawZA53bxQY9y0=
