@@ -1,0 +1,14 @@
+{"total": 32.3, "date_label": "17 نوفمبر 2026", "imgdir": "img", "cta_end": "ونشوفكم الخميس!",
+ "segs": [
+  {"s": 0, "e": 5.65, "hook": true, "tsize": 116, "accent": "#ef4444", "chip": "Pokémon · سعره الرسمي $180", "title": "+$300", "sub": "30th Celebration UPC", "img": "upc_night.jpg"},
+  {"s": 5.65, "e": 8.95, "accent": "#ef4444", "title": "أخبار وأسعار", "sub": "", "img": "title"},
+  {"s": 8.95, "e": 11.6, "accent": "#ef4444", "chip": "Pokémon · 30th Celebration", "title": "Ultra-Premium Collection", "sub": "السعر الرسمي $179.99", "img": "upc_day.jpg"},
+  {"s": 11.6, "e": 14.63, "accent": "#ef4444", "chip": "Pokémon · نسختين", "title": "Day · Night", "sub": "نزل 6 نوفمبر 2026", "img": "upc_night.jpg"},
+  {"s": 14.63, "e": 16.6, "accent": "#ef4444", "chip": "نسخة Day", "title": "Espeon ex", "sub": "كرت برومو", "img": "upc_day.jpg"},
+  {"s": 16.6, "e": 18.75, "accent": "#ef4444", "chip": "نسخة Night", "title": "Umbreon ex", "sub": "كرت برومو", "img": "upc_night.jpg"},
+  {"s": 18.75, "e": 21.51, "accent": "#ef4444", "chip": "داخل كل بوكس", "title": "29 باكت", "sub": "30th Celebration", "img": "upc_day.jpg"},
+  {"s": 21.51, "e": 25.87, "accent": "#ef4444", "chip": "الأغلى · Night", "title": "+$350", "sub": "سعر السوق الحين", "img": "upc_night.jpg"},
+  {"s": 25.87, "e": 29.49, "accent": "#14b8a6", "chip": "نصيحة", "title": "قارن بالسعر الرسمي", "sub": "قبل لا تشتري أي بوكس", "img": "upc_day.jpg"},
+  {"s": 29.49, "e": 32.3, "accent": "#ef4444", "title": "داي ولا نايت؟", "sub": "قل لنا بالتعليقات", "img": "cta"}],
+ "hard_cuts": true,
+ "beats": [2.5, 4.2, 7.3, 10.3, 13.1, 20.1, 23.6, 27.7, 31.0]}
