@@ -94,3 +94,7 @@ Format: date | game | item
 2026-11-15 | Prices | Previous Magikarp record: Japanese Tamamushi University Magikarp PSA 10 $1,056,000 at Alt (Oct 15, 2026) (UltraBall + CollectiblesNews)
 2026-11-15 | Pokémon | Shining Magikarp Fan Club promo = reward for Pokémon Card Fan Club members who collected 600 points at events (PSA official + CollectiblesNews)
 2026-11-15 | Tips | Same Pokémon has many versions — check the set name and card number before buying
+2026-11-17 | Prices | HOOK: Pokémon 30th Celebration Ultra-Premium Collection (Day/Night) MSRP $179.99 → sells for "+$300" (PriceCharting eBay sold Nov 15 + TCGplayer market ~$366 Day; Cardlines MSRP)
+2026-11-17 | Pokémon | 30th Celebration UPC out Nov 6, 2026: Day = Espeon ex promo, Night = Umbreon ex promo, 29 packs per box (TCG Protectors + GameRant)
+2026-11-17 | Prices | Night UPC is the pricier version: "+$350" (eBay sold Nov 15 ~$385 + TCGplayer $383 / Kontora $369)
+2026-11-17 | Tips | Compare a sealed box's price with its official MSRP before buying
