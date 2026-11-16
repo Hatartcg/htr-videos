@@ -1,2 +1,15 @@
-oh1116_dsk_v1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/NN2pQMeSYUQHwdhFyHpG/va0Ha4uJlmEMcPxOHWVQ/content.mp3?Expires=1794812400&KeyName=assets-cdn-key-1&Signature=J2DFKd9I0bxtp5fqkuddSWP2mBg=
-oh1116_dsk_v2.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/plytPTqjZFnlf9FIQDoM/Sp3PowPhpu2RKYKPw4VD/content.mp3?Expires=1794812400&KeyName=assets-cdn-key-1&Signature=rHrRbma-E450aVawZA53bxQY9y0=
+gs1117_lu.txt https://tcgcsv.com/last-updated.txt
+gs1117_pr_2_152.json https://tcgcsv.com/tcgplayer/2/152/prices
+gs1117_pr_89_24519.json https://tcgcsv.com/tcgplayer/89/24519/prices
+gs1117_pr_3_1372.json https://tcgcsv.com/tcgplayer/3/1372/prices
+gs1117_pr_2_24621.json https://tcgcsv.com/tcgplayer/2/24621/prices
+gs1117_pr_89_24344.json https://tcgcsv.com/tcgplayer/89/24344/prices
+gs1117_pr_3_1397.json https://tcgcsv.com/tcgplayer/3/1397/prices
+gs1117_p_3_1372.json https://tcgcsv.com/tcgplayer/3/1372/products
+gs1117_p_2_152.json https://tcgcsv.com/tcgplayer/2/152/products
+im_26481.jpg https://tcgplayer-cdn.tcgplayer.com/product/26481_in_1000x1000.jpg
+im_664930.jpg https://tcgplayer-cdn.tcgplayer.com/product/664930_in_1000x1000.jpg
+im_84186.jpg https://tcgplayer-cdn.tcgplayer.com/product/84186_in_1000x1000.jpg
+im_695695.jpg https://tcgplayer-cdn.tcgplayer.com/product/695695_in_1000x1000.jpg
+im_653102.jpg https://tcgplayer-cdn.tcgplayer.com/product/653102_in_1000x1000.jpg
+im_90139.jpg https://tcgplayer-cdn.tcgplayer.com/product/90139_in_1000x1000.jpg
