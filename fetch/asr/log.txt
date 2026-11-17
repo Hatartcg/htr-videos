@@ -1,3 +1,3 @@
-Tue Nov 17 05:16:29 UTC 2026
+Tue Nov 17 05:26:30 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-dr850s.mp3 FAIL match 0.79 cps 8.7 unclear [('36', np.float64(0.66)), ('يا', np.float64(0.61)), ('لك', np.float64(0.78)), ('يا', np.float64(0.76))] banned [] diff [{'op': 'replace', 'expected': 'ثمنميه وخمسين', 'heard': '850'}, {'op': 'replace', 'expected': 'سته وثلاثين', 'heard': '36'}, {'op': 'replace', 'expected': 'ميقه', 'heard': 'ميغه'}, {'op': 'replace', 'expected': 'اليستريشن', 'heard': 'الستريشن'}, {'op': 'replace', 'expected': 'ثلاثميه', 'heard': '300'}]
+dr850q.mp3 FAIL match 0.9 cps 10.7 unclear [('وانت', np.float64(0.69)), ('تريها', np.float64(0.79))] banned [] diff [{'op': 'replace', 'expected': 'تبيهه', 'heard': 'تريهه'}]
