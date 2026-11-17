@@ -3,7 +3,7 @@ python3 sealed.py spec.json stills t.. | a b out.mp4      spec.timing.beats = du
 import sys, json, math, numpy as np, cv2
 from PIL import Image
 from common import *
-SPEC = json.load(open(sys.argv[1])); B = SPEC['timing']['beats']; T_END = 2.6
+SPEC = json.load(open(sys.argv[1])); B = SPEC['timing']['beats']; T_END = 1.8
 BS = [sum(B[:i]) for i in range(len(B))]; T_MAIN = sum(B); TOTAL = T_MAIN + T_END
 BOX = SPEC['boxes']
 WARM = (255, 170, 90); COLD = (90, 170, 255); RED_ = (235, 40, 50); GREEN_ = (40, 210, 120)
@@ -74,26 +74,28 @@ def hazard(f, y, h, k):
     for x in range(-200, W + 400, 80): cv2.fillPoly(band, [np.array([[x, 0], [x + 40, 0], [x + 40 - h, h], [x - h, h]], np.int32)], RED_[::-1])
     off = int(k * 120) % 80; f[y:y + h] = band[:, off:off + W]
 WMG = logo_spr(170, True)
+CDN = {n: txt(str(n), FB(150), WHITE, stroke=6, glow=RED_) for n in (1, 2, 3)}
 def beat(t):
     for i in range(len(B) - 1, -1, -1):
         if t >= BS[i]: return i, t - BS[i]
+    return 0, t
 def caption(f, i, lt):
     c = CAP[i] if i < len(CAP) else None
     if c is not None: blit(f, c, W / 2, 1600, ebk(lt / .3, 1.2), min(1, lt / .15) * (1 - max(0, (lt - B[i] + .15) / .15)))
 def render(t):
     if t >= T_MAIN:
-        f = np.zeros((H, W, 3), np.float32); f[:] = (10, 8, 8); end_card(f, t - T_MAIN, S); return np.clip(f * (max(0, (TOTAL - t) / .4) if t > TOTAL - .4 else 1), 0, 255).astype(np.uint8)
+        f = np.zeros((H, W, 3), np.float32); f[:] = (10, 8, 8); money(f, t - T_MAIN + 1.5, .7); end_card(f, t - T_MAIN, S); f = finish(f, t); return np.clip(f * (max(0, (TOTAL - t) / .4) if t > TOTAL - .4 else 1), 0, 255).astype(np.uint8)
     i, lt = beat(t); D = B[i]; p = lt / D
     beat_kind = SPEC['beats'][i]
     if beat_kind == 'lineup':
         f = bg(t, WARM, 900, .5)
         for j in range(len(BOX)):
-            on = lt > .3 + j * .45
+            on = True
             x = W / 2 + (j - (len(BOX) - 1) / 2) * 330
             spr = BIMG[j] if on else (BIMG[j] * np.array([.12, .12, .12, 1])).astype(np.uint8)
             blit(f, spr, x, 900, .42 * (1 + .03 * p), 1)
             if on: blit(f, BIGW['flash'], x, 900, 0, 0)
-        blit(f, BIGW['hook'], W / 2, 420, ebk((lt - .2) / .4), 1 if lt > .2 else 0)
+        blit(f, BIGW['hook'], W / 2, 420, 1, 1)
     elif beat_kind.startswith('intro'):
         k = int(beat_kind[-1]); f = bg(t, COLD if k == 0 else WARM, 820)
         hero(f, k, W / 2, 820, -.5 + .7 * p, .95 + .08 * p)
@@ -108,6 +110,18 @@ def render(t):
         v = BOX[k]['price'] * eo(min(1, max(0, lt - .3) / 1.3))
         blit(f, price_spr(v), W / 2, 1420, 1 + .08 * env(lt, 1.6, .3), 1 if lt > .3 else 0)
         blit(f, SRC, W / 2, 1695, 1, 1 if lt > .5 else 0)
+    elif beat_kind.startswith('mystery'):
+        k = int(beat_kind[-1]); f = bg(t, RED_, 820, .8)
+        hero(f, k, W / 2, 780, .25 * math.sin(lt * 1.6), 1.0 + .02 * math.sin(lt * 5), rim=RED_)
+        blit(f, year_spr(SPEC['now_year']), W / 2, 330, .8, 1)
+        pul = 1 + .06 * math.sin(lt * 9)
+        blit(f, BIGW['qq'], W / 2, 1400, ebk(lt / .3) * pul, 1)
+        cd0 = D - 3.0
+        if lt >= cd0:
+            n = 3 - int(lt - cd0); fr_ = (lt - cd0) % 1
+            cv2.circle(f, (W // 2, 1080), 120, (20, 20, 30), -1, cv2.LINE_AA)
+            cv2.ellipse(f, (W // 2, 1080), (120, 120), -90, 0, 360 * (1 - fr_), RED_[::-1], 18, cv2.LINE_AA)
+            blit(f, CDN[max(1, n)], W / 2, 1080, 1 + .25 * max(0, 1 - fr_ / .2), 1)
     elif beat_kind == 'supply':
         f = bg(t, COLD, 950, .6)
         n0 = 12; gone = int(min(n0 - 2, lt / (D * .8) * (n0 - 2)))
@@ -139,8 +153,11 @@ def render(t):
         blit(f, BIMG[0], W * .75, 1180, .3, 1, -6); blit(f, BIMG[1], W * .25, 1180, .3, 1, 6)
     elif beat_kind == 'cta':
         f = bg(t, WARM, 900, .7)
-        blit(f, BIGW['cmt'], W / 2, 800, ebk(lt / .35) * (1 + .03 * math.sin(lt * 6)), 1)
-        blit(f, S['ig'], W / 2, 1050, ebk((lt - .4) / .35), 1 if lt > .4 else 0)
+        money(f, lt, .5)
+        hero(f, 2, W / 2 + 40 * math.sin(lt * 2.2), 1000 + 30 * math.sin(lt * 4.4), .3 * math.sin(lt * 1.7), .62 * (1 + .05 * math.sin(lt * 8)), rim=RED_)
+        blit(f, BIGW['qq'], W / 2, 1450, .7 * (1 + .08 * math.sin(lt * 9)), 1, 6 * math.sin(lt * 3))
+        blit(f, BIGW['cmt'], W / 2, 400, ebk(lt / .35) * (1 + .05 * math.sin(lt * 6)), 1)
+        blit(f, S['ig'], W / 2, 560, ebk((lt - .4) / .35), 1 if lt > .4 else 0)
     else:
         f = bg(t)
     caption(f, i, lt)
@@ -153,6 +170,7 @@ def voice_offsets(): return [BS[i] + .12 for i in range(len(B))]
 def cues():
     ev = [('braam', BS[i]) if SPEC['beats'][i].startswith(('intro', 'warn')) else ('hit', BS[i]) for i in range(len(B))]
     ev += [('cash', BS[i] + 1.6) for i in range(len(B)) if SPEC['beats'][i].startswith('price')]
+    ev += [('hit', BS[i] + B[i] - 3.0 + j) for i in range(len(B)) if SPEC['beats'][i].startswith('mystery') for j in range(3)]
     return dict(total=TOTAL, intro=0, outro=T_MAIN, end=T_MAIN, events=ev, offs=voice_offsets())
 if __name__ == '__main__':
     json.dump(cues(), open('cues.json', 'w'))

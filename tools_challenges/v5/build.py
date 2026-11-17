@@ -37,7 +37,10 @@ elif kind == 'elevator':
     sp['timing'] = dict(intro=fr(max(3.4, L[0] + .6)), dur=[fr(.85 + l + .55) for l in L[1:-1]], outro=fr(max(4.0, L[-1] + 2.0)))
     sp['timing']['dur'][-1] = fr(sp['timing']['dur'][-1] + 1.0)
 elif kind == 'sealed':
-    b = [fr(max(2.3, l + .5)) for l in L]; b[-1] = fr(b[-1] + 1.0); sp['timing'] = dict(beats=b)
+    b = [fr(max(2.3, l + .5)) for l in L]; b[-1] = fr(b[-1] + 0.3); b[0] = fr(L[0] + .25)
+    for i, k in enumerate(sp['beats']):
+        if k.startswith('mystery'): b[i] = fr(L[i] + .3 + 3.0)
+    sp['timing'] = dict(beats=b)
 json.dump(sp, open(spec, 'w'), ensure_ascii=False, indent=1)
 tot = float(subprocess.run(['python3', f'{kind}.py', spec, 'cues'], capture_output=True, text=True, check=True).stdout.strip().split()[-1])
 cu = json.load(open('cues.json')); offs = cu['offs']
