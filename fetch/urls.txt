@@ -1,9 +1,2 @@
-oh_oph_0.jpg https://cdn.salla.sa/NKNagy/9c44fd52-4eb3-467f-81e0-a0cc7a0411bf-1000x1000-PRDW1qZHWngjB0IkH5VrUkrEv7oScjHYHZdZDVrS.jpg
-oh_oph_1.jpg https://cdn.salla.sa/NKNagy/d2ede61a-09dc-4b2a-bab1-f294a1d07032-1000x1000-sAD6Ef7G5TDlN3OpB4Q21HjUA8dFQMwzdpUvbnDh.jpg
-oh_oph_2.jpg https://cdn.salla.sa/NKNagy/07577556-be08-426a-a0d2-b4520fae0e9b-1000x1000-A8RVy84fGkh2Hoor8n5cen6ix1vuIoJOlCWS7hOb.jpg
-oh_oph_3.jpg https://cdn.salla.sa/NKNagy/89f129b8-6676-40df-b12a-97674fc4f2da-1000x1000-uaqRcRWBPC6pPBo4uWNhpe6zuBjhnvBSwrkIa26z.jpg
-oh_oph_4.jpg https://cdn.salla.sa/NKNagy/0338cf79-eeac-4bfd-9999-fc41849549b8-1000x1000-W63CSOil9FIhiPtQCtmh5U2HNggeeFybufPllt5m.jpg
-oh_oph_5.jpg https://cdn.salla.sa/NKNagy/bd17f0db-ed21-4b37-9f57-a75214ba4833-985.10638297872x1000-emyOFvCh9LJ4aG9KEV8W5uEvADKPivDow9VY4o2T.jpg
-oh_oph_6.jpg https://cdn.salla.sa/NKNagy/6f23b7ef-9aed-48a3-b2c9-c11e014885d5-985.10638297872x1000-kDfpJdj81chVvkzHVhRe6oaUMyG5GiVFGDhtk4XY.jpg
-oh_oph_7.jpg https://cdn.salla.sa/NKNagy/740ad7fa-b907-412b-9500-7c33ff2a3ae2-985.10638297872x1000-L9VGiTmVgcRoVBVEFtMZK4Rs1A03hhUVBWdZr5e1.jpg
-oh_oph_8.jpg https://cdn.salla.sa/NKNagy/d0a3fbee-b63f-488d-85b7-fbebd7c4a999-985.10638297872x1000-wmhfWn33y4sC0G6DDtWd0mTa4eVtBjIblhqL037Z.jpg
+oh_oph_v1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/LNOmxHiM2Ks73LThVVhs/dDcnSPgDYwxAXvxjOKmR/content.mp3?Expires=1794898800&KeyName=assets-cdn-key-1&Signature=eizyxQpCkIIEhsQgoE_497ynZ4U=
+oh_oph_v2.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/JV9KgSeWUDFyI6OB6bqH/4nqPA0zCWc3foC4JAMEL/content.mp3?Expires=1794898800&KeyName=assets-cdn-key-1&Signature=C0TQGBEwstZLEWqW7_jdfPegRoc=
