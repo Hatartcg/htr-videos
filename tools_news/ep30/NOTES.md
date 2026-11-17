@@ -1,5 +1,6 @@
 # ep30 — for Thursday 19 Nov 2026, 13:00 — BUILT, NOT SCHEDULED (Tue 17 Nov 07:xx run)
 Voice: flow LsctpdGk3RWDiEk7Qn0h, node NVsXlcVLKLjnDIS0wQma, session 4r3avGbsbrxSq5zVCfTt, gen FZpejyhgsLy3b8B4SGg3, fUlcn0iRlB3xyoBnhkUW, eleven_v4, 1 take, 455 credits (32.96 s). Fetched via fetch workflow.
+Owner 17 Nov: "God not good" → line 1 regenerated with "قاد" (flow LsctpdGk3RWDiEk7Qn0h, session 3PFvrmzXIZEe7b8LzBEz, gen nOoRKgSXte05DLZKrMuG, 73 credits; total 528). ASR of fix heard "OP18 The Dominance of Chord". Audio now 35.44 s.
 ASR (fetch/asr/ep30_voice.mp3.v2.json): match 0.73 "FAIL" but diffs are numerals + English words (One Piece→"وين بيس", "OP eighteen"→"أوكي 18", Gunko→كينكو). One-take rule → no retake.
 Audio: hook 0–5.5 + 0.15 + ep10_htr 0–3.0 + 0.3 + 5 lines (0.3 gaps) → 34.86 s.
 Facts:
