@@ -123,7 +123,8 @@ L_HR1 = text_sprite('MEGA RAYQUAZA ex', FB(66), fill=WHITE, stroke=5)
 L_HR2 = text_sprite('HYPER RARE', FB(60), grad=((255, 230, 140), (255, 170, 60)), stroke=5, glow=(255, 160, 40))
 L_SIR2 = text_sprite('SUPER ILLUSTRATION RARE', FB(48), grad=((255, 255, 255), LIL), stroke=5, glow=PURP)
 CHANCE = pill('ممكن تطلع لك', FL(84), (40, 30, 80), border=LIL)
-CASE_T = text_sprite('الكيس كامل (6 بوكسات)', FL(100), fill=WHITE, stroke=7, glow=PURP)
+CASE_T = text_sprite('CASE', FB(110), grad=((255, 255, 255), LIL), stroke=7, glow=PURP)
+CASE_T2 = text_sprite('كامل (6 بوكسات)', FL(84), fill=WHITE, stroke=6)
 P4800 = text_sprite('4,800', FB(200), grad=((255, 255, 255), LIL), stroke=9, glow=PURP)
 RIY2 = text_sprite('ريال', FL(110), fill=WHITE, stroke=7)
 SAVE = pill('وفّر 300 ريال', FL(110), TEAL, fg=DEEP)
@@ -205,11 +206,12 @@ def render(t):
     # ---- scene 5: case
     if s5 - .1 <= t < s6 + .3:
         a = 1 - eo((t - s6) / .3)
-        B(CASE_T, 540, 300, ebk((t - s5) / .3), a)
+        B(CASE_T, 540, 230, ebk((t - s5) / .3), a)
+        B(CASE_T2, 540, 360, ebk((t - s5 - .1) / .3), a)
         for i in range(6):
             r, c = divmod(i, 3); d = s5 + .08 * i
             k = ebk((t - d) / .35)
-            B(BOXS, 210 + c * 330, 620 + r * 400 - 200 * (1 - eo((t - d) / .35)), .1 + .9 * k if t >= d else 0, a, 3 * math.sin(t * 2 + i))
+            B(BOXS, 210 + c * 330, 680 + r * 380 - 200 * (1 - eo((t - d) / .35)), .1 + .9 * k if t >= d else 0, a, 3 * math.sin(t * 2 + i))
         B(P4800, 420, 1250, ebk((t - s5 - .3) / .35), a)
         B(RIY2, 880, 1275, ebk((t - s5 - .45) / .3), a)
         B(SAVE, 540, 1500, ebk((t - T['save']) / .3) * (1 + .06 * math.sin(t * 9)) if t >= T['save'] else 0, a)
