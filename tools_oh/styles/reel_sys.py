@@ -25,6 +25,10 @@ CFG = {
     'law': dict(TOTAL=13.7, T_GAME=1.54, T_PROD=2.98, T_NAME=3.3, T_F1=4.66, T_F1b=99, T_F2=6.26, T_PRICE=8.86, T_CTA=10.66, T_END2=12.4,
                game='ONE PIECE', name=['LAW SWORD'], hook='جرّاح الموت يسلّمك سيفه!', big='ROOM!',
                stats=[('جودة عالية', 1.0)], uses=['مثالي للكوسبلاي', 'ولفعاليات الأنمي'], price='209', seed=209, chk_dx=380, alt_w=520, alt_pos=(W / 2, H * .74, .75), hook_fs=70, h0=True),
+    'oph': dict(TOTAL=13.3, T_GAME=1.78, T_PROD=3.42, T_NAME=3.78, T_F1=5.78, T_F1b=99, T_F2=6.9, T_PRICE=8.74, T_CTA=10.34, T_END2=11.66,
+               game='ONE PIECE', name=['HOODIE'], hook='ارفع علم قبعة القش!', big='STRAW HAT',
+               stats=[('ألوان كثيرة', 1.0)], uses=['تختار اللي يناسبك'], price='200', seed=200, cutout=True, chk_dx=330,
+               alt_w=900, alt_pos=(W / 2, H * .70, .9), hook_fs=74, h0=True, bar_w=300, impact=[5.78, 7.3, 11.66], punch=[(7.3, .07, 1.4)]),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; rng = np.random.default_rng(CFG['seed'])
@@ -175,7 +179,7 @@ def render(t):
         for i, (tc, (sname, val)) in enumerate(zip([T_F1, T_F1b], CFG['stats'])):
             pass
         # bars for each stat (lightness shown as weight bar = low, durability = high)
-        if t > T_F1: bar(f, 140, H * .30 - 11, 480, 22, 1.0 * eo((t - T_F1 - .15) / .5))
+        if t > T_F1: bar(f, 140, H * .30 - 11, CFG.get('bar_w', 480), 22, 1.0 * eo((t - T_F1 - .15) / .5))
         if t > T_F1b: bar(f, 140, H * .38 - 11, 480, 22, 1.0 * eo((t - T_F1b - .15) / .5))
         if t > T_F2:
             for i, u in enumerate(S['uses']):
@@ -224,6 +228,17 @@ def render(t):
     f = glitch(np.clip(f, 0, 255), env(t, CFG['T_END2'], .25), t)
     f = np.clip(f, 0, 255).astype(np.uint8)
     if t > TOTAL - .25: f = (f * max(0, (TOTAL - t) / .25)).astype(np.uint8)
+    return f
+
+# ---------- impact frames (CFG impact=[t,...]: 2 inverted frames = hard cut) ----------
+_render1 = render
+def render(t):
+    f = _render1(t)
+    for ti in CFG.get('impact', []):
+        if ti <= t < ti + .07: f = 255 - f
+    for (ti, amt, dur) in CFG.get('punch', []):
+        if ti <= t < ti + dur:
+            M = cv2.getRotationMatrix2D((W / 2, H / 2), 0, 1 + amt); f = cv2.warpAffine(f, M, (W, H), borderMode=cv2.BORDER_REFLECT)
     return f
 
 if __name__ == '__main__':
