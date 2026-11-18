@@ -13,6 +13,7 @@ T_INTRO = TM.get('intro', 3.0); T_CD = 3.0; T_OUT = TM.get('outro', 4.2); T_END 
 THINK = TM.get('think', [3.4] * N); RLEN = TM.get('rlen', [8.6] * N)
 RSTART = [T_INTRO + sum(RLEN[:i]) for i in range(N)]
 T_OUTRO = T_INTRO + sum(RLEN); TOTAL = T_OUTRO + T_OUT + T_END
+NR = bool(SPEC.get('no_reveal'))  # owner 16 Nov 2026: never show the answer in the video; answers go in the first comment
 def rnd_at(t):
     for i in range(N - 1, -1, -1):
         if t >= RSTART[i]: return i, t - RSTART[i]
@@ -81,6 +82,9 @@ S = dict(
     htr=LOGO_BIG, tcg=np.zeros((2, 2, 4), np.uint8),
     e3=txt(SPEC.get('tease', 'كل أسبوع تحدي جديد'), FL(66), WHITE), ig=to_bgra(rrect(420, 86, 43, (28, 22, 50, 255), TEAL + (255,), 4)), igt=txt('@hatar_tcg', FB(46), (160, 240, 230)),
     loc=txt('معرضنا – أبحر الجنوبية، العليا سكوير، جدة', FL(42), LILAC), wm=LOGO_WM,
+    ans=txt('الجواب بأول تعليق', FL(128), WHITE, glow=GREEN, gr=26), q=txt('?', FB(110), WHITE, stroke=8, glow=PURPLE),
+    ctab=to_bgra(rrect(900, 110, 55, (20, 12, 40, 235), PURPLE + (255,), 4)), ctat=txt('تابعنا • لايك • احفظ • علّق ولو بنقطة', FL(58), WHITE),
+    shr=txt('أرسله لخويك وشوف مين يجيبها كلها!', FL(62), LILAC),
 )
 SCORES = [txt(s, FB(54), WHITE) for s in ('0/3', '1/3', '2/3', '3/3')]
 CHIP = to_bgra(rrect(170, 100, 26, (30, 24, 60, 255), PURPLE + (255,), 4)); CHIP_ON = to_bgra(rrect(170, 100, 26, GREEN + (255,), glow=GREEN))
@@ -121,7 +125,7 @@ def render(t):
     win = 0.0
     if T_INTRO <= t < T_OUTRO:
         i, lt = rnd_at(t); rv = THINK[i] + T_CD; R_LEN = RLEN[i]
-        if lt >= rv: win = min(1, (lt - rv) / .25) * (1 - max(0, (lt - R_LEN + .3) / .3))
+        if lt >= rv and not NR: win = min(1, (lt - rv) / .25) * (1 - max(0, (lt - R_LEN + .3) / .3))
     f = background(t, win)
     if t < T_INTRO:
         k = t; out = eo((t - T_INTRO + .3) / .3)
@@ -132,15 +136,15 @@ def render(t):
     elif t < T_OUTRO:
         i, lt = rnd_at(t); r = ROUNDS[i]; C = CARDS[i]; R_LEN = RLEN[i]; T_THINK = THINK[i]
         out = eo((lt - R_LEN + .3) / .3); inn = eo(lt / .35)
-        cd0 = T_THINK; rv = T_THINK + T_CD
-        if not (cd0 - .2 <= lt < rv): blit(f, RND[i], W / 2, 130, 1, inn * (1 - out))
+        cd0 = T_THINK; cde = T_THINK + T_CD; rv = 1e9 if NR else cde
+        if not (cd0 - .2 <= lt < cde): blit(f, RND[i], W / 2, 130, 1, inn * (1 - out))
         for j in range(N):
             col = GREEN if j < i else (PURPLE if j == i else (60, 52, 100)); cv2.circle(f, (int(W / 2 + (j - (N - 1) / 2) * 46), 200), 13 if j == i else 10, col[::-1], -1, cv2.LINE_AA)
-        if cd0 - .2 <= lt < rv: blit(f, S['lock'], W / 2, 125, ebk((lt - cd0 + .2) / .3), 1)
+        if cd0 - .2 <= lt < cde: blit(f, S['lock'], W / 2, 125, ebk((lt - cd0 + .2) / .3), 1)
         cx = W / 2 - 1300 * out + 1300 * (1 - inn); s = 1 + .05 * env(lt, rv, .4)
-        spr = C['g'] if lt >= rv else (C['d'] if cd0 <= lt < rv else C['n'])
+        spr = C['g'] if lt >= rv else (C['d'] if cd0 <= lt < cde else C['n'])
         blit(f, spr, cx, CARD_Y + 8 * math.sin(t * 2.2), s, 1, 2 * math.sin(t * 1.3) * (lt < rv))
-        if cd0 <= lt < rv:
+        if cd0 <= lt < cde:
             n = 3 - int(lt - cd0); kk = (lt - cd0) % 1
             blit(f, RING, cx, CARD_Y, 1, 1); blit(f, NUM[n], cx, CARD_Y + 8, 1.4 - .4 * eo(kk / .25), 1 - max(0, (kk - .8) / .2))
             ang = int(360 * kk); cv2.ellipse(f, (int(cx), CARD_Y), (150, 150), -90, 0, ang, (140, 230, 190), 12, cv2.LINE_AA)
@@ -153,6 +157,15 @@ def render(t):
             blit(f, BARS[state], x, y, sc, k2); blit(f, BADGE[(LET[j], state)], x + 320 * sc, y, sc, k2); blit(f, PRICE[(o, state)], x - 40, y, sc, k2)
             if state == 'ok': blit(f, CHECK, x - 320 * sc, y, ebk((lt - rv) / .3), 1)
         blit(f, S['src'], W / 2, 1680, 1, inn * (1 - out))
+    elif t < T_OUTRO + T_OUT and NR:
+        k = t - T_OUTRO; out = eo((k - T_OUT + .3) / .3)
+        blit(f, S['ans'], W / 2, 380 - 400 * out, ebk(k / .4) * (1 + .025 * math.sin(t * 6)), 1)
+        for j in range(N):
+            kk = ebk((k - .25 - j * .12) / .4); x = W / 2 + (j - 1) * 330
+            blit(f, CARDS[j]['small'], x, 830 + 600 * (1 - kk) + 900 * out, 1, 1 if kk > 0 else 0, (j - 1) * 5)
+            blit(f, S['q'], x, 830 + 900 * out, ebk((k - .7 - j * .1) / .3) * (1 + .06 * math.sin(t * 7 + j)), 1 if k > .7 else 0)
+        blit(f, S['ctab'], W / 2, 1330 + 900 * out, ebk((k - 1.3) / .35), 1 if k > 1.3 else 0); blit(f, S['ctat'], W / 2, 1330 + 900 * out, ebk((k - 1.3) / .35), 1 if k > 1.3 else 0)
+        blit(f, S['shr'], W / 2, 1480 + 900 * out, ebk((k - 1.6) / .35), 1 if k > 1.6 else 0)
     elif t < T_OUTRO + T_OUT:
         k = t - T_OUTRO; out = eo((k - T_OUT + .3) / .3)
         blit(f, S['how1'], W / 2, 330 - 400 * out, ebk(k / .4), 1)
@@ -171,7 +184,7 @@ def render(t):
         blit(f, S['loc'], W / 2, 1230, ebk((k - .6) / .35), 1 if k > .6 else 0)
     if t < T_OUTRO + T_OUT: blit(f, S['wm'], W - 130, 85, .9, 1)
     fl = 0.0
-    for i in range(N): fl += env(t, RSTART[i] + THINK[i] + T_CD, .15) * .5
+    for i in range(N): fl += 0 if NR else env(t, RSTART[i] + THINK[i] + T_CD, .15) * .5
     fl += env(t, T_OUTRO + T_OUT, .15) * .5
     f = np.clip(f + (255 - f) * fl, 0, 255)
     if t > TOTAL - .4: f = f * max(0, (TOTAL - t) / .4)
