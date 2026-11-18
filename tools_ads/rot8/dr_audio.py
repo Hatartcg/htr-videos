@@ -56,7 +56,7 @@ def fade(x, f=.01): k = int(f * SR); x = x.copy(); x[:k] *= np.linspace(0, 1, k)
 def lev(x): return x / (np.sqrt(np.mean(x[np.abs(x) > .02] ** 2)) + 1e-9) * .18
 V = np.zeros(N)
 for i in (1, 2, 3, 4, 5, 7): add(V, C['off'][f'L{i}'], fade(lev(rd(R + f'fetch/r8v4_L{i}' + ('b' if i == 7 else '') + '.mp3'))))
-sp = C['L6_splice']; xa = fade(rd(R + sp['a'])[:int(sp['a_end'] * SR)]); xb = fade(rd(R + sp['b']))
+sp = C['L6_splice']; xa = fade(rd(R + sp['a'])[:int(sp['a_end'] * SR)]); k = int(sp.get('tail_fade', .01) * SR); xa[-k:] *= np.linspace(1, 0, k) ** 1.5; xb = fade(rd(R + sp['b']))
 xa, xb = lev(xa), lev(xb); add(V, C['off']['L6'], xa); add(V, C['off']['L6'] + sp['a_end'] + sp['gap'], xb)
 w = int(.12 * SR); env = np.convolve(np.abs(V), np.ones(w) / w, 'same'); env = np.clip(env / (np.percentile(env[env > 1e-4], 70) + 1e-9), 0, 1)
 bed = (mus / np.abs(mus).max() * .55 + drm / np.abs(drm).max() * .6) * (1 - .62 * env)

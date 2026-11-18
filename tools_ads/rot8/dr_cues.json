@@ -31,9 +31,10 @@
  },
  "L6_splice": {
   "a": "fetch/r8v4_L6.mp3",
-  "a_end": 0.86,
-  "gap": 0.06,
+  "a_end": 0.845,
+  "gap": 0.05,
   "b": "audio/ref_htr_word.mp3",
-  "note": "approved 30th Celebration ending «في معرضنا في أبحر الجنوبية في العليا سكوير» (Heroines Battle «ممتاز»)"
+  "note": "approved 30th Celebration ending «في معرضنا في أبحر الجنوبية في العليا سكوير» (Heroines Battle «ممتاز»)",
+  "tail_fade": 0.05
  }
 }
