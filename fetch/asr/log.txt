@@ -1,3 +1,3 @@
-Wed Nov 18 17:49:39 UTC 2026
+Wed Nov 18 17:53:02 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-r8_zoorna_check3.mp3 PASS match 0.95 cps 11.2 unclear [('زورنا', np.float64(0.74))] banned [] diff [{'op': 'insert', 'expected': '', 'heard': 'هنه'}]
+r8_zoorna_check4.mp3 PASS match 1.0 cps 10.7 unclear [('زورنا', np.float64(0.71))] banned [] diff []
