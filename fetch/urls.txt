@@ -1,3 +1,1 @@
-rot_op.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/IfDdmrxR0Kb3ICg23XZP/9V6otnbZKyQMFu49CqwW/content.mp3?Expires=1794985200&KeyName=assets-cdn-key-1&Signature=HhE4K99PNjAMn7VLIG3CUKSuhqI=
-rot_dy.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/1wUDIms1njxPqNYIyCE8/lenFsGbTZYR4G9jRrTl9/content.mp3?Expires=1794985200&KeyName=assets-cdn-key-1&Signature=m2tHMEndoeQUUdB2dots5OxQ0P4=
-rot_show.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/JSH88UL3vegvhunadcRp/0I8WtcbmPGoCnhWOQnat/content.mp3?Expires=1794985200&KeyName=assets-cdn-key-1&Signature=UssDZEGK2bqERTKOmlEklP3syNM=
+oh_sitemap2.xml https://otakkuhaveen.com/ar/sitemap-2.xml
