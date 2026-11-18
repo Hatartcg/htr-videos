@@ -32,6 +32,10 @@ CFG = {
     'bleachswords': dict(TOTAL=14.2, T_END2=12.8, T_GAME=1.3, T_PROD=2.26, T_NAME=2.66, T_F2=3.42, T_C1=6.62, T_F1=6.62, T_F1b=8.5, T_PRICE=9.6, T_CTA=11.46,
                 game=['BLEACH'], hook=['أي زانباكتو', 'بتختار؟'], name=['BLEACH SWORDS', 'ZANPAKUTO'], caps=['', 'تصاميم كثيرة', 'كل شخصية بتصميمها'], cap2='اختار سيف شخصيتك',
                 price='214', seed=314, hook_fs=130, accent=(255, 61, 154), game_sm='BLEACH', h0=True),
+    'dds': dict(TOTAL=13.95, T_END2=12.9, T_GAME=1.9, T_PROD=2.5, T_NAME=2.98, T_F2=3.86, T_C1=6.34, T_F1=6.34, T_F1b=7.58, T_PRICE=8.9, T_CTA=11.62,
+                game=['DANDADAN'], hook=['ستايل داندادان', 'وصل!'], name=['DANDADAN T-SHIRT', 'ANIME MERCH'], caps=['', 'تلبسه وتبيّن', 'إنك من الفانز'], cap2='مستوحى من داندادان',
+                price='131', seed=1118, hook_fs=118, accent=(139, 92, 246), game_sm='DANDADAN', h0=True, cut=True,
+                punch=[(0, .14, .6), (2.5, .1, .35), (6.34, .08, .3), (7.0, .05, .3), (7.58, .06, .3), (8.4, .05, .3), (8.9, .12, .35), (9.42, .05, .3), (9.95, .06, .3), (10.52, .06, .3), (11.62, .1, .35), (12.9, .14, .35), (13.2, .08, .25), (13.45, .08, .25), (13.7, .08, .25)], impact=[2.5, 11.62, 12.9]),
 }[KEY]
 RED = CFG.get('accent', RED)
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
@@ -222,6 +226,17 @@ def render(t):
     f = grain_vig_bars(np.clip(f, 0, 255), t, 6 * env(t, CFG['T_END2'], .3))
     f = np.clip(f, 0, 255).astype(np.uint8)
     if t > TOTAL - .25: f = (f * max(0, (TOTAL - t) / .25)).astype(np.uint8)
+    return f
+
+# ---------- punch-in zooms + impact frames (CFG punch=[(t, amt, dur)], impact=[t]); impact frames count as cuts in reel_score ----------
+_render1 = render
+def render(t):
+    f = _render1(t)
+    z = 1 + sum(a * max(0, 1 - (t - tc) / d) ** 2 for tc, a, d in CFG.get('punch', []) if 0 <= t - tc < d)
+    if z > 1.001:
+        M = cv2.getRotationMatrix2D((W / 2, H / 2), 0, z); f = cv2.warpAffine(f, M, (W, H), borderMode=cv2.BORDER_REFLECT)
+    for tc in CFG.get('impact', []):
+        if 0 <= t - tc < 2 / FPS: f = 255 - f
     return f
 
 if __name__ == '__main__':
