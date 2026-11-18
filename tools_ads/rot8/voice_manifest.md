@@ -10,3 +10,4 @@ L5 50  اطلب من موقعنا، والتوصيل لين باب بيتك...
 L6 47  أُو زورنا في معرضنا في العُليا سكوير!
 L7 36  علّق ولو بنقطة... وتابعنا!
 v4 total 387 cr (+340 wasted v3) = 727 cr for this video
+L7b 47  علّق ولو بنقطة، لايك وسيف... وتابعنا! (replaces L7: like/save required in voice; session TXPrFJw1tPDhpkcUy8ou)
