@@ -73,10 +73,10 @@
  },
  "olaya_square": {
   "file": "voice_bank/olaya_square.mp3",
-  "text": "بالعليا سكوير (إطلاق Delta Reign 6 نوفمبر – بانتظار تأكيد هادي)",
+  "text": "بالعليا سكوير — مرفوض من هادي 18 نوفمبر (نطق غلط) — لا تستخدمه",
   "source": "dr_vo.mp3",
   "start": 14.97,
   "end": 15.92,
-  "approved": "pending"
+  "approved": "rejected-by-hadi-18nov"
  }
 }
