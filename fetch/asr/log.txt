@@ -1,3 +1,3 @@
-Wed Nov 18 06:58:34 UTC 2026
+Wed Nov 18 10:34:25 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-g7aud.mp3 FAIL match 0.0 cps 9.6 unclear [('خم', np.float64(0.68)), ('من', np.float64(0.74)), ('أول', np.float64(0.72)), ('ريفت', np.float64(0.67)), ('كم', np.float64(0.79)), ('يوغي', np.float64(0.76)), ('أو', np.float64(0.54)), ('أمبريون', np.float64(0.79)), ('بوليس', np.float64(0.79))] banned [] diff [{'op': 'replace', 'expected': 'تحدي خمن السعر', 'heard': 'ثلاث كروت خم من سعرهه اول كرت من ريفت باوند كم سعرهه الثاني من يوغي او فكر زين والاخير من بوكيمون امبريون القديم من اكو بوليس الجواب باول تعليق شارك الفيديو مع اخويك وشوف مين يجيبهه كلهه'}]
+rot_olaya3.mp3 PASS match 1.0 cps 11.5 unclear [] banned [] diff []
