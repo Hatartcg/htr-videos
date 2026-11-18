@@ -1,0 +1,91 @@
+{
+ "set_title": "HYPERIA CITY",
+ "set_short": "HYPERIA CITY",
+ "game": "DISNEY LORCANA",
+ "source": "سعر السوق في TCGplayer · 18 نوفمبر 2026",
+ "tease": "تابعنا عشان التحدي الجاي!",
+ "cards": [
+  {
+   "price": 122.5,
+   "name": "REMEMBER ME",
+   "rarity": "Enchanted · 225/204",
+   "img": "/home/claude/t10/img/hc_722575.jpg"
+  },
+  {
+   "price": 125.19,
+   "name": "MERLIN - PROFOUNDLY CURIOUS",
+   "rarity": "Enchanted · 227/204",
+   "img": "/home/claude/t10/img/hc_722577.jpg"
+  },
+  {
+   "price": 147.91,
+   "name": "MARIE - CAUGHT IN THE ACT",
+   "rarity": "Enchanted · 238/204",
+   "img": "/home/claude/t10/img/hc_722588.jpg"
+  },
+  {
+   "price": 154.07,
+   "name": "RAPUNZEL - OUTGOING ARTIST",
+   "rarity": "Enchanted · 226/204",
+   "img": "/home/claude/t10/img/hc_722576.jpg"
+  },
+  {
+   "price": 183.63,
+   "name": "AURORA - DELIGHTFUL MUSICIAN",
+   "rarity": "Enchanted · 223/204",
+   "img": "/home/claude/t10/img/hc_722573.jpg"
+  },
+  {
+   "price": 221.75,
+   "name": "MAX GOOF - KARAOKE STAR",
+   "rarity": "Enchanted · 229/204",
+   "img": "/home/claude/t10/img/hc_722579.jpg"
+  },
+  {
+   "price": 229.44,
+   "name": "BELLE - EXCEPTIONAL WRITER",
+   "rarity": "Enchanted · 230/204",
+   "img": "/home/claude/t10/img/hc_722580.jpg"
+  },
+  {
+   "price": 351.78,
+   "name": "ARIEL - COLLECTOR OF ODDITIES",
+   "rarity": "Enchanted · 236/204",
+   "img": "/home/claude/t10/img/hc_722586.jpg"
+  },
+  {
+   "price": 1052.75,
+   "name": "CINDERELLA - UNINTENTIONAL ICON",
+   "rarity": "Iconic · 242/204",
+   "img": "/home/claude/t10/img/hc_722592.jpg"
+  },
+  {
+   "price": 0,
+   "name": "HIDDEN",
+   "rarity": "",
+   "img": "/home/claude/t10/img/hc_722591.jpg"
+  }
+ ],
+ "answer": {
+  "name": "MICKEY MOUSE - BEST IN TOWN (Iconic 241/204)",
+  "price": 1871.37
+ },
+ "timing": {
+  "intro": 5.5,
+  "dur": [
+   3.8,
+   3.6333333333333333,
+   3.8666666666666667,
+   3.8333333333333335,
+   3.8666666666666667,
+   3.8666666666666667,
+   3.6,
+   3.8666666666666667,
+   4.266666666666667
+  ],
+  "mystery": 6.633333333333334,
+  "cta": 6.266666666666667,
+  "end": 2.8,
+  "ib": 2.85
+ }
+}
