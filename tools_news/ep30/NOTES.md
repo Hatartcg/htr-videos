@@ -11,3 +11,8 @@ Rejected: Franky alt-art OP18-021 $200 (only "est." pre-release), Japan Nov 21 /
 Images: official box/pack/key art (fetch/rel_op18_box2.webp, op18_item.webp, rel_op18_mv.webp), alpha flattened on white.
 Music: pirate minor pluck Dm–Bb–C–A, 100 bpm, seed 30.
 reel_score: 82/100, no red seconds. Prediction (news, 19 Nov 13:00): IG 2%, TikTok 0%, YouTube 0% → «ما بيفلير». Owner gate (≥70%, no exceptions, 17 Nov) → not scheduled; owner asked to decide (news slot vs gate).
+
+## v2 — Wed 18 Nov 06:5x run (edit only, 0 new credits)
+Repeat check vs news_log 2026-11-03 (OP-18 out Nov 20 + Saint Gunko/Shamrock debut) → spliced out "وينزل بالإنجليزي عشرين نوفمبر … سانت قنكو وسانت شامروك" (voice_full 12.78–18.68, both cuts in silence) — cut_v2.py, episode_v2.json, words_video_v2.json. Kept: hook box $120 → +$200, 127+1 cards, $4.99/pack, 24 packs, tip $9/pack, CTA.
+Length 29.54 s (just under 30). reel_score v2: 84/100 (v1 82), no red seconds; prediction news 19 Nov 13:00 p=0.07 «ما بيفلير». Owner gate decision for news still pending → not scheduled.
+videos/news_ep30_ig.mp4 replaced by v2; news_ep30_tt.mp4 = copy.

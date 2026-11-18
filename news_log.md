@@ -98,3 +98,6 @@ Format: date | game | item
 2026-11-17 | Pokémon | 30th Celebration UPC out Nov 6, 2026: Day = Espeon ex promo, Night = Umbreon ex promo, 29 packs per box (TCG Protectors + GameRant)
 2026-11-17 | Prices | Night UPC is the pricier version: "+$350" (eBay sold Nov 15 ~$385 + TCGplayer $383 / Kontora $369)
 2026-11-17 | Tips | Compare a sealed box's price with its official MSRP before buying
+2026-11-19 | Prices | HOOK: One Piece OP-18 THE DOMINANCE OF GOD booster box MSRP $119.76 (24 × $4.99) → sells "+$200" (TCGplayer market $218 via onepiece.app, Nov 16 + Chase Society $219.66, Nov 15)
+2026-11-19 | One Piece | OP-18 = 127+1 card types; official pack price $4.99, 24 packs per box (Bandai official product page)
+2026-11-19 | Tips | Work out the price per pack before buying a box — at $218 a pack costs ~$9 vs $4.99 official
