@@ -1,2 +1,8 @@
-oh1118_vo_a.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/MG3skPfT1VwgVRjkE5Se/gYAY0f5R2CFcFxcBwwwV/content.mp3?Expires=1794985200&KeyName=assets-cdn-key-1&Signature=9Mvs4Cz-kZ1855RDRmhBCgEPfX0=
-oh1118_vo_b.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/GpIn8neF1xeWTb4WvCgk/gpddKgVbViYbbvL2mnyu/content.mp3?Expires=1794985200&KeyName=assets-cdn-key-1&Signature=UJ7OEyj6LJnrkUBRZFvSnHiQVTo=
+lor_groups.json https://tcgcsv.com/tcgplayer/71/groups
+ygo_groups.json https://tcgcsv.com/tcgplayer/2/groups
+l24740_p.json https://tcgcsv.com/tcgplayer/71/24740/products
+l24740_r.json https://tcgcsv.com/tcgplayer/71/24740/prices
+l24617_p.json https://tcgcsv.com/tcgplayer/71/24617/products
+l24617_r.json https://tcgcsv.com/tcgplayer/71/24617/prices
+y328_p.json https://tcgcsv.com/tcgplayer/2/328/products
+y328_r.json https://tcgcsv.com/tcgplayer/2/328/prices
