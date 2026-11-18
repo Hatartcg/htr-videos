@@ -1,3 +1,3 @@
-Wed Nov 18 17:24:01 UTC 2026
+Wed Nov 18 17:43:13 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-ref_olaya_check.mp3 FAIL match 0.94 cps 14.8 unclear [] banned [] diff [{'op': 'insert', 'expected': '', 'heard': 'اشتركوه'}]
+r8_zoorna_check.mp3 FAIL match 0.82 cps 11.6 unclear [('اوه', np.float64(0.59)), ('زورنا', np.float64(0.71)), ('هنا', np.float64(0.65))] banned [] diff [{'op': 'replace', 'expected': 'او', 'heard': 'اوه'}, {'op': 'insert', 'expected': '', 'heard': 'هنه'}, {'op': 'insert', 'expected': '', 'heard': 'وزوروه'}]
