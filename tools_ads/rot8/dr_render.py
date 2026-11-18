@@ -203,6 +203,12 @@ def scene7b(t, f):  # showroom close-up (cut on «زورنا»)
         xl = int(100 + i * 150 + sh); cv2.line(f, (xl, 480), (xl + 60, 1320), (170, 165, 175), 4, cv2.LINE_AA)
     k = ebk((t - T['olaya']) / .35) if t > T['olaya'] else 0; blit(f, PIN, 540, 900 - 160 * (1 - k) + 12 * math.sin(t * 5), 2.0, .35 + .65 * cl((t - T['olaya']) / .1))
     blit(f, P_OLAYA, 540, 1250, 1.2 + .04 * math.sin(t * 6)); blit(f, T_ABHUR, 540, 1400, 1, cl((dt - .3) / .2))
+T_OLAYA_BIG = text_sprite('العُليا سكوير', FL(190), fill=(255, 255, 255))
+T_ABHUR_W = text_sprite('أبحر الجنوبية – جدة', FL(84), fill=(220, 255, 250))
+def scene7c(t, f):  # cut on «العليا»: teal full card, name big
+    dt = t - T['olaya2']; f[:] = np.array([120, 140, 20], np.float32) * (0.9 + 0.1 * math.sin(t * 3))
+    blit(f, PIN, 540, 640 + 10 * math.sin(t * 6), 2.4); blit(f, T_OLAYA_BIG, 540, 980, 1.0 + .25 * (1 - ebk(dt / .3)))
+    blit(f, T_ABHUR_W, 540, 1180, 1, cl((dt - .15) / .2))
 def scene8(t, f):  # outro = hook frame (loop) + like/save/comment/follow
     scene1(t, f); dt = t - T['s7']
     blit(f, T_CMT, 560, 1560, 1, cl(dt / .2)); blit(f, T_LIKE, 560, 1680, 1, cl((dt - .2) / .2))
@@ -212,7 +218,7 @@ def scene8b(t, f):  # last card (cut on «وتابعنا»): logo + follow
     dt = t - T['s8']; blit(f, LOGO, 540, 760 + 14 * math.sin(t * 7), 1.0 + .12 * (1 - ebk(dt / .3)), 1, 3 * math.sin(t * 5))
     blit(f, P_FOLLOW, 540, 1080, 1.4 + .12 * abs(math.sin(t * 7))); blit(f, T_LIKE, 540, 1260, 1)
 
-SC = [('s1', scene1), ('s2', scene2), ('hit', scene3), ('s4', scene4), ('mega', scene5), ('s5', scene6), ('price', scene6b), ('save', scene6c), ('s6', scene7), ('s6b', scene7b), ('s7', scene8), ('s8', scene8b)]
+SC = [('s1', scene1), ('s2', scene2), ('hit', scene3), ('s4', scene4), ('mega', scene5), ('s5', scene6), ('price', scene6b), ('save', scene6c), ('s6', scene7), ('s6b', scene7b), ('olaya2', scene7c), ('s7', scene8), ('s8', scene8b)]
 WHIPS = [T['s4'], T['s5']]
 def render(t):
     f = background(t, .75 if T['s2'] <= t < T['hit'] else 1.0)
