@@ -1,8 +1,9 @@
-Wed Nov 18 12:53:22 UTC 2026
+Wed Nov 18 13:54:20 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-g19L1.mp3 FAIL match 0.67 cps 12.4 unclear [] banned [] diff [{'op': 'replace', 'expected': 'خمن', 'heard': 'كم من'}]
-g19L2.mp3 FAIL match 0.5 cps 8.7 unclear [('أول', np.float64(0.75)), ('إيريليا', np.float64(0.75)), ('B,', np.float64(0.71))] banned [] diff [{'op': 'replace', 'expected': 'ريفت باوند', 'heard': 'ريستباوند'}, {'op': 'replace', 'expected': 'Signature', 'heard': 'سيجنتشر'}, {'op': 'replace', 'expected': 'ايه بي وله سي', 'heard': 'A B C'}]
-g19L3.mp3 FAIL match 0.55 cps 10.1 unclear [('جي', np.float64(0.73)), ('دراجوماستر', np.float64(0.72))] banned [] diff [{'op': 'replace', 'expected': 'يوغي اوو دراقون ماستر ماجيه', 'heard': 'يو جي او دراجوماستر ماغيه'}]
-g19L4.mp3 PASS match 1.0 cps 10.8 unclear [] banned [] diff []
-g19L5.mp3 PASS match 0.89 cps 7.9 unclear [] banned [] diff [{'op': 'replace', 'expected': 'تعليق', 'heard': 'كعليق'}]
-g19L6.mp3 FAIL match 0.83 cps 13.1 unclear [] banned [] diff [{'op': 'replace', 'expected': 'ابحر', 'heard': 'ابحار'}]
+r8v4_L1.mp3 FAIL match 0.55 cps 8.3 unclear [('بكم', np.float64(0.76))] banned [] diff [{'op': 'replace', 'expected': 'دلته رين', 'heard': 'دلترين'}, {'op': 'replace', 'expected': 'تتوقعه', 'heard': 'تتوقع'}]
+r8v4_L2.mp3 FAIL match 0.57 cps 5.3 unclear [('850', np.float64(0.57))] banned [] diff [{'op': 'replace', 'expected': 'تسعميه وثمانين ثمنميه وخمسين', 'heard': '980 850'}]
+r8v4_L3.mp3 FAIL match 0.87 cps 8.7 unclear [('36', np.float64(0.64)), ('وكل', np.float64(0.7)), ('لك', np.float64(0.78))] banned [] diff [{'op': 'replace', 'expected': 'سته وثلاثين', 'heard': '36'}]
+r8v4_L4.mp3 FAIL match 0.5 cps 6.9 unclear [('6', np.float64(0.47)), ('ب4800', np.float64(0.71))] banned [] diff [{'op': 'replace', 'expected': 'ست', 'heard': '6'}, {'op': 'replace', 'expected': 'باربعه الاف وثمنميه', 'heard': 'ب4800'}, {'op': 'replace', 'expected': 'ثلاثميه', 'heard': '300'}]
+r8v4_L5.mp3 FAIL match 0.77 cps 9.7 unclear [] banned [] diff [{'op': 'replace', 'expected': 'لين باب', 'heard': 'لينباب'}]
+r8v4_L6.mp3 PASS match 0.92 cps 11.0 unclear [('زورنا', np.float64(0.64))] banned [] diff [{'op': 'delete', 'expected': 'او', 'heard': ''}]
+r8v4_L7.mp3 PASS match 1.0 cps 8.3 unclear [] banned [] diff []
