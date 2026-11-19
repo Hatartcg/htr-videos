@@ -1,2 +1,3 @@
-r8op_AV.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/tnQcCF512KKnJXlqZO99/O7WA29I49x9kdJVIFV0G/content.mp3?Expires=1795086000&KeyName=assets-cdn-key-1&Signature=xao3kOdscm66FPZeTXVAkuRh90I=
-r8op_WAIT.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/fdbNKw87GBVsGeE0xzmK/SmgGWYuQInPwHSney34B/content.mp3?Expires=1795086000&KeyName=assets-cdn-key-1&Signature=mApegjBGirARERwKH0wCf0wKPwc=
+ygo_maestros_box.webp https://www.htrtcg.com/products/new/yugioh-magnificent-maestros-box.webp
+ygo_monsters_box.jpg https://mhcgvy2bpk3u627e.public.blob.vercel-storage.com/products/legacy2-2-1793063889733-pnKuIeiKgpnu25ZcYcVLKn8Oe3C3ZB.jpg
+digi_ad01_box.webp https://www.htrtcg.com/products/styled/33-digimon-card-game-advanced-booster-digimon-generation-ad-01-.webp
