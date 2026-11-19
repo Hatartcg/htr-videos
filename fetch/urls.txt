@@ -1,10 +1,1 @@
-ep31_mewR.jpg https://tcgplayer-cdn.tcgplayer.com/product/717607_in_1000x1000.jpg
-ep31_mew608.jpg https://tcgplayer-cdn.tcgplayer.com/product/717608_in_1000x1000.jpg
-ep31_mew609.jpg https://tcgplayer-cdn.tcgplayer.com/product/717609_in_1000x1000.jpg
-ep31_mew606.jpg https://tcgplayer-cdn.tcgplayer.com/product/717606_in_1000x1000.jpg
-ep31_row.jpg https://www.wargamer.com/wp-content/sites/wargamer/2026/09/pokemon-tcg-30th-celebration-RGB-mew-real-cards-row.jpg
-ep31_kotaku.jpg https://kotaku.com/app/uploads/2026/09/rgb-mews.jpg
-ep31_gemx.html https://gemxtcg.com/sets/30th-celebration
-ep31_cardrakeG.html https://www.cardrake.com/cards/cel30-G-RGB
-ep31_cardrakeB.html https://www.cardrake.com/cards/cel30-B-RGB
-ep31_pc.html https://www.pricecharting.com/search-products?q=mew+rgb+30th+celebration&type=prices
+ep31_voice.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/L6M5BBn6yeQpIf3R8oO6/kU5kO4niP0p8YljYzWn4/content.mp3?Expires=1795068000&KeyName=assets-cdn-key-1&Signature=DGncAKea-ciXEteQhcutfeh_fTA=
