@@ -29,6 +29,10 @@ CFG = {
                game='ONE PIECE', name=['HOODIE'], hook='ارفع علم قبعة القش!', big='STRAW HAT',
                stats=[('ألوان كثيرة', 1.0)], uses=['تختار اللي يناسبك'], price='200', seed=200, cutout=True, chk_dx=330,
                alt_w=900, alt_pos=(W / 2, H * .70, .9), hook_fs=74, h0=True, bar_w=300, impact=[5.78, 7.3, 11.66], punch=[(7.3, .07, 1.4)]),
+    'eren': dict(TOTAL=12.9, T_GAME=1.06, T_PROD=2.62, T_NAME=2.98, T_F1=4.86, T_F1b=99, T_F2=6.7, T_PRICE=8.66, T_CTA=9.94, T_END2=11.3,
+               game='ATTACK ON TITAN', name=['EREN HOODIE'], hook='حرّر العملاق اللي فيك!', big='TITAN',
+               stats=[('طباعة دقيقة', 1.0)], uses=['متوفر بألوان متعددة'], price='200', seed=212, cutout=True, chk_dx=380,
+               alt_w=900, alt_pos=(W / 2, H * .75, .85), hook_fs=74, h0=True, bar_w=300, impact=[2.62, 4.86, 6.7, 8.66, 9.94, 11.3], punch=[(6.7, .07, 1.4), (3.86, .06, .6)]),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; rng = np.random.default_rng(CFG['seed'])
