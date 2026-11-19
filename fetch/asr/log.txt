@@ -1,3 +1,3 @@
-Thu Nov 19 13:54:10 UTC 2026
+Thu Nov 19 14:55:19 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-st_W8b.mp3 PASS match 0.91 cps 11.2 unclear [('أي', np.float64(0.69))] banned [] diff [{'op': 'replace', 'expected': 'قول', 'heard': 'قل'}]
+st_W4b.mp3 FAIL match 0.4 cps 8.3 unclear [('سينجلز', np.float64(0.69)), ('سي', np.float64(0.73))] banned [] diff [{'op': 'replace', 'expected': 'Singles', 'heard': 'سينجلز'}, {'op': 'replace', 'expected': 'CGC', 'heard': 'سي جي سي'}]
