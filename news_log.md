@@ -101,3 +101,6 @@ Format: date | game | item
 2026-11-19 | Prices | HOOK: One Piece OP-18 THE DOMINANCE OF GOD booster box MSRP $119.76 (24 × $4.99) → sells "+$200" (TCGplayer market $218 via onepiece.app, Nov 16 + Chase Society $219.66, Nov 15)
 2026-11-19 | One Piece | OP-18 = 127+1 card types; official pack price $4.99, 24 packs per box (Bandai official product page)
 2026-11-19 | Tips | Work out the price per pack before buying a box — at $218 a pack costs ~$9 vs $4.99 official
+2026-11-22 | Prices | HOOK: 30th Celebration secret Mew R/RGB (RGB Rare) "$4,000" market (TCGplayer market $4,110–4,316 via Cardrake Nov 17 / GemX Nov 18 + PriceCharting ungraded $3,936, Nov 19)
+2026-11-22 | Prices | RGB Mew has 3 versions red/green/blue, each "+$3,000" (G cheapest: TCGplayer $3,391 / PriceCharting $3,293; B $4,277 / $3,796); red = most expensive; not in the set's printed checklist (Wargamer + CardPrice + Cardrake)
+2026-11-22 | Tips | Secret cards aren't on the set checklist — check the price of any strange card you pull before selling it
