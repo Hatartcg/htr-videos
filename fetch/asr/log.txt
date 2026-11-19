@@ -1,4 +1,8 @@
-Thu Nov 19 08:46:05 UTC 2026
+Thu Nov 19 09:34:36 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-r8op_AV.mp3 FAIL match 0.86 cps 10.2 unclear [('رح', np.float64(0.78)), ('أونلاين', np.float64(0.79))] banned [] diff [{'op': 'replace', 'expected': 'راح', 'heard': 'رح'}]
-r8op_WAIT.mp3 FAIL match 0.83 cps 9.5 unclear [('وش', np.float64(0.5)), ('وان', np.float64(0.56))] banned [] diff [{'op': 'replace', 'expected': 'ون', 'heard': 'وان'}]
+r8yd_Y1.mp3 PASS match 1.0 cps 10.0 unclear [] banned [] diff []
+r8yd_Y2.mp3 FAIL match 0.2 cps 8.4 unclear [('جنرايشن', np.float64(0.78)), ('AD01', np.float64(0.5))] banned [] diff [{'op': 'replace', 'expected': 'Digimon Generation AD zero one', 'heard': 'ديجيمون جنرايشن AD01'}]
+r8yd_Y3.mp3 FAIL match 0.0 cps 66.8 unclear [('يو', np.float64(0.35)), ('جي', np.float64(0.59))] banned [] diff [{'op': 'replace', 'expected': 'ضد يوغي اوو Magnificent Monsters', 'heard': 'يو جي اوووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووووو'}]
+r8yd_Y4.mp3 PASS match 1.0 cps 9.8 unclear [('مين', np.float64(0.76))] banned [] diff []
+r8yd_AV.mp3 PASS match 1.0 cps 10.1 unclear [] banned [] diff []
+r8yd_SH.mp3 FAIL match 0.96 cps 9.6 unclear [('اللي', np.float64(0.79)), ('وسيف', np.float64(0.67))] banned [] diff [{'op': 'delete', 'expected': 'اوو', 'heard': ''}]
