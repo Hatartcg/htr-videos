@@ -4,11 +4,16 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 R = '/home/claude/htr-videos/'; F = R + 'fetch/'; OUT = sys.argv[1] if len(sys.argv) > 1 else '/home/claude/work/dr_v.mp4'
 RANGE = (float(sys.argv[2]), float(sys.argv[3])) if len(sys.argv) > 3 else None
 W, H, FPS = 1080, 1920, 30
-C = json.load(open(R + 'tools_ads/rot8/dr_cues.json')); T = C['t']; TOTAL = C['total']
+import os
+C = json.load(open(R + 'tools_ads/rot8/' + os.environ.get('CUES', 'dr_cues.json'))); T = C['t']; TOTAL = C['total']
 def FL(s): return ImageFont.truetype(F + 'font_lalezar.ttf', s)
 def FB(s): return ImageFont.truetype(F + 'font_bungee.ttf', s)
 def FA(s): return ImageFont.truetype(F + 'font_anton.ttf', s)
 PURP = (90, 70, 80); CRIM = (210, 25, 50); INK = (28, 22, 30); TEAL = (46, 196, 182); WHITE = (255, 255, 255); DEEP = (14, 8, 34); PINK = (255, 80, 160); GOLDG = (255, 190, 90)
+DARK = os.environ.get('THEME') == 'dark'
+if DARK: INK = (250, 246, 240); PURP = (230, 40, 70)
+POP = os.environ.get('THEME') == 'pop'
+if POP: INK = (255, 255, 255); CRIM = (22, 28, 74); PURP = (20, 10, 40)
 def cl(x): return min(max(x, 0.0), 1.0)
 def eo(x): x = cl(x); return 1 - (1 - x) ** 3
 def eio(x): x = cl(x); return 3 * x * x - 2 * x ** 3
@@ -71,10 +76,19 @@ def radial(cx, cy, r): return np.exp(-(((xx - cx) ** 2 + (yy - cy) ** 2) / (r * 
 BASE = np.zeros((H, W, 3), np.float32); BASE[:] = (222, 224, 230)
 BASE += radial(420, 700, 700) * np.array([22, 24, 25], np.float32)
 BASE -= radial(980, 1850, 600) * np.array([40, 40, 30], np.float32)
+if DARK:
+    BASE = np.zeros((H, W, 3), np.float32); BASE[:] = (40, 22, 12)
+    BASE += radial(700, 600, 700) * np.array([90, 60, 20], np.float32)
+    BASE += radial(300, 1700, 600) * np.array([40, 20, 120], np.float32)
 beam = np.zeros((H, W), np.float32); cv2.fillPoly(beam, [np.array([[0, 320], [470, 0], [640, 0], [0, 760]])], 1.0); beam = cv2.GaussianBlur(beam, (0, 0), 45)
 BEAM = beam[..., None] * np.array([12, 10, 8], np.float32)
+if DARK: BEAM = beam[..., None] * np.array([120, 110, 90], np.float32) * .25
 rng = np.random.default_rng(8); DUST = [(rng.uniform(0, W), rng.uniform(0, H), rng.uniform(1.2, 3.2), rng.uniform(0, 6.28), rng.uniform(.2, .8)) for _ in range(70)]
 VIG = (1 - .12 * np.clip(((xx - 540) ** 2 / 540 ** 2 + (yy - 960) ** 2 / 1100 ** 2) - .35, 0, 1))[..., None]
+BG_RED = np.zeros((H, W, 3), np.float32); BG_RED[:] = (40, 30, 200); BG_RED += radial(540, 700, 800) * np.array([30, 40, 50], np.float32)
+BG_NAVY = np.zeros((H, W, 3), np.float32); BG_NAVY[:] = (170, 150, 20); BG_NAVY += radial(540, 800, 800) * np.array([40, 40, 20], np.float32)
+BG_TEAL = np.zeros((H, W, 3), np.float32); BG_TEAL[:] = (120, 140, 20)
+POP_BG = {'sceneQ2': BG_NAVY, 'scene5': BG_NAVY, 'scene7b': BG_NAVY, 'scene4b': BG_NAVY, 'sceneQb': BG_NAVY, 'scene5b': BG_RED, 'scene8b': BG_TEAL}
 def background(t, light=1.0):
     f = BASE + BEAM * (0.8 + 0.2 * math.sin(t * 1.3))
     if t < T['s2']: t = t * .35  # hook: dust slow (calm first 3 s)
@@ -116,9 +130,9 @@ def stamp_sprite():
     f = FL(130); s = 'وفّر 300 ريال'; bb = d.textbbox((0, 0), s, font=f); d.text((380 - (bb[2] + bb[0]) / 2, 130 - (bb[3] + bb[1]) / 2), s, font=f, fill=(255, 255, 255))
     return to_bgra(im)
 STAMP = stamp_sprite()
-T_SITE = text_sprite('HTRTCG.COM', FB(92), fill=(0, 130, 120))
+T_SITE = text_sprite('HTRTCG.COM', FB(92), fill=(255, 255, 255) if POP else (0, 130, 120))
 T_SHIP = text_sprite('التوصيل لين باب بيتك', FL(96), fill=INK)
-P_OLAYA = pill('العُليا سكوير', FL(84), (40, 160, 150)); T_ABHUR = text_sprite('أبحر الجنوبية – جدة', FL(72), fill=(90, 85, 95))
+P_OLAYA = pill('العُليا سكوير', FL(84), (40, 160, 150)); T_ABHUR = text_sprite('أبحر الجنوبية – جدة', FL(72), fill=(255, 255, 255) if POP else (90, 85, 95))
 T_CMT = text_sprite('علّق ولو بنقطة', FL(124), fill=INK); P_FOLLOW = pill('تابع HTR', FL(78), (200, 25, 55)); T_LIKE = text_sprite('لايك وسيف', FL(124), fill=INK)
 def pin_sprite():
     im = Image.new('RGBA', (120, 160), (0, 0, 0, 0)); d = ImageDraw.Draw(im); d.ellipse((10, 10, 110, 110), fill=(46, 196, 182)); d.polygon([(22, 80), (98, 80), (60, 150)], fill=(46, 196, 182)); d.ellipse((40, 40, 80, 80), fill=(14, 8, 34)); return to_bgra(im)
@@ -209,22 +223,64 @@ def scene7c(t, f):  # cut on «العليا»: teal full card, name big
     dt = t - T['olaya2']; f[:] = np.array([120, 140, 20], np.float32) * (0.9 + 0.1 * math.sin(t * 3))
     blit(f, PIN, 540, 640 + 10 * math.sin(t * 6), 2.4); blit(f, T_OLAYA_BIG, 540, 980, 1.0 + .25 * (1 - ebk(dt / .3)))
     blit(f, T_ABHUR_W, 540, 1180, 1, cl((dt - .15) / .2))
+T_GUESS = text_sprite('اكتب توقعك بالكومنتات', FL(100), fill=INK)
+T_ANS = text_sprite('الجواب بأول تعليق', FL(130), fill=(255, 255, 255) if POP else CRIM)
+T_SHARE1 = text_sprite('أرسله لخويك', FL(150), fill=INK); T_SHARE2 = text_sprite('اللي يجمع بوكيمون', FL(110), fill=(255, 220, 225) if POP else CRIM)
+TAGQ_BIG = tag_sprite('؟')
+def bubble_sprite():
+    im = Image.new('RGBA', (360, 300), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    d.rounded_rectangle((10, 10, 350, 230), 60, fill=(255, 255, 255), outline=INK, width=10); d.polygon([(80, 220), (150, 222), (70, 290)], fill=INK)
+    for i in range(3): d.ellipse((95 + i * 65, 100, 135 + i * 65, 140), fill=CRIM)
+    return to_bgra(im)
+BUBBLE = bubble_sprite()
+def arrow_sprite():
+    im = Image.new('RGBA', (200, 260), (0, 0, 0, 0)); d = ImageDraw.Draw(im); AC = (255, 255, 255) if POP else CRIM; d.rectangle((75, 10, 125, 150), fill=AC); d.polygon([(10, 140), (190, 140), (100, 250)], fill=AC); return to_bgra(im)
+ARROW = arrow_sprite()
+def share_sprite():
+    im = Image.new('RGBA', (300, 300), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    d.polygon([(20, 140), (280, 30), (200, 280), (150, 170)], fill=INK); d.polygon([(150, 170), (280, 30), (165, 230)], fill=CRIM); return to_bgra(im)
+SHARE = share_sprite()
+def sceneQ(t, f):  # question: «اكتب توقعك بالكومنتات»
+    dt = t - T['sq']; sw = 5 * math.sin(t * 2.2)
+    blit(f, BOXM, 300, 620, 1, 1, 6); blit(f, TAGQ_BIG, 760, 640, 1.3 + .2 * (1 - ebk(dt / .3)), 1, -sw)
+    blit(f, BUBBLE, 540, 1080, 1.0 + .25 * (1 - ebk((dt - .1) / .3)) + .03 * math.sin(t * 8), cl(dt / .1))
+    blit(f, T_GUESS, 560, 1400, 1, 1)
+def sceneQ2(t, f):  # «الجواب بأول تعليق» + arrow down to the comments
+    dt = t - T['sq2']; blit(f, TAGQ_BIG, 540, 560, 1.6, 1, 4 * math.sin(t * 2))
+    blit(f, T_ANS, 560, 1000, 1.0 + .25 * (1 - ebk(dt / .25))); blit(f, ARROW, 540, 1300 + 40 * abs(math.sin(t * 5)), 1)
+def sceneSH(t, f):  # share trigger
+    dt = t - T['sh']; blit(f, SHARE, 540, 640, 1.0 + .3 * (1 - ebk(dt / .3)), 1, 8 * math.sin(t * 3))
+    blit(f, T_SHARE1, 560, 1000, 1, 1); blit(f, T_SHARE2, 560, 1180, 1, cl((dt - .5) / .2)); blit(f, GOLD, 820, 1500, .38, 1, 10)
 def scene8(t, f):  # outro = hook frame (loop) + like/save/comment/follow
     scene1(t, f); dt = t - T['s7']
     blit(f, T_CMT, 560, 1560, 1, cl(dt / .2)); blit(f, T_LIKE, 560, 1680, 1, cl((dt - .2) / .2))
     blit(f, P_FOLLOW, 560, 1790, 1.0 + .05 * math.sin(t * 9), cl((dt - T['follow_off']) / .2))
 
 def scene8b(t, f):  # last card (cut on «وتابعنا»): logo + follow
-    dt = t - T['s8']; blit(f, LOGO, 540, 760 + 14 * math.sin(t * 7), 1.0 + .12 * (1 - ebk(dt / .3)), 1, 3 * math.sin(t * 5))
+    dt = t - T['s8']
+    if POP:
+        ov = f.copy()
+        for i in range(16):
+            an = t * 1.6 + i * math.pi / 8; cv2.line(ov, (540, 760), (int(540 + 1400 * math.cos(an)), int(760 + 1400 * math.sin(an))), (255, 255, 255), 26, cv2.LINE_AA)
+        f[:] = f * .78 + ov * .22
+    blit(f, LOGO, 540, 760 + 14 * math.sin(t * 7), 1.0 + .12 * (1 - ebk(dt / .3)), 1, 3 * math.sin(t * 5))
     blit(f, P_FOLLOW, 540, 1080, 1.4 + .12 * abs(math.sin(t * 7))); blit(f, T_LIKE, 540, 1260, 1)
 
-SC = [('s1', scene1), ('s2', scene2), ('hit', scene3), ('s4', scene4), ('mega', scene5), ('s5', scene6), ('price', scene6b), ('save', scene6c), ('s6', scene7), ('s6b', scene7b), ('olaya2', scene7c), ('s7', scene8), ('s8', scene8b)]
-WHIPS = [T['s4'], T['s5']]
+def scene4b(t, f): scene4(t, f)
+def scene5b(t, f): scene5(t, f)
+def sceneQb(t, f): sceneQ(t, f)
+SC_DEFAULT = [('s1', scene1), ('s2', scene2), ('hit', scene3), ('s4', scene4), ('mega', scene5), ('s5', scene6), ('price', scene6b), ('save', scene6c), ('s6', scene7), ('s6b', scene7b), ('olaya2', scene7c), ('s7', scene8), ('s8', scene8b)]
+SC = [(x.split(':')[0], globals()[x.split(':')[1]]) for x in C['sc']] if 'sc' in C else SC_DEFAULT
+WHIPS = [T[k] for k in C.get('whips', ['s4', 's5'])]
 def render(t):
     f = background(t, .75 if T['s2'] <= t < T['hit'] else 1.0)
     cur, st = SC[0][1], 0
     for k, fn in SC:
         if t >= T[k]: cur, st = fn, T[k]
+    if POP:
+        f = POP_BG.get(cur.__name__, BG_RED).copy() * VIG
+        for (x, y, rr, ph, sp) in DUST[:40]:
+            y2 = (y - t * 40 * sp) % H; cv2.circle(f, (int(x + 30 * math.sin(t * .9 + ph)), int(y2)), int(rr * 1.2), (255, 255, 255), -1, cv2.LINE_AA) if t >= T['s4'] else None
     if cur is scene1: blit(f, T_BKM, 600, 1640)
     cur(t, f)
     # camera: slow motivated push-in per shot + drift (never a frozen frame)

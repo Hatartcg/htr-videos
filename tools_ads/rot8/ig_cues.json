@@ -1,0 +1,77 @@
+{
+ "total": 24.6,
+ "beat": 0.428571,
+ "off": {
+  "L1": 0.1,
+  "L3": 3.12,
+  "Q": 8.2,
+  "L5": 14.15,
+  "L6": 17.0,
+  "L7": 21.1
+ },
+ "L6_splice": {
+  "a": "fetch/r8v4_L6.mp3",
+  "a_start": 0.52,
+  "a_end": 0.9,
+  "gap": -0.02,
+  "tail_fade": 0.03,
+  "b": "audio/ref_htr_word.mp3",
+  "b_start": 0.1,
+  "b_end": 3.03
+ },
+ "t": {
+  "s1": 0,
+  "s4": 3.1,
+  "mega": 6.17,
+  "sq": 8.15,
+  "sq2": 9.98,
+  "sh": 11.88,
+  "s6": 14.1,
+  "ship": 15.47,
+  "s6b": 17.45,
+  "olaya": 18.0,
+  "olaya2": 19.75,
+  "s7": 21.05,
+  "s8": 23.8,
+  "follow_off": 2.75,
+  "s2": 99,
+  "hit": 99,
+  "riyal": 99,
+  "s5": 99,
+  "price": 99,
+  "save": 99,
+  "drop": 3.1,
+  "riser_from": 1.6,
+  "thud": 9.98,
+  "s4b": 4.4,
+  "mega_b": 7.15,
+  "sq_b": 9.05
+ },
+ "sc": [
+  "s1:scene1",
+  "s4:scene4",
+  "s4b:scene4b",
+  "mega:scene5",
+  "mega_b:scene5b",
+  "sq:sceneQ",
+  "sq_b:sceneQb",
+  "sq2:sceneQ2",
+  "sh:sceneSH",
+  "s6:scene7",
+  "s6b:scene7b",
+  "olaya2:scene7c",
+  "s7:scene8",
+  "s8:scene8b"
+ ],
+ "whips": [],
+ "lines": {
+  "L1": "r8v4_L1",
+  "L3": "r8v4_L3",
+  "Q": "r8ig_Q",
+  "L5": "r8v4_L5",
+  "L7": "r8v4_L7b"
+ },
+ "whoosh": [
+  "s6"
+ ]
+}
