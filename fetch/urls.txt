@@ -1,3 +1,3 @@
-ygo_maestros_box.webp https://www.htrtcg.com/products/new/yugioh-magnificent-maestros-box.webp
-ygo_monsters_box.jpg https://mhcgvy2bpk3u627e.public.blob.vercel-storage.com/products/legacy2-2-1793063889733-pnKuIeiKgpnu25ZcYcVLKn8Oe3C3ZB.jpg
-digi_ad01_box.webp https://www.htrtcg.com/products/styled/33-digimon-card-game-advanced-booster-digimon-generation-ad-01-.webp
+ygo_mamo_box.png https://www.yugioh-card.com/en/wp-content/uploads/2026/05/MAMO_550.png
+ygo_mamo_ext.png https://www.yugioh-card.com/en/wp-content/uploads/2026/06/MAMO-cards-ext.png
+ygo_mamo_art04.png https://www.yugioh-card.com/en/wp-content/uploads/2026/05/mamo_art-04.png
