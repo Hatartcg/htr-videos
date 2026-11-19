@@ -53,7 +53,7 @@ mus *= side
 def fade(x, f=.012): k = int(f * SR); x = x.copy(); x[:k] *= np.linspace(0, 1, k); x[-k:] *= np.linspace(1, 0, k); return x
 def lev(x): return x / (np.sqrt(np.mean(x[np.abs(x) > .02] ** 2)) + 1e-9) * .18
 VO = np.zeros(N)
-for k in ['W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'W7', 'W8']: add(VO, O[k], fade(lev(rd(R + f'fetch/st_{k}' + ('b' if k == 'W8' else '') + '.mp3'))))
+for k in ['W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'W7', 'W8']: add(VO, O[k], fade(lev(rd(R + f'fetch/st_{k}' + ('b' if k in ('W8', 'W4') else '') + '.mp3'))))
 add(VO, O['MT'], fade(lev(rd(R + 'voice_bank/mutamadeen.mp3'))))
 ol = rd(R + 'audio/ref_htr_word.mp3'); ol = ol[int(.10 * SR):int(3.03 * SR)]; ke = int(.04 * SR); ol[-ke:] *= np.linspace(1, 0, ke); add(VO, O['OL'], fade(lev(ol)))
 w = int(.12 * SR); env = np.convolve(np.abs(VO), np.ones(w) / w, 'same'); env = np.clip(env / (np.percentile(env[env > 1e-4], 70) + 1e-9), 0, 1)
