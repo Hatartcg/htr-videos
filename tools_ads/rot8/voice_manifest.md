@@ -21,3 +21,4 @@ L5b 104 و OP eighteen ينزل عندنا عشرين نوفمبر! [ولا تن
 HIT 68 وأقوى هت بالسيت... غونكو، السوبر بارالل حق الذكرى الرابعة! (session TqJKfu5LKqLwGxVkSYwx) — top hit per torecamap ranking (OP18-065 4周年スーパーパラレル, predicted, 19 Nov)
 AV 52 راح يكون متوفر أونلاين على موقعنا... وكمان (+ approved ref «في معرضنا في أبحر الجنوبية في العليا سكوير») | WAIT 35 وش تنتظر؟ ون بيس ما يجلس! — Hadi 19 Nov 11:38
 ## Digimon + Yu-Gi-Oh (arcade) 19 Nov, Hadi HTR v4 (290 cr): Y1 22 اختار لاعبك | Y2 51 ديجيمون Digimon Generation AD zero one | Y3 44 ضد يوغي أوو Magnificent Monsters | Y4 40 مين يكسب؟ علّق واحد ولا اثنين | AV 50 كلهم متوفرين أونلاين على موقعنا... وكمان | SH 82 أرسله لخويك اللي يلعب يوغي أوو أو ديجيمون... وعلّق ولو بنقطة، لايك وسيف | reused 0 cr: r8op_L5 cut «بوكس دلتا رين موجود الحين بثمنمية وخمسين بس», ref العليا clip
+FO 35 وتابعنا عشان ما يفوتك شي! (follow ask in voice — montage_qa)
