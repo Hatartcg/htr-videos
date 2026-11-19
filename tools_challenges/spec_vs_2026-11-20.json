@@ -1,0 +1,104 @@
+{
+ "source": "سعر السوق في TCGplayer · 18 نوفمبر 2026",
+ "tease": "تابعنا عشان التحدي الجاي!",
+ "no_reveal": true,
+ "static_intro": true,
+ "share": "أرسله لخويك اللي يجمع كروت وتحدّاه!",
+ "titles": {
+  "sub": "أغلب الناس يغلطون!"
+ },
+ "rounds": [
+  {
+   "game": "POKÉMON",
+   "mult": "",
+   "a": {
+    "img": "/home/claude/htr-videos/fetch/im_85503.jpg",
+    "name": "FLAREON STAR",
+    "set": "EX Power Keepers · Gold Star",
+    "price": "$1,700",
+    "p": 1700.0
+   },
+   "b": {
+    "img": "/home/claude/htr-videos/fetch/im_86351.jpg",
+    "name": "JOLTEON STAR",
+    "set": "EX Power Keepers · Gold Star",
+    "price": "$2,375",
+    "p": 2374.5
+   }
+  },
+  {
+   "game": "YU-GI-OH!",
+   "mult": "",
+   "a": {
+    "img": "/home/claude/htr-videos/fetch/im_22149.jpg",
+    "name": "LEFT ARM OF THE FORBIDDEN ONE",
+    "set": "LOB · 1st Edition",
+    "price": "$500",
+    "p": 499.99
+   },
+   "b": {
+    "img": "/home/claude/htr-videos/fetch/im_22002.jpg",
+    "name": "GAIA THE DRAGON CHAMPION",
+    "set": "LOB · 1st Edition",
+    "price": "$411",
+    "p": 410.68
+   }
+  },
+  {
+   "game": "RIFTBOUND",
+   "mult": "",
+   "a": {
+    "img": "/home/claude/htr-videos/fetch/im_653104.jpg",
+    "name": "LEE SIN",
+    "set": "Origins · Signature",
+    "price": "$1,360",
+    "p": 1359.58
+   },
+   "b": {
+    "img": "/home/claude/htr-videos/fetch/im_653114.jpg",
+    "name": "MISS FORTUNE",
+    "set": "Origins · Signature",
+    "price": "$1,553",
+    "p": 1552.71
+   }
+  }
+ ],
+ "timing": {
+  "intro": 4.166666666666667,
+  "ask": [
+   4.666666666666667,
+   5.066666666666666,
+   4.133333333333334
+  ],
+  "rev": [
+   0.9,
+   0.9,
+   0.9
+  ],
+  "outro": 6.8,
+  "end": 2.0
+ },
+ "hits": [
+  5.76,
+  7.4,
+  8.83,
+  9.83,
+  10.83,
+  11.6,
+  14.34,
+  15.64,
+  17.4,
+  18.4,
+  19.4,
+  22.5,
+  23.72,
+  25.03,
+  26.03,
+  27.03,
+  30.07,
+  31.53,
+  32.67,
+  35.3,
+  36.1
+ ]
+}

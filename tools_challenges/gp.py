@@ -84,7 +84,7 @@ S = dict(
     loc=txt('معرضنا – أبحر الجنوبية، العليا سكوير، جدة', FL(42), LILAC), wm=LOGO_WM,
     ans=txt('الجواب بأول تعليق', FL(128), WHITE, glow=GREEN, gr=26), q=txt('?', FB(110), WHITE, stroke=8, glow=PURPLE),
     ctab=to_bgra(rrect(900, 110, 55, (20, 12, 40, 235), PURPLE + (255,), 4)), ctat=txt('تابعنا • لايك • احفظ • علّق ولو بنقطة', FL(58), WHITE),
-    shr=txt('أرسله لخويك وشوف مين يجيبها كلها!', FL(62), LILAC),
+    shr=txt(SPEC.get('share','أرسله لخويك وشوف مين يجيبها كلها!'), FL(62), LILAC),
 )
 SCORES = [txt(s, FB(54), WHITE) for s in ('0/3', '1/3', '2/3', '3/3')]
 CHIP = to_bgra(rrect(170, 100, 26, (30, 24, 60, 255), PURPLE + (255,), 4)); CHIP_ON = to_bgra(rrect(170, 100, 26, GREEN + (255,), glow=GREEN))
@@ -128,10 +128,10 @@ def render(t):
         if lt >= rv and not NR: win = min(1, (lt - rv) / .25) * (1 - max(0, (lt - R_LEN + .3) / .3))
     f = background(t, win)
     if t < T_INTRO:
-        k = t; out = eo((t - T_INTRO + .3) / .3)
+        k = t + (5.0 if SPEC.get('static_intro') else 0); out = eo((t - T_INTRO + .3) / .3)  # static_intro: hook fully on screen from frame 0, still 1-3 s
         blit(f, S['t1'], W / 2, 420 - 300 * out, ebk(k / .4), 1 - out); blit(f, S['t2'], W / 2, 560 - 300 * out, ebk((k - .2) / .4), (1 if k > .2 else 0) * (1 - out))
         for j, (dx, rot) in enumerate(((-250, -12), (0, 0), (250, 12))):
-            kk = ebk((k - .15 - j * .1) / .4); blit(f, CARDS[j]['small'] if N == 3 else BACK_S, W / 2 + dx * kk, 1000 + 25 * abs(j - 1) + 700 * (1 - kk) + 900 * out, (1.2 if N == 3 else .9) + .1 * (j == 1) + .03 * math.sin(t * 4 + j), 1 if kk > 0 else 0, rot * kk)
+            kk = ebk((k - .15 - j * .1) / .4); blit(f, CARDS[j]['small'] if N == 3 else BACK_S, W / 2 + dx * kk, 1000 + 25 * abs(j - 1) + 700 * (1 - kk) + 900 * out, (1.2 if N == 3 else .9) + .1 * (j == 1) + (0 if SPEC.get('static_intro') else .03 * math.sin(t * 4 + j)), 1 if kk > 0 else 0, rot * kk)
         blit(f, S['sub'], W / 2, 1420 + 400 * out, ebk((k - .8) / .3), 1 if k > .8 else 0); blit(f, S['subt'], W / 2, 1420 + 400 * out, ebk((k - .8) / .3), 1 if k > .8 else 0)
     elif t < T_OUTRO:
         i, lt = rnd_at(t); r = ROUNDS[i]; C = CARDS[i]; R_LEN = RLEN[i]; T_THINK = THINK[i]
@@ -182,10 +182,12 @@ def render(t):
         blit(f, S['htr'], W / 2, 660, ebk(k / .4), 1); blit(f, S['tcg'], W / 2, 800, ebk((k - .15) / .35), 1 if k > .15 else 0)
         blit(f, S['e3'], W / 2, 980, ebk((k - .3) / .35), 1 if k > .3 else 0); blit(f, S['ig'], W / 2, 1110, ebk((k - .45) / .35), 1 if k > .45 else 0); blit(f, S['igt'], W / 2, 1110, ebk((k - .45) / .35), 1 if k > .45 else 0)
         blit(f, S['loc'], W / 2, 1230, ebk((k - .6) / .35), 1 if k > .6 else 0)
+        if NR: blit(f, S['ctab'], W / 2, 1400, ebk((k - .2) / .35), 1); blit(f, S['ctat'], W / 2, 1400, ebk((k - .2) / .35), 1)  # CTA bar on the end card too (owner 18 Nov)
     if t < T_OUTRO + T_OUT: blit(f, S['wm'], W - 130, 85, .9, 1)
     fl = 0.0
     for i in range(N): fl += 0 if NR else env(t, RSTART[i] + THINK[i] + T_CD, .15) * .5
     fl += env(t, T_OUTRO + T_OUT, .15) * .5
+    fl += sum((1.0 if 0 <= t - h < .1 else env(t, h + .1, .12)) * .3 for h in SPEC.get('hits', []))  # beat flashes on spoken card names / countdown ticks (motivated cuts)
     f = np.clip(f + (255 - f) * fl, 0, 255)
     if t > TOTAL - .4: f = f * max(0, (TOTAL - t) / .4)
     return f.astype(np.uint8)

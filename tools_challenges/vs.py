@@ -3,7 +3,8 @@ import sys, json, math, numpy as np, cv2
 from PIL import Image
 from common import *
 SPEC = json.load(open(sys.argv[1])); TM = SPEC['timing']; R = SPEC['rounds']; N = len(R)
-T_INTRO = TM['intro']; ASK = TM['ask']; REV = TM['rev']; THINK = 2.6; T_OUT = TM['outro']; T_END = 2.6
+T_INTRO = TM['intro']; ASK = TM['ask']; REV = TM['rev']; THINK = 2.6; T_OUT = TM['outro']; T_END = TM.get('end', 2.6)
+NR = bool(SPEC.get('no_reveal'))  # owner 16 Nov 2026: never show the winner; answers go in the first comment
 RLEN = [ASK[i] + THINK + REV[i] for i in range(N)]
 RST = [T_INTRO + sum(RLEN[:i]) for i in range(N)]; T_OUTRO = T_INTRO + sum(RLEN); TOTAL = T_OUTRO + T_OUT + T_END
 bg = make_bg(cy=780)
@@ -27,7 +28,10 @@ TT = SPEC.get('titles', {})
 S.update(t1=fit_txt(TT.get('t1', 'أيهم'), FL, 130, 980, fill=WHITE), t2=fit_txt(TT.get('t2', 'أغلى؟'), FL, 190, 1000, fill=PURPLE, glow=PURPLE), sub=pill(TT.get('sub', 'أغلب الناس يغلطون!'), FL(52), (24, 18, 50), border=RED),
          vs=txt('VS', FB(92), WHITE, stroke=6, glow=PURPLE), q=txt('؟', FL(130), WHITE, glow=PURPLE), think=txt('فكّر بسرعة…', FL(58), WHITE, glow=RED),
          unk=txt('$???', FB(64), (200, 190, 255)), more=txt('أغلى', FL(46), WHITE), src=txt(SPEC['source'], FL(34), DIM),
-         how=fit_txt(TT.get('how', 'كم جولة جبتها صح؟'), FL, 110, 1000, fill=WHITE, glow=PURPLE), cmt=pill('اكتبها بالتعليقات', FL(60), PURPLE, padx=56))
+         how=fit_txt(TT.get('how', 'كم جولة جبتها صح؟'), FL, 110, 1000, fill=WHITE, glow=PURPLE), cmt=pill('اكتبها بالتعليقات', FL(60), PURPLE, padx=56),
+         ans=txt('الجواب بأول تعليق', FL(120), WHITE, glow=GREEN, gr=26), lockp=pill('ثبّت جوابك!', FL(56), RED, padx=48),
+         ctab=rrect(900, 110, 55, (20, 12, 40, 235), PURPLE + (255,), 4), ctat=txt('تابعنا • لايك • احفظ • علّق ولو بنقطة', FL(58), WHITE),
+         shr=txt(SPEC.get('share', 'أرسله لخويك وشوف مين يجيبها كلها!'), FL(60), LILAC), vss=txt('VS', FB(54), WHITE, stroke=4, glow=PURPLE))
 from PIL import ImageDraw
 BK = Image.new('RGBA', (300, 418), (0, 0, 0, 0)); bd = ImageDraw.Draw(BK)
 bd.rounded_rectangle((0, 0, 299, 417), 22, fill=(40, 30, 80, 255), outline=PURPLE + (255,), width=6)
@@ -51,15 +55,20 @@ def render(t):
     win = 0.0
     if T_INTRO <= t < T_OUTRO:
         i, lt = rat(t); rv = ASK[i] + THINK
-        if lt >= rv: win = min(1, (lt - rv) / .25) * (1 - max(0, (lt - RLEN[i] + .3) / .3))
+        if lt >= rv and not NR: win = min(1, (lt - rv) / .25) * (1 - max(0, (lt - RLEN[i] + .3) / .3))
     f = bg(t, win)
     if t < T_INTRO:
-        k = t; out = eo((t - T_INTRO + .3) / .3)
-        blit(f, S['t1'], W / 2, 360 - 300 * out, ebk(k / .4), 1 - out); blit(f, S['t2'], W / 2, 520 - 300 * out, ebk((k - .2) / .4), (k > .2) * (1 - out))
-        for j, x in enumerate(XS):
+        k = t + (5.0 if SPEC.get('static_intro') else 0); out = eo((t - T_INTRO + .3) / .3)
+        if SPEC.get('static_intro'):
+            blit(f, S['t1'], W / 2, 330 - 300 * out, 1, 1 - out); blit(f, S['t2'], W / 2, 500 - 300 * out, 1, 1 - out)
+            for j, x in enumerate(XS): blit(f, C[0][j]['n'], x, 960 + 900 * out, .78, 1, (4 if j == 0 else -4))
+            blit(f, S['vs'], W / 2, 960 + 900 * out, 1, 1); blit(f, S['sub'], W / 2, 1420 + 400 * out, 1, 1)
+        else:
+         blit(f, S['t1'], W / 2, 360 - 300 * out, ebk(k / .4), 1 - out); blit(f, S['t2'], W / 2, 520 - 300 * out, ebk((k - .2) / .4), (k > .2) * (1 - out))
+         for j, x in enumerate(XS):
             kk = ebk((k - .4 - j * .15) / .45); blit(f, BACK, x, 900 + 700 * (1 - kk) + 900 * out, 1.05, 1 if kk > 0 else 0, (8 if j == 0 else -8) * kk)
-        blit(f, S['vs'], W / 2, 900 + 900 * out, ebk((k - .8) / .3), 1 if k > .8 else 0)
-        blit(f, S['sub'], W / 2, 1250 + 400 * out, ebk((k - 1.0) / .3), 1 if k > 1.0 else 0)
+         blit(f, S['vs'], W / 2, 900 + 900 * out, ebk((k - .8) / .3), 1 if k > .8 else 0)
+         blit(f, S['sub'], W / 2, 1250 + 400 * out, ebk((k - 1.0) / .3), 1 if k > 1.0 else 0)
     elif t < T_OUTRO:
         i, lt = rat(t); r = R[i]; rv = ASK[i] + THINK; L = RLEN[i]
         out = eo((lt - L + .3) / .3); inn = eo(lt / .35)
@@ -68,12 +77,12 @@ def render(t):
             col = GREEN if j < i else (PURPLE if j == i else (60, 52, 100)); cv2.circle(f, (int(W / 2 + (j - (N - 1) / 2) * 40), 262), 11 if j == i else 8, col[::-1], -1, cv2.LINE_AA)
         for j in range(2):
             x = XS[j] + (1 if j == 0 else -1) * 900 * (1 - eo((lt - j * .12) / .4)) + (1 if j == 0 else -1) * 900 * out
-            if lt < rv: spr = C[i][j]['n']; sc = 1 + .02 * math.sin(t * 3 + j)
+            if lt < rv or NR: spr = C[i][j]['n']; sc = 1 + .02 * math.sin(t * 3 + j)
             else: spr = C[i][j]['g'] if j == WIN[i] else C[i][j]['d']; sc = (1.06 + .04 * env(lt, rv, .3)) if j == WIN[i] else .94
             blit(f, spr, x, 720, sc, 1, (-3 if j == 0 else 3) * (lt < rv))
             if TAG[i][j] is not None and lt < rv: blit(f, TAG[i][j], x, 400, 1, inn)
             blit(f, NAMES[i][j], x, 1050, 1, inn * (1 - out)); blit(f, SETS[i][j], x, 1105, 1, inn * (1 - out))
-            if lt < rv: blit(f, S['unk'], x, 1190, 1, inn * (1 - out))
+            if lt < rv or NR: blit(f, S['unk'], x, 1190, 1, inn * (1 - out))
             else:
                 k2 = ebk((lt - rv) / .35)
                 if j == WIN[i]:
@@ -85,8 +94,18 @@ def render(t):
         if ASK[i] - .1 <= lt < rv:
             p = min(1, (lt - ASK[i]) / THINK); blit(f, S['think'], W / 2, 1300, 1, 1)
             cv2.rectangle(f, (190, 1372), (890, 1392), (60, 40, 50), -1); cv2.rectangle(f, (190, 1372), (int(190 + 700 * (1 - p)), 1392), (69, 34, 255) if p > .6 else (255, 117, 142), -1)
-        if lt >= rv: blit(f, MULT[i], W / 2, 1330, ebk((lt - rv - .3) / .35), (lt > rv + .3) * (1 - out))
+        if NR and lt >= rv: blit(f, S['lockp'], W / 2, 1330, ebk((lt - rv) / .3), 1 - out)
+        if lt >= rv and not NR: blit(f, MULT[i], W / 2, 1330, ebk((lt - rv - .3) / .35), (lt > rv + .3) * (1 - out))
         blit(f, S['src'], W / 2, 1700, 1, inn * (1 - out))
+    elif t < T_OUTRO + T_OUT and NR:
+        k = t - T_OUTRO
+        blit(f, S['ans'], W / 2, 330, ebk(k / .4) * (1 + .025 * math.sin(t * 6)), 1)
+        for i in range(N):
+            kk = ebk((k - .25 - i * .12) / .4); y = 640 + i * 290
+            for j in range(2): blit(f, C[i][j]['s'], W / 2 + (1 if j == 0 else -1) * 150 + 700 * (1 - kk) * (1 if j == 0 else -1), y, .62, 1 if kk > 0 else 0, (4 if j == 0 else -4))
+            blit(f, S['vss'], W / 2, y, kk, 1 if kk > 0 else 0)
+        blit(f, S['ctab'], W / 2, 1530, ebk((k - 1.1) / .35), 1 if k > 1.1 else 0); blit(f, S['ctat'], W / 2, 1530, ebk((k - 1.1) / .35), 1 if k > 1.1 else 0)
+        blit(f, S['shr'], W / 2, 1680, ebk((k - 1.4) / .35), 1 if k > 1.4 else 0)
     elif t < T_OUTRO + T_OUT:
         k = t - T_OUTRO
         blit(f, S['how'], W / 2, 420, ebk(k / .4), 1)
@@ -96,8 +115,10 @@ def render(t):
         blit(f, S['cmt'], W / 2, 1520, ebk((k - 1.0) / .35) * (1 + .03 * math.sin(t * 6)), 1 if k > 1.0 else 0)
     else:
         end_card(f, t - T_OUTRO - T_OUT, S)
+        if NR: k = t - T_OUTRO - T_OUT; blit(f, S['ctab'], W / 2, 1320, ebk((k - .2) / .35), 1); blit(f, S['ctat'], W / 2, 1320, ebk((k - .2) / .35), 1)
     if t < T_OUTRO + T_OUT: blit(f, S['wm'], W - 130, 80, 1, .9)
-    fl = sum(env(t, RST[i] + ASK[i] + THINK, .15) * .5 for i in range(N)) + env(t, T_OUTRO + T_OUT, .15) * .5
+    fl = (0 if NR else sum(env(t, RST[i] + ASK[i] + THINK, .15) * .5 for i in range(N)))
+    fl += sum((1.0 if 0 <= t - h < .1 else env(t, h + .1, .12)) * .3 for h in SPEC.get('hits', []))  # beat flashes on spoken card names / countdown ticks (motivated cuts) + env(t, T_OUTRO + T_OUT, .15) * .5
     f = np.clip(f + (255 - f) * fl, 0, 255)
     if t > TOTAL - .4: f = f * max(0, (TOTAL - t) / .4)
     return f.astype(np.uint8)

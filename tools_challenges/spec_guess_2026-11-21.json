@@ -1,0 +1,86 @@
+{
+ "title1": "تقدر تخمّن",
+ "title2": "كم تسوى هالكروت؟",
+ "subtitle": "٣ ألعاب · ٣ جولات",
+ "source": "سعر السوق في TCGplayer · 18 نوفمبر 2026",
+ "tease": "تابعنا عشان التحدي الجاي!",
+ "no_reveal": true,
+ "static_intro": true,
+ "share": "أرسله لخويك وشوف مين يجيبها كلها!",
+ "rounds": [
+  {
+   "img": "/home/claude/htr-videos/fetch/im_702666.jpg",
+   "name": "LILO & STITCH",
+   "set": "LORCANA · Attack of the Vine! · Iconic",
+   "options": [
+    "$560",
+    "$3,200",
+    "$1,498"
+   ],
+   "answer": 2
+  },
+  {
+   "img": "/home/claude/htr-videos/fetch/im_84195.jpg",
+   "name": "CHARIZARD (DELTA)",
+   "set": "POKÉMON · EX Crystal Guardians · Holo",
+   "options": [
+    "$940",
+    "$2,400",
+    "$380"
+   ],
+   "answer": 0
+  },
+  {
+   "img": "/home/claude/htr-videos/fetch/im_22341.jpg",
+   "name": "RED-EYES B. DRAGON",
+   "set": "YU-GI-OH! · LOB · 1st Edition",
+   "options": [
+    "$310",
+    "$850",
+    "$1,900"
+   ],
+   "answer": 1
+  }
+ ],
+ "timing": {
+  "intro": 3.3,
+  "think": [
+   6.8,
+   5.366666666666666,
+   5.866666666666666
+  ],
+  "rlen": [
+   10.7,
+   9.266666666666667,
+   9.766666666666667
+  ],
+  "outro": 6.7,
+  "end": 2.0
+ },
+ "hits": [
+  4.85,
+  6.13,
+  10.1,
+  11.1,
+  12.1,
+  13.5,
+  15.21,
+  16.83,
+  19.37,
+  20.37,
+  21.37,
+  22.77,
+  24.9,
+  26.56,
+  29.13,
+  30.13,
+  31.13,
+  32.53,
+  34.66,
+  36.1,
+  37.06,
+  39.73,
+  40.63,
+  41.1
+ ]
+}
