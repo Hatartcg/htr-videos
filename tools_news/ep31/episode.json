@@ -1,0 +1,118 @@
+{
+ "total": 32.0,
+ "date_label": "22 نوفمبر 2026",
+ "imgdir": "img",
+ "cta_end": "ونشوفكم الثلاثاء!",
+ "segs": [
+  {
+   "s": 0,
+   "e": 3.2,
+   "hook": true,
+   "tsize": 130,
+   "accent": "#ef4444",
+   "chip": "Pokémon · 30th Celebration",
+   "title": "$4,000",
+   "sub": "Mew R/RGB · سعر السوق",
+   "img": "mew_r.jpg"
+  },
+  {
+   "s": 3.2,
+   "e": 6.5,
+   "accent": "#ef4444",
+   "title": "أخبار وأسعار",
+   "sub": "",
+   "img": "title"
+  },
+  {
+   "s": 6.5,
+   "e": 9.35,
+   "accent": "#ef4444",
+   "chip": "30th Celebration",
+   "title": "كرت سري",
+   "sub": "Mew R/RGB",
+   "img": "mew_r.jpg"
+  },
+  {
+   "s": 9.35,
+   "e": 11.37,
+   "accent": "#ef4444",
+   "chip": "كرت سري",
+   "title": "مو موجود بالقائمة",
+   "sub": "قائمة كروت الست المطبوعة",
+   "img": "mew_r.jpg"
+  },
+  {
+   "s": 11.37,
+   "e": 15.23,
+   "accent": "#ef4444",
+   "chip": "3 نسخ",
+   "title": "أحمر · أخضر · أزرق",
+   "sub": "R/RGB · G/RGB · B/RGB",
+   "img": [
+    "mew_r.jpg",
+    "mew_g.jpg",
+    "mew_b.jpg"
+   ]
+  },
+  {
+   "s": 15.23,
+   "e": 18.47,
+   "accent": "#ef4444",
+   "chip": "سعر السوق",
+   "title": "+$3,000",
+   "sub": "لكل نسخة",
+   "img": [
+    "mew_g.jpg",
+    "mew_b.jpg",
+    "mew_r.jpg"
+   ]
+  },
+  {
+   "s": 18.47,
+   "e": 20.59,
+   "accent": "#ef4444",
+   "chip": "الأغلى",
+   "title": "الأحمر",
+   "sub": "Mew R/RGB",
+   "img": "mew_r.jpg"
+  },
+  {
+   "s": 20.59,
+   "e": 24.31,
+   "accent": "#14b8a6",
+   "chip": "نصيحة",
+   "title": "الكروت السرية",
+   "sub": "ما تنكتب بقائمة الست",
+   "img": "mew_b.jpg"
+  },
+  {
+   "s": 24.31,
+   "e": 27.73,
+   "accent": "#14b8a6",
+   "chip": "قبل لا تبيع",
+   "title": "شيك سعره",
+   "sub": "أي كرت غريب يطلع لك",
+   "img": "mew_g.jpg"
+  },
+  {
+   "s": 27.73,
+   "e": 32.0,
+   "accent": "#ef4444",
+   "title": "تبيعه ولا تخليه عندك؟",
+   "sub": "قل لنا بالتعليقات",
+   "img": "cta"
+  }
+ ],
+ "hard_cuts": true,
+ "beats": [
+  1.1,
+  2.2,
+  4.8,
+  8.0,
+  13.3,
+  16.8,
+  22.4,
+  26.0,
+  29.9
+ ]
+}
