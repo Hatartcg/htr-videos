@@ -63,6 +63,33 @@ if C.get('music') == 'taiko':  # One Piece: taiko + shime + shamisen (miyako-bus
         if i % 2 == 0: add(mus, t, pluck(scale[mel[(i // 2) % 16]]), .35)
         t += B; i += 1
     for w in [T[k] for k in C.get('whoosh', [])]: add(drm, w, taiko(1.2))  # big hit on each reveal cut
+if C.get('music') == 'epic':  # cinematic hybrid trailer: string ostinato + braams + booms + choir pad, 120 BPM, D minor
+    mus = np.zeros(N); drm = np.zeros(N); hit = T['drop']; Be = .5
+    def saw(m, d, det=1.0):
+        ph = np.cumsum(np.full(int(d * SR), mtof(m) * det / SR)) % 1.0; return 2 * ph - 1
+    def boom(g=1.0):
+        tk = tt(1.6); f0 = 38 + 70 * np.exp(-tk / .06); x = np.sin(2 * np.pi * np.cumsum(f0) / SR) * np.exp(-tk / .7) + .5 * lp(rng.standard_normal(len(tk)), 300) * np.exp(-tk / .12); return np.tanh(1.8 * x) * g
+    def braam(ch, d=1.6):
+        x = sum(saw(m, d) + saw(m, d, 1.006) for m in ch); env = np.minimum(1, tt(d) / .03) * np.exp(-tt(d) / .9); return lp(x, 900) * env
+    prog = [(38, 45, 50, 53), (34, 41, 46, 50), (36, 43, 48, 52), (33, 40, 45, 49)]  # Dm Bb C A
+    # hook: choir-like pad (vowel-filtered saws) swelling, no drums
+    for k in range(int(TOT / (Be * 8)) + 1):
+        t0 = k * Be * 8; ch = prog[k % 4]; d = tt(Be * 8)
+        x = sum(saw(m + 12, Be * 8) + saw(m + 12, Be * 8, 1.004) for m in ch[1:])
+        x = bp(x, 500, 1100) + .6 * bp(x, 1300, 2600)
+        add(mus, t0, x * np.minimum(1, d / 1.0) * np.minimum(1, (Be * 8 - d) / .4), .05)
+    # after the drop: low string ostinato in 16ths + booms + braams on reveals
+    t = hit; i = 0
+    while t < end_d:
+        ch = prog[int((t - hit) / (Be * 8)) % 4]; pat = [0, 0, 2, 0, 1, 0, 2, 3][i % 8]
+        m = ch[0] + 12 if pat in (0, 1) else ch[pat] + (0 if pat == 2 else -12)
+        d = tt(Be / 2 * .9); x = (saw(m, Be / 2 * .9) + saw(m, Be / 2 * .9, 1.005)) * np.exp(-d / .09)
+        add(mus, t, lp(x, 2200), .09)
+        if i % 8 == 0: add(drm, t, boom(1.0))
+        if i % 8 == 4: tc = tt(.3); add(drm, t, bp(rng.standard_normal(len(tc)), 200, 1200) * np.exp(-tc / .08), .45)
+        if i % 2 == 1: th = tt(.06); add(drm, t, hp(rng.standard_normal(len(th)), 6000) * np.exp(-th / .015), .09)
+        t += Be / 2; i += 1
+    for w in [T[k] for k in C.get('whoosh', [])]: add(drm, w, boom(1.2)); add(mus, w, braam(prog[0]), .12)
 # --- sfx: riser into the hit, silence 0.45 s before it, glass shatter, whooshes on whips, shimmer on the gold card, stamp thud
 tr = tt(max(.3, hit - RS - .45)); add(sfx, RS, hp(rng.standard_normal(len(tr)), 600) * (tr / tr[-1]) ** 2, .25)
 tg = tt(1.0); g = hp(rng.standard_normal(len(tg)), 2500) * np.exp(-tg / .18)
