@@ -1,3 +1,4 @@
-Thu Nov 19 08:43:19 UTC 2026
+Thu Nov 19 08:46:05 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-r8op_HIT.mp3 FAIL match 0.71 cps 11.0 unclear [('وأقوى', np.float64(0.67)), ('هتبسيت!', np.float64(0.71)), ('بارال', np.float64(0.79))] banned [] diff [{'op': 'replace', 'expected': 'هت بالسيت', 'heard': 'هتبسيت'}, {'op': 'replace', 'expected': 'بارالل', 'heard': 'بارال'}]
+r8op_AV.mp3 FAIL match 0.86 cps 10.2 unclear [('رح', np.float64(0.78)), ('أونلاين', np.float64(0.79))] banned [] diff [{'op': 'replace', 'expected': 'راح', 'heard': 'رح'}]
+r8op_WAIT.mp3 FAIL match 0.83 cps 9.5 unclear [('وش', np.float64(0.5)), ('وان', np.float64(0.56))] banned [] diff [{'op': 'replace', 'expected': 'ون', 'heard': 'وان'}]
