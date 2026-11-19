@@ -1,3 +1,8 @@
-Thu Nov 19 05:24:01 UTC 2026
+Thu Nov 19 08:33:05 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-guess_2026-11-21_final.mp3 FAIL match 0.82 cps 8.6 unclear [('ليلو', np.float64(0.67)), ('وستيتش', np.float64(0.72)), ('الايكونيك', np.float64(0.74)), ('A', np.float64(0.74)), ('B', np.float64(0.29)), ('ولا', np.float64(0.47)), ('شارزارد', np.float64(0.79)), ('غارديونز', np.float64(0.79)), ('او', np.float64(0.75)), ('الطبعة', np.float64(0.77))] banned [] diff [{'op': 'replace', 'expected': 'الايكونك', 'heard': 'الايكونيك'}, {'op': 'replace', 'expected': 'ايه بي', 'heard': 'A B'}, {'op': 'replace', 'expected': 'سي الثاني', 'heard': 'C ثاني'}, {'op': 'replace', 'expected': 'تشارزارد', 'heard': 'شارزارد'}, {'op': 'replace', 'expected': 'قارديانز', 'heard': 'غارديونز'}, {'op': 'replace', 'expected': 'اوو', 'heard': 'او'}, {'op': 'replace', 'expected': 'دراقون', 'heard': 'دراجون'}]
+r8op_L1.mp3 PASS match 1.0 cps 7.1 unclear [('ومحد', np.float64(0.66))] banned [] diff []
+r8op_L2.mp3 FAIL match 0.53 cps 9.7 unclear [('بطلات', np.float64(0.79))] banned [] diff [{'op': 'delete', 'expected': 'EB zero five Heroines Edition', 'heard': ''}, {'op': 'replace', 'expected': 'ون', 'heard': 'وين'}, {'op': 'replace', 'expected': 'سيت', 'heard': 'ست'}]
+r8op_L3.mp3 FAIL match 0.57 cps 11.6 unclear [('O', np.float64(0.13)), ('18!', np.float64(0.32)), ('The', np.float64(0.23)), ('Dominance', np.float64(0.77))] banned [] diff [{'op': 'replace', 'expected': 'و OP eighteen', 'heard': 'O P 18'}]
+r8op_L4.mp3 FAIL match 1.0 cps 12.3 unclear [('أي', np.float64(0.51)), ('اكتب', np.float64(0.78)), ('ولا', np.float64(0.35))] banned [] diff []
+r8op_L5.mp3 FAIL match 0.5 cps 10.0 unclear [('وإذن', np.float64(0.77)), ('دلتا', np.float64(0.76)), ('الآن', np.float64(0.68))] banned [] diff [{'op': 'replace', 'expected': 'والين يوصلون', 'heard': 'واذن يصلون'}, {'op': 'replace', 'expected': 'موجود الحين بثمنميه', 'heard': 'موجوده الان بثمانميه'}]
+r8op_L8.mp3 FAIL match 1.0 cps 10.1 unclear [('أرسله', np.float64(0.79)), ('ون', np.float64(0.75))] banned [] diff []
