@@ -1,12 +1,2 @@
-im_86351.jpg https://tcgplayer-cdn.tcgplayer.com/product/86351_in_1000x1000.jpg
-im_85503.jpg https://tcgplayer-cdn.tcgplayer.com/product/85503_in_1000x1000.jpg
-im_22341.jpg https://tcgplayer-cdn.tcgplayer.com/product/22341_in_1000x1000.jpg
-im_22149.jpg https://tcgplayer-cdn.tcgplayer.com/product/22149_in_1000x1000.jpg
-im_653114.jpg https://tcgplayer-cdn.tcgplayer.com/product/653114_in_1000x1000.jpg
-im_653104.jpg https://tcgplayer-cdn.tcgplayer.com/product/653104_in_1000x1000.jpg
-im_702666.jpg https://tcgplayer-cdn.tcgplayer.com/product/702666_in_1000x1000.jpg
-im_84195.jpg https://tcgplayer-cdn.tcgplayer.com/product/84195_in_1000x1000.jpg
-im_247327.jpg https://tcgplayer-cdn.tcgplayer.com/product/247327_in_1000x1000.jpg
-im_528671.jpg https://tcgplayer-cdn.tcgplayer.com/product/528671_in_1000x1000.jpg
-im_22002.jpg https://tcgplayer-cdn.tcgplayer.com/product/22002_in_1000x1000.jpg
-im_84149.jpg https://tcgplayer-cdn.tcgplayer.com/product/84149_in_1000x1000.jpg
+vs_2026-11-20_t1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/qLJdA396ypBzZuv10qUH/NnJgl0XJcSdIpDbOIrE8/content.mp3?Expires=1795071600&KeyName=assets-cdn-key-1&Signature=gvWMqrvomzFj8ZZaJ8yN1Zmp71Q=
+guess_2026-11-21_t1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/Ywf2iI2wayEG2FV9ORLi/a5ANx7HtSRwlGkFXSHND/content.mp3?Expires=1795071600&KeyName=assets-cdn-key-1&Signature=bDz9j7QtV43TGOxaEgoSge7g3sI=
