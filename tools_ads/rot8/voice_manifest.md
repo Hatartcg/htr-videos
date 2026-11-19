@@ -12,3 +12,8 @@ L7 36  علّق ولو بنقطة... وتابعنا!
 v4 total 387 cr (+340 wasted v3) = 727 cr for this video
 L7b 47  علّق ولو بنقطة، لايك وسيف... وتابعنا! (replaces L7: like/save required in voice; session TXPrFJw1tPDhpkcUy8ou)
 IG-Q 86  اكتب توقعك بالكومنتات، والجواب بأول تعليق... وأرسله لخويك اللي يجمع بوكيمون! (IG version, session 1c8062YIgnh2RmH4iYIE)
+## One Piece (manga) — 19 Nov 2026, Hadi HTR v4, 1 take each (total 386 cr)
+L1 33 جايين... ومحد جاهز لهم. | L2 74 EB zero five، Heroines Edition... بطلات ون بيس كلهم في سيت واحد! | L3 46 و OP eighteen، The Dominance of God!
+L4 60 أي واحد تبغاه أول؟ اكتب واحد ولا اثنين بالكومنتات! | L5 71 وإلين يوصلون... بوكس دلتا رين موجود الحين بثمنميّة وخمسين بس!
+L8 101 أرسله لخويك اللي يجمع ون بيس... وتابعنا عشان تعرف أول ما ينزلون، علّق ولو بنقطة، لايك وسيف!
+reused 0 cr: r8v4_L5 (site), r8v4_L6 زورنا + audio/ref_htr_word.mp3 0.10–3.03 (approved العليا)
