@@ -1,3 +1,6 @@
-ygo_mamo_box.png https://www.yugioh-card.com/en/wp-content/uploads/2026/05/MAMO_550.png
-ygo_mamo_ext.png https://www.yugioh-card.com/en/wp-content/uploads/2026/06/MAMO-cards-ext.png
-ygo_mamo_art04.png https://www.yugioh-card.com/en/wp-content/uploads/2026/05/mamo_art-04.png
+r8yd_Y1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/iXz8J0GCaF10aBQGiKmN/OwagBk9JPV5iWpPvURNs/content.mp3?Expires=1795089600&KeyName=assets-cdn-key-1&Signature=WFvS43krsAJxpirsoIAeQvWbewA=
+r8yd_Y2.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/nvjqHsC2NPlapMnUKVAz/5fkKo5Jw1OYcBm7onmiq/content.mp3?Expires=1795089600&KeyName=assets-cdn-key-1&Signature=46e7JmnriwZfEiO8P36TYbgRWto=
+r8yd_Y3.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/E4dyCvUpjjDGPGvomRwR/FtaBDhqzzb1jmGdPDeLW/content.mp3?Expires=1795089600&KeyName=assets-cdn-key-1&Signature=sm24rpJhQ_kHhQ45zO0bC89J7f8=
+r8yd_Y4.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/KgmTJCSPg5A2Naqvleud/fMnAhK0m9cCJr7U2d4iF/content.mp3?Expires=1795089600&KeyName=assets-cdn-key-1&Signature=lm-FaheJg5SPTMtAhOm6AqL4XKo=
+r8yd_AV.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/KEZo7a2j7qwLYLX7O4X1/7WdWCbVunKcZcC38bWfw/content.mp3?Expires=1795089600&KeyName=assets-cdn-key-1&Signature=8u3sCLqcikWrA-PCEJ7SEXzhSrA=
+r8yd_SH.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/SHveYvY7LFUeIw5Xudui/gToUKJc5gm8XPxlkLb1v/content.mp3?Expires=1795089600&KeyName=assets-cdn-key-1&Signature=Gs2HCefF4o8Xyu43h1p9eD2f3cI=
