@@ -19,3 +19,4 @@ L8 101 أرسله لخويك اللي يجمع ون بيس... وتابعنا ع�
 reused 0 cr: r8v4_L5 (site), r8v4_L6 زورنا + audio/ref_htr_word.mp3 0.10–3.03 (approved العليا)
 L5b 104 و OP eighteen ينزل عندنا عشرين نوفمبر! [ولا تنسى بوكس دلتا رين... cut off — Hadi: no Delta Reign in One Piece] (session IparKiatk8eW1ZKkzrWW). L5 (وإلين يوصلون… دلتا رين) rejected by Hadi.
 HIT 68 وأقوى هت بالسيت... غونكو، السوبر بارالل حق الذكرى الرابعة! (session TqJKfu5LKqLwGxVkSYwx) — top hit per torecamap ranking (OP18-065 4周年スーパーパラレル, predicted, 19 Nov)
+AV 52 راح يكون متوفر أونلاين على موقعنا... وكمان (+ approved ref «في معرضنا في أبحر الجنوبية في العليا سكوير») | WAIT 35 وش تنتظر؟ ون بيس ما يجلس! — Hadi 19 Nov 11:38
