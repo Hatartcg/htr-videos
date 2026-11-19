@@ -1,12 +1,1 @@
-oh_eren1.jpg https://cdn.salla.sa/NKNagy/047ce554-eb51-4f9e-91d8-ff1aebd1c6dc-985.10638297872x1000-ofV3eNcKXciNXjvTv34DvBR8MhByZMsILi3dzOcO.jpg
-oh_eren2.jpg https://cdn.salla.sa/NKNagy/23852d5a-5224-4e0d-a902-1f802c78998e-985.10638297872x1000-JWqksjA1hNlyNghF5smw7SUl41IsCfUBPtMQVWP8.jpg
-oh_eren3.jpg https://cdn.salla.sa/NKNagy/25ae848b-94fd-4a9d-a3cb-4d4425afd45a-985.10638297872x1000-ibJIplXhsHwcls0e7ddLDoQO4H2eJNJDqZ8fbsFL.jpg
-oh_eren4.jpg https://cdn.salla.sa/NKNagy/4e842bb5-d744-48c8-a89e-f312fabd9d80-1000x1000-Th4WriDRyBKT5Bwt8UT8xsZiPmi67RJDNNrixHIb.jpg
-oh_eren5.jpg https://cdn.salla.sa/NKNagy/4fac9d4f-0f3d-42c5-a3a6-cfdec0c2b661-1000x1000-TialoUvHh4WUoA0JcS44Znqf4hCqEiSm0FgayCS9.jpg
-oh_tgh1.jpg https://cdn.salla.sa/NKNagy/19875590-5199-4d7b-859e-e1498dd3804a-1000x1000-RIx46u5ymwYhup6MP0DAZV3QngKUkN5S397KjmVV.jpg
-oh_tgh2.jpg https://cdn.salla.sa/NKNagy/24123811-9f02-4a28-8983-1fa7e392bed3-985.10638297872x1000-58z0W9Xgc3okNyALsH1upctvKDd8pcE4oNDkxQs3.jpg
-oh_tgh3.jpg https://cdn.salla.sa/NKNagy/323020c0-2196-4e3a-8364-bdb19f7f4719-1000x1000-7sOvnYSLaN92eAfWvtZvVirRV3Kn0B0Zc8xtiepQ.jpg
-oh_mit_t1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/6FgkgsuD1OR66DMwdMUG/zkKFHgXNlq481jI5wN0X/content.mp3?Expires=1795071600&KeyName=assets-cdn-key-1&Signature=EeKSCjuOR5zhFuKXA8MZt2rIdwE=
-oh_mit_t2.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/wvASA4EethQycYqlJBo8/4Z2zMImh10uwzMhdBGjk/content.mp3?Expires=1795071600&KeyName=assets-cdn-key-1&Signature=o7GJCmEFZAnjkYGY6YNu1--H4vc=
-oh_ib07_t1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/qVplOjt2xXOWdpP3Q8bZ/lXF3WEEr3E7iayRhMZWE/content.mp3?Expires=1795071600&KeyName=assets-cdn-key-1&Signature=EcGoLfxzYpHNQlS0TP8uAyEVXwY=
-oh_ib07_t2.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/dodonnY5bJ8DBa9n1N3r/vaxt1Nrqd79yvak2tTa7/content.mp3?Expires=1795071600&KeyName=assets-cdn-key-1&Signature=TDjyn9cVnxfCEvGQhiDed8pemac=
+oh_eren_t1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/zyMCnY6dG6mTPLRdhRlH/YDCI11loLaN4wX9kL9jW/content.mp3?Expires=1795071600&KeyName=assets-cdn-key-1&Signature=K2J5b_0ejjE7kawIhn76ib5o3Mc=
