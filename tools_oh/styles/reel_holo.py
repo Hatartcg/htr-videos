@@ -16,6 +16,10 @@ CFG = {
     'st35': dict(TOTAL=15.5, T_GAME=1.3, T_PROD=3.3, T_NAME=4.0, T_F1=6.6, T_F2=8.2, T_F2b=9.5, T_PRICE=10.9, T_CTA=12.9,
                 game='ONE PIECE', hook='سابو يولّعها بالأحمر والأسود!', big='SABO', label='ONE PIECE CARD GAME', name=['STARTER DECK', 'ST-35'], n1=51, cap1='كرت في الديك', n2=10, cap2='DON!! CARDS',
                 extra='+1 OP-16 PACK', price='105', seed=35, f1='deck', hookfs=64),
+    'ib07': dict(TOTAL=15.9, T_GAME=1.3, T_PROD=2.89, T_NAME=3.79, T_F1=5.5, T_F2=7.25, T_F2b=9.82, T_PRICE=11.5, T_CTA=13.5, T_END2=15.3,
+                game='ONE PIECE', hook='رايلي وشاكياكو في بوكس واحد!', big='ONE PIECE', label='ONE PIECE CARD GAME', name=['ILLUSTRATION BOX', 'IB-07'], n1='BANDAI', cap1='إصدار رسمي', n2=1, cap2='SPECIAL ILLUSTRATIONS',
+                extra='+ BOOSTER PACKS', price='235', seed=207, f1='deck', hookfs=68, h0=True, f2txt='PROMO CARDS', card_full=True,
+                punch=[(5.5, .08, .5), (8.79, .07, .6), (9.82, .08, .6), (11.5, .10, .5), (12.79, .06, .5), (14.68, .06, .6)], impact=[1.3, 5.5, 6.39, 8.79, 9.82, 10.64, 11.5, 12.79, 14.2, 15.3]),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; rng = np.random.default_rng(CFG['seed'])
@@ -79,7 +83,8 @@ LOGO_BIG, LOGO_MID, LOGO_WM = logo_spr(560), logo_spr(440), logo_spr(150)
 prod = Image.open(D + 'main.png').convert('RGB')
 BOX = foil_frame(prod, 640); BOX_SM = foil_frame(prod, 300, r=16)
 alt = Image.open(D + 'alt.png').convert('RGB')
-CARD = foil_frame(alt.crop((60, 0, alt.width - 60, int(alt.height * .64))).resize((300, 420)), 300, r=16)  # card-shaped crop of the product art
+CARD = foil_frame(alt.resize((300, 420)) if CFG.get('card_full') else alt.crop((60, 0, alt.width - 60, int(alt.height * .64))).resize((300, 420)), 300, r=16)  # card-shaped crop of the product art
+CARD2 = foil_frame(Image.open(D + 'alt2.png').convert('RGB').resize((300, 420)), 300, r=16) if os.path.exists(D + 'alt2.png') else CARD
 # generic foil pack silhouettes (no branding)
 def pack_spr(hshift):
     w, h = 230, 380; ys, xs = np.mgrid[0:h, 0:w]; hue = ((xs * .6 + ys) / (w + h) * 1.5 + hshift) % 1
@@ -93,7 +98,8 @@ def pack_spr(hshift):
 PACKS = [pack_spr(i * .23) for i in range(3)]
 
 H_GAME = Holo(CFG['big'], FA(230), stroke=8)
-H_N1 = Holo(str(CFG['n1']), FA(520), stroke=10); H_N2 = {n: Holo(str(n), FA(400), stroke=10) for n in range(1, CFG['n2'] + 1)}
+H_N1 = Holo(str(CFG['n1']), FA(520 if len(str(CFG['n1'])) < 4 else 300), stroke=10)
+H_F2T = Holo(CFG['f2txt'], FA(230), stroke=8) if CFG.get('f2txt') else None; H_N2 = {n: Holo(str(n), FA(400), stroke=10) for n in range(1, CFG['n2'] + 1)}
 H_PRICE = Holo(CFG['price'], FA(420), stroke=10)
 H_NAME = [Holo(CFG['name'][0], FA(150), stroke=6), Holo(CFG['name'][1], FA(170), stroke=6)]
 S = dict(
@@ -154,15 +160,20 @@ def render(t):
     f = background(t, gl)
     zoom = 1 + .06 * env(t, T_GAME, .4) + .08 * env(t, T_PRICE + .02, .5)
     # intro: logo scan reveal
-    if t < VO + .2:
+    H0 = CFG.get('h0', False)
+    if t < VO + .2 and not H0:
         p = eo(t / .35); out = eo((t - VO) / .2)
         spr = LOGO_BIG.copy(); h = spr.shape[0]; cut = int(h * p); spr[cut:, :, 3] = 0
         blit(f, spr, W / 2, H * .42, 1 + .2 * (1 - p), 1 - out)
         if p < 1: f[int(H * .42 - h / 2 + cut) - 2:int(H * .42 - h / 2 + cut) + 2] = 255
-    if VO <= t < T_CTA: blit(f, LOGO_WM, 120, 110, 1, min(1, (t - VO) / .2) * .9)
-    if VO <= t < T_PROD:
-        lt = t - VO
-        blit(f, S['ya'], W / 2, H * .30 + 40 * (1 - eo(lt / .3)), 1, eo(lt / .25))
+    if (VO <= t or H0) and t < T_CTA: blit(f, LOGO_WM, 120, 110, 1, .9 if H0 else min(1, (t - VO) / .2) * .9)
+    if (VO <= t or H0) and t < T_PROD:
+        lt = t - VO if not H0 else t + .12
+        if H0:  # product on screen from frame 1, slow push-in + holo sweep
+            pz = (.86 + .08 * eo(t / .6) + .03 * t) * (1 - .25 * eo((t - T_GAME) / .25) if t > T_GAME else 1)
+            spr = holo_sweep(BOX, (t * .7) % 1.6 - .3); cyb = H * .67 + 8 * math.sin(t * 2)
+            blit(f, spr, W / 2, cyb, pz, 1); reflect(f, spr, W / 2, cyb + spr.shape[0] * pz / 2 - 4, pz, .2)
+        blit(f, S['ya'], W / 2, H * (.20 if H0 else .30) + 40 * (1 - eo(lt / .3)), 1, eo(lt / .25))
         if t > T_GAME:
             k = t - T_GAME; spr = H_GAME.sprite(t)
             blit(f, spr, W / 2, H * .42, 1 + .9 * (1 - eo(k / .2)), min(1, k / .06))
@@ -198,11 +209,12 @@ def render(t):
         if lt > .35: blit(f, S['cap1'], W / 2, H * .82, ebk((lt - .35) / .3), 1)
     if T_F2 <= t < T_PRICE:
         lt = t - T_F2; n = max(1, min(CFG['n2'], int(1 + (CFG['n2'] - 1) * eo(lt / .55))))
-        blit(f, H_N2[n].sprite(t), W / 2, H * .20, 1 + .15 * env(t, T_F2 + .55, .25), 1)
+        if H_F2T is not None: blit(f, H_F2T.sprite(t), W / 2, H * .20, 1 + .8 * (1 - eo(lt / .18)), min(1, lt / .06))
+        else: blit(f, H_N2[n].sprite(t), W / 2, H * .20, 1 + .15 * env(t, T_F2 + .55, .25), 1)
         if lt > .4: blit(f, S['cap2'], W / 2, H * .33, ebk((lt - .4) / .3), 1)
         for j in [0, 4, 1, 3, 2]:
             i = j - 2; k = ebk((lt - .15 - abs(i) * .06) / .5)
-            spr = holo_sweep(CARD, ((t * .5 + j * .15) % 1.4) - .2)
+            spr = holo_sweep(CARD if j % 2 == 0 else CARD2, ((t * .5 + j * .15) % 1.4) - .2)
             blit(f, spr, W / 2 + i * 170 * k, H * .58 + abs(i) ** 1.5 * 30 * k + 700 * (1 - eo((lt - abs(i) * .06) / .4)), .95 + (.1 if j == 2 else 0), 1, -i * 10 * k)
         if t > T_F2b:
             k = t - T_F2b; blit(f, S['extra'], W / 2, H * .82, ebk(k / .3), 1)
@@ -231,6 +243,30 @@ def render(t):
     if zoom > 1.001:
         M = cv2.getRotationMatrix2D((W / 2, H / 2), 0, zoom); f = cv2.warpAffine(f, M, (W, H), borderMode=cv2.BORDER_REFLECT)
     if t > TOTAL - .4: f = (f * max(0, (TOTAL - t) / .4)).astype(np.uint8)
+    return f
+
+# ---------- end card (CFG T_END2) + punch-ins / impact frames ----------
+_render0 = render
+def render(t):
+    if t < CFG.get('T_END2', 99): return _render0(t)
+    lt = t - CFG['T_END2']
+    f = background(t, .5); spr = holo_sweep(BOX, (lt * .9) % 1.6 - .3); sc = .78 + .2 * eo(lt / 1.2)
+    blit(f, spr, W / 2, H * .40, sc, 1); reflect(f, spr, W / 2, H * .40 + spr.shape[0] * sc / 2 - 4, sc, .2)
+    blit(f, S['order'], W / 2, H * .75, ebk(lt / .25) * (1 + .03 * math.sin(t * 7)), 1)
+    blit(f, S['url'], W / 2, H * .85, ebk((lt - .12) / .25), 1)
+    blit(f, LOGO_WM, 120, 110, 1, .9)
+    f = np.clip(f, 0, 255).astype(np.uint8)
+    if t > TOTAL - .25: f = (f * max(0, (TOTAL - t) / .25)).astype(np.uint8)
+    return f
+_render1 = render
+def render(t):
+    f = _render1(t); z = 1
+    for (ti, amt, dur) in CFG.get('punch', []):
+        if ti <= t < ti + dur: z += amt * (1 - (t - ti) / dur) ** 1.5
+    if z > 1.001:
+        M = cv2.getRotationMatrix2D((W / 2, H / 2), 0, z); f = cv2.warpAffine(f, M, (W, H), borderMode=cv2.BORDER_REFLECT)
+    for ti in CFG.get('impact', []):
+        if ti <= t < ti + .07: f = 255 - f
     return f
 
 if __name__ == '__main__':
