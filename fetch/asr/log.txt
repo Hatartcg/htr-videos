@@ -1,3 +1,10 @@
-Thu Nov 19 09:45:56 UTC 2026
+Thu Nov 19 13:40:48 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-r8yd_FO.mp3 PASS match 1.0 cps 11.5 unclear [] banned [] diff []
+st_W1.mp3 FAIL match 0.67 cps 11.9 unclear [('تبي', np.float64(0.55)), ('تعالي', np.float64(0.72))] banned [] diff [{'op': 'replace', 'expected': 'تعرف وش', 'heard': 'تعرفوش'}, {'op': 'replace', 'expected': 'تعال', 'heard': 'تعالي'}]
+st_W2.mp3 PASS match 1.0 cps 10.2 unclear [] banned [] diff []
+st_W3.mp3 FAIL match 0.75 cps 9.2 unclear [('تي', np.float64(0.58))] banned [] diff [{'op': 'replace', 'expected': 'TCG', 'heard': 'تي سي جي'}, {'op': 'replace', 'expected': 'ون', 'heard': 'وين'}]
+st_W4.mp3 PASS match 1.0 cps 7.5 unclear [] banned [] diff []
+st_W5.mp3 PASS match 1.0 cps 11.4 unclear [] banned [] diff []
+st_W6.mp3 PASS match 1.0 cps 11.3 unclear [('أونلاين', np.float64(0.78))] banned [] diff []
+st_W7.mp3 PASS match 1.0 cps 8.8 unclear [] banned [] diff []
+st_W8.mp3 FAIL match 0.7 cps 11.7 unclear [('في', np.float64(0.48)), ('أي', np.float64(0.79)), ('الجاية', np.float64(0.7))] banned [] diff [{'op': 'replace', 'expected': 'قول', 'heard': 'قل'}, {'op': 'replace', 'expected': 'بالتعليقات', 'heard': 'في التعليقات'}, {'op': 'replace', 'expected': 'تبي', 'heard': 'تريد'}]
