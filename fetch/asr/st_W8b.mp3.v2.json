@@ -1,0 +1,17 @@
+{
+ "file": "st_W8b.mp3",
+ "words": [],
+ "heard": "",
+ "unclear": [],
+ "banned": [],
+ "chars_per_sec": 0.0,
+ "match": 0.0,
+ "diff": [
+  {
+   "op": "delete",
+   "expected": "قول لنه بالتعليقات اي لعبه تبغي بطولتهه الجايه واحفظ الفيديو وتابعنه",
+   "heard": ""
+  }
+ ],
+ "verdict": "FAIL"
+}
