@@ -65,6 +65,12 @@ CFG = {
         hook='سيف النيتشيرين صار بيدك!', game=['DEMON SLAYER'], sfx='SLASH!', label='ANIME KATANA', name=['NICHIRIN KATANA', 'DEMON SLAYER'],
         f1=dict(kind='num', n=27, cap='تصميم تختار منها', img='alt.png'), f2=dict(kind='grid', cap='تانجيرو، رينغوكو، شينوبو وغيرهم'),
         price='287', spot=(255, 61, 154), seed=117, sfx_x=.66, h0=True, hookfs=96, z0=.18, punch=[(6.38, .12, .5), (7.1, .10, .6), (10.1, .10, .5), (12.06, .08, .6), (13.6, .06, .4)], impact=[0.5, 6.38, 7.1, 9.6, 10.1, 12.06, 12.9, 13.62]),
+    'mit': dict(
+        TOTAL=13.6, T_GAME=1.74, T_PROD=2.7, T_NAME=4.18, T_F1=6.82, T_F1b=7.94, T_F2=8.4, T_PRICE=9.34, T_CTA=11.06, T_END2=12.5,
+        hook='هاشيرا الحب صار تيشيرت!', game=['DEMON SLAYER'], sfx='LOVE!', label="WOMEN'S T-SHIRT", name=['MITSURI TEE', 'DEMON SLAYER'],
+        f1=dict(kind='caps', caps=['مطبوع بتصميم', 'مستوحى من الأنمي']), f2=dict(kind='grid', cap='ستايل ميتسوري!'),
+        price='60', spot=(255, 61, 154), seed=120, sfx_x=.66, h0=True, hookfs=82, z0=.18,
+        punch=[(4.18, .10, .5), (5.34, .08, .6), (9.34, .10, .5), (11.06, .08, .6)], impact=[0.5, 4.18, 5.34, 8.4, 9.34, 11.06, 12.5]),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; SPOT = CFG['spot']

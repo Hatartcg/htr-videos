@@ -21,6 +21,8 @@ C = {
               lead=[71, 74, 78, 76, 74, 73, 71, 73], cnt=[(4.02, 27)]),
  'tanj': dict(DUR=12.3, T=(1.54, 2.34, 2.66, 4.42, 5.62, 7.46, 9.06), bpm=162, seed=113, prog=[45, 48, 43, 41], pat='gallop',
               lead=[76, 79, 81, 84, 83, 81, 79, 76], cnt=[]),
+ 'mit': dict(DUR=13.6, T=(1.74, 2.7, 4.18, 6.82, 8.4, 9.34, 11.06), bpm=158, seed=120, prog=[37, 45, 42, 44], pat='gallop',
+              lead=[73, 76, 80, 78, 76, 75, 73, 75], cnt=[]),
 }[KEY]
 SR = 48000; DUR = C['DUR']; N = int(SR * DUR); rng = np.random.default_rng(C['seed'])
 VO = 0.5; T_GAME, T_PROD, T_NAME, T_F1, T_F2, T_PRICE, T_CTA = C['T']
