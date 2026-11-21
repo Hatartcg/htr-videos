@@ -1,1 +1,1 @@
-song_ineedapack_en_female.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/avsaJvFKQYag5nBuxsn9/umzXBN8rR314WQ3aHQpf/content.mp3?Expires=1795302000&KeyName=assets-cdn-key-1&Signature=98M14qcxnrH4zbhy0S1m3TGCVHc=
+song_ineedapack_en_girl_v2.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/dyhGQMawsW0TLXpO9wWv/LTpKSvpPmF9kJ6cjmUYy/content.mp3?Expires=1795302000&KeyName=assets-cdn-key-1&Signature=__-aoBjIfaQLsE6R3TFSlxJapAY=
