@@ -33,3 +33,4 @@ L7 106 عطنا رايك بكلمة وحدة بالتعليقات: حلو، ول
 L2b 72 من أول يوم نِزْلَتْ، … (Hadi 18:32: «نزلت بكسر النون»; L2 rejected) session zMS4mHTWwNOBZ9B5wR3S
 nz_A 27 «من أول يوم نِزلَت» | nz_B 29 «من أول يوم /nizlat/» — pronunciation tests after Hadi rec32 (18:48)
 L2c 71 من أول يوم نِزِلَت، … (Hadi rec32 formants: ni-zi-lat, two kasras) session FIoXynjhsntHs1TBGHX0
+N1 67 قبل EB zero five، كل بوكسات ون بيس كانت تتغلف في اليابان | N2 63 وكل بوكس مضمون فيه هتين، وكل case فيه اثنين لثلاث SP | N3 84 المشكلة؟ ناس يفتحون الـcase لين يطلع الـSP، ويبيعون الباقي... بوكسات ميتة | N4 49 بس الحين، يقولون التغليف صار في أمريكا | N5 60 يعني الهت صار عشوائي: بوكس فيه صفر، وبوكس فيه ستة! — content added after Hadi «محتوى الفيديو ناقص» (19:28). Video total 1037 cr.
