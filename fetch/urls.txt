@@ -1,1 +1,4 @@
-site_report_v1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/reT5h0FSHSPpFOC7fyiN/jSKlQMPjFrj9haJV5QnD/content.mp3?Expires=1795248000&KeyName=assets-cdn-key-1&Signature=D92noAj7TqUmjbW_wGRoHM_Adhw=
+digimon_bt27_box.png https://world.digimoncard.com/images/products/pack/ver27/img_pkg.png
+digimon_st25.png https://world.digimoncard.com/images/products/deck/st-25/img_pkg.png
+digimon_st26.png https://world.digimoncard.com/images/products/deck/st-26/img_pkg.png
+digimon_lm09.png https://world.digimoncard.com/images/products/goods/limited-lm-09/img_pkg.png
