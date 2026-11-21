@@ -1,4 +1,8 @@
-digimon_bt27_box.png https://world.digimoncard.com/images/products/pack/ver27/img_pkg.png
-digimon_st25.png https://world.digimoncard.com/images/products/deck/st-25/img_pkg.png
-digimon_st26.png https://world.digimoncard.com/images/products/deck/st-26/img_pkg.png
-digimon_lm09.png https://world.digimoncard.com/images/products/goods/limited-lm-09/img_pkg.png
+op18e_L1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/r3SK1w80LAIZJ9glp3d6/mouLLWd4jAYqY47Xjekq/content.mp3?Expires=1795284000&KeyName=assets-cdn-key-1&Signature=E9gvNBSirk_o2D19YJVzwgsPvbE=
+op18e_L2.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/aSIvFeHYI9fSob5YF7IC/CPROgCL8ZhKiPT7lSdQW/content.mp3?Expires=1795284000&KeyName=assets-cdn-key-1&Signature=sGxEqOI3LlgK-o3oWli9ff-L3bA=
+op18e_L3.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/V6u0lRWRhMbuMElPp6Wy/C9fOomqTn4eVqwhy4zop/content.mp3?Expires=1795284000&KeyName=assets-cdn-key-1&Signature=Wcv9JfeI45C5WW8a--agGoaMQvQ=
+op18e_L4.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/3CdVh3PVU8ftoeJeZz3s/aBjjwj1U4trv4txHfbS2/content.mp3?Expires=1795284000&KeyName=assets-cdn-key-1&Signature=6bfy0F4bceNgXojNf-6Xbieaq84=
+op18e_L5.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/xzAOfo9uLGiYgEU2J20J/ucooK2OW6glDV5JzAYUh/content.mp3?Expires=1795284000&KeyName=assets-cdn-key-1&Signature=BqKjRp3AANLBLTQBiBQ8p9gqOp4=
+op18e_L6.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/5zsVdH6n8OulEUEkzuJO/wXt8AWVwxAW9ojhTqd8V/content.mp3?Expires=1795284000&KeyName=assets-cdn-key-1&Signature=THVK3kuBNPKiD1TIVGl4_PBILlE=
+op18e_L7.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/PVJxsXVPBdgDyGOvpfpR/hXJBMFG32Iox4xAuSdJx/content.mp3?Expires=1795284000&KeyName=assets-cdn-key-1&Signature=jzZPwqoTHbJVPZeZbiQJLcADDzE=
+op18e_L8.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/nnDqrEO328KMD39brSp1/pFuLDa7WFMSaBwLRZ2Ix/content.mp3?Expires=1795284000&KeyName=assets-cdn-key-1&Signature=A_br4lQxIX4CMYnz-lOCKTrZS_g=
