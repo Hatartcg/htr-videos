@@ -217,8 +217,74 @@ def s9(t, f):  # showroom
     blit(f, LOGO, 540, 700, pop(t, O['OL']) * .9)
     if t >= K['olaya']: blit(f, T_OLAYA, 540, 1000, pop(t, K['olaya']))
     blit(f, T_ABHUR, 540, 1150, fadein(t, O['OL'] + .2))
-SCN = [(0, s1), (O['L2'] - .05, s2), (O['L4'] - .05, s4), (O['L5'] - .05, s5), (O['L6'] - .05, s6), (O['L7'] - .05, s7), (O['L8'] - .05, s8), (O['OL'] - .02, s9), (K['loop'], s1)]
-GLOW = {s1: 1.0, s2: .6, s4: .3, s5: .8, s6: .4, s7: .5, s8: .9, s9: 1.0}
+
+# ---------- explainer beats added after Hadi «محتوى الفيديو ناقص» (old system → problem → now → random)
+def flag_jp(w=300):
+    h = int(w * 2 / 3); im = Image.new('RGBA', (w + 40, h + 40), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    d.rounded_rectangle((20, 20, 20 + w, 20 + h), 14, fill=(255, 255, 255, 255), outline=(200, 200, 205, 255), width=4)
+    r = h * .3; d.ellipse((20 + w / 2 - r, 20 + h / 2 - r, 20 + w / 2 + r, 20 + h / 2 + r), fill=(200, 16, 46, 255)); return to_bgra(im)
+def flag_us(w=300):
+    h = int(w * 2 / 3); im = Image.new('RGBA', (w + 40, h + 40), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    for i in range(13): d.rectangle((20, 20 + i * h / 13, 20 + w, 20 + (i + 1) * h / 13), fill=(178, 34, 52, 255) if i % 2 == 0 else (255, 255, 255, 255))
+    d.rectangle((20, 20, 20 + w * .42, 20 + h * 7 / 13), fill=(60, 59, 110, 255))
+    for yy_ in range(4):
+        for xx_ in range(5): d.ellipse((20 + 14 + xx_ * w * .08 - 4, 20 + 14 + yy_ * h * .12 - 4, 20 + 14 + xx_ * w * .08 + 4, 20 + 14 + yy_ * h * .12 + 4), fill=(255, 255, 255, 255))
+    m = Image.new('L', im.size, 0); ImageDraw.Draw(m).rounded_rectangle((20, 20, 20 + w, 20 + h), 14, fill=255); im.putalpha(Image.fromarray(np.minimum(np.array(im.split()[3]), np.array(m)))); return to_bgra(im)
+JP = flag_jp(); US = flag_us(); JP_S = flag_jp(150)
+L_BEFORE = label_sprite('BEFORE EB-05', 'قبل'); L_OLD = label_sprite('THE OLD WAY', 'النظام القديم'); L_PROB = label_sprite('THE PROBLEM', 'المشكلة')
+L_NOW = label_sprite('NOW', 'الحين'); L_RAND = label_sprite('RANDOM HITS', 'هت عشوائي')
+T_PJ = text_sprite('PACKAGED IN JAPAN', FB(56), fill=NAVY, pad=20); T_PU = text_sprite('PACKAGED IN USA', FB(56), fill=(180, 30, 44), pad=20)
+P_REP = pill('حسب التقارير', FL(56), (110, 120, 140))
+T_CASE = text_sprite('1 CASE = 12 BOXES', FB(54), fill=NAVY, pad=20)
+def chip(txt, col): return pill(txt, FB(34), col, padx=18, pady=8)
+C2 = chip('2+', (22, 150, 136)); CSP = chip('SP', (226, 38, 52)); CDOL = chip('$', (70, 80, 100))
+MB_OPEN = MB.copy(); MB_OPEN[..., 3] = (MB_OPEN[..., 3] * .3).astype(np.uint8)
+SPGLOW = img_sprite(ld('op18_box.webp'), 230, TEALc, 30)
+SP_IDX = (3, 9)
+P_NOMAP = pill("CAN'T MAP THE CASE", FB(44), (180, 30, 44))
+NUM0 = text_sprite('0', FB(200), fill=(226, 38, 52), stroke=6, stroke_fill=(255, 255, 255), pad=30); NUM6 = text_sprite('6', FB(200), fill=(22, 150, 136), stroke=6, stroke_fill=(255, 255, 255), pad=30)
+def gpos(i): r, c = divmod(i, 4); return 165 + c * 250, 640 + r * 175
+def sB(t, f):  # before EB-05: everything packaged in Japan
+    blit(f, L_BEFORE, 540, 520, pop(t, O['N1']))
+    blit(f, EBBOX, 300, 800, pop(t, O['N1'] + .1) * .85)
+    if t >= K['jp']: blit(f, JP, 780, 790, pop(t, K['jp'])); blit(f, T_PJ, 540, 1110, fadein(t, K['jp'] + .1))
+def sO(t, f):  # old way: every box 2+ hits, 2–3 SP per case
+    blit(f, L_OLD, 540, 520, pop(t, O['N2'])); blit(f, T_CASE, 540, 1180, fadein(t, O['N2'] + .3))
+    for i in range(12):
+        cx, cy = gpos(i); ti = O['N2'] + .1 + i * .06
+        if t < ti: continue
+        sp = i in SP_IDX and t >= K['sp']
+        blit(f, SPGLOW if sp else MB, cx, cy, (.82 if not sp else .92) * pop(t, ti, .2))
+        if t >= K['two']: blit(f, C2, cx + 70, cy - 55, pop(t, K['two'] + i * .03))
+        if sp: blit(f, CSP, cx - 70, cy - 55, pop(t, K['sp']))
+def sP(t, f):  # problem: open until the SP, sell the rest as dead boxes
+    blit(f, L_PROB, 540, 520, pop(t, O['N3']))
+    for i in range(12):
+        cx, cy = gpos(i); to = K['rip'] + i * .1
+        opened = t >= to and i <= SP_IDX[1]
+        if i in SP_IDX and t >= to: blit(f, SPGLOW, cx, cy, .92); blit(f, CSP, cx - 70, cy - 55, 1.0)
+        elif opened and i < SP_IDX[1]: blit(f, MB_OPEN, cx, cy, .82)
+        else:
+            blit(f, MB, cx, cy, .82)
+            if t >= K['sell']: blit(f, CDOL, cx + 70, cy - 55, pop(t, K['sell']))
+    if t >= K['deadp']:
+        for i in (10, 11): cx, cy = gpos(i); blit(f, ST_DEAD, cx, cy, .34 * pop(t, K['deadp'], .2), 1, -12)
+def sN(t, f):  # now: packaging in the US (reported)
+    blit(f, L_NOW, 540, 520, pop(t, O['N4']))
+    blit(f, JP, 270, 800, 1 - .25 * cl((t - K['us']) / .3))
+    if t >= K['us']:
+        u = eo((t - K['us']) / .4); cv2.arrowedLine(f, (450, 800), (int(450 + 170 * u), 800), bgr(NAVY), 14, cv2.LINE_AA, tipLength=.3)
+        blit(f, US, 810, 800, pop(t, K['us'] + .1)); blit(f, T_PU, 540, 1080, fadein(t, K['us'] + .2))
+    blit(f, P_REP, 540, 1200, fadein(t, O['N4'] + .5))
+def sR(t, f):  # random hits: 0 vs 6, can't map
+    blit(f, L_RAND, 540, 520, pop(t, O['N5']))
+    blit(f, BOX_S, 290, 800, pop(t, O['N5'] + .1) * .9); blit(f, BOX_S, 790, 800, pop(t, O['N5'] + .2) * .9)
+    if t >= K['zero']: blit(f, NUM0, 290, 1050, pop(t, K['zero']))
+    if t >= K['six']: blit(f, NUM6, 790, 1050, pop(t, K['six']))
+    blit(f, P_NOMAP, 540, 1260, pop(t, K['six'] + .5))
+
+SCN = [(0, s1), (O['L2'] - .05, s2), (O['N1'] - .05, sB), (O['N2'] - .05, sO), (O['N3'] - .05, sP), (O['N4'] - .05, sN), (O['N5'] - .05, sR), (O['L5'] - .05, s5), (O['L6'] - .05, s6), (O['L7'] - .05, s7), (O['L8'] - .05, s8), (O['OL'] - .02, s9), (K['loop'], s1)]
+GLOW = {sB: .4, sO: .5, sP: .7, sN: .4, sR: .6, s1: 1.0, s2: .6, s4: .3, s5: .8, s6: .4, s7: .5, s8: .9, s9: 1.0}
 
 def render(t):
     cur, st = SCN[0][1], 0

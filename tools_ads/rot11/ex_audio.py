@@ -40,10 +40,10 @@ def whoosh(t, g=.25):
 thud(K['dead'])
 for j in range(12): tick(O['L2'] + .15 + j * .1, .15); tick(K['grid_x'] + j * .12, .3)
 thud(K['grid_x'] + 12 * .12, .5)
-for k in ['L2', 'L4', 'L5', 'L6', 'L7', 'L8', 'OL']: whoosh(O[k] - .05)
+for k in ['L2', 'N1', 'N2', 'N3', 'N4', 'N5', 'L5', 'L6', 'L7', 'L8', 'OL']: whoosh(O[k] - .05)
 for c in C['cuts']: whoosh(c, .12)
-for k in ['yes', 'no', 'good', 'loss', 'a', 'b', 'share', 'save', 'fol', 'onl', 'plus', 'olaya']: popx(K[k])
-thud(K['unpub'], .55)
+for k in ['jp', 'two', 'sp', 'us', 'zero', 'six', 'good', 'loss', 'a', 'b', 'share', 'save', 'fol', 'onl', 'plus', 'olaya']: popx(K[k])
+thud(K['deadp'], .45)
 x = tt(.8); add(sfx, K['p200'] - .3, np.sin(2 * np.pi * np.cumsum(1200 * np.exp(-x / .3) + 120) / SR) * np.exp(-x / .5), .25)  # price drop sweep
 thud(K['p200'], .5)
 def fade(x, f=.012): k = int(f * SR); x = x.copy(); x[:k] *= np.linspace(0, 1, k); x[-k:] *= np.linspace(1, 0, k); return x
