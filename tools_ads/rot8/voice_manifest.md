@@ -32,3 +32,4 @@ L4 67 وبانداي ما تنشر نسب السحب... يعني محد يقدر
 L7 106 عطنا رايك بكلمة وحدة بالتعليقات: حلو، ولا خربوها؟ وأرسله لخويك اللي يفتح بوكسات، واحفظه وتابعنا! | L8 50 و OP eighteen موجود عندنا أونلاين، وكمان (+ approved ref العليا clip)
 L2b 72 من أول يوم نِزْلَتْ، … (Hadi 18:32: «نزلت بكسر النون»; L2 rejected) session zMS4mHTWwNOBZ9B5wR3S
 nz_A 27 «من أول يوم نِزلَت» | nz_B 29 «من أول يوم /nizlat/» — pronunciation tests after Hadi rec32 (18:48)
+L2c 71 من أول يوم نِزِلَت، … (Hadi rec32 formants: ni-zi-lat, two kasras) session FIoXynjhsntHs1TBGHX0
