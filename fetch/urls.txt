@@ -1,1 +1,2 @@
-op18e_L2b.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/zMS4mHTWwNOBZ9B5wR3S/AeuYFTRhZJhgG8xOgpUy/content.mp3?Expires=1795284000&KeyName=assets-cdn-key-1&Signature=rVMr03ZHZy8HdFsU27OPmACPZSo=
+nz_A.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/HxKPq1RugwgXUYdBZRm8/KtXbq47Tj7pHnlXTgRsW/content.mp3?Expires=1795284000&KeyName=assets-cdn-key-1&Signature=EIbQBB2L5hVLCSHTU-rR9qzuor0=
+nz_B.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/jZKsI8tj3oYGIKtCvlxy/k5lDbmqh10nwQBgIUTMs/content.mp3?Expires=1795284000&KeyName=assets-cdn-key-1&Signature=5xdyJ8ZjEIaLjWOyhS9-aXyY8Rs=

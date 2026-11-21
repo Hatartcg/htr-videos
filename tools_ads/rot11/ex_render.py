@@ -16,15 +16,17 @@ def bgr(c): return (c[2], c[1], c[0])
 
 # ---------- background: charcoal-navy desk, slow dot grid, red glow behind the stage
 yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
-BASE = np.zeros((H, W, 3), np.float32); BASE[:] = bgr((16, 22, 38))
-BASE += (np.exp(-(((xx - 540) ** 2) / 700 ** 2 + ((yy - 860) ** 2) / 620 ** 2))[..., None] * np.array(bgr((60, 30, 40)), np.float32))
-VIG = (1 - .45 * np.clip(((xx - 540) ** 2 / 560 ** 2 + (yy - 960) ** 2 / 1100 ** 2) - .25, 0, 1))[..., None]
+BASE = np.zeros((H, W, 3), np.float32); BASE[:] = bgr((236, 232, 226))
+BASE -= (np.clip((yy - 1500) / 420, 0, 1)[..., None] * 40)  # desk shade at the bottom
+VIG = (1 - .18 * np.clip(((xx - 540) ** 2 / 560 ** 2 + (yy - 960) ** 2 / 1100 ** 2) - .25, 0, 1))[..., None]
 def background(t, glow=0.0, glow_col=RED):
     f = BASE.copy()
-    oy = (t * 14) % 60
-    dots = (((xx % 60) - 30) ** 2 + (((yy + oy) % 60) - 30) ** 2 < 5).astype(np.float32)[..., None]
-    f += dots * 14
-    if glow > 0: f += np.exp(-(((xx - 540) ** 2 + (yy - 820) ** 2) / 520 ** 2))[..., None] * np.array(bgr(glow_col), np.float32) * .35 * glow
+    oy = (t * 40) % 60; ox = (t * 18) % 60
+    dots = ((((xx + ox) % 60) - 30) ** 2 + (((yy + oy) % 60) - 30) ** 2 < 6).astype(np.float32)[..., None]
+    f -= dots * 22
+    if glow > 0:
+        gx = 540 + 160 * math.sin(t * .9); gy = 840 + 90 * math.cos(t * .7)
+        f -= np.exp(-(((xx - gx) ** 2 + (yy - gy) ** 2) / 480 ** 2))[..., None] * (255 - np.array(bgr(glow_col), np.float32)) * .22 * glow
     return f * VIG
 
 # ---------- sprite factories
@@ -98,7 +100,7 @@ MB = mini_box(False); MBD = mini_box(True)
 L_REP = label_sprite('EARLY REPORTS', 'بلاغات أولية'); L_EB = label_sprite('SAME STORY?', 'نفس القصة؟')
 L_RATE = label_sprite('PULL RATES', 'نسب السحب'); L_MKT = label_sprite('MARKET PRICE', 'سعر السوق')
 L_YOU = label_sprite('YOUR CALL', 'وش رايك؟'); L_AV = label_sprite('IN STOCK', 'متوفر عندنا')
-T_HITS = text_sprite('HITS', FB(64), fill=(200, 210, 230), pad=20)
+T_HITS = text_sprite('HITS', FB(64), fill=NAVY, pad=20)
 NUMS = {n: text_sprite(str(n), FB(190), fill=WHITE if n else (255, 70, 80), stroke=6, stroke_fill=(0, 0, 0), pad=30) for n in range(9)}
 T_EQ = text_sprite('=?', FB(150), fill=WHITE, stroke=6, stroke_fill=(0, 0, 0), pad=30)
 T_OP18 = text_sprite('OP-18', FB(66), fill=WHITE, pad=20); T_EB05 = text_sprite('EB-05', FB(66), fill=(255, 160, 200), pad=20)
@@ -130,8 +132,10 @@ PL = side_panel(['للي يجمع', 'ويلعب'], None, (22, 140, 128), 'v'); P
 V_OK = text_sprite('خبر حلو', FL(96), fill=WHITE, stroke=6, stroke_fill=(0, 0, 0), pad=24); V_BAD = text_sprite('خسارة', FL(96), fill=WHITE, stroke=6, stroke_fill=(0, 0, 0), pad=24)
 BG_OK = badge('v', TEALc); BG_X = badge('x', RED)
 BTN_A = pill('حلو', FL(130), (22, 150, 136)); BTN_B = pill('خربوها', FL(130), (200, 30, 46))
-T_VS = text_sprite('ولا', FL(90), fill=(200, 210, 230), pad=20); T_CMT = text_sprite('بكلمة وحدة بالتعليقات', FL(76), fill=WHITE, pad=24)
+T_VS = text_sprite('ولا', FL(90), fill=NAVY, pad=20); T_CMT = text_sprite('بكلمة وحدة بالتعليقات', FL(76), fill=NAVY, pad=24)
 BUB = bubble(); PLANE = plane()
+BUB = BUB.copy(); m = BUB[..., 3] > 0; wm = (BUB[..., 0] > 200) & m; BUB[wm, :3] = bgr(NAVY); BUB[m & ~wm, :3] = 255
+PL2 = PLANE.copy(); PL2[PL2[..., 3] > 0, :3] = bgr((44, 70, 130)); PLANE = PL2
 P_SHARE = pill('أرسله لخويك اللي يفتح بوكسات', FL(64), (44, 70, 130)); P_SAVE = pill('احفظه', FL(76), (70, 80, 100)); P_FOL = pill('تابع HTR', FL(76), RED)
 P_SITE = pill('HTRTCG.COM', FB(60), RED); T_ONL = text_sprite('أونلاين', FL(110), fill=WHITE, stroke=6, stroke_fill=(0, 0, 0), pad=24)
 T_PLUS = text_sprite('+ المعرض', FL(96), fill=(255, 200, 205), stroke=6, stroke_fill=(0, 0, 0), pad=24)
@@ -150,18 +154,18 @@ K = C['k']
 def s1(t, f):  # hook: box on screen from frame 1, DEAD BOX slams on «فاضية»
     fl = 1 + .015 * math.sin(t * 2.2); dead = t >= K['dead']
     g = f
-    blit(f, BOX, 540, 830 + 10 * math.sin(t * 1.6), .98 * fl)
+    blit(f, BOX, 540 + 14 * math.sin(t * 1.3), 830 + 16 * math.sin(t * 1.9), (.92 + .04 * t / 3) * fl, 1, 2.5 * math.sin(t * 1.1))
     if dead:
-        p = pop(t, K['dead'], .22); blit(f, ST_DEAD, 540, 840, 1.8 - .8 * p if p < 1 else 1.0, cl(p * 2), -12)
+        p = pop(t, K['dead'], .22); blit(f, ST_DEAD, 540, 840, (1.8 - .8 * p if p < 1 else 1.0) * (1 + .04 * math.sin(t * 9)), cl(p * 2), -12)
 def s2(t, f):  # case grid fills, then each box gets ✗, hits count 8 → 0
     blit(f, L_REP, 540, 520, pop(t, O['L2']))
     for i in range(12):
-        r, c = divmod(i, 4); cx, cy = 165 + c * 250, 700 + r * 190
+        r, c = divmod(i, 4); cx, cy = 165 + c * 250, 650 + r * 175
         ti = O['L2'] + .15 + i * .1; tx = K['grid_x'] + i * .12
         if t < ti: continue
         blit(f, MBD if t >= tx else MB, cx, cy, .82 * pop(t, ti, .22))
     n = 8 - int(cl((t - K['grid_x']) / (12 * .12 + .3)) * 8)
-    blit(f, T_HITS, 540, 1110, fadein(t, O['L2'] + .6)); blit(f, NUMS[n], 540, 1230, fadein(t, O['L2'] + .6) * (1.15 if n == 0 and t < K['grid_x'] + 1.9 else 1.0))
+    blit(f, T_HITS, 540, 1170, fadein(t, O['L2'] + .6)); blit(f, NUMS[n], 540, 1290, fadein(t, O['L2'] + .6) * (1.15 if n == 0 and t < K['grid_x'] + 1.9 else 1.0))
 def s3(t, f):  # OP-18 vs EB-05
     blit(f, L_EB, 540, 520, pop(t, O['L3']))
     blit(f, BOX_S, 290 - 300 * (1 - eo((t - O['L3']) / .35)), 820, .95); blit(f, T_OP18, 290, 1090, fadein(t, O['L3'] + .2))
@@ -172,7 +176,7 @@ def s3(t, f):  # OP-18 vs EB-05
 def s4(t, f):  # pull rates not published
     blit(f, L_RATE, 540, 520, pop(t, O['L4']))
     blit(f, RATE, 540, 860, pop(t, O['L4'] + .15) * (1 + .01 * math.sin(t * 3)))
-    if t >= K['unpub']: blit(f, ST_UNPUB, 540, 990, pop(t, K['unpub'], .22), 1, -8)
+    if t >= K['unpub']: blit(f, ST_UNPUB, 540, 900, pop(t, K['unpub'], .22), 1, -8)
     if t >= K['yes']: blit(f, CH_YES, 330, 1240, pop(t, K['yes']))
     if t >= K['no']: blit(f, CH_NO, 750, 1240, pop(t, K['no']))
 def s5(t, f):  # price under $200
@@ -189,32 +193,32 @@ def s5(t, f):  # price under $200
         i = min(int(nseg), len(pts) - 2); u = cl(nseg - i); a, b = pts[i], pts[i + 1]
         cv2.circle(f, (int(a[0] + (b[0] - a[0]) * u), int(a[1] + (b[1] - a[1]) * u)), 20, bgr((255, 255, 255)), -1, cv2.LINE_AA)
     blit(f, P300, 330, 760, fadein(t, O['L5'] + .3) * (1 - .6 * cl((t - K['p200']) / .3)))
-    if t >= K['p200']: blit(f, P200, 650, 1250, pop(t, K['p200']))
+    if t >= K['p200']: blit(f, P200, 650, 1290, pop(t, K['p200']))
 def s6(t, f):  # split: collectors vs openers
     blit(f, L_YOU, 540, 520, pop(t, O['L6']))
     blit(f, PL, 285, 920, pop(t, O['L6'] + .2)); blit(f, PR, 795, 920, pop(t, K['open'] - .2))
     if t >= K['good']: blit(f, BG_OK, 285, 1100, pop(t, K['good'])); blit(f, V_OK, 285, 1230, fadein(t, K['good']))
     if t >= K['loss']: blit(f, BG_X, 795, 1100, pop(t, K['loss'])); blit(f, V_BAD, 795, 1230, fadein(t, K['loss']))
 def s7(t, f):  # vote in comments + share + save + follow
-    blit(f, BUB, 540, 560, pop(t, O['L7']))
-    blit(f, BTN_A, 540, 780, pop(t, K['a'])); blit(f, T_VS, 540, 905, fadein(t, K['a'] + .3)); blit(f, BTN_B, 540, 1030, pop(t, K['b']))
-    blit(f, T_CMT, 540, 1180, fadein(t, O['L7'] + .5))
+    blit(f, BUB, 540, 540, pop(t, O['L7']))
+    blit(f, BTN_A, 540, 700, pop(t, K['a'])); blit(f, T_VS, 540, 815, fadein(t, K['a'] + .3)); blit(f, BTN_B, 540, 930, pop(t, K['b']))
+    blit(f, T_CMT, 540, 1050, fadein(t, O['L7'] + .5))
     if t >= K['share']:
-        k = pop(t, K['share']); blit(f, P_SHARE, 540, 1290, k)
-        blit(f, PLANE, 900 + 60 * (t - K['share']), 1160 - 40 * (t - K['share']), k, 1, 10)
-    if t >= K['save']: blit(f, P_SAVE, 380, 1420, pop(t, K['save']))
-    if t >= K['fol']: blit(f, P_FOL, 700, 1420, pop(t, K['fol']))
+        k = pop(t, K['share']); blit(f, P_SHARE, 540, 1170, k)
+        blit(f, PLANE, 850 + 50 * min(t - K['share'], 1.2), 1060 - 40 * min(t - K['share'], 1.2), k, 1, 10)
+    if t >= K['save']: blit(f, P_SAVE, 380, 1295, pop(t, K['save']))
+    if t >= K['fol']: blit(f, P_FOL, 700, 1295, pop(t, K['fol']))
 def s8(t, f):  # in stock online
     blit(f, L_AV, 540, 520, pop(t, O['L8']))
-    blit(f, BOX_S, 380, 820, pop(t, O['L8'] + .1) * 1.1); blit(f, PACK, 790, 860, pop(t, O['L8'] + .3) * .9, 1, 6)
-    blit(f, T_ONL, 540, 1120, pop(t, K['onl'])); blit(f, P_SITE, 540, 1250, pop(t, K['onl'] + .2))
-    if t >= K['plus']: blit(f, T_PLUS, 540, 1390, pop(t, K['plus']))
+    blit(f, BOX_S, 380, 790, pop(t, O['L8'] + .1) * 1.1); blit(f, PACK, 790, 820, pop(t, O['L8'] + .3) * .9, 1, 6)
+    blit(f, T_ONL, 540, 1060, pop(t, K['onl'])); blit(f, P_SITE, 540, 1180, pop(t, K['onl'] + .2))
+    if t >= K['plus']: blit(f, T_PLUS, 540, 1300, pop(t, K['plus']))
 def s9(t, f):  # showroom
     blit(f, LOGO, 540, 700, pop(t, O['OL']) * .9)
     if t >= K['olaya']: blit(f, T_OLAYA, 540, 1000, pop(t, K['olaya']))
     blit(f, T_ABHUR, 540, 1150, fadein(t, O['OL'] + .2))
-SCN = [(0, s1), (O['L2'] - .05, s2), (O['L3'] - .05, s3), (O['L4'] - .05, s4), (O['L5'] - .05, s5), (O['L6'] - .05, s6), (O['L7'] - .05, s7), (O['L8'] - .05, s8), (O['OL'] - .02, s9), (K['loop'], s1)]
-GLOW = {s1: 1.0, s2: .6, s3: .5, s4: .3, s5: .8, s6: .4, s7: .5, s8: .9, s9: 1.0}
+SCN = [(0, s1), (O['L2'] - .05, s2), (O['L4'] - .05, s4), (O['L5'] - .05, s5), (O['L6'] - .05, s6), (O['L7'] - .05, s7), (O['L8'] - .05, s8), (O['OL'] - .02, s9), (K['loop'], s1)]
+GLOW = {s1: 1.0, s2: .6, s4: .3, s5: .8, s6: .4, s7: .5, s8: .9, s9: 1.0}
 
 def render(t):
     cur, st = SCN[0][1], 0
@@ -223,14 +227,19 @@ def render(t):
     f = background(t, GLOW[cur])
     cur(t, f)
     # header + small HTR tag always on
-    blit(f, TITLE, 540, 340); blit(f, HTRTAG, 940, 1560, .9)
+    blit(f, TITLE, 540, 340); blit(f, HTRTAG, 150, 262, .85)
     # word-synced captions (one chunk at a time)
     for a, b, spr in CAPS:
-        if a <= t < b: blit(f, spr, 540, 1480 if cur in (s7, s8) else 1420, .9 + .1 * ebk((t - a) / .15)); break
+        if a <= t < b: blit(f, spr, 540, 1440, .9 + .1 * ebk((t - a) / .15)); break
     # camera: slow push-in per beat + tiny drift; hit-shakes on stamps
-    z = 1 + .02 * (t - st); dx, dy = shake(t, K['dead']); ex, ey = shake(t, K['grid_x'] + 12 * .12, 10); dx += ex; dy += ey
+    cu = [c for c in C['cuts'] if c <= t]; lc = cu[-1] if cu else -9
+    nc = len([c for c in cu if c > st])
+    st2 = lc if lc > st else st
+    zb = 1.06 if nc % 2 else 1.0
+    z = zb + .02 * (t - st2); dx, dy = shake(t, K['dead']); ex, ey = shake(t, K['grid_x'] + 12 * .12, 10); dx += ex; dy += ey
     M = np.float32([[z, 0, (1 - z) * 540 + dx], [0, z, (1 - z) * 900 + dy]]); f = cv2.warpAffine(f, M, (W, H), borderMode=cv2.BORDER_REFLECT)
-    if cur is not s1 and t - st < .12: f = f * (1 - .25 * (1 - (t - st) / .12)) + 255 * .25 * (1 - (t - st) / .12)  # quick flash on each beat cut
+    lt = max(st, lc)
+    if (cur is not s1 or lc > st) and t - lt < .12: f = f * (1 - .25 * (1 - (t - lt) / .12)) + 255 * .25 * (1 - (t - lt) / .12)  # quick flash on each beat cut
     return np.clip(f, 0, 255).astype(np.uint8)
 
 if __name__ == '__main__':
