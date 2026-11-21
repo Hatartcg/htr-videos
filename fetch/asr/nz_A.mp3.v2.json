@@ -1,0 +1,17 @@
+{
+ "file": "nz_A.mp3",
+ "words": [],
+ "heard": "",
+ "unclear": [],
+ "banned": [],
+ "chars_per_sec": 0.0,
+ "match": 0.0,
+ "diff": [
+  {
+   "op": "delete",
+   "expected": "من اول يوم نزلت",
+   "heard": ""
+  }
+ ],
+ "verdict": "FAIL"
+}
