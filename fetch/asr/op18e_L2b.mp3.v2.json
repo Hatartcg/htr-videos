@@ -1,0 +1,17 @@
+{
+ "file": "op18e_L2b.mp3",
+ "words": [],
+ "heard": "",
+ "unclear": [],
+ "banned": [],
+ "chars_per_sec": 0.0,
+ "match": 0.0,
+ "diff": [
+  {
+   "op": "delete",
+   "expected": "من اول يوم نزلت طلعت بلاغات عن بوكسات ما فيهه وله هت قوي",
+   "heard": ""
+  }
+ ],
+ "verdict": "FAIL"
+}
