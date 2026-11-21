@@ -1,1 +1,5 @@
-st_W4b.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/JgyHbK2REDEXyms9wEuL/GJNHebbASSw0I5GepvNe/content.mp3?Expires=1795107600&KeyName=assets-cdn-key-1&Signature=Zt3ZEpxQbYM_gxJzfSfpOSCpct8=
+ep32_voice.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/rEOmxUfywiAffbVJyWxi/ntS3TUnQMnGNQ4KIp8Oe/content.mp3?Expires=1795244400&KeyName=assets-cdn-key-1&Signature=-HEL-TzgY-JCHK67pbPaow8_-dY=
+ep32_ray_sl10.png https://images.pokemontcg.io/col1/SL10_hires.png
+ep32_ff_logo.png https://imgeucdn.gamespress.com/cdn/files/Pokemon/2026/11/191023-5fd6f8e3/Pokemon_TCG_Mega_Evolution%E2%80%94Flowing_Fists_Logo_EN.png?w=360&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=722093e5a0449bb7b1a14427051f061989b0f5ea30a16b7c414304759392766e
+ep32_icv2.jpg https://icv2.com/images/uploads/8e471dcb7c1d020d9087ff0371ed633dcd86e10030c12a5ef1063444.jpg
+ep32_cb.jpg https://comicbook.com/wp-content/uploads/sites/4/2026/11/Pokemon-TCG-Flowing-Fists.jpg
