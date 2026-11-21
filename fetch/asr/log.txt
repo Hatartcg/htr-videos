@@ -1,10 +1,11 @@
-Sat Nov 21 15:25:59 UTC 2026
+Sat Nov 21 15:30:43 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-op18e_L1.mp3 FAIL match 0.0 cps 0.0 unclear [] banned [] diff [{'op': 'delete', 'expected': 'بوكسات OP eighteen فاضيه', 'heard': ''}]
-op18e_L2.mp3 FAIL match 0.0 cps 0.0 unclear [] banned [] diff [{'op': 'delete', 'expected': 'من اول يوم نزلت طلعت بلاغات عن بوكسات ما فيهه وله هت قوي', 'heard': ''}]
-op18e_L3.mp3 FAIL match 0.0 cps 0.0 unclear [] banned [] diff [{'op': 'delete', 'expected': 'ويقولون انهه نفس القصه اللي صارت في EB zero five', 'heard': ''}]
-op18e_L4.mp3 FAIL match 0.0 cps 0.0 unclear [] banned [] diff [{'op': 'delete', 'expected': 'وبانداي ما تنشر نسب السحب يعني محد يقدر ياكد وله ينفي', 'heard': ''}]
-op18e_L5.mp3 FAIL match 0.0 cps 0.0 unclear [] banned [] diff [{'op': 'delete', 'expected': 'والنتيجه سعر البوكس نزل تحت الميتين دولار', 'heard': ''}]
-op18e_L6.mp3 FAIL match 0.0 cps 0.0 unclear [] banned [] diff [{'op': 'delete', 'expected': 'طيب هذه خبر حلو للي يجمع ويلعب وله خساره للي يفتح عشان الهت', 'heard': ''}]
-op18e_L7.mp3 FAIL match 0.0 cps 0.0 unclear [] banned [] diff [{'op': 'delete', 'expected': 'عطنه رايك بكلمه وحده بالتعليقات حلو وله خربوهه وارسله لخويك اللي يفتح بوكسات واحفظه وتابعنه', 'heard': ''}]
-op18e_L8.mp3 FAIL match 0.0 cps 0.0 unclear [] banned [] diff [{'op': 'delete', 'expected': 'و OP eighteen موجود عندنه اونلاين وكمان', 'heard': ''}]
+op18e_L1.mp3 FAIL match 0.75 cps 7.0 unclear [('OP', np.float64(0.71)), ('-18', np.float64(0.71)), ('فاضية', np.float64(0.79))] banned [] diff [{'op': 'replace', 'expected': 'eighteen', 'heard': '18'}]
+op18e_L2.mp3 PASS match 0.88 cps 10.0 unclear [] banned [] diff [{'op': 'replace', 'expected': 'هت قوي', 'heard': 'هتقوي'}]
+op18e_L3.mp3 FAIL match 0.78 cps 11.4 unclear [('EB05', np.float64(0.71))] banned [] diff [{'op': 'replace', 'expected': 'EB zero five', 'heard': 'EB05'}]
+op18e_L4.mp3 FAIL match 0.78 cps 10.0 unclear [('ما', np.float64(0.7))] banned [] diff [{'op': 'replace', 'expected': 'نسب', 'heard': 'لسف'}, {'op': 'replace', 'expected': 'محد', 'heard': 'ما حد'}]
+op18e_L5.mp3 PASS match 1.0 cps 10.1 unclear [] banned [] diff []
+op18e_L6.mp3 FAIL match 1.0 cps 8.6 unclear [('هذا', np.float64(0.73)), ('للي', np.float64(0.71))] banned [] diff []
+op18e_L7.mp3 FAIL match 0.87 cps 10.2 unclear [('عطنا', np.float64(0.78)), ('ولا', np.float64(0.55)), ('وأرسلها', np.float64(0.74))] banned [] diff [{'op': 'replace', 'expected': 'وحده', 'heard': 'واحده'}, {'op': 'replace', 'expected': 'وارسله', 'heard': 'وارسلهه'}]
+op18e_L8.mp3 FAIL match 0.67 cps 9.0 unclear [('وOP18', np.float64(0.51)), ('أونلاين', np.float64(0.78))] banned [] diff [{'op': 'replace', 'expected': 'و OP eighteen', 'heard': 'وOP18'}]
+# retry 1795274905 PASS match None cps 0.0 unclear [] banned [] diff None
