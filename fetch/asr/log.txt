@@ -1,4 +1,6 @@
-Sat Nov 21 15:58:43 UTC 2026
+Sat Nov 21 16:12:14 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-nz_A.mp3 FAIL match 0.0 cps 0.0 unclear [] banned [] diff [{'op': 'delete', 'expected': 'من اول يوم نزلت', 'heard': ''}]
-nz_B.mp3 FAIL match 0.0 cps 0.0 unclear [] banned [] diff [{'op': 'delete', 'expected': 'من اول يوم نزلت', 'heard': ''}]
+nz_A.mp3 PASS match 1.0 cps 7.8 unclear [] banned [] diff []
+nz_B.mp3 FAIL match 0.67 cps 8.3 unclear [('أول', np.float64(0.76))] banned [] diff [{'op': 'insert', 'expected': '', 'heard': 'شرطه مايله'}, {'op': 'insert', 'expected': '', 'heard': 'شرطه مايله'}]
+op18e_L2b.mp3 FAIL match 0.92 cps 9.9 unclear [('ولا', np.float64(0.77)), ('حد', np.float64(0.67))] banned [] diff [{'op': 'replace', 'expected': 'هت', 'heard': 'حد'}]
+hadi_rec32.mp3 PASS match 1.0 cps 4.1 unclear [] banned [] diff []

@@ -1,17 +1,36 @@
 {
  "file": "nz_A.mp3",
- "words": [],
- "heard": "",
- "unclear": [],
- "banned": [],
- "chars_per_sec": 0.0,
- "match": 0.0,
- "diff": [
+ "words": [
   {
-   "op": "delete",
-   "expected": "من اول يوم نزلت",
-   "heard": ""
+   "w": "من",
+   "s": 0.0,
+   "e": 0.14,
+   "p": 0.89
+  },
+  {
+   "w": "أول",
+   "s": 0.14,
+   "e": 0.66,
+   "p": 0.86
+  },
+  {
+   "w": "يوم",
+   "s": 0.66,
+   "e": 1.04,
+   "p": 0.99
+  },
+  {
+   "w": "نزلت",
+   "s": 1.04,
+   "e": 1.54,
+   "p": 0.86
   }
  ],
- "verdict": "FAIL"
+ "heard": "من أول يوم نزلت",
+ "unclear": [],
+ "banned": [],
+ "chars_per_sec": 7.8,
+ "match": 1.0,
+ "diff": [],
+ "verdict": "PASS"
 }

@@ -30,13 +30,7 @@
  "unclear": [],
  "banned": [],
  "chars_per_sec": 4.1,
- "match": 0.8,
- "diff": [
-  {
-   "op": "delete",
-   "expected": "طلعت بلاغات",
-   "heard": ""
-  }
- ],
- "verdict": "FAIL"
+ "match": 1.0,
+ "diff": [],
+ "verdict": "PASS"
 }
