@@ -1,0 +1,17 @@
+{
+ "file": "op18e_L8.mp3",
+ "words": [],
+ "heard": "",
+ "unclear": [],
+ "banned": [],
+ "chars_per_sec": 0.0,
+ "match": 0.0,
+ "diff": [
+  {
+   "op": "delete",
+   "expected": "و OP eighteen موجود عندنه اونلاين وكمان",
+   "heard": ""
+  }
+ ],
+ "verdict": "FAIL"
+}

@@ -1,0 +1,17 @@
+{
+ "file": "op18e_L6.mp3",
+ "words": [],
+ "heard": "",
+ "unclear": [],
+ "banned": [],
+ "chars_per_sec": 0.0,
+ "match": 0.0,
+ "diff": [
+  {
+   "op": "delete",
+   "expected": "طيب هذه خبر حلو للي يجمع ويلعب وله خساره للي يفتح عشان الهت",
+   "heard": ""
+  }
+ ],
+ "verdict": "FAIL"
+}

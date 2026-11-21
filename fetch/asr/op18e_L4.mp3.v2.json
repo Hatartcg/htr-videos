@@ -1,0 +1,17 @@
+{
+ "file": "op18e_L4.mp3",
+ "words": [],
+ "heard": "",
+ "unclear": [],
+ "banned": [],
+ "chars_per_sec": 0.0,
+ "match": 0.0,
+ "diff": [
+  {
+   "op": "delete",
+   "expected": "وبانداي ما تنشر نسب السحب يعني محد يقدر ياكد وله ينفي",
+   "heard": ""
+  }
+ ],
+ "verdict": "FAIL"
+}
