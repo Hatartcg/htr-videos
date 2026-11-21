@@ -14,7 +14,7 @@ for line in open("fetch/asr.txt", encoding="utf-8"):
     if not line.strip(): continue
     f, _, exp = [x.strip() for x in line.partition("|")]
     a = np.frombuffer(subprocess.run(["ffmpeg","-v","error","-i","fetch/"+f,"-ac","1","-ar","16000","-f","f32le","-"],capture_output=True).stdout, np.float32)
-    segs, info = m.transcribe(a, language="ar", word_timestamps=True, beam_size=5, temperature=0, condition_on_previous_text=False, vad_filter=False)
+    segs, info = m.transcribe(a, language=("en" if exp and exp.isascii() else "ar"), word_timestamps=True, beam_size=5, temperature=0, condition_on_previous_text=False, vad_filter=False)
     words = [{"w": w.word.strip(), "s": round(w.start,2), "e": round(w.end,2), "p": round(w.probability,2)} for s in segs for w in s.words]
     dur = len(a)/16000
     rep = {"file": f, "words": words, "heard": " ".join(w["w"] for w in words)}
