@@ -1,0 +1,31 @@
+{
+ "file": "song_girl_v2_intro.mp3",
+ "words": [
+  {
+   "w": "Okay.",
+   "s": 0.0,
+   "e": 0.52,
+   "p": 0.13
+  }
+ ],
+ "heard": "Okay.",
+ "unclear": [
+  {
+   "w": "Okay.",
+   "s": 0.0,
+   "e": 0.52,
+   "p": 0.13
+  }
+ ],
+ "banned": [],
+ "chars_per_sec": 9.6,
+ "match": 0.0,
+ "diff": [
+  {
+   "op": "replace",
+   "expected": "Another day another pay My body s here my mind s away I need a pack I need a pack Just one more and I m never going back",
+   "heard": "Okay"
+  }
+ ],
+ "verdict": "FAIL"
+}
