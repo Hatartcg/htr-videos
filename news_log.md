@@ -104,3 +104,6 @@ Format: date | game | item
 2026-11-22 | Prices | HOOK: 30th Celebration secret Mew R/RGB (RGB Rare) "$4,000" market (TCGplayer market $4,110–4,316 via Cardrake Nov 17 / GemX Nov 18 + PriceCharting ungraded $3,936, Nov 19)
 2026-11-22 | Prices | RGB Mew has 3 versions red/green/blue, each "+$3,000" (G cheapest: TCGplayer $3,391 / PriceCharting $3,293; B $4,277 / $3,796); red = most expensive; not in the set's printed checklist (Wargamer + CardPrice + Cardrake)
 2026-11-22 | Tips | Secret cards aren't on the set checklist — check the price of any strange card you pull before selling it
+2026-11-24 | Prices | HOOK: US$660,000 paid (Oct 2026) for 2011 Call of Legends Shiny Rayquaza SL10 "PSA 10" — PSA (Nov 11, to CTV News Vancouver) "identified a fraudulent PSA holder"; card believed genuine (Dexerto Nov 3 + PreGradeCards Nov 7/19)
+2026-11-24 | Pokémon | Mega Evolution—Flowing Fists English release Sat Feb 6, 2027; first Z Mega Evolution Pokémon in the TCG, Mega Lucario Z headliner (TPCi gamespress Nov 19 + ICv2 + ComicBook)
+2026-11-24 | Tips | Don't rely on the seller's name — inspect a graded slab yourself before paying
