@@ -19,8 +19,9 @@ yy, xx = np.mgrid[0:H, 0:W].astype(np.float32)
 BASE = np.zeros((H, W, 3), np.float32); BASE[:] = bgr((236, 232, 226))
 BASE -= (np.clip((yy - 1500) / 420, 0, 1)[..., None] * 40)  # desk shade at the bottom
 VIG = (1 - .18 * np.clip(((xx - 540) ** 2 / 560 ** 2 + (yy - 960) ** 2 / 1100 ** 2) - .25, 0, 1))[..., None]
-def background(t, glow=0.0, glow_col=RED):
-    f = BASE.copy()
+BASE2 = BASE + np.array([14, 2, -10], np.float32)  # cool tint used on alternate cuts
+def background(t, glow=0.0, glow_col=RED, alt=False):
+    f = (BASE2 if alt else BASE).copy()
     oy = (t * 40) % 60; ox = (t * 18) % 60
     dots = ((((xx + ox) % 60) - 30) ** 2 + (((yy + oy) % 60) - 30) ** 2 < 6).astype(np.float32)[..., None]
     f -= dots * 22
@@ -154,9 +155,9 @@ K = C['k']
 def s1(t, f):  # hook: box on screen from frame 1, DEAD BOX slams on «فاضية»
     fl = 1 + .015 * math.sin(t * 2.2); dead = t >= K['dead']
     g = f
-    blit(f, BOX, 540 + 14 * math.sin(t * 1.3), 830 + 16 * math.sin(t * 1.9), (.92 + .04 * t / 3) * fl, 1, 2.5 * math.sin(t * 1.1))
+    blit(f, BOX, 540, 830 + 6 * math.sin(t * 1.4), .92 + .03 * t / 3)
     if dead:
-        p = pop(t, K['dead'], .22); blit(f, ST_DEAD, 540, 840, (1.8 - .8 * p if p < 1 else 1.0) * (1 + .04 * math.sin(t * 9)), cl(p * 2), -12)
+        p = pop(t, K['dead'], .22); blit(f, ST_DEAD, 540, 840, 1.25 - .25 * p, cl(p * 1.5), -12)
 def s2(t, f):  # case grid fills, then each box gets ✗, hits count 8 → 0
     blit(f, L_REP, 540, 520, pop(t, O['L2']))
     for i in range(12):
@@ -290,7 +291,7 @@ def render(t):
     cur, st = SCN[0][1], 0
     for t0, fn in SCN:
         if t >= t0: cur, st = fn, t0
-    f = background(t, GLOW[cur])
+    f = background(t, GLOW[cur], alt=bool(len([c for c in C['cuts'] if c <= t]) % 2))
     cur(t, f)
     # header + small HTR tag always on
     blit(f, TITLE, 540, 340); blit(f, HTRTAG, 150, 262, .85)
@@ -301,8 +302,8 @@ def render(t):
     cu = [c for c in C['cuts'] if c <= t]; lc = cu[-1] if cu else -9
     nc = len([c for c in cu if c > st])
     st2 = lc if lc > st else st
-    zb = 1.06 if nc % 2 else 1.0
-    z = zb + .02 * (t - st2); dx, dy = shake(t, K['dead']); ex, ey = shake(t, K['grid_x'] + 12 * .12, 10); dx += ex; dy += ey
+    zb = 1.08 if nc % 2 else 1.0
+    z = zb + .02 * (t - st2); dx, dy = 0, 0; ex, ey = shake(t, K['grid_x'] + 12 * .12, 10); dx += ex; dy += ey
     M = np.float32([[z, 0, (1 - z) * 540 + dx], [0, z, (1 - z) * 900 + dy]]); f = cv2.warpAffine(f, M, (W, H), borderMode=cv2.BORDER_REFLECT)
     lt = max(st, lc)
     if (cur is not s1 or lc > st) and t - lt < .12: f = f * (1 - .25 * (1 - (t - lt) / .12)) + 255 * .25 * (1 - (t - lt) / .12)  # quick flash on each beat cut
