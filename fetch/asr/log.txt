@@ -1,3 +1,3 @@
-Sun Nov 22 12:08:34 UTC 2026
+Sun Nov 22 12:12:28 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-digimon_vo.mp3 FAIL match None cps 9.7 unclear [('بيجيمون', np.float64(0.79)), ('أوف', np.float64(0.69)), ('أكس', np.float64(0.76)), ('بي', np.float64(0.69)), ('27', np.float64(0.7)), ('بـ', np.float64(0.67)), ('كود', np.float64(0.69)), ('LM09', np.float64(0.52)), ('ولا', np.float64(0.63))] banned [] diff None
+digimon_vo_cut.mp3 FAIL match None cps 9.8 unclear [('بيجيمون', np.float64(0.78)), ('طلب', np.float64(0.71)), ('بوكس', np.float64(0.78)), ('أوف', np.float64(0.64)), ('بي', np.float64(0.75)), ('تونتي', np.float64(0.65)), ('سيس', np.float64(0.65)), ('كود', np.float64(0.7)), ('والستارتر', np.float64(0.71)), ('لينباب', np.float64(0.79)), ('وانت', np.float64(0.42)), ('فريق', np.float64(0.75)), ('ولا', np.float64(0.79))] banned [] diff None
