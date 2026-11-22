@@ -74,6 +74,7 @@ def hazard(f, y, h, k):
     for x in range(-200, W + 400, 80): cv2.fillPoly(band, [np.array([[x, 0], [x + 40, 0], [x + 40 - h, h], [x - h, h]], np.int32)], RED_[::-1])
     off = int(k * 120) % 80; f[y:y + h] = band[:, off:off + W]
 WMG = logo_spr(170, True)
+CTAB = pill('تابعنا • لايك • احفظ • علّق ولو بنقطة', FL(54), (24, 18, 50), fg=WHITE, border=(90, 200, 190), padx=44)
 CDN = {n: txt(str(n), FB(150), WHITE, stroke=6, glow=RED_) for n in (1, 2, 3)}
 def beat(t):
     for i in range(len(B) - 1, -1, -1):
@@ -84,7 +85,7 @@ def caption(f, i, lt):
     if c is not None: blit(f, c, W / 2, 1600, ebk(lt / .3, 1.2), min(1, lt / .15) * (1 - max(0, (lt - B[i] + .15) / .15)))
 def render(t):
     if t >= T_MAIN:
-        f = np.zeros((H, W, 3), np.float32); f[:] = (10, 8, 8); money(f, t - T_MAIN + 1.5, .7); end_card(f, t - T_MAIN, S); f = finish(f, t); return np.clip(f * (max(0, (TOTAL - t) / .4) if t > TOTAL - .4 else 1), 0, 255).astype(np.uint8)
+        f = np.zeros((H, W, 3), np.float32); f[:] = (10, 8, 8); money(f, t - T_MAIN + 1.5, .7); end_card(f, t - T_MAIN, S); blit(f, CTAB, W / 2, 1460, 1, 1); f = finish(f, t); return np.clip(f * (max(0, (TOTAL - t) / .4) if t > TOTAL - .4 else 1), 0, 255).astype(np.uint8)
     i, lt = beat(t); D = B[i]; p = lt / D
     beat_kind = SPEC['beats'][i]
     if beat_kind == 'lineup':
@@ -158,6 +159,7 @@ def render(t):
         blit(f, BIGW['qq'], W / 2, 1450, .7 * (1 + .08 * math.sin(lt * 9)), 1, 6 * math.sin(lt * 3))
         blit(f, BIGW['cmt'], W / 2, 400, ebk(lt / .35) * (1 + .05 * math.sin(lt * 6)), 1)
         blit(f, S['ig'], W / 2, 560, ebk((lt - .4) / .35), 1 if lt > .4 else 0)
+        blit(f, CTAB, W / 2, 1640, ebk((lt - .2) / .35), 1 if lt > .2 else 0)
     else:
         f = bg(t)
     caption(f, i, lt)
