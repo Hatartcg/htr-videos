@@ -1,1 +1,1 @@
-digimon_vo.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/6WBbLfS2ft5mlUetH4dV/8cixuxbI4zRWgqShYyIv/content.mp3?Expires=1795359600&KeyName=assets-cdn-key-1&Signature=3xhGornx6amy04CRYE98FjDQDJA=
+digimon_vo2.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/eOsCXEZAypbjZwdaKiUI/cAPdozaprgbx5OangQi0/content.mp3?Expires=1795359600&KeyName=assets-cdn-key-1&Signature=WDt_dhOltaIxSrhPHCmNrwMcRJQ=
