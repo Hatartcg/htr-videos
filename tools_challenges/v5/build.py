@@ -5,7 +5,7 @@ from scipy.io import wavfile
 kind, spec, scr, mp3, asr, style, key, out = sys.argv[1:9]
 only_stills = len(sys.argv) > 9
 SR = 48000
-r = json.loads(subprocess.run(['python3', '/home/claude/v5/vsplit.py', mp3, asr, scr], capture_output=True, text=True, check=True).stdout)
+r = json.loads(subprocess.run(['python3', 'vsplit.py', mp3, asr, scr], capture_output=True, text=True, check=True).stdout)
 L = r['lens']; segs = list(np.load('segs.npy', allow_pickle=True))
 if os.environ.get('FIX'):
     cuts = r['cuts']
