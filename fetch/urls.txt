@@ -1,1 +1,11 @@
-song_ineedapack_en_girl_v2.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/dyhGQMawsW0TLXpO9wWv/LTpKSvpPmF9kJ6cjmUYy/content.mp3?Expires=1795302000&KeyName=assets-cdn-key-1&Signature=__-aoBjIfaQLsE6R3TFSlxJapAY=
+oh1123_sitemap2.xml https://otakkuhaveen.com/ar/sitemap-2.xml
+oh1123_ichigo.html https://otakkuhaveen.com/ar/kurosaki-ichigo/p1679464187
+oh1123_tghood.html https://otakkuhaveen.com/ar/p1599397414
+oh1123_ich1.jpg https://cdn.salla.sa/NKNagy/027e809f-0915-49e8-b923-939ccb34cad3-1000x1000-VRR3E7lT8XelrWzB3vNtwsNHlYJzTV81b95658aP.jpg
+oh1123_ich2.jpg https://cdn.salla.sa/NKNagy/39f179cf-d1a8-4a41-9d65-beac5b13d113-1000x939.39393939394-mM5l4xJjU1RQBQf83Z5ukss4XwZaGz1dzr035DY6.jpg
+oh1123_ich3.jpg https://cdn.salla.sa/NKNagy/59f27ff4-ceac-4910-a34b-f6133a234940-1000x1000-NTYkRQfT3JdwNBU6AyUKFCnKICuktUfA5sM5KuB5.jpg
+oh1123_ich4.jpg https://cdn.salla.sa/NKNagy/5bc5190d-5eba-4844-a96e-f26302a77c6b-1000x1000-1XfTd2sHO0eIu8TsUjr8U1JIY3SW9ZevPZUye4Ia.jpg
+oh1123_ich5.jpg https://cdn.salla.sa/NKNagy/5c544973-ab28-477b-ada4-fa0fda45520d-1000x1000-KoXgBYPFybyxsjB3XsWjP1wwrDKwddM0m4IpipbX.jpg
+oh1123_ich6.jpg https://cdn.salla.sa/NKNagy/84983624-c34b-42bb-8a4b-df9b9196853d-1000x1000-O1vYCDVclv7yBHf9o6pZI39JwdmaIa4whtNmvfPg.jpg
+oh1123_ich7.jpg https://cdn.salla.sa/NKNagy/9a843fad-f0fa-40a5-8f6d-c6cdf2387e3d-1000x1000-OZP4XMSKN66jVI1tvRtR1xx3pfXetO07eRL0ZY5q.jpg
+oh1123_ich8.jpg https://cdn.salla.sa/NKNagy/b83d55be-e5df-4a7a-9f58-dfdd74e3f67f-1000x1000-KxvsKYfFXPl1gDaFg3aaVqkjd170qe8pcqavSN7P.jpg
