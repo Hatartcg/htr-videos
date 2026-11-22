@@ -1,3 +1,3 @@
-Sun Nov 22 12:23:21 UTC 2026
+Sun Nov 22 12:31:48 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-digimon_vo_final.mp3 FAIL match None cps 9.6 unclear [('Box', np.float64(0.07)), ('Ignition', np.float64(0.79)), ('BT27', np.float64(0.61)), ('نحن', np.float64(0.63)), ('ولا', np.float64(0.79))] banned [] diff None
+olaya_full_chk.mp3 FAIL match None cps 14.9 unclear [] banned [] diff None
