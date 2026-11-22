@@ -1,2 +1,11 @@
-oh1123_ich_t1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/TJgs9aqjrPyy86gtFAb5/HPPIqsac37aD96X7luSH/content.mp3?Expires=1795330800&KeyName=assets-cdn-key-1&Signature=L2NkxWBYr9wpt-o5MVADrImJ8as=
-oh1123_ich_t2.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/g8sm25e6mBxrTH3gwucc/OWFp2avgZQbdZOLyjVdq/content.mp3?Expires=1795330800&KeyName=assets-cdn-key-1&Signature=JEqq291USysXYCdy5iW9MbzDfKs=
+sl_p_23656.json https://tcgcsv.com/tcgplayer/2/23656/products
+sl_r_23656.json https://tcgcsv.com/tcgplayer/2/23656/prices
+sl_p_23303.json https://tcgcsv.com/tcgplayer/71/23303/products
+sl_r_23303.json https://tcgcsv.com/tcgplayer/71/23303/prices
+sl_p_2807.json https://tcgcsv.com/tcgplayer/3/2807/products
+sl_r_2807.json https://tcgcsv.com/tcgplayer/3/2807/prices
+sl_p_23213.json https://tcgcsv.com/tcgplayer/68/23213/products
+sl_r_23213.json https://tcgcsv.com/tcgplayer/68/23213/prices
+sl_p_2948.json https://tcgcsv.com/tcgplayer/3/2948/products
+sl_r_2948.json https://tcgcsv.com/tcgplayer/3/2948/prices
+sl_last.txt https://tcgcsv.com/last-updated.txt
