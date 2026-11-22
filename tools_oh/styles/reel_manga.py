@@ -71,6 +71,12 @@ CFG = {
         f1=dict(kind='caps', caps=['مطبوع بتصميم', 'مستوحى من الأنمي']), f2=dict(kind='grid', cap='ستايل ميتسوري!'),
         price='60', spot=(255, 61, 154), seed=120, sfx_x=.66, h0=True, hookfs=82, z0=.18,
         punch=[(4.18, .10, .5), (5.34, .08, .6), (9.34, .10, .5), (11.06, .08, .6)], impact=[0.5, 4.18, 5.34, 8.4, 9.34, 11.06, 12.5]),
+    'ich': dict(
+        TOTAL=13.7, T_GAME=1.6, T_PROD=3.95, T_NAME=4.14, T_F1=6.54, T_F1b=7.7, T_F2=8.45, T_PRICE=9.15, T_CTA=10.97, T_END2=12.9,
+        hook='سيف إيتشيغو تشيله معك!', game=['BLEACH'], sfx='GETSUGA!', label='MINI METAL SWORD', name=['ICHIGO SWORD', 'BLEACH'],
+        f1=dict(kind='caps', caps=['معدن عالي الجودة', 'وتفاصيل دقيقة']), f2=dict(kind='grid', cap='صغير وتاخذه معك!'),
+        price='45', spot=(139, 92, 246), seed=1123, sfx_x=.66, h0=True, hookfs=86, z0=.18,
+        punch=[(2.2, .10, .5), (2.5, .06, .4), (5.05, .10, .5), (5.5, .06, .4), (7.25, .10, .5), (7.7, .08, .5), (10.32, .10, .5), (11.45, .10, .5), (11.8, .06, .5), (12.25, .08, .35), (12.9, .14, .35), (13.2, .08, .25), (13.45, .08, .25)], impact=[0.5, 1.6, 3.95, 5.33, 6.54, 7.72, 9.15, 10.97, 11.6, 12.9]),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; SPOT = CFG['spot']
