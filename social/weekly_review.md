@@ -54,3 +54,19 @@ Recommendations sent:
 2. News only when the lead number is large ($5M = 1,313 vs $300 = 210).
 3. OH: favour lamps/lights + "favourite character" question (only post with comments).
 Next week check: reel count; comments on A-or-B question; OH lamps.
+
+## 2026-11-22 (week 15–21 Nov vs 8–14 Nov)
+2026-11-22 | HTR Instagram | 3,007 on 20 Nov (+11 gained / −8 lost; prev +17/−4) | 3,502 reel views (5 reels; prev 2,832 / 3) ; account views 7,671 (prev 7,325), reach 5,313 (prev 4,827) | 700/reel (prev 944) | 1.2% interactions/views (prev 1.7%) | box $180→$300+ news 17 Nov 13:00 — 1,479 views, 59% 3s, 3 saves | saves+shares 9 (prev 9); comments 1 (prev 0); only 5 reels; Mon 16, Wed 18, Fri 20, Sat 21 empty; 0 stream 18:00; 1 challenge at 20:00 (not 21:00); guess 15 Nov 16:00 + Delta Reign 19 Nov 20:00 IG only (no TT/YT copy)
+2026-11-22 | HTR TikTok | 3,456 (+6/−5; prev +0/−2) | 1,755 (3 videos; prev 483 / 3) | 585 (prev 161) | 1.7% (prev 2.1%) | box $180→$300+ 17 Nov — 748 views | all 3 news published; challenges not on TikTok
+2026-11-22 | HTR YouTube | 72 subs (+4; prev +0) | 1,611 (3 shorts; prev 1,512 / 3) | 537 (prev 504) | 1.4% likes/views (prev 0.9%) | box $180→$300+ 17 Nov — 1,083 views (13s avg) | no challenge shorts
+2026-11-22 | OH Instagram | 108 (+2/−0; prev +1/−0) | 678 (7 reels; prev 781 / 8) ; account views 713 (prev 738) | 97 (prev 98) | 3.4% (prev 1.9%) | Dandadan tee 19 Nov — 127 views, 16 shares (A-or-B question) | Law sword + Bleach swords 50.9% 3s (best hold); Riley/Shakyako box 21 Nov 46 (1 day data), Nichirin katana 38; nothing scheduled after 22 Nov
+
+Type averages HTR IG: news 878 (3: $180→$300 box 1,479 · Magikarp $1.1M 899 · OP-18 $120→$200 255) · guess/challenge 435 (642 / 227) · stream 0 · sealed 0.
+Slots: 13:00 878 (3) · 16:00 642 (1) · 20:00 227 (1) · 18:00/21:00 none.
+Game: Pokémon 812 (4) · One Piece 255 (1).
+Hook rule confirmed: +$120 jump on a Pokémon box and $1.1M card hold 56–59% at 3s; small +$80 One Piece box 41% / 255 views. Delta Reign store-guess 23% 3s / 227 views.
+Last week's recs: (1) produce content — partial: 5 reels vs 3 but still ~5 of ~21 planned; (2) news only with big lead number — mostly confirmed (OP-18 +$80 = 255 vs $1.1M = 899, $180→$300 = 1,479); (3) OH lamps + favourite-character question — no lamps; A-or-B question on Dandadan tee got 16 shares + 1 comment.
+
+Done by me: rewrote 7 captions to CAPTIONS.md (HTR 22 Nov 13:00 Mew news IG/TT/YT, HTR 24 Nov 13:00 Rayquaza PSA news IG/TT/YT, OH 22 Nov 19:00 Eren hoodie). No slot changes.
+Recommendations sent: (1) Produce/schedule 18:00 stream + 21:00 challenges (Sun–Sat 22–28 Nov only 3 news posts + OP-18 22 Nov 19:30 scheduled); (2) copy every challenge to TT + YT; (3) OH schedule 23–28 Nov (empty) and keep A-or-B question.
+Next week check: reel count vs 21; 3s-rate of news with +$100 lead; comments on word-answer question («أبيعه/أخليه»).
