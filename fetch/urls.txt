@@ -1,1 +1,2 @@
-dp13_pack.webp https://www.miniaturemarket.com/media/c8/72/34/1793800657/BAN2873814-PACK.webp?ts=1793800657
+dp13_mw.jpg https://s3.us-east-1.amazonaws.com/medusajs.cloud-data-prod-use1-20241127093450366600000001/ed2d3d71debc8fb6ae7/bc-16727-498394-fd3a9076e494ef65eb43f56852119db319784f9a6ce0a3798559e2c3c116581b-01M3J6XEM3D1BTF0T88KE9AGEJ.jpg
+dp13_tw.webp https://tools.toywiz.com/_images/_webp/_products/lg/onepiecedoublepack13.webp
