@@ -1,5 +1,1 @@
-cm23_im87425.jpg https://tcgplayer-cdn.tcgplayer.com/product/87425_in_1000x1000.jpg
-cm23_im731471.jpg https://tcgplayer-cdn.tcgplayer.com/product/731471_in_1000x1000.jpg
-cm23_im84184.jpg https://tcgplayer-cdn.tcgplayer.com/product/84184_in_1000x1000.jpg
-cm23_im580039.jpg https://tcgplayer-cdn.tcgplayer.com/product/580039_in_1000x1000.jpg
-cm23_im115598.jpg https://tcgplayer-cdn.tcgplayer.com/product/115598_in_1000x1000.jpg
+cm23_vsj_vo.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/I1ChXyR9wK4OKgHaByS5/nRb93cQ1C7ccF2JZIu6w/content.mp3?Expires=1795406400&KeyName=assets-cdn-key-1&Signature=gC3xH8h01SnRgLmnV14cmiIgjk0=
