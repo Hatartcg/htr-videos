@@ -1,3 +1,3 @@
-Mon Nov 23 02:38:06 UTC 2026
+Mon Nov 23 02:50:28 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-cm23_sld_vo.mp3 FAIL match 0.75 cps 8.2 unclear [('دولار', np.float64(0.79)), ('شو؟', np.float64(0.76))] banned [] diff [{'op': 'replace', 'expected': 'الفين وستطعش', 'heard': '2016'}, {'op': 'replace', 'expected': 'ثلاث الاف واربعميه وتسعه واربعين', 'heard': '3449'}, {'op': 'replace', 'expected': 'سته وتسعين', 'heard': '96'}, {'op': 'replace', 'expected': 'الفين وتسعطعش الفين وسبعميه وثلاثه وخمسين', 'heard': '2019 2753'}, {'op': 'replace', 'expected': 'تعرف وش هو', 'heard': 'تعرفوه شو'}]
+cm23_sld_mix.mp3 FAIL match 0.82 cps 9.0 unclear [] banned [] diff [{'op': 'replace', 'expected': 'الفين وستطعش', 'heard': '2016'}, {'op': 'replace', 'expected': 'ثلاث الاف واربعميه وتسعه واربعين', 'heard': '3449'}, {'op': 'replace', 'expected': 'سته وتسعين', 'heard': '96'}, {'op': 'replace', 'expected': 'الفين وتسعطعش الفين وسبعميه وثلاثه وخمسين', 'heard': '2019 2753'}]
