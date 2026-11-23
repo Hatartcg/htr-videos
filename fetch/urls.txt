@@ -1,4 +1,1 @@
-cm23_b1.jpg https://product-images.tcgplayer.com/fit-in/874x874/115598.jpg
-cm23_b2.jpg https://product-images.tcgplayer.com/115598.jpg
-cm23_b3.jpg https://bulbapedia.bulbagarden.net/wiki/Special:FilePath/Red_%26_Blue_Collection_Charizard-EX.jpg
-cm23_b4.png https://bulbapedia.bulbagarden.net/wiki/Special:FilePath/Red_%26_Blue_Collection_Charizard-EX.png
+cm23_vsj_L4b.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/qPk4xzOoFVoxfrxR3WQp/a0OGMDVihrjJryrPu6vL/content.mp3?Expires=1795406400&KeyName=assets-cdn-key-1&Signature=n9DOfCa38uMJR6oBaUFygrAfNzM=
