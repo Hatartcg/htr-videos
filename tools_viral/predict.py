@@ -24,7 +24,9 @@ LABELS = {"challenge": "تحدي/لعبة يشارك فيها المشاهد", "
 # TikTok and YouTube Shorts → real footage (pack openings, store events). So every platform keeps
 # its own history and the fly-rates are learned per platform, never shared.
 FATIGUE_DAYS, FATIGUE_X, CALM_LIMIT, CALM_X, FLY_P = 3, 0.35, 1.6, 0.7, 0.4
-SERIES_M = 2  # pseudo-count: how strongly the format rate pulls a series with few posts
+SERIES_M = 2
+MOTION_M = 2      # v6 pseudo-count for the motion/ad-style blend
+EXTREME_P = 0.5   # v6 floor for a hook with an extreme dollar number (rule extreme_usd)  # pseudo-count: how strongly the format rate pulls a series with few posts
 
 
 def _fatigued(h, history):
@@ -44,6 +46,16 @@ def guess_format(path):
 
 def guess_series(path):
     return os.path.basename(path).split("_")[0].lower()
+
+
+def is_motion(r):
+    """v6 (23 Nov 2026): ad-pipeline motion graphics (files under ads/, or column footage=motion) vs original
+    footage. Instagram says it favours original content (Creators 'original content' update, Apr 2024; Mosseri
+    on Reels ranking), and on HTR IG every ad-pipeline motion reel posted organically flopped."""
+    f = (r.get("footage") or "").strip().lower()
+    if f:
+        return f == "motion"
+    return (r.get("file") or "").replace("\\", "/").lower().startswith("ads/")
 
 
 def load_history(csv_path, fly_hold=45.0, fly_views=None, fly_by=None, placement=None):
@@ -70,7 +82,9 @@ def load_history(csv_path, fly_hold=45.0, fly_views=None, fly_by=None, placement
                      "format": (r.get("format") or guess_format(r["file"])).strip(),
                      "series": (r.get("series") or guess_series(r["file"])).strip(), "fly": fly,
                      "dur": float(r.get("duration") or 0) or None, "placement": pl,
-                     "hour": int(r["hour"]) if (r.get("hour") or "").strip() else None})
+                     "hour": int(r["hour"]) if (r.get("hour") or "").strip() else None,
+                     "motion": is_motion(r),
+                     "hook_usd": float(r["hook_usd"]) if (r.get("hook_usd") or "").strip() else None})
     return rows
 
 
@@ -82,7 +96,8 @@ def best_formats(history):
     return sorted(rate, key=lambda k: -rate[k])
 
 
-def predict(fmt, series, post_date, mot_1_3, history, fly_hold=45.0, rules=None, dur=None, post_hour=None):
+def predict(fmt, series, post_date, mot_1_3, history, fly_hold=45.0, rules=None, dur=None, post_hour=None,
+            motion=None, hook_usd=None):
     rules = rules or {"fatigue": True, "calm": True}
     past = [h for h in history if h["date"] < post_date]
     same = [h for h in past if h["format"] == fmt]
@@ -99,6 +114,16 @@ def predict(fmt, series, post_date, mot_1_3, history, fly_hold=45.0, rules=None,
         ks, ns = sum(h["fly"] for h in ser), len(ser)
         p = (ks + SERIES_M * p) / (ns + SERIES_M)
         why.append(f"سلسلة «{series}» نفسها: طارت {ks} من {ns} لما نزلت بعد راحة كافية")
+    if rules.get("motion_learn") and motion:
+        # v6: blend with the account's own fly-rate of motion/ad-style reels (learned from past rows only).
+        mo = [h for h in past if h.get("motion")]
+        km, nm = sum(h["fly"] for h in mo), len(mo)
+        p = (km + MOTION_M * p) / (nm + MOTION_M)
+        why.append(f"فيديو موشن/إعلاني مو تصوير أصلي: في هالحساب طار {km} من {nm} — انستقرام يقدّم المحتوى الأصلي")
+    big = rules.get("extreme_usd")
+    extreme = bool(big and hook_usd and hook_usd >= big)
+    if extreme:
+        why.append(f"رقم صادم على أول فريم (${hook_usd:,.0f}): أخبار الكروت المليونية تطير حتى قبل وقت المساء")
     recent = [h for h in past if h["series"] == series and 0 <= (post_date - h["date"]).days <= FATIGUE_DAYS] \
         if rules.get("fatigue") else []
     if recent:
@@ -121,6 +146,8 @@ def predict(fmt, series, post_date, mot_1_3, history, fly_hold=45.0, rules=None,
     if calm_hit:
         p *= CALM_X
         why.append("الثانية 1–3 فيها حركة زايدة (%.1f× من معدل الفيديو)، والفيديوهات اللي طارت كانت أهدى وأوضح هنا" % mot_1_3)
+    if extreme:
+        p = max(p, EXTREME_P)  # applied last: the hour/fatigue penalties do not hold a million-dollar hook back
     verdict = "بيفلير" if p >= rules.get("fly_p", FLY_P) else "ما بيفلير"
     tips = []
     top = [f for f in best_formats(past) if f != fmt][:2]
@@ -150,7 +177,8 @@ def walk_forward(history, rules=None):
     for i, h in enumerate(hs):
         # v5 (18 Nov 2026): the posting hour (Riyadh, column "hour") is now part of the honest test, so the
         # evening rule is checked on history like the other rules (HTR IG: 87.8% → 89.8%, no flyer lost).
-        r = predict(h["format"], h["series"], h["date"], None, hs[:i], rules=rules, dur=h.get("dur"), post_hour=h.get("hour"))
+        r = predict(h["format"], h["series"], h["date"], None, hs[:i], rules=rules, dur=h.get("dur"), post_hour=h.get("hour"),
+                    motion=h.get("motion"), hook_usd=h.get("hook_usd"))
         pf = r["verdict"] == "بيفلير"
         ok += pf == h["fly"]; caught += pf and h["fly"]; fa += pf and not h["fly"]
     return ok / max(1, len(hs)), caught, sum(h["fly"] for h in hs), fa, len(hs)
@@ -164,5 +192,10 @@ if __name__ == "__main__":
     P = json.load(open(A.profile, encoding="utf-8"))
     hp = P["history"] if os.path.isabs(P["history"]) else os.path.join(os.path.dirname(os.path.abspath(A.profile)), P["history"])
     H = load_history(hp, P.get("fly_hold_pct", 45), P.get("fly_views"), P.get("fly_by"))
+    if P.get("brand", "").upper() == "HTR":
+        import csv as _c
+        bad = [r for r in _c.DictReader(open(hp, encoding="utf-8")) if r.get("format") == "oh_reel" or "/oh/" in (r.get("file") or "") or (r.get("notes") or "").startswith("OH")]
+        if bad:
+            print(f"WARNING: {len(bad)} Otaku Haven rows inside {os.path.basename(hp)} — move them to calibration_otaku.csv (they inflate HTR accuracy)")
     acc, c, f, fa, n = walk_forward(H, P.get("rules"))
     print(f"{P['platform']}: {n} posts · accuracy {acc:.0%} · flyers caught {c}/{f} · false alarms {fa} · best formats {best_formats(H)[:3]}")

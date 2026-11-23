@@ -1,81 +1,57 @@
-date,file,score_estimate,hook,views,watch_3s_pct,notes,format,series,hour
-2026-10-15,ig/onion_op17_opening,,,398,53.7,Metricool IG reels pull 16 Nov 2026,opening,opening,18
-2026-10-15,ig/app_launch_promo,,,264,29.4,Metricool IG reels pull 16 Nov 2026,promo,promo,20
-2026-10-16,ig/30th_arrival,,,427,35.8,Metricool IG reels pull 16 Nov 2026,arrival,arrival,12
-2026-10-16,ig/op_local_event,,,269,39.3,Metricool IG reels pull 16 Nov 2026,event,event,21
-2026-10-17,ig/op17_challenge_opening,,,338,33.9,Metricool IG reels pull 16 Nov 2026,opening,opening,10
-2026-10-17,ig/30th_thanks_promo,,,372,33.1,Metricool IG reels pull 16 Nov 2026,promo,promo,18
-2026-10-17,ig/pulls_opening,,,411,57.8,Metricool IG reels pull 16 Nov 2026,opening,opening,20
-2026-10-18,ig/heroines_event,,,292,35.0,Metricool IG reels pull 16 Nov 2026,event,event,18
-2026-10-18,ig/op17_pack_opening,,,354,49.6,Metricool IG reels pull 16 Nov 2026,opening,opening,20
-2026-10-18,ig/op_local_live_event,,,275,34.3,Metricool IG reels pull 16 Nov 2026,event,event,21
-2026-10-18,ig/op_local_winner_event,,,311,29.0,Metricool IG reels pull 16 Nov 2026,event,event,22
-2026-10-19,videos/news_ep12_ig.mp4,61,26/35,248,33.9,reach 190; avg watch 7.136s; dur 43.8s; Metricool IG reels (reelsViewRate); IG 07:03,news,news,10
-2026-10-19,ig/last_pack_opening,,,336,40.2,Metricool IG reels pull 16 Nov 2026,opening,opening,15
-2026-10-19,ig/site_gift_promo,,,286,38.3,Metricool IG reels pull 16 Nov 2026,promo,promo,20
-2026-10-20,ig/charizard_news,,,378,39.3,Metricool IG reels pull 16 Nov 2026,news,news,10
-2026-10-20,ig/pack_vs_box_tip,,,443,41.1,Metricool IG reels pull 16 Nov 2026,educational,tips,15
-2026-10-21,ig/pikachu_rain_news,,,856,56.9,Metricool IG reels pull 16 Nov 2026,news,news,10
-2026-10-21,ig/cgc_grading_promo,,,398,37.6,Metricool IG reels pull 16 Nov 2026,promo,promo,15
-2026-10-21,ig/collector_types_tip,,,328,30.0,Metricool IG reels pull 16 Nov 2026,educational,tips,20
-2026-10-22,ig/cgc_site_promo,,,239,33.2,Metricool IG reels pull 16 Nov 2026,promo,promo,15
-2026-10-23,videos/news_ep17_ig.mp4,61,26/35,247,25.8,reach 183; avg watch 7.519s; dur 52.0s; Metricool IG reels (reelsViewRate); IG 07:05; duplicate post 0 views,news,news,10
-2026-10-23,videos/challenges/vs_2026-10-23.mp4,61,26/35,1060,55.2,challenge VS; reach 875; avg watch 13.804s; dur 42.7s; Metricool IG reels (reelsViewRate); IG 17:05; 2nd post 125 views 28.1%; score without --words,challenge,vs,20
-2026-10-24,videos/news_ep16_ig.mp4,57,26/35,160,36.5,reach 89; avg watch 13.461s; dur 62.4s; Metricool IG reels (reelsViewRate); IG 07:04 top10 OP-17; duplicate post 1 view,news,news,10
-2026-10-24,videos/challenges/top10_2026-10-24_v3.mp4,47,21/35,1051,50.2,challenge top10; reach 858; avg watch 14.849s; dur 64.1s; IG 17:06; 2nd post 0 views; score without --words,challenge,top10,20
-2026-10-25,videos/news_ep18_ig.mp4,61,26/35,271,38.8,reach 226; avg watch 5.776s; dur 44.9s; Metricool IG reels (reelsViewRate); IG 07:02; duplicate post 0 views,news,news,10
-2026-10-25,videos/challenges/guess_2026-10-25.mp4,51,21/35,1336,54.8,challenge guess; reach 1159; avg watch 13.748s; dur 49.3s; IG 17:06; 2nd post 3 views; score without --words,challenge,guess,20
-2026-10-26,videos/news_ep19_ig.mp4,61,26/35,275,38.8,reach 222; avg watch 7.142s; dur 47.0s; Metricool IG reels (reelsViewRate); IG 07:04; duplicate post 0 views,news,news,10
-2026-10-26,videos/challenges/guess_2026-10-27.mp4,56,21/35,205,18.7,challenge guess; reach 168; avg watch 5.577s; dur 48.5s; IG 20:06; 2nd post 0 views; score without --words,challenge,guess,23
-2026-10-27,videos/news_ep20_ig.mp4,61,26/35,158,36.4,reach 109; avg watch 6.499s; dur 58.1s; Metricool IG reels (reelsViewRate); IG 07:04; duplicate post 1 view,news,news,10
-2026-10-27,ig/website_launch_promo,,,191,30.2,Metricool IG reels pull 16 Nov 2026,promo,promo,6
-2026-10-28,videos/news_ep21_ig.mp4,61,26/35,317,37.7,reach 236; avg watch 6.039s; dur 49.4s; Metricool IG reels (reelsViewRate); IG 07:18; 2nd post 125 views reach 121,news,news,10
-2026-10-28,videos/challenges/guess_2026-10-28.mp4,61,26/35,216,15.1,challenge guess; reach 182; avg watch 3.606s; dur 50.8s; IG 17:10; 2nd post 131 views 19.0%; score without --words,challenge,guess,20
-2026-10-29,videos/news_ep22_ig.mp4,56,21/35,159,39.5,reach 115; avg watch 7.091s; dur 52.7s; Metricool IG reels (reelsViewRate); IG 10:08,news,news,13
-2026-10-29,ig/pack_rarities_explainer,,,1452,52.2,Metricool IG reels pull 16 Nov 2026,educational,tips,18
-2026-10-30,videos/challenges/fight_2026-10-30.mp4,70,35/35,479,49.8,challenge fight; reach 424; avg watch 11.895s; dur 52.9s; IG 21:46; score without --words,challenge,fight,0
-2026-10-30,ig/new_releases_arrival,,,552,36.9,Metricool IG reels pull 16 Nov 2026,arrival,arrival,9
-2026-10-31,videos/challenges/elevator_2026-10-31.mp4,57,26/35,614,51.3,"challenge elevator; reach 518; avg watch 11.92s; dur 65.4s; IG 18:04; score without --words; 7d update 21 Nov: 614 views, reach 522, avg 11.9s, shares 3, saves 2, comments 0",challenge,elevator,21
-2026-11-01,videos/news_ep23_ig.mp4,61,26/35,287,31.5,"reach 219; avg watch 5.31s; dur 45.1s; Metricool IG reels (reelsViewRate); IG 10:05; 7d update 21 Nov: 287 views, reach 225, avg 5.4s, shares 0, saves 1, comments 0",news,news,13
-2026-11-01,videos/challenges/guess_2026-11-01.mp4,65,35/35,1295,59.0,"challenge guess gp.py; reach 1083; avg watch 15.952s; dur 47.3s; IG 18:09; score without --words; 7d update 21 Nov: 1295 views, reach 1090, avg 15.9s, shares 0, saves 3, comments 0",challenge,guess,21
-2026-11-02,ig/eb05_local_event,,,866,47.9,Metricool IG reels pull 16 Nov 2026,event,event,13
-2026-11-03,videos/news_ep24_ig.mp4,56,21/35,288,28.8,"reach 213; avg watch 5.827s; dur 52.3s; Metricool IG reels (reelsViewRate); IG 10:06; 7d update 21 Nov: 288 views, reach 221, avg 5.7s, shares 0, saves 0, comments 0",news,news,13
-2026-11-04,videos/challenges/market_2026-11-04.mp4,61,26/35,282,39.1,"challenge market; reach 210; avg watch 10.385s; dur 40.2s; IG 18:16; score without --words; 7d update 21 Nov: 282 views, reach 221, avg 10.1s, shares 2, saves 0, comments 0",challenge,market,21
-2026-11-05,videos/news_ep25_ig.mp4,61,26/35,255,31.3,"reach 203; avg watch 5.236s; dur 52.0s; Metricool IG reels (reelsViewRate); IG 10:06; 7d update 21 Nov: 255 views, reach 215, avg 5.0s, shares 2, saves 0, comments 0",news,news,13
-2026-11-05,videos/challenges/sealed_2026-11-04.mp4,59,21/35,1587,50.4,"sealed weekly; reach 1275; avg watch 16.489s; dur 46.5s; IG 15:15; score without --words; 7d update 21 Nov: 1587 views, reach 1295, avg 16.5s, shares 18, saves 6, comments 0",challenge,sealed,18
-2026-11-08,videos/news_ep26_ig.mp4,66,26/35,1336,60.7,"reach 1129; avg watch 11.072s; dur 42.4s; Metricool IG reels (reelsViewRate); IG 10:03; first news >1000 views — hook Pikachu Illustrator $5,000,000; score without --words (run 2026-11-15); 7d update 21 Nov: 1336 views, reach 1143, avg 11.0s, shares 4, saves 2, comments 0",news,news,13
-2026-11-12,ig/guess_2026-11-12,,,1251,57.2,"Metricool IG 12 Nov 21:08 Riyadh; reach 1108; avg watch 17.5s; shares 0; saves 1; comments 1; likes 18; 7d update 21 Nov: 1251 views, reach 1117, avg 17.4s, shares 1, saves 1, comments 0",challenge,guess,21
-2026-11-12,ig/rayquaza_news,,,228,27.9,"Metricool IG 12 Nov 13:08 Riyadh; reach 173; avg watch 4.7s; shares 1; saves 0; 7d update 21 Nov: 228 views, reach 179, avg 4.6s, shares 1, saves 0, comments 0",news,news,13
-2026-11-15,ig/magikarp_news,,,893,56.6,"Metricool IG 15 Nov 13:06 Riyadh; reach 763; avg watch 22.0s; shares 0; saves 3; comments 0; final at 3 d (re-check 7 d); 7d update 21 Nov: 893 views, reach 778, avg 21.8s, shares 0, saves 3, comments 0",news,news,13
-2026-11-15,ads/HTR_DeltaReign_challenge.mp4,,,635,51.9,"organic reel 15 Nov 16:07 Riyadh; dur 21.3s; reach 513; avg watch 7.2s; shares 0; saves 1; comments 0; caption says answer at end of video; tool said 75% (no time) - did NOT fly; 7d update 21 Nov: 635 views, reach 530, avg 7.1s, shares 0, saves 1, comments 0",challenge,guess,16
-2026-11-17,ig/30th_upc_news,,,1479,59.1,"Metricool IG 17 Nov 13:06 Riyadh; avg watch 8.6s; saves 3; hook +$300 (180→300) 30th Celebration UPC + Hadi character + «داي ولا نايت؟» — news that flew at 13:00; 5d update 22 Nov: 1479 views, reach 1200, avg 8.6s, likes 11, shares 0, saves 3, comments 0",news,news,13
-2026-11-19,ig/op18_news,,,255,41.3,"Metricool IG 19 Nov 13:04 Riyadh; avg watch 8.6s; hook +$200 OP-18 (120→200) + Hadi character — same template as 30th UPC, flopped; 3d update 22 Nov: 255 views, reach 185, avg 8.7s, likes 1, shares 1, saves 0, comments 0",news,news,13
-2026-11-19,ads/HTR_DeltaReign_rot8_IG.mp4,70,,227,23.0,"organic reel 19 Nov 20:12 Riyadh; avg watch 5.0s; comments 1; ad-style motion promo «بكم تتوقعه؟»; tool said 83% (guess series) — did NOT fly; 77% swiped in first 3 s; relabeled promo (ad-style motion, not a play-along game); 3d update 22 Nov: 227 views, reach 166, avg 4.9s, likes 1, shares 1, saves 0, comments 1",promo,dr-price,20
-2026-11-16,videos/oh/oh_bleach_swords_cine.mp4,94,أي زانباكتو بتختار؟ ⚔️,117,50.9,OH cinematic reach=105 avg_watch=5.027s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-11-15,videos/oh/oh_law_sword_system.mp4,96,جرّاح الموت يسلّمك سيفه! ⚔️,119,50.9,OH system-hud reach=100 avg_watch=4.165s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-11-14,videos/oh/oh_tanjiro_hoodie_manga.mp4,92,نَفَس الماء صار هودي! 🌊,104,35.1,OH manga reach=87 avg_watch=2.873s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-11-13,,,خمّن! كم باك داخل مجموعة ديتو بريميوم؟ 🤔,90,32.1,OH Pokemon Ditto post (not from daily task) reach=79 avg_watch=4.277s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-11-13,videos/oh/oh_naruto_uzumaki_poster_cine.mp4,96,غرفتك ناقصها ناروتو! 🍥,120,47.2,OH cinematic reach=102 avg_watch=4.453s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-11-12,videos/oh/oh_st34_katakuri_starter_deck_system.mp4,,كاتاكوري يقودك للفوز! 💜,6,16.7,OH system-hud reach=8 avg_watch=2.929s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-11-11,videos/oh/oh_tokyo_ghoul_kaneki_lamp_manga.mp4,,خلّ كانيكي ينوّر ليلك! 🌙,161,33.3,OH manga reach=143 avg_watch=3.043s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-11-10,videos/oh/oh_naruto_lamp_cine.mp4,,خلّ غرفتك تنوّر بروح ناروتو! 🍥,177,17.6,OH cinematic reach=151 avg_watch=2.21s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-11-09,videos/oh/oh_st35_sabo_starter_deck_holo.mp4,,سابو يولّعها بالأحمر والأسود! 🔥,82,20.5,OH holo reach=72 avg_watch=2.626s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-11-08,videos/oh/oh_demon_slayer_kanae_sword_manga.mp4,,الوردي صار سلاح! 🌸,41,15.4,OH manga reach=34 avg_watch=1.331s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-11-07,videos/oh/oh_bleach_ichigo_bankai_sword_system.mp4,,جاهز تطلق البانكاي؟ ⚔️,17,26.7,OH system-hud reach=13 avg_watch=2.893s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-11-06,videos/oh/oh_jjk_hoodie_cine.mp4,,الشتا جاي، وجوجتسو كايسن معك! 🔥,279,36.7,OH cinematic reach=229 avg_watch=3.866s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-11-05,videos/oh/oh_st36_kid_starter_deck_manga.mp4,,قوة المغناطيس صارت بيدك! 🧲,56,40.0,OH manga reach=44 avg_watch=4.312s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-11-03,videos/oh/oh_solo_leveling_demon_king_dagger_cine.mp4,,سلاح ملك الشياطين صار بيدك! ⚔️,20,11.8,OH cinematic reach=18 avg_watch=2.075s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-11-02,videos/oh/oh_st33_kuzan_starter_deck_system.mp4,,كوزان جاهز يجمّد الطاولة! 🧊,19,16.7,OH system-hud reach=19 avg_watch=3.793s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-11-01,videos/oh/oh_naruto_shippuden_poster_manga.mp4,,الكيوبي على جدارك! 🦊🔥,261,46.1,OH manga reach=216 avg_watch=4.067s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-10-31,videos/oh/oh_akaza_hoodie_cine.mp4,,الرتبة العليا الثالثة صارت هودي! 👊🔥,122,36.6,OH cinematic reach=98 avg_watch=3.583s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-10-29,videos/oh/oh_bleach_sword_umbrella_manga.mp4,,مطر ولا معركة؟ ⚔️☔,114,34.7,OH manga reach=95 avg_watch=3.607s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-10-28,videos/oh/oh_death_note_pullover_cine.mp4,,فريق إل ولا فريق كيرا؟ 📓,110,27.0,OH cinematic reach=97 avg_watch=2.71s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-10-27,videos/oh/oh_st30_luffy_ace_starter_deck_holo.mp4,,لوفي وإيس في ديك واحد! 🔥,79,25.0,OH holo reach=70 avg_watch=2.938s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-10-26,videos/oh/oh_solo_leveling_sword_set_system_v2.mp4,,حس إنك صياد من رتبة S ⚔️,99,29.9,OH system-hud reach=80 avg_watch=3.346s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-10-25,videos/oh/oh_sukuna_hoodie_cine_v2.mp4,,ملك اللعنات صار هودي 👹,118,34.3,OH cinematic reach=108 avg_watch=3.161s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-10-24,videos/oh/oh_yugioh_magnificent_monsters_holo_v2.mp4,,تبي ألترا رير في كل باك؟ 🔥,133,15.4,OH holo reach=112 avg_watch=2.834s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-10-23,videos/oh/oh_op14_booster_box_en_manga.mp4,,يا عشاق ون بيس 🏴‍☠️,167,22.5,OH manga reach=137 avg_watch=3.393s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-10-21,videos/oh/oh_naruto_booster_box.mp4,,يا عشاق ناروتو! 🍥 البوكس وصل ⚡,154,31.9,OH  reach=136 avg_watch=3.051s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-10-20,videos/oh/oh_yugioh_rarity_collection.mp4,,يا عشاق Yu-Gi-Oh! ✨,164,28.0,OH  reach=150 avg_watch=4.356s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-10-19,videos/oh/oh_heroines_special_set.mp4,,لعشاق ون بيس 🏴‍☠️,125,28.7,OH  reach=104 avg_watch=4.19s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
-2026-10-19,,,,21,29.4,OH untitled reel reach=17 avg_watch=5.631s (Metricool pull 23 Nov 2026),oh_reel,oh_daily,19
+date,file,score_estimate,hook,views,watch_3s_pct,notes,format,series,hour,hook_usd,footage
+2026-10-15,ig/onion_op17_opening,,,398,53.7,Metricool IG reels pull 16 Nov 2026,opening,opening,18,,
+2026-10-15,ig/app_launch_promo,,,264,29.4,Metricool IG reels pull 16 Nov 2026,promo,promo,20,,
+2026-10-16,ig/30th_arrival,,,427,35.8,Metricool IG reels pull 16 Nov 2026,arrival,arrival,12,,
+2026-10-16,ig/op_local_event,,,269,39.3,Metricool IG reels pull 16 Nov 2026,event,event,21,,
+2026-10-17,ig/op17_challenge_opening,,,338,33.9,Metricool IG reels pull 16 Nov 2026,opening,opening,10,,
+2026-10-17,ig/30th_thanks_promo,,,372,33.1,Metricool IG reels pull 16 Nov 2026,promo,promo,18,,
+2026-10-17,ig/pulls_opening,,,411,57.8,Metricool IG reels pull 16 Nov 2026,opening,opening,20,,
+2026-10-18,ig/heroines_event,,,292,35.0,Metricool IG reels pull 16 Nov 2026,event,event,18,,
+2026-10-18,ig/op17_pack_opening,,,354,49.6,Metricool IG reels pull 16 Nov 2026,opening,opening,20,,
+2026-10-18,ig/op_local_live_event,,,275,34.3,Metricool IG reels pull 16 Nov 2026,event,event,21,,
+2026-10-18,ig/op_local_winner_event,,,311,29.0,Metricool IG reels pull 16 Nov 2026,event,event,22,,
+2026-10-19,videos/news_ep12_ig.mp4,61,26/35,248,33.9,reach 190; avg watch 7.136s; dur 43.8s; Metricool IG reels (reelsViewRate); IG 07:03,news,news,10,,
+2026-10-19,ig/last_pack_opening,,,336,40.2,Metricool IG reels pull 16 Nov 2026,opening,opening,15,,
+2026-10-19,ig/site_gift_promo,,,286,38.3,Metricool IG reels pull 16 Nov 2026,promo,promo,20,,
+2026-10-20,ig/charizard_news,,,378,39.3,Metricool IG reels pull 16 Nov 2026,news,news,10,,
+2026-10-20,ig/pack_vs_box_tip,,,443,41.1,Metricool IG reels pull 16 Nov 2026,educational,tips,15,,
+2026-10-21,ig/pikachu_rain_news,,,856,56.9,Metricool IG reels pull 16 Nov 2026,news,news,10,,
+2026-10-21,ig/cgc_grading_promo,,,398,37.6,Metricool IG reels pull 16 Nov 2026,promo,promo,15,,
+2026-10-21,ig/collector_types_tip,,,328,30.0,Metricool IG reels pull 16 Nov 2026,educational,tips,20,,
+2026-10-22,ig/cgc_site_promo,,,239,33.2,Metricool IG reels pull 16 Nov 2026,promo,promo,15,,
+2026-10-23,videos/news_ep17_ig.mp4,61,26/35,247,25.8,reach 183; avg watch 7.519s; dur 52.0s; Metricool IG reels (reelsViewRate); IG 07:05; duplicate post 0 views,news,news,10,,
+2026-10-23,videos/challenges/vs_2026-10-23.mp4,61,26/35,1060,55.2,challenge VS; reach 875; avg watch 13.804s; dur 42.7s; Metricool IG reels (reelsViewRate); IG 17:05; 2nd post 125 views 28.1%; score without --words,challenge,vs,20,,
+2026-10-24,videos/news_ep16_ig.mp4,57,26/35,160,36.5,reach 89; avg watch 13.461s; dur 62.4s; Metricool IG reels (reelsViewRate); IG 07:04 top10 OP-17; duplicate post 1 view,news,news,10,,
+2026-10-24,videos/challenges/top10_2026-10-24_v3.mp4,47,21/35,1051,50.2,challenge top10; reach 858; avg watch 14.849s; dur 64.1s; IG 17:06; 2nd post 0 views; score without --words,challenge,top10,20,,
+2026-10-25,videos/news_ep18_ig.mp4,61,26/35,271,38.8,reach 226; avg watch 5.776s; dur 44.9s; Metricool IG reels (reelsViewRate); IG 07:02; duplicate post 0 views,news,news,10,,
+2026-10-25,videos/challenges/guess_2026-10-25.mp4,51,21/35,1336,54.8,challenge guess; reach 1159; avg watch 13.748s; dur 49.3s; IG 17:06; 2nd post 3 views; score without --words,challenge,guess,20,,
+2026-10-26,videos/news_ep19_ig.mp4,61,26/35,275,38.8,reach 222; avg watch 7.142s; dur 47.0s; Metricool IG reels (reelsViewRate); IG 07:04; duplicate post 0 views,news,news,10,,
+2026-10-26,videos/challenges/guess_2026-10-27.mp4,56,21/35,205,18.7,challenge guess; reach 168; avg watch 5.577s; dur 48.5s; IG 20:06; 2nd post 0 views; score without --words,challenge,guess,23,,
+2026-10-27,videos/news_ep20_ig.mp4,61,26/35,158,36.4,reach 109; avg watch 6.499s; dur 58.1s; Metricool IG reels (reelsViewRate); IG 07:04; duplicate post 1 view,news,news,10,,
+2026-10-27,ig/website_launch_promo,,,191,30.2,Metricool IG reels pull 16 Nov 2026,promo,promo,6,,
+2026-10-28,videos/news_ep21_ig.mp4,61,26/35,317,37.7,reach 236; avg watch 6.039s; dur 49.4s; Metricool IG reels (reelsViewRate); IG 07:18; 2nd post 125 views reach 121,news,news,10,,
+2026-10-28,videos/challenges/guess_2026-10-28.mp4,61,26/35,216,15.1,challenge guess; reach 182; avg watch 3.606s; dur 50.8s; IG 17:10; 2nd post 131 views 19.0%; score without --words,challenge,guess,20,,
+2026-10-29,videos/news_ep22_ig.mp4,56,21/35,159,39.5,reach 115; avg watch 7.091s; dur 52.7s; Metricool IG reels (reelsViewRate); IG 10:08,news,news,13,,
+2026-10-29,ig/pack_rarities_explainer,,,1452,52.2,Metricool IG reels pull 16 Nov 2026,educational,tips,18,,
+2026-10-30,videos/challenges/fight_2026-10-30.mp4,70,35/35,479,49.8,challenge fight; reach 424; avg watch 11.895s; dur 52.9s; IG 21:46; score without --words,challenge,fight,0,,
+2026-10-30,ig/new_releases_arrival,,,552,36.9,Metricool IG reels pull 16 Nov 2026,arrival,arrival,9,,
+2026-10-31,videos/challenges/elevator_2026-10-31.mp4,57,26/35,614,51.3,"challenge elevator; reach 518; avg watch 11.92s; dur 65.4s; IG 18:04; score without --words; 7d update 21 Nov: 614 views, reach 522, avg 11.9s, shares 3, saves 2, comments 0",challenge,elevator,21,,
+2026-11-01,videos/news_ep23_ig.mp4,61,26/35,287,31.5,"reach 219; avg watch 5.31s; dur 45.1s; Metricool IG reels (reelsViewRate); IG 10:05; 7d update 21 Nov: 287 views, reach 225, avg 5.4s, shares 0, saves 1, comments 0",news,news,13,,
+2026-11-01,videos/challenges/guess_2026-11-01.mp4,65,35/35,1295,59.0,"challenge guess gp.py; reach 1083; avg watch 15.952s; dur 47.3s; IG 18:09; score without --words; 7d update 21 Nov: 1295 views, reach 1090, avg 15.9s, shares 0, saves 3, comments 0",challenge,guess,21,,
+2026-11-02,ig/eb05_local_event,,,866,47.9,Metricool IG reels pull 16 Nov 2026,event,event,13,,
+2026-11-03,videos/news_ep24_ig.mp4,56,21/35,288,28.8,"reach 213; avg watch 5.827s; dur 52.3s; Metricool IG reels (reelsViewRate); IG 10:06; 7d update 21 Nov: 288 views, reach 221, avg 5.7s, shares 0, saves 0, comments 0",news,news,13,900,
+2026-11-04,videos/challenges/market_2026-11-04.mp4,61,26/35,282,39.1,"challenge market; reach 210; avg watch 10.385s; dur 40.2s; IG 18:16; score without --words; 7d update 21 Nov: 282 views, reach 221, avg 10.1s, shares 2, saves 0, comments 0",challenge,market,21,,
+2026-11-05,videos/news_ep25_ig.mp4,61,26/35,255,31.3,"reach 203; avg watch 5.236s; dur 52.0s; Metricool IG reels (reelsViewRate); IG 10:06; 7d update 21 Nov: 255 views, reach 215, avg 5.0s, shares 2, saves 0, comments 0",news,news,13,1200,
+2026-11-05,videos/challenges/sealed_2026-11-04.mp4,59,21/35,1587,50.4,"sealed weekly; reach 1275; avg watch 16.489s; dur 46.5s; IG 15:15; score without --words; 7d update 21 Nov: 1587 views, reach 1295, avg 16.5s, shares 18, saves 6, comments 0",challenge,sealed,18,4299,
+2026-11-08,videos/news_ep26_ig.mp4,66,26/35,1336,60.7,"reach 1129; avg watch 11.072s; dur 42.4s; Metricool IG reels (reelsViewRate); IG 10:03; first news >1000 views — hook Pikachu Illustrator $5,000,000; score without --words (run 2026-11-15); 7d update 21 Nov: 1336 views, reach 1143, avg 11.0s, shares 4, saves 2, comments 0",news,news,13,5000000,
+2026-11-12,ig/guess_2026-11-12,,,1251,57.2,"Metricool IG 12 Nov 21:08 Riyadh; reach 1108; avg watch 17.5s; shares 0; saves 1; comments 1; likes 18; 7d update 21 Nov: 1251 views, reach 1117, avg 17.4s, shares 1, saves 1, comments 0",challenge,guess,21,,
+2026-11-12,ig/rayquaza_news,,,228,27.9,"Metricool IG 12 Nov 13:08 Riyadh; reach 173; avg watch 4.7s; shares 1; saves 0; 7d update 21 Nov: 228 views, reach 179, avg 4.6s, shares 1, saves 0, comments 0",news,news,13,300,
+2026-11-15,ig/magikarp_news,,,893,56.6,"Metricool IG 15 Nov 13:06 Riyadh; reach 763; avg watch 22.0s; shares 0; saves 3; comments 0; final at 3 d (re-check 7 d); 7d update 21 Nov: 893 views, reach 778, avg 21.8s, shares 0, saves 3, comments 0",news,news,13,1100000,
+2026-11-15,ads/HTR_DeltaReign_challenge.mp4,,,635,51.9,"organic reel 15 Nov 16:07 Riyadh; dur 21.3s; reach 513; avg watch 7.2s; shares 0; saves 1; comments 0; caption says answer at end of video; tool said 75% (no time) - did NOT fly; 7d update 21 Nov: 635 views, reach 530, avg 7.1s, shares 0, saves 1, comments 0",challenge,guess,16,,
+2026-11-17,ig/30th_upc_news,,,1479,59.1,"Metricool IG 17 Nov 13:06 Riyadh; avg watch 8.6s; saves 3; hook +$300 (180→300) 30th Celebration UPC + Hadi character + «داي ولا نايت؟» — news that flew at 13:00; 5d update 22 Nov: 1479 views, reach 1200, avg 8.6s, likes 11, shares 0, saves 3, comments 0",news,news,13,300,
+2026-11-19,ig/op18_news,,,255,41.3,"Metricool IG 19 Nov 13:04 Riyadh; avg watch 8.6s; hook +$200 OP-18 (120→200) + Hadi character — same template as 30th UPC, flopped; 3d update 22 Nov: 255 views, reach 185, avg 8.7s, likes 1, shares 1, saves 0, comments 0",news,news,13,200,
+2026-11-19,ads/HTR_DeltaReign_rot8_IG.mp4,70,,227,23.0,"organic reel 19 Nov 20:12 Riyadh; avg watch 5.0s; comments 1; ad-style motion promo «بكم تتوقعه؟»; tool said 83% (guess series) — did NOT fly; 77% swiped in first 3 s; relabeled promo (ad-style motion, not a play-along game); 3d update 22 Nov: 227 views, reach 166, avg 4.9s, likes 1, shares 1, saves 0, comments 1",promo,dr-price,20,,
+2026-11-22,HTR_girl_ineedapack_EN.mp4,56,"One pack more (song v1, EN)",122,44.6,"prelim 24h (Metricool pull 23 Nov 2026 19:20 UTC); posted 04:16 Riyadh; reach 108; avg watch 5.6s; skip 55.4%; likes 1; comments 0; shares 0; saves 0; caption only ""One pack more""; tool 12% at 03:55 -> right",other,song,4,,
+2026-11-22,HTR_girl_ineedapack_EN_v2.mp4,56,"I need a pack... just ONE more (song v2, EN)",151,37.5,prelim 24h (Metricool pull 23 Nov 2026 19:20 UTC); posted 08:31 Riyadh; reach 126; avg watch 6.2s; skip 62.5%; likes 3; comments 0; shares 0; saves 0; caption has share trigger; tool 33% -> right,other,song,8,,
+2026-11-22,videos/news_ep31_ig.mp4,80,"$4,000 Mew R/RGB card frame 1",232,39.0,prelim 24h (Metricool pull 23 Nov 2026 19:20 UTC); posted 13:06 Riyadh; reach 173; avg watch 7.8s; skip 61%; likes 5; comments 0; shares 0; saves 1; tool 7% -> right,news,news,13,4000,
+2026-11-22,ads/HTR_OP18_DeadBoxes_rot11.mp4,63,بوكسات OP-18… فاضية؟,268,41.2,prelim 24h (Metricool pull 23 Nov 2026 19:20 UTC); posted 19:33 Riyadh; reach 193; avg watch 15.5s; skip 58.8%; likes 2; comments 0; SHARES 12; saves 0; motion explainer (VO); tool 28% -> right,educational,op18-explainer,19,,

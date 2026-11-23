@@ -11,9 +11,12 @@
  "rules": {
   "fatigue": true,
   "calm": true,
-  "evening_from": 18
+  "evening_from": 18,
+  "motion_learn": true,
+  "extreme_usd": 1000000
  },
  "fly_views": 1000,
  "fly_by": "views",
- "fly_rule": "Owner rule 16 Nov 2026: any reel under 1,000 views is rejected (ما بيفلير)."
+ "fly_rule": "Owner rule 16 Nov 2026: any reel under 1,000 views is rejected (ما بيفلير).",
+ "platform_refs": "../platform_refs.csv"
 }
