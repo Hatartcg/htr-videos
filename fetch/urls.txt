@@ -1,4 +1,1 @@
-cm23_s107101.jpg https://product-images.tcgplayer.com/fit-in/874x874/107101.jpg
-cm23_s185717.jpg https://product-images.tcgplayer.com/fit-in/874x874/185717.jpg
-cm23_s147223.jpg https://product-images.tcgplayer.com/fit-in/874x874/147223.jpg
-cm23_s170273.jpg https://product-images.tcgplayer.com/fit-in/874x874/170273.jpg
+cm23_sld_vo.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/7XC1e3bUrDAoiRkLLRkL/HWwVWmQBtDpljtGiEUry/content.mp3?Expires=1795410000&KeyName=assets-cdn-key-1&Signature=Llilxi4Vzdp6C_vMP4ceDxVHZZ8=
