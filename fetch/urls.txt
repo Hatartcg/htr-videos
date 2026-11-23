@@ -1,1 +1,4 @@
-cm23_vsj_L4b.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/qPk4xzOoFVoxfrxR3WQp/a0OGMDVihrjJryrPu6vL/content.mp3?Expires=1795406400&KeyName=assets-cdn-key-1&Signature=n9DOfCa38uMJR6oBaUFygrAfNzM=
+cm23_s107101.jpg https://product-images.tcgplayer.com/fit-in/874x874/107101.jpg
+cm23_s185717.jpg https://product-images.tcgplayer.com/fit-in/874x874/185717.jpg
+cm23_s147223.jpg https://product-images.tcgplayer.com/fit-in/874x874/147223.jpg
+cm23_s170273.jpg https://product-images.tcgplayer.com/fit-in/874x874/170273.jpg
