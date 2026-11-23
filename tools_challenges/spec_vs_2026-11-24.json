@@ -1,0 +1,104 @@
+{
+ "source": "سعر السوق في TCGplayer · 22 نوفمبر 2026",
+ "tease": "تابعنا عشان التحدي الجاي!",
+ "no_reveal": true,
+ "static_intro": true,
+ "share": "أرسله لخويك اللي يجمع كروت وتحدّاه!",
+ "titles": {
+  "sub": "أغلب الناس يغلطون!"
+ },
+ "rounds": [
+  {
+   "game": "POKÉMON",
+   "mult": "",
+   "a": {
+    "img": "/home/claude/htr-videos/fetch/im_246733.jpg",
+    "name": "RAYQUAZA VMAX",
+    "set": "Evolving Skies · Alt Art",
+    "price": "$1,218",
+    "p": 1217.92
+   },
+   "b": {
+    "img": "/home/claude/htr-videos/fetch/im_253266.jpg",
+    "name": "GENGAR VMAX",
+    "set": "Fusion Strike · Alt Art",
+    "price": "$999",
+    "p": 998.77
+   }
+  },
+  {
+   "game": "LORCANA",
+   "mult": "",
+   "a": {
+    "img": "/home/claude/htr-videos/fetch/im_690217.jpg",
+    "name": "MERIDA",
+    "set": "Formidable Archer · Iconic",
+    "price": "$1,553",
+    "p": 1553.36
+   },
+   "b": {
+    "img": "/home/claude/htr-videos/fetch/im_651107.jpg",
+    "name": "WINNIE THE POOH",
+    "set": "Hunny Wizard · Enchanted",
+    "price": "$1,599",
+    "p": 1598.53
+   }
+  },
+  {
+   "game": "RIFTBOUND",
+   "mult": "",
+   "a": {
+    "img": "/home/claude/htr-videos/fetch/im_709666.jpg",
+    "name": "ZED",
+    "set": "Vendetta · Signature",
+    "price": "$1,247",
+    "p": 1247.31
+   },
+   "b": {
+    "img": "/home/claude/htr-videos/fetch/im_653098.jpg",
+    "name": "JINX",
+    "set": "Origins · Signature",
+    "price": "$1,355",
+    "p": 1355.35
+   }
+  }
+ ],
+ "timing": {
+  "intro": 4.366666666666666,
+  "ask": [
+   4.933333333333334,
+   3.7,
+   3.7
+  ],
+  "rev": [
+   0.9,
+   0.9,
+   0.9
+  ],
+  "outro": 6.8
+ },
+ "hits": [
+  5.88,
+  7.76,
+  9.3,
+  10.3,
+  11.3,
+  14.17,
+  15.37,
+  16.5,
+  17.5,
+  18.5,
+  21.56,
+  22.7,
+  23.7,
+  24.7,
+  25.7,
+  28.69,
+  29.49,
+  30.15,
+  31.29,
+  32.27,
+  34.0,
+  35.0
+ ]
+}

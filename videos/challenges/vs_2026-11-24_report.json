@@ -1,0 +1,342 @@
+{
+ "file": "out2.mp4",
+ "brand": "HTR",
+ "platform": "instagram",
+ "duration": 35.7,
+ "prediction": {
+  "fly_probability": 0.72,
+  "verdict": "بيفلير",
+  "format": "challenge",
+  "series": "vs",
+  "history_n": 80,
+  "why": [
+   "نوع الفكرة «تحدي/لعبة يشارك فيها المشاهد»: طار 6 من 9 (بدون الحلقات المكررة ورا بعض) في هالحساب",
+   "سلسلة «vs» نفسها: طارت 1 من 1 لما نزلت بعد راحة كافية"
+  ],
+  "to_make_it_fly": [
+   "تحدي: لا تعطي الجواب في الفيديو — يا تحطه في التعليقات (تعليق مثبّت/رد)، يا تنهي بدون جواب وتطلب «اكتب جوابك وأرسله لخويك»"
+  ],
+  "note": "تقدير من تاريخ هالحساب على هالمنصة نفسها، مو ضمان"
+ },
+ "score_estimate": 64,
+ "breakdown": {
+  "hook/35": 21,
+  "pacing/25": 3,
+  "audio/15": 15,
+  "length/15": 15,
+  "ending/10": 10
+ },
+ "cuts": [
+  4.1,
+  5.9,
+  7.8,
+  9.3,
+  10.3,
+  11.3,
+  12.5,
+  14.2,
+  15.4,
+  16.5,
+  17.5,
+  18.5,
+  19.7,
+  21.6,
+  22.7,
+  23.7,
+  24.7,
+  25.7,
+  28.7,
+  29.5,
+  30.2,
+  31.3,
+  32.3,
+  34.0,
+  35.0
+ ],
+ "cuts_per_sec": 0.7,
+ "first_word_at": 0.07,
+ "loudness_db": -11.7,
+ "timeline": [
+  {
+   "sec": 0,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 1,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 2,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 3,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 4,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 5,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 6,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 7,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 8,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 9,
+   "level": "yellow",
+   "issues": [
+    "ما فيه كلام"
+   ],
+   "cut": true
+  },
+  {
+   "sec": 10,
+   "level": "yellow",
+   "issues": [
+    "ما فيه كلام"
+   ],
+   "cut": true
+  },
+  {
+   "sec": 11,
+   "level": "yellow",
+   "issues": [
+    "ما فيه كلام"
+   ],
+   "cut": true
+  },
+  {
+   "sec": 12,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 13,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 14,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 15,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 16,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 17,
+   "level": "yellow",
+   "issues": [
+    "ما فيه كلام"
+   ],
+   "cut": true
+  },
+  {
+   "sec": 18,
+   "level": "yellow",
+   "issues": [
+    "ما فيه كلام"
+   ],
+   "cut": true
+  },
+  {
+   "sec": 19,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 20,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 21,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 22,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 23,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 24,
+   "level": "yellow",
+   "issues": [
+    "ما فيه كلام"
+   ],
+   "cut": true
+  },
+  {
+   "sec": 25,
+   "level": "yellow",
+   "issues": [
+    "ما فيه كلام"
+   ],
+   "cut": true
+  },
+  {
+   "sec": 26,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 27,
+   "level": "yellow",
+   "issues": [
+    "حركة قليلة"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 28,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 29,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 30,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 31,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 32,
+   "level": "green",
+   "issues": [],
+   "cut": true
+  },
+  {
+   "sec": 33,
+   "level": "yellow",
+   "issues": [
+    "ما فيه كلام"
+   ],
+   "cut": false
+  },
+  {
+   "sec": 34,
+   "level": "yellow",
+   "issues": [
+    "ما فيه كلام"
+   ],
+   "cut": true
+  },
+  {
+   "sec": 35,
+   "level": "yellow",
+   "issues": [
+    "ما فيه كلام"
+   ],
+   "cut": true
+  }
+ ],
+ "fix_first": [
+  "ما فيه قطع في أول ٣ ثواني — أضف قطع/زووم/نص كبير يتحرك"
+ ],
+ "hook_features": {
+  "mot_0_1": 0.594,
+  "mot_1_3": 0.594,
+  "mot_rest": 5.741,
+  "cuts_0_3": 0.0,
+  "first_cut": 4.1,
+  "cps": 0.7,
+  "audio_onset": 0.0,
+  "loud_0_1": 8.348,
+  "loud_rel": -11.723,
+  "bright0": 0.23,
+  "contrast0": 0.185,
+  "sat0": 0.528,
+  "edges0": 0.023,
+  "color0": 0.137,
+  "face0": 0.0,
+  "face_0_3": 0.0,
+  "dur": 35.7,
+  "text0": 0.0,
+  "change_0_1": 0.028
+ },
+ "note": "score_estimate = جودة المونتاج (للمقارنة بين النسخ). القرار من prediction.verdict. كله تقدير، مو ضمان."
+}
