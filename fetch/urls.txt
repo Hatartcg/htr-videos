@@ -1,9 +1,4 @@
-cm23_a1.png https://en.onepiece-cardgame.com/images/cardlist/card/P-064.png
-cm23_a2.png https://en.onepiece-cardgame.com/images/cardlist/card/P-064_p1.png
-cm23_a3.webp https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/P/P-064_p1_EN.webp
-cm23_a4.webp https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/P/P-064_EN.webp
-cm23_a5.png https://images.pokemontcg.io/ecard1/39_hires.png
-cm23_a6.png https://images.pokemontcg.io/ex11/12_hires.png
-cm23_a7.jpg https://tcgplayer-cdn.tcgplayer.com/product/115598_1000w.jpg
-cm23_a8.webp https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com/one-piece/P/P-064_p2_EN.webp
-cm23_a9.png https://images.pokemontcg.io/ex13/12_hires.png
+cm23_b1.jpg https://product-images.tcgplayer.com/fit-in/874x874/115598.jpg
+cm23_b2.jpg https://product-images.tcgplayer.com/115598.jpg
+cm23_b3.jpg https://bulbapedia.bulbagarden.net/wiki/Special:FilePath/Red_%26_Blue_Collection_Charizard-EX.jpg
+cm23_b4.png https://bulbapedia.bulbagarden.net/wiki/Special:FilePath/Red_%26_Blue_Collection_Charizard-EX.png
