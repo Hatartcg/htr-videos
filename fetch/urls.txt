@@ -1,12 +1,1 @@
-oh1124_tg1.jpg https://cdn.salla.sa/NKNagy/358d55f4-9ed2-499c-a9cf-9c1d0a1f8412-1000x1000-wEHPPEkl1TVYFrQdkYFjbL8sGGUMMGYLfaZRJWu1.jpg
-oh1124_tg2.jpg https://cdn.salla.sa/NKNagy/569241cb-98a3-473a-a162-225c07eebe5a-985.10638297872x1000-ty7UBqUzm4wGAdxR3puqvpmxAuLWMzR628wGWkwB.jpg
-oh1124_tg3.jpg https://cdn.salla.sa/NKNagy/fce7e996-e5fc-464d-afb3-0939b30d672f-985.10638297872x1000-umTek4qrDXhspjdSWomAVEOXnqR02NEmuzeACJhh.jpg
-oh1124_tg4.jpg https://cdn.salla.sa/NKNagy/9b2096c8-e330-4826-b860-f9d00106a3ac-985.10638297872x1000-4L9pVLDRJYiMtDHMhdU7pB9uTaK23siP2wYBSc54.jpg
-oh1124_tg5.jpg https://cdn.salla.sa/NKNagy/fd6db445-9560-4022-b513-17e036bfd557-985.10638297872x1000-D7I3GqeTwQ0GU4MCxAOcX3h0QPyE1jhZ6tL0Ygxo.jpg
-oh1124_tg6.jpg https://cdn.salla.sa/NKNagy/4c69a8dc-8486-466b-bc07-6757d90e6895-985.10638297872x1000-M0yhA8lUsXpCKuZAYTVFJitQKrWZZStS0i3hARhN.jpg
-oh1124_tg7.jpg https://cdn.salla.sa/NKNagy/9a752909-2dbe-417f-bcad-0a2f3597a17c-985.10638297872x1000-lexIuXuDl3SCytS1aJU2hoioNSs06x0LprO6Bjj2.jpg
-oh1124_tg8.jpg https://cdn.salla.sa/NKNagy/8eaf6eed-3f92-4a14-9675-7993df56a5f4-985.10638297872x1000-3iWmWywLjkLZTxV237wqs6ntHPgFesfc1TcYwjKv.jpg
-oh1124_tg9.jpg https://cdn.salla.sa/NKNagy/6e4b4dc9-f0a8-4baa-8ac4-49ac9e465705-985.10638297872x1000-K7D8SRHrQucD6qtdXguVxDqnnpwFrMm56Ty0wAWm.jpg
-oh1124_tg10.jpg https://cdn.salla.sa/NKNagy/f974173b-bec0-4b3e-aa33-f0470eb9f6ba-985.10638297872x1000-nZI6r2kfN1KIe8ZEZ5m5ocEliUcEZkXPdQNsPlm1.jpg
-oh1124_tg11.jpg https://cdn.salla.sa/NKNagy/ca28c650-befc-4dd4-b689-8c20eef61ebb-985.10638297872x1000-eztWsiL3CQ4rb6k521wvHTT6shxuj9LBsnNxLfyb.jpg
-oh1124_tg12.jpg https://cdn.salla.sa/NKNagy/24123811-9f02-4a28-8983-1fa7e392bed3-985.10638297872x1000-58z0W9Xgc3okNyALsH1upctvKDd8pcE4oNDkxQs3.jpg
+oh1124_tg_vo.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/SWPWd7HEyAjCybDeD1J5/e0iCp4cw8igEGA6Q2r6w/content.mp3?Expires=1795417200&KeyName=assets-cdn-key-1&Signature=YveV_mRHkYoDbQ60X3sXCIhjG00=
