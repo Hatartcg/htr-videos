@@ -1,3 +1,1 @@
-pr1125_89_24344.json https://tcgcsv.com/tcgplayer/89/24344/prices
-pr1125_3_2848.json https://tcgcsv.com/tcgplayer/3/2848/prices
-pr1125_2_330.json https://tcgcsv.com/tcgplayer/2/330/prices
+guess1125_t1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/S5YBBequF3GucfgVD2eJ/ExmXXoJnCMxtveNBFNa5/content.mp3?Expires=1795503600&KeyName=assets-cdn-key-1&Signature=5YNjz9jZF7WqSvQhJUrW2a03GpE=

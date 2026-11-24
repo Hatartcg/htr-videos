@@ -1,0 +1,45 @@
+{
+ "title1": "تقدر تخمّن",
+ "title2": "كم تسوى هالكروت؟",
+ "subtitle": "٣ ألعاب · ٣ جولات",
+ "source": "سعر السوق في TCGplayer · 23 نوفمبر 2026",
+ "tease": "تابعنا عشان التحدي الجاي!",
+ "no_reveal": true,
+ "static_intro": true,
+ "share": "أرسله لخويك وشوف مين يجيبها كلها!",
+ "rounds": [
+  {
+   "img": "/home/claude/htr-videos/fetch/im_653094.jpg",
+   "name": "KAI'SA",
+   "set": "RIFTBOUND · Origins · Signature",
+   "options": [
+    "$1,250",
+    "$3,138",
+    "$6,900"
+   ],
+   "answer": 1
+  },
+  {
+   "img": "/home/claude/htr-videos/fetch/im_246723.jpg",
+   "name": "UMBREON VMAX",
+   "set": "POKÉMON · Evolving Skies · Alt Art",
+   "options": [
+    "$2,149",
+    "$780",
+    "$4,600"
+   ],
+   "answer": 0
+  },
+  {
+   "img": "/home/claude/htr-videos/fetch/im_21954.jpg",
+   "name": "EXODIA THE FORBIDDEN ONE",
+   "set": "YU-GI-OH! · LOB · 1st Edition",
+   "options": [
+    "$2,300",
+    "$240",
+    "$673"
+   ],
+   "answer": 2
+  }
+ ]
+}
