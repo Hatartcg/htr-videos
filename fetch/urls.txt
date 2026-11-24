@@ -1,4 +1,5 @@
-ep33_voice.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/FStzLlRkE3U6AJb0VDee/95l7hGUfnjmYoEqpqxSs/content.mp3?Expires=1795503600&KeyName=assets-cdn-key-1&Signature=hktKCROO3yc8qadFy5TGMGvxe9E=
-ep33_EB05-001.png https://en.onepiece-cardgame.com/images/cardlist/card/EB05-001.png
-ep33_OP13-001.png https://en.onepiece-cardgame.com/images/cardlist/card/OP13-001.png
-ep33_OP01-002.png https://en.onepiece-cardgame.com/images/cardlist/card/OP01-002.png
+oh1125_dps11.html https://otakkuhaveen.com/ar/double-pack-set-vol-11/p21809351
+oh1125_dps11_1.jpg https://cdn.salla.sa/NKNagy/59ece693-bb3a-4eaa-8fb8-05a1e8845f3a-558.59375x1000-Fd73jY9C5a7T3EQ72HcAHdAay8GCVxDNQcqctW4d.jpg
+oh1125_dps11_2.jpg https://cdn.salla.sa/NKNagy/e43b4430-4457-459a-8cc3-aa5918c71777-279.296875x500-Fd73jY9C5a7T3EQ72HcAHdAay8GCVxDNQcqctW4d.jpg
+oh1125_luffywm.html https://otakkuhaveen.com/ar/one-piece-card-luffy-watermelon-art-by-eiichiro-oda-limited-edition/p605183917
+oh1125_gem3.html https://otakkuhaveen.com/ar/gem-3/p1328540641
