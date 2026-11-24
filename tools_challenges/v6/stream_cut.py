@@ -125,12 +125,15 @@ for i in range(NF):
         if pz[0] <= t < pz[0] + pz[2]: z *= 1 + pz[1]; cx, cy = pz[3], pz[4]
     fr = zoomed(src, z, cx, cy)
     if sg.get('dim'): fr = Image.alpha_composite(fr, Image.new('RGBA', (W, H), (0, 0, 0, int(255 * sg['dim']))))
-    if sg.get('flash') and u * (sg['o1'] - sg['o0']) < .12:
-        fr = Image.alpha_composite(fr, Image.new('RGBA', (W, H), (255, 255, 255, int(200 * (1 - u * (sg['o1'] - sg['o0']) / .12)))))
+    FL = spec.get('flash_len', .12)
+    if sg.get('flash') and u * (sg['o1'] - sg['o0']) < FL:
+        fr = Image.alpha_composite(fr, Image.new('RGBA', (W, H), (255, 255, 255, int(230 * (1 - u * (sg['o1'] - sg['o0']) / FL)))))
+    if spec.get('matte') and sg.get('flash') and u * (sg['o1'] - sg['o0']) < spec.get('flash_len', .12):
+        fr = Image.new('RGBA', (W, H), tuple(spec.get('flash_color', (255, 255, 255))) + (255,)) if spec.get('flash_full') else fr
     if spec.get('matte'):  # clean-minimal template: footage sits inside a white matte with rounded corners
         m = spec['matte']; sc = m.get('scale', .86); fw, fh = int(W * sc), int(H * sc)
         small = fr.resize((fw, fh), Image.LANCZOS); mask = Image.new('L', (fw, fh), 0); ImageDraw.Draw(mask).rounded_rectangle((0, 0, fw - 1, fh - 1), 36, fill=255)
-        canvas = Image.new('RGBA', (W, H), tuple(m.get('color', (250, 250, 247))) + (255,))
+        canvas = Image.new('RGBA', (W, H), tuple(sg.get('matte_color', m.get('color', (250, 250, 247)))) + (255,))
         sh = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ImageDraw.Draw(sh).rounded_rectangle(((W - fw) // 2, m.get('y', 150) + 16, (W + fw) // 2, m.get('y', 150) + fh + 16), 40, fill=(0, 0, 0, 70))
         canvas.alpha_composite(sh.filter(ImageFilter.GaussianBlur(20))); small.putalpha(mask); canvas.alpha_composite(small, ((W - fw) // 2, m.get('y', 150))); fr = canvas
     rail = spec.get('rail', 18)  # thin brand frame: also keeps background text in the footage off the very edge
