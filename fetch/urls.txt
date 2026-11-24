@@ -1,1 +1,4 @@
-vs1125_cta.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/e1m5fC1jm9EOPbOUuEkE/3VFSLh3Nep1TZWL58Osb/content.mp3?Expires=1795503600&KeyName=assets-cdn-key-1&Signature=HtGWtpEs6gu83MWJCvNiAF2kB-4=
+ep33_voice.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/FStzLlRkE3U6AJb0VDee/95l7hGUfnjmYoEqpqxSs/content.mp3?Expires=1795503600&KeyName=assets-cdn-key-1&Signature=hktKCROO3yc8qadFy5TGMGvxe9E=
+ep33_EB05-001.png https://en.onepiece-cardgame.com/images/cardlist/card/EB05-001.png
+ep33_OP13-001.png https://en.onepiece-cardgame.com/images/cardlist/card/OP13-001.png
+ep33_OP01-002.png https://en.onepiece-cardgame.com/images/cardlist/card/OP01-002.png
