@@ -20,6 +20,10 @@ CFG = {
                 game='ONE PIECE', hook='رايلي وشاكياكو في بوكس واحد!', big='ONE PIECE', label='ONE PIECE CARD GAME', name=['ILLUSTRATION BOX', 'IB-07'], n1='BANDAI', cap1='إصدار رسمي', n2=1, cap2='SPECIAL ILLUSTRATIONS',
                 extra='+ BOOSTER PACKS', price='235', seed=207, f1='deck', hookfs=68, h0=True, f2txt='PROMO CARDS', card_full=True,
                 punch=[(5.5, .08, .5), (8.79, .07, .6), (9.82, .08, .6), (11.5, .10, .5), (12.79, .06, .5), (14.68, .06, .6)], impact=[1.3, 5.5, 6.39, 8.79, 9.82, 10.64, 11.5, 12.79, 14.2, 15.3]),
+    'lwm': dict(TOTAL=14.6, T_GAME=2.8, T_PROD=3.69, T_NAME=4.13, T_F1=5.61, T_F2=8.09, T_F2b=8.65, T_PRICE=9.61, T_CTA=11.17, T_END2=13.35,
+                game='ONE PIECE', hook='لوفي والحبحب بريشة أودا!', big='ONE PIECE', label='ONE PIECE CARD', name=['LUFFY', 'WATERMELON'], n1='ODA', cap1='توقيع أودا داخل الرسمة', n2=1, cap2='LIMITED EDITION',
+                extra='LIMITED QUANTITY', price='400', seed=125, f1='single', single=True, hookfs=90, cap1fs=78, h0=True, f2txt='LIMITED',
+                punch=[(1.61, .07, .5), (3.69, .07, .5), (5.61, .08, .5), (6.31, .06, .5), (8.09, .08, .5), (9.61, .10, .5), (10.57, .06, .5), (12.3, .05, .5), (4.13, .06, .5), (6.89, .07, .5), (7.5, .05, .5)], impact=[1.61, 2.8, 3.69, 4.13, 5.61, 6.89, 8.09, 9.61, 10.57, 11.17, 12.3, 13.35]),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; rng = np.random.default_rng(CFG['seed'])
@@ -104,7 +108,7 @@ H_PRICE = Holo(CFG['price'], FA(420), stroke=10)
 H_NAME = [Holo(CFG['name'][0], FA(150), stroke=6), Holo(CFG['name'][1], FA(170), stroke=6)]
 S = dict(
     ya=white_text(CFG['hook'], FC(CFG.get('hookfs', 86))), label=pill(CFG['label'], FA(52), (40, 30, 80), border=(180, 160, 255, 255)),
-    cap1=white_text(CFG['cap1'], FC(96)), cap2=pill(CFG['cap2'], FA(66), (30, 20, 60), border=(255, 120, 220, 255)),
+    cap1=white_text(CFG['cap1'], FC(CFG.get('cap1fs', 96))), cap2=pill(CFG['cap2'], FA(66), (30, 20, 60), border=(255, 120, 220, 255)),
     extra=pill(CFG['extra'], FA(60), (255, 61, 154)), sar=white_text('ريال', FC(120)),
     stock=pill('متوفر الآن', FC(54, b'Bold'), (20, 16, 40), border=(56, 225, 255, 255)),
     order=white_text('اطلبه الحين', FC(140)), url=pill('otakkuhaveen.com', FA(54), (139, 92, 246)),
@@ -194,13 +198,17 @@ def render(t):
     if T_F1 <= t < T_F2:
         lt = t - T_F1
         blit(f, H_N1.sprite(t), W / 2, H * .27, 1 + .8 * (1 - eo(lt / .18)), min(1, lt / .06))
-        if CFG.get('f1') == 'deck':  # card stack dropping into a deck
+        if CFG.get('f1') == 'single':  # one card: 3D flip-in + holo sweep
+            ang = 85 * (1 - eo(lt / .5)) + 12 * math.sin(t * 1.7); spr = holo_sweep(persp(BOX, ang, 1), (lt * .8) % 1.6 - .3)
+            cy = H * .58 + 10 * math.sin(t * 2); blit(f, spr, W / 2, cy, .78, min(1, lt / .1)); reflect(f, spr, W / 2, cy + spr.shape[0] * .78 / 2 - 4, .78, .2)
+            glint(f, W / 2 + 200, H * .42, 80, env(t, T_F1 + .5, .4))
+        elif CFG.get('f1') == 'deck':  # card stack dropping into a deck
             for i in range(6):
                 k = lt - .1 - i * .07
                 if k > 0:
                     y = H * .62 - 12 * i - 600 * (1 - eo(k / .3)); blit(f, persp(CARD, 12 * math.sin(t * 1.5), 1), W / 2 + (i - 2.5) * 6, y, .85, min(1, k / .1), (i - 2.5) * 3)
             glint(f, W / 2 + 110, H * .52, 70, env(t, T_F1 + .6, .4))
-        for i, pk in enumerate([] if CFG.get('f1') == 'deck' else PACKS):
+        for i, pk in enumerate([] if CFG.get('f1') in ('deck', 'single') else PACKS):
             k = lt - .12 - i * .1; x = W / 2 + (i - 1) * 270
             if k > 0:
                 y = H * .60 - 500 * (1 - eo(k / .35)); spr = persp(pk, 25 * math.sin(t * 2 + i), 1)
@@ -212,7 +220,11 @@ def render(t):
         if H_F2T is not None: blit(f, H_F2T.sprite(t), W / 2, H * .20, 1 + .8 * (1 - eo(lt / .18)), min(1, lt / .06))
         else: blit(f, H_N2[n].sprite(t), W / 2, H * .20, 1 + .15 * env(t, T_F2 + .55, .25), 1)
         if lt > .4: blit(f, S['cap2'], W / 2, H * .33, ebk((lt - .4) / .3), 1)
-        for j in [0, 4, 1, 3, 2]:
+        if CFG.get('single'):
+            k = eo(lt / .4); spr = holo_sweep(BOX, ((t * .6) % 1.6) - .3); sc = .82 + .06 * lt
+            blit(f, spr, W / 2 + 0 * k, H * .60 + 600 * (1 - k), sc, 1, 4 * math.sin(t * 1.3))
+            glint(f, W / 2 - 220, H * .45, 80, env(t, T_F2 + .7, .45)); glint(f, W / 2 + 230, H * .72, 70, env(t, T_F2 + 1.1, .45))
+        for j in ([] if CFG.get('single') else [0, 4, 1, 3, 2]):
             i = j - 2; k = ebk((lt - .15 - abs(i) * .06) / .5)
             spr = holo_sweep(CARD if j % 2 == 0 else CARD2, ((t * .5 + j * .15) % 1.4) - .2)
             blit(f, spr, W / 2 + i * 170 * k, H * .58 + abs(i) ** 1.5 * 30 * k + 700 * (1 - eo((lt - abs(i) * .06) / .4)), .95 + (.1 if j == 2 else 0), 1, -i * 10 * k)
