@@ -1,1 +1,2 @@
-stream_lastpack_vo.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/RYQJ12Okqebh384y37aR/J1v8IfIyEybOZCXLhjy8/content.mp3?Expires=1795507200&KeyName=assets-cdn-key-1&Signature=PuCmFW-swwjOntDNordbY5egAW8=
+ray_sir_138.jpg https://tcgplayer-cdn.tcgplayer.com/product/728061_in_1000x1000.jpg
+ray_gold_141.jpg https://tcgplayer-cdn.tcgplayer.com/product/728062_in_1000x1000.jpg
