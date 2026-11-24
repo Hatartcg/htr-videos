@@ -1,3 +1,3 @@
-Tue Nov 24 05:14:17 UTC 2026
+Tue Nov 24 05:19:46 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-stream_lastpack_vo.mp3 FAIL match None cps 9.5 unclear [('آخر', np.float64(0.75)), ('ولا', np.float64(0.75))] banned [] diff None
+stream_lastpack_final.mp3 FAIL match None cps 9.2 unclear [('آخر', np.float64(0.65)), ('هت', np.float64(0.78)), ('ولا', np.float64(0.72)), ('لا؟', np.float64(0.73)), ('وش', np.float64(0.46)), ('نحن', np.float64(0.61))] banned [] diff None
