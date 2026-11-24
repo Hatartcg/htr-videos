@@ -107,3 +107,7 @@ Format: date | game | item
 2026-11-24 | Prices | HOOK: US$660,000 paid (Oct 2026) for 2011 Call of Legends Shiny Rayquaza SL10 "PSA 10" — PSA (Nov 11, to CTV News Vancouver) "identified a fraudulent PSA holder"; card believed genuine (Dexerto Nov 3 + PreGradeCards Nov 7/19)
 2026-11-24 | Pokémon | Mega Evolution—Flowing Fists English release Sat Feb 6, 2027; first Z Mega Evolution Pokémon in the TCG, Mega Lucario Z headliner (TPCi gamespress Nov 19 + ICv2 + ComicBook)
 2026-11-24 | Tips | Don't rely on the seller's name — inspect a graded slab yourself before paying
+2026-11-26 | Prices | HOOK: 1999 Base Set Charizard #4 PSA 10 sold $990,000 at Fanatics, Nov 20, 2026 (OTIA Nov 22 / Card Ladder + HobbyCardIndex Nov 22)
+2026-11-26 | Prices | 1998 Commissioned Presentation Galaxy Holo Blastoise CGC 8.5 sold $630,000 at Fanatics, Nov 20 — Blastoise record (OTIA + HCI)
+2026-11-26 | One Piece | From Nov 27, 2026: EB05-001 Jewelry Bonney banned in the same deck as OP13-001 Luffy or OP01-002 Law (official notice Nov 17 + CBR)
+2026-11-26 | Tips | Check the banned/restricted list before any tournament
