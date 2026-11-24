@@ -1,3 +1,3 @@
-Tue Nov 24 04:55:39 UTC 2026
+Tue Nov 24 05:14:17 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-guess1125_t1.mp3 FAIL match 0.73 cps 9.1 unclear [('كروت،', np.float64(0.66)), ('ريفت', np.float64(0.72)), ('كيسا،', np.float64(0.73)), ('السيجنتر', np.float64(0.69)), ('A،', np.float64(0.77)), ('C؟', np.float64(0.54)), ('VMAX', np.float64(0.7)), ('الـ', np.float64(0.26)), ('زين', np.float64(0.75)), ('يوغيو', np.float64(0.79))] banned [] diff [{'op': 'replace', 'expected': 'كاي سا السيقنتشر', 'heard': 'كيسه السيجنتر'}, {'op': 'replace', 'expected': 'ايه بي وله سي', 'heard': 'A B C'}, {'op': 'replace', 'expected': 'في ماكس الالترنت ارت', 'heard': 'VMAX ال Alternate Art'}, {'op': 'replace', 'expected': 'ايفولفنق سكايز', 'heard': 'Evolving Skies'}, {'op': 'replace', 'expected': 'يوغي اوو', 'heard': 'يوغيو'}]
+stream_lastpack_vo.mp3 FAIL match None cps 9.5 unclear [('آخر', np.float64(0.75)), ('ولا', np.float64(0.75))] banned [] diff None
