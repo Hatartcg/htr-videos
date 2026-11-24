@@ -114,6 +114,15 @@ def predict(fmt, series, post_date, mot_1_3, history, fly_hold=45.0, rules=None,
         ks, ns = sum(h["fly"] for h in ser), len(ser)
         p = (ks + SERIES_M * p) / (ns + SERIES_M)
         why.append(f"سلسلة «{series}» نفسها: طارت {ks} من {ns} لما نزلت بعد راحة كافية")
+    nsp = rules.get("new_series_prior")
+    if nsp and fmt == "challenge" and not motion and not any(h["series"] == series for h in past):
+        # v7 (24 Nov 2026): platform prior for a BRAND-NEW play-along series. The account's own history can't
+        # judge a series it has never posted (first VS 23 Oct flew at 1,060 but got 33%). Public TCG outliers
+        # (platform_refs.csv, vidIQ) are novel, real-footage, play-along hooks; Instagram ranks on watch time,
+        # sends and likes per reach and pushes unconnected reach for fresh original content. Applied BEFORE the
+        # hour/fatigue/calm penalties, so a new series posted off-hours is still held back.
+        p = max(p, nsp)
+        why.append(f"سلسلة تحدي جديدة بتصوير أصلي: الحساب ما عنده تاريخ لها، فنستخدم مرجع المنصة (ريلز TCG طايرة بحسابات ثانية) كحد أدنى {nsp:.0%}")
     if rules.get("motion_learn") and motion:
         # v6: blend with the account's own fly-rate of motion/ad-style reels (learned from past rows only).
         mo = [h for h in past if h.get("motion")]
@@ -146,6 +155,13 @@ def predict(fmt, series, post_date, mot_1_3, history, fly_hold=45.0, rules=None,
     if calm_hit:
         p *= CALM_X
         why.append("الثانية 1–3 فيها حركة زايدة (%.1f× من معدل الفيديو)، والفيديوهات اللي طارت كانت أهدى وأوضح هنا" % mot_1_3)
+    erp = rules.get("edu_real_prior")
+    if erp and fmt == "educational" and not motion and not recent and post_hour is not None and late and post_hour >= late:
+        # v7 (24 Nov 2026): a real-footage explainer posted in the evening, not a repeat. Instagram ranks on saves
+        # and watch time, which explainers earn; on HTR IG the real-footage pack-rarities explainer flew (1,452)
+        # while every motion explainer (OP-18 dead boxes 364) did not. Fatigued repeats get no floor.
+        p = max(p, erp)
+        why.append(f"شرح بتصوير حقيقي بوقت المساء: انستقرام يكافئ الحفظ ووقت المشاهدة، فحده الأدنى {erp:.0%}")
     if extreme:
         p = max(p, EXTREME_P)  # applied last: the hour/fatigue penalties do not hold a million-dollar hook back
     verdict = "بيفلير" if p >= rules.get("fly_p", FLY_P) else "ما بيفلير"
@@ -194,7 +210,7 @@ if __name__ == "__main__":
     H = load_history(hp, P.get("fly_hold_pct", 45), P.get("fly_views"), P.get("fly_by"))
     if P.get("brand", "").upper() == "HTR":
         import csv as _c
-        bad = [r for r in _c.DictReader(open(hp, encoding="utf-8")) if r.get("format") == "oh_reel" or "/oh/" in (r.get("file") or "") or (r.get("notes") or "").startswith("OH")]
+        bad = [r for r in _c.DictReader(open(hp, encoding="utf-8")) if r.get("format") == "oh_reel" or ("/oh/" in (r.get("file") or "") or (r.get("file") or "").startswith("oh/")) or (r.get("notes") or "").startswith("OH")]
         if bad:
             print(f"WARNING: {len(bad)} Otaku Haven rows inside {os.path.basename(hp)} — move them to calibration_otaku.csv (they inflate HTR accuracy)")
     acc, c, f, fa, n = walk_forward(H, P.get("rules"))

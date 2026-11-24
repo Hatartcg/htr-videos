@@ -13,7 +13,9 @@
   "calm": true,
   "evening_from": 18,
   "motion_learn": true,
-  "extreme_usd": 1000000
+  "extreme_usd": 1000000,
+  "new_series_prior": 0.45,
+  "edu_real_prior": 0.45
  },
  "fly_views": 1000,
  "fly_by": "views",
