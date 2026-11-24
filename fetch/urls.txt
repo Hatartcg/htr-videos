@@ -1,1 +1,2 @@
-zard1125_cta.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/H4tojKRlcwCyKXreZepj/8XUDqB40XmjbMxGs4Gbc/content.mp3?Expires=1795503600&KeyName=assets-cdn-key-1&Signature=AnU5mi56Chxd-XcOjP6An6iFFwI=
+oh1125_lwm_t1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/727NDJWuAYsz5wgk6N89/g5EspRAxJcktQLgFzL5c/content.mp3?Expires=1795503600&KeyName=assets-cdn-key-1&Signature=y0nDui5AReNXjthGNWWX8v4eP20=
+oh1125_lwm_t2.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/WJlqap26erurOicLpDfD/mksz4V0GPkTEWRelW3Vv/content.mp3?Expires=1795503600&KeyName=assets-cdn-key-1&Signature=zXjGLpRfkrAgFSb2_UAq2pcEATY=
