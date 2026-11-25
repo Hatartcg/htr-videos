@@ -1,0 +1,87 @@
+{
+ "set_title": "ASCENDED HEROES",
+ "set_short": "ASCENDED HEROES",
+ "game": "POKÉMON TCG",
+ "source": "سعر السوق في TCGplayer · 24 نوفمبر 2026",
+ "tease": "تابعنا عشان التحدي الجاي!",
+ "cards": [
+  {
+   "price": 54.33,
+   "name": "STEVEN'S METAGROSS ex",
+   "rarity": "Special Illustration Rare · 289/217",
+   "img": "/home/claude/t10/img/ah_676101.jpg"
+  },
+  {
+   "price": 66.44,
+   "name": "LILLIE'S CLEFAIRY ex",
+   "rarity": "Special Illustration Rare · 280/217",
+   "img": "/home/claude/t10/img/ah_676092.jpg"
+  },
+  {
+   "price": 89.43,
+   "name": "N'S ZOROARK ex",
+   "rarity": "Special Illustration Rare · 286/217",
+   "img": "/home/claude/t10/img/ah_676098.jpg"
+  },
+  {
+   "price": 136.02,
+   "name": "MEGA DRAGONITE ex",
+   "rarity": "Mega Hyper Rare · 295/217",
+   "img": "/home/claude/t10/img/ah_676107.jpg"
+  },
+  {
+   "price": 155.04,
+   "name": "TEAM ROCKET'S MEWTWO ex",
+   "rarity": "Special Illustration Rare · 281/217",
+   "img": "/home/claude/t10/img/ah_676093.jpg"
+  },
+  {
+   "price": 188.35,
+   "name": "PIKACHU ex",
+   "rarity": "Special Illustration Rare · 277/217",
+   "img": "/home/claude/t10/img/ah_676089.jpg"
+  },
+  {
+   "price": 201.88,
+   "name": "MEGA CHARIZARD Y ex",
+   "rarity": "Mega Hyper Rare · 294/217",
+   "img": "/home/claude/t10/img/ah_676106.jpg"
+  },
+  {
+   "price": 367.69,
+   "name": "MEGA DRAGONITE ex",
+   "rarity": "Special Illustration Rare · 290/217",
+   "img": "/home/claude/t10/img/ah_676102.jpg"
+  },
+  {
+   "price": 499.13,
+   "name": "PIKACHU ex",
+   "rarity": "Special Illustration Rare · 276/217",
+   "img": "/home/claude/t10/img/ah_676088.jpg"
+  },
+  {
+   "price": 502.62,
+   "name": "MEGA GENGAR ex",
+   "rarity": "Special Illustration Rare · 284/217",
+   "img": "/home/claude/t10/img/ah_676096.jpg"
+  }
+ ],
+ "timing": {
+  "intro": 4.933333333333334,
+  "dur": [
+   3.433333333333333,
+   3.3333333333333335,
+   3.566666666666667,
+   4.5,
+   3.933333333333333,
+   3.466666666666667,
+   3.7333333333333334,
+   5.366666666666666,
+   4.9
+  ],
+  "mystery": 7.333333333333333,
+  "cta": 5.866666666666666,
+  "end": 2.8,
+  "ib": 2.85
+ }
+}
