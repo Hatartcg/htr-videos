@@ -64,3 +64,6 @@ and ranks Reels on watch time, likes and sends per reach — a second reel on th
 Otaku IG n=36: 100% / 0 of 0 flyers / FA 0. Meta ads n=5: 60%, 0/2 (no new ad data — not reachable read-only this run).
 Still missed: 30th UPC news 17 Nov 13:06. Still false alarms: elevator 31 Oct, market 4 Nov, Magikarp $1.1M 15 Nov (893).
 reel_score.py: new --topic flag (default: guessed from the file name).
+Sources checked by WebSearch 25 Nov: https://about.instagram.com/blog/announcements/instagram-ranking-explained (ranking signals; feed avoids too many posts from one account in a row),
+https://about.instagram.com/blog/announcements/shedding-more-light-on-how-instagram-works , https://creators.instagram.com/blog/tips-for-improving-your-reach .
+(The creators.instagram.com/blog/instagram-algorithm-reels-ranking link in commit c5ca52ca was not verified — use the links above.)
