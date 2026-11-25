@@ -117,6 +117,8 @@ for i in range(NF):
         st = sg['s0'] + (sg['s1'] - sg['s0']) * ease_map(u, sg.get('map', 'lin'))
         src = readers[sid].at(st)
         if sg.get('blur'): src = src.filter(ImageFilter.GaussianBlur(sg['blur']))
+    if sg.get('blur_box'):  # mystery reveal: blur only one region (e.g. the card), keep the face sharp
+        bx = sg['blur_box']; reg = src.crop(tuple(bx)).filter(ImageFilter.GaussianBlur(sg.get('blur_r', 34))); src = src.copy(); src.paste(reg, (bx[0], bx[1]))
     cover_band(src, t)
     z, cx, cy = 1.0, W / 2, H / 2
     if 'push' in sg:  # slow push-in [z0, z1, cx, cy]

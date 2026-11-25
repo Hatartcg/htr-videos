@@ -56,7 +56,7 @@ for a, b2 in duck:
     i0, i1 = int(a * SR), int(b2 * SR); g[i0:i1] = .45
 g = np.convolve(g, np.ones(2400) / 2400, mode='same'); mix *= g
 for t in [float(x) for x in kw.get('ticks', '').split(',') if x]:
-    s = tt(.08); add(fx, t, np.sin(2 * np.pi * 1200 * s) * np.exp(-s / .015) + .6 * rim()[:len(s)], .45)
+    s = tt(.06); add(fx, t, np.sin(2 * np.pi * 1200 * s) * np.exp(-s / .015) + .6 * rim()[:len(s)], .45)
 for t in [float(x) for x in kw.get('hits', '').split(',') if x]:
     s = tt(1.0); f = 46 + 130 * np.exp(-s / .04); boom = np.tanh(3 * np.sin(2 * np.pi * np.cumsum(f) / SR)) * np.exp(-s / .45)
     add(fx, t, boom * .8 + bp(rng.standard_normal(len(s)), 300, 6000) * np.exp(-s / .12) * .3, .85)
