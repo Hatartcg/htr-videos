@@ -26,11 +26,25 @@ LABELS = {"challenge": "تحدي/لعبة يشارك فيها المشاهد", "
 FATIGUE_DAYS, FATIGUE_X, CALM_LIMIT, CALM_X, FLY_P = 3, 0.35, 1.6, 0.7, 0.4
 SERIES_M = 2
 MOTION_M = 2      # v6 pseudo-count for the motion/ad-style blend
+TOPIC_X = 0.5     # v8 penalty when the same iconic item was posted by ANOTHER series in the last FATIGUE_DAYS
+# v8: iconic items the audience recognises; two reels on the same item within 3 days split the audience.
+TOPIC_KW = {"rayquaza": ("rayquaza", "ريكوازا", "ركوازا"), "pikachu": ("pikachu", "بيكاتشو"),
+            "charizard": ("charizard", "تشارزرد", "شارزرد"), "magikarp": ("magikarp", "ماجيكارب"),
+            "mew": ("mew", "ميو"), "op18": ("op 18", "op18"), "digimon": ("digimon", "ديجيمون"),
+            "deltareign": ("deltareign", "delta reign", "دلتا رين"), "romance": ("romance dawn",)}
 EXTREME_P = 0.5   # v6 floor for a hook with an extreme dollar number (rule extreme_usd)  # pseudo-count: how strongly the format rate pulls a series with few posts
 
 
 def _fatigued(h, history):
     return any(o is not h and o["series"] == h["series"] and 0 < (h["date"] - o["date"]).days <= FATIGUE_DAYS for o in history)
+
+
+def topics_of(text):
+    """v8: the iconic items a reel is about, from an explicit 'topic' column or from file name + hook text."""
+    import re
+    t = " " + re.sub(r"[_./\\-]+", " ", (text or "").lower()) + " "
+    return {k for k, kws in TOPIC_KW.items()
+            if any(re.search(r"(?<![a-z])" + re.escape(w.strip().replace("-", " ")) + r"(?![a-z])", t) for w in kws)}
 
 
 def guess_format(path):
@@ -84,6 +98,7 @@ def load_history(csv_path, fly_hold=45.0, fly_views=None, fly_by=None, placement
                      "dur": float(r.get("duration") or 0) or None, "placement": pl,
                      "hour": int(r["hour"]) if (r.get("hour") or "").strip() else None,
                      "motion": is_motion(r),
+                     "topics": set((r.get("topic") or "").lower().split("|")) - {""} or topics_of((r.get("file") or "") + " " + (r.get("hook") or "")),
                      "hook_usd": float(r["hook_usd"]) if (r.get("hook_usd") or "").strip() else None})
     return rows
 
@@ -97,7 +112,7 @@ def best_formats(history):
 
 
 def predict(fmt, series, post_date, mot_1_3, history, fly_hold=45.0, rules=None, dur=None, post_hour=None,
-            motion=None, hook_usd=None):
+            motion=None, hook_usd=None, topics=None):
     rules = rules or {"fatigue": True, "calm": True}
     past = [h for h in history if h["date"] < post_date]
     same = [h for h in past if h["format"] == fmt]
@@ -138,6 +153,20 @@ def predict(fmt, series, post_date, mot_1_3, history, fly_hold=45.0, rules=None,
     if recent:
         p *= FATIGUE_X
         why.append(f"نفس السلسلة «{series}» نزلت قبل {min((post_date - h['date']).days for h in recent)} يوم: الجمهور يتشبع، أبعدها {FATIGUE_DAYS + 1} أيام")
+    tx = rules.get("topic_fatigue")
+    if tx and topics:
+        # v8 (25 Nov 2026): same iconic item from ANOTHER series in the last FATIGUE_DAYS (the same series is
+        # already covered by fatigue). HTR IG: Rayquaza gold-vs-SIR 24 Nov 21:30 (hold 56%, 310 views) came 8 h
+        # after the $660K Rayquaza news; OP-18 dead boxes 22 Nov (387) came 3 d after the OP-18 news. Instagram
+        # caps how often one account's near-duplicate topic is shown to the same people.
+        # same-day rows count only when posted at an earlier hour (the morning news before an evening reel)
+        before = past + [h for h in history if h["date"] == post_date and post_hour is not None
+                         and h.get("hour") is not None and h["hour"] < post_hour]
+        dup = [h for h in before if h["series"] != series and 0 <= (post_date - h["date"]).days <= FATIGUE_DAYS
+               and topics & h.get("topics", set())]
+        if dup:
+            p *= tx
+            why.append(f"نفس الموضوع ({', '.join(sorted(topics & dup[-1]['topics']))}) نزل بفيديو ثاني قبل {min((post_date - h['date']).days for h in dup)} يوم: الجمهور شافه، غيّر الكرت/الموضوع أو أبعده {FATIGUE_DAYS + 1} أيام")
     short = rules.get("short_max")
     if short and dur:
         if dur <= short:
@@ -194,7 +223,7 @@ def walk_forward(history, rules=None):
         # v5 (18 Nov 2026): the posting hour (Riyadh, column "hour") is now part of the honest test, so the
         # evening rule is checked on history like the other rules (HTR IG: 87.8% → 89.8%, no flyer lost).
         r = predict(h["format"], h["series"], h["date"], None, hs[:i], rules=rules, dur=h.get("dur"), post_hour=h.get("hour"),
-                    motion=h.get("motion"), hook_usd=h.get("hook_usd"))
+                    motion=h.get("motion"), hook_usd=h.get("hook_usd"), topics=h.get("topics"))
         pf = r["verdict"] == "بيفلير"
         ok += pf == h["fly"]; caught += pf and h["fly"]; fa += pf and not h["fly"]
     return ok / max(1, len(hs)), caught, sum(h["fly"] for h in hs), fa, len(hs)

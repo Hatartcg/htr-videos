@@ -15,7 +15,8 @@
   "motion_learn": true,
   "extreme_usd": 1000000,
   "new_series_prior": 0.45,
-  "edu_real_prior": 0.45
+  "edu_real_prior": 0.45,
+  "topic_fatigue": 0.5
  },
  "fly_views": 1000,
  "fly_by": "views",

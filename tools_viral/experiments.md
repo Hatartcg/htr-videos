@@ -43,3 +43,24 @@ Walk-forward HTR IG, n=56:
 Otaku IG n=35: 100% / 0 of 0 flyers / FA 0 (no flyers yet — accuracy means nothing). Meta ads n=5: 60%, 0/2.
 Still missed: 30th UPC news 17 Nov 13:06 (+$300 only). Still false alarms: elevator 31 Oct, market 4 Nov, Magikarp $1.1M 15 Nov (902 — near miss).
 Caution: A and B each rest on ONE flyer; recheck them every run. Next: share trigger column from captions; duration column for completion.
+
+## 2026-11-25 — reel-coach (v8)
+New HTR IG rows (Metricool pull 25 Nov 19:20 UTC): news_ep32 $660K fake-slab Rayquaza 24 Nov 13:04 → 648 (3-s 55.7%, tool 2% right);
+Digimon pre-order v2 24 Nov 18:31 → 155 (3-s 29.5%; labeled promo — 6 s question + ad-style showcase; tool had said 83% as guess → wrong);
+Rayquaza gold vs SIR 24 Nov 21:32 → 310 at 25 h (3-s 56.3%, tool 72% → wrong so far). Updates: OP-18 dead boxes 387, Mew 281, song v2 161.
+OH: Tokyo Ghoul hoodie 127 (3-s 49.5%).
+
+Walk-forward HTR IG, n=59 (each reel predicted only from reels before it):
+| variant | accuracy | flyers caught | false alarms | decision |
+|---|---|---|---|---|
+| baseline v7 (with the 3 new rows) | 91.5% | 8/9 | 4 | |
+| account momentum: median views of last 5 reels < 250 → ×0.5 | 88.1% | 6/9 | 4 | rejected |
+| account momentum < 300 / 400 / 500 (×0.5 or ×0.35) | 81–83% | 1–2/9 | 2–3 | rejected — HTR flyers come straight out of slumps |
+| A topic_fatigue ×0.5: same iconic item (Rayquaza, OP-18, Pikachu…) from ANOTHER series in the last 3 d (same-day only if earlier hour) | 93.2% | 8/9 | 3 | KEEP |
+Topic window 1 d / 2 d / 3 d gave the same numbers; 3 d kept (= FATIGUE_DAYS). It fires on 2 rows, both flopped
+(Rayquaza vs 8 h after the Rayquaza news; OP-18 dead boxes 3 d after the OP-18 news). Rests on 2 cases — recheck every run.
+Platform basis: Instagram says it avoids showing people too many similar posts in a row / from one account (feed diversity),
+and ranks Reels on watch time, likes and sends per reach — a second reel on the same card in one evening competes with itself.
+Otaku IG n=36: 100% / 0 of 0 flyers / FA 0. Meta ads n=5: 60%, 0/2 (no new ad data — not reachable read-only this run).
+Still missed: 30th UPC news 17 Nov 13:06. Still false alarms: elevator 31 Oct, market 4 Nov, Magikarp $1.1M 15 Nov (893).
+reel_score.py: new --topic flag (default: guessed from the file name).
