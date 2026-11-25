@@ -1,12 +1,2 @@
-oh1125_zq_2.jpg https://cdn.salla.sa/NKNagy/c47e969f-fd3f-4efa-a61c-976f90fc0845-842.88747346072x1000-vPTJHbiQCT3VvOL3iswQgG8tDy5lMb9j2q3LJLUI.jpg
-oh1125_zq_3.jpg https://cdn.salla.sa/NKNagy/e13ed438-1496-4bbd-b772-bdeef55dd58d-842.88747346072x1000-PjELWDXOzrmo0GRQS8hPKDW2VfvKmsMP08KQA6V8.jpg
-oh1125_zq_4.jpg https://cdn.salla.sa/NKNagy/2ed82040-35e5-441f-945d-124ed0d1d0b5-842.88747346072x1000-nQ5YAshJTi7gKDcli1p4jufeJm3ZYkMYWhaZ32C4.jpg
-oh1125_zq_5.jpg https://cdn.salla.sa/NKNagy/fd1d669d-8cc8-4a36-b915-59c2f1da6547-842.88747346072x1000-4IZV97pYyXwotJkskU2QzLfMq0dPaLM674EGXY4i.jpg
-oh1125_zq_6.jpg https://cdn.salla.sa/NKNagy/358541b9-1453-48d1-886b-cc8fb42ab1a0-842.88747346072x1000-ca6J3PkkJ55lY0hULOLRjXPXipg8JCI1YNUaRaX2.jpg
-oh1125_zq_7.jpg https://cdn.salla.sa/NKNagy/1ff06815-dccd-4912-80b7-e660da30c6a0-842.88747346072x1000-q4ICkA94W6hcgtO6rC3qsFeVlNHxbGjugdswv9NA.jpg
-oh1125_zq_8.jpg https://cdn.salla.sa/NKNagy/5b040e0d-d08d-4c5d-9f49-0efbc7b1ed2f-842.88747346072x1000-QsbakyjI8Y2dRZY6npjm4gJyhu7oGPSqp9naSdKr.jpg
-oh1125_zq_9.jpg https://cdn.salla.sa/NKNagy/9c61837f-6a33-4734-9f5f-70816bd6cbef-842.88747346072x1000-g0dZJXLkFEUapgT0JQvdCHrNaP4OK4zgA3d1O8BM.jpg
-oh1125_zq_10.jpg https://cdn.salla.sa/NKNagy/c5c371c0-e58f-4476-b71a-c847c098e475-1000x1000-OLM6cYOXemfGIcEmE4SZ2c1ytwjhIfGuKRduiVPM.jpg
-oh1125_zq_11.jpg https://cdn.salla.sa/NKNagy/edbcdcc2-6a34-46f9-b9e6-bef286ec5471-842.88747346072x1000-JlNSttJ1Trgt5vIjjJyYy9Uh7l7JZBtrpgPaLURI.jpg
-oh1125_zq_12.jpg https://cdn.salla.sa/NKNagy/f7620c7c-6494-4904-943e-645f9415c3ad-842.88747346072x1000-qeX2E4JzT59bDV8EPXCVZEMoPRkduhg1s42KAeGj.jpg
-oh1125_zq_13.jpg https://cdn.salla.sa/NKNagy/03cd48c5-1c90-4e52-9b80-48f3f419dcf7-842.88747346072x1000-eTWxke7vLBn6CuDaVRZIdEuPPJPvuYPHSk8c9q0b.jpg
+oh1125_zq_t1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/fim3jHzYanhCJYFMUK9H/6F8Wz9VbZUatL05BoVTp/content.mp3?Expires=1795590000&KeyName=assets-cdn-key-1&Signature=2W7PzG58056zcN5UlAEitmxXGbM=
+oh1125_zq_t2.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/Bseayhi5OqrqOUIY5lYY/dznWNxEQwGhXd4lcZr0r/content.mp3?Expires=1795590000&KeyName=assets-cdn-key-1&Signature=_nvyShFdpLEJ6Iy39j9a1MPm2mY=
