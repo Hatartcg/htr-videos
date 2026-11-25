@@ -1,0 +1,1029 @@
+{
+ "dates": [
+  "2026-11-17",
+  "2026-11-19",
+  "2026-11-21",
+  "2026-11-23",
+  "2026-11-24"
+ ],
+ "last": "2026-11-24",
+ "d7": "2026-11-17",
+ "movers": {
+  "Pokemon": [
+   {
+    "pct": 274.5,
+    "before": 200.0,
+    "now": 749.0,
+    "name": "Gyarados",
+    "number": "006/102",
+    "rarity": "Holo Rare",
+    "sub": "1st Edition Holofoil",
+    "set": "Base Set (Shadowless)",
+    "productId": 107000,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/107000_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 200.0,
+     "2026-11-19": 200.0,
+     "2026-11-21": 200.0,
+     "2026-11-23": 749.0,
+     "2026-11-24": 749.0
+    }
+   },
+   {
+    "pct": 211.3,
+    "before": 128.48,
+    "now": 400.0,
+    "name": "Rayquaza C - 8/147 (Cracked Ice)",
+    "number": "008/147",
+    "rarity": "Promo",
+    "sub": "Holofoil",
+    "set": "Miscellaneous Cards & Products",
+    "productId": 164231,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/164231_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 128.48,
+     "2026-11-19": 128.48,
+     "2026-11-21": 400.0,
+     "2026-11-23": 400.0,
+     "2026-11-24": 400.0
+    }
+   },
+   {
+    "pct": 175.3,
+    "before": 5.8,
+    "now": 15.97,
+    "name": "Floatzel",
+    "number": "16/95",
+    "rarity": "Rare",
+    "sub": "Reverse Holofoil",
+    "set": "Unleashed",
+    "productId": 85515,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/85515_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 5.8,
+     "2026-11-19": 10.04,
+     "2026-11-21": 10.04,
+     "2026-11-23": 15.97,
+     "2026-11-24": 15.97
+    }
+   },
+   {
+    "pct": 164.2,
+    "before": 8.99,
+    "now": 23.75,
+    "name": "Moomoo Milk",
+    "number": "94/123",
+    "rarity": "Uncommon",
+    "sub": "Reverse Holofoil",
+    "set": "HeartGold SoulSilver",
+    "productId": 87576,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/87576_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 8.99,
+     "2026-11-19": 23.75,
+     "2026-11-21": 23.75,
+     "2026-11-23": 23.75,
+     "2026-11-24": 23.75
+    }
+   },
+   {
+    "pct": 162.0,
+    "before": 101.46,
+    "now": 265.83,
+    "name": "Dark Charizard (4)",
+    "number": "04/82",
+    "rarity": "Holo Rare",
+    "sub": "1st Edition Holofoil",
+    "set": "Team Rocket",
+    "productId": 84572,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/84572_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 101.46,
+     "2026-11-19": 152.92,
+     "2026-11-21": 152.92,
+     "2026-11-23": 265.83,
+     "2026-11-24": 265.83
+    }
+   },
+   {
+    "pct": 142.9,
+    "before": 82.33,
+    "now": 200.0,
+    "name": "Kabuto",
+    "number": "037/144",
+    "rarity": "Uncommon",
+    "sub": "Reverse Holofoil",
+    "set": "Skyridge",
+    "productId": 86379,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/86379_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 82.33,
+     "2026-11-19": 200.0,
+     "2026-11-21": 200.0,
+     "2026-11-23": 200.0,
+     "2026-11-24": 200.0
+    }
+   },
+   {
+    "pct": 140.0,
+    "before": 13.4,
+    "now": 32.16,
+    "name": "Jirachi - 2018 (Magnus Pedersen)",
+    "number": "XY67",
+    "rarity": "Promo",
+    "sub": "Normal",
+    "set": "World Championship Decks",
+    "productId": 481978,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/481978_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 13.4,
+     "2026-11-19": 13.4,
+     "2026-11-21": 13.4,
+     "2026-11-23": 32.16,
+     "2026-11-24": 32.16
+    }
+   },
+   {
+    "pct": 136.6,
+    "before": 379.98,
+    "now": 899.0,
+    "name": "Clefairy",
+    "number": "005/102",
+    "rarity": "Holo Rare",
+    "sub": "1st Edition Holofoil",
+    "set": "Base Set (Shadowless)",
+    "productId": 107001,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/107001_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 379.98,
+     "2026-11-19": 379.98,
+     "2026-11-21": 379.98,
+     "2026-11-23": 379.98,
+     "2026-11-24": 899.0
+    }
+   },
+   {
+    "pct": 123.3,
+    "before": 11.19,
+    "now": 24.99,
+    "name": "Swirlix - 9/12",
+    "number": "009/012",
+    "rarity": "Promo",
+    "sub": "Holofoil",
+    "set": "McDonald's Promos 2014",
+    "productId": 110414,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/110414_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 11.19,
+     "2026-11-19": 11.19,
+     "2026-11-21": 11.19,
+     "2026-11-23": 24.99,
+     "2026-11-24": 24.99
+    }
+   },
+   {
+    "pct": 117.7,
+    "before": 16.53,
+    "now": 35.99,
+    "name": "Fire Energy (2024)",
+    "number": "010",
+    "rarity": "Promo",
+    "sub": "Holofoil",
+    "set": "Professor Program Promos",
+    "productId": 604500,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/604500_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 16.53,
+     "2026-11-19": 35.99,
+     "2026-11-21": 35.99,
+     "2026-11-23": 35.99,
+     "2026-11-24": 35.99
+    }
+   },
+   {
+    "pct": 117.0,
+    "before": 55.28,
+    "now": 119.95,
+    "name": "Pikachu",
+    "number": "009/017",
+    "rarity": "Common",
+    "sub": "Normal",
+    "set": "POP Series 6",
+    "productId": 88087,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/88087_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 55.28,
+     "2026-11-19": 55.28,
+     "2026-11-21": 55.28,
+     "2026-11-23": 119.95,
+     "2026-11-24": 119.95
+    }
+   },
+   {
+    "pct": 107.4,
+    "before": 67.5,
+    "now": 139.99,
+    "name": "Plusle",
+    "number": "8/97",
+    "rarity": "Holo Rare",
+    "sub": "Reverse Holofoil",
+    "set": "EX Dragon",
+    "productId": 88161,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/88161_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 67.5,
+     "2026-11-19": 67.5,
+     "2026-11-21": 91.66,
+     "2026-11-23": 91.66,
+     "2026-11-24": 139.99
+    }
+   },
+   {
+    "pct": 98.8,
+    "before": 30.18,
+    "now": 59.99,
+    "name": "Professor's Research [Professor Elm] - 123/131",
+    "number": "123/131",
+    "rarity": "Promo",
+    "sub": "Reverse Holofoil",
+    "set": "Professor Program Promos",
+    "productId": 722818,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/722818_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 30.18,
+     "2026-11-19": 30.18,
+     "2026-11-21": 59.99,
+     "2026-11-23": 59.99,
+     "2026-11-24": 59.99
+    }
+   },
+   {
+    "pct": 92.3,
+    "before": 16.78,
+    "now": 32.26,
+    "name": "Dark Ariados",
+    "number": "017/105",
+    "rarity": "Rare",
+    "sub": "1st Edition",
+    "set": "Neo Destiny",
+    "productId": 84566,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/84566_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 16.78,
+     "2026-11-19": 16.78,
+     "2026-11-21": 16.78,
+     "2026-11-23": 16.78,
+     "2026-11-24": 32.26
+    }
+   },
+   {
+    "pct": 90.5,
+    "before": 1050.0,
+    "now": 1999.99,
+    "name": "Mewtwo (Delta Species)",
+    "number": "12/113",
+    "rarity": "Holo Rare",
+    "sub": "Reverse Holofoil",
+    "set": "EX Delta Species",
+    "productId": 87425,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/87425_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 1050.0,
+     "2026-11-19": 1050.0,
+     "2026-11-21": 1999.99,
+     "2026-11-23": 1999.99,
+     "2026-11-24": 1999.99
+    }
+   }
+  ],
+  "One Piece": [
+   {
+    "pct": 114.9,
+    "before": 8.07,
+    "now": 17.34,
+    "name": "Nefeltari Vivi (024)",
+    "number": "EB03-024",
+    "rarity": "SR",
+    "sub": "Foil",
+    "set": "Extra Booster: One Piece Heroines Edition",
+    "productId": 672767,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/672767_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 8.07,
+     "2026-11-19": 9.38,
+     "2026-11-21": 15.03,
+     "2026-11-23": 18.15,
+     "2026-11-24": 17.34
+    }
+   },
+   {
+    "pct": 63.6,
+    "before": 16.11,
+    "now": 26.35,
+    "name": "Nami",
+    "number": "EB02-017",
+    "rarity": "R",
+    "sub": "Foil",
+    "set": "Extra Booster: Anime 25th Collection",
+    "productId": 629110,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/629110_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 16.11,
+     "2026-11-19": 16.1,
+     "2026-11-21": 18.27,
+     "2026-11-23": 22.05,
+     "2026-11-24": 26.35
+    }
+   },
+   {
+    "pct": 48.8,
+    "before": 15.29,
+    "now": 22.75,
+    "name": "Monkey.D.Luffy (119)",
+    "number": "OP05-119",
+    "rarity": "SEC",
+    "sub": "Foil",
+    "set": "Awakening of the New Era",
+    "productId": 527024,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/527024_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 15.29,
+     "2026-11-19": 16.2,
+     "2026-11-21": 18.48,
+     "2026-11-23": 21.44,
+     "2026-11-24": 22.75
+    }
+   },
+   {
+    "pct": 45.0,
+    "before": 20.85,
+    "now": 30.23,
+    "name": "Mamaragan",
+    "number": "OP15-078",
+    "rarity": "SR",
+    "sub": "Foil",
+    "set": "Adventure on Kami's Island",
+    "productId": 685429,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/685429_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 20.85,
+     "2026-11-19": 22.2,
+     "2026-11-21": 24.72,
+     "2026-11-23": 29.9,
+     "2026-11-24": 30.23
+    }
+   },
+   {
+    "pct": 43.1,
+    "before": 178.57,
+    "now": 255.5,
+    "name": "Tony Tony.Chopper (Online Regional 2024 Vol. 3)",
+    "number": "OP01-015",
+    "rarity": "UC",
+    "sub": "Normal",
+    "set": "One Piece Promotion Cards",
+    "productId": 585981,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/585981_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 178.57,
+     "2026-11-19": 178.57,
+     "2026-11-21": 183.71,
+     "2026-11-23": 255.5,
+     "2026-11-24": 255.5
+    }
+   },
+   {
+    "pct": 42.7,
+    "before": 104.79,
+    "now": 149.49,
+    "name": "Otama (Offline Regional 2023) [Finalist]",
+    "number": "OP01-006",
+    "rarity": "PR",
+    "sub": "Foil",
+    "set": "One Piece Promotion Cards",
+    "productId": 514165,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/514165_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 104.79,
+     "2026-11-19": 104.79,
+     "2026-11-21": 112.24,
+     "2026-11-23": 149.49,
+     "2026-11-24": 149.49
+    }
+   },
+   {
+    "pct": 33.2,
+    "before": 224.5,
+    "now": 299.0,
+    "name": "Crocodile (Online Regional 2023) [Finalist]",
+    "number": "OP02-053",
+    "rarity": "PR",
+    "sub": "Foil",
+    "set": "One Piece Promotion Cards",
+    "productId": 514035,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/514035_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 224.5,
+     "2026-11-19": 224.5,
+     "2026-11-21": 299.0,
+     "2026-11-23": 299.0,
+     "2026-11-24": 299.0
+    }
+   },
+   {
+    "pct": 32.5,
+    "before": 19.5,
+    "now": 25.84,
+    "name": "Roronoa Zoro",
+    "number": "OP11-016",
+    "rarity": "UC",
+    "sub": "Normal",
+    "set": "A Fist of Divine Speed Release Event Cards",
+    "productId": 634456,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/634456_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 19.5,
+     "2026-11-19": 25.93,
+     "2026-11-21": 25.93,
+     "2026-11-23": 25.84,
+     "2026-11-24": 25.84
+    }
+   },
+   {
+    "pct": 32.3,
+    "before": 46.74,
+    "now": 61.83,
+    "name": "Donquixote Doflamingo (029)",
+    "number": "OP05-029",
+    "rarity": "UC",
+    "sub": "Normal",
+    "set": "Awakening of the New Era: 1st Anniversary Tournament Cards",
+    "productId": 530906,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/530906_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 46.74,
+     "2026-11-19": 61.83,
+     "2026-11-21": 61.83,
+     "2026-11-23": 61.83,
+     "2026-11-24": 61.83
+    }
+   },
+   {
+    "pct": 30.3,
+    "before": 13.87,
+    "now": 18.07,
+    "name": "...Nothing...at All!!!",
+    "number": "OP06-096",
+    "rarity": "C",
+    "sub": "Normal",
+    "set": "Wings of the Captain Pre-Release Cards",
+    "productId": 541710,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/541710_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 13.87,
+     "2026-11-19": 13.87,
+     "2026-11-21": 17.36,
+     "2026-11-23": 17.36,
+     "2026-11-24": 18.07
+    }
+   },
+   {
+    "pct": 28.9,
+    "before": 110.03,
+    "now": 141.78,
+    "name": "Jozu (Championship 2023)",
+    "number": "OP02-008",
+    "rarity": "PR",
+    "sub": "Foil",
+    "set": "One Piece Promotion Cards",
+    "productId": 514044,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/514044_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 110.03,
+     "2026-11-19": 128.21,
+     "2026-11-21": 128.21,
+     "2026-11-23": 128.21,
+     "2026-11-24": 141.78
+    }
+   },
+   {
+    "pct": 23.7,
+    "before": 128.15,
+    "now": 158.57,
+    "name": "Portgas.D.Ace (CS 25-26 Celebration Pack)",
+    "number": "OP07-053",
+    "rarity": "R",
+    "sub": "Foil",
+    "set": "One Piece Promotion Cards",
+    "productId": 649642,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/649642_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 128.15,
+     "2026-11-19": 158.57,
+     "2026-11-21": 158.57,
+     "2026-11-23": 158.57,
+     "2026-11-24": 158.57
+    }
+   },
+   {
+    "pct": 23.6,
+    "before": 16.66,
+    "now": 20.59,
+    "name": "Monkey.D.Luffy (OP05-119) (Reprint)",
+    "number": "OP05-119",
+    "rarity": "SEC",
+    "sub": "Foil",
+    "set": "Premium Booster -The Best-",
+    "productId": 594325,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/594325_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 16.66,
+     "2026-11-19": 15.96,
+     "2026-11-21": 16.29,
+     "2026-11-23": 18.84,
+     "2026-11-24": 20.59
+    }
+   },
+   {
+    "pct": 20.7,
+    "before": 32.44,
+    "now": 39.14,
+    "name": "Shachi & Penguin (CS 26-27 Celebration Pack)",
+    "number": "ST10-008",
+    "rarity": "C",
+    "sub": "Foil",
+    "set": "One Piece Promotion Cards",
+    "productId": 710245,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/710245_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 32.44,
+     "2026-11-19": 32.44,
+     "2026-11-21": 39.14,
+     "2026-11-23": 39.14,
+     "2026-11-24": 39.14
+    }
+   },
+   {
+    "pct": 18.9,
+    "before": 15.57,
+    "now": 18.52,
+    "name": "Sanji & Pudding",
+    "number": "EB02-035",
+    "rarity": "SR",
+    "sub": "Foil",
+    "set": "Extra Booster: Anime 25th Collection",
+    "productId": 629131,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/629131_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 15.57,
+     "2026-11-19": 15.52,
+     "2026-11-21": 16.35,
+     "2026-11-23": 18.21,
+     "2026-11-24": 18.52
+    }
+   }
+  ],
+  "Yu-Gi-Oh!": [
+   {
+    "pct": 173.0,
+    "before": 32.96,
+    "now": 89.99,
+    "name": "Neo-Spacian Aqua Dolphin (UTR)",
+    "number": "POTD-EN003",
+    "rarity": "Ultimate Rare",
+    "sub": "Unlimited",
+    "set": "Power of the Duelist",
+    "productId": 58630,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/58630_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 32.96,
+     "2026-11-19": 32.96,
+     "2026-11-21": 89.99,
+     "2026-11-23": 89.99,
+     "2026-11-24": 89.99
+    }
+   },
+   {
+    "pct": 151.6,
+    "before": 39.99,
+    "now": 100.61,
+    "name": "Brain Control",
+    "number": "DR3-EN218",
+    "rarity": "Super Rare",
+    "sub": "Unlimited",
+    "set": "Dark Revelation Volume 3",
+    "productId": 26013,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/26013_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 39.99,
+     "2026-11-19": 39.99,
+     "2026-11-21": 39.99,
+     "2026-11-23": 100.61,
+     "2026-11-24": 100.61
+    }
+   },
+   {
+    "pct": 105.4,
+    "before": 86.53,
+    "now": 177.73,
+    "name": "Il Blud",
+    "number": "TAEV-EN088",
+    "rarity": "Secret Rare",
+    "sub": "1st Edition",
+    "set": "Tactical Evolution",
+    "productId": 26123,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/26123_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 86.53,
+     "2026-11-19": 86.53,
+     "2026-11-21": 86.53,
+     "2026-11-23": 89.8,
+     "2026-11-24": 177.73
+    }
+   },
+   {
+    "pct": 98.4,
+    "before": 50.39,
+    "now": 99.99,
+    "name": "Elemental Hero Lady Heat",
+    "number": "PP02-EN008",
+    "rarity": "Secret Rare",
+    "sub": "Unlimited",
+    "set": "Premium Pack 2",
+    "productId": 90813,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/90813_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 50.39,
+     "2026-11-19": 50.39,
+     "2026-11-21": 99.99,
+     "2026-11-23": 99.99,
+     "2026-11-24": 99.99
+    }
+   },
+   {
+    "pct": 86.9,
+    "before": 17.68,
+    "now": 33.04,
+    "name": "Witchcrafter Celebration (Starlight Rare)",
+    "number": "MAMS-EN050",
+    "rarity": "Starlight Rare",
+    "sub": "1st Edition",
+    "set": "Magnificent Maestros",
+    "productId": 731636,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/731636_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 17.68,
+     "2026-11-19": 17.79,
+     "2026-11-21": 28.44,
+     "2026-11-23": 31.23,
+     "2026-11-24": 33.04
+    }
+   },
+   {
+    "pct": 64.3,
+    "before": 182.63,
+    "now": 300.0,
+    "name": "Scapegoat",
+    "number": "RP01-EN090",
+    "rarity": "Ultra Rare",
+    "sub": "Unlimited",
+    "set": "Retro Pack",
+    "productId": 78160,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/78160_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 182.63,
+     "2026-11-19": 182.63,
+     "2026-11-21": 300.0,
+     "2026-11-23": 300.0,
+     "2026-11-24": 300.0
+    }
+   },
+   {
+    "pct": 57.8,
+    "before": 19.0,
+    "now": 29.98,
+    "name": "Arcanite Magician (Purple)",
+    "number": "DL14-EN009",
+    "rarity": "Rare",
+    "sub": "Unlimited",
+    "set": "Duelist League Promo",
+    "productId": 80498,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/80498_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 19.0,
+     "2026-11-19": 29.98,
+     "2026-11-21": 29.98,
+     "2026-11-23": 29.98,
+     "2026-11-24": 29.98
+    }
+   },
+   {
+    "pct": 56.7,
+    "before": 17.55,
+    "now": 27.5,
+    "name": "Hand of the Six Samurai",
+    "number": "TDGS-EN085",
+    "rarity": "Secret Rare",
+    "sub": "Unlimited",
+    "set": "The Duelist Genesis",
+    "productId": 27583,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/27583_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 17.55,
+     "2026-11-19": 27.5,
+     "2026-11-21": 27.5,
+     "2026-11-23": 27.5,
+     "2026-11-24": 27.5
+    }
+   },
+   {
+    "pct": 51.1,
+    "before": 26.71,
+    "now": 40.35,
+    "name": "Borrelend Dragon",
+    "number": "BLGG-EN142",
+    "rarity": "Ultra Rare",
+    "sub": "1st Edition",
+    "set": "Battles of Legend: Glorious Gallery",
+    "productId": 695704,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/695704_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 26.71,
+     "2026-11-19": 30.14,
+     "2026-11-21": 34.4,
+     "2026-11-23": 38.27,
+     "2026-11-24": 40.35
+    }
+   },
+   {
+    "pct": 48.1,
+    "before": 27.0,
+    "now": 40.0,
+    "name": "Cockroach Knight",
+    "number": "TP1-029",
+    "rarity": "Common",
+    "sub": "Unlimited",
+    "set": "Tournament Pack 1",
+    "productId": 22720,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/22720_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 27.0,
+     "2026-11-19": 27.0,
+     "2026-11-21": 27.0,
+     "2026-11-23": 40.0,
+     "2026-11-24": 40.0
+    }
+   },
+   {
+    "pct": 46.7,
+    "before": 95.19,
+    "now": 139.6,
+    "name": "Honest (Ghost Rare)",
+    "number": "LODT-EN001",
+    "rarity": "Ghost Rare",
+    "sub": "Unlimited",
+    "set": "Light of Destruction",
+    "productId": 27458,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/27458_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 95.19,
+     "2026-11-19": 139.6,
+     "2026-11-21": 139.6,
+     "2026-11-23": 139.6,
+     "2026-11-24": 139.6
+    }
+   },
+   {
+    "pct": 42.0,
+    "before": 51.51,
+    "now": 73.12,
+    "name": "Unchained Oni of Shyma (Starlight Rare)",
+    "number": "MAMS-EN054",
+    "rarity": "Starlight Rare",
+    "sub": "1st Edition",
+    "set": "Magnificent Maestros",
+    "productId": 731648,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/731648_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 51.51,
+     "2026-11-19": 65.73,
+     "2026-11-21": 72.41,
+     "2026-11-23": 72.97,
+     "2026-11-24": 73.12
+    }
+   },
+   {
+    "pct": 41.5,
+    "before": 81.94,
+    "now": 115.97,
+    "name": "Granmarg the Rock Monarch (UTR)",
+    "number": "FET-EN009",
+    "rarity": "Ultimate Rare",
+    "sub": "1st Edition",
+    "set": "Flaming Eternity",
+    "productId": 58765,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/58765_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 81.94,
+     "2026-11-19": 115.97,
+     "2026-11-21": 115.97,
+     "2026-11-23": 115.97,
+     "2026-11-24": 115.97
+    }
+   },
+   {
+    "pct": 41.5,
+    "before": 71.26,
+    "now": 100.84,
+    "name": "Sinister Serpent",
+    "number": "WC4-E002",
+    "rarity": "Prismatic Secret Rare",
+    "sub": "Unlimited",
+    "set": "World Championship 2004: GBA Promo",
+    "productId": 210908,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/210908_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 71.26,
+     "2026-11-19": 100.84,
+     "2026-11-21": 100.84,
+     "2026-11-23": 100.84,
+     "2026-11-24": 100.84
+    }
+   },
+   {
+    "pct": 41.1,
+    "before": 20.07,
+    "now": 28.31,
+    "name": "Millennium Scorpion (UTR)",
+    "number": "TLM-EN009",
+    "rarity": "Ultimate Rare",
+    "sub": "Unlimited",
+    "set": "The Lost Millennium",
+    "productId": 58740,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/58740_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 20.07,
+     "2026-11-19": 34.24,
+     "2026-11-21": 28.31,
+     "2026-11-23": 28.31,
+     "2026-11-24": 28.31
+    }
+   }
+  ],
+  "Riftbound": [
+   {
+    "pct": 74.9,
+    "before": 11.62,
+    "now": 20.32,
+    "name": "Pyke, Returned (Alternate Art)",
+    "number": "145a/219",
+    "rarity": "Showcase",
+    "sub": "Foil",
+    "set": "Unleashed",
+    "productId": 684608,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/684608_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 11.62,
+     "2026-11-19": 16.18,
+     "2026-11-21": 17.56,
+     "2026-11-23": 18.71,
+     "2026-11-24": 20.32
+    }
+   },
+   {
+    "pct": 43.7,
+    "before": 12.27,
+    "now": 17.63,
+    "name": "Kadregrin the Infernal",
+    "number": "038/298",
+    "rarity": "Epic",
+    "sub": "Foil",
+    "set": "Origins",
+    "productId": 652811,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/652811_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 12.27,
+     "2026-11-19": 15.05,
+     "2026-11-21": 15.84,
+     "2026-11-23": 17.18,
+     "2026-11-24": 17.63
+    }
+   },
+   {
+    "pct": 27.4,
+    "before": 93.17,
+    "now": 118.7,
+    "name": "Sett, Kingpin (Heartsteel Overnumbered)",
+    "number": "183/167",
+    "rarity": "Showcase",
+    "sub": "Foil",
+    "set": "Radiance",
+    "productId": 721357,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/721357_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 93.17,
+     "2026-11-19": 109.13,
+     "2026-11-21": 115.7,
+     "2026-11-23": 117.8,
+     "2026-11-24": 118.7
+    }
+   },
+   {
+    "pct": 22.6,
+    "before": 34.14,
+    "now": 41.86,
+    "name": "Vex, Apathetic (Alternate Art)",
+    "number": "150a/219",
+    "rarity": "Showcase",
+    "sub": "Foil",
+    "set": "Unleashed",
+    "productId": 685950,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/685950_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 34.14,
+     "2026-11-19": 36.33,
+     "2026-11-21": 39.57,
+     "2026-11-23": 41.59,
+     "2026-11-24": 41.86
+    }
+   },
+   {
+    "pct": 19.4,
+    "before": 21.65,
+    "now": 25.84,
+    "name": "Vex, Apathetic",
+    "number": "150/219",
+    "rarity": "Epic",
+    "sub": "Foil",
+    "set": "Unleashed",
+    "productId": 685949,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/685949_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 21.65,
+     "2026-11-19": 27.43,
+     "2026-11-21": 26.03,
+     "2026-11-23": 27.46,
+     "2026-11-24": 25.84
+    }
+   },
+   {
+    "pct": 14.0,
+    "before": 74.04,
+    "now": 84.41,
+    "name": "Sett, The Boss (Overnumbered)",
+    "number": "310/298",
+    "rarity": "Showcase",
+    "sub": "Foil",
+    "set": "Origins",
+    "productId": 653115,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/653115_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 74.04,
+     "2026-11-19": 78.5,
+     "2026-11-21": 81.02,
+     "2026-11-23": 84.18,
+     "2026-11-24": 84.41
+    }
+   },
+   {
+    "pct": 11.8,
+    "before": 3390.69,
+    "now": 3791.37,
+    "name": "Ahri, Inquisitive (Signature)",
+    "number": "227*/221",
+    "rarity": "Showcase",
+    "sub": "Foil",
+    "set": "Spiritforged",
+    "productId": 664913,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/664913_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 3390.69,
+     "2026-11-19": 3451.4,
+     "2026-11-21": 3791.37,
+     "2026-11-23": 3791.37,
+     "2026-11-24": 3791.37
+    }
+   },
+   {
+    "pct": 8.8,
+    "before": 17.63,
+    "now": 19.19,
+    "name": "Pyke, Dockside Butcher (Alternate Art)",
+    "number": "028a/219",
+    "rarity": "Showcase",
+    "sub": "Foil",
+    "set": "Unleashed",
+    "productId": 685004,
+    "image": "https://tcgplayer-cdn.tcgplayer.com/product/685004_in_1000x1000.jpg",
+    "series": {
+     "2026-11-17": 17.63,
+     "2026-11-19": 18.84,
+     "2026-11-21": 18.94,
+     "2026-11-23": 19.6,
+     "2026-11-24": 19.19
+    }
+   }
+  ],
+  "Lorcana": []
+ }
+}

@@ -1,45 +1,34 @@
-Fri Oct 23 01:16:19 UTC 2026
-curl: (22) The requested URL returned error: 403
-FAIL 2024-02-08
-ls: cannot access '/tmp/a/2024-02-08.7z': No such file or directory
-curl: (22) The requested URL returned error: 403
-FAIL 2025-02-08
-ls: cannot access '/tmp/a/2025-02-08.7z': No such file or directory
-curl: (22) The requested URL returned error: 403
-FAIL 2025-10-22
-ls: cannot access '/tmp/a/2025-10-22.7z': No such file or directory
-curl: (22) The requested URL returned error: 403
-FAIL 2026-09-22
-ls: cannot access '/tmp/a/2026-09-22.7z': No such file or directory
-curl: (22) The requested URL returned error: 403
-FAIL 2026-09-27
-ls: cannot access '/tmp/a/2026-09-27.7z': No such file or directory
-curl: (22) The requested URL returned error: 403
-FAIL 2026-10-02
-ls: cannot access '/tmp/a/2026-10-02.7z': No such file or directory
-curl: (22) The requested URL returned error: 403
-FAIL 2026-10-07
-ls: cannot access '/tmp/a/2026-10-07.7z': No such file or directory
-curl: (22) The requested URL returned error: 403
-FAIL 2026-10-12
-ls: cannot access '/tmp/a/2026-10-12.7z': No such file or directory
-curl: (22) The requested URL returned error: 403
-FAIL 2026-10-15
-ls: cannot access '/tmp/a/2026-10-15.7z': No such file or directory
-curl: (22) The requested URL returned error: 403
-FAIL 2026-10-18
-ls: cannot access '/tmp/a/2026-10-18.7z': No such file or directory
-curl: (22) The requested URL returned error: 403
-FAIL 2026-10-22
-ls: cannot access '/tmp/a/2026-10-22.7z': No such file or directory
+Wed Nov 25 03:50:49 UTC 2026
+-rw-r--r-- 1 runner runner 4207387 Nov 25 03:50 /tmp/a/2026-11-17.7z
+-rw-r--r-- 1 runner runner 4225745 Nov 25 03:50 /tmp/a/2026-11-19.7z
+-rw-r--r-- 1 runner runner 4245651 Nov 25 03:51 /tmp/a/2026-11-21.7z
+-rw-r--r-- 1 runner runner 4213621 Nov 25 03:51 /tmp/a/2026-11-23.7z
+-rw-r--r-- 1 runner runner 4238483 Nov 25 03:51 /tmp/a/2026-11-24.7z
 /tmp/a
-dates []
-Traceback (most recent call last):
-  File "/home/runner/work/htr-videos/htr-videos/tools_price/arch.py", line 36, in <module>
-    last = dates[-1]; wk = [d for d in dates if d <= dates[-1]]
-           ~~~~~^^^^
-IndexError: list index out of range
-total 28
-drwxr-xr-x 2 runner runner  4096 Oct 23 01:16 .
-drwxr-xr-x 7 runner runner 20480 Oct 23 01:16 ..
--rw-r--r-- 1 runner runner  1755 Oct 23 01:16 log.txt
+/tmp/a/2026-11-17
+/tmp/a/2026-11-17/36
+/tmp/a/2026-11-17/36/2015
+/tmp/a/2026-11-17/36/2001
+/tmp/a/2026-11-17/91
+/tmp/a/2026-11-17/91/24853
+/tmp/a/2026-11-17/91/24852
+/tmp/a/2026-11-17/91/24851
+/tmp/a/2026-11-17/91/24843
+/tmp/a/2026-11-17/91/24876
+/tmp/a/2026-11-17/91/24842
+/tmp/a/2026-11-17/91/24850
+/tmp/a/2026-11-17/91/24908
+/tmp/a/2026-11-17/91/24912
+/tmp/a/2026-11-17/91/24844
+/tmp/a/2026-11-17/76
+/tmp/a/2026-11-17/76/23264
+/tmp/a/2026-11-17/76/23267
+/tmp/a/2026-11-17/76/23282
+dates ['2026-11-17', '2026-11-19', '2026-11-21', '2026-11-23', '2026-11-24']
+done {'Pokemon': 15, 'One Piece': 15, 'Yu-Gi-Oh!': 15, 'Riftbound': 8, 'Lorcana': 0}
+total 112
+drwxr-xr-x 2 runner runner  4096 Nov 25 03:51 .
+drwxr-xr-x 9 runner runner 69632 Nov 25 03:50 ..
+-rw-r--r-- 1 runner runner  1027 Nov 25 03:51 log.txt
+-rw-r--r-- 1 runner runner 25504 Nov 25 03:51 movers.json
+-rw-r--r-- 1 runner runner   179 Nov 25 03:51 sealed.json
