@@ -1,1 +1,5 @@
-op_live_action_v2.webp https://gatheringgames.co.uk/cdn/shop/files/one-piece-card-game-live-action-edition-vol2-straw-hat-crew-premium-card-collection-1475984.webp?v=1778668999&width=900
+t5_mewtwo.jpg https://tcgplayer-cdn.tcgplayer.com/product/87425_in_1000x1000.jpg
+t5_gyarados.jpg https://tcgplayer-cdn.tcgplayer.com/product/107000_in_1000x1000.jpg
+t5_clefairy.jpg https://tcgplayer-cdn.tcgplayer.com/product/107001_in_1000x1000.jpg
+t5_ahri.jpg https://tcgplayer-cdn.tcgplayer.com/product/664913_in_1000x1000.jpg
+t5_rayquaza.jpg https://tcgplayer-cdn.tcgplayer.com/product/164231_in_1000x1000.jpg
