@@ -1,2 +1,5 @@
 oh1125_zq_t1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/fim3jHzYanhCJYFMUK9H/6F8Wz9VbZUatL05BoVTp/content.mp3?Expires=1795590000&KeyName=assets-cdn-key-1&Signature=2W7PzG58056zcN5UlAEitmxXGbM=
 oh1125_zq_t2.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/Bseayhi5OqrqOUIY5lYY/dznWNxEQwGhXd4lcZr0r/content.mp3?Expires=1795590000&KeyName=assets-cdn-key-1&Signature=_nvyShFdpLEJ6Iy39j9a1MPm2mY=
+tc_3_24541_p.json https://tcgcsv.com/tcgplayer/3/24541/products
+tc_3_24541_r.json https://tcgcsv.com/tcgplayer/3/24541/prices
+tc_2_24707_r.json https://tcgcsv.com/tcgplayer/2/24707/prices
