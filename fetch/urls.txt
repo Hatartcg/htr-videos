@@ -1,5 +1,1 @@
-t5_mewtwo.jpg https://tcgplayer-cdn.tcgplayer.com/product/87425_in_1000x1000.jpg
-t5_gyarados.jpg https://tcgplayer-cdn.tcgplayer.com/product/107000_in_1000x1000.jpg
-t5_clefairy.jpg https://tcgplayer-cdn.tcgplayer.com/product/107001_in_1000x1000.jpg
-t5_ahri.jpg https://tcgplayer-cdn.tcgplayer.com/product/664913_in_1000x1000.jpg
-t5_rayquaza.jpg https://tcgplayer-cdn.tcgplayer.com/product/164231_in_1000x1000.jpg
+t5_vo.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/ogu8Er9VA1ewXuUQVXK6/b8bBPFPXiUt5ZV2GtOtX/content.mp3?Expires=1795586400&KeyName=assets-cdn-key-1&Signature=eSCsAHBrMnSVhBUXxOu-JtsmRmQ=
