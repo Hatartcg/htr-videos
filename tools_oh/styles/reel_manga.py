@@ -77,6 +77,13 @@ CFG = {
         f1=dict(kind='caps', caps=['معدن عالي الجودة', 'وتفاصيل دقيقة']), f2=dict(kind='grid', cap='صغير وتاخذه معك!'),
         price='45', spot=(139, 92, 246), seed=1123, sfx_x=.66, h0=True, hookfs=86, z0=.18,
         punch=[(2.2, .10, .5), (2.5, .06, .4), (5.05, .10, .5), (5.5, .06, .4), (7.25, .10, .5), (7.7, .08, .5), (10.32, .10, .5), (11.45, .10, .5), (11.8, .06, .5), (12.25, .08, .35), (12.9, .14, .35), (13.2, .08, .25), (13.45, .08, .25)], impact=[0.5, 1.6, 3.95, 5.33, 6.54, 7.72, 9.15, 10.97, 11.6, 12.9]),
+    'zq': dict(
+        TOTAL=12.0, T_GAME=1.94, T_PROD=3.3, T_NAME=3.98, T_F1=5.18, T_F1b=99, T_F2=6.26, T_PRICE=7.86, T_CTA=9.54, T_END2=11.0,
+        hook='جدارك ناقصه كلمة من بطلك!', game=['ANIME', 'POSTERS'], sfx='WOW!', label='WALL POSTERS', name=['ANIME POSTERS', 'PICK YOUR DESIGN'],
+        f1=dict(kind='num', n=13, cap='تصميم تختار منها', img='alt.png'), f2=dict(kind='grid', cap='وأكثر من مقاس!'),
+        price='200', spot=(255, 61, 154), seed=1126, prodw=940, h0s=.98, sfx_x=.68, h0=True, hookfs=84, z0=.24,
+        punch=[(0.75, .14, .3), (1.05, .12, .25), (1.3, .14, .3), (1.65, .12, .25), (1.94, .16, .35), (2.3, .14, .3), (2.6, .12, .25), (2.85, .12, .25), (3.3, .08, .5), (4.1, .10, .3), (4.54, .10, .35), (4.9, .06, .25), (5.7, .08, .5), (6.6, .08, .5), (7.1, .10, .5), (8.2, .10, .3), (8.6, .10, .3), (8.94, .10, .4), (9.15, .10, .25), (9.35, .08, .2), (10.04, .12, .3), (10.35, .10, .3), (10.7, .12, .3), (11.0, .16, .3), (11.3, .12, .25), (11.55, .12, .2), (11.75, .10, .2)],
+        impact=[0.5, 1.3, 1.94, 2.5, 3.3, 4.4, 5.18, 6.26, 7.86, 8.44, 8.9, 9.54, 10.5, 11.0, 11.5]),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; SPOT = CFG['spot']
@@ -143,7 +150,7 @@ def logo_spr(w):
 LOGO_BIG, LOGO_MID, LOGO_WM = logo_spr(600), logo_spr(480), logo_spr(160)
 
 prod = Image.open(D + 'main.png').convert('RGB')
-PROD = panel_img(prod, 700 if prod.height / prod.width > 1.05 else 760)
+PROD = panel_img(prod, CFG.get('prodw', 700 if prod.height / prod.width > 1.05 else 760))
 PROD_SM = panel_img(prod, 340, border=8)
 ALT = panel_img(Image.open(D + 'alt.png').convert('RGB'), 500, border=10) if os.path.exists(D + 'alt.png') else PROD_SM
 GRID = [panel_img(Image.open(D + f'c{i}.png').convert('RGB'), 290, border=8) for i in (1, 3, 4, 5, 7, 8)] if CFG['f2']['kind'] == 'grid' else []
@@ -279,7 +286,7 @@ def render(t):
         lt = t - VO if not H0 else t + .12
         if H0:  # product visible from frame 1, punch-in
             pz = 1.0 + .10 * eo(t / .5) + .05 * (t / max(.1, T_PROD))
-            sc = .78 * pz * (1 - .3 * eo((t - T_GAME) / .2) if t > T_GAME else 1)
+            sc = CFG.get('h0s', .78) * pz * (1 - .3 * eo((t - T_GAME) / .2) if t > T_GAME else 1)
             blit(f, PROD, W / 2, H * .60 + 8 * math.sin(t * 2), sc, 1, -3)
         blit(f, S['ya'], W / 2 - 60 + 500 * (1 - eo(lt / .25)), H * .27, ebk(lt / .3), 1, -3)
         if t >= T_GAME:
