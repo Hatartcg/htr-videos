@@ -1,1 +1,2 @@
-cta_sun29.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/XTrQrhjCxR8BuTKIUUhz/nRQoS30Gidi7QI4Pb2iZ/content.mp3?Expires=1795676400&KeyName=assets-cdn-key-1&Signature=zBvZd0KT9IF-_wZJphtJrpcGHBU=
+tcg_op18_products.json https://tcgcsv.com/tcgplayer/68/24833/products
+tcg_op18_prices.json https://tcgcsv.com/tcgplayer/68/24833/prices
