@@ -1,0 +1,20 @@
+{
+ "total": 41.3,
+ "date_label": "29 نوفمبر 2026",
+ "imgdir": "img",
+ "cta_end": "ونشوفكم الثلاثاء!",
+ "segs": [
+  {"s": 0, "e": 3.6, "hook": true, "tsize": 120, "accent": "#ef4444", "chip": "Pokémon · PSA 10", "title": "$2,700,000", "sub": "تورتشيك انباع!", "img": "torchic.jpg"},
+  {"s": 3.6, "e": 7.0, "accent": "#ef4444", "title": "أخبار وأسعار", "sub": "", "img": "title"},
+  {"s": 7.0, "e": 13.0, "accent": "#ef4444", "chip": "Team Rocket Returns · 2004", "title": "تورتشيك Gold Star", "sub": "PSA 10", "img": "torchic.jpg"},
+  {"s": 13.0, "e": 19.3, "accent": "#ef4444", "chip": "Alt · سبتمبر 2026", "title": "رقم قياسي وقتها", "sub": "أغلى كرت بوكيمون إنجليزي", "img": "torchic.jpg"},
+  {"s": 19.3, "e": 23.0, "accent": "#ef4444", "chip": "ديسمبر 2020", "title": "$25,400", "sub": "آخر بيع معلن · PSA 10", "img": "torchic.jpg"},
+  {"s": 23.0, "e": 27.3, "accent": "#ef4444", "chip": "2020 → 2026", "title": "+100 ضعف", "sub": "$25,400 → $2,700,000", "img": "torchic.jpg"},
+  {"s": 27.3, "e": 31.3, "accent": "#ef4444", "chip": "PSA Pop", "title": "19 نسخة بس", "sub": "بتقييم PSA 10", "img": "torchic.jpg"},
+  {"s": 31.3, "e": 34.2, "accent": "#ef4444", "chip": "نصيحة", "title": "شيك كروتك القديمة", "sub": "Gold Star · 2004", "img": ["mudkip.jpg", "torchic.jpg", "treecko.jpg"]},
+  {"s": 34.2, "e": 37.3, "accent": "#ef4444", "chip": "نصيحة", "title": "دوّر على النجمة ☆", "sub": "جنب اسم البوكيمون", "img": "star.jpg"},
+  {"s": 37.3, "e": 41.3, "accent": "#ef4444", "title": "تبيعه ولا تخليه؟", "sub": "لو عندك كرت بمليونين", "img": "cta"}
+ ],
+ "hard_cuts": true,
+ "beats": [1.2, 2.4, 10.0, 16.2, 21.2, 25.2, 29.3, 32.8, 35.8, 39.3]
+}
