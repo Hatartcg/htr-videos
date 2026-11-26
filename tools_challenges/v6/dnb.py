@@ -35,7 +35,7 @@ def saw(f, d):
     t = tt(d); return 2 * ((t * f) % 1) - 1
 def reese(m, d):
     f = mtof(m); s = saw(f * .996, d) + saw(f * 1.004, d) + .5 * saw(f / 2, d)
-    t = tt(d); s = lp(s, 280 + 220 * (.5 + .5 * np.sin(2 * np.pi * t * 1.3)))
+    t = tt(d); w = .5 + .5 * np.sin(2 * np.pi * t * 1.3); s = lp(s, 260) * (1 - w) + lp(s, 620) * w
     return np.tanh(1.6 * s) * np.minimum(1, t / .01) * np.minimum(1, (d - t) / .03)
 def padc(ms, d):
     t = tt(d); s = sum(np.sin(2 * np.pi * mtof(m) * t + .3 * np.sin(2 * np.pi * 5 * t)) for m in ms)
