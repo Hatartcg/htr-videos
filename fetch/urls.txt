@@ -1,1 +1,10 @@
-vo_sat28_rb_l1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/TgMw423JNYyQ6o9cXwZF/4R19Y2CPYFQMsS7kDE2C/content.mp3?Expires=1795676400&KeyName=assets-cdn-key-1&Signature=U_qS_H_4FR2VOAfjfp3fg2xTfz4=
+rbc_724654.jpg https://tcgplayer-cdn.tcgplayer.com/product/724654_in_1000x1000.jpg
+rbc_724655.jpg https://tcgplayer-cdn.tcgplayer.com/product/724655_in_1000x1000.jpg
+rbc_724642.jpg https://tcgplayer-cdn.tcgplayer.com/product/724642_in_1000x1000.jpg
+rbc_724656.jpg https://tcgplayer-cdn.tcgplayer.com/product/724656_in_1000x1000.jpg
+rbc_724651.jpg https://tcgplayer-cdn.tcgplayer.com/product/724651_in_1000x1000.jpg
+rbc_724658.jpg https://tcgplayer-cdn.tcgplayer.com/product/724658_in_1000x1000.jpg
+rbc_724653.jpg https://tcgplayer-cdn.tcgplayer.com/product/724653_in_1000x1000.jpg
+rbc_724659.jpg https://tcgplayer-cdn.tcgplayer.com/product/724659_in_1000x1000.jpg
+rbc_724638.jpg https://tcgplayer-cdn.tcgplayer.com/product/724638_in_1000x1000.jpg
+rbc_724663.jpg https://tcgplayer-cdn.tcgplayer.com/product/724663_in_1000x1000.jpg
