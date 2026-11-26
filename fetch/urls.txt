@@ -1,3 +1,5 @@
-gp_dri.html https://pokemon.gamespress.com/Pokemon-Trading-Card-Game-Scarlet-VioletDestined-Rivals-Releases-Today
-gp_asc.html https://pokemon.gamespress.com/MEDIA-ALERT-Pokemon-Trading-Card-Game-Mega-EvolutionAscended-Heroes-Av
-gp_pre.html https://www.gamedeveloper.com/press-release/media-alert-new-pok-mon-trading-card-game-scarlet-violet-prismatic-evolutions-expansion-spotlights-eevee-and-its-evolutions-as-stellar-tera-pok-mon-ex
+logo_dri.png https://imgeucdn.gamespress.com/cdn/files/Pokemon/2025/05/301238-52a2665f/Pokemon_TCG_Scarlet_Violet—Destined_Rivals_Logo.png?w=360&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=889e2a0dbe225fc78ed610095aaef3226be2a323f2722039d0b978207999b2e4
+logo_asc.png https://imgeucdn.gamespress.com/cdn/files/Pokemon/2026/01/300805-169e2df3/Pokemon_TCG_Mega_Evolution—Ascended_Heroes_Logo.png?w=360&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=57bd6a176cc0719b683e5835f9d8e813cc03d4be229eb5242a40d1bdcb188680
+pk_pre.html https://www.pokemon.com/us/pokemon-news/get-hyped-for-new-cards-from-the-scarlet-violet-prismatic-evolutions-expansion
+op_products.html https://en.onepiece-cardgame.com/products/
+op_boosters.html https://en.onepiece-cardgame.com/products/boosters/
