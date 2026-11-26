@@ -33,6 +33,10 @@ CFG = {
                game='ATTACK ON TITAN', name=['EREN HOODIE'], hook='حرّر العملاق اللي فيك!', big='TITAN',
                stats=[('طباعة دقيقة', 1.0)], uses=['متوفر بألوان متعددة'], price='200', seed=212, cutout=True, chk_dx=380,
                alt_w=900, alt_pos=(W / 2, H * .75, .85), hook_fs=74, h0=True, bar_w=300, impact=[2.62, 4.86, 6.7, 8.66, 9.94, 11.3], punch=[(6.7, .07, 1.4), (3.86, .06, .6)]),
+    'nar': dict(TOTAL=12.6, T_GAME=1.74, T_PROD=2.5, T_NAME=2.9, T_F1=3.86, T_F1b=99, T_F2=5.18, T_PRICE=8.34, T_CTA=10.1, T_END2=11.46,
+               game='NARUTO SHIPPUDEN', name=['NARUTO POSTER'], hook='جدارك يبي لمسة نينجا؟', big='SHINOBI',
+               stats=[('ستايل ياباني', 1.0)], uses=['يضيف لمسة أنمي', 'لغرفتك من أول نظرة'], price='200', seed=1129, chk_dx=330, stat_fs=66, use_fs=68, stat_dx=190,
+               alt_w=520, alt_pos=(W / 2, H * .76, .8), hook_fs=72, h0=True, bar_w=300, impact=[0.58, 1.74, 2.5, 3.86, 4.3, 5.18, 6.3, 7.62, 8.34, 9.38, 10.1, 11.46], punch=[(0.0, .12, .6), (0.58, .08, .4), (1.1, .08, .4), (11.8, .1, .3), (12.1, .1, .3), (12.35, .1, .25), (4.3, .07, .5), (4.7, .06, .4), (9.38, .07, .5), (9.7, .06, .4), (5.18, .07, .6), (6.02, .06, .5), (6.3, .07, .8), (7.06, .05, .5), (7.62, .08, .6), (8.98, .05, .5), (9.38, .06, .5), (10.82, .05, .5)]),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; rng = np.random.default_rng(CFG['seed'])
@@ -91,7 +95,7 @@ W_NOTE = window(880, 560, '[ NOTIFICATION ]'); W_ITEM = window(900, 1040, '[ ITE
 W_STAT = window(900, 1180, '[ STATUS ]'); W_SHOP = window(860, 1000, '[ SHOP ]')
 S = dict(ya=G(CFG.get('hook', 'حس إنك صياد من رتبة'), FC(CFG.get('hook_fs', 80))), game=G(CFG.get('big', 'S-RANK'), FA(190), glow=CY, gr=28),
          name=G(CFG['name'][0], FA(110 if len(CFG['name'][0]) < 12 else 84), glow=CY), gname=G(CFG['game'], FA(64), fill=(200, 235, 255)),
-         stats=[G(s, FC(84)) for s, _ in CFG['stats']], uses=[G(u, FC(CFG.get('use_fs', 80))) for u in CFG['uses']],
+         stats=[G(s, FC(CFG.get('stat_fs', 84))) for s, _ in CFG['stats']], uses=[G(u, FC(CFG.get('use_fs', 80))) for u in CFG['uses']],
          price=G(CFG['price'], FA(330), glow=CY, gr=30), sar=G('ريال', FC(100)),
          stock=pill('متوفر الآن', FC(52), (10, 40, 80), border=CY + (255,)),
          order=G('اطلبه الحين', FC(130, b'Black'), glow=PINK), url=pill('otakkuhaveen.com', FA(54), (20, 60, 130), border=CY + (255,)),
@@ -179,7 +183,7 @@ def render(t):
         for i, (tc, (sname, val)) in enumerate(zip([T_F1, T_F1b], CFG['stats'])):
             if t > tc:
                 k = t - tc; y = H * (.30 + .08 * i)
-                blit(f, typed(S['stats'][i], k / .25), W / 2 + 270, y, 1, 1)
+                blit(f, typed(S['stats'][i], k / .25), W / 2 + CFG.get('stat_dx', 270), y, 1, 1)
         for i, (tc, (sname, val)) in enumerate(zip([T_F1, T_F1b], CFG['stats'])):
             pass
         # bars for each stat (lightness shown as weight bar = low, durability = high)

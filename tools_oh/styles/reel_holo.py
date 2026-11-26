@@ -24,6 +24,10 @@ CFG = {
                 game='ONE PIECE', hook='لوفي والحبحب بريشة أودا!', big='ONE PIECE', label='ONE PIECE CARD', name=['LUFFY', 'WATERMELON'], n1='ODA', cap1='توقيع أودا داخل الرسمة', n2=1, cap2='LIMITED EDITION',
                 extra='LIMITED QUANTITY', price='400', seed=125, f1='single', single=True, hookfs=90, cap1fs=78, h0=True, f2txt='LIMITED',
                 punch=[(1.61, .07, .5), (3.69, .07, .5), (5.61, .08, .5), (6.31, .06, .5), (8.09, .08, .5), (9.61, .10, .5), (10.57, .06, .5), (12.3, .05, .5), (4.13, .06, .5), (6.89, .07, .5), (7.5, .05, .5)], impact=[1.61, 2.8, 3.69, 4.13, 5.61, 6.89, 8.09, 9.61, 10.57, 11.17, 12.3, 13.35]),
+    'sd01': dict(TOTAL=13.9, T_GAME=1.38, T_PROD=2.34, T_NAME=2.82, T_F1=4.58, T_F2=6.98, T_F2b=8.66, T_PRICE=9.46, T_CTA=11.38, T_END2=12.74,
+                game='ONE PIECE', hook='جاهز تتحدّى خويك؟', big='LUFFY VS ACE', label='ONE PIECE CARD GAME', name=['SET SAIL DECK SET', 'SD-01'], n1=2, cap1='ديكين جاهزين', n2=51, cap2='CARDS PER DECK',
+                extra='+10 DON!! + OP-17 PACK', price='150', seed=1128, f1='deck', hookfs=86, h0=True, card_full=True,
+                punch=[(2.34, .07, .5), (3.46, .06, .5), (4.58, .08, .5), (5.78, .07, .5), (6.46, .06, .5), (7.78, .05, .5), (8.66, .07, .5), (9.46, .10, .5), (10.34, .06, .5), (12.26, .05, .5), (13.2, .05, .4)], impact=[1.38, 2.34, 4.58, 5.78, 6.98, 8.66, 9.46, 11.38, 12.74]),
 }[KEY]
 globals().update({k: v for k, v in CFG.items() if k.startswith('T')})
 TOTAL = CFG['TOTAL']; rng = np.random.default_rng(CFG['seed'])
