@@ -1,1 +1,4 @@
-vo_sat28_lor_l1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/9looAtY92yZGIRABL3Ww/CvkTpOyuAU04qk9PgT1H/content.mp3?Expires=1795676400&KeyName=assets-cdn-key-1&Signature=iVqbl2EfJSkz0fniYh9leSHfFAc=
+bp_chaos.html https://bulbapedia.bulbagarden.net/wiki/Chaos_Rising_(TCG)
+bp_pitch.html https://bulbapedia.bulbagarden.net/wiki/Pitch_Black_(TCG)
+bp_perfect.html https://bulbapedia.bulbagarden.net/wiki/Perfect_Order_(TCG)
+bp_delta.html https://bulbapedia.bulbagarden.net/wiki/Delta_Reign_(TCG)
