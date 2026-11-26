@@ -1,4 +1,7 @@
-bp_chaos.html https://bulbapedia.bulbagarden.net/wiki/Chaos_Rising_(TCG)
-bp_pitch.html https://bulbapedia.bulbagarden.net/wiki/Pitch_Black_(TCG)
-bp_perfect.html https://bulbapedia.bulbagarden.net/wiki/Perfect_Order_(TCG)
-bp_delta.html https://bulbapedia.bulbagarden.net/wiki/Delta_Reign_(TCG)
+logo_pitch.png https://imguscdn.gamespress.com/cdn/files/PokemonAmerica/2026/04/291511-59492eca/Pokemon_TCG_Mega_Evolution%E2%80%94Pitch_Black_Logo.png
+logo_perfect.png https://imguscdn.gamespress.com/cdn/files/PokemonAmerica/2026/01/071400-3c567918/Pokemon_TCG_Mega_Evolution%E2%80%94Perfect_Order_Logo.png
+logo_pitch_s.png https://imguscdn.gamespress.com/cdn/files/PokemonAmerica/2026/04/291511-59492eca/Pokemon_TCG_Mega_Evolution%E2%80%94Pitch_Black_Logo.png?w=360&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=a652b7fdc3e005f0699207cd4163df2716e14dd22cd2cb9581faaf4453bfb84b
+gp_chaos.html https://pokemon.gamespress.com/MEDIA-ALERT-Mega-Greninja-Faces-Off-with-Mega-Floette-in-the-Pokemon-T
+gp_chaos2.html https://pokemon.gamespress.com/MEDIA-ALERT-New-Pokemon-Trading-Card-Game-Mega-EvolutionChaos-Rising-E
+dr_hero.png https://primary.jwwb.nl/public/h/t/i/temp-zjpebgcobmaxydcmrfwb/pasted-image-thu-aug-20-2026-15-54-34-gmt-0200-midden-europese-zomertijd-high.png
+dr_desc.png https://primary.jwwb.nl/public/h/t/i/temp-zjpebgcobmaxydcmrfwb/image-high-txgnep.png
