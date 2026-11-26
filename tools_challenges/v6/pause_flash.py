@@ -83,7 +83,7 @@ for i in range(NF):
         rk = text_img('#' + str(c['rank']), NUM(96), P['accent'], (255, 255, 255, 255), pad=4, r=24); rb.alpha_composite(rk, (22, (232 - rk.height) // 2))
         pr = text_img(c['price'], NUM(124), (255, 255, 255), pad=0); rb.alpha_composite(pr, (rb.width - pr.width - 34, (232 - pr.height) // 2 - 2))
         pop = 1 + (.08 * max(0, 1 - (t - since) / .15) if mode == 'flash' else 0)
-        paste(fr, rb, W / 2, cy - CH / 2 + .472 * CH, pop, 1, rot=-4)
+        paste(fr, rb, W / 2, cy - CH / 2 + spec.get('ribbon_y', .472) * CH, pop, 1, rot=-4)
         nm = text_img(c['label'], TXT(40), P['ink'], (255, 255, 255, 235), pad=8, r=20)
         if nm.width > W - 120: nm = nm.resize((W - 120, int(nm.height * (W - 120) / nm.width)), Image.LANCZOS)
         paste(fr, nm, W / 2, cy + CH / 2 + 70)
