@@ -1,4 +1,6 @@
-tcg_groups_71.json https://tcgcsv.com/tcgplayer/71/groups
-tcg_groups_89.json https://tcgcsv.com/tcgplayer/89/groups
-tcg_groups_2.json https://tcgcsv.com/tcgplayer/2/groups
-tcg_groups_3.json https://tcgcsv.com/tcgplayer/3/groups
+oh1126_sd01_t1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/PAWhrIH7cmysuL2eLYTX/Ssf5phFLjWV8wbnigRhg/content.mp3?Expires=1795676400&KeyName=assets-cdn-key-1&Signature=OO49oNS_KOjP0okNeUxF4Y1JveI=
+oh1126_sd01_t2.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/4ODlDvvyfyD6tCeAKMYF/81qrR9qVLc1sAA3wOnpZ/content.mp3?Expires=1795676400&KeyName=assets-cdn-key-1&Signature=DdWrk8BvogyroXCaKoUztWaUP54=
+oh1126_dsh_t1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/eTEDnXITO3N8aJQM5fgH/4Jk8YIyNUS0oKqG4xgLa/content.mp3?Expires=1795676400&KeyName=assets-cdn-key-1&Signature=LkM3rvUKLMXcwqw-gbu5Tu-WnsY=
+oh1126_dsh_t2.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/CI5t7eiP1VbczTBOMo7B/HTlDLajXouRVW5fKCkKY/content.mp3?Expires=1795676400&KeyName=assets-cdn-key-1&Signature=kSPOwtmPUkfGnBhcUtY6UitN0Vk=
+oh1126_nar_t1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/oDuETkMmzyCaJUqlpEBU/5BOpL6eVCMEEIE8kA1oH/content.mp3?Expires=1795676400&KeyName=assets-cdn-key-1&Signature=WaYSlp6ysnhIAeuTXlhgUjA9mes=
+oh1126_nar_t2.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/Lgt4fERBLeYXJbIZHMiO/p5IS9IkDhwaIOt7VWRJK/content.mp3?Expires=1795676400&KeyName=assets-cdn-key-1&Signature=Q7vu33ViuGY5CNYBsJNiEmo8oh8=
