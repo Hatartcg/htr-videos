@@ -1,3 +1,3 @@
-Thu Nov 26 04:48:42 UTC 2026
+Thu Nov 26 04:58:42 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-vo_sat28_rb_l1.mp3 FAIL match 0.76 cps 10.1 unclear [('10', np.float64(0.78))] banned [] diff [{'op': 'replace', 'expected': 'عشر', 'heard': '10'}, {'op': 'replace', 'expected': 'Riftbound', 'heard': 'ريفت باوند'}]
+g29_take.mp3 FAIL match 0.72 cps 9.4 unclear [('كروت،', np.float64(0.73)), ('بوكيمون،', np.float64(0.79)), ('V،', np.float64(0.53)), ('الـ', np.float64(0.62)), ('Art،', np.float64(0.66)), ('A،', np.float64(0.77)), ('ولا', np.float64(0.39)), ('أو،', np.float64(0.79)), ('سكال،', np.float64(0.73))] banned [] diff [{'op': 'replace', 'expected': 'جيراتينه في الالترنت ارت', 'heard': 'غيراتينه V ال Alternate Art'}, {'op': 'replace', 'expected': 'ايه بي', 'heard': 'A B'}, {'op': 'replace', 'expected': 'سي', 'heard': 'C'}, {'op': 'replace', 'expected': 'الانشانتد', 'heard': 'ال Enchanted'}, {'op': 'replace', 'expected': 'اوو سمند سكل', 'heard': 'او سامن سكال'}, {'op': 'replace', 'expected': 'ركز زين', 'heard': 'ركزين'}]
