@@ -1,0 +1,18 @@
+{
+ "title1": "تقدر تخمّن",
+ "title2": "كم تسوى هالكروت؟",
+ "subtitle": "٣ ألعاب · ٣ جولات",
+ "source": "سعر السوق في TCGplayer · 25 نوفمبر 2026",
+ "tease": "تابعنا عشان التحدي الجاي!",
+ "no_reveal": true,
+ "static_intro": true,
+ "share": "أرسله لخويك وشوف مين يجيبها كلها!",
+ "rounds": [
+  {"img": "/home/claude/htr-videos/fetch/im_284137.jpg", "name": "GIRATINA V", "set": "POKÉMON · Lost Origin · Alt Art",
+   "options": ["$310", "$1,450", "$762"], "answer": 2},
+  {"img": "/home/claude/htr-videos/fetch/im_619749.jpg", "name": "MICKEY MOUSE", "set": "LORCANA · Archazia's Island · Enchanted",
+   "options": ["$470", "$1,180", "$165"], "answer": 0},
+  {"img": "/home/claude/htr-videos/fetch/im_22462.jpg", "name": "SUMMONED SKULL", "set": "YU-GI-OH! · Metal Raiders · 1st Edition",
+   "options": ["$1,350", "$596", "$140"], "answer": 1}
+ ]
+}
