@@ -74,10 +74,13 @@ for i in range(NF):
     im = c['blur'] if mode == 'mystery' else c['im']
     paste(fr, im, W / 2, cy, max(.05, sc), 1, rot)
     if mode != 'mystery':
-        tag = text_img(c['price'], NUM(118), (255, 255, 255), P['accent'] + (255,), pad=10, r=34)
-        paste(fr, tag, W / 2 + 250, cy + CH / 2 - 40, 1 + (.12 * max(0, 1 - (t - since) / .15) if mode == 'flash' else 0), 1, rot=-6)
-        rk = text_img('#' + str(c['rank']), NUM(92), (255, 255, 255), P['ink'] + (255,), pad=8, r=30)
-        paste(fr, rk, W / 2 - 300, cy - CH / 2 + 30, 1, 1, rot=6)
+        # price ribbon across the card's middle (it also sits over the publisher's SAMPLE band of the official image)
+        cw = c['im'].width - 80; rb = Image.new('RGBA', (cw + 90, 232), (0, 0, 0, 0)); dr = ImageDraw.Draw(rb)
+        dr.rounded_rectangle((0, 0, rb.width - 1, rb.height - 1), 26, fill=P['accent'] + (250,))
+        rk = text_img('#' + str(c['rank']), NUM(96), P['accent'], (255, 255, 255, 255), pad=4, r=24); rb.alpha_composite(rk, (22, (232 - rk.height) // 2))
+        pr = text_img(c['price'], NUM(124), (255, 255, 255), pad=0); rb.alpha_composite(pr, (rb.width - pr.width - 34, (232 - pr.height) // 2 - 2))
+        pop = 1 + (.08 * max(0, 1 - (t - since) / .15) if mode == 'flash' else 0)
+        paste(fr, rb, W / 2, cy - CH / 2 + .472 * CH, pop, 1, rot=-4)
         nm = text_img(c['label'], TXT(40), P['ink'], (255, 255, 255, 235), pad=8, r=20)
         if nm.width > W - 120: nm = nm.resize((W - 120, int(nm.height * (W - 120) / nm.width)), Image.LANCZOS)
         paste(fr, nm, W / 2, cy + CH / 2 + 70)
