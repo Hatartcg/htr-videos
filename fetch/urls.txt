@@ -1,3 +1,1 @@
-im_619749.jpg https://tcgplayer-cdn.tcgplayer.com/product/619749_in_1000x1000.jpg
-im_284137.jpg https://tcgplayer-cdn.tcgplayer.com/product/284137_in_1000x1000.jpg
-im_22462.jpg https://tcgplayer-cdn.tcgplayer.com/product/22462_in_1000x1000.jpg
+g29_take.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/ZDkxhNr4yO1dlduvvQz8/EeptqV7nN5T1rsxK2XwU/content.mp3?Expires=1795676400&KeyName=assets-cdn-key-1&Signature=A8dubCa4hlQKrohSubVfJIaVaUs=
