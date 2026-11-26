@@ -1,11 +1,3 @@
-rbc4_724654.jpg https://tcgplayer-cdn.tcgplayer.com/product/724654_400w.jpg
-rbc4_724655.jpg https://tcgplayer-cdn.tcgplayer.com/product/724655_400w.jpg
-rbc4_724642.jpg https://tcgplayer-cdn.tcgplayer.com/product/724642_400w.jpg
-rbc4_724656.jpg https://tcgplayer-cdn.tcgplayer.com/product/724656_400w.jpg
-rbc4_724651.jpg https://tcgplayer-cdn.tcgplayer.com/product/724651_400w.jpg
-rbc4_724658.jpg https://tcgplayer-cdn.tcgplayer.com/product/724658_400w.jpg
-rbc4_724659.jpg https://tcgplayer-cdn.tcgplayer.com/product/724659_400w.jpg
-rbc4_724638.jpg https://tcgplayer-cdn.tcgplayer.com/product/724638_400w.jpg
-rbc4_724663.jpg https://tcgplayer-cdn.tcgplayer.com/product/724663_400w.jpg
-tcg_hyp_products.json https://tcgcsv.com/tcgplayer/71/24740/products
-tcg_hyp_prices.json https://tcgcsv.com/tcgplayer/71/24740/prices
+im_619749.jpg https://tcgplayer-cdn.tcgplayer.com/product/619749_in_1000x1000.jpg
+im_284137.jpg https://tcgplayer-cdn.tcgplayer.com/product/284137_in_1000x1000.jpg
+im_22462.jpg https://tcgplayer-cdn.tcgplayer.com/product/22462_in_1000x1000.jpg
