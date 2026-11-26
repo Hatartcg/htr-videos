@@ -1,3 +1,3 @@
-Thu Nov 26 04:22:14 UTC 2026
+Thu Nov 26 04:34:28 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-cta_sun29.mp3 FAIL match 0.95 cps 10.4 unclear [('إذا', np.float64(0.65)), ('سو', np.float64(0.63))] banned [] diff [{'op': 'replace', 'expected': 'ارسله', 'heard': 'ارسلهه'}]
+vo_sat28_op18.mp3 FAIL match 0.9 cps 10.4 unclear [('10', np.float64(0.72)), ('سيت', np.float64(0.73)), ('ون', np.float64(0.64)), ('وسو', np.float64(0.58))] banned [] diff [{'op': 'replace', 'expected': 'عشر', 'heard': '10'}, {'op': 'replace', 'expected': 'One Piece', 'heard': 'ون بيس'}]
