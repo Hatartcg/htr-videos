@@ -36,9 +36,12 @@ cards = spec['cards']
 for c in cards: c['im'] = load_card(c['img']); c['blur'] = c['im'].filter(ImageFilter.GaussianBlur(30))
 BG = Image.new('RGBA', (W, H), P['bg'] + (255,))
 def background(t):
-    bg = BG.copy(); d = ImageDraw.Draw(bg); off = (t * 60) % 160
+    col = P['bg']; scol = P['stripe']
+    for ct, c1, c2 in spec.get('bg_cycle', []):  # whole-frame colour change on each beat/phase = a real cut for viewers and montage_qa
+        if t >= ct: col, scol = tuple(c1), tuple(c2)
+    bg = Image.new('RGBA', (W, H), col + (255,)); d = ImageDraw.Draw(bg); off = (t * 60) % 160
     for k in range(-4, 20):
-        x = k * 160 + off; d.polygon([(x, 0), (x + 60, 0), (x - 900, H), (x - 960, H)], fill=P['stripe'] + (255,))
+        x = k * 160 + off; d.polygon([(x, 0), (x + 60, 0), (x - 900, H), (x - 960, H)], fill=scol + (255,))
     return bg
 def which(t):
     """returns (card index, mode, local u) from the timeline events"""
@@ -88,7 +91,7 @@ for i in range(NF):
         d = ImageDraw.Draw(fr); d.rectangle((60, cy - CH / 2 - 26, W - 60, cy - CH / 2 - 16), fill=P['accent']); d.rectangle((60, cy + CH / 2 + 130, W - 60, cy + CH / 2 + 140), fill=P['accent'])
     fl = spec.get('flashes', [])
     for ft in fl:
-        if ft <= t < ft + .2: fr = Image.alpha_composite(fr, Image.new('RGBA', (W, H), (255, 255, 255, int(235 * (1 - (t - ft) / .2)))))
+        if ft <= t < ft + .25: fr = Image.alpha_composite(fr, Image.new('RGBA', (W, H), (255, 255, 255, int(250 * (1 - (t - ft) / .25)))))
     fr.alpha_composite(PILL, (36, 36))
     for o in spec['texts']: draw_text(fr, t, o)
     if SUBS:
