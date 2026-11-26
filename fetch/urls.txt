@@ -1,2 +1,10 @@
-tcg_op18_products.json https://tcgcsv.com/tcgplayer/68/24833/products
-tcg_op18_prices.json https://tcgcsv.com/tcgplayer/68/24833/prices
+op18c_712893.jpg https://tcgplayer-cdn.tcgplayer.com/product/712893_in_1000x1000.jpg
+op18c_731750.jpg https://tcgplayer-cdn.tcgplayer.com/product/731750_in_1000x1000.jpg
+op18c_712890.jpg https://tcgplayer-cdn.tcgplayer.com/product/712890_in_1000x1000.jpg
+op18c_712889.jpg https://tcgplayer-cdn.tcgplayer.com/product/712889_in_1000x1000.jpg
+op18c_734013.jpg https://tcgplayer-cdn.tcgplayer.com/product/734013_in_1000x1000.jpg
+op18c_735253.jpg https://tcgplayer-cdn.tcgplayer.com/product/735253_in_1000x1000.jpg
+op18c_731752.jpg https://tcgplayer-cdn.tcgplayer.com/product/731752_in_1000x1000.jpg
+op18c_731746.jpg https://tcgplayer-cdn.tcgplayer.com/product/731746_in_1000x1000.jpg
+op18c_735254.jpg https://tcgplayer-cdn.tcgplayer.com/product/735254_in_1000x1000.jpg
+op18c_735271.jpg https://tcgplayer-cdn.tcgplayer.com/product/735271_in_1000x1000.jpg
