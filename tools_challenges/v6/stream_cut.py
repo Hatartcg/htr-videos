@@ -125,6 +125,9 @@ for i in range(NF):
         z0, z1, cx, cy = sg['push']; z = z0 + (z1 - z0) * eo(u) if sg.get('push_ease') else z0 + (z1 - z0) * u
     for pz in spec.get('punch', []):  # punch-in on a word/beat: [t, amount, dur, cx, cy]
         if pz[0] <= t < pz[0] + pz[2]: z *= 1 + pz[1]; cx, cy = pz[3], pz[4]
+    for sk in spec.get('shakes', []):  # meme shake on a laugh/hit: [t, dur, amp_px] (needs a little zoom so edges never show)
+        if sk[0] <= t < sk[0] + sk[1]:
+            k = 1 - (t - sk[0]) / sk[1]; z = max(z, 1.06); cx += sk[2] * k * math.sin(t * 91); cy += sk[2] * k * math.cos(t * 73)
     fr = zoomed(src, z, cx, cy)
     if sg.get('dim'): fr = Image.alpha_composite(fr, Image.new('RGBA', (W, H), (0, 0, 0, int(255 * sg['dim']))))
     FL = spec.get('flash_len', .12)
