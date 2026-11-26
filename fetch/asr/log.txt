@@ -1,3 +1,3 @@
-Thu Nov 26 04:05:41 UTC 2026
+Thu Nov 26 04:22:14 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-cta_fri27.mp3 PASS match 1.0 cps 9.4 unclear [('وسو', np.float64(0.53))] banned [] diff []
+cta_sun29.mp3 FAIL match 0.95 cps 10.4 unclear [('إذا', np.float64(0.65)), ('سو', np.float64(0.63))] banned [] diff [{'op': 'replace', 'expected': 'ارسله', 'heard': 'ارسلهه'}]
