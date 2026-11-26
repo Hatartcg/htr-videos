@@ -1,4 +1,2 @@
-g29b_lor_r.json https://tcgcsv.com/tcgplayer/71/24011/prices
-g29b_lo_r.json https://tcgcsv.com/tcgplayer/3/3118/prices
-g29b_mrl_r.json https://tcgcsv.com/tcgplayer/2/255/prices
-g29b_lastupd.txt https://tcgcsv.com/last-updated.txt
+logo_chaos_s.png https://imgeucdn.gamespress.com/cdn/files/Pokemon/2026/05/211541-b4c0fe04/Pokemon_TCG_Mega_Evolution—_Chaos_Rising_Logo.png?w=360&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=6578fcf3e9b94b4bbc1bf44aae6c15f4fbe42af47427be72810d96dd925adfe0
+logo_perfect_s.png https://imguscdn.gamespress.com/cdn/files/PokemonAmerica/2026/01/071400-3c567918/Pokemon_TCG_Mega_Evolution—Perfect_Order_Logo.png?w=360&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=fdc53ec4902d6a050da02c3ebfb79a1f0c8cdb136285337344b4ad4c5b7e31dc
