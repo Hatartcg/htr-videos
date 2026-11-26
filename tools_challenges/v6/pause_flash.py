@@ -91,7 +91,7 @@ for i in range(NF):
         d = ImageDraw.Draw(fr); d.rectangle((60, cy - CH / 2 - 26, W - 60, cy - CH / 2 - 16), fill=P['accent']); d.rectangle((60, cy + CH / 2 + 130, W - 60, cy + CH / 2 + 140), fill=P['accent'])
     fl = spec.get('flashes', [])
     for ft in fl:
-        if ft <= t < ft + .25: fr = Image.alpha_composite(fr, Image.new('RGBA', (W, H), (255, 255, 255, int(250 * (1 - (t - ft) / .25)))))
+        if ft <= t < ft + .25: fr = Image.alpha_composite(fr, Image.new('RGBA', (W, H), tuple(spec.get('flash_color', (255, 255, 255))) + (int(250 * (1 - (t - ft) / .25)),)))
     fr.alpha_composite(PILL, (36, 36))
     for o in spec['texts']: draw_text(fr, t, o)
     if SUBS:
