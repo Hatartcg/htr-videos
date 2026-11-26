@@ -111,3 +111,6 @@ Format: date | game | item
 2026-11-26 | Prices | 1998 Commissioned Presentation Galaxy Holo Blastoise CGC 8.5 sold $630,000 at Fanatics, Nov 20 — Blastoise record (OTIA + HCI)
 2026-11-26 | One Piece | From Nov 27, 2026: EB05-001 Jewelry Bonney banned in the same deck as OP13-001 Luffy or OP01-002 Law (official notice Nov 17 + CBR)
 2026-11-26 | Tips | Check the banned/restricted list before any tournament
+2026-11-29 | Prices | HOOK: 2004 EX Team Rocket Returns Torchic ☆ Gold Star 108/109 PSA 10 sold $2.7M at Alt (auction closed Sep 10, 2026) — Alt: record English-language Pokémon card sale at the time (ComicBook Sep 17 + Dork Sep 17 + TheGamer)
+2026-11-29 | Prices | Previous public Torchic Gold Star PSA 10 sale $25,400 (Dec 2020) → 100×+; PSA pop 19 in PSA 10 (ComicBook + Dork)
+2026-11-29 | Tips | Gold Star cards have a small ☆ after the Pokémon name — check your old cards
