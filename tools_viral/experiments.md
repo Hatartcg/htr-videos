@@ -67,3 +67,25 @@ reel_score.py: new --topic flag (default: guessed from the file name).
 Sources checked by WebSearch 25 Nov: https://about.instagram.com/blog/announcements/instagram-ranking-explained (ranking signals; feed avoids too many posts from one account in a row),
 https://about.instagram.com/blog/announcements/shedding-more-light-on-how-instagram-works , https://creators.instagram.com/blog/tips-for-improving-your-reach .
 (The creators.instagram.com/blog/instagram-algorithm-reels-ranking link in commit c5ca52ca was not verified — use the links above.)
+
+## 2026-11-26 — reel-coach (v9)
+Data (Metricool pull 26 Nov 19:25 UTC): removed 4 DUPLICATE rows added 26 Nov 04:10 (news_ep27/28/29/30 = ig/rayquaza_news,
+ig/magikarp_news, ig/30th_upc_news, ig/op18_news) — they counted the 30th UPC flyer twice; 7d numbers merged into the originals.
+LATE FLYERS: Rayquaza gold vs SIR 24 Nov 21:32 went 310 (25 h) → 1,279 (48 h); news_ep32 $660K fake slab 24 Nov 13:04 went
+648 (33 h) → 1,185 (shares 14). Both were called «ما طار» at 24 h — a 24 h verdict is prelim only, re-check at 48 h before judging.
+New: guess 25 Nov 21:21 (Kai'Sa / Umbreon / Exodia) → 1,142 at ~22 h (3-s 56.0%), tool 83% → right.
+OH: Luffy Watermelon Oda card 25 Nov 19:06 → 122 (3-s 55.5%).
+
+Walk-forward HTR IG, n=60 (each reel predicted only from reels before it):
+| variant | accuracy | flyers caught | false alarms | decision |
+|---|---|---|---|---|
+| baseline v8 (deduped data) | 90.0% | 9/12 | 3 | |
+| A remove topic_fatigue (alone) | 91.7% | 10/12 | 3 | KEEP — the only case it rescued now flew |
+| B extreme_usd 1M → 500K (alone) | 91.7% | 10/12 | 3 | KEEP (rests on 1 case: $660K) |
+| A + B | 93.3% | 11/12 | 3 | SHIPPED (v9) |
+| B' extreme 600K + A | 93.3% | 11/12 | 3 | same; 500K kept (round, below $660K) |
+| C platform signal: send trigger «أرسله» in caption (5–26 Nov, 18 reels, counted by hand) | — | — | — | REJECTED: with trigger 2/6 flew (33%), without 5/12 (42%) — no lift; not coded |
+Still missed: 30th UPC news 17 Nov 13:06 ($300). Still false alarms: elevator 31 Oct, market 4 Nov, Magikarp $1.1M (905, 95 short).
+Otaku IG n=37: 100% / 0 of 0 flyers / FA 0. Meta ads n=5: 60%, 0/2 (not reachable read-only this run — skipped).
+Platform refs (vidIQ, 4 new rows): 3 of 5 TCG outliers in the last 30 days are fake/tampered-slab or scam STORIES (real hands/face,
+253K–828K views, 22–824× median) — same angle as news_ep32. Next candidate: a 'story' hook flag (scam/fake/betrayal) for news.

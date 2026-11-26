@@ -147,12 +147,15 @@ def predict(fmt, series, post_date, mot_1_3, history, fly_hold=45.0, rules=None,
     big = rules.get("extreme_usd")
     extreme = bool(big and hook_usd and hook_usd >= big)
     if extreme:
-        why.append(f"رقم صادم على أول فريم (${hook_usd:,.0f}): أخبار الكروت المليونية تطير حتى قبل وقت المساء")
+        why.append(f"رقم صادم على أول فريم (${hook_usd:,.0f}): أخبار الكروت بنص مليون دولار وفوق تطير حتى قبل وقت المساء")
+        # v9 (26 Nov 2026): HTR IG threshold 1M -> 500K: the $660K fake-slab Rayquaza news (24 Nov 13:04) flew 1,185.
     recent = [h for h in past if h["series"] == series and 0 <= (post_date - h["date"]).days <= FATIGUE_DAYS] \
         if rules.get("fatigue") else []
     if recent:
         p *= FATIGUE_X
         why.append(f"نفس السلسلة «{series}» نزلت قبل {min((post_date - h['date']).days for h in recent)} يوم: الجمهور يتشبع، أبعدها {FATIGUE_DAYS + 1} أيام")
+    # v9 (26 Nov 2026): topic_fatigue is OFF in the HTR IG profile — the Rayquaza gold-vs-SIR it penalised flew
+    # (1,279 at 48 h); walk-forward 90.0% 9/12 -> 91.7% 10/12 without it. Kept here for re-testing.
     tx = rules.get("topic_fatigue")
     if tx and topics:
         # v8 (25 Nov 2026): same iconic item from ANOTHER series in the last FATIGUE_DAYS (the same series is
