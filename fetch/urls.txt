@@ -1,5 +1,2 @@
-logo_dri.png https://imgeucdn.gamespress.com/cdn/files/Pokemon/2025/05/301238-52a2665f/Pokemon_TCG_Scarlet_Violet—Destined_Rivals_Logo.png?w=360&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=889e2a0dbe225fc78ed610095aaef3226be2a323f2722039d0b978207999b2e4
-logo_asc.png https://imgeucdn.gamespress.com/cdn/files/Pokemon/2026/01/300805-169e2df3/Pokemon_TCG_Mega_Evolution—Ascended_Heroes_Logo.png?w=360&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=57bd6a176cc0719b683e5835f9d8e813cc03d4be229eb5242a40d1bdcb188680
-pk_pre.html https://www.pokemon.com/us/pokemon-news/get-hyped-for-new-cards-from-the-scarlet-violet-prismatic-evolutions-expansion
-op_products.html https://en.onepiece-cardgame.com/products/
-op_boosters.html https://en.onepiece-cardgame.com/products/boosters/
+bf_gta1.png https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/0SAJpX8bMnJd8TUSJnTS/fn5ilOkz7DrLCwznrn3I/content.png?Expires=1795741200&KeyName=assets-cdn-key-1&Signature=cbLH4t1KN76wJMG3BbdhUmbu4DY=
+bf_gta2.png https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/TEbv1RR9jmIvQz8YmIGY/eH1iNaBw9XiSHp63ZP1l/content.png?Expires=1795741200&KeyName=assets-cdn-key-1&Signature=20ISIWoGHyUFLaaNwkv5oXlNvkQ=
