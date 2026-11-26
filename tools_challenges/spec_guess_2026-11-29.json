@@ -8,11 +8,53 @@
  "static_intro": true,
  "share": "أرسله لخويك وشوف مين يجيبها كلها!",
  "rounds": [
-  {"img": "/home/claude/htr-videos/fetch/im_284137.jpg", "name": "GIRATINA V", "set": "POKÉMON · Lost Origin · Alt Art",
-   "options": ["$310", "$1,450", "$762"], "answer": 2},
-  {"img": "/home/claude/htr-videos/fetch/im_619749.jpg", "name": "MICKEY MOUSE", "set": "LORCANA · Archazia's Island · Enchanted",
-   "options": ["$470", "$1,180", "$165"], "answer": 0},
-  {"img": "/home/claude/htr-videos/fetch/im_22462.jpg", "name": "SUMMONED SKULL", "set": "YU-GI-OH! · Metal Raiders · 1st Edition",
-   "options": ["$1,350", "$596", "$140"], "answer": 1}
- ]
+  {
+   "img": "/home/claude/htr-videos/fetch/im_284137.jpg",
+   "name": "GIRATINA V",
+   "set": "POKÉMON · Lost Origin · Alt Art",
+   "options": [
+    "$310",
+    "$1,450",
+    "$762"
+   ],
+   "answer": 2
+  },
+  {
+   "img": "/home/claude/htr-videos/fetch/im_619749.jpg",
+   "name": "MICKEY MOUSE",
+   "set": "LORCANA · Archazia's Island · Enchanted",
+   "options": [
+    "$470",
+    "$1,180",
+    "$165"
+   ],
+   "answer": 0
+  },
+  {
+   "img": "/home/claude/htr-videos/fetch/im_22462.jpg",
+   "name": "SUMMONED SKULL",
+   "set": "YU-GI-OH! · Metal Raiders · 1st Edition",
+   "options": [
+    "$1,350",
+    "$596",
+    "$140"
+   ],
+   "answer": 1
+  }
+ ],
+ "timing": {
+  "intro": 3.3,
+  "think": [
+   6.733333333333333,
+   4.366666666666666,
+   4.866666666666666
+  ],
+  "rlen": [
+   10.633333333333333,
+   8.266666666666667,
+   8.766666666666667
+  ],
+  "outro": 6.866666666666666,
+  "end": 2.0
+ }
 }
