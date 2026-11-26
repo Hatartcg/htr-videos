@@ -1,2 +1,1 @@
-tcg_rad_products.json https://tcgcsv.com/tcgplayer/89/24819/products
-tcg_rad_prices.json https://tcgcsv.com/tcgplayer/89/24819/prices
+vo_sat28_rb_l1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/TgMw423JNYyQ6o9cXwZF/4R19Y2CPYFQMsS7kDE2C/content.mp3?Expires=1795676400&KeyName=assets-cdn-key-1&Signature=U_qS_H_4FR2VOAfjfp3fg2xTfz4=
