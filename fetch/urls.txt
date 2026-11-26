@@ -1,1 +1,4 @@
-t10_1126.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/MmVo6jPbtzBMXfjOaQjn/HQmgsGu0dPoXRGMWnLMV/content.mp3?Expires=1795590000&KeyName=assets-cdn-key-1&Signature=c-GY75lFhVed7dq9C1eVAHoKnfM=
+ep34_voice.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/HO9sHsWub8iaUBVn2BdC/eSnn8wwmP2UbldB0fxQf/content.mp3?Expires=1795672800&KeyName=assets-cdn-key-1&Signature=6HJ5oWdbO7Enw5BA7EQyvi6OLOY=
+ep34_ex7_108.png https://images.pokemontcg.io/ex7/108_hires.png
+ep34_ex7_107.png https://images.pokemontcg.io/ex7/107_hires.png
+ep34_ex7_109.png https://images.pokemontcg.io/ex7/109_hires.png
