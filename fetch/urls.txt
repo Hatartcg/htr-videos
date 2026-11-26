@@ -1,2 +1,3 @@
-logo_chaos_s.png https://imgeucdn.gamespress.com/cdn/files/Pokemon/2026/05/211541-b4c0fe04/Pokemon_TCG_Mega_Evolution—_Chaos_Rising_Logo.png?w=360&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=6578fcf3e9b94b4bbc1bf44aae6c15f4fbe42af47427be72810d96dd925adfe0
-logo_perfect_s.png https://imguscdn.gamespress.com/cdn/files/PokemonAmerica/2026/01/071400-3c567918/Pokemon_TCG_Mega_Evolution—Perfect_Order_Logo.png?w=360&mode=max&otf=y&quality=90&format=png&bgcolor=transparent&sky=fdc53ec4902d6a050da02c3ebfb79a1f0c8cdb136285337344b4ad4c5b7e31dc
+gp_dri.html https://pokemon.gamespress.com/Pokemon-Trading-Card-Game-Scarlet-VioletDestined-Rivals-Releases-Today
+gp_asc.html https://pokemon.gamespress.com/MEDIA-ALERT-Pokemon-Trading-Card-Game-Mega-EvolutionAscended-Heroes-Av
+gp_pre.html https://www.gamedeveloper.com/press-release/media-alert-new-pok-mon-trading-card-game-scarlet-violet-prismatic-evolutions-expansion-spotlights-eevee-and-its-evolutions-as-stellar-tera-pok-mon-ex
