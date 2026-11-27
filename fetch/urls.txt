@@ -1,2 +1,4 @@
-bf_gta1.png https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/0SAJpX8bMnJd8TUSJnTS/fn5ilOkz7DrLCwznrn3I/content.png?Expires=1795741200&KeyName=assets-cdn-key-1&Signature=cbLH4t1KN76wJMG3BbdhUmbu4DY=
-bf_gta2.png https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/TEbv1RR9jmIvQz8YmIGY/eH1iNaBw9XiSHp63ZP1l/content.png?Expires=1795741200&KeyName=assets-cdn-key-1&Signature=20ISIWoGHyUFLaaNwkv5oXlNvkQ=
+st_a.jpg https://mhcgvy2bpk3u627e.public.blob.vercel-storage.com/products/1793715148637-t1olmi.jpg
+st_b.jpg https://mhcgvy2bpk3u627e.public.blob.vercel-storage.com/products/1793715087023-11198k.jpg
+st_c.jpg https://mhcgvy2bpk3u627e.public.blob.vercel-storage.com/products/1793715093690-4lhdv2.jpg
+st_d.jpg https://mhcgvy2bpk3u627e.public.blob.vercel-storage.com/products/1793715100062-xid394.jpg
