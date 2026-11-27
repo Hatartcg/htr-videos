@@ -1,3 +1,3 @@
-Fri Nov 27 02:30:22 UTC 2026
+Fri Nov 27 02:41:08 UTC 2026
 Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-bf_voice_fixed2.mp3 FAIL match 0.29 cps 8.4 unclear [('بلاك', np.float64(0.75)), ('هتر', np.float64(0.77)), ('الـ', np.float64(0.56)), ('جي', np.float64(0.73)), ('أونلاين', np.float64(0.76))] banned [] diff [{'op': 'replace', 'expected': 'مع', 'heard': 'معهم'}, {'op': 'replace', 'expected': 'ون', 'heard': 'وين'}, {'op': 'insert', 'expected': '', 'heard': 'ال 89 بندل كايوس رايزنج ب 159 يو جي او ب 159 وخصم 5 علي كل شي لين 4 ديسمبر بس اونلاين او في معرضنه بالعليه سكوير مين بتجيب معاك منشنه'}]
+bf_l1.mp3 PASS match 1.0 cps 9.3 unclear [] banned [] diff []
