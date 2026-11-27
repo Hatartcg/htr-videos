@@ -67,6 +67,7 @@ def main():
     ap.add_argument("--footage", choices=["real", "motion"], help="original footage or ad/motion graphics (default: motion if the file is under ads/)")
     ap.add_argument("--topic", help="v8: iconic item(s) the reel is about, e.g. rayquaza or rayquaza|op18 (default: guessed from the file name)")
     ap.add_argument("--hook-usd", type=float, help="biggest dollar number shown on frame 1 (e.g. 5000000)")
+    ap.add_argument("--hook-text", help="v10: the hook / title line; a story word (fake, scam, مزيف, نصب...) lets a $500K-$2M number count as extreme")
     A = ap.parse_args()
     import os, datetime as dt
     here = os.path.dirname(os.path.abspath(__file__))
@@ -153,8 +154,10 @@ def main():
     from predict import is_motion
     mo = is_motion({"footage": A.footage or "", "file": os.path.relpath(os.path.abspath(A.video), os.path.dirname(here))})
     tps = set(A.topic.lower().split("|")) if A.topic else topics_of(A.video)
+    from predict import is_story
+    sto = is_story(A.video + " " + (A.hook_text or ""))
     pred = predict(fmt_, ser_, pdate, feats["mot_1_3"], hist(), prof.get("fly_hold_pct", 45), prof.get("rules"), dur, ph,
-                   motion=mo, hook_usd=A.hook_usd, topics=tps)
+                   motion=mo, hook_usd=A.hook_usd, topics=tps, story=sto)
     if prof.get("placements"):
         # Paid Meta video: Instagram and Facebook audiences behave differently (Delta Reign ad, 15 Nov 2026:
         # 3-s hook 33–44% on Instagram vs 10–11% on Facebook; FB "reel overlay" never plays the video).
@@ -166,7 +169,7 @@ def main():
             own = [x for x in own if x["placement"]]
             h = own
             byp[pl] = dict(predict(fmt_, ser_, pdate, feats["mot_1_3"], h if len(own) >= 3 else hist(),
-                                   prof.get("fly_hold_pct", 45), prof.get("rules"), dur, ph, motion=mo, hook_usd=A.hook_usd, topics=tps), name=name, own_rows=len(own))
+                                   prof.get("fly_hold_pct", 45), prof.get("rules"), dur, ph, motion=mo, hook_usd=A.hook_usd, topics=tps, story=sto), name=name, own_rows=len(own))
         pred["by_placement"] = {k: {"name": v["name"], "fly_probability": v["fly_probability"], "verdict": v["verdict"],
                                     "own_rows": v["own_rows"]} for k, v in byp.items()}
         weak = [v["name"] for v in byp.values() if v["verdict"] != "بيفلير"]

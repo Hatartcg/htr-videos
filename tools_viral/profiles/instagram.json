@@ -15,11 +15,12 @@
   "motion_learn": true,
   "extreme_usd": 500000,
   "new_series_prior": 0.45,
-  "edu_real_prior": 0.45
+  "edu_real_prior": 0.45,
+  "extreme_mega": 2000000
  },
  "fly_views": 1000,
  "fly_by": "views",
  "fly_rule": "Owner rule 16 Nov 2026: any reel under 1,000 views is rejected (ما بيفلير).",
  "platform_refs": "../platform_refs.csv",
- "rules_note": "v9 (26 Nov 2026): topic_fatigue removed (the Rayquaza vs it penalised flew 1,279 at 48 h); extreme_usd 1,000,000 -> 500,000 ($660K fake-slab news flew 1,185 at 13:04). Walk-forward n=60: 90.0% 9/12 FA3 -> 93.3% 11/12 FA3."
+ "rules_note": "v10 (27 Nov 2026): extreme_usd floor ($500K+) now needs a STORY hook (fake/scam/theft, words in predict.STORY_KW) unless the number is >= $2M (extreme_mega). Charizard $990K bare-price news (26 Nov 13:08) got 239 views, 0 shares; Magikarp $1.1M 905; $660K fake-slab story 1,202 with 14 shares. Walk-forward n=63: 92.1% 13/14 FA4 -> 95.2% 13/14 FA2. Previous: v9 (26 Nov 2026): topic_fatigue removed (the Rayquaza vs it penalised flew 1,279 at 48 h); extreme_usd 1,000,000 -> 500,000 ($660K fake-slab news flew 1,185 at 13:04). Walk-forward n=60: 90.0% 9/12 FA3 -> 93.3% 11/12 FA3."
 }

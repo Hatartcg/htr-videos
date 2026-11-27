@@ -32,6 +32,11 @@ TOPIC_KW = {"rayquaza": ("rayquaza", "ريكوازا", "ركوازا"), "pikachu
             "charizard": ("charizard", "تشارزرد", "شارزرد"), "magikarp": ("magikarp", "ماجيكارب"),
             "mew": ("mew", "ميو"), "op18": ("op 18", "op18"), "digimon": ("digimon", "ديجيمون"),
             "deltareign": ("deltareign", "delta reign", "دلتا رين"), "romance": ("romance dawn",)}
+# v10 (27 Nov 2026): a STORY hook (fake slab, scam, theft, betrayal) — public TCG outliers (platform_refs.csv,
+# vidIQ 26 Nov: 3 of 5 recent TCG outliers were fake/scam stories) and the account's own sends: the $660K fake-slab
+# news got 14 shares while bare-price news (Magikarp $1.1M, Charizard $990K) got 0.
+STORY_KW = ("fake", "scam", "stolen", "fraud", "counterfeit", "betray", "مزيف", "مزوّر", "مزور", "نصب", "احتيال",
+            "سرق", "مسروق", "خدع", "تقليد")
 EXTREME_P = 0.5   # v6 floor for a hook with an extreme dollar number (rule extreme_usd)  # pseudo-count: how strongly the format rate pulls a series with few posts
 
 
@@ -45,6 +50,11 @@ def topics_of(text):
     t = " " + re.sub(r"[_./\\-]+", " ", (text or "").lower()) + " "
     return {k for k, kws in TOPIC_KW.items()
             if any(re.search(r"(?<![a-z])" + re.escape(w.strip().replace("-", " ")) + r"(?![a-z])", t) for w in kws)}
+
+
+def is_story(text):
+    t = (text or "").lower()
+    return any(k in t for k in STORY_KW)
 
 
 def guess_format(path):
@@ -99,6 +109,7 @@ def load_history(csv_path, fly_hold=45.0, fly_views=None, fly_by=None, placement
                      "hour": int(r["hour"]) if (r.get("hour") or "").strip() else None,
                      "motion": is_motion(r),
                      "topics": set((r.get("topic") or "").lower().split("|")) - {""} or topics_of((r.get("file") or "") + " " + (r.get("hook") or "")),
+                     "story": is_story((r.get("file") or "") + " " + (r.get("hook") or "")),
                      "hook_usd": float(r["hook_usd"]) if (r.get("hook_usd") or "").strip() else None})
     return rows
 
@@ -112,7 +123,7 @@ def best_formats(history):
 
 
 def predict(fmt, series, post_date, mot_1_3, history, fly_hold=45.0, rules=None, dur=None, post_hour=None,
-            motion=None, hook_usd=None, topics=None):
+            motion=None, hook_usd=None, topics=None, story=None):
     rules = rules or {"fatigue": True, "calm": True}
     past = [h for h in history if h["date"] < post_date]
     same = [h for h in past if h["format"] == fmt]
@@ -146,6 +157,12 @@ def predict(fmt, series, post_date, mot_1_3, history, fly_hold=45.0, rules=None,
         why.append(f"فيديو موشن/إعلاني مو تصوير أصلي: في هالحساب طار {km} من {nm} — انستقرام يقدّم المحتوى الأصلي")
     big = rules.get("extreme_usd")
     extreme = bool(big and hook_usd and hook_usd >= big)
+    mega = rules.get("extreme_mega")
+    if extreme and mega and hook_usd < mega and not story:
+        # v10 (27 Nov 2026): below `mega` a big number alone is not enough — it needs a story hook. Instagram ranks
+        # Reels on sends and likes per reach; a bare price gets watched (Charizard $990K hold 51.8%) but not sent.
+        extreme = False
+        why.append(f"رقم كبير (${hook_usd:,.0f}) بس بدون قصة (مزيف/نصب/سرقة): أخبار السعر لحالها تنشاف وما تنرسل — حوّلها لقصة أو رقم ${mega:,.0f}+")
     if extreme:
         why.append(f"رقم صادم على أول فريم (${hook_usd:,.0f}): أخبار الكروت بنص مليون دولار وفوق تطير حتى قبل وقت المساء")
         # v9 (26 Nov 2026): HTR IG threshold 1M -> 500K: the $660K fake-slab Rayquaza news (24 Nov 13:04) flew 1,185.
@@ -226,7 +243,7 @@ def walk_forward(history, rules=None):
         # v5 (18 Nov 2026): the posting hour (Riyadh, column "hour") is now part of the honest test, so the
         # evening rule is checked on history like the other rules (HTR IG: 87.8% → 89.8%, no flyer lost).
         r = predict(h["format"], h["series"], h["date"], None, hs[:i], rules=rules, dur=h.get("dur"), post_hour=h.get("hour"),
-                    motion=h.get("motion"), hook_usd=h.get("hook_usd"), topics=h.get("topics"))
+                    motion=h.get("motion"), hook_usd=h.get("hook_usd"), topics=h.get("topics"), story=h.get("story"))
         pf = r["verdict"] == "بيفلير"
         ok += pf == h["fly"]; caught += pf and h["fly"]; fa += pf and not h["fly"]
     return ok / max(1, len(hs)), caught, sum(h["fly"] for h in hs), fa, len(hs)

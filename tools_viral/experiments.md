@@ -89,3 +89,30 @@ Still missed: 30th UPC news 17 Nov 13:06 ($300). Still false alarms: elevator 31
 Otaku IG n=37: 100% / 0 of 0 flyers / FA 0. Meta ads n=5: 60%, 0/2 (not reachable read-only this run — skipped).
 Platform refs (vidIQ, 4 new rows): 3 of 5 TCG outliers in the last 30 days are fake/tampered-slab or scam STORIES (real hands/face,
 253K–828K views, 22–824× median) — same angle as news_ep32. Next candidate: a 'story' hook flag (scam/fake/betrayal) for news.
+
+## 2026-11-27 — reel-coach (v10)
+New HTR IG rows (Metricool pull 27 Nov 19:20 UTC): news_ep33 $990K Charizard PSA 10, 26 Nov 13:08 → 239 at ~33 h (3-s 51.8%, reach 196,
+0 likes/shares/saves; tool v9 50% → false alarm, PRELIM — re-check at 48 h, two reels flew late last week);
+top5 kinetic +$950 (Hadi face cam split screen) 26 Nov 18:31 → 1,208 (3-s 71.9% = account best; tool 72% right);
+top10 Ascended Heroes 26 Nov 21:11 → 1,437 (3-s 62.3%, avg 17.6 s; tool 72% right). Same series twice in one evening — both flew.
+Updates: guess 25 Nov 1,606 · Rayquaza vs 1,306 · news_ep32 1,202 (stalled) · OP-18 412 · Mew 290 · Digimon v2 179 · song v2 165.
+OH: anime quote posters 26 Nov 19:08 → 122 (3-s 43.0%); Luffy Oda card 131.
+
+Walk-forward HTR IG, n=63 (each reel predicted only from reels before it):
+| variant | accuracy | flyers caught | false alarms | decision |
+|---|---|---|---|---|
+| baseline v9 (with the 3 new rows) | 92.1% | 13/14 | 4 | FA: elevator, market, Magikarp $1.1M, Charizard $990K |
+| A extreme floor needs a STORY hook (fake/scam/theft) unless ≥ $2M | 95.2% | 13/14 | 2 | KEEP — shipped v10 |
+| A2 story gate with no $2M bypass | 93.7% | 12/14 | 2 | rejected (loses Pikachu $5M) |
+| A3 extreme_usd $2M, no story check | 93.7% | 12/14 | 2 | rejected (loses $660K fake-slab story) |
+| A4 story gate, bypass at $1.5M | 95.2% | 13/14 | 2 | same as A; $2M kept (no case between) |
+| B fly_p 0.45 / 0.35 | 92.1% | 13/14 | 4 | no change |
+Platform basis: Instagram ranks Reels on watch time, likes per reach and SENDS per reach
+(https://about.instagram.com/blog/announcements/instagram-ranking-explained ; Mosseri on sends:
+https://www.searchenginejournal.com/instagram-algorithm-shift-why-sends-matter-more-than-ever/521389/ ). Bare-price news holds viewers
+(Charizard 51.8%, Magikarp 56%) but gets 0 sends; the fake-slab story got 14. vidIQ hook search «record-price card news» (27 Nov):
+6 of 6 IG outliers were real-footage stories / openings / reactions, NONE a bare price headline (2 new rows in platform_refs.csv).
+Caution: A rests on 3 cases (Magikarp, Charizard, $660K). If Charizard passes 1,000 at 48 h, A turns into a miss — recheck next run.
+Otaku IG n=38: 100% / 0 of 0 flyers / FA 0. Meta ads n=5: 60%, 0/2 (not reachable read-only this run — skipped).
+Still missed: 30th UPC news 17 Nov ($300). Still false alarms: elevator 31 Oct, market 4 Nov.
+reel_score.py: new --hook-text flag (story words are read from it and from the file name).
