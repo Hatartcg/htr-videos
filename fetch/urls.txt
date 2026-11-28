@@ -1,1 +1,1 @@
-bf_cta.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/5UKllWWVUxTjvjXDgP65/U04z9ndpdvlIN8hIanrm/content.mp3?Expires=1795755600&KeyName=assets-cdn-key-1&Signature=QM1v-xM2mEyd4ITdxOYaPVnZ5zo=
+gold_challenge_v1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/6bbcnxTJxUGWhHblg6JX/7aJ8NqP4AKzauKMBohRb/content.mp3?Expires=1795899600&KeyName=assets-cdn-key-1&Signature=xyYX1eVpprZj6OjmLiqjwkkkFqg=
