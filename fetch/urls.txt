@@ -1,4 +1,1 @@
-c_charizard_gold.png https://images.scrydex.com/pokemon/me2pt5-294/large
-c_dragonite_gold.png https://images.scrydex.com/pokemon/me2pt5-295/large
-pz_poster_gard.webp https://mhcgvy2bpk3u627e.public.blob.vercel-storage.com/products/1795856525279-0ieio9.webp
-pz_poster_luc.webp https://mhcgvy2bpk3u627e.public.blob.vercel-storage.com/products/1795856526423-i1s5fs.webp
+gold_cz_dn.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/FP57ewbZfuFMxT1j9q9e/I3rKECX65paQYjGfkGy7/content.mp3?Expires=1795899600&KeyName=assets-cdn-key-1&Signature=Yh2RxZtrRl-QQlTyb7-b1Cri-Ec=
