@@ -1,1 +1,5 @@
-gold_challenge_v1.mp3 https://elevenlabsusercontent.com/database/workspace/ba0999f8929149b288e730b6651ddf1b/content_generation/6bbcnxTJxUGWhHblg6JX/7aJ8NqP4AKzauKMBohRb/content.mp3?Expires=1795899600&KeyName=assets-cdn-key-1&Signature=xyYX1eVpprZj6OjmLiqjwkkkFqg=
+pz_pris1.webp https://cdn.shopify.com/s/files/1/1198/4500/files/Prismatic-Evolutions-Super-Premium-Collection_1.webp?v=1740768753&width=1600
+pz_asc.png https://cdn.shopify.com/s/files/1/0574/4692/4324/files/b617fab8a6f66635e46683c215942727ae80a4db_Asset_SEA_BOX_PKM_10_10311_114.png?v=1764370076&width=1600
+pz_upcday.jpg https://cdn.shopify.com/s/files/1/0565/8715/7609/files/704190.jpg?v=1785640828&width=1600
+pz_upcnight.jpg https://cdn.shopify.com/s/files/1/0565/8715/7609/files/704191.jpg?v=1785640822&width=1600
+pz_upcz0.jpg https://cdn.shopify.com/s/files/1/0579/0960/8613/files/pokemon-30th-anniversary-ultra-premium-collection.jpg?v=1790707606&width=1600
